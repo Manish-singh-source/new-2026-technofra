@@ -1,4 +1,7 @@
-<?php include __DIR__ . '/header.php'; ?>
+<?php
+$bodyClass = 'job-application-page';
+include __DIR__ . '/header.php';
+?>
 
 <style>
 .career-page-hero {
@@ -92,6 +95,142 @@
     flex-shrink: 0;
 }
 
+.role-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.62);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 2000;
+}
+
+.role-modal-backdrop.is-open {
+    display: flex;
+}
+
+.role-modal {
+    width: min(920px, 100%);
+    max-height: min(88vh, 980px);
+    overflow: auto;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 30px 90px rgba(15, 23, 42, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.role-modal-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 28px 28px 18px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.role-modal-head h3 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.role-modal-head p {
+    margin: 8px 0 0;
+    color: #475569;
+}
+
+.role-modal-close {
+    border: 0;
+    background: rgba(0, 51, 102, 0.08);
+    color: #003366;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    font-size: 22px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.role-modal-body {
+    padding: 24px 28px 28px;
+}
+
+.role-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.role-meta-card {
+    padding: 18px;
+    border-radius: 20px;
+    background: #f8fbff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.role-meta-card span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.role-meta-card strong {
+    color: #0f172a;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.role-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.role-detail-box {
+    padding: 20px;
+    border-radius: 22px;
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.role-detail-box h4 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    color: #003366;
+}
+
+.role-detail-box ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #334155;
+    line-height: 1.75;
+}
+
+.role-modal-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.role-modal-actions .ibt-btn {
+    min-width: 170px;
+}
+
+body.role-modal-open {
+    overflow: hidden;
+}
+
 .feature-sec15 {
     background: linear-gradient(180deg, #f6f9ff 0%, #ffffff 100%);
 }
@@ -175,21 +314,28 @@
         padding: 22px;
         border-radius: 20px;
     }
+
+    .role-modal-head,
+    .role-modal-body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .role-meta-grid,
+    .role-detail-grid {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 
 <section class="page-banner9">
-    <div class="staff-text">Career</div>
+    <div class="staff-text">Jobs</div>
     <div class="container">
         <div class="page-content">
             <h1 class="title">/ Career /</h1>
         </div>
     </div>
-    <ul class="breadcrumbs">
-        <li><a href="index.php" title="">Home</a></li>
-        <li>/</li>
-        <li>Career</li>
-    </ul>
+    
 </section>
 
 <section class="career-page-hero">
@@ -241,8 +387,14 @@
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>HTML5, CSS3, JavaScript</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline" title="Apply now">
-                    <span>Apply Now</span>
+                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                    data-role-title="Website Developer"
+                    data-role-subtitle="Build modern, responsive, and high-performance websites using latest technologies."
+                    data-role-skill="HTML5, CSS3, JavaScript, responsive layout, basic SEO, cross-browser compatibility"
+                    data-role-ai="ChatGPT, GitHub Copilot, Cursor, browser-based AI debugging assistants"
+                    data-role-exp="1-2+ Years"
+                    data-role-responsibility="Develop landing pages, business websites, and UI sections with clean code and fast load times.">
+                    <span>More Details</span>
                     <i class="icon-arrow-top"></i>
                 </a>
             </article>
@@ -256,8 +408,14 @@
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>Adobe Photoshop, Illustrator, Figma</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline" title="Apply now">
-                    <span>Apply Now</span>
+                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                    data-role-title="Graphic Designer"
+                    data-role-subtitle="Join our creative team to design visually compelling graphics, branding materials, and digital assets."
+                    data-role-skill="Adobe Photoshop, Illustrator, Figma, branding, social media creatives, visual hierarchy"
+                    data-role-ai="ChatGPT, Adobe Firefly, Canva Magic tools, Midjourney, prompt-based ideation tools"
+                    data-role-exp="1-2+ Years"
+                    data-role-responsibility="Create brand visuals, marketing graphics, web assets, and presentation designs that match business goals.">
+                    <span>More Details</span>
                     <i class="icon-arrow-top"></i>
                 </a>
             </article>
@@ -271,8 +429,14 @@
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>Strategy, Content Creation, Facebook Ads</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline" title="Apply now">
-                    <span>Apply Now</span>
+                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                    data-role-title="Social Media Marketing Executive"
+                    data-role-subtitle="Plan, create, and manage engaging social media campaigns across Instagram, Facebook, LinkedIn, and more."
+                    data-role-skill="Content strategy, copywriting, Meta Ads, analytics, community management, campaign planning"
+                    data-role-ai="ChatGPT, Meta AI, Canva AI, scheduling assistants, analytics insight tools"
+                    data-role-exp="1-2+ Years"
+                    data-role-responsibility="Plan campaigns, write captions, monitor performance, and improve engagement across social platforms.">
+                    <span>More Details</span>
                     <i class="icon-arrow-top"></i>
                 </a>
             </article>
@@ -286,8 +450,14 @@
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>Android, iOS, Flutter / React Native</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline" title="Apply now">
-                    <span>Apply Now</span>
+                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                    data-role-title="App Developer"
+                    data-role-subtitle="Build high-performance and scalable mobile applications for Android and iOS platforms."
+                    data-role-skill="Android, iOS, Flutter, React Native, API integration, state management, app debugging"
+                    data-role-ai="ChatGPT, GitHub Copilot, Cursor, Firebase AI helpers, code review assistants"
+                    data-role-exp="1-2+ Years"
+                    data-role-responsibility="Develop mobile app features, integrate APIs, fix bugs, and deliver smooth user experiences.">
+                    <span>More Details</span>
                     <i class="icon-arrow-top"></i>
                 </a>
             </article>
@@ -295,6 +465,62 @@
     </div>
 </section>
 <!-- End project-sec4 -->
+
+<div class="role-modal-backdrop" id="roleModalBackdrop" aria-hidden="true">
+    <div class="role-modal" role="dialog" aria-modal="true" aria-labelledby="roleModalTitle">
+        <div class="role-modal-head">
+            <div>
+                <span class="job-label mb-2">Role Details</span>
+                <h3 id="roleModalTitle">Role title</h3>
+                <p id="roleModalSubtitle">Role summary</p>
+            </div>
+            <button type="button" class="role-modal-close" id="roleModalClose" aria-label="Close popup">×</button>
+        </div>
+        <div class="role-modal-body">
+            <div class="role-meta-grid">
+                <div class="role-meta-card">
+                    <span>Years Of Experience</span>
+                    <strong id="roleModalExp">-</strong>
+                </div>
+                <div class="role-meta-card">
+                    <span>Required Skills</span>
+                    <strong id="roleModalSkills">-</strong>
+                </div>
+                <div class="role-meta-card">
+                    <span>AI Tools</span>
+                    <strong id="roleModalAi">-</strong>
+                </div>
+            </div>
+
+            <div class="role-detail-grid">
+                <div class="role-detail-box">
+                    <h4>Responsibilities</h4>
+                    <ul>
+                        <li id="roleModalResponsibility">-</li>
+                    </ul>
+                </div>
+                <div class="role-detail-box">
+                    <h4>How To Apply</h4>
+                    <ul>
+                        <li>Use the Apply Now button below to open the contact page.</li>
+                        <li>Share your resume and a short note about your experience.</li>
+                        <li>We’ll review the application and contact shortlisted candidates.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="role-modal-actions">
+                <a href="contact.php" class="ibt-btn ibt-btn-outline" id="roleModalApplyLink" title="Apply now">
+                    <span>Apply Now</span>
+                    <i class="icon-arrow-top"></i>
+                </a>
+                <button type="button" class="ibt-btn" id="roleModalDismissBtn" style="background:#003366;color:#fff;">
+                    <span>Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- feature-style15 -->
 <section class="feature-sec15 ibt-section-gap">
@@ -320,7 +546,7 @@
                 <p>Work on real projects and continuously develop practical, in-demand skills in a fast-moving environment.</p>
             </div>
             <div class="why-join-card">
-                <div class="why-icon"><i class="fa fa-lightbulb-o"></i></div>
+                <div class="why-icon"><i class="fa fa-lightbulb"></i></div>
                 <h4>Creative Freedom</h4>
                 <p>Share your ideas, think differently, and bring innovation into your work with a team that values fresh perspectives.</p>
             </div>
@@ -343,5 +569,60 @@
     </div>
 </section>
 <!-- End feature-style15 -->
+
+<script>
+(function () {
+    const backdrop = document.getElementById('roleModalBackdrop');
+    const closeBtn = document.getElementById('roleModalClose');
+    const dismissBtn = document.getElementById('roleModalDismissBtn');
+    const titleEl = document.getElementById('roleModalTitle');
+    const subtitleEl = document.getElementById('roleModalSubtitle');
+    const expEl = document.getElementById('roleModalExp');
+    const skillsEl = document.getElementById('roleModalSkills');
+    const aiEl = document.getElementById('roleModalAi');
+    const respEl = document.getElementById('roleModalResponsibility');
+    const applyLink = document.getElementById('roleModalApplyLink');
+
+    function openModal(trigger) {
+        titleEl.textContent = trigger.dataset.roleTitle || 'Role Details';
+        subtitleEl.textContent = trigger.dataset.roleSubtitle || '';
+        expEl.textContent = trigger.dataset.roleExp || '-';
+        skillsEl.textContent = trigger.dataset.roleSkill || '-';
+        aiEl.textContent = trigger.dataset.roleAi || '-';
+        respEl.textContent = trigger.dataset.roleResponsibility || '-';
+        applyLink.href = trigger.href || 'contact.php';
+        backdrop.classList.add('is-open');
+        backdrop.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('role-modal-open');
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        backdrop.classList.remove('is-open');
+        backdrop.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('role-modal-open');
+    }
+
+    document.querySelectorAll('.js-role-popup').forEach((btn) => {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            openModal(this);
+        });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    dismissBtn.addEventListener('click', closeModal);
+    backdrop.addEventListener('click', function (event) {
+        if (event.target === backdrop) {
+            closeModal();
+        }
+    });
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
+            closeModal();
+        }
+    });
+})();
+</script>
 
 <?php include __DIR__ . '/footer.php'; ?>

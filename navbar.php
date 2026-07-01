@@ -1,3 +1,33 @@
+        <style>
+            @media (min-width: 1200px) {
+                .sticky-active .header-menu-area .row {
+                    flex-wrap: nowrap;
+                }
+
+                .sticky-active .header-menu-area .col-auto {
+                    flex: 0 0 auto;
+                }
+
+                .sticky-active .header-menu-area .main-menu > ul {
+                    white-space: nowrap;
+                }
+
+                .sticky-active .header-menu-area .btn-box {
+                    white-space: nowrap;
+                    flex-shrink: 0;
+                    margin-right: 12px;
+                }
+
+                .sticky-active .header-menu-area .btn-box .ibt-btn {
+                    display: inline-flex;
+                }
+
+                .sticky-active .header-menu-area {
+                    padding-right: 37px;
+                }
+            }
+        </style>
+
         <!-- Side Menu -->
         <div class="side-menu" id="sideMenu">
             <div class="overlay" id="overlay"></div>
@@ -140,7 +170,7 @@
                         <div class="header-logo">
                             <a href="javascript:void(0)" class="menu-toggle"></a>
                             <a href='index1.html'>
-                                <img src="assets/images/new/logo-black.png" alt="logo">
+                                <img src="assets/images/new/logo-black.png" class="wi" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -308,7 +338,7 @@
                                 <div class="header-logo">
                                     <a href="javascript:void(0)" class="menu-toggle"></a>
                                     <a href='index1.html'>
-                                        <img src="assets/images/new/logo.png" class="wi" alt="logo">
+                                        <img src="assets/images/new/logo-black.png" class="wi" alt="logo">
                                     </a>
                                 </div>
                             </div>

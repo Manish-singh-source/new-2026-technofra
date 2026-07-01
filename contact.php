@@ -1,20 +1,17 @@
-<?php include __DIR__ . '/header.php'; ?>
+<?php
+$bodyClass = 'job-application-page';
+include __DIR__ . '/header.php';
+?>
 
     <!-- page-banner9 -->
     <section class="page-banner9">
-        <div class="shape"></div>
-        <div class="shape3"></div>
         <div class="staff-text">Contact</div>
         <div class="container">
             <div class="page-content">
                 <h1 class="title">/ Contact Us /</h1>
             </div>
         </div>
-        <ul class="breadcrumbs">
-            <li><a href="index.php" title="">Home</a></li>
-            <li>/</li>
-            <li>Contact Us</li>
-        </ul>
+       
     </section>
     <!-- End page-banner9 -->
 

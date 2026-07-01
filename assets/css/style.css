@@ -10748,7 +10748,7 @@ input[type=submit]:hover {
   background-color: var(--color-heading);
   margin: 20px 20px 20px;
   border-radius: 25px;
-  padding: 150px 0 127px;
+  padding: 100px 0 100px;
 }
 @media (max-width: 1366px) {
   .footer-style4 {
@@ -13513,7 +13513,7 @@ ul {
   background-color: var(--color-content-white);
 }
 .hero-video-page .vs-header4 .btn-box .ibt-btn {
-  color: var(--color-content-white);
+  color: #000;
 }
 .hero-video-page .vs-header4 .header-logo img {
   -webkit-filter: brightness(9);
@@ -14457,14 +14457,14 @@ ul {
   }
 }
 .hero-content7 .title span {
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(356deg, #8258c8 0%, #2c84c8 100%);
-  background-image: linear-gradient(94deg, #8258c8 0%, #2c84c8 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  text-decoration: none;
-  color: transparent;
-  display: inline-block;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(356deg, #8258c8 0%, #2c84c8 100%);
+    background-image: linear-gradient(94deg, #002b61 0%, #00cdff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-decoration: none;
+    color: transparent;
+    display: inline-block;
 }
 .hero-content7 p {
   font-size: 16px;
@@ -34945,11 +34945,11 @@ ul {
 }
 
 .project-block3 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
 }
-
 .project-track.v2 {
   -webkit-box-align: end;
   -webkit-align-items: end;
@@ -34960,7 +34960,6 @@ ul {
 .project-sec4 {
   position: relative;
   background-color: var(--color-surface-dark-2);
-  border-radius: 25px;
 }
 .project-sec4 .user-count {
   display: inherit;
