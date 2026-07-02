@@ -25,6 +25,299 @@
                 .sticky-active .header-menu-area {
                     padding-right: 37px;
                 }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
+                    left: 50%;
+                    right: auto;
+                    width: min(960px, calc(100vw - 48px));
+                    padding: 18px 18px;
+                    border-radius: 28px;
+                    background: linear-gradient(180deg, #111111 0%, #050505 100%);
+                    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.45);
+                    display: grid;
+                    grid-template-columns: 1fr 0.98fr 0.72fr;
+                    gap: 0;
+                    align-items: start;
+                    -webkit-transform: translate(-50%, 10px);
+                        -ms-transform: translate(-50%, 10px);
+                            transform: translate(-50%, 10px);
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2):hover > .mega-sub-menu {
+                    -webkit-transform: translate(-50%, 0);
+                        -ms-transform: translate(-50%, 0);
+                            transform: translate(-50%, 0);
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column {
+                    display: block;
+                    padding: 0 12px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.16);
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:first-child {
+                    padding-left: 0;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:last-child {
+                    padding-right: 0;
+                    border-right: 0;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-group + .mega-menu-group {
+                    margin-top: 10px;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-sub-divider {
+                    height: 1px;
+                    margin: 12px 0;
+                    background: rgba(255, 255, 255, 0.16);
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin: 0 0 10px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    line-height: 1.1;
+                    font-weight: 700;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading::after {
+                    content: "";
+                    width: 32px;
+                    height: 2px;
+                    background: rgba(255, 255, 255, 0.5);
+                    display: block;
+                    flex: 0 0 auto;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    line-height: 1.25;
+                    font-weight: 600;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    white-space: normal;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a:hover {
+                    color: #ff9f1a;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    background: rgba(255, 255, 255, 0.03);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 0 0 auto;
+                    color: #ffffff;
+                    font-size: 17px;
+                }
+
+                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon i {
+                    width: auto;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
+                    left: 50%;
+                    right: auto;
+                    width: min(960px, calc(100vw - 48px));
+                    padding: 18px 18px;
+                    border-radius: 28px;
+                    background: linear-gradient(180deg, #111111 0%, #050505 100%);
+                    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.45);
+                    display: grid;
+                    grid-template-columns: 1fr 0.98fr 0.72fr;
+                    gap: 0;
+                    align-items: start;
+                    -webkit-transform: translate(-50%, 10px);
+                        -ms-transform: translate(-50%, 10px);
+                            transform: translate(-50%, 10px);
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2):hover > .mega-sub-menu {
+                    -webkit-transform: translate(-50%, 0);
+                        -ms-transform: translate(-50%, 0);
+                            transform: translate(-50%, 0);
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column {
+                    display: block;
+                    padding: 0 12px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.16);
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:first-child {
+                    padding-left: 0;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:last-child {
+                    padding-right: 0;
+                    border-right: 0;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-group + .mega-menu-group {
+                    margin-top: 10px;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-sub-divider {
+                    height: 1px;
+                    margin: 12px 0;
+                    background: rgba(255, 255, 255, 0.16);
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin: 0 0 10px;
+                    color: #ffffff;
+                    font-size: 15px;
+                    line-height: 1.1;
+                    font-weight: 700;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading::after {
+                    content: "";
+                    width: 32px;
+                    height: 2px;
+                    background: rgba(255, 255, 255, 0.5);
+                    display: block;
+                    flex: 0 0 auto;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    line-height: 1.25;
+                    font-weight: 600;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    white-space: normal;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a:hover {
+                    color: #ff9f1a;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    background: rgba(255, 255, 255, 0.03);
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 0 0 auto;
+                    color: #ffffff;
+                    font-size: 17px;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon i {
+                    width: auto;
+                }
+
+                .header-bottom .main-menu > ul li .sub-menu {
+                    border-radius: 28px;
+                    background: linear-gradient(180deg, #111111 0%, #050505 100%);
+                    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.35);
+                    padding: 18px 18px;
+                    min-width: 290px;
+                    width: auto;
+                }
+
+                .header-bottom .main-menu > ul li .sub-menu li a {
+                    padding: 8px 12px;
+                    color: #ffffff;
+                    font-size: 13px;
+                    line-height: 1.25;
+                    font-weight: 500;
+                    border-radius: 10px;
+                }
+
+                .header-bottom .main-menu > ul li .sub-menu li a:hover {
+                    background: rgba(255, 255, 255, 0.06);
+                    color: #ff9f1a;
+                }
+
+                .header-bottom .main-menu > ul li .sub-menu li a::before,
+                .header-bottom .main-menu > ul li .sub-menu li a::after {
+                    display: none;
+                }
+
+                .header-bottom .main-menu > ul li .sub-menu li {
+                    margin: 0;
+                }
+
+                .header-bottom .main-menu > ul li .sub-menu li > .sub-menu {
+                    left: calc(100% + 12px);
+                    top: 0;
+                    margin-top: 0;
+                    min-width: 260px;
+                    padding: 14px;
+                }
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-column-stack {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            @media (max-width: 1399px) {
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
+                    width: min(900px, calc(100vw - 40px));
+                    padding: 14px 14px;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading {
+                    font-size: 15px;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a {
+                    font-size: 13px;
+                }
+
+                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon {
+                    width: 36px;
+                    height: 36px;
+                    font-size: 16px;
+                }
             }
         </style>
 
@@ -37,12 +330,13 @@
                     <img src="assets/images/new/logo.png" class="wi" alt="logo">
                 </a>
                 <div class="sidebar-menu">
-                    <h4 class="title">contacts</h4>
-                    <p>USA, New York - 1060 <br> Str. First Avenue 1</p>
-                    <a href="tel:+13685678954" title="" class="nmbr">800 100 975 20 34</a>
-                    <a href="tel:8003508431" title="" class="nmbr">+ (123) 1800-234-5678</a>
-                    <a href="mailto:aiero@mail.co" class="email">aiero@mail.co</a>
-                    <a href="#" title="" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
+                    <h4 class="title">Contact Us</h4>
+                    <p>Office No. 501, 5th Floor, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai - 400067. Maharashtra - INDIA.</p>
+                    <a href="tel:+918080803374" title="" class="nmbr">+91 8080 80 3374</a>
+                    <a href="tel:+918080803375" title="" class="nmbr">+91 8080 80 3375</a>
+                    <a href="mailto:info@technofra.com" class="email">info@technofra.com</a>
+                    <a href="mailto:support@technofra.com" class="email">support@technofra.com</a>
+                    <a href="contact.php" title="" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
                         <span>Enquiry Now</span>
                     </a>
                 </div>
@@ -53,98 +347,44 @@
                     <li><a href="https://www.youtube.com/" title=""><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
-        </div>
-
-        <!-- New Mobile Menu -->
+        </div>      <!-- New Mobile Menu -->
         <div data-menu="mobileMenu" class="side-menu2">
             <div class="menu-btns">
                 <!-- <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a> -->
                 <button id="mobileCloseBtn2" class="close-btn"></button>
             </div>
             <ul>
-                <li>
-                    <a href="#">Home</a>
+                <li><a href='about-us.php'>About us</a></li>
+                <li class="sub-menu">
+                    <a href="#">Service</a>
                     <ul>
-                        <li><a href='index1.html'>Modern Technology</a></li>
-                        <li><a href='index2.html'>Neural Networks</a></li>
-                        <li><a href='index3.html'>AI Agency</a></li>
-                        <li><a href='index4.html'>Chatbot</a></li>
-                        <li><a href='index5.html'>Startup</a></li>
-                        <li><a href='index6.html'>AI Consulting</a></li>
-                        <li><a href='index7.html'>Futurism</a></li>
-                        <li><a href='index8.html'>Hi-Tech</a></li>
-                        <li><a href='index9.html'>Voiceover</a></li>
-                        <li><a href='index10.html'>Science</a></li>
-                        <li><a href='index11.html'>Creative Bureau</a></li>
-                        <li><a href='index12.html'>Video Voiceover</a></li>
-                        <li><a href='index13.html'>IT Services</a></li>
-                        <li><a href='index14.html'>AI Devices</a></li>
-                        <li><a href='index15.html'>AI Solutions</a></li>
-                        <li><a href='index16.html'>Image Generator</a></li>
-                        <li><a href='index17.html'>Content Generator</a></li>
-                        <li><a href='index.html'>Intro</a></li>
+                        <li><a href='#'>Web Design & Development</a></li>
+                        <li><a href='#'>Shopify</a></li>
+                        <li><a href='#'>WordPress</a></li>
+                        <li><a href='#'>Custom CMS</a></li>
+                        <li><a href='#'>iOS App</a></li>
+                        <li><a href='#'>Android App</a></li>
+                        <li><a href='#'>Digital Marketing</a></li>
+                        <li><a href='#'>Search Engine Optimization (SEO)</a></li>
+                        <li><a href='#'>Paid Marketing (PPC)</a></li>
+                        <li><a href='#'>Social Media Marketing</a></li>
+                        <li><a href='#'>Content Marketing</a></li>
+                        <li><a href='#'>Branding</a></li>
+                        <li><a href='#'>UI/UX</a></li>
+                        <li><a href='#'>Domain & Hosting</a></li>
+                        <li><a href='#'>IT Infrastructure</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">pages</a>
-                    <ul>
-                        <li><a href='about-us.html'>About us</a></li>
-                        <li class="sub-menu">
-                            <a href="#">Team</a>
-                            <ul>
-                                <li><a href='team.html' title>Creative team</a></li>
-                                <li><a href='team-single.html' title>Team Single</a></li>
-                            </ul>
-                        </li>
-                        <li class="sub-menu">
-                            <a href="#">Projects</a>
-                            <ul>
-                                <li><a href='project.html'>Projects Grid</a></li>
-                                <li><a href='project2.html'>Projects Modern</a></li>
-                                <li><a href='project-single.html'>Project Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href='gallery-grid.html'>Gallery Grid</a></li>
-                        <li><a href='gallery-masonry.html'>Gallery Masonry</a></li>
-                        <li><a href='pricing.html'>Pricing plans</a></li>
-                        <li><a href='career.php'>Career</a></li>
-                        <li><a href='faq.html'>FAQ</a></li>
-                        <li><a href='typography.html'>Typography</a></li>
-                        <li><a href='404.html'>404</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                    <ul>
-                        <li><a href='service.html'>Services Page</a></li>
-                        <li><a href='service-single.html'>Service Single</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Shop</a>
-                    <ul>
-                        <li><a href='shop.html'>Products</a></li>
-                        <li><a href='shop-single.html'>Single Product</a></li>
-                        <li><a href='cart.html'>Shopping cart</a></li>
-                        <li><a href='checkout.html'>Checkout</a></li>
-                        <li>
-                        <li><a href='account.html'>My account</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                    <ul>
-                        <li><a href='blog.html'>Blog Classic</a></li>
-                        <li><a href='blog2.html'>Blog Grid</a></li>
-                        <li><a href='blog-single.html'>Blog Single</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href='portfolios.php'>Portfolio</a></li>
+                <li><a href='career.php'>Career</a></li>
+                <li><a href='contact.php'>Contacts</a></li>
             </ul>
             <div class="menu-contact">
-                <span>Contacts</span>
-                <a href="tel:+13685678954" class="nmbr" title="">+1 800 529 10 37</a>
-                <a href="mailto:aiero@mail.co" title="" class="gmail">aiero@mail.co</a>
+                <span>Contact Us</span>
+                <a href="tel:+918080803374" class="nmbr" title="">+91 8080 80 3374</a>
+                <a href="tel:+918080803375" class="nmbr" title="">+91 8080 80 3375</a>
+                <a href="mailto:info@technofra.com" title="" class="gmail">info@technofra.com</a>
+                <a href="mailto:support@technofra.com" title="" class="gmail">support@technofra.com</a>
             </div>
             <div class="menu-links">
                 <span>Follow us:</span>
@@ -175,117 +415,84 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                        <nav class="main-menu menu-style1 v4">
-                            <ul>
-                                <li>
-                                    <a class='active' href='index.html'>
-                                        <span class="menu-item">Home</span>
-                                        <span class="menu-item2">Home</span>
-                                    </a>
-                                    <ul class="mega-sub-menu">
-                                        <li class="mega-menu-column">
-                                            <ul>
-                                                <li><a href='index1.html'>Modern Technology</a></li>
-                                                <li><a href='index2.html'>Neural Networks</a></li>
-                                                <li><a href='index3.html'>AI Agency</a></li>
-                                                <li><a href='index4.html'>Chatbot</a></li>
-                                                <li><a href='index5.html'>Startup</a></li>
-                                                <li><a href='index6.html'>AI Consulting</a></li>
-                                                <li><a href='index7.html'>Futurism</a></li>
-                                                <li><a href='index8.html'>Hi-Tech</a></li>
-                                                <li><a href='index9.html'>Voiceover</a></li>
-                                            </ul>
-                                            <ul>
-                                                <li><a href='index10.html'>Science</a></li>
-                                                <li><a href='index11.html'>Creative Bureau</a></li>
-                                                <li><a href='index12.html'>Video Voiceover</a></li>
-                                                <li><a href='index13.html'>IT Services</a></li>
-                                                <li><a href='index14.html'>AI Devices</a></li>
-                                                <li><a href='index15.html'>AI Solutions</a></li>
-                                                <li><a href='index16.html'>Image Generator</a></li>
-                                                <li><a href='index17.html'>Content Generator</a></li>
-                                                <li><a href='index.html'>Intro</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-column">
-                                            <a class='darkModeTriggerImg' href='index1.html'><img src="assets/images/event/dark-version.png" alt="AI Agency & Technology HTML Template"></a>
-                                            <a class='darkModeTriggerImg2' href='index1.html'><img src="assets/images/event/light-version.png" alt="AI Agency & Technology HTML Template"></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="menu-item">Pages</span>
-                                        <span class="menu-item2">Pages</span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li><a href='about-us.html'>About us</a></li>
+                                                        <nav class="main-menu menu-style1 v4">
+                                    <ul>
                                         <li>
-                                            <a href='team.html'>Team</a>
-                                            <ul class="sub-menu v1">
-                                                <li><a href='team.html'>Creative team</a></li>
-                                                <li><a href='team-single.html'>Team Single</a></li>
-                                            </ul>
+                                            <a href='about-us.php'>
+                                                <span class="menu-item">About us</span>
+                                                <span class="menu-item2">About us</span>
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#">Projects</a>
-                                            <ul class="sub-menu v2">
-                                                <li><a href='project.html'>Projects Grid</a></li>
-                                                <li><a href='project2.html'>Projects Modern</a></li>
-                                                <li><a href='project-single.html'>Project Single</a></li>
+                                            <a class='active' href='#'>
+                                                <span class="menu-item">Service</span>
+                                                <span class="menu-item2">Service</span>
+                                            </a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-column">
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Web & App Solutions</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="mega-menu-column">
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Online Marketing Services</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="mega-menu-column mega-menu-column-stack">
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Branding</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-sub-divider"></div>
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Hosting & IT Services</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </li>
-                                        <li><a href='gallery-grid.html'>Gallery Grid</a></li>
-                                        <li><a href='gallery-masonry.html'>Gallery Masonry</a></li>
-                                        <li><a href='pricing.html'>Pricing plans</a></li>
-                                        <li><a href='career.php'>Career</a></li>
-                                        <li><a href='faq.html'>FAQ</a></li>
-                                        <li><a href='typography.html'>Typography</a></li>
-                                        <li><a href='404.html'>404</a></li>
+                                        <li>
+                                            <a href='portfolios.php'>
+                                                <span class="menu-item">Portfolio</span>
+                                                <span class="menu-item2">Portfolio</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href='career.php'>
+                                                <span class="menu-item">Career</span>
+                                                <span class="menu-item2">Career</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href='contact.php'>
+                                                <span class="menu-item">Contacts</span>
+                                                <span class="menu-item2">Contacts</span>
+                                            </a>
+                                        </li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <a href='service.html'>
-                                        <span class="menu-item">services</span>
-                                        <span class="menu-item2">services</span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li><a href='service.html'>Services Page</a></li>
-                                        <li><a href='service-single.html'>Service Single</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href='shop.html'>
-                                        <span class="menu-item">Shop</span>
-                                        <span class="menu-item2">Shop</span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li><a href='shop.html'>Products</a></li>
-                                        <li><a href='shop-single.html'>Single Product</a></li>
-                                        <li><a href='cart.html'>Shopping cart</a></li>
-                                        <li><a href='checkout.html'>Checkout</a></li>
-                                        <li><a href='account.html'>My account</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href='blog.html'>
-                                        <span class="menu-item">Blog</span>
-                                        <span class="menu-item2">Blog</span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li><a href='blog.html'>Blog Classic</a></li>
-                                        <li><a href='blog2.html'>Blog Grid</a></li>
-                                        <li><a href='blog-single.html'>Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href='contact.php'>
-                                        <span class="menu-item">Contacts</span>
-                                        <span class="menu-item2">Contacts</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                                </nav>
                     </div>
                     <div class="col-auto d-none d-xl-block">
                         <div class="btn-box">
@@ -343,107 +550,75 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <nav class="main-menu menu-style1 v4">
+                                                                <nav class="main-menu menu-style1 v4">
                                     <ul>
                                         <li>
-                                            <a class='active' href='index.html'>
-                                                <span class="menu-item">Home</span>
-                                                <span class="menu-item2">Home</span>
+                                            <a href='about-us.php'>
+                                                <span class="menu-item">About us</span>
+                                                <span class="menu-item2">About us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class='active' href='#'>
+                                                <span class="menu-item">Service</span>
+                                                <span class="menu-item2">Service</span>
                                             </a>
                                             <ul class="mega-sub-menu">
                                                 <li class="mega-menu-column">
-                                                    <ul>
-                                                        <li><a href='index1.html'>Modern Technology</a></li>
-                                                        <li><a href='index2.html'>Neural Networks</a></li>
-                                                        <li><a href='index3.html'>AI Agency</a></li>
-                                                        <li><a href='index4.html'>Chatbot</a></li>
-                                                        <li><a href='index5.html'>Startup</a></li>
-                                                        <li><a href='index6.html'>AI Consulting</a></li>
-                                                        <li><a href='index7.html'>Futurism</a></li>
-                                                        <li><a href='index8.html'>Hi-Tech</a></li>
-                                                        <li><a href='index9.html'>Voiceover</a></li>
-                                                    </ul>
-                                                    <ul>
-                                                        <li><a href='index10.html'>Science</a></li>
-                                                        <li><a href='index11.html'>Creative Bureau</a></li>
-                                                        <li><a href='index12.html'>Video Voiceover</a></li>
-                                                        <li><a href='index13.html'>IT Services</a></li>
-                                                        <li><a href='index14.html'>AI Devices</a></li>
-                                                        <li><a href='index15.html'>AI Solutions</a></li>
-                                                        <li><a href='index16.html'>Image Generator</a></li>
-                                                        <li><a href='index17.html'>Content Generator</a></li>
-                                                        <li><a href='index.html'>Intro</a></li>
-                                                    </ul>
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Web & App Solutions</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                                 <li class="mega-menu-column">
-                                                    <a class='darkModeTriggerImg' href='index1.html'><img src="assets/images/event/dark-version.png" alt="AI Agency & Technology HTML Template"></a>
-                                                    <a class='darkModeTriggerImg2' href='index1.html'><img src="assets/images/event/light-version.png" alt="AI Agency & Technology HTML Template"></a>
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Online Marketing Services</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="mega-menu-column mega-menu-column-stack">
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Branding</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="mega-sub-divider"></div>
+                                                    <div class="mega-menu-group">
+                                                        <h4 class="mega-menu-heading">Hosting & IT Services</h4>
+                                                        <ul class="mega-menu-list">
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
+                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <span class="menu-item">Pages</span>
-                                                <span class="menu-item2">Pages</span>
+                                            <a href='portfolios.php'>
+                                                <span class="menu-item">Portfolio</span>
+                                                <span class="menu-item2">Portfolio</span>
                                             </a>
-                                            <ul class="sub-menu">
-                                                <li><a href='about-us.html'>About us</a></li>
-                                                <li>
-                                                    <a href='team.html'>Team</a>
-                                                    <ul class="sub-menu v1">
-                                                        <li><a href='team.html'>Creative team</a></li>
-                                                        <li><a href='team-single.html'>Team Single</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Projects</a>
-                                                    <ul class="sub-menu v2">
-                                                        <li><a href='project.html'>Projects Grid</a></li>
-                                                        <li><a href='project2.html'>Projects Modern</a></li>
-                                                        <li><a href='project-single.html'>Project Single</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href='gallery-grid.html'>Gallery Grid</a></li>
-                                                <li><a href='gallery-masonry.html'>Gallery Masonry</a></li>
-                                                <li><a href='pricing.html'>Pricing plans</a></li>
-                                                <li><a href='faq.html'>FAQ</a></li>
-                                                <li><a href='typography.html'>Typography</a></li>
-                                                <li><a href='404.html'>404</a></li>
-                                            </ul>
                                         </li>
                                         <li>
-                                            <a href='service.html'>
-                                                <span class="menu-item">services</span>
-                                                <span class="menu-item2">services</span>
+                                            <a href='career.php'>
+                                                <span class="menu-item">Career</span>
+                                                <span class="menu-item2">Career</span>
                                             </a>
-                                            <ul class="sub-menu">
-                                                <li><a href='service.html'>Services Page</a></li>
-                                                <li><a href='service-single.html'>Service Single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href='shop.html'>
-                                                <span class="menu-item">Shop</span>
-                                                <span class="menu-item2">Shop</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li><a href='shop.html'>Products</a></li>
-                                                <li><a href='shop-single.html'>Single Product</a></li>
-                                                <li><a href='cart.html'>Shopping cart</a></li>
-                                                <li><a href='checkout.html'>Checkout</a></li>
-                                                <li><a href='account.html'>My account</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href='blog.html'>
-                                                <span class="menu-item">Blog</span>
-                                                <span class="menu-item2">Blog</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li><a href='blog.html'>Blog Classic</a></li>
-                                                <li><a href='blog2.html'>Blog Grid</a></li>
-                                                <li><a href='blog-single.html'>Blog Single</a></li>
-                                            </ul>
                                         </li>
                                         <li>
                                             <a href='contact.php'>
@@ -473,3 +648,6 @@
             </div>
         </header>
         <!--======== / Header ========-->
+
+
+
