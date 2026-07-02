@@ -27,7 +27,7 @@
                 }
 
                 .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
-                    left: 50%;
+                    left: 100%;
                     right: auto;
                     width: min(960px, calc(100vw - 48px));
                     padding: 18px 18px;
@@ -141,7 +141,7 @@
                 }
 
                 .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
-                    left: 50%;
+                    left: 100%;
                     right: auto;
                     width: min(960px, calc(100vw - 48px));
                     padding: 18px 18px;
