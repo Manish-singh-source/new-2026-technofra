@@ -30,7 +30,7 @@
         <!-- service-sec20 -->
         <section class="service-sec20">
             <div class="container2">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="ser-info20">
                             <div class="ser-card20_card1">
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-12">
+                    <div class="col-xl-6 col-lg-12 ">
                         <div class="ser-card20_card5">
                             <img src="assets/images/service/ser20-5.png" alt="AI Agency & Technology HTML Template">
                             <!-- <h4 class="title">AI Oculus</h4> -->
@@ -77,18 +77,18 @@
         <section class="about-us-sec9 ibt-section-gapTop">
             <div class="container">
                 <div class="title-area row">
-                    <div class="sec-title col-9">
+                    <div class="sec-title col-12 col-lg-9">
                         <span class="sub-title">About Company</span>
                         <h2 class="title animated-heading">From Start to Success:</h2>
                         <h2 class="title animated-heading">Technofra’s Milestones in Technology</h2>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <!-- 
                     <a class='mt-5 ibt-btn ibt-btn-secondary' href='index14.html' target='_blank' title>
                             <span>Download Company Profile</span>
                             <i class="fa-solid fa-file-pdf"></i>
                         </a> -->
-                        <button type="button" class="mt-5 ibt-btn ibt-btn-secondary" data-bs-toggle="modal"
+                        <button type="button" class="mt-lg-5 ibt-btn ibt-btn-secondary" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Download Company Profile 
                             <i class="fa-solid fa-file-pdf"></i>
