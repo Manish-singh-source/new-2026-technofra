@@ -108,14 +108,14 @@ include __DIR__ . '/header.php';
         <div class="ser-box19">
             <div class="ser-info19">
                 <div class="service-block19">
-                    <img src="assets/images/service/ser19-1.png" alt="AI Agency & Technology HTML Template">
-                    <h4 class="title">Achievements of our startup</h4>
+                    <img src="assets/images/service/service/service-s1.png" alt="WordPress Website Design & Development">
+                    <!-- <h4 class="title">Achievements of our startup</h4> -->
                 </div>
             </div>
             <div class="ser-info19">
                 <div class="service-block19 v1">
-                    <img src="assets/images/service/ser19-2.png" alt="AI Agency & Technology HTML Template">
-                    <h4 class="title2">Aiero</h4>
+                    <img src="assets/images/service/service/service-s2.png" alt="AI Agency & Technology HTML Template">
+                    <!-- <h4 class="title2">Aiero</h4> -->
                 </div>
                 <div class="ser-content19">
                     <div class="ser-counter19">
@@ -129,7 +129,7 @@ include __DIR__ . '/header.php';
             </div>
             <div class="ser-info19">
                 <div class="service-block19 v1">
-                    <img src="assets/images/service/ser19-3.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/service/service/service-s3.png" alt="AI Agency & Technology HTML Template">
                 </div>
                 <div class="service-block19 m-0">
                     <img src="assets/images/service/ser19-4.png" alt="AI Agency & Technology HTML Template">
@@ -138,7 +138,7 @@ include __DIR__ . '/header.php';
             </div>
             <div class="ser-info19">
                 <div class="service-block19 v1">
-                    <img src="assets/images/service/ser19-5.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/service/service/service-s4.png" alt="AI Agency & Technology HTML Template">
                 </div>
                 <div class="service-block19 m-0">
                     <img src="assets/images/service/ser19-6.png" alt="AI Agency & Technology HTML Template">
@@ -146,8 +146,8 @@ include __DIR__ . '/header.php';
             </div>
             <div class="ser-info19 m-0">
                 <div class="service-block19 v2">
-                    <img src="assets/images/service/ser19-7.png" alt="AI Agency & Technology HTML Template">
-                    <h4 class="title">Programming & development</h4>
+                    <img src="assets/images/service/service/service-s5.png" alt="AI Agency & Technology HTML Template">
+                    <!-- <h4 class="title">Programming & development</h4> -->
                 </div>
             </div>
         </div>
@@ -164,14 +164,15 @@ include __DIR__ . '/header.php';
                 <div class="col-lg-6">
                     <div class="sec-title">
                         <span class="sub-title">features</span>
-                        <h2 class="title animated-heading">Design Anything, Build Everything
+                        <h2 class="title animated-heading">WordPress Solutions
                         </h2>
+                        <p class="title-p animated-heading">That Help Your Business Grow</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="title-content">
                         <h4 class="title">Wordpress</h4>
-                        <p>Design and launch your website fast & no coding knowledge is required.</p>
+                        <p>We design, develop and optimize WordPress websites that are fast, secure, scalable and built to convert visitors into customers.</p>
                     </div>
                 </div>
             </div>
@@ -180,14 +181,18 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6">
                 <div class="feature-img2">
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><img src="assets/images/feature/feature.png" alt="AI Agency & Technology HTML Template"></div>
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <img src="assets/images/feature/feature.png" alt="AI Agency & Technology HTML Template">
+                        </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <img src="assets/images/feature/feature2.png" alt="AI Agency & Technology HTML Template">
+                            <img src="assets/images/feature/feature.png" alt="AI Agency & Technology HTML Template">
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                             <img src="assets/images/feature/feature.png" alt="AI Agency & Technology HTML Template">
                         </div>
-                        <div class="tab-pane fade" id="cont" role="tabpanel" aria-labelledby="cont-tab"><img src="assets/images/feature/feature2.png" alt="AI Agency & Technology HTML Template"></div>
+                        <div class="tab-pane fade" id="cont" role="tabpanel" aria-labelledby="cont-tab">
+                            <img src="assets/images/feature/feature.png" alt="AI Agency & Technology HTML Template">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -198,9 +203,8 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-1.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Natural Language Processing (NLP)</h4>
-                                    <p>Understand, interpret, and generate human language
-                                        for enhanced communication.
+                                    <h4 class="title">WordPress Website Design</h4>
+                                    <p>Modern UI/UX focused websites designed for speed, conversions and brand identity.
                                     </p>
                                 </div>
                             </a>
@@ -209,9 +213,8 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-2.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Scalability & Flexibility</h4>
-                                    <p>Easily scale AI applications to handle
-                                        growing data and user demands.
+                                    <h4 class="title">Custom WordPress Development</h4>
+                                    <p>Custom themes, plugins and scalable solutions built specifically for your business.
                                     </p>
                                 </div>
                             </a>
@@ -220,9 +223,8 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-3.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Customizable Dashboards</h4>
-                                    <p>Interactive dashboards for real-time
-                                        insights and performance monitoring.
+                                    <h4 class="title">Speed & SEO Optimization</h4>
+                                    <p>Improve Core Web Vitals, Google rankings and loading speed for better conversions.
                                     </p>
                                 </div>
                             </a>
@@ -231,9 +233,8 @@ include __DIR__ . '/header.php';
                             <a href="#" class="nav-link" id="cont-tab" data-bs-toggle="tab" data-bs-target="#cont" role="tab" aria-controls="cont" aria-selected="false">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-4.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Robust Security</h4>
-                                    <p>Implement AI-based security measures to detect
-                                        and prevent threats in real time.
+                                    <h4 class="title">Maintenance & Support</h4>
+                                    <p>Regular updates, backups, malware protection and technical support.
                                     </p>
                                 </div>
                             </a>
