@@ -471,7 +471,7 @@ include __DIR__ . '/header.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item mb-0">
+                            <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingfour">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
                                         <span class="accordion-title">
