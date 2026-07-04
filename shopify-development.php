@@ -313,4 +313,103 @@ include __DIR__ . '/header.php';
 </section>
 <!-- End choose-us-sec4 -->
 
+
+<section class="shopify-testimonials-sec ibt-section-gap">
+    <div class="container">
+        <div class="shopify-testimonials-head">
+            <span class="shopify-testimonials-kicker">/ client reviews /</span>
+            <h2 class="shopify-testimonials-title">Loved by store owners.<br>Proven by <span>results.</span></h2>
+            <!-- <div class="shopify-rating-pill">
+                <i class="fa fa-star"></i>
+                <div>
+                    <strong>4.9/5</strong>
+                    <span>From 200+ Reviews</span>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="shopify-testimonials-grid">
+            <article class="shopify-testimonial-card">
+                <ul class="rating">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="shopify-quote">&#8220;</span>
+                <p>Amazing experience. They built our Shopify store exactly how we envisioned it. Sales increased within the first month.</p>
+                <div class="shopify-reviewer">
+                    <div class="shopify-avatar is-olive"><i class="fa fa-shopping-bag"></i></div>
+                    <div>
+                        <h4>Olivia Parker</h4>
+                        <span>Founder, Luxora Fashion</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="shopify-testimonial-card">
+                <ul class="rating">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="shopify-quote">&#8220;</span>
+                <p>Professional, responsive, and very skilled. The team optimized our store speed and the results were incredible.</p>
+                <div class="shopify-reviewer">
+                    <div class="shopify-avatar is-sand"><i class="fa fa-shopping-bag"></i></div>
+
+                    <div>
+                        <h4>James Carter</h4>
+                        <span>CEO, TechVibe Store</span>
+                    </div>
+                    <!-- <div class="shopify-badge"><i class="fa fa-desktop"></i></div> -->
+                </div>
+            </article>
+
+            <article class="shopify-testimonial-card">
+                <ul class="rating">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="shopify-quote">&#8220;</span>
+                <p>From design to launch, everything was seamless. Our store looks stunning and customers love the experience.</p>
+                <div class="shopify-reviewer">
+                    <div class="shopify-avatar is-green"><i class="fa fa-shopping-bag"></i></div>
+                    <div>
+                        <h4>Sophia Bennett</h4>
+                        <span>Owner, Glow Beauty</span>
+                    </div>
+                    <!-- <div class="shopify-badge"><i class="fa fa-leaf"></i></div> -->
+                </div>
+            </article>
+
+            <article class="shopify-testimonial-card">
+                <ul class="rating">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span class="shopify-quote">&#8220;</span>
+                <p>Their support even after delivery is outstanding. Highly recommend them to anyone looking to grow online.</p>
+                <div class="shopify-reviewer">
+                    <div class="shopify-avatar is-gold"><i class="fa fa-shopping-bag"></i></div>
+                    
+                    <div>
+                        <h4>Daniel Brooks</h4>
+                        <span>Founder, Nestify Home</span>
+                    </div>
+                    <!-- <div class="shopify-badge"><i class="fa fa-home"></i></div> -->
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
 <?php include __DIR__ . '/footer.php'; ?>
