@@ -63,8 +63,8 @@ include __DIR__ . '/header.php';
                         <img src="assets/images/new/shopify1.png" alt="Shopify store growth solutions">
                     </div>
                     <div class="ser-card14-card2" style="background: #fbfcf8; border-radius: 28px; box-shadow: 0 10px 30px rgba(28, 53, 34, 0.08);">
-                        <h4 class="title">Custom Shopify websites built <br>
-                            for speed, sales, and smooth <br>
+                        <h4 class="title">Custom Shopify websites built
+                            for speed, sales, and smooth
                             shopping experiences.
                         </h4>
                         <div class="ser-counter14">
@@ -238,6 +238,124 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<!-- choose-us-sec4 -->
+<section class="choose-us-sec4 ibt-section-gap">
+    <div class="container">
+        <div class="sec-title">
+            <span class="sub-title">how it works</span>
+            <h2 class="title animated-heading">How we build high-converting
+                Shopify stores
+            </h2>
+        </div>
+        <div class="swiper choose-slider4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">01</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Discovery & Strategy</h4>
+                        <p>We understand your business,
+                            products, audience, and goals to
+                            plan the right Shopify store
+                            experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">02</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Store Design & Setup</h4>
+                        <p>We create a clean storefront,
+                            organize collections, and set up
+                            pages for a smooth shopping
+                            journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">03</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Apps & Integrations</h4>
+                        <p>We connect payment gateways,
+                            shipping, WhatsApp, analytics,
+                            and essential Shopify apps for
+                            better performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">04</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Launch & Growth</h4>
+                        <p>fter testing and launch, we
+                            optimize speed, usability, and
+                            conversions to help your store
+                            grow.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">01</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Discovery & Strategy</h4>
+                        <p>We understand your business,
+                            products, audience, and goals to
+                            plan the right Shopify store
+                            experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">02</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Store Design & Setup</h4>
+                        <p>We create a clean storefront,
+                            organize collections, and set up
+                            pages for a smooth shopping
+                            journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">03</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Apps & Integrations</h4>
+                        <p>We connect payment gateways,
+                            shipping, WhatsApp, analytics,
+                            and essential Shopify apps for
+                            better performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block4">
+                        <span class="sub-title">04</span>
+                        <span class="step">[ step ]</span>
+                        <h4 class="title">Launch & Growth</h4>
+                        <p>fter testing and launch, we
+                            optimize speed, usability, and
+                            conversions to help your store
+                            grow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-btn2">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+<!-- End choose-us-sec4 -->
+
+
 <section class="choose-us-sec2 ibt-section-gap shopify-portfolio-sec">
     <div class="container">
         <div class="portfolio-head">
@@ -385,124 +503,6 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<!-- choose-us-sec4 -->
-<section class="choose-us-sec4 ibt-section-gap">
-    <div class="container">
-        <div class="sec-title">
-            <span class="sub-title">how it works</span>
-            <h2 class="title animated-heading">How we build high-converting
-                Shopify stores
-            </h2>
-        </div>
-        <div class="swiper choose-slider4">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">01</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Discovery & Strategy</h4>
-                        <p>We understand your business,
-                            products, audience, and goals to
-                            plan the right Shopify store
-                            experience.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">02</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Store Design & Setup</h4>
-                        <p>We create a clean storefront,
-                            organize collections, and set up
-                            pages for a smooth shopping
-                            journey.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">03</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Apps & Integrations</h4>
-                        <p>We connect payment gateways,
-                            shipping, WhatsApp, analytics,
-                            and essential Shopify apps for
-                            better performance.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">04</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Launch & Growth</h4>
-                        <p>fter testing and launch, we
-                            optimize speed, usability, and
-                            conversions to help your store
-                            grow.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">01</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Discovery & Strategy</h4>
-                        <p>We understand your business,
-                            products, audience, and goals to
-                            plan the right Shopify store
-                            experience.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">02</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Store Design & Setup</h4>
-                        <p>We create a clean storefront,
-                            organize collections, and set up
-                            pages for a smooth shopping
-                            journey.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">03</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Apps & Integrations</h4>
-                        <p>We connect payment gateways,
-                            shipping, WhatsApp, analytics,
-                            and essential Shopify apps for
-                            better performance.
-                        </p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="choose-block4">
-                        <span class="sub-title">04</span>
-                        <span class="step">[ step ]</span>
-                        <h4 class="title">Launch & Growth</h4>
-                        <p>fter testing and launch, we
-                            optimize speed, usability, and
-                            conversions to help your store
-                            grow.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-btn2">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
-</section>
-<!-- End choose-us-sec4 -->
-
-
 <section class="shopify-testimonials-sec ibt-section-gap">
     <div class="container">
         <div class="shopify-testimonials-head">
@@ -602,4 +602,3 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 <?php include __DIR__ . '/footer.php'; ?>
-
