@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle = 'Shopify Development | Technofra';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
@@ -238,77 +238,149 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="choose-us-sec2 ibt-section-gap">
+<section class="choose-us-sec2 ibt-section-gap shopify-portfolio-sec">
     <div class="container">
-        <div class="sec-title">
-            <span class="sub-title">how it works</span>
-            <h2 class="title animated-heading">Neural networks are a fundamental component
-                of Artificial Intelligence (AI) systems
-            </h2>
+        <div class="portfolio-head">
+            <div class="sec-title">
+                <span class="sub-title">/ our portfolio /</span>
+                <h2 class="title">Shopify stores we’ve built that <span>drive results.</span></h2>
+                <p>From elegant design to seamless functionality, we create Shopify stores that not only look great but also convert visitors into loyal customers.</p>
+                <span class="title-line"></span>
+            </div>
+            <div class="slider-btn2 portfolio-nav">
+                <div class="swiper-button-prev shopify-portfolio-prev"></div>
+                <div class="swiper-button-next shopify-portfolio-next"></div>
+            </div>
         </div>
-        <div class="swiper choose-slider2">
+        <div class="swiper shopify-portfolio-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="choose-block">
-                        <span class="sub-title">01</span>
-                        <h4 class="title">Neurons and Layers</h4>
-                        <p>A neural network consists of interconnected
-                            nodes called neurons. Neurons are organized
-                            into layers.
-                        </p>
-                    </div>
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser25-1.png" alt="Luxora Fashion Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Fashion &amp; Apparel</span>
+                            <h4 class="portfolio-card__title">Luxora Fashion</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
                 <div class="swiper-slide">
-                    <div class="choose-block">
-                        <span class="sub-title">02</span>
-                        <h4 class="title">Activation Function</h4>
-                        <p>Each neuron applies an activation function to the
-                            weighted sum of its inputs and produces an output
-                        </p>
-                    </div>
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser25-2.png" alt="Nestliv Home Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Home &amp; Living</span>
+                            <h4 class="portfolio-card__title">Nestliv Home</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
                 <div class="swiper-slide">
-                    <div class="choose-block">
-                        <span class="sub-title">03</span>
-                        <h4 class="title">Feedforward Process</h4>
-                        <p>The inputs are multiplied by their respective weights,
-                            summed up, and passed through the activation function.
-                        </p>
-                    </div>
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser24-1.png" alt="Glowe Beauty Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Beauty &amp; Cosmetics</span>
+                            <h4 class="portfolio-card__title">Glowe Beauty</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
                 <div class="swiper-slide">
-                    <div class="choose-block">
-                        <span class="sub-title">01</span>
-                        <h4 class="title">Neurons and Layers</h4>
-                        <p>A neural network consists of interconnected
-                            nodes called neurons. Neurons are organized
-                            into layers.
-                        </p>
-                    </div>
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser24-2.png" alt="TechVibe Store Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Electronics</span>
+                            <h4 class="portfolio-card__title">TechVibe Store</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
                 <div class="swiper-slide">
-                    <div class="choose-block">
-                        <span class="sub-title">02</span>
-                        <h4 class="title">Activation Function</h4>
-                        <p>Each neuron applies an activation function to the
-                            weighted sum of its inputs and produces an output
-                        </p>
-                    </div>
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser25-1.png" alt="Luxora Fashion Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Fashion &amp; Apparel</span>
+                            <h4 class="portfolio-card__title">Luxora Fashion</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
                 <div class="swiper-slide">
-                    <div class="choose-block">
-                        <span class="sub-title">03</span>
-                        <h4 class="title">Feedforward Process</h4>
-                        <p>The inputs are multiplied by their respective weights,
-                            summed up, and passed through the activation function.
-                        </p>
-                    </div>
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser25-2.png" alt="Nestliv Home Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Home &amp; Living</span>
+                            <h4 class="portfolio-card__title">Nestliv Home</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser24-1.png" alt="Glowe Beauty Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Beauty &amp; Cosmetics</span>
+                            <h4 class="portfolio-card__title">Glowe Beauty</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__media">
+                            <img src="assets/images/service/ser24-2.png" alt="TechVibe Store Shopify store">
+                        </div>
+                        <div class="portfolio-card__body">
+                            <span class="portfolio-card__tag">Electronics</span>
+                            <h4 class="portfolio-card__title">TechVibe Store</h4>
+                            <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
-        <div class="slider-btn2">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        <div class="portfolio-stats">
+            <div class="portfolio-stat">
+                <span class="portfolio-stat__icon"><i class="fa fa-shopping-bag"></i></span>
+                <div class="portfolio-stat__copy">
+                    <strong>150+</strong>
+                    <span>Stores Built</span>
+                </div>
+            </div>
+            <div class="portfolio-stat">
+                <span class="portfolio-stat__icon"><i class="fa fa-users"></i></span>
+                <div class="portfolio-stat__copy">
+                    <strong>100+</strong>
+                    <span>Happy Clients</span>
+                </div>
+            </div>
+            <div class="portfolio-stat">
+                <span class="portfolio-stat__icon"><i class="fa fa-chart-line"></i></span>
+                <div class="portfolio-stat__copy">
+                    <strong>99%</strong>
+                    <span>Client Satisfaction</span>
+                </div>
+            </div>
+            <div class="portfolio-stat">
+                <span class="portfolio-stat__icon"><i class="fa fa-award"></i></span>
+                <div class="portfolio-stat__copy">
+                    <strong>2X</strong>
+                    <span>Average Growth</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -530,3 +602,4 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 <?php include __DIR__ . '/footer.php'; ?>
+

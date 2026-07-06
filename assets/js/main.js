@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Template Name: Aiero | AI Agency & Technology HTML Template
  * Description: AI Agency, tech startup, chat bot, data science, digital agency, consulting, IT solutions, voiceover, video voiceover, robotics, science, industry, machine learning, neural network or other modern technology business template.
  * Version: 1.1.0
@@ -751,13 +751,13 @@ var ActiveMenu = {
       return found;
     }
 
-    // ✅ Desktop Menu
+    // âœ… Desktop Menu
     var topMenuItems = document.querySelectorAll(".menu-style1 > ul > li");
     for (var i = 0; i < topMenuItems.length; i++) {
       setActive(topMenuItems[i]);
     }
 
-    // ✅ Mobile / Side Menu
+    // âœ… Mobile / Side Menu
     var mobileMenuItems = document.querySelectorAll(".side-menu2 > ul > li");
     for (var j = 0; j < mobileMenuItems.length; j++) {
       setActive(mobileMenuItems[j]);
@@ -1181,6 +1181,29 @@ var SwiperSliders = {
           577: { slidesPerView: 1, spaceBetween: 30 },
           480: { slidesPerView: 1, spaceBetween: 30 },
           375: { slidesPerView: 1, spaceBetween: 30 },
+        },
+      });
+    }
+
+    // Shopify Portfolio Slider
+    if (document.querySelector(".shopify-portfolio-slider")) {
+      new Swiper(".shopify-portfolio-slider", {
+        loop: true,
+        autoplay: { delay: 3000, disableOnInteraction: false },
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        navigation: {
+          nextEl: ".shopify-portfolio-next",
+          prevEl: ".shopify-portfolio-prev",
+        },
+        breakpoints: {
+          1440: { spaceBetween: 24 },
+          1201: { spaceBetween: 24 },
+          1025: { spaceBetween: 24 },
+          769: { spaceBetween: 20 },
+          577: { spaceBetween: 18 },
+          480: { spaceBetween: 18 },
+          375: { spaceBetween: 18 },
         },
       });
     }
@@ -1699,20 +1722,20 @@ var ThemeToggle = {
       ".darkModeTrigger, .darkModeTriggerImg, .darkModeTriggerImg2"
     );
 
-    // ✅ Apply stored preferences on page load
+    // âœ… Apply stored preferences on page load
     if (localStorage.getItem("themeMode") === "active") {
       body.classList.add("active-body", "dark-mode");
       if (themeBtn) themeBtn.classList.add("active-btn");
     }
 
-    // ✅ Button toggle without refresh
+    // âœ… Button toggle without refresh
     if (themeBtn) {
       themeBtn.addEventListener("click", function () {
         toggleDarkMode();
       });
     }
 
-    // ✅ Image toggle without refresh
+    // âœ… Image toggle without refresh
     darkModeImages.forEach(function (el) {
       el.addEventListener("click", function (e) {
         e.preventDefault(); // prevent redirect
@@ -1720,7 +1743,7 @@ var ThemeToggle = {
       });
     });
 
-    // ✅ Toggle function WITHOUT refresh
+    // âœ… Toggle function WITHOUT refresh
     function toggleDarkMode() {
       if (!body.classList.contains("active-body")) {
         // Turn ON
@@ -2175,3 +2198,6 @@ document.addEventListener("DOMContentLoaded", function () {
  * END OF FILE
  * ============================
  */
+
+
+
