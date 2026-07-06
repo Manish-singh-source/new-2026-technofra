@@ -19,7 +19,7 @@ include __DIR__ . '/header.php';
 <section class="main-sec4">
     <!-- her-style9 -->
     <div class="hero-style9">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row end">
                 <div class="col-lg-8">
                     <div class="hero-title">
@@ -43,9 +43,12 @@ include __DIR__ . '/header.php';
         </div>
     </div>
     <!-- End hero-style9 -->
+</section>
+
+<section class="main-sec4">
     <!-- service-sec14 -->
     <div class="service-sec14">
-        <div class="container2">
+        <div class="container">
             <div class="outer-box2">
                 <div class="ser-info14">
                     <div class="ser-card14-card1" style="background: linear-gradient(rgb(16 32 22) 0%, rgb(16 31 22) 100%);  border-radius: 28px; color: #fff;">
