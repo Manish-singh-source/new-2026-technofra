@@ -556,7 +556,7 @@ input:-webkit-autofill:active {
 :root {
   --color-primary: #036;
   --color-secondary: #036;
-  --color-secondary-alt: #f57e7e;
+  --color-secondary-alt: #3b6b2c;
   --color-content-white: #ffffff;
   --color-content-black: #000000;
   --color-content-black2: #333333;
@@ -14786,7 +14786,7 @@ ul {
 
 .gradient-title9 {
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 100px;
   margin-bottom: 0;
   letter-spacing: -0.03em;
@@ -14832,10 +14832,58 @@ ul {
 .gradient-title9 span {
   background-color: transparent;
   background-image: -webkit-linear-gradient(348deg, #8258c8 0%, #2c84c8 100%);
-     background-image: linear-gradient(102deg, #95BF47 0%, #004C3F 100%);
+  /* background-image: linear-gradient(102deg, #95BF47 0%, #004C3F 100%); */
+  background-image: url(../images/hero/shopify-text-background.jpg);
   -webkit-background-clip: text;
   text-decoration: none;
   color: transparent;
+}
+
+
+.gradient-title10 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 100px;
+  margin-bottom: 0;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 1440px) {
+  .gradient-title10 {
+    font-size: 87px;
+    line-height: 89px;
+  }
+}
+@media (max-width: 1366px) {
+  .gradient-title10 {
+    font-size: 82px;
+    line-height: 79px;
+  }
+}
+@media (max-width: 1201px) {
+  .gradient-title10 {
+    font-size: 72px;
+    line-height: 75px;
+  }
+}
+@media (max-width: 1025px) {
+  .gradient-title10 {
+    font-size: 60px;
+    line-height: 69px;
+    padding-right: 44px;
+  }
+}
+@media (max-width: 769px) {
+  .gradient-title10 {
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .gradient-title10 {
+    font-size: 36px;
+    line-height: 46px;
+  }
 }
 
 .hero-content9 {
@@ -14860,9 +14908,10 @@ ul {
     max-width: 700px;
   }
 }
-.hero-content9 p {
-  font-weight: 500;
-  font-size: 16px;
+.hero-content9 p, 
+.hero-content9 a {
+  font-weight: 600;
+  font-size: 22px;
   line-height: 30px;
   margin-bottom: 29px;
 }
@@ -41923,6 +41972,17 @@ blockquote {
   box-shadow: 0 18px 30px rgba(75, 154, 63, 0.2);
 }
 .lanuguage-sec .shopify-solutions-btn:hover {
+  background: #3f8a34;
+}
+.client-trust-sec1 .shopify-solutions-btn {
+  padding: 16px 28px;
+  border-radius: 14px;
+  background: #4b9a3f;
+  color: #ffffff;
+  border: 0;
+  box-shadow: 0 18px 30px rgba(75, 154, 63, 0.2);
+}
+.client-trust-sec1 .shopify-solutions-btn:hover {
   background: #3f8a34;
 }
 @media (max-width: 1366px) {

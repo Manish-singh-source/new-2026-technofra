@@ -23,7 +23,8 @@ include __DIR__ . '/header.php';
             <div class="row end">
                 <div class="col-lg-8">
                     <div class="hero-title">
-                        <h1 class="gradient-title9">Shopify <span>Website</span> Development in Mumbai</h1>
+                        <h1 class="gradient-title9"><span>Shopify Website Development in Mumbai</span></h1>
+                        <p class="gradient-title10">Custom Shopify stores built to boost sales and grow your business.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -32,7 +33,7 @@ include __DIR__ . '/header.php';
                             eCommerce stores with expert
                             development services in Mumbai, India.
                         </p>
-                        <a class='ibt-btn ibt-btn-secondary' href='index9.html' target='_blank' title>
+                        <a class='ibt-btn ibt-btn-secondary' href='#' target='_blank' title>
                             <span>Get a Free Consultation</span>
                             <i class="icon-arrow-top"></i>
                         </a>
@@ -195,6 +196,122 @@ include __DIR__ . '/header.php';
 </section>
 <!-- End lanuguage-sec -->
 
+
+<section class="client-trust-sec1">
+    <div class="container">
+        <div class="client-trust-wrap1">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="./assets/images/new/shopify-service.png" alt="" srcset="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="client-trust-content1">
+                        <!-- <span class="sub-title">[ Our Clients ]</span> -->
+                        <h2 class="title">Build your Shopify store for faster online growth</h2>
+                        <p>Custom design, theme setup, app integration, and conversion-focused development for modern eCommerce brands.</p>
+                        <a class='ibt-btn ibt-btn-secondary shopify-solutions-btn' href='contact.php' title="Explore Shopify services">
+                            <span>Explore Shopify Services</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                        <div class="d-flex g-3 gap-2 accordion" style="flex-wrap: wrap; margin-top: 30px; font-size: 13px; font-weight: 500; color: #333;">
+                            <div class="p-3 bg-white rounded-3 shadow-lg">
+                                <i class="fa fa-shopping-bag"></i>
+                                <span>Theme Setup</span>
+                            </div>
+                            <div class="p-3 bg-white rounded-3 shadow-lg">
+                                <i class="fa fa-puzzle-piece"></i>
+                                <span>App Integration</span>
+                            </div>
+                            <div class="p-3 bg-white rounded-3 shadow-lg">
+                                <i class="fa fa-credit-card"></i>
+                                <span>Payment Gateway</span>
+                            </div>
+                            <div class="p-3 bg-white rounded-3 shadow-lg">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span>Store Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="choose-us-sec2 ibt-section-gap">
+    <div class="container">
+        <div class="sec-title">
+            <span class="sub-title">how it works</span>
+            <h2 class="title animated-heading">Neural networks are a fundamental component
+                of Artificial Intelligence (AI) systems
+            </h2>
+        </div>
+        <div class="swiper choose-slider2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="choose-block">
+                        <span class="sub-title">01</span>
+                        <h4 class="title">Neurons and Layers</h4>
+                        <p>A neural network consists of interconnected
+                            nodes called neurons. Neurons are organized
+                            into layers.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block">
+                        <span class="sub-title">02</span>
+                        <h4 class="title">Activation Function</h4>
+                        <p>Each neuron applies an activation function to the
+                            weighted sum of its inputs and produces an output
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block">
+                        <span class="sub-title">03</span>
+                        <h4 class="title">Feedforward Process</h4>
+                        <p>The inputs are multiplied by their respective weights,
+                            summed up, and passed through the activation function.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block">
+                        <span class="sub-title">01</span>
+                        <h4 class="title">Neurons and Layers</h4>
+                        <p>A neural network consists of interconnected
+                            nodes called neurons. Neurons are organized
+                            into layers.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block">
+                        <span class="sub-title">02</span>
+                        <h4 class="title">Activation Function</h4>
+                        <p>Each neuron applies an activation function to the
+                            weighted sum of its inputs and produces an output
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-block">
+                        <span class="sub-title">03</span>
+                        <h4 class="title">Feedforward Process</h4>
+                        <p>The inputs are multiplied by their respective weights,
+                            summed up, and passed through the activation function.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-btn2">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
 
 <!-- choose-us-sec4 -->
 <section class="choose-us-sec4 ibt-section-gap">
@@ -401,7 +518,7 @@ include __DIR__ . '/header.php';
                 <p>Their support even after delivery is outstanding. Highly recommend them to anyone looking to grow online.</p>
                 <div class="shopify-reviewer">
                     <div class="shopify-avatar is-gold"><i class="fa fa-shopping-bag"></i></div>
-                    
+
                     <div>
                         <h4>Daniel Brooks</h4>
                         <span>Founder, Nestify Home</span>
