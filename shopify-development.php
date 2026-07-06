@@ -375,11 +375,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser25-1.png" alt="Luxora Fashion Shopify store">
+                            <img src="assets/images/project/wotm.webp" alt="WOTM Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Fashion &amp; Apparel</span>
-                            <h4 class="portfolio-card__title">Luxora Fashion</h4>
+                            <span class="portfolio-card__tag">WOTM</span>
+                            <h4 class="portfolio-card__title">WOTM</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -387,11 +387,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser25-2.png" alt="Nestliv Home Shopify store">
+                            <img src="assets/images/project/ish.webp" alt="ISH Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Home &amp; Living</span>
-                            <h4 class="portfolio-card__title">Nestliv Home</h4>
+                            <span class="portfolio-card__tag">ISH</span>
+                            <h4 class="portfolio-card__title">ISH</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -399,11 +399,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser24-1.png" alt="Glowe Beauty Shopify store">
+                            <img src="assets/images/project/link-promtion.webp" alt="Link Promotions Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Beauty &amp; Cosmetics</span>
-                            <h4 class="portfolio-card__title">Glowe Beauty</h4>
+                            <span class="portfolio-card__tag">Link Promotions</span>
+                            <h4 class="portfolio-card__title">Link Promotions</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -411,11 +411,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser24-2.png" alt="TechVibe Store Shopify store">
+                            <img src="assets/images/project/aeritx.webp" alt="Aeritx Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Electronics</span>
-                            <h4 class="portfolio-card__title">TechVibe Store</h4>
+                            <span class="portfolio-card__tag">Aeritx</span>
+                            <h4 class="portfolio-card__title">Aeritx</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -423,11 +423,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser25-1.png" alt="Luxora Fashion Shopify store">
+                            <img src="assets/images/project/karantelecom.webp" alt="Karantelecom Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Fashion &amp; Apparel</span>
-                            <h4 class="portfolio-card__title">Luxora Fashion</h4>
+                            <span class="portfolio-card__tag">Karan Telecom</span>
+                            <h4 class="portfolio-card__title">Karan Telecom</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -435,11 +435,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser25-2.png" alt="Nestliv Home Shopify store">
+                            <img src="assets/images/project/transhubtech.webp" alt="Transhub Tech Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Home &amp; Living</span>
-                            <h4 class="portfolio-card__title">Nestliv Home</h4>
+                            <span class="portfolio-card__tag">Transhub Tech</span>
+                            <h4 class="portfolio-card__title">Transhub Tech</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -447,11 +447,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser24-1.png" alt="Glowe Beauty Shopify store">
+                            <img src="assets/images/project/urbon.webp" alt="Urbon Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Beauty &amp; Cosmetics</span>
-                            <h4 class="portfolio-card__title">Glowe Beauty</h4>
+                            <span class="portfolio-card__tag">Urbon</span>
+                            <h4 class="portfolio-card__title">Urbon</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -459,11 +459,11 @@ include __DIR__ . '/header.php';
                 <div class="swiper-slide">
                     <article class="portfolio-card">
                         <div class="portfolio-card__media">
-                            <img src="assets/images/service/ser24-2.png" alt="TechVibe Store Shopify store">
+                            <img src="assets/images/project/vp&son.webp" alt="VP & Son Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Electronics</span>
-                            <h4 class="portfolio-card__title">TechVibe Store</h4>
+                            <span class="portfolio-card__tag">VP & Son</span>
+                            <h4 class="portfolio-card__title">VP & Son</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
