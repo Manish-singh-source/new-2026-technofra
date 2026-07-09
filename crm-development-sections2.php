@@ -325,6 +325,203 @@ h3 {
     }
 }
 
+.tf-why{
+    padding:30px 0 96px;
+    background:
+    radial-gradient(circle at top center, rgba(97, 83, 255, .06), transparent 26%),
+    linear-gradient(180deg, #f3f5fb 0%, #f6f7fb 100%);
+}
+
+.tf-why__header{
+    max-width:980px;
+    margin:0 auto 30px;
+    text-align:center;
+}
+
+.tf-why__title{
+    margin:0;
+    color:#11164a;
+    font-size:clamp(2rem,3.9vw,4.15rem);
+    line-height:1.04;
+    letter-spacing:-.055em;
+    font-weight:800;
+}
+
+.tf-why__lead{
+    margin:14px auto 0;
+    max-width:64ch;
+    color:rgba(17,22,74,.7);
+    font-size:clamp(.98rem,1.08vw,1.14rem);
+    line-height:1.6;
+}
+
+.tf-why__grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0,1fr));
+    gap:24px;
+    align-items:start;
+}
+
+.tf-why-card{
+    position:relative;
+    overflow:hidden;
+    min-height:255px;
+    padding:24px 22px 22px;
+    border-radius:20px;
+    border:1px solid rgba(71,109,255,.22);
+    background:linear-gradient(180deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.82) 100%);
+    box-shadow:0 18px 36px rgba(17,22,74,.06);
+    backdrop-filter:blur(6px);
+    opacity:0;
+    transform:translateY(24px);
+    animation:tf-fade-up .72s ease forwards;
+}
+
+.tf-why-card::before{
+    content:"";
+    position:absolute;
+    inset:-18% -6% auto auto;
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(94, 104, 255, .16) 0%, rgba(94,104,255,0) 68%);
+    pointer-events:none;
+}
+
+.tf-why-card:nth-child(1){
+    min-height:286px;
+    margin-top:0;
+    background:linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.86) 100%);
+}
+
+.tf-why-card:nth-child(2){
+    min-height:232px;
+    margin-top:28px;
+    background:linear-gradient(180deg, rgba(244,246,250,.98) 0%, rgba(238,241,247,.94) 100%);
+}
+
+.tf-why-card:nth-child(3){
+    min-height:286px;
+    margin-top:0;
+}
+
+.tf-why-card:nth-child(4){
+    min-height:232px;
+    margin-top:28px;
+    background:linear-gradient(180deg, rgba(244,246,250,.98) 0%, rgba(238,241,247,.94) 100%);
+}
+
+.tf-why-card:nth-child(1){ animation-delay:.05s; }
+.tf-why-card:nth-child(2){ animation-delay:.15s; }
+.tf-why-card:nth-child(3){ animation-delay:.25s; }
+.tf-why-card:nth-child(4){ animation-delay:.35s; }
+
+.tf-why-card__top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:14px;
+}
+
+.tf-why-card__metric{
+    margin:0;
+    color:#11164a;
+    font-size:clamp(2rem,2.6vw,3rem);
+    line-height:1;
+    font-weight:800;
+    letter-spacing:-.05em;
+}
+
+.tf-why-card__dot{
+    width:16px;
+    height:16px;
+    flex:0 0 auto;
+    margin-top:10px;
+    border-radius:50%;
+    border:4px solid #5d52ff;
+    background:#fff;
+    box-shadow:0 6px 14px rgba(93,82,255,.18);
+}
+
+.tf-why-card__body{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    min-height:170px;
+    padding-top:18px;
+}
+
+.tf-why-card__text{
+    margin:0;
+    max-width:26ch;
+    color:rgba(17,22,74,.72);
+    font-size:clamp(.96rem,1vw,1.08rem);
+    line-height:1.55;
+}
+
+.tf-why-card:nth-child(1) .tf-why-card__text,
+.tf-why-card:nth-child(3) .tf-why-card__text{
+    max-width:24ch;
+}
+
+@keyframes tf-fade-up{
+    from{
+        opacity:0;
+        transform:translateY(24px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:1199px){
+    .tf-why__grid{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+    }
+
+    .tf-why-card{
+        margin-top:0 !important;
+        min-height:230px;
+    }
+}
+
+@media(max-width:768px){
+    .tf-why{
+        padding:24px 0 76px;
+    }
+
+    .tf-why__title{
+        font-size:clamp(1.8rem,8vw,3rem);
+    }
+
+    .tf-why__lead{
+        font-size:.96rem;
+    }
+
+    .tf-why__grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .tf-why-card{
+        min-height:210px;
+        padding:20px 18px;
+    }
+
+    .tf-why-card__body{
+        min-height:140px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce){
+    .tf-why-card{
+        animation:none;
+        opacity:1;
+        transform:none;
+    }
+}
+
 /* MAIN HERO SECTION */
 
 .crm-hero-bg{
@@ -605,6 +802,57 @@ h3 {
                     </div>
                 </article>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-why">
+    <div class="container">
+        <div class="tf-why__header">
+            <h2 class="tf-why__title">Why Businesses Choose CRM Development</h2>
+            <p class="tf-why__lead">Custom CRM solutions help businesses streamline sales, automate workflows, and manage customer relationships more efficiently.</p>
+        </div>
+
+        <div class="tf-why__grid">
+            <article class="tf-why-card">
+                <div class="tf-why-card__top">
+                    <h3 class="tf-why-card__metric">45%</h3>
+                    <span class="tf-why-card__dot" aria-hidden="true"></span>
+                </div>
+                <div class="tf-why-card__body">
+                    <p class="tf-why-card__text">Faster Lead Tracking and follow-up automation.</p>
+                </div>
+            </article>
+
+            <article class="tf-why-card">
+                <div class="tf-why-card__top">
+                    <h3 class="tf-why-card__metric">3x</h3>
+                    <span class="tf-why-card__dot" aria-hidden="true"></span>
+                </div>
+                <div class="tf-why-card__body">
+                    <p class="tf-why-card__text">Improved sales productivity with centralized CRM workflows.</p>
+                </div>
+            </article>
+
+            <article class="tf-why-card">
+                <div class="tf-why-card__top">
+                    <h3 class="tf-why-card__metric">100%</h3>
+                    <span class="tf-why-card__dot" aria-hidden="true"></span>
+                </div>
+                <div class="tf-why-card__body">
+                    <p class="tf-why-card__text">Centralized customer data for smarter decisions and better service.</p>
+                </div>
+            </article>
+
+            <article class="tf-why-card">
+                <div class="tf-why-card__top">
+                    <h3 class="tf-why-card__metric">24/7</h3>
+                    <span class="tf-why-card__dot" aria-hidden="true"></span>
+                </div>
+                <div class="tf-why-card__body">
+                    <p class="tf-why-card__text">Real-time dashboards, reports, and business insights anytime.</p>
+                </div>
+            </article>
         </div>
     </div>
 </section>
