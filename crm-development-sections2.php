@@ -118,6 +118,210 @@
     }
 }
 
+.tf-steps{
+    padding:40px 0 86px;
+    background:
+    radial-gradient(circle at top center, rgba(110, 94, 255, .06), transparent 28%),
+    linear-gradient(180deg, #f7f8ff 0%, #f3f5fb 100%);
+}
+
+.tf-steps__header{
+    max-width:1200px;
+    margin:0 auto 30px;
+    text-align:center;
+}
+
+.tf-steps__title{
+    margin:0;
+    color:#11164a;
+    font-size:50px;
+    line-height:1.05;
+    letter-spacing:-.055em;
+    font-weight:700;
+}
+
+.tf-steps__lead{
+    margin:14px auto 0;
+    max-width:66ch;
+    color:rgba(17,22,74,.7);
+    font-size:clamp(.98rem,1.1vw,1.16rem);
+    line-height:1.65;
+}
+
+.tf-steps__layout{
+    display:grid;
+    grid-template-columns:minmax(0,1.18fr) minmax(360px,.82fr);
+    gap:24px;
+    align-items:stretch;
+}
+
+.tf-steps__visual{
+    padding:18px;
+    border-radius:28px;
+    background:linear-gradient(180deg,#6f5cff 0%,#705df4 100%);
+    box-shadow:0 24px 50px rgba(77,72,196,.22);
+}
+
+.tf-steps__image-wrap{
+    height:100%;
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.55);
+}
+
+.tf-steps__image{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:fill;
+}
+
+.tf-steps__stack{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.tf-step-card{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:16px;
+    align-items:center;
+    padding:18px 20px;
+    min-height:132px;
+    border-radius:22px;
+    background:rgba(255,255,255,.88);
+    border:1px solid rgba(65,103,255,.16);
+    box-shadow:0 16px 36px rgba(15,23,42,.06);
+    backdrop-filter:blur(4px);
+}
+
+.tf-step-card__index{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    flex:0 0 auto;
+    color:#fff;
+    font-size:1.1rem;
+    font-weight:700;
+    background:linear-gradient(135deg, #5d52ff 0%, #2f5cff 100%);
+    box-shadow:0 12px 24px rgba(65,103,255,.22);
+}
+
+.tf-step-card__content{
+    min-width:0;
+}
+
+.tf-step-card__title{
+    margin:0;
+    color:#121845;
+    font-size:clamp(1rem,1.15vw,1.3rem);
+    line-height:1.2;
+    font-weight:700;
+}
+
+.tf-step-card__text{
+    margin:8px 0 0;
+    color:rgba(18,24,69,.72);
+    font-size:.96rem;
+    line-height:1.65;
+}
+
+.tf-step-card__icon{
+    width:76px;
+    height:76px;
+    display:grid;
+    place-items:center;
+    border-radius:20px;
+    color:#6b6bf7;
+    background:linear-gradient(180deg, rgba(109, 99, 255, .1) 0%, rgba(109, 99, 255, .04) 100%);
+    border:1px solid rgba(109, 99, 255, .16);
+    font-size:1.75rem;
+}
+
+.tf-step-card--compact{
+    min-height:106px;
+}
+
+.tf-step-card--compact .tf-step-card__icon{
+    width:64px;
+    height:64px;
+    font-size:1.45rem;
+}
+
+@media(max-width:991px){
+    .tf-steps{
+        padding:36px 0 78px;
+    }
+
+    .tf-steps__layout{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+    .tf-steps__header{
+        margin-bottom:22px;
+    }
+
+    .tf-steps__title{
+        font-size:clamp(1.8rem,8vw,3rem);
+    }
+
+    .tf-steps__lead{
+        font-size:.96rem;
+    }
+
+    .tf-steps__visual{
+        padding:14px;
+        border-radius:24px;
+    }
+
+    .tf-step-card{
+        grid-template-columns:auto 1fr;
+        align-items:flex-start;
+        padding:16px 16px;
+        gap:12px;
+    }
+
+    .tf-step-card__icon{
+        grid-column:1 / -1;
+        order:-1;
+        width:58px;
+        height:58px;
+        margin-bottom:4px;
+        font-size:1.35rem;
+    }
+}
+
+@media(max-width:420px){
+    .tf-steps{
+        padding:30px 0 68px;
+    }
+
+    .tf-step-card{
+        border-radius:18px;
+    }
+
+    .tf-step-card__index{
+        width:48px;
+        height:48px;
+        font-size:1rem;
+    }
+
+    .tf-step-card__title{
+        font-size:1rem;
+    }
+
+    .tf-step-card__text{
+        font-size:.9rem;
+        line-height:1.55;
+    }
+}
+
 /* MAIN HERO SECTION */
 
 .crm-hero-bg{
@@ -345,6 +549,58 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-steps">
+    <div class="container">
+        <div class="tf-steps__header">
+            <h2 class="tf-steps__title">Get Started with CRM Development in 3 Easy Steps</h2>
+            <p class="tf-steps__lead">Build a custom CRM solution with a streamlined process designed to improve workflows, customer management, and business growth.</p>
+        </div>
+
+        <div class="tf-steps__layout">
+            <div class="tf-steps__visual">
+                <div class="tf-steps__image-wrap">
+                    <img class="tf-steps__image" src="assets/images/CRM1.png" alt="CRM dashboard preview">
+                </div>
+            </div>
+
+            <div class="tf-steps__stack">
+                <article class="tf-step-card">
+                    <div class="tf-step-card__index">01</div>
+                    <div class="tf-step-card__content">
+                        <h3 class="tf-step-card__title">Discover &amp; Plan</h3>
+                        <p class="tf-step-card__text">We analyze your business needs, workflows, and customer journey to define the right CRM strategy.</p>
+                    </div>
+                    <div class="tf-step-card__icon" aria-hidden="true">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </article>
+
+                <article class="tf-step-card tf-step-card--compact">
+                    <div class="tf-step-card__index">02</div>
+                    <div class="tf-step-card__content">
+                        <h3 class="tf-step-card__title">Design &amp; Develop</h3>
+                        <p class="tf-step-card__text">Our team designs and develops a custom CRM with modules, automation, and integrations built for your process.</p>
+                    </div>
+                    <div class="tf-step-card__icon" aria-hidden="true">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </article>
+
+                <article class="tf-step-card tf-step-card--compact">
+                    <div class="tf-step-card__index">03</div>
+                    <div class="tf-step-card__content">
+                        <h3 class="tf-step-card__title">Test &amp; Launch</h3>
+                        <p class="tf-step-card__text">We test, optimize, and deploy your CRM system to ensure smooth performance and long-term scalability.</p>
+                    </div>
+                    <div class="tf-step-card__icon" aria-hidden="true">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
