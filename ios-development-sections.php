@@ -1,4 +1,4 @@
-﻿<style>
+<style>
   .tf-ios-page {
     background: var(--color-surface-white);
     color: var(--color-heading);
@@ -7,7 +7,7 @@
   .tf-ios-page .tf-section {
     position: relative;
     overflow: hidden;
-    padding: clamp(92px, 15vw, 150px) 0;
+    padding: clamp(50px, 15vw, 70px) 0;
   }
 
   .tf-ios-page .tf-section__kicker {
@@ -259,6 +259,7 @@
       radial-gradient(circle at 42% 92%, rgba(148, 88, 255, 0.14), transparent 18%),
       linear-gradient(180deg, #050608 0%, #090a0f 72%, #050608 100%);
     color: var(--color-content-white);
+    padding-top: 197px;
   }
 
   .tf-ios-page .tf-hero::before,
@@ -370,6 +371,7 @@
     font-size: 15px;
     font-weight: var(--f-semibold);
     letter-spacing: -0.01em;
+    line-height: 1.1;
     transition: var(--transition-1);
   }
 
@@ -816,6 +818,7 @@
   .tf-ios-page .tf-about {
     position: relative;
     overflow: hidden;
+    padding-top: 120px;
     background:
       radial-gradient(circle at 75% 30%, rgba(117, 90, 255, 0.12), transparent 18%),
       radial-gradient(circle at 88% 82%, rgba(63, 122, 255, 0.15), transparent 15%),
@@ -833,6 +836,19 @@
   .tf-ios-page .tf-about__visual {
     width: 100%;
     min-width: 0;
+  }
+
+  .tf-ios-page .tf-about__visual::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: min(92vw, 700px);
+    height: min(92vw, 310px);
+    transform: translateX(-50%);
+    border-radius: 999px 999px 0 0;
+    background: radial-gradient(circle at 100% 0%, rgba(9, 14, 28, 0.98) 0 100%, transparent 66%);
+    z-index: 0;
   }
 
   .tf-ios-page .tf-about__eyebrow {
@@ -948,75 +964,406 @@
   }
 
   .tf-ios-page .tf-about__image--back {
-    left: calc(50% - 390px);
-    transform: translateY(14px) rotate(-8deg);
+    left: calc(65% - 390px);
+    /* transform: translateY(14px) rotate(-8deg); */
     z-index: 1;
   }
 
   .tf-ios-page .tf-about__image--front {
-    left: calc(50% - 120px);
-    width: min(100%, 320px);
-    transform: translateY(0) rotate(6deg);
+    left: calc(55% - 120px);
+    width: min(100%, 280px);
+    /* transform: translateY(0) rotate(6deg); */
     z-index: 2;
   }
 
   .tf-ios-page .tf-vision-layout {
     position: relative;
     margin-top: 34px;
-    min-height: 460px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 720px) minmax(0, 1fr);
+    gap: clamp(18px, 2.8vw, 42px);
+    align-items: start;
   }
 
-  .tf-ios-page .tf-vision-arc {
+  .tf-ios-page .tf-vision-stage {
+    position: relative;
+    min-height: clamp(400px, 46vw, 700px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    isolation: isolate;
+  }
+
+  .tf-ios-page .tf-vision-stage::before {
+    content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
-    width: min(92vw, 700px);
-    height: min(92vw, 310px);
+    width: min(100%, 700px);
+    height: min(100%, 380px);
     transform: translateX(-50%);
     border-radius: 999px 999px 0 0;
-    background: radial-gradient(circle at 50% 0%, rgba(9, 14, 28, 0.98) 0 65%, transparent 66%);
+    background: radial-gradient(circle at 50% 10%, rgba(10, 16, 32, 0.98) 0%, rgba(10, 16, 32, 0.98) 58%, rgba(10, 16, 32, 0.92) 100%);
     z-index: 0;
   }
 
-  .tf-ios-page .tf-vision-device {
+  .tf-ios-page .tf-vision-stage::after {
+    content: "";
     position: absolute;
-    bottom: 28px;
-    z-index: 2;
-  }
-
-  .tf-ios-page .tf-vision-device--left {
-    left: 10%;
-    transform: rotate(-14deg);
-  }
-
-  .tf-ios-page .tf-vision-device--center {
     left: 50%;
+    bottom: 30px;
+    width: min(86vw, 620px);
+    height: min(86vw, 320px);
     transform: translateX(-50%);
-    width: min(100%, 272px);
-    z-index: 3;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(107, 92, 255, 0.26) 0%, rgba(64, 117, 255, 0.18) 28%, rgba(64, 117, 255, 0.06) 52%, transparent 72%);
+    filter: blur(10px);
+    z-index: 0;
+    pointer-events: none;
   }
 
-  .tf-ios-page .tf-vision-device--right {
-    right: 10%;
-    transform: rotate(12deg);
+  .tf-ios-page .tf-vision-stage img {
+    z-index: 999;
   }
 
   .tf-ios-page .tf-vision-side {
-    max-width: 280px;
+    position: relative;
+    z-index: 3;
+    max-width: 290px;
+    padding-top: 22px;
   }
 
-  .tf-ios-page .tf-vision-side h3 {
-    margin: 18px 0 10px;
-    font-size: 28px;
-    line-height: 1.05;
+  .tf-ios-page .tf-vision-side--left {
+    justify-self: end;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tf-ios-page .tf-vision-side--right {
+    justify-self: start;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tf-ios-page .tf-vision-side__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 50px;
+    height: 50px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+    font-size: 15px;
+    font-weight: var(--f-bold);
     color: var(--color-heading);
   }
 
+
+  .tf-ios-page .tf-vision-side__badge i {
+    position: absolute;
+    font-size: 22px;
+    color: var(--color-primary);
+  }
+
   .tf-ios-page .tf-vision-side p {
-    margin: 0;
+    margin: 18px 0 0;
     font-size: 15px;
-    line-height: 1.75;
+    line-height: 1.8;
     color: var(--color-content-black2);
+  }
+
+  .tf-ios-page .tf-vision-side__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: #0d111b;
+    color: var(--color-content-white);
+    font-size: 14px;
+    font-weight: var(--f-bold);
+    box-shadow: 0 14px 28px rgba(7, 10, 18, 0.35);
+  }
+
+  .tf-ios-page .tf-vision-side__chip--dark {
+    background: #080c14;
+  }
+
+  .tf-ios-page .tf-vision-phone {
+    position: absolute;
+    bottom: 0;
+    border-radius: 34px;
+    padding: 12px;
+    background: linear-gradient(180deg, #12151d 0%, #07080d 100%);
+    box-shadow: 0 34px 70px rgba(4, 7, 16, 0.56);
+    z-index: 2;
+  }
+
+  .tf-ios-page .tf-vision-phone::before {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    border-radius: 28px;
+    background: var(--tf-vision-phone-bg, linear-gradient(180deg, #eef2ff 0%, #d6e1ff 100%));
+    overflow: hidden;
+  }
+
+  .tf-ios-page .tf-vision-phone::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38%;
+    height: 22px;
+    border-radius: 0 0 16px 16px;
+    background: #07080d;
+    z-index: 2;
+  }
+
+  .tf-ios-page .tf-vision-phone__screen {
+    position: absolute;
+    inset: 21px 16px 14px;
+    z-index: 1;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--tf-vision-phone-screen, linear-gradient(180deg, #eef2ff 0%, #d6e1ff 100%));
+    display: grid;
+    gap: 10px;
+    padding: 16px 14px;
+  }
+
+  .tf-ios-page .tf-vision-phone__screen--center {
+    background: #090c14;
+    color: var(--color-content-white);
+    padding: 18px 14px 14px;
+  }
+
+  .tf-ios-page .tf-vision-phone__time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: var(--f-bold);
+  }
+
+  .tf-ios-page .tf-vision-phone__title {
+    margin: 6px 0 0;
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: var(--f-bold);
+    color: inherit;
+  }
+
+  .tf-ios-page .tf-vision-phone__wallet {
+    border-radius: 18px;
+    padding: 18px 16px;
+    background: linear-gradient(135deg, #1657ff 0%, #2d86ff 100%);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .tf-ios-page .tf-vision-phone__wallet-top,
+  .tf-ios-page .tf-vision-phone__wallet-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+    font-weight: var(--f-bold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .tf-ios-page .tf-vision-phone__wallet-amount {
+    margin: 10px 0 0;
+    font-size: clamp(1.75rem, 3.2vw, 2.35rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+  }
+
+  .tf-ios-page .tf-vision-phone__wallet-actions {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .tf-ios-page .tf-vision-phone__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: var(--f-bold);
+    background: rgba(255, 255, 255, 0.95);
+    color: #1842cb;
+  }
+
+  .tf-ios-page .tf-vision-phone__btn--dark {
+    background: #0d111b;
+    color: var(--color-content-white);
+  }
+
+  .tf-ios-page .tf-vision-phone__list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .tf-ios-page .tf-vision-phone__list h4 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: var(--f-bold);
+    color: inherit;
+  }
+
+  .tf-ios-page .tf-vision-phone__list-row {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr) auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .tf-ios-page .tf-vision-phone__avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #19c37d, #0ea5e9);
+  }
+
+  .tf-ios-page .tf-vision-phone__avatar--alt {
+    background: linear-gradient(135deg, #111827, #f59e0b);
+  }
+
+  .tf-ios-page .tf-vision-phone__label {
+    margin: 0;
+    font-size: 13px;
+    font-weight: var(--f-bold);
+  }
+
+  .tf-ios-page .tf-vision-phone__meta {
+    margin: 2px 0 0;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.68);
+  }
+
+  .tf-ios-page .tf-vision-phone__value {
+    font-size: 13px;
+    font-weight: var(--f-bold);
+  }
+
+  .tf-ios-page .tf-vision-phone__graph {
+    height: 82px;
+    margin-top: 4px;
+    border-radius: 16px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.02)),
+      linear-gradient(135deg, #ecf3ff 0%, #d8e6ff 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tf-ios-page .tf-vision-phone__graph::before {
+    content: "";
+    position: absolute;
+    inset: 12px 12px 18px;
+    background:
+      linear-gradient(90deg, rgba(17, 24, 39, 0.18) 0 10%, transparent 10% 26%, rgba(17, 24, 39, 0.35) 26% 40%, transparent 40% 56%, rgba(17, 24, 39, 0.58) 56% 70%, transparent 70% 84%, rgba(17, 24, 39, 0.28) 84% 100%);
+    clip-path: polygon(0% 88%, 14% 58%, 28% 72%, 42% 34%, 57% 56%, 72% 18%, 86% 42%, 100% 10%, 100% 100%, 0% 100%);
+    opacity: 0.95;
+  }
+
+  .tf-ios-page .tf-vision-phone__caption {
+    margin-top: auto;
+    font-size: 11px;
+    line-height: 1.45;
+    color: #0f172a;
+    font-weight: var(--f-bold);
+  }
+
+  .tf-ios-page .tf-vision-phone--left {
+    --tf-vision-phone-bg: linear-gradient(180deg, #f4f7ff 0%, #dde6ff 100%);
+    left: 50%;
+    width: min(100%, 246px);
+    transform: translateX(-92%) rotate(-12deg) translateY(10px);
+    z-index: 1;
+  }
+
+  .tf-ios-page .tf-vision-phone--left .tf-vision-phone__screen {
+    background: linear-gradient(180deg, #f7f9ff 0%, #dbe8ff 100%);
+    color: #0f172a;
+  }
+
+  .tf-ios-page .tf-vision-phone--left .tf-vision-phone__app {
+    width: 96px;
+    height: 96px;
+    margin: 34px auto 0;
+    border-radius: 28px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    box-shadow: 0 18px 32px rgba(37, 99, 235, 0.3);
+    position: relative;
+  }
+
+  .tf-ios-page .tf-vision-phone--left .tf-vision-phone__app::before {
+    content: "";
+    position: absolute;
+    inset: 24px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .tf-ios-page .tf-vision-phone--left .tf-vision-phone__app::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 12px;
+    height: 42px;
+    transform: translate(-50%, -50%) rotate(42deg);
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 0 0 6px transparent;
+  }
+
+  .tf-ios-page .tf-vision-phone--center {
+    --tf-vision-phone-bg: linear-gradient(180deg, #11131a 0%, #0b0d14 100%);
+    left: 50%;
+    width: min(100%, 302px);
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  .tf-ios-page .tf-vision-phone--right {
+    --tf-vision-phone-bg: linear-gradient(180deg, #f5f8ff 0%, #e6ecfb 100%);
+    left: 50%;
+    width: min(100%, 246px);
+    transform: translateX(2%) rotate(11deg) translateY(18px);
+    z-index: 2;
+  }
+
+  .tf-ios-page .tf-vision-phone--right .tf-vision-phone__screen {
+    background: linear-gradient(180deg, #fbfcff 0%, #edf1f7 100%);
+    color: #0f172a;
+  }
+
+  .tf-ios-page .tf-vision-phone--right .tf-vision-phone__graph {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.12)),
+      linear-gradient(135deg, #dce7ff 0%, #eef2ff 100%);
   }
 
   .tf-ios-page .tf-process {
@@ -1442,10 +1789,7 @@
   .tf-ios-page .tf-portfolio-card {
     position: relative;
     overflow: hidden;
-    border-radius: 30px;
     background: #fff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 20px 46px rgba(15, 23, 42, 0.08);
     transition: transform var(--transition-1), box-shadow var(--transition-1);
   }
 
@@ -1454,33 +1798,14 @@
     box-shadow: 0 28px 52px rgba(15, 23, 42, 0.12);
   }
 
-  .tf-ios-page .tf-portfolio-card__image {
-    position: relative;
-    aspect-ratio: 0.58;
-    background: linear-gradient(180deg, #f5f8ff 0%, #e2ebff 100%);
-    padding: 12px;
-  }
 
   .tf-ios-page .tf-portfolio-card__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 22px;
     display: block;
   }
 
-  .tf-ios-page .tf-portfolio-card__image::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 42%;
-    height: 18px;
-    border-radius: 0 0 14px 14px;
-    background: rgba(12, 15, 27, 0.9);
-    z-index: 2;
-  }
 
   .tf-ios-page .tf-portfolio-card__meta {
     display: flex;
@@ -1531,9 +1856,6 @@
       min-height: 600px;
     }
 
-    .tf-ios-page .tf-vision-layout {
-      min-height: 420px;
-    }
 
     .tf-ios-page .tf-hero__phone--left {
       left: calc(50% - 380px);
@@ -1655,25 +1977,38 @@
     }
 
     .tf-ios-page .tf-vision-layout {
-      min-height: 980px;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 18px;
+    }
+
+    .tf-ios-page .tf-vision-stage {
+      order: 1;
+      width: min(100%, 760px);
+      min-height: 720px;
     }
 
     .tf-ios-page .tf-vision-side {
-      max-width: 100%;
-    }
-
-    .tf-ios-page .tf-vision-side--left,
-    .tf-ios-page .tf-vision-side--right {
-      margin: 0 auto 18px;
+      max-width: 640px;
+      padding-top: 0;
       text-align: center;
+      justify-self: center;
     }
 
-    .tf-ios-page .tf-vision-device--left {
-      left: 6%;
+    .tf-ios-page .tf-vision-side--left {
+      order: 0;
     }
 
-    .tf-ios-page .tf-vision-device--right {
-      right: 6%;
+    .tf-ios-page .tf-vision-side--right {
+      order: 2;
+    }
+
+    .tf-ios-page .tf-vision-phone--left {
+      transform: translateX(-96%) rotate(-12deg) translateY(10px);
+    }
+
+    .tf-ios-page .tf-vision-phone--right {
+      transform: translateX(-2%) rotate(11deg) translateY(18px);
     }
 
     .tf-ios-page .tf-faq__title {
@@ -2089,8 +2424,8 @@
               </span>
             </span>
           </a>
-          <a class="tf-hero__button tf-hero__button--primary" href="contact.php">
-            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+          <a class="tf-hero__button tf-hero__button--ghost" href="contact.php">
+            <i class="fas fa-rocket" aria-hidden="true"></i>
             <span>Start Your Project</span>
           </a>
         </div>
@@ -2117,7 +2452,9 @@
               <span>iOS projects delivered</span>
             </div>
             <div class="tf-about__stat">
-              <strong>4.9★</strong>
+              <strong>4.9
+                <i class="fas fa-star" aria-hidden="true"></i>
+              </strong>
               <span>Client satisfaction</span>
             </div>
             <div class="tf-about__stat">
@@ -2144,47 +2481,35 @@
         <p class="tf-section__lead">We build high-performance, secure, and user-friendly iOS applications that empower businesses and deliver exceptional experiences.</p>
       </div>
       <div class="tf-vision-layout">
-        <div class="tf-vision-arc"></div>
-        <div class="tf-vision-device tf-vision-device--left d-none d-lg-block">
-          <div class="tf-phone" style="width:220px; --tf-phone-screen: linear-gradient(180deg, #fcfdff 0%, #eef2ff 100%);">
-            <div class="tf-phone__screen">
-              <div class="tf-phone__panel">
-                <h3 class="tf-phone__panel-title">Our Vision</h3>
-                <p class="tf-phone__panel-text">To be a leading app development partner delivering innovative digital experiences.</p>
-              </div>
-              <div class="tf-phone__chart"></div>
-            </div>
+        <div class="tf-vision-side tf-vision-side--left">
+          <div class="tf-vision-side__badge">
+            <i class="fas fa-eye" aria-hidden="true"></i>
+          </div>
+          <div class="tf-vision-side__content">
+            <span>Our Vision</span>
+            <p>To be a leading iOS app development company delivering innovative solutions that inspire and create value.</p>
+            <span class="tf-vision-side__chip">
+              <i class="fab fa-apple" aria-hidden="true"></i>
+              iOS Solutions
+            </span>
           </div>
         </div>
-        <div class="tf-vision-device tf-vision-device--center">
-          <div class="tf-phone" style="width: min(100%, 272px); --tf-phone-screen: linear-gradient(180deg, #eff4ff 0%, #d7e3ff 100%);">
-            <div class="tf-phone__screen">
-              <div class="tf-phone__panel tf-phone__panel--accent">
-                <h3 class="tf-phone__panel-title">Vision &amp; Mission in motion</h3>
-                <p class="tf-phone__panel-text">A clear product direction backed by measurable outcomes.</p>
-              </div>
-              <div class="tf-phone__metric">
-                <strong>Clarity first</strong>
-                <span>Strategy, design, and engineering working together.</span>
-              </div>
-              <div class="tf-phone__chart"></div>
-            </div>
-          </div>
+
+        <div class="tf-vision-stage" aria-hidden="true">
+          <img src="./assets/images/vision-mission/vision-mission.png" alt="">
         </div>
-        <div class="tf-vision-device tf-vision-device--right d-none d-lg-block">
-          <div class="tf-phone" style="width:220px; --tf-phone-screen: linear-gradient(180deg, #fcfdff 0%, #edf3ff 100%);">
-            <div class="tf-phone__screen">
-              <div class="tf-phone__panel">
-                <h3 class="tf-phone__panel-title">Our Mission</h3>
-                <p class="tf-phone__panel-text">To craft reliable, elegant products that create lasting business value.</p>
-              </div>
-              <div class="tf-phone__mini-grid">
-                <div class="tf-phone__mini-card tf-phone__mini-card--purple"></div>
-                <div class="tf-phone__mini-card tf-phone__mini-card--teal"></div>
-                <div class="tf-phone__mini-card"></div>
-                <div class="tf-phone__mini-card"></div>
-              </div>
-            </div>
+
+        <div class="tf-vision-side tf-vision-side--right">
+          <div class="tf-vision-side__badge">
+            <i class="fas fa-bullseye" aria-hidden="true"></i>
+          </div>
+          <div class="tf-vision-side__content">
+            <span>Our Mission</span>
+            <p>To craft intuitive, scalable, and reliable iOS apps that drive growth and exceed client expectations.</p>
+            <span class="tf-vision-side__chip tf-vision-side__chip--dark">
+              <i class="fab fa-apple" aria-hidden="true"></i>
+              iOS Excellence
+            </span>
           </div>
         </div>
       </div>
@@ -2417,6 +2742,8 @@
       </div>
     </div>
   </section>
+
+  
   <section class="tf-portfolio tf-section">
     <div class="container">
       <div class="text-center">
@@ -2434,55 +2761,35 @@
         <div class="col">
           <article class="tf-portfolio-card">
             <div class="tf-portfolio-card__image">
-              <img src="assets/images/project/project2-1.png" alt="Portfolio preview 1">
-            </div>
-            <div class="tf-portfolio-card__meta">
-              <h3>Health App UI</h3>
-              <span>iOS</span>
+              <img src="assets/images/project/app-project-1.png" alt="Portfolio preview 1">
             </div>
           </article>
         </div>
         <div class="col">
           <article class="tf-portfolio-card">
             <div class="tf-portfolio-card__image">
-              <img src="assets/images/project/project2-3.png" alt="Portfolio preview 2">
-            </div>
-            <div class="tf-portfolio-card__meta">
-              <h3>Service Dashboard</h3>
-              <span>App</span>
+              <img src="assets/images/project/app-project-2.png" alt="Portfolio preview 2">
             </div>
           </article>
         </div>
         <div class="col">
           <article class="tf-portfolio-card">
             <div class="tf-portfolio-card__image">
-              <img src="assets/images/project/project3-1.png" alt="Portfolio preview 3">
-            </div>
-            <div class="tf-portfolio-card__meta">
-              <h3>Commerce Experience</h3>
-              <span>UX</span>
+              <img src="assets/images/project/app-project-3.png" alt="Portfolio preview 3">
             </div>
           </article>
         </div>
         <div class="col">
           <article class="tf-portfolio-card">
             <div class="tf-portfolio-card__image">
-              <img src="assets/images/project/project3-2.png" alt="Portfolio preview 4">
-            </div>
-            <div class="tf-portfolio-card__meta">
-              <h3>Brand Launch</h3>
-              <span>Design</span>
+              <img src="assets/images/project/app-project-4.png" alt="Portfolio preview 4">
             </div>
           </article>
         </div>
         <div class="col">
           <article class="tf-portfolio-card">
             <div class="tf-portfolio-card__image">
-              <img src="assets/images/project/project12-1.png" alt="Portfolio preview 5">
-            </div>
-            <div class="tf-portfolio-card__meta">
-              <h3>Product Flow</h3>
-              <span>Mobile</span>
+              <img src="assets/images/project/app-project-5.png" alt="Portfolio preview 5">
             </div>
           </article>
         </div>
