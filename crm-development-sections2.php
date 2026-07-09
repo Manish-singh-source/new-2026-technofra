@@ -1,5 +1,8 @@
 <style>
 
+h3 {
+    letter-spacing: 0px !important;
+}
 .tf-crm-banner{
     width:100%;
     overflow:hidden;
