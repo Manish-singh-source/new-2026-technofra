@@ -16,7 +16,6 @@ include __DIR__ . '/header.php';
     .tech-stack-v2 {
         position: relative;
         overflow: hidden;
-        background: #f7f8fc;
     }
 
     .tech-stack-v2 .tech-stack-decor {
@@ -309,6 +308,104 @@ include __DIR__ . '/header.php';
             right: -110px;
         }
     }
+
+    .hero-contact10.hero-experience-card {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding: 24px 26px;
+        margin-top: 28px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #0f141e 0%, #0f141e 100%);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+        color: #e5e7eb;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-icon {
+        width: 92px;
+        height: 92px;
+        flex: 0 0 92px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid rgba(59, 91, 254, 0.55);
+        background: rgba(10, 16, 31, 0.9);
+        box-shadow: inset 0 0 0 1px rgba(59, 91, 254, 0.12);
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-icon i {
+        font-size: 2.4rem;
+        color: #3b5bfe;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-content {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-title {
+        margin: 0 0 12px;
+        color: #ffffff;
+        font-size: clamp(1.2rem, 2vw, 1.7rem);
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-line {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 12px;
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: #cbd5e1;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-list li {
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-list li+li::before {
+        content: "•";
+        position: absolute;
+        left: -13px;
+        color: #3b5bfe;
+    }
+
+    @media (max-width: 575.98px) {
+        .hero-contact10.hero-experience-card {
+            gap: 16px;
+            padding: 18px;
+        }
+
+        .hero-contact10.hero-experience-card .hero-experience-icon {
+            width: 72px;
+            height: 72px;
+            flex-basis: 72px;
+        }
+
+        .hero-contact10.hero-experience-card .hero-experience-icon i {
+            font-size: 2rem;
+        }
+
+        .hero-contact10.hero-experience-card .hero-experience-list {
+            gap: 8px 12px;
+            font-size: 0.92rem;
+        }
+    }
 </style>
 <style>
     :root {
@@ -530,14 +627,642 @@ include __DIR__ . '/header.php';
         color: transparent;
         -webkit-text-fill-color: transparent;
     }
+
+    .hero-contact10.hero-experience-card {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding: 24px 26px;
+        margin-top: 28px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #111826 0%, #0b1220 100%);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+        color: #e5e7eb;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-icon {
+        width: 92px;
+        height: 92px;
+        flex: 0 0 92px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid rgba(59, 91, 254, 0.55);
+        background: rgba(10, 16, 31, 0.9);
+        box-shadow: inset 0 0 0 1px rgba(59, 91, 254, 0.12);
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-icon i {
+        font-size: 2.4rem;
+        color: #3b5bfe;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-content {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-title {
+        margin: 0 0 12px;
+        color: #ffffff;
+        font-size: clamp(1.2rem, 2vw, 1.7rem);
+        font-weight: 700;
+        line-height: 1.15;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-line {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 12px;
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: #ffffff;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-list li {
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .hero-contact10.hero-experience-card .hero-experience-list li+li::before {
+        content: "•";
+        position: absolute;
+        left: -13px;
+        color: #3b5bfe;
+    }
+
+    @media (max-width: 575.98px) {
+        .hero-contact10.hero-experience-card {
+            gap: 16px;
+            padding: 18px;
+        }
+
+        .hero-contact10.hero-experience-card .hero-experience-icon {
+            width: 72px;
+            height: 72px;
+            flex-basis: 72px;
+        }
+
+        .hero-contact10.hero-experience-card .hero-experience-icon i {
+            font-size: 2rem;
+        }
+
+        .hero-contact10.hero-experience-card .hero-experience-list {
+            gap: 8px 12px;
+            font-size: 0.92rem;
+        }
+    }
+
+    ul li {
+        color: #fff;
+    }
+
+    :root {
+        --brand-blue: #2f5bff;
+        --text-dark: #0d1b3d;
+        --text-gray: #5b6472;
+        --border-color: #e8ebf2;
+        --card-bg: #ffffff;
+        --icon-bg: #eaf0ff;
+    }
+
+    /* ============ SECTION WRAPPER ============ */
+    .services-section {
+        background-color: #f7f8fb;
+        background-image: radial-gradient(rgba(13, 27, 61, 0.045) 1px,
+                transparent 1px);
+        background-size: 16px 16px;
+        padding: 72px 0;
+    }
+
+    /* ============ LEFT COLUMN ============ */
+    .services-eyebrow {
+        color: var(--brand-blue);
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+
+    .services-rule {
+        width: 46px;
+        height: 3px;
+        background: var(--brand-blue);
+        border: none;
+        border-radius: 2px;
+        margin: 0 0 22px 0;
+    }
+
+    .services-heading {
+        font-size: clamp(1.9rem, 2.4vw + 1rem, 2.5rem);
+        font-weight: 800;
+        color: var(--text-dark);
+        line-height: 1.2;
+        margin-bottom: 22px;
+    }
+
+    .services-desc {
+        color: var(--text-gray);
+        font-size: 1rem;
+        line-height: 1.7;
+        max-width: 460px;
+        margin-bottom: 28px;
+    }
+
+    .services-divider {
+        border: none;
+        border-top: 1px solid var(--border-color);
+        margin-bottom: 28px;
+    }
+
+    .feature-list {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    .feature-item {
+        text-align: center;
+        max-width: 90px;
+    }
+
+    .feature-icon-circle {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--icon-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 10px;
+        font-size: 1.25rem;
+        color: var(--brand-blue);
+    }
+
+    .feature-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+
+    /* ============ RIGHT COLUMN - SERVICE CARDS ============ */
+    .service-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 28px 26px;
+        height: 100%;
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        transition:
+            box-shadow 0.2s ease,
+            transform 0.2s ease,
+            border-color 0.2s ease;
+    }
+
+    .service-card:hover {
+        box-shadow: 0 10px 26px rgba(13, 27, 61, 0.08);
+        border-color: rgba(47, 91, 255, 0.25);
+        transform: translateY(-3px);
+    }
+
+    .service-number {
+        flex: 0 0 auto;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--icon-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: var(--brand-blue);
+    }
+
+    .service-title {
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: var(--text-dark);
+        margin-bottom: 8px;
+        letter-spacing: normal;
+    }
+
+    .service-text {
+        font-size: 0.92rem;
+        color: var(--text-gray);
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    /* ============ RESPONSIVE ============ */
+    @media (max-width: 991.98px) {
+        .services-section {
+            padding: 56px 0;
+        }
+
+        .services-desc {
+            max-width: 100%;
+        }
+
+        .feature-list {
+            justify-content: flex-start;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .service-card {
+            padding: 22px 20px;
+            gap: 14px;
+        }
+
+        .service-number {
+            width: 48px;
+            height: 48px;
+            font-size: 1rem;
+        }
+
+        .feature-list {
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .feature-item {
+            /* max-width: 72px; */
+            background: #ffffff;
+            outline: 1px solid #00000017;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+
+        .feature-icon-circle {
+            width: 48px;
+            height: 48px;
+            font-size: 1.05rem;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .services-heading {
+            font-size: 1.7rem;
+        }
+
+        .service-card {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+
+    :root {
+        --brand-blue: #2f6bff;
+        --text-dark: #12141a;
+        --text-gray: #5b6472;
+        --border-color: #e9ecf2;
+        --card-bg: #ffffff;
+    }
+
+    body {
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* ============ SECTION WRAPPER ============ */
+    .portfolio-section {
+        background-color: #fafbfc;
+        padding: 64px 0;
+    }
+
+    /* ============ HEADER ROW ============ */
+    .portfolio-eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--brand-blue);
+        font-weight: 700;
+        font-size: .8rem;
+        letter-spacing: .08em;
+        margin-bottom: 14px;
+    }
+
+    .portfolio-heading {
+        font-size: clamp(1.7rem, 2.2vw + 1rem, 2.2rem);
+        font-weight: 800;
+        color: var(--text-dark);
+        line-height: 1.25;
+        margin-bottom: 0;
+    }
+
+    .portfolio-desc {
+        color: var(--text-gray);
+        font-size: .98rem;
+        line-height: 1.7;
+        max-width: 460px;
+        margin-bottom: 0;
+    }
+
+    .portfolio-header-row {
+        margin-bottom: 32px;
+    }
+
+    @media (min-width: 992px) {
+        .portfolio-desc {
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+
+    /* ============ PORTFOLIO CAROUSEL ROWS ============ */
+    .portfolio-row {
+        position: relative;
+        width: 100%;
+        margin-bottom: 18px;
+        overflow: hidden;
+        -webkit-mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+    }
+
+    .portfolio-track {
+        display: flex;
+        gap: 18px;
+        width: max-content;
+    }
+
+    /* Row 1 : appears to scroll left -> right */
+    .portfolio-track.dir-ltr {
+        animation: scroll-ltr 42s linear infinite;
+    }
+
+    /* Row 2 : appears to scroll right -> left */
+    .portfolio-track.dir-rtl {
+        animation: scroll-rtl 42s linear infinite;
+    }
+
+    .portfolio-row:hover .portfolio-track {
+        animation-play-state: paused;
+    }
+
+    @keyframes scroll-ltr {
+        from {
+            transform: translateX(-50%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes scroll-rtl {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .portfolio-track {
+            animation: none !important;
+        }
+
+        .portfolio-row {
+            overflow-x: auto;
+        }
+    }
+
+    /* ============ PORTFOLIO CARD ============ */
+    .portfolio-card {
+        flex: 0 0 auto;
+        width: 260px;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+    }
+
+    .portfolio-card:hover {
+        box-shadow: 0 12px 26px rgba(18, 20, 26, 0.10);
+        border-color: rgba(47, 107, 255, 0.25);
+        transform: translateY(-3px);
+    }
+
+    .portfolio-thumb {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        background: #eef1f5;
+    }
+
+    .portfolio-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .portfolio-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+    }
+
+    .portfolio-icon {
+        flex: 0 0 auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--brand-blue);
+        font-size: .95rem;
+    }
+
+    .portfolio-text {
+        min-width: 0;
+    }
+
+    .portfolio-category {
+        font-size: .68rem;
+        color: var(--text-gray);
+        line-height: 1.2;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .portfolio-title {
+        font-size: .85rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        line-height: 1.25;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    @media (max-width: 767.98px) {
+        .portfolio-card {
+            width: 168px;
+        }
+
+        .portfolio-track {
+            gap: 14px;
+        }
+
+        .portfolio-info {
+            padding: 9px 10px;
+        }
+
+        .portfolio-title {
+            font-size: .82rem;
+        }
+
+        .portfolio-row {
+            -webkit-mask-image: linear-gradient(to right, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 28px, #000 calc(100% - 28px), transparent 100%);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .portfolio-card {
+            width: 148px;
+        }
+    }
+
+    /* Extra Responsive */
+    @media (max-width: 1024px) {
+        .hero-section10 .row .col-md-12 {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .hero-info10 {
+            text-align: center;
+        }
+
+        .services-section .row .col-md-12 {
+            width: 100%;
+        }
+
+        .services-section .row .service-content-sec {
+            text-align: center;
+        }
+
+        .services-section .row .service-content-sec .feature-list,
+        .services-section .row .service-content-sec .services-heading,
+        .services-section .row .service-content-sec .services-desc {
+            max-width: 100%;
+            justify-content: center;
+        }
+
+
+        .feature-sec14 .feature-img-sec {
+            display: none;
+        }
+
+        .feature-sec14 .feature-content-sec {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .faq-img-sec {
+            display: none;
+        }
+
+        .faq-sec2::before {
+            background: none;
+        }
+    }
+
+    @media (max-width: 820px) {
+        .about-counter6 {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 1rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .hero-img10 {
+            margin-left: 0px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-img10 {
+            display: none;
+        }
+
+        .about-us-sec6 .flex-column-reverse-custom {
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: reverse !important;
+            -webkit-flex-direction: column-reverse !important;
+            -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+        }
+
+        .about-counter6 {
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            /* gap: 1rem; */
+        }
+
+        .about-us-sec6.ibt-section-gap {
+            padding-bottom: 0px;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .about-counter6 {
+            margin: 40px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .about-counter6 .counter-box15 .counter-number,
+        .about-counter6 .counter-box15 .counter-text {
+            font-size: 40px;
+        }
+    }
 </style>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+/>
 
 
 <!-- Banner Section-->
 <section class="hero-section10">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-sm-12">
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-12 col-sm-12">
                 <div class="hero-content10">
                     <div class="hero-info10">
                         <h1 class="title">Web Design & Development
@@ -554,13 +1279,22 @@ include __DIR__ . '/header.php';
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
-                    <div class="hero-contact10">
-                        <span class="sub-title">Call us today:</span>
-                        <a href="tel:8003508431" title="">+1 800 684 32 59</a>
+                    <div class="hero-contact10 hero-experience-card">
+                        <div class="hero-experience-icon"><i class="fas fa-gem"></i></div>
+                        <div class="hero-experience-content">
+                            <h3 class="hero-experience-title">14+ Years Experience</h3>
+                            <div class="hero-experience-line"></div>
+                            <ul class="hero-experience-list">
+                                <li>Custom Websites</li>
+                                <li>E-Commerce</li>
+                                <li>Corporate Sites</li>
+                                <li>Landing Pages</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
+            <div class="col-lg-8 col-md-12 col-sm-12">
                 <div class="hero-img10">
                     <img src="assets/images/about/banner2.png" alt="AI Agency & Technology HTML Template">
                 </div>
@@ -574,7 +1308,7 @@ include __DIR__ . '/header.php';
     <!-- about-us-sec6 -->
     <div class="about-us-sec6 ibt-section-gap">
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row align-items-end g-3 flex-column-reverse-custom">
                 <div class="col-xl-4 col-lg-5">
                     <div class="about-counter6">
                         <div class="about-counter-content6">
@@ -620,17 +1354,123 @@ include __DIR__ . '/header.php';
 </section>
 
 <!-- Services Section -->
+<section class="services-section">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-lg-4 col-md-12 service-content-sec">
+                <div class="services-eyebrow">Our Services</div>
+                <hr class="services-rule">
+                <h2 class="services-heading">Our Web Design &amp; Development Services</h2>
+                <p class="services-desc">
+                    We create modern, responsive, and high-performance websites tailored to your business goals.
+                    From beautiful designs to powerful functionality — we build digital experiences that engage
+                    users and drive growth.
+                </p>
+                <hr class="services-divider">
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon-circle"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="feature-label">Responsive</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-circle"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="feature-label">SEO Friendly</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-circle"><i class="fa-solid fa-gauge-high"></i></div>
+                        <div class="feature-label">Fast Loading</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon-circle"><i class="fa-solid fa-chart-column"></i></div>
+                        <div class="feature-label">Scalable</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-8 col-md-12">
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="service-card">
+                            <div class="service-number">01</div>
+                            <div>
+                                <h3 class="service-title">Custom Website Design</h3>
+                                <p class="service-text">Unique brand-focused website layouts crafted for strong visual identity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="service-card">
+                            <div class="service-number">02</div>
+                            <div>
+                                <h3 class="service-title">Front-End Development</h3>
+                                <p class="service-text">Clean, interactive interfaces built with modern responsive coding.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="service-card">
+                            <div class="service-number">03</div>
+                            <div>
+                                <h3 class="service-title">Back-End Development</h3>
+                                <p class="service-text">Secure, scalable functionality, admin panels, and dynamic features.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="service-card">
+                            <div class="service-number">04</div>
+                            <div>
+                                <h3 class="service-title">E-Commerce Development</h3>
+                                <p class="service-text">Online stores with product management, secure checkout, and smooth shopping flow.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="service-card">
+                            <div class="service-number">05</div>
+                            <div>
+                                <h3 class="service-title">Responsive Website Design</h3>
+                                <p class="service-text">Seamless user experience across desktop, tablet, and mobile devices.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="service-card">
+                            <div class="service-number">06</div>
+                            <div>
+                                <h3 class="service-title">Website Maintenance &amp; Optimization</h3>
+                                <p class="service-text">Ongoing updates, speed improvements, SEO basics, and technical support.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <!-- Features Section -->
 <section class="feature-sec14">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 feature-img-sec">
                 <div class="feature-img14">
                     <img src="assets/images/about/about2.png" alt="AI Agency & Technology HTML Template">
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 feature-content-sec">
                 <div class="feature-content12">
                     <div class="sec-title white">
                         <span class="sub-title">features</span>
@@ -747,14 +1587,14 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="tech-stack-panel">
             <div class="row align-items-end">
-                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                     <div class="sec-title mb-0">
                         <span class="sub-title tech-stack-kicker">our technology</span>
                         <h2 class="title animated-heading tech-stack-title">Our Technology Stack that powers <span class="highlight">websites, stores & apps</span>.</h2>
                         <p class="tech-stack-desc">We support proven technologies and integrations to deliver fast, accurate, and user-friendly experiences for every market.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="tech-stack-stat">
                         <div class="counter-box5 tech-stack-counter">
                             <span class="counter-number" data-target="30">0</span>
@@ -765,31 +1605,31 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
             <div class="row g-3 tech-stack-grid">
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-html5"><i class="fab fa-html5"></i></span><span>HTML5</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-css3"><i class="fab fa-css3-alt"></i></span><span>CSS3</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-js"><i class="fab fa-js-square"></i></span><span>JavaScript</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-react"><i class="fab fa-react"></i></span><span>React</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-bootstrap"><i class="fab fa-bootstrap"></i></span><span>Bootstrap</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-php"><i class="fab fa-php"></i></span><span>PHP</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-laravel"><i class="fab fa-laravel"></i></span><span>Laravel</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-node"><i class="fab fa-node-js"></i></span><span>Node.js</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-python"><i class="fab fa-python"></i></span><span>Python</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-flutter"><i class="fas fa-mobile-alt"></i></span><span>Flutter</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-kotlin"><i class="fab fa-android"></i></span><span>Kotlin</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-swift"><i class="fab fa-apple"></i></span><span>Swift</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mysql"><i class="fas fa-database"></i></span><span>MySQL</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mongo"><i class="fas fa-leaf"></i></span><span>MongoDB</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-postgres"><i class="fas fa-elephant"></i></span><span>PostgreSQL</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-firebase"><i class="fas fa-fire"></i></span><span>Firebase</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-wordpress"><i class="fab fa-wordpress"></i></span><span>WordPress</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-shopify"><i class="fab fa-shopify"></i></span><span>Shopify</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-woocommerce"><i class="fas fa-shopping-bag"></i></span><span>WooCommerce</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-github"><i class="fab fa-github"></i></span><span>GitHub</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-figma"><i class="fab fa-figma"></i></span><span>Figma</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-aws"><i class="fab fa-aws"></i></span><span>AWS</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-google"><i class="fab fa-google"></i></span><span>Google Cloud</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-docker"><i class="fas fa-docker"></i></span><span>Docker</span></a></div>
-                <div class="col-lg-2 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-cpanel"><i class="fas fa-server"></i></span><span>cPanel</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-html5"><i class="fab fa-html5"></i></span><span>HTML5</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-css3"><i class="fab fa-css3-alt"></i></span><span>CSS3</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-js"><i class="fab fa-js-square"></i></span><span>JavaScript</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-react"><i class="fab fa-react"></i></span><span>React</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-bootstrap"><i class="fab fa-bootstrap"></i></span><span>Bootstrap</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-php"><i class="fab fa-php"></i></span><span>PHP</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-laravel"><i class="fab fa-laravel"></i></span><span>Laravel</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-node"><i class="fab fa-node-js"></i></span><span>Node.js</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-python"><i class="fab fa-python"></i></span><span>Python</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-flutter"><i class="fas fa-mobile-alt"></i></span><span>Flutter</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-kotlin"><i class="fab fa-android"></i></span><span>Kotlin</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-swift"><i class="fab fa-apple"></i></span><span>Swift</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mysql"><i class="fas fa-database"></i></span><span>MySQL</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mongo"><i class="fas fa-leaf"></i></span><span>MongoDB</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-postgres"><i class="fa-brands fa-postgresql"></i></span><span>PostgreSQL</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-firebase"><i class="fas fa-fire"></i></span><span>Firebase</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-wordpress"><i class="fab fa-wordpress"></i></span><span>WordPress</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-shopify"><i class="fab fa-shopify"></i></span><span>Shopify</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-woocommerce"><i class="fas fa-shopping-bag"></i></span><span>WooCommerce</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-github"><i class="fab fa-github"></i></span><span>GitHub</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-figma"><i class="fab fa-figma"></i></span><span>Figma</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-aws"><i class="fab fa-aws"></i></span><span>AWS</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-google"><i class="fab fa-google"></i></span><span>Google Cloud</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-docker"><i class="fa-brands fa-docker"></i></span><span>Docker</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-cpanel"><i class="fas fa-server"></i></span><span>cPanel</span></a></div>
             </div>
             <a class="tech-stack-cta" href="index9.html" title>
                 <span>Explore Technology Stack</span>
@@ -800,12 +1640,170 @@ include __DIR__ . '/header.php';
 </section>
 
 <!-- Portfolio Section -->
+<section class="portfolio-section">
+    <div class="container-fluid px-4 px-lg-5">
+
+        <!-- HEADER -->
+        <div class="row align-items-end portfolio-header-row">
+            <div class="col-lg-6">
+                <div class="portfolio-eyebrow">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <span>[ OUR PORTFOLIO ]</span>
+                </div>
+                <h2 class="portfolio-heading">Modern &amp; Clean Digital Design Showcase</h2>
+            </div>
+            <div class="col-lg-6 mt-3 mt-lg-0">
+                <p class="portfolio-desc">
+                    We craft scalable websites, intuitive UI/UX experiences, SaaS dashboards, mobile apps, and
+                    e-commerce interfaces — built with clean design, modern technology, and a focus on performance
+                    and results.
+                </p>
+            </div>
+        </div>
+
+        <!-- ROW 1 : scrolls left -> right -->
+        <div class="portfolio-row">
+            <div class="portfolio-track dir-ltr" id="trackRow1">
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Analytics Dashboard"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">SaaS Dashboard</div>
+                            <div class="portfolio-title">Analytics Dashboard</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Community Platform"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Mobile App</div>
+                            <div class="portfolio-title">Community Platform</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Real Estate Platform"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-globe"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Website</div>
+                            <div class="portfolio-title">Real Estate Platform</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Fintech Application"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Mobile App</div>
+                            <div class="portfolio-title">Fintech Application</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Organic Tea Store"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">E-Commerce Website</div>
+                            <div class="portfolio-title">Organic Tea Store</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ROW 2 : scrolls right -> left -->
+        <div class="portfolio-row">
+            <div class="portfolio-track dir-rtl" id="trackRow2">
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Fashion Store"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">E-Commerce App</div>
+                            <div class="portfolio-title">Fashion Store</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Car Rental Platform"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-car"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">SaaS Dashboard</div>
+                            <div class="portfolio-title">Car Rental Platform</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Project Management Tool"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Web Application</div>
+                            <div class="portfolio-title">Project Management Tool</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Telemedicine Platform"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Healthcare Website</div>
+                            <div class="portfolio-title">Telemedicine Platform</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Drone Delivery Service"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-signs-post"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Landing Page</div>
+                            <div class="portfolio-title">Drone Delivery Service</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Property Finder"></div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-icon"><i class="fa-solid fa-house"></i></div>
+                        <div class="portfolio-text">
+                            <div class="portfolio-category">Web Application</div>
+                            <div class="portfolio-title">Property Finder</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!-- FAQ Section -->
 <section class="faq-sec2 ibt-section-gap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 faq-img-sec">
                 <div class="faq-img2">
                     <img src="assets/images/layers/layer2.png" alt="AI Agency & Technology HTML Template">
                 </div>
@@ -898,6 +1896,14 @@ include __DIR__ . '/header.php';
     // Duplicate the logo set once so the CSS translateX(-50%) loop is seamless
     const track = document.getElementById('logoTrack');
     track.innerHTML += track.innerHTML;
+</script>
+
+<script>
+    // Duplicate each track's cards once so the 50% translateX loop is seamless
+    ['trackRow1', 'trackRow2'].forEach(function(id) {
+        var track = document.getElementById(id);
+        track.innerHTML += track.innerHTML;
+    });
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
