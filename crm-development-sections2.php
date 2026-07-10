@@ -333,7 +333,7 @@ h3 {
 }
 
 .tf-why__header{
-    max-width:980px;
+    max-width:1200px;
     margin:0 auto 30px;
     text-align:center;
 }
@@ -341,7 +341,7 @@ h3 {
 .tf-why__title{
     margin:0;
     color:#11164a;
-    font-size:clamp(2rem,3.9vw,4.15rem);
+    font-size:55px;
     line-height:1.04;
     letter-spacing:-.055em;
     font-weight:800;
@@ -702,7 +702,7 @@ h3 {
 .tf-crm-split__title{
     margin:0;
     color:#02084d;
-    font-size:clamp(1.5rem,2.4vw,2.15rem);
+    font-size:30px;
     line-height:1.12;
     font-weight:900;
     letter-spacing:-.03em;
@@ -711,7 +711,7 @@ h3 {
 .tf-crm-split__lead{
     margin:12px 0 0;
     color:rgba(2,8,77,.65);
-    font-size:clamp(.94rem,1vw,1.05rem);
+    font-size:20px;
     line-height:1.6;
 }
 
@@ -893,9 +893,9 @@ h3 {
     text-decoration:none;
 }
 
-/* ---- Right visual: image ---- */
+/* ---- Right visual: built feature list card ---- */
 
-.tf-crm-split__image-wrap{
+.tf-crm-list{
     flex:1;
     display:flex;
     padding:20px;
@@ -905,25 +905,93 @@ h3 {
     box-shadow:0 24px 50px rgba(17,22,74,.07);
 }
 
-.tf-crm-split__image-frame{
+.tf-crm-list__card{
     flex:1;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
+    flex-direction:column;
     border-radius:20px;
     background:#fff;
     border:1px solid rgba(18,48,168,.10);
     box-shadow:0 14px 30px rgba(15,23,42,.05);
-    padding:10px;
+    overflow:hidden;
 }
 
-.tf-crm-split__image{
-    display:block;
-    width:100%;
-    height:auto;
-    max-width:100%;
-    border-radius:14px;
+.tf-crm-list__row{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;
+    gap:18px;
+    padding:22px 24px;
+    border-bottom:1px solid rgba(18,48,168,.08);
+}
+
+.tf-crm-list__icon{
+    width:64px;
+    height:64px;
+    flex:0 0 auto;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    color:#5d52ff;
+    font-size:1.5rem;
+    background:linear-gradient(180deg, rgba(93,82,255,.14) 0%, rgba(93,82,255,.06) 100%);
+}
+
+.tf-crm-list__content{
+    min-width:0;
+}
+
+.tf-crm-list__title{
+    margin:0;
+    color:#11164a;
+    font-size:25px;
+    font-weight:600;
+    line-height:1.25;
+}
+
+.tf-crm-list__text{
+    margin:8px 0 0;
+    color:rgba(17,22,74,.65);
+    font-size:15px;
+    line-height:1.20;
+}
+
+.tf-crm-list__check{
+    width:38px;
+    height:38px;
+    flex:0 0 auto;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    color:#5d52ff;
+    font-size:.9rem;
+    background:rgba(93,82,255,.14);
+}
+
+.tf-crm-list__foot{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:20px 24px;
+    background:#fbfbff;
+}
+
+.tf-crm-list__foot-icon{
+    width:34px;
+    height:34px;
+    flex:0 0 auto;
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+    color:#5d52ff;
+    font-size:.95rem;
+    background:rgba(93,82,255,.14);
+}
+
+.tf-crm-list__foot-text{
+    color:#11164a;
+    font-size:.95rem;
+    font-weight:700;
 }
 
 @media(max-width:1199px){
@@ -949,7 +1017,7 @@ h3 {
     }
 
     .tf-crm-dash,
-    .tf-crm-split__image-wrap{
+    .tf-crm-list{
         padding:14px;
         border-radius:20px;
     }
@@ -978,6 +1046,34 @@ h3 {
         flex-direction:column;
         align-items:flex-start;
         gap:8px;
+    }
+
+    .tf-crm-list__row{
+        grid-template-columns:auto 1fr;
+        padding:16px 16px;
+        gap:12px;
+    }
+
+    .tf-crm-list__icon{
+        width:50px;
+        height:50px;
+        font-size:1.2rem;
+    }
+
+    .tf-crm-list__check{
+        margin-top:4px;
+    }
+
+    .tf-crm-list__title{
+        font-size:1rem;
+    }
+
+    .tf-crm-list__text{
+        font-size:.88rem;
+    }
+
+    .tf-crm-list__foot{
+        padding:16px;
     }
 }
 
@@ -1275,9 +1371,41 @@ h3 {
                     <p class="tf-crm-split__lead">Streamline follow-ups, assign tasks, and improve customer management.</p>
                 </div>
 
-                <div class="tf-crm-split__image-wrap">
-                    <div class="tf-crm-split__image-frame">
-                        <img class="tf-crm-split__image" src="assets/images/crm2.png" alt="Automate CRM Workflows - Lead Tracking, Sales Pipeline Visibility, Customer Communication">
+                <div class="tf-crm-list">
+                    <div class="tf-crm-list__card">
+
+                        <div class="tf-crm-list__row">
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-bullseye"></i></span>
+                            <div class="tf-crm-list__content">
+                                <h3 class="tf-crm-list__title">Lead Tracking</h3>
+                                <p class="tf-crm-list__text">Capture, qualify, and track leads through every stage.</p>
+                            </div>
+                            <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
+                        </div>
+
+                        <div class="tf-crm-list__row">
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-chart-bar"></i></span>
+                            <div class="tf-crm-list__content">
+                                <h3 class="tf-crm-list__title">Sales Pipeline Visibility</h3>
+                                <p class="tf-crm-list__text">Monitor deals and pipelines to improve forecasting and close rates.</p>
+                            </div>
+                            <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
+                        </div>
+
+                        <div class="tf-crm-list__row">
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-comment-dots"></i></span>
+                            <div class="tf-crm-list__content">
+                                <h3 class="tf-crm-list__title">Customer Communication</h3>
+                                <p class="tf-crm-list__text">Centralize messages, emails, and notes for stronger relationships.</p>
+                            </div>
+                            <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
+                        </div>
+
+                        <div class="tf-crm-list__foot">
+                            <span class="tf-crm-list__foot-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+                            <span class="tf-crm-list__foot-text">Secure. Scalable. Built for Growth.</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
