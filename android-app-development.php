@@ -105,6 +105,7 @@ include __DIR__ . '/header.php';
         position: relative;
         z-index: 1;
         text-align: center;
+        margin: auto;
     }
 
     .hero-badge {
@@ -419,7 +420,7 @@ include __DIR__ . '/header.php';
 
     .fh-section {
         position: relative;
-        background: #ffffff;
+        /* background: #ffffff; */
         overflow: hidden;
     }
 
