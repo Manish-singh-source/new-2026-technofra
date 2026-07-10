@@ -773,45 +773,50 @@ h3 {
 .tf-crm-dash__stats{
     display:grid;
     grid-template-columns:repeat(2, minmax(0,1fr));
-    gap:14px;
+    gap:16px;
 }
 
 .tf-crm-stat{
-    padding:16px;
-    border-radius:16px;
-    background:#f7f8fc;
-    border:1px solid rgba(18,48,168,.06);
+    padding:18px;
+    border-radius:18px;
+    background:#f7f6fd;
+    border:1px solid rgba(18,48,168,.05);
     display:flex;
     flex-direction:column;
-    gap:8px;
+    gap:10px;
     min-width:0;
 }
 
 .tf-crm-stat__icon{
-    width:32px;
-    height:32px;
-    border-radius:10px;
+    width:40px;
+    height:40px;
+    border-radius:12px;
     display:grid;
     place-items:center;
-    font-size:.9rem;
-    color:#5d52ff;
-    background:rgba(93,82,255,.12);
+    font-size:1rem;
+    color:#7b61ff;
+    background:#e9e5ff;
 }
 
-.tf-crm-stat--green .tf-crm-stat__icon{ color:#1fa96b; background:rgba(31,169,107,.14); }
-.tf-crm-stat--amber .tf-crm-stat__icon{ color:#d99a1f; background:rgba(217,154,31,.16); }
-.tf-crm-stat--blue  .tf-crm-stat__icon{ color:#2f6bff; background:rgba(47,107,255,.14); }
+.tf-crm-stat--green{ background:#eef8f1; }
+.tf-crm-stat--green .tf-crm-stat__icon{ color:#1fa96b; background:#d7f0e0; }
+
+.tf-crm-stat--amber{ background:#fdf6e8; }
+.tf-crm-stat--amber .tf-crm-stat__icon{ color:#d99a1f; background:#faecc8; }
+
+.tf-crm-stat--blue{ background:#eef1fc; }
+.tf-crm-stat--blue .tf-crm-stat__icon{ color:#4f6bff; background:#e1e6fb; }
 
 .tf-crm-stat__label{
     margin:0;
-    font-size:.82rem;
+    font-size:.86rem;
     color:rgba(17,22,74,.6);
     font-weight:600;
 }
 
 .tf-crm-stat__value{
     margin:0;
-    font-size:1.3rem;
+    font-size:1.6rem;
     font-weight:800;
     color:#11164a;
     line-height:1;
@@ -819,7 +824,7 @@ h3 {
 
 .tf-crm-stat__delta{
     margin:0;
-    font-size:.76rem;
+    font-size:.8rem;
     font-weight:700;
     color:#1fa96b;
 }
@@ -827,16 +832,14 @@ h3 {
 .tf-crm-stat__spark{
     display:block;
     width:100%;
-    height:26px;
-    margin-top:2px;
+    height:28px;
 }
 
 .tf-crm-stat__bars{
     display:flex;
     align-items:flex-end;
     gap:3px;
-    height:26px;
-    margin-top:2px;
+    height:28px;
 }
 
 .tf-crm-stat__bars span{
@@ -845,23 +848,23 @@ h3 {
     background:#f0c977;
 }
 
-.tf-crm-stat__bars span:nth-child(1){ height:35%; }
-.tf-crm-stat__bars span:nth-child(2){ height:55%; }
-.tf-crm-stat__bars span:nth-child(3){ height:40%; }
-.tf-crm-stat__bars span:nth-child(4){ height:70%; }
-.tf-crm-stat__bars span:nth-child(5){ height:50%; }
-.tf-crm-stat__bars span:nth-child(6){ height:85%; }
-.tf-crm-stat__bars span:nth-child(7){ height:65%; }
+.tf-crm-stat__bars span:nth-child(1){ height:28%; }
+.tf-crm-stat__bars span:nth-child(2){ height:45%; }
+.tf-crm-stat__bars span:nth-child(3){ height:35%; }
+.tf-crm-stat__bars span:nth-child(4){ height:62%; }
+.tf-crm-stat__bars span:nth-child(5){ height:48%; }
+.tf-crm-stat__bars span:nth-child(6){ height:80%; }
+.tf-crm-stat__bars span:nth-child(7){ height:60%; }
 .tf-crm-stat__bars span:nth-child(8){ height:100%; }
 
 .tf-crm-stat__badge{
     align-self:flex-start;
     margin-top:2px;
-    padding:4px 12px;
+    padding:6px 14px;
     border-radius:50px;
-    background:rgba(47,107,255,.12);
-    color:#2f6bff;
-    font-size:.74rem;
+    background:#e1e6fb;
+    color:#4f6bff;
+    font-size:.78rem;
     font-weight:700;
 }
 
@@ -944,7 +947,7 @@ h3 {
 .tf-crm-list__title{
     margin:0;
     color:#11164a;
-    font-size:25px;
+    font-size:20px;
     font-weight:600;
     line-height:1.25;
 }
@@ -952,7 +955,7 @@ h3 {
 .tf-crm-list__text{
     margin:8px 0 0;
     color:rgba(17,22,74,.65);
-    font-size:15px;
+    font-size:13px;
     line-height:1.20;
 }
 
@@ -1034,12 +1037,17 @@ h3 {
     }
 
     .tf-crm-stat{
-        padding:12px;
+        padding:14px;
         border-radius:14px;
     }
 
     .tf-crm-stat__value{
-        font-size:1.08rem;
+        font-size:1.25rem;
+    }
+
+    .tf-crm-stat__icon{
+        width:34px;
+        height:34px;
     }
 
     .tf-crm-dash__foot{
@@ -1083,6 +1091,274 @@ h3 {
     }
 }
 
+
+/* ==============================
+ DARK CRM SHOWCASE SECTION
+============================== */
+
+
+.tf-crm-dark-showcase{
+
+    background:#000;
+    padding:90px 0;
+    overflow:hidden;
+
+}
+
+
+.tf-crm-dark-grid{
+
+    display:grid;
+    grid-template-columns: 0.9fr 1.2fr;
+    gap:70px;
+    align-items:center;
+
+}
+
+
+
+/* LEFT */
+
+
+.tf-crm-dark-tag{
+
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+
+    background:#031427;
+    color:#0084ff;
+
+    padding:9px 18px;
+
+    border-radius:12px;
+
+    font-size:13px;
+    font-weight:800;
+
+    border:1px solid rgba(0,132,255,.3);
+
+}
+
+
+
+.tf-crm-dark-content h2{
+
+    margin:25px 0 0;
+
+    color:white;
+
+    font-size:55px;
+    line-height:.98;
+
+    font-weight:900;
+    letter-spacing:-3px;
+
+}
+
+
+.tf-crm-dark-content h2 span{
+
+    color:#007bff;
+
+}
+
+
+.tf-crm-dark-desc{
+
+    margin-top:22px;
+
+    max-width:560px;
+
+    color:#a6a6a6;
+
+    font-size:17px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* FEATURE LIST */
+
+
+.tf-crm-feature{
+
+    display:flex;
+
+    gap:20px;
+
+    padding:22px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.tf-crm-feature-icon{
+
+    width:55px;
+    height:55px;
+
+    flex:0 0 auto;
+
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+
+    background:#031427;
+
+    border-radius:14px;
+
+    color:#0084ff;
+
+    font-size:22px;
+
+
+    box-shadow:
+    0 0 20px rgba(0,132,255,.25);
+
+}
+
+
+
+.tf-crm-feature h4{
+
+    color:white;
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:800;
+
+}
+
+
+.tf-crm-feature p{
+
+    margin-top:8px;
+
+    color:#999;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+
+
+/* IMAGE */
+
+
+.tf-crm-dark-image{
+
+    padding:18px;
+
+    border-radius:20px;
+
+
+    background:
+
+    linear-gradient(
+        180deg,
+        rgba(0,132,255,.12),
+        transparent
+    );
+
+
+    border:1px solid #007bff;
+
+
+    box-shadow:
+
+    0 0 40px rgba(0,132,255,.35);
+
+
+}
+
+
+.tf-crm-dark-image img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:18px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:991px){
+
+
+    .tf-crm-dark-grid{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+
+    .tf-crm-dark-content h2{
+
+        font-size:42px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:576px){
+
+
+    .tf-crm-dark-showcase{
+
+        padding:60px 0;
+
+    }
+
+
+    .tf-crm-dark-content h2{
+
+        font-size:36px;
+
+        letter-spacing:-2px;
+
+    }
+
+
+    .tf-crm-feature{
+
+        gap:14px;
+
+    }
+
+
+    .tf-crm-feature-icon{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:18px;
+
+    }
+
+
+}
 </style>
 
 <main>
@@ -1321,8 +1597,9 @@ h3 {
                                 <p class="tf-crm-stat__label">New Leads</p>
                                 <p class="tf-crm-stat__value">128</p>
                                 <p class="tf-crm-stat__delta">&uarr; 18% this week</p>
-                                <svg class="tf-crm-stat__spark" viewBox="0 0 100 26" preserveAspectRatio="none">
-                                    <polyline points="0,20 12,17 24,19 36,12 48,15 60,9 72,12 84,5 100,3" fill="none" stroke="#5d52ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg class="tf-crm-stat__spark" viewBox="0 0 100 28" preserveAspectRatio="none">
+                                    <polyline points="0,22 12,18 24,20 36,13 48,16 60,10 72,13 84,5 100,3" fill="none" stroke="#7b61ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="100" cy="3" r="4" fill="#7b61ff"/>
                                 </svg>
                             </div>
 
@@ -1331,8 +1608,9 @@ h3 {
                                 <p class="tf-crm-stat__label">Contacts</p>
                                 <p class="tf-crm-stat__value">342</p>
                                 <p class="tf-crm-stat__delta">&uarr; 12% this week</p>
-                                <svg class="tf-crm-stat__spark" viewBox="0 0 100 26" preserveAspectRatio="none">
-                                    <polyline points="0,18 12,20 24,14 36,16 48,10 60,13 72,7 84,10 100,4" fill="none" stroke="#1fa96b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <svg class="tf-crm-stat__spark" viewBox="0 0 100 28" preserveAspectRatio="none">
+                                    <polyline points="0,20 12,22 24,15 36,17 48,11 60,14 72,7 84,10 100,4" fill="none" stroke="#1fa96b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="100" cy="4" r="4" fill="#1fa96b"/>
                                 </svg>
                             </div>
 
@@ -1356,10 +1634,10 @@ h3 {
 
                         </div>
 
-                        <div class="tf-crm-dash__foot">
+                        <!-- <div class="tf-crm-dash__foot">
                             <span class="tf-crm-dash__foot-time"><i class="far fa-clock" aria-hidden="true"></i> Last updated: Today, 10:30 AM</span>
                             <a href="#" class="tf-crm-dash__foot-link">View Full Dashboard <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -1375,36 +1653,53 @@ h3 {
                     <div class="tf-crm-list__card">
 
                         <div class="tf-crm-list__row">
-                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-bullseye"></i></span>
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-code"></i></span>
                             <div class="tf-crm-list__content">
-                                <h3 class="tf-crm-list__title">Lead Tracking</h3>
-                                <p class="tf-crm-list__text">Capture, qualify, and track leads through every stage.</p>
+                                <h3 class="tf-crm-list__title">Custom CRM Development</h3>
+                                <p class="tf-crm-list__text">Build a tailored CRM around your sales process, teams, and business goals.</p>
                             </div>
                             <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
                         </div>
 
                         <div class="tf-crm-list__row">
-                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-chart-bar"></i></span>
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-cogs"></i></span>
                             <div class="tf-crm-list__content">
-                                <h3 class="tf-crm-list__title">Sales Pipeline Visibility</h3>
-                                <p class="tf-crm-list__text">Monitor deals and pipelines to improve forecasting and close rates.</p>
+                                <h3 class="tf-crm-list__title">Workflow Automation</h3>
+                                <p class="tf-crm-list__text">Automate lead assignment, follow-ups, approvals, and repetitive sales tasks.</p>
                             </div>
                             <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
                         </div>
 
                         <div class="tf-crm-list__row">
-                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-comment-dots"></i></span>
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-plug"></i></span>
                             <div class="tf-crm-list__content">
-                                <h3 class="tf-crm-list__title">Customer Communication</h3>
-                                <p class="tf-crm-list__text">Centralize messages, emails, and notes for stronger relationships.</p>
+                                <h3 class="tf-crm-list__title">Third-Party Integrations</h3>
+                                <p class="tf-crm-list__text">Connect your CRM with email, ERP, accounting, marketing, and support tools.</p>
                             </div>
                             <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
                         </div>
 
-                        <div class="tf-crm-list__foot">
+                        <div class="tf-crm-list__row">
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-database"></i></span>
+                            <div class="tf-crm-list__content">
+                                <h3 class="tf-crm-list__title">CRM Data Migration</h3>
+                                <p class="tf-crm-list__text">Move customer data securely while preserving accuracy, structure, and history.</p>
+                            </div>
+                            <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
+                        </div>
+
+                        <div class="tf-crm-list__row">
+                            <span class="tf-crm-list__icon" aria-hidden="true"><i class="fas fa-chart-line"></i></span>
+                            <div class="tf-crm-list__content">
+                                <h3 class="tf-crm-list__title">Analytics &amp; Reporting</h3>
+                                <p class="tf-crm-list__text">Create real-time dashboards and reports for sales, service, and performance.</p>
+                            </div>
+                            <span class="tf-crm-list__check" aria-hidden="true"><i class="fas fa-check"></i></span>
+                        </div>
+                        <!-- <div class="tf-crm-list__foot">
                             <span class="tf-crm-list__foot-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
                             <span class="tf-crm-list__foot-text">Secure. Scalable. Built for Growth.</span>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -1413,5 +1708,115 @@ h3 {
         </div>
     </div>
 </section>
+<section class="tf-crm-dark-showcase">
+    <div class="container">
 
+        <div class="tf-crm-dark-grid">
+
+            <!-- LEFT CONTENT -->
+            <div class="tf-crm-dark-content">
+
+                <span class="tf-crm-dark-tag">
+                    <i class="fas fa-chart-line"></i>
+                    CRM DEVELOPMENT
+                </span>
+
+                <h2>
+                    Why Choose Our <br>
+                    <span>CRM Development</span><br>
+                    Services
+                </h2>
+
+                <p class="tf-crm-dark-desc">
+                    We build custom CRM solutions that help you manage leads,
+                    streamline sales, automate tasks, and improve customer
+                    relationships — all in one powerful platform.
+                </p>
+
+
+                <div class="tf-crm-feature">
+
+                    <div class="tf-crm-feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <div>
+                        <h4>Centralized Customer Data</h4>
+                        <p>
+                            Keep all customer information organized and
+                            accessible in one place.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tf-crm-feature">
+
+                    <div class="tf-crm-feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+
+                    <div>
+                        <h4>Smarter Sales Pipeline</h4>
+                        <p>
+                            Track leads, opportunities, and deals across every
+                            stage of your sales funnel.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tf-crm-feature">
+
+                    <div class="tf-crm-feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+
+                    <div>
+                        <h4>Automation & Productivity</h4>
+                        <p>
+                            Automate repetitive tasks and workflows to save
+                            time and reduce manual effort.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tf-crm-feature">
+
+                    <div class="tf-crm-feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+
+                    <div>
+                        <h4>Real-Time Insights</h4>
+                        <p>
+                            Get real-time reports and analytics to make better
+                            decisions and drive growth.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+            <div class="tf-crm-dark-image">
+
+                <img 
+                src="assets/images/crm3.png"
+                alt="CRM Dashboard">
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
 </main>
