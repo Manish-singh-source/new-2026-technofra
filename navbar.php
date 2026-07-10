@@ -434,11 +434,11 @@
                                                         <h4 class="mega-menu-heading">Web & App Solutions</h4>
                                                         <ul class="mega-menu-list">
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
+                                                            <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
+                                                            <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                                            <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
+                                                            <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
@@ -466,7 +466,7 @@
                                                     <div class="mega-menu-group">
                                                         <h4 class="mega-menu-heading">Hosting & IT Services</h4>
                                                         <ul class="mega-menu-list">
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
+                                                            <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
                                                         </ul>
                                                     </div>
@@ -569,11 +569,11 @@
                                                         <h4 class="mega-menu-heading">Web & App Solutions</h4>
                                                         <ul class="mega-menu-list">
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
+                                                            <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
+                                                            <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                                            <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
+                                                            <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
@@ -601,7 +601,7 @@
                                                     <div class="mega-menu-group">
                                                         <h4 class="mega-menu-heading">Hosting & IT Services</h4>
                                                         <ul class="mega-menu-list">
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
+                                                            <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
                                                         </ul>
                                                     </div>
@@ -648,6 +648,9 @@
             </div>
         </header>
         <!--======== / Header ========-->
+
+
+
 
 
 
