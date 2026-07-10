@@ -464,6 +464,8 @@ h3 {
     max-width:24ch;
 }
 
+
+
 @keyframes tf-fade-up{
     from{
         opacity:0;
@@ -665,6 +667,326 @@ h3 {
     }
 }
 
+/* ============================================
+   NEW SECTION: MANAGE & AUTOMATE (below tf-why)
+   ============================================ */
+
+.tf-crm-split{
+    padding:30px 0 100px;
+    background:
+    radial-gradient(circle at 15% 20%, rgba(97,83,255,.07), transparent 32%),
+    radial-gradient(circle at 85% 80%, rgba(0,114,255,.06), transparent 32%),
+    linear-gradient(180deg, #f6f7fb 0%, #ffffff 100%);
+    overflow:hidden;
+}
+
+.tf-crm-split__grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:32px;
+    align-items:stretch;
+}
+
+.tf-crm-split__col{
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+}
+
+.tf-crm-split__header{
+    text-align:center;
+    max-width:520px;
+    margin:0 auto;
+}
+
+.tf-crm-split__title{
+    margin:0;
+    color:#02084d;
+    font-size:clamp(1.5rem,2.4vw,2.15rem);
+    line-height:1.12;
+    font-weight:900;
+    letter-spacing:-.03em;
+}
+
+.tf-crm-split__lead{
+    margin:12px 0 0;
+    color:rgba(2,8,77,.65);
+    font-size:clamp(.94rem,1vw,1.05rem);
+    line-height:1.6;
+}
+
+/* ---- Left visual: built dashboard card ---- */
+
+.tf-crm-dash{
+    flex:1;
+    padding:20px;
+    border-radius:26px;
+    background:linear-gradient(180deg, rgba(109,99,255,.10) 0%, rgba(109,99,255,.03) 100%);
+    border:1px solid rgba(109,99,255,.14);
+    box-shadow:0 24px 50px rgba(17,22,74,.07);
+}
+
+.tf-crm-dash__card{
+    height:100%;
+    padding:22px;
+    border-radius:20px;
+    background:#fff;
+    border:1px solid rgba(18,48,168,.10);
+    box-shadow:0 14px 30px rgba(15,23,42,.05);
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.tf-crm-dash__head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.tf-crm-dash__head-icon{
+    width:38px;
+    height:38px;
+    flex:0 0 auto;
+    border-radius:12px;
+    display:grid;
+    place-items:center;
+    color:#fff;
+    font-size:1rem;
+    background:linear-gradient(135deg,#7a5cff 0%,#5230e0 100%);
+}
+
+.tf-crm-dash__head-title{
+    margin:0;
+    font-size:1.02rem;
+    font-weight:800;
+    color:#11164a;
+    flex:1;
+}
+
+.tf-crm-dash__head-dots{
+    color:rgba(17,22,74,.35);
+    font-size:1.1rem;
+    letter-spacing:2px;
+}
+
+.tf-crm-dash__stats{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:14px;
+}
+
+.tf-crm-stat{
+    padding:16px;
+    border-radius:16px;
+    background:#f7f8fc;
+    border:1px solid rgba(18,48,168,.06);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    min-width:0;
+}
+
+.tf-crm-stat__icon{
+    width:32px;
+    height:32px;
+    border-radius:10px;
+    display:grid;
+    place-items:center;
+    font-size:.9rem;
+    color:#5d52ff;
+    background:rgba(93,82,255,.12);
+}
+
+.tf-crm-stat--green .tf-crm-stat__icon{ color:#1fa96b; background:rgba(31,169,107,.14); }
+.tf-crm-stat--amber .tf-crm-stat__icon{ color:#d99a1f; background:rgba(217,154,31,.16); }
+.tf-crm-stat--blue  .tf-crm-stat__icon{ color:#2f6bff; background:rgba(47,107,255,.14); }
+
+.tf-crm-stat__label{
+    margin:0;
+    font-size:.82rem;
+    color:rgba(17,22,74,.6);
+    font-weight:600;
+}
+
+.tf-crm-stat__value{
+    margin:0;
+    font-size:1.3rem;
+    font-weight:800;
+    color:#11164a;
+    line-height:1;
+}
+
+.tf-crm-stat__delta{
+    margin:0;
+    font-size:.76rem;
+    font-weight:700;
+    color:#1fa96b;
+}
+
+.tf-crm-stat__spark{
+    display:block;
+    width:100%;
+    height:26px;
+    margin-top:2px;
+}
+
+.tf-crm-stat__bars{
+    display:flex;
+    align-items:flex-end;
+    gap:3px;
+    height:26px;
+    margin-top:2px;
+}
+
+.tf-crm-stat__bars span{
+    flex:1;
+    border-radius:3px 3px 0 0;
+    background:#f0c977;
+}
+
+.tf-crm-stat__bars span:nth-child(1){ height:35%; }
+.tf-crm-stat__bars span:nth-child(2){ height:55%; }
+.tf-crm-stat__bars span:nth-child(3){ height:40%; }
+.tf-crm-stat__bars span:nth-child(4){ height:70%; }
+.tf-crm-stat__bars span:nth-child(5){ height:50%; }
+.tf-crm-stat__bars span:nth-child(6){ height:85%; }
+.tf-crm-stat__bars span:nth-child(7){ height:65%; }
+.tf-crm-stat__bars span:nth-child(8){ height:100%; }
+
+.tf-crm-stat__badge{
+    align-self:flex-start;
+    margin-top:2px;
+    padding:4px 12px;
+    border-radius:50px;
+    background:rgba(47,107,255,.12);
+    color:#2f6bff;
+    font-size:.74rem;
+    font-weight:700;
+}
+
+.tf-crm-dash__foot{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding-top:14px;
+    border-top:1px solid rgba(18,48,168,.08);
+    flex-wrap:wrap;
+}
+
+.tf-crm-dash__foot-time{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:rgba(17,22,74,.55);
+    font-size:.82rem;
+}
+
+.tf-crm-dash__foot-link{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    color:#5d52ff;
+    font-weight:700;
+    font-size:.86rem;
+    text-decoration:none;
+}
+
+/* ---- Right visual: image ---- */
+
+.tf-crm-split__image-wrap{
+    flex:1;
+    display:flex;
+    padding:20px;
+    border-radius:26px;
+    background:linear-gradient(180deg, rgba(0,114,255,.08) 0%, rgba(0,114,255,.02) 100%);
+    border:1px solid rgba(0,114,255,.12);
+    box-shadow:0 24px 50px rgba(17,22,74,.07);
+}
+
+.tf-crm-split__image-frame{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    border:1px solid rgba(18,48,168,.10);
+    box-shadow:0 14px 30px rgba(15,23,42,.05);
+    padding:10px;
+}
+
+.tf-crm-split__image{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+    border-radius:14px;
+}
+
+@media(max-width:1199px){
+    .tf-crm-dash__stats{
+        gap:12px;
+    }
+}
+
+@media(max-width:991px){
+    .tf-crm-split{
+        padding:26px 0 84px;
+    }
+
+    .tf-crm-split__grid{
+        grid-template-columns:1fr;
+        gap:44px;
+    }
+}
+
+@media(max-width:576px){
+    .tf-crm-split__header{
+        max-width:100%;
+    }
+
+    .tf-crm-dash,
+    .tf-crm-split__image-wrap{
+        padding:14px;
+        border-radius:20px;
+    }
+
+    .tf-crm-dash__card{
+        padding:16px;
+        border-radius:16px;
+        gap:14px;
+    }
+
+    .tf-crm-dash__stats{
+        grid-template-columns:repeat(2, minmax(0,1fr));
+        gap:10px;
+    }
+
+    .tf-crm-stat{
+        padding:12px;
+        border-radius:14px;
+    }
+
+    .tf-crm-stat__value{
+        font-size:1.08rem;
+    }
+
+    .tf-crm-dash__foot{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+}
+
+@media(max-width:360px){
+    .tf-crm-dash__stats{
+        grid-template-columns:1fr;
+    }
+}
+
 </style>
 
 <main>
@@ -719,32 +1041,52 @@ h3 {
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="tf-brand-card" aria-label="Blue Orbith">
-                                <img src="assets/images/brand/blueorbith.png" alt="Blue Orbith">
+                                <img src="assets/images/new/c1.png" alt="Blue Orbith">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="tf-brand-card" aria-label="Digikcon">
-                                <img src="assets/images/brand/digikcon.png" alt="Digikcon">
+                                <img src="assets/images/new/c2.png" alt="Digikcon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="tf-brand-card" aria-label="Grid Infinity">
-                                <img src="assets/images/brand/grid-infinity.png" alt="Grid Infinity">
+                                <img src="assets/images/new/c3.png" alt="Grid Infinity">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="tf-brand-card" aria-label="Mark Identitiez">
-                                <img src="assets/images/brand/markidentitiez.png" alt="Mark Identitiez">
+                                <img src="assets/images/new/c4.png" alt="Mark Identitiez">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="tf-brand-card" aria-label="Blue Orbith">
-                                <img src="assets/images/brand/blueorbith.png" alt="Blue Orbith">
+                                <img src="assets/images/new/c5.png" alt="Blue Orbith">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="tf-brand-card" aria-label="Digikcon">
-                                <img src="assets/images/brand/digikcon.png" alt="Digikcon">
+                                <img src="assets/images/new/c6.png" alt="Digikcon">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-brand-card" aria-label="Digikcon">
+                                <img src="assets/images/new/c7.png" alt="Digikcon">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-brand-card" aria-label="Digikcon">
+                                <img src="assets/images/new/c8.png" alt="Digikcon">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-brand-card" aria-label="Digikcon">
+                                <img src="assets/images/new/c9.png" alt="Digikcon">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tf-brand-card" aria-label="Digikcon">
+                                <img src="assets/images/new/c10.png" alt="Digikcon">
                             </div>
                         </div>
                     </div>
@@ -853,6 +1195,93 @@ h3 {
                     <p class="tf-why-card__text">Real-time dashboards, reports, and business insights anytime.</p>
                 </div>
             </article>
+        </div>
+    </div>
+</section>
+
+<section class="tf-crm-split">
+    <div class="container">
+        <div class="tf-crm-split__grid">
+
+            <div class="tf-crm-split__col">
+                <div class="tf-crm-split__header">
+                    <h2 class="tf-crm-split__title">Manage Leads &amp; Customer Data</h2>
+                    <p class="tf-crm-split__lead">Track leads, contacts, deals, and customer activity in one centralized place.</p>
+                </div>
+
+                <div class="tf-crm-dash">
+                    <div class="tf-crm-dash__card">
+
+                        <div class="tf-crm-dash__head">
+                            <span class="tf-crm-dash__head-icon" aria-hidden="true"><i class="fas fa-user-friends"></i></span>
+                            <h3 class="tf-crm-dash__head-title">CRM Dashboard</h3>
+                            <span class="tf-crm-dash__head-dots" aria-hidden="true">&#8226;&#8226;&#8226;</span>
+                        </div>
+
+                        <div class="tf-crm-dash__stats">
+
+                            <div class="tf-crm-stat">
+                                <span class="tf-crm-stat__icon" aria-hidden="true"><i class="fas fa-user"></i></span>
+                                <p class="tf-crm-stat__label">New Leads</p>
+                                <p class="tf-crm-stat__value">128</p>
+                                <p class="tf-crm-stat__delta">&uarr; 18% this week</p>
+                                <svg class="tf-crm-stat__spark" viewBox="0 0 100 26" preserveAspectRatio="none">
+                                    <polyline points="0,20 12,17 24,19 36,12 48,15 60,9 72,12 84,5 100,3" fill="none" stroke="#5d52ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="tf-crm-stat tf-crm-stat--green">
+                                <span class="tf-crm-stat__icon" aria-hidden="true"><i class="fas fa-users"></i></span>
+                                <p class="tf-crm-stat__label">Contacts</p>
+                                <p class="tf-crm-stat__value">342</p>
+                                <p class="tf-crm-stat__delta">&uarr; 12% this week</p>
+                                <svg class="tf-crm-stat__spark" viewBox="0 0 100 26" preserveAspectRatio="none">
+                                    <polyline points="0,18 12,20 24,14 36,16 48,10 60,13 72,7 84,10 100,4" fill="none" stroke="#1fa96b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div class="tf-crm-stat tf-crm-stat--amber">
+                                <span class="tf-crm-stat__icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span>
+                                <p class="tf-crm-stat__label">Deals</p>
+                                <p class="tf-crm-stat__value">$84,250</p>
+                                <p class="tf-crm-stat__delta">&uarr; 16% this month</p>
+                                <div class="tf-crm-stat__bars" aria-hidden="true">
+                                    <span></span><span></span><span></span><span></span>
+                                    <span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+
+                            <div class="tf-crm-stat tf-crm-stat--blue">
+                                <span class="tf-crm-stat__icon" aria-hidden="true"><i class="fas fa-bullseye"></i></span>
+                                <p class="tf-crm-stat__label">Deals in Progress</p>
+                                <p class="tf-crm-stat__value">23</p>
+                                <span class="tf-crm-stat__badge">Active Pipeline</span>
+                            </div>
+
+                        </div>
+
+                        <div class="tf-crm-dash__foot">
+                            <span class="tf-crm-dash__foot-time"><i class="far fa-clock" aria-hidden="true"></i> Last updated: Today, 10:30 AM</span>
+                            <a href="#" class="tf-crm-dash__foot-link">View Full Dashboard <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tf-crm-split__col">
+                <div class="tf-crm-split__header">
+                    <h2 class="tf-crm-split__title">Automate CRM Workflows</h2>
+                    <p class="tf-crm-split__lead">Streamline follow-ups, assign tasks, and improve customer management.</p>
+                </div>
+
+                <div class="tf-crm-split__image-wrap">
+                    <div class="tf-crm-split__image-frame">
+                        <img class="tf-crm-split__image" src="assets/images/crm2.png" alt="Automate CRM Workflows - Lead Tracking, Sales Pipeline Visibility, Customer Communication">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
