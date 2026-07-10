@@ -507,8 +507,7 @@ include __DIR__ . '/header.php';
     .feature-sec14 .feature-content12 .sub-title,
     .feature-sec14 .feature-content12 .title,
     .feature-sec14 .feature-content12 p,
-    .feature-content12 .nav-tabs .nav-link
-    {
+    .feature-content12 .nav-tabs .nav-link {
         color: #1a1a1a;
     }
 
@@ -525,6 +524,12 @@ include __DIR__ . '/header.php';
         color: #3b5bfe;
     }
 
+    .hero-section10 .hero-content10 .hero-info10 .highlight {
+        background-image: linear-gradient(90deg, #3d53fd 0%, #0037c1 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
 </style>
 
 
@@ -535,14 +540,17 @@ include __DIR__ . '/header.php';
             <div class="col-lg-4 col-sm-12">
                 <div class="hero-content10">
                     <div class="hero-info10">
-                        <h1 class="title">Driving innovation with state-of-the-art laboratory science solutions.
+                        <h1 class="title">Web Design & Development
+                            <span class="highlight">Company in Mumbai</span>
                         </h1>
-                        <p>Empowering innovation through state-of-the-art laboratory
-                            science. Discover the future of research and development
-                            with our advanced solutions
+                        <p>At Technofra, we create stunning, high-performance websites
+                            that drive traffic, engage visitors, and convert leads into
+                            customers. With 14+ years of experience, we deliver custom
+                            website design and development services tailored for
+                            businesses of all sizes.
                         </p>
                         <a class='ibt-btn ibt-btn-secondary' href='index10.html' target='_blank' title>
-                            <span>Discover</span>
+                            <span>Explore Services</span>
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
@@ -554,8 +562,7 @@ include __DIR__ . '/header.php';
             </div>
             <div class="col-lg-8 col-sm-12">
                 <div class="hero-img10">
-                    <img src="assets/images/hero/hero10-1.png" alt="AI Agency & Technology HTML Template">
-                    <span>Science solutions</span>
+                    <img src="assets/images/about/banner2.png" alt="AI Agency & Technology HTML Template">
                 </div>
             </div>
         </div>
@@ -572,36 +579,32 @@ include __DIR__ . '/header.php';
                     <div class="about-counter6">
                         <div class="about-counter-content6">
                             <div class="counter-box15">
-                                <span class="counter-number percent-counter2" data-target="1500">0</span>
-                                <span class="counter-text">k+</span>
+                                <span class="counter-number percent-counter2" data-target="250">0</span>
+                                <span class="counter-text">+</span>
                             </div>
-                            <span class="title">Research per year</span>
+                            <span class="title">Web projects delivered</span>
                         </div>
                         <div class="about-counter-content6">
                             <div class="counter-box15">
-                                <span class="counter-number percent-counter3" data-target="99.9">0</span>
+                                <span class="counter-number percent-counter3" data-target="99">0</span>
                                 <span class="counter-text">%</span>
                             </div>
-                            <span class="title">The quality of results</span>
+                            <span class="title">Client satisfaction rate</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-7">
                     <div class="about-content6">
                         <div class="sec-title mb-0">
-                            <span class="sub-title">about us</span>
-                            <h2 class="title animated-heading">AI consulting powered by Neuros for
-                                transformative business solutions.
+                            <span class="sub-title">web solutions</span>
+                            <h2 class="title animated-heading">Looking For The Best Web Design & Development Agency?
                             </h2>
-                            <p>Artificial Intelligence refers to the development of computer systems
-                                that can perform tasks that would typically require human intelligence.
-                                It involves the creation of algorithms and models that enable machines
-                                to learn, reason, perceive, and make decisions.
+                            <p>Looking for the best web design and development company to elevate your online presence? Technofra creates modern, user-friendly websites that engage audiences and deliver measurable results.
                             </p>
-                            <p class="paragraph">There are generally two types of AI: Narrow or Weak AI, which is
-                                designed to perform specific tasks, and General or Strong AI,
-                                which possesses human-level intelligence and can handle a
-                                wide range of tasks.
+                            <p class="paragraph">Our experienced designers and developers combine creativity with
+                                technical expertise to build custom web solutions tailored to your
+                                business needs. From startups to established brands, we turn ideas into
+                                powerful digital experiences.
                             </p>
                             <a class='ibt-btn ibt-btn-outline' href='index10.html' title>
                                 <span>Explore more</span>
@@ -624,64 +627,46 @@ include __DIR__ . '/header.php';
         <div class="row">
             <div class="col-lg-6">
                 <div class="feature-img14">
-                    <img src="assets/images/feature/feature14-1.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/about/about2.png" alt="AI Agency & Technology HTML Template">
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="feature-content12">
                     <div class="sec-title white">
                         <span class="sub-title">features</span>
-                        <h2 class="title animated-heading">Easy to integrate using our API access</h2>
+                        <h2 class="title animated-heading">Everything you need for modern web design and development</h2>
                     </div>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Fine-tuning models</button>
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Responsive Design</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Embedding models</button>
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Custom Development</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">InstructGPT</button>
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Performance & SEO</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <p>Triggerfish bluntnose knifefish upside-down catfish kfish convict
-                                cichlid cat shark saw shark trout cod.
-                            </p>
-                            <p>Pacific hake false trevally queen parrotfish black prickleback
-                                moss revally queen parrotfish black prickleback moss. Queen
-                                parrotfish black prickleback moss pacific hake false trevally
-                                queen parrotfish black prickleback moss revally
-                            </p>
+                            <p>We design responsive interfaces that adapt smoothly across desktop, tablet, and mobile devices for a consistent user experience.</p>
+                            <p>Every layout is built to feel clear, modern, and easy to navigate, helping your visitors find what they need faster.</p>
                             <a href="#" class="ibt-btn ibt-btn-outline-2">
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <p>Triggerfish bluntnose knifefish upside-down catfish kfish convict
-                                cichlid cat shark saw shark trout cod.
-                            </p>
-                            <p>Pacific hake false trevally queen parrotfish black prickleback
-                                moss revally queen parrotfish black prickleback moss. Queen
-                                parrotfish black prickleback moss pacific hake false trevally
-                                queen parrotfish black prickleback moss revally
-                            </p>
+                            <p>We build custom websites and web applications with clean code, scalable structure, and business-specific functionality.</p>
+                            <p>From front-end interactions to back-end integrations, we tailor the development process to match your goals and workflow.</p>
                             <a href="#" class="ibt-btn ibt-btn-outline-2">
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <p>Triggerfish bluntnose knifefish upside-down catfish kfish convict
-                                cichlid cat shark saw shark trout cod.
-                            </p>
-                            <p>Pacific hake false trevally queen parrotfish black prickleback
-                                moss revally queen parrotfish black prickleback moss. Queen
-                                parrotfish black prickleback moss pacific hake false trevally
-                                queen parrotfish black prickleback moss revally
-                            </p>
+                            <p>We optimize websites for speed, search visibility, and conversion so your pages load faster and perform better.</p>
+                            <p>Technical SEO, structured content, and performance improvements work together to help your business reach more people online.</p>
                             <a href="#" class="ibt-btn ibt-btn-outline-2">
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
