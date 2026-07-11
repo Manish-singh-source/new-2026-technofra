@@ -87,6 +87,9 @@ h3 {
 
 .crm-hero-bg{
     position:relative;
+    isolation:isolate;
+    --tf-hero-shift-x:0px;
+    --tf-hero-shift-y:0px;
 }
 
 .crm-hero-bg::after{
@@ -108,6 +111,12 @@ h3 {
     opacity:0;
     transform:translateY(18px);
     animation:tf-hero-rise .8s ease forwards;
+}
+
+.crm-content{
+    will-change:transform;
+    transform:translate3d(var(--tf-hero-shift-x), var(--tf-hero-shift-y), 0);
+    transition:transform .18s cubic-bezier(.22,1,.36,1);
 }
 
 .crm-tag{
@@ -185,6 +194,74 @@ h3 {
     transform:translateY(-4px);
 }
 
+.tf-brand-card,
+.tf-step-card,
+.tf-why-card,
+.tf-crm-stat,
+.tf-crm-list__row,
+.tf-crm-feature,
+.tf-crm-dark-image,
+.tf-crm-faq-graphic,
+.tf-steps__visual,
+.tf-crm-dash,
+.tf-crm-list{
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+}
+
+.tf-brand-card::after,
+.tf-step-card::after,
+.tf-why-card::after,
+.tf-crm-stat::after,
+.tf-crm-list__row::after,
+.tf-crm-feature::after,
+.tf-crm-dark-image::after,
+.tf-crm-faq-graphic::after,
+.tf-steps__visual::after,
+.tf-crm-dash::after,
+.tf-crm-list::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg, transparent 22%, rgba(255,255,255,.38) 50%, transparent 78%);
+    transform:translateX(-125%);
+    opacity:.42;
+    pointer-events:none;
+    transition:transform .9s cubic-bezier(.22,1,.36,1);
+    mix-blend-mode:screen;
+    z-index:1;
+}
+
+.tf-brand-card:hover::after,
+.tf-step-card:hover::after,
+.tf-why-card:hover::after,
+.tf-crm-stat:hover::after,
+.tf-crm-list__row:hover::after,
+.tf-crm-feature:hover::after,
+.tf-crm-dark-image:hover::after,
+.tf-crm-faq-graphic:hover::after,
+.tf-steps__visual:hover::after,
+.tf-crm-dash:hover::after,
+.tf-crm-list:hover::after{
+    transform:translateX(125%);
+}
+
+.tf-brand-card > *,
+.tf-step-card > *,
+.tf-why-card > *,
+.tf-crm-stat > *,
+.tf-crm-list__row > *,
+.tf-crm-feature > *,
+.tf-crm-dark-image > *,
+.tf-crm-faq-graphic > *,
+.tf-steps__visual > *,
+.tf-crm-dash > *,
+.tf-crm-list > *{
+    position:relative;
+    z-index:2;
+}
+
 .tf-step-card:hover{
     box-shadow:0 20px 40px rgba(15,23,42,.09);
 }
@@ -248,17 +325,95 @@ h3 {
 
 .tf-motion-reveal{
     opacity:0;
-    transform:translateY(18px) scale(.985);
-    filter:blur(2px);
-    transition:opacity .7s ease, transform .7s ease, filter .7s ease;
+    transform:translate3d(0,24px,0) scale(.985);
+    filter:blur(10px) saturate(.94);
+    transition:opacity .95s cubic-bezier(.22,1,.36,1), transform .95s cubic-bezier(.22,1,.36,1), filter .95s cubic-bezier(.22,1,.36,1);
     transition-delay:var(--tf-delay, 0ms);
     will-change:opacity, transform, filter;
+}
+
+.tf-motion-reveal.tf-reveal-up{
+    transform:translate3d(0,24px,0) scale(.985);
+}
+
+.tf-motion-reveal.tf-reveal-left{
+    transform:translate3d(-42px,18px,0) scale(.98);
+}
+
+.tf-motion-reveal.tf-reveal-right{
+    transform:translate3d(42px,18px,0) scale(.98);
+}
+
+.tf-motion-reveal.tf-reveal-zoom{
+    transform:translate3d(0,18px,0) scale(.94);
+}
+
+.tf-motion-reveal.tf-reveal-media{
+    transform:translate3d(0,28px,0) scale(.95);
+    clip-path:inset(8% 0 8% 0 round 24px);
 }
 
 .tf-motion-reveal.is-visible{
     opacity:1;
     transform:none;
     filter:none;
+    clip-path:none;
+}
+
+.tf-motion-reveal.is-visible.tf-reveal-media{
+    clip-path:inset(0 round 24px);
+}
+
+.tf-crm-stat__spark polyline{
+    stroke-dasharray:var(--tf-spark-length, 0);
+    stroke-dashoffset:var(--tf-spark-length, 0);
+    transition:stroke-dashoffset 1.1s cubic-bezier(.22,1,.36,1) .18s;
+}
+
+.tf-crm-stat__spark circle{
+    opacity:0;
+    transform-origin:center;
+    transform:scale(.35);
+    transition:opacity .45s ease .78s, transform .6s cubic-bezier(.22,1,.36,1) .78s;
+}
+
+.tf-crm-stat__bars span{
+    transform:scaleY(.12);
+    transform-origin:bottom;
+    opacity:.55;
+}
+
+.tf-crm-stat.is-visible .tf-crm-stat__spark polyline{
+    stroke-dashoffset:0;
+}
+
+.tf-crm-stat.is-visible .tf-crm-stat__spark circle{
+    opacity:1;
+    transform:scale(1);
+}
+
+.tf-crm-stat.is-visible .tf-crm-stat__bars span{
+    animation:tf-bar-grow .92s cubic-bezier(.22,1,.36,1) forwards;
+}
+
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(1){ animation-delay:.10s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(2){ animation-delay:.16s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(3){ animation-delay:.22s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(4){ animation-delay:.28s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(5){ animation-delay:.34s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(6){ animation-delay:.40s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(7){ animation-delay:.46s; }
+.tf-crm-stat.is-visible .tf-crm-stat__bars span:nth-child(8){ animation-delay:.52s; }
+
+@keyframes tf-bar-grow{
+    from{
+        transform:scaleY(.08);
+        opacity:.28;
+    }
+    to{
+        transform:scaleY(1);
+        opacity:1;
+    }
 }
 
 @keyframes tf-hero-rise{
@@ -720,14 +875,20 @@ h3 {
 
 @media(prefers-reduced-motion:reduce){
     .crm-content > *,
+    .crm-content,
     .crm-buttons,
     .crm-hero-bg::after,
-    .tf-motion-reveal{
+    .tf-motion-reveal,
+    .tf-crm-stat__spark polyline,
+    .tf-crm-stat__spark circle,
+    .tf-crm-stat__bars span{
         animation:none !important;
         transition:none !important;
         opacity:1 !important;
         transform:none !important;
         filter:none !important;
+        clip-path:none !important;
+        stroke-dashoffset:0 !important;
     }
 
     .tf-why-card{
@@ -2898,16 +3059,86 @@ font-size:18px;
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    const motionTargets = document.querySelectorAll(
-        ".tf-brand-strip__inner, .tf-steps__header, .tf-steps__visual, .tf-step-card, .tf-why__header, .tf-crm-split__header, .tf-crm-dash, .tf-crm-list, .tf-crm-dark-content, .tf-crm-dark-image, .tf-crm-faq-heading, .tf-crm-faq-graphic, .tf-crm-faq-list .faq-item, .tf-crm-feature, .tf-crm-list__row"
-    );
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const hero = document.querySelector(".crm-hero-bg");
+    const heroContent = document.querySelector(".crm-content");
 
-    motionTargets.forEach((element, index) => {
-        element.classList.add("tf-motion-reveal");
-        element.style.setProperty("--tf-delay", `${Math.min(index * 60, 360)}ms`);
+    if (hero && heroContent && !prefersReducedMotion) {
+        let frameId = null;
+        let shiftX = 0;
+        let shiftY = 0;
+
+        const applyHeroShift = () => {
+            heroContent.style.setProperty("--tf-hero-shift-x", `${shiftX}px`);
+            heroContent.style.setProperty("--tf-hero-shift-y", `${shiftY}px`);
+            frameId = null;
+        };
+
+        hero.addEventListener("pointermove", function (event) {
+            const bounds = hero.getBoundingClientRect();
+            const centerX = bounds.left + bounds.width / 2;
+            const centerY = bounds.top + bounds.height / 2;
+            const deltaX = (event.clientX - centerX) / bounds.width;
+            const deltaY = (event.clientY - centerY) / bounds.height;
+
+            shiftX = Math.max(-12, Math.min(12, deltaX * 16));
+            shiftY = Math.max(-8, Math.min(8, deltaY * 12));
+
+            if (!frameId) {
+                frameId = requestAnimationFrame(applyHeroShift);
+            }
+        });
+
+        hero.addEventListener("pointerleave", function () {
+            shiftX = 0;
+            shiftY = 0;
+
+            if (!frameId) {
+                frameId = requestAnimationFrame(applyHeroShift);
+            }
+        });
+    }
+
+    const motionItems = [
+        { selector: ".tf-brand-strip__inner", reveal: "tf-reveal-up" },
+        { selector: ".tf-steps__header", reveal: "tf-reveal-up" },
+        { selector: ".tf-steps__visual", reveal: "tf-reveal-media" },
+        { selector: ".tf-step-card", reveal: "tf-reveal-left", alternate: "tf-reveal-right" },
+        { selector: ".tf-why__header", reveal: "tf-reveal-up" },
+        { selector: ".tf-why-card", reveal: "tf-reveal-zoom" },
+        { selector: ".tf-crm-split__header", reveal: "tf-reveal-up" },
+        { selector: ".tf-crm-dash", reveal: "tf-reveal-media" },
+        { selector: ".tf-crm-list", reveal: "tf-reveal-media" },
+        { selector: ".tf-crm-list__row", reveal: "tf-reveal-left", alternate: "tf-reveal-right" },
+        { selector: ".tf-crm-dark-content", reveal: "tf-reveal-up" },
+        { selector: ".tf-crm-dark-image", reveal: "tf-reveal-media" },
+        { selector: ".tf-crm-feature", reveal: "tf-reveal-left", alternate: "tf-reveal-right" },
+        { selector: ".tf-crm-faq-heading", reveal: "tf-reveal-up" },
+        { selector: ".tf-crm-faq-graphic", reveal: "tf-reveal-media" },
+        { selector: ".tf-crm-faq-list .faq-item", reveal: "tf-reveal-up" }
+    ];
+
+    const motionTargets = [];
+
+    motionItems.forEach(group => {
+        const elements = document.querySelectorAll(group.selector);
+        const baseIndex = motionTargets.length;
+
+        elements.forEach((element, index) => {
+            const revealClass = group.alternate && index % 2 === 1 ? group.alternate : group.reveal;
+            element.classList.add("tf-motion-reveal", revealClass);
+            element.style.setProperty("--tf-delay", `${Math.min((baseIndex + index) * 70, 560)}ms`);
+            motionTargets.push(element);
+        });
     });
 
-    const motionObserver = new IntersectionObserver((entries, observer) => {
+    const statPolylines = document.querySelectorAll(".tf-crm-stat__spark polyline");
+    statPolylines.forEach(polyline => {
+        const totalLength = typeof polyline.getTotalLength === "function" ? polyline.getTotalLength() : 120;
+        polyline.style.setProperty("--tf-spark-length", totalLength);
+    });
+
+    const motionObserver = "IntersectionObserver" in window ? new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("is-visible");
@@ -2915,11 +3146,17 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }, {
-        threshold: 0.18,
-        rootMargin: "0px 0px -8% 0px"
-    });
+        threshold: 0.22,
+        rootMargin: "0px 0px -10% 0px"
+    }) : null;
 
-    motionTargets.forEach(element => motionObserver.observe(element));
+    if (prefersReducedMotion) {
+        motionTargets.forEach(element => element.classList.add("is-visible"));
+    } else if (motionObserver) {
+        motionTargets.forEach(element => motionObserver.observe(element));
+    } else {
+        motionTargets.forEach(element => element.classList.add("is-visible"));
+    }
 
     const faqItems = document.querySelectorAll(".faq-item");
 
