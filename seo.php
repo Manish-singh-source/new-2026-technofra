@@ -1711,40 +1711,35 @@ include __DIR__ . '/header.php';
             <!-- LEFT COLUMN -->
             <div class="col-12 col-lg-6">
                 <span class="hero-badge">
-                    <i class="fa-solid fa-star"></i>
-                    ROI Driven PPC Campaigns
+                    #1 SEO Company in India
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
                 </span>
 
                 <h1 class="hero-heading">
-                    Run Smarter Ads.
-                    <span class="text-accent">Get Quality Clicks.</span>
-                    <span class="text-accent text-underline">Drive Better Results.</span>
+                    Rank Higher.
+                    <span class="text-accent">Get More Traffic.</span>
+                    <span class="text-accent text-underline">Grow Your Business.</span>
                 </h1>
 
                 <p class="hero-desc">
-                    Maximize your ROI with data-driven PPC campaigns across Google
-                    Ads, Meta Ads, and more. Reach the right audience, boost
-                    conversions, and grow your business.
+                    Result-driven SEO strategies that improve rankings, increase organic traffic, and deliver measurable business growth.
                 </p>
 
                 <div class="hero-cta-row">
                     <a href="#" class="hero-btn hero-btn-primary">
-                        Get Free PPC Audit
+                        Get Free SEO Audit
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="#" class="hero-btn hero-btn-secondary">
-                        Our PPC Services
+                        Our SEO Services
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
 
                 <div class="hero-checklist">
-                    <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>Targeted
-                        Campaigns</span>
-                    <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>Higher
-                        Conversions</span>
-                    <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>Transparent
-                        Reporting</span>
+                    <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>Data-Driven Strategies</span>
+                    <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>Transparent Reporting</span>
+                    <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>Measurable Results</span>
                     <span class="hero-check-item"><i class="fa-solid fa-circle-check"></i>ROI Focused</span>
                 </div>
             </div>
@@ -1753,8 +1748,8 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-lg-6">
                 <div class="hero-graphic-wrap">
                     <img
-                        src="./assets/images/about/hero-dashboard.png"
-                        alt="PPC performance dashboard showing clicks, conversions, cost per conversion, CTR, and an upward performance trend across Google and Meta ads"
+                        src="./assets/images/about/hero-dashboard3.png"
+                        alt="SEO performance dashboard showing rankings, traffic, conversions, and an upward growth trend across search engines"
                         class="hero-graphic" />
                 </div>
             </div>
@@ -1769,22 +1764,20 @@ include __DIR__ . '/header.php';
 
             <!-- LEFT COLUMN -->
             <div class="col-12 col-lg-6 ppc-left-col">
-                <span class="ppc-eyebrow">[ PPC benefits ]</span>
-                <h1 class="ppc-heading">Why businesses invest in PPC advertising</h1>
+                <span class="ppc-eyebrow">[ Why Choose Us ]</span>
+                <h1 class="ppc-heading">Unlock more organic growth with our SEO expertise</h1>
                 <p class="ppc-desc">
-                    PPC gives you speed, targeting control, and clear measurement. Well-structured campaigns help
-                    businesses enter competitive markets faster, test offers quickly, and scale the channels that
-                    produce stronger returns.
+                    We help businesses rank higher, attract the right audience, and turn organic traffic into measurable results. Our data-driven SEO strategies are designed to deliver long-term visibility, sustainable growth, and a strong online presence.
                 </p>
                 <a href="#" class="ppc-btn">
-                    Explore PPC Services
+                    Explore SEO Services
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
                 <div class="ppc-stat-wrap">
-                    <div class="ppc-stat-number">4 Key</div>
+                    <div class="ppc-stat-number">320K+</div>
                     <p class="ppc-stat-desc">
-                        benefits that help businesses launch faster, measure performance, and scale with confidence
+                        Organic Clicks Generated for our clients.
                     </p>
                 </div>
             </div>
@@ -1795,13 +1788,12 @@ include __DIR__ . '/header.php';
 
                     <div class="ppc-feature-item">
                         <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-bolt"></i>
+                            <i class="fa-solid fa-gears"></i>
                         </div>
                         <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Instant Visibility</h3>
+                            <h3 class="ppc-feature-title">Technical SEO</h3>
                             <p class="ppc-feature-text">
-                                Appear in front of your audience immediately instead of waiting through slower organic
-                                ranking cycles.
+                                We optimize your website's structure, speed, and crawlability and indexing to ensure search engines can easily discover, understand, and rank your pages.
                             </p>
                         </div>
                     </div>
@@ -1811,36 +1803,33 @@ include __DIR__ . '/header.php';
                             <i class="fa-solid fa-bullseye"></i>
                         </div>
                         <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Precise Targeting</h3>
+                            <h3 class="ppc-feature-title">On-Page Optimization</h3>
                             <p class="ppc-feature-text">
-                                Reach the right users by location, intent, interests, demographics, device type, and
-                                behavior.
+                                From keyword research to meta tags and content optimization, we fine-tune every element on your pages to improve relevance and search engine rankings.
                             </p>
                         </div>
                     </div>
 
                     <div class="ppc-feature-item">
                         <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-chart-line"></i>
+                            <i class="fa-solid fa-lightbulb"></i>
                         </div>
                         <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Measurable ROI</h3>
+                            <h3 class="ppc-feature-title">Content Strategy</h3>
                             <p class="ppc-feature-text">
-                                Track leads, sales, and cost per acquisition so every campaign can be optimized around
-                                performance.
+                                We create and optimize high-quality, SEO-friendly content that answers user intent, builds topical authority, and drives consistent organic traffic.
                             </p>
                         </div>
                     </div>
 
                     <div class="ppc-feature-item">
                         <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <i class="fa-solid fa-link"></i>
                         </div>
                         <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Continuous Optimization</h3>
+                            <h3 class="ppc-feature-title">Link Building &amp; Authority</h3>
                             <p class="ppc-feature-text">
-                                Use ongoing testing, audience refinements, and bid adjustments to keep improving results
-                                over time.
+                                We build high-quality backlinks from trusted websites to strengthen your domain authority and improve your search rankings.
                             </p>
                         </div>
                     </div>
@@ -1869,37 +1858,29 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-lg-7">
                 <div class="overview-right-col">
                     <div class="overview-top-row">
-                        <span class="overview-eyebrow">PPC OVERVIEW</span>
+                        <span class="overview-eyebrow">SEO OVERVIEW</span>
                         <span class="overview-location-badge">
                             <i class="fa-solid fa-location-dot"></i>
-                            PPC Company in Mumbai
+                            SEO Company in Mumbai
                         </span>
                     </div>
 
                     <h2 class="overview-heading">
-                        We Build <span class="text-accent">PPC</span> That Drives Real
+                        We Build <span class="text-accent">SEO</span> That Drives Real
                         Business Growth
                     </h2>
 
                     <p class="overview-desc">
-                        Pay-per-click advertising helps you appear in front of customers
-                        the moment they are ready to search, compare, or buy. A
-                        well-managed PPC campaign is not just about spending budget. It
-                        is about targeting the right audience, writing stronger ad copy,
-                        improving landing pages, and tracking every meaningful action.
+                        Search engine optimization is not only about rankings. It is about reaching people at the exact moment they are searching for your services. Our SEO campaigns are built to improve discoverability, strengthen content quality, fix technical issues, and turn traffic into enquiries.
                     </p>
 
                     <p class="overview-desc">
-                        Our team manages keyword planning, audience targeting, ad
-                        creation, bid strategy, A/B testing, remarketing, and conversion
-                        tracking so your paid campaigns drive better quality traffic and
-                        business outcomes.
-                    </p>
+We work on keyword research, competitor analysis, content mapping, page optimization, Google Business Profile improvements, performance tracking, and long-term authority building so your website can compete consistently. 
+                </p>
 
-                    <h3 class="overview-focus-label">PPC FOCUS AREAS</h3>
+                    <h3 class="overview-focus-label">SEO FOCUS AREAS</h3>
                     <p class="overview-focus-sub">
-                        Everything we improve is mapped around visibility, clicks,
-                        conversions, and return on ad spend.
+                        Everything we improve is mapped around visibility, relevance, authority, and conversion growth.
                     </p>
 
                     <div class="focus-grid">
@@ -1908,33 +1889,33 @@ include __DIR__ . '/header.php';
                             <span>Keyword Planning</span>
                         </div>
                         <div class="focus-chip">
-                            <i class="fa-solid fa-users"></i>
-                            <span>Audience Targeting</span>
+                            <i class="fa-solid fa-file-pen"></i>
+                            <span>On-Page SEO</span>
                         </div>
                         <div class="focus-chip">
-                            <i class="fa-solid fa-pen-ruler"></i>
-                            <span>Ad Creation</span>
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Technical SEO</span>
                         </div>
                         <div class="focus-chip">
-                            <i class="fa-solid fa-gavel"></i>
-                            <span>Bid Strategy</span>
+                            <i class="fa-solid fa-link"></i>
+                            <span>Link Building</span>
                         </div>
                         <div class="focus-chip">
-                            <i class="fa-solid fa-flask"></i>
-                            <span>A/B Testing</span>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Content Optimization</span>
                         </div>
                         <div class="focus-chip">
-                            <i class="fa-solid fa-arrows-rotate"></i>
-                            <span>Remarketing</span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Local SEO</span>
                         </div>
                         <div class="focus-chip">
                             <i class="fa-solid fa-chart-column"></i>
-                            <span>Conversion Tracking</span>
+                            <span>Performance Tracking</span>
                         </div>
                     </div>
 
                     <a href="#" class="overview-btn">
-                        Explore PPC Services
+                        Explore SEO Services
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1953,11 +1934,11 @@ include __DIR__ . '/header.php';
         <div class="services-header">
             <div class="services-eyebrow">
                 <span class="line"></span>
-                <span>PPC SERVICES</span>
+                <span>SEO SERVICES</span>
                 <span class="line"></span>
             </div>
             <h2 class="services-heading">
-                Core <span class="text-accent">PPC Services</span> We Offer
+                Core <span class="text-accent">SEO Services</span> We Offer
             </h2>
         </div>
 
@@ -1969,10 +1950,10 @@ include __DIR__ . '/header.php';
                     <div class="service-icon-circle">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <h3 class="service-title">Google Search Ads</h3>
+                    <h3 class="service-title">Keyword Research</h3>
                     <p class="service-text">
-                        Show your ads on Google search results and reach high-intent
-                        customers actively looking for your products or services.
+                        Identify high-value keywords and optimize your content to improve
+                        search engine visibility and drive targeted traffic.
                     </p>
                     <div class="service-underline"></div>
                 </div>
@@ -1982,12 +1963,11 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="service-icon-circle">
-                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-file-pen"></i>
                     </div>
-                    <h3 class="service-title">Display &amp; Remarketing Ads</h3>
+                    <h3 class="service-title">On-Page SEO</h3>
                     <p class="service-text">
-                        Reach a wider audience across the web and re-engage visitors
-                        with targeted display and remarketing campaigns.
+                        Optimize your website's structure and content to improve search engine rankings and user experience.
                     </p>
                     <div class="service-underline"></div>
                 </div>
@@ -1997,16 +1977,15 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="service-icon-circle meta-icons">
-                        <i class="fa-solid fa-infinity meta-infinity"></i>
+                        <i class="fa-solid fa-gears meta-infinity"></i>
                         <span class="meta-brand-row">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-code"></i>
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
                         </span>
                     </div>
-                    <h3 class="service-title">Meta Ads Management</h3>
+                    <h3 class="service-title">Technical SEO</h3>
                     <p class="service-text">
-                        Run result-driven Facebook and Instagram ads to increase brand
-                        awareness, generate leads, and boost conversions.
+                        Optimize your website's technical aspects to improve search engine crawling and indexing.
                     </p>
                     <div class="service-underline"></div>
                 </div>
@@ -2016,12 +1995,11 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="service-icon-circle">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <h3 class="service-title">Shopping &amp; Ecommerce Ads</h3>
+                    <h3 class="service-title">Local SEO</h3>
                     <p class="service-text">
-                        Promote your products with Google Shopping and product ads that
-                        drive qualified traffic and increase sales.
+                        Optimize your online presence to attract local customers and improve visibility in local search results.
                     </p>
                     <div class="service-underline"></div>
                 </div>
@@ -2031,12 +2009,11 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="service-icon-circle">
-                        <i class="fa-solid fa-arrow-pointer"></i>
+                        <i class="fa-solid fa-link"></i>
                     </div>
-                    <h3 class="service-title">Landing Page Optimization</h3>
+                    <h3 class="service-title">Link Building</h3>
                     <p class="service-text">
-                        Improve landing page design, structure, and messaging to turn
-                        more clicks into leads and paying customers.
+                        Build high-quality backlinks to improve your website's authority and search engine rankings.
                     </p>
                     <div class="service-underline"></div>
                 </div>
@@ -2048,10 +2025,9 @@ include __DIR__ . '/header.php';
                     <div class="service-icon-circle">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3 class="service-title">Conversion Tracking &amp; Reporting</h3>
+                    <h3 class="service-title">Performance Tracking</h3>
                     <p class="service-text">
-                        Track conversions, measure ROI, and get detailed reports to
-                        optimize campaigns and drive better results.
+                        Monitor and analyze your SEO performance to make data-driven decisions and continuously improve your search engine visibility.
                     </p>
                     <div class="service-underline"></div>
                 </div>
@@ -2074,9 +2050,8 @@ include __DIR__ . '/header.php';
                     Frequently Asked <span class="text-accent">Questions</span>
                 </h2>
                 <p class="faq-desc">
-                    Find answers to common questions about our PPC services,
-                    campaigns, and how we help businesses generate leads, sales, and
-                    measurable growth.
+                    Find answers to common questions about our SEO services,
+                    process, and how we help businesses grow online.
                 </p>
 
                 <div class="faq-illustration-wrap">
@@ -2101,7 +2076,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="false"
                                 aria-controls="collapse01">
                                 <span class="faq-num">01</span>
-                                <span class="faq-q-text">What is PPC advertising?</span>
+                                <span class="faq-q-text">What is SEO and why is it important for my business?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2114,9 +2089,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading01"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                PPC (pay-per-click) advertising is a model where you pay a
-                                fee each time someone clicks your ad, letting you buy visits
-                                to your site instead of earning them organically.
+                                SEO (Search Engine Optimization) is the practice of improving your website's visibility in search engine results pages (SERPs). It's important for your business because it helps you reach more potential customers organically, builds trust and credibility, and can lead to increased traffic and sales.
                             </div>
                         </div>
                     </div>
@@ -2132,7 +2105,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="true"
                                 aria-controls="collapse02">
                                 <span class="faq-num">02</span>
-                                <span class="faq-q-text">How long does it take to see PPC results?</span>
+                                <span class="faq-q-text">How long does it take to see SEO results?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2145,10 +2118,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading02"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                PPC can start driving traffic soon after launch. In many
-                                cases, early results can appear within days, while stronger
-                                performance improves over time through testing, targeting,
-                                and optimization.
+                                SEO results can take time to materialize, typically ranging from several weeks to months. However, the investment in SEO often yields long-term benefits, including sustained organic traffic and improved search engine rankings.
                             </div>
                         </div>
                     </div>
@@ -2164,7 +2134,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="false"
                                 aria-controls="collapse03">
                                 <span class="faq-num">03</span>
-                                <span class="faq-q-text">Which PPC platforms do you manage?</span>
+                                <span class="faq-q-text">What SEO services do you offer?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2177,9 +2147,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading03"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                We manage campaigns across Google Ads, Microsoft Ads, Meta
-                                (Facebook &amp; Instagram), and other major ad platforms
-                                depending on where your audience spends their time.
+                                We offer a comprehensive range of SEO services, including keyword research, on-page optimization, technical SEO audits, content optimization, link building, and local SEO strategies.
                             </div>
                         </div>
                     </div>
@@ -2195,7 +2163,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="false"
                                 aria-controls="collapse04">
                                 <span class="faq-num">04</span>
-                                <span class="faq-q-text">Do you help with Google Ads and Meta Ads?</span>
+                                <span class="faq-q-text">Do you guarantee top rankings on Google?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2208,9 +2176,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading04"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Yes, we handle full setup, management, and optimization for
-                                both Google Ads and Meta Ads, tailored to your goals and
-                                budget.
+                                No, we cannot guarantee specific rankings on Google or any other search engine. However, we employ proven strategies and best practices to improve your website's visibility and performance in search results over time.
                             </div>
                         </div>
                     </div>
@@ -2226,7 +2192,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="false"
                                 aria-controls="collapse05">
                                 <span class="faq-num">05</span>
-                                <span class="faq-q-text">How do you measure PPC success?</span>
+                                <span class="faq-q-text">How do you measure SEO success?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2239,9 +2205,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading05"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                We track metrics like click-through rate, conversion rate,
-                                cost per acquisition, and return on ad spend to measure
-                                performance against your specific goals.
+                                We measure SEO success through key performance indicators (KPIs) such as organic traffic growth, keyword rankings, conversion rates, and overall website engagement. Regular reporting and analytics help track progress and inform ongoing optimization efforts.
                             </div>
                         </div>
                     </div>
@@ -2288,7 +2252,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="false"
                                 aria-controls="collapse07">
                                 <span class="faq-num">07</span>
-                                <span class="faq-q-text">Can PPC work for any business type?</span>
+                                <span class="faq-q-text">Can you work with websites in any industry?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2301,9 +2265,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading07"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Most businesses can benefit from PPC, though strategy and
-                                platform choice vary by industry, target audience, and goals
-                                — we tailor the approach to fit your business.
+                                Yes, we can work with websites across various industries. Our SEO strategies are tailored to each business's unique needs, target audience, and goals, ensuring effective optimization regardless of the industry.
                             </div>
                         </div>
                     </div>
@@ -2319,7 +2281,7 @@ include __DIR__ . '/header.php';
                                 aria-expanded="false"
                                 aria-controls="collapse08">
                                 <span class="faq-num">08</span>
-                                <span class="faq-q-text">How much do your PPC services cost?</span>
+                                <span class="faq-q-text">How much do your SEO services cost?</span>
                                 <span class="faq-toggle-icon">
                                     <i class="fa-solid fa-plus icon-plus"></i>
                                     <i class="fa-solid fa-minus icon-minus"></i>
@@ -2332,9 +2294,7 @@ include __DIR__ . '/header.php';
                             aria-labelledby="heading08"
                             data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Pricing depends on your campaign scope, ad spend, and
-                                platforms involved — reach out and we'll put together a plan
-                                and quote based on your specific needs.
+                                Our SEO services are customized based on the scope of work, industry, and specific goals of each client. We offer competitive pricing and will provide a detailed proposal after understanding your requirements.
                             </div>
                         </div>
                     </div>
@@ -2363,3 +2323,8 @@ include __DIR__ . '/header.php';
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
+
