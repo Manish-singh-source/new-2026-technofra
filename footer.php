@@ -127,10 +127,21 @@
             </div>
         </footer>
         <!-- footer-style4 -->
-        <!-- Scroll Button -->
-        <button id="scrollBtn" title="Go to top">
-            <i class="fas fa-angle-up"></i>
-        </button>
+        <div class="sticky-contact-actions" aria-label="Quick contact actions">
+            <a
+                href="https://wa.me/918080803374"
+                class="sticky-contact-btn sticky-whatsapp-btn"
+                title="Chat on WhatsApp"
+                target="_blank"
+                rel="noopener"
+                aria-label="Chat on WhatsApp"
+            >
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <button id="scrollBtn" class="sticky-contact-btn sticky-scroll-btn" title="Go to top" aria-label="Go to top">
+                <i class="fas fa-angle-up"></i>
+            </button>
+        </div>
     </div>
 
     <!-- Js Plugin -->
@@ -142,6 +153,7 @@
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 

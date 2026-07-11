@@ -326,7 +326,7 @@
             <div class="overlay" id="overlay"></div>
             <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
             <div class="menu-content">
-                <a class='logo' href='index1.html'>
+                <a class='logo' href='index.php'>
                     <img src="assets/images/new/logo.png" class="wi" alt="logo">
                 </a>
                 <div class="sidebar-menu">
@@ -358,21 +358,21 @@
                 <li class="sub-menu">
                     <a href="#">Service</a>
                     <ul>
-                        <li><a href='#'>Web Design & Development</a></li>
+                        <li><a href="web-design-and-development.php">Web Design & Development</a></li>
                         <li><a href='shopify-development.php'>Shopify</a></li>
                         <li><a href='wordpress.php'>WordPress</a></li>
-                        <li><a href='crm-development.php'>Custom CMS</a></li>
+                        <li><a href="crm-development.php">CRM Development</a></li>
                         <li><a href='ios-development.php'>iOS App</a></li>
                         <li><a href='android-app-development.php'>Android App</a></li>
                         <li><a href='digital-marketing.php'>Digital Marketing</a></li>
-                        <li><a href='#'>Search Engine Optimization (SEO)</a></li>
+                        <li><a href="seo.php">Search Engine Optimization (SEO)</a></li>
                         <li><a href='ppc.php'>Paid Marketing (PPC)</a></li>
-                        <li><a href='#'>Social Media Marketing</a></li>
+                        <li><a href="social-media-marketing.php">Social Media Marketing</a></li>
                         <li><a href='content-marketing.php'>Content Marketing</a></li>
                         <li><a href='#'>Branding</a></li>
                         <li><a href='#'>UI/UX</a></li>
                         <li><a href='#'>Domain & Hosting</a></li>
-                        <li><a href='#'>IT Infrastructure</a></li>
+                        <li><a href="it-infrastructure.php">IT Infrastructure</a></li>
                     </ul>
                 </li>
                 <li><a href='portfolios.php'>Portfolio</a></li>
@@ -409,7 +409,7 @@
                     <div class="col-auto">
                         <div class="header-logo">
                             <a href="javascript:void(0)" class="menu-toggle"></a>
-                            <a href='index1.html'>
+                            <a href='index.php'>
                                 <img src="assets/images/new/logo-black.png" class="wi" alt="logo">
                             </a>
                         </div>
@@ -433,10 +433,10 @@
                                                     <div class="mega-menu-group">
                                                         <h4 class="mega-menu-heading">Web & App Solutions</h4>
                                                         <ul class="mega-menu-list">
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
+                                                            <li><a href="web-design-and-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
                                                             <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
                                                             <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
-                                                            <li><a href='crm-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
+                                                            <li><a href="crm-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>CRM Development</span></a></li>
                                                             <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
                                                             <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
                                                         </ul>
@@ -449,7 +449,7 @@
                                                             <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
                                                             <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
                                                             <li><a href='ppc.php'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
+                                                            <li><a href="social-media-marketing.php"><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
                                                             <li><a href='content-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
                                                         </ul>
                                                     </div>
@@ -467,7 +467,7 @@
                                                         <h4 class="mega-menu-heading">Hosting & IT Services</h4>
                                                         <ul class="mega-menu-list">
                                                             <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
+                                                            <li><a href="it-infrastructure.php"><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
@@ -544,7 +544,7 @@
                             <div class="col-auto">
                                 <div class="header-logo">
                                     <a href="javascript:void(0)" class="menu-toggle"></a>
-                                    <a href='index1.html'>
+                                    <a href='index.php'>
                                         <img src="assets/images/new/logo-black.png" class="wi" alt="logo">
                                     </a>
                                 </div>
@@ -568,10 +568,10 @@
                                                     <div class="mega-menu-group">
                                                         <h4 class="mega-menu-heading">Web & App Solutions</h4>
                                                         <ul class="mega-menu-list">
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
+                                                            <li><a href="web-design-and-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
                                                             <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
                                                             <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
-                                                            <li><a href='crm-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
+                                                            <li><a href="crm-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>CRM Development</span></a></li>
                                                             <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
                                                             <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
                                                         </ul>
@@ -582,9 +582,9 @@
                                                         <h4 class="mega-menu-heading">Online Marketing Services</h4>
                                                         <ul class="mega-menu-list">
                                                             <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
+                                                            <li><a href="seo.php"><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
                                                             <li><a href='ppc.php'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
-                                                            <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
+                                                            <li><a href="social-media-marketing.php"><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
                                                             <li><a href='content-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
                                                         </ul>
                                                     </div>
@@ -602,7 +602,7 @@
                                                         <h4 class="mega-menu-heading">Hosting & IT Services</h4>
                                                         <ul class="mega-menu-list">
                                                             <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
+                                                            <li><a href="it-infrastructure.php"><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
