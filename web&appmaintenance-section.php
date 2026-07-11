@@ -220,7 +220,7 @@ WEB APP HERO
 
 .tf-webapp-content h1{
 
-    font-size:70px;
+    font-size:clamp(42px, 5.6vw, 70px);
 
     line-height:1.05;
 
@@ -234,7 +234,7 @@ WEB APP HERO
 
 .tf-webapp-content p{
 
-    font-size:20px;
+    font-size:clamp(17px, 1.6vw, 20px);
 
     line-height:1.8;
 
@@ -370,7 +370,7 @@ WEB APP HERO
 
     width:100%;
 
-    max-width:900px;
+    max-width:min(900px, 100%);
 
     animation:floatDashboard 5.5s ease-in-out infinite;
 
@@ -465,8 +465,8 @@ Tablet
 
 .tf-webapp-hero{
 
-    padding-top:150px;
-    padding-bottom:80px;
+    padding-top:145px;
+    padding-bottom:78px;
 
 }
 
@@ -484,8 +484,8 @@ Tablet
 
 .tf-webapp-content p{
 
-    margin:auto;
-    margin-bottom:35px;
+    margin:0 auto 34px;
+    max-width:620px;
 
 }
 
@@ -499,13 +499,44 @@ Tablet
 
     justify-content:center;
 
+    gap:18px 28px;
+
 }
 
 .tf-webapp-image{
 
-    margin-top:60px;
+    margin-top:50px;
 
     text-align:center;
+
+}
+
+.tf-webapp-image img{
+
+    max-width:min(760px, 100%);
+
+}
+
+.tf-webapp-why,
+.tf-webapp-services,
+.tf-webapp-process{
+
+    padding:88px 0;
+
+}
+
+.tf-webapp-heading,
+.tf-service-heading,
+.tf-process-heading{
+
+    margin-bottom:52px;
+
+}
+
+.tf-why-card,
+.tf-service-card{
+
+    padding:30px 24px;
 
 }
 
@@ -520,8 +551,8 @@ Mobile
 
 .tf-webapp-hero{
 
-    padding-top:130px;
-    padding-bottom:60px;
+    padding-top:124px;
+    padding-bottom:58px;
 
     background-position:center;
 
@@ -536,6 +567,8 @@ Mobile
 .tf-webapp-content p{
 
     font-size:17px;
+
+    line-height:1.75;
 
 }
 
@@ -564,9 +597,401 @@ Mobile
 
 }
 
+.tf-webapp-features div{
+
+    width:100%;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(77,91,255,.10);
+
+}
+
+.tf-webapp-features div:last-child{
+
+    border-bottom:0;
+
+}
+
 .tf-webapp-image{
 
-    margin-top:45px;
+    margin-top:42px;
+
+}
+
+.tf-webapp-image img{
+
+    max-width:100%;
+
+}
+
+.tf-webapp-why,
+.tf-webapp-services,
+.tf-webapp-process{
+
+    padding:70px 0;
+
+}
+
+.tf-webapp-heading,
+.tf-service-heading,
+.tf-process-heading{
+
+    margin-bottom:40px;
+
+}
+
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+
+    line-height:1.18;
+
+}
+
+.tf-why-card{
+
+    padding:28px 20px;
+
+}
+
+.tf-service-card{
+
+    gap:16px;
+
+    padding:22px;
+
+    align-items:flex-start;
+
+}
+
+.tf-service-icon{
+
+    min-width:58px;
+
+    height:58px;
+
+    font-size:22px;
+
+}
+
+.tf-service-content h4{
+
+    font-size:18px;
+
+}
+
+.tf-process-step{
+
+    padding:0 8px;
+
+    margin-bottom:36px;
+
+}
+
+.tf-process-icon{
+
+    width:86px;
+
+    height:86px;
+
+}
+
+.tf-process-icon::before{
+
+    width:64px;
+
+    height:64px;
+
+}
+
+.tf-process-icon i{
+
+    font-size:26px;
+
+}
+
+.tf-process-step h4{
+
+    font-size:19px;
+
+    margin-top:22px;
+
+    margin-bottom:12px;
+
+}
+
+.tf-process-step p{
+
+    max-width:320px;
+
+    font-size:14px;
+
+    line-height:1.75;
+
+}
+
+}
+
+@media(max-width:575px){
+
+.tf-webapp-hero{
+
+    padding-top:112px;
+    padding-bottom:48px;
+
+    background-position:62% center;
+
+}
+
+.tf-webapp-badge{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:11px 16px;
+
+    font-size:14px;
+
+}
+
+.tf-webapp-badge i{
+
+    width:30px;
+    height:30px;
+    font-size:13px;
+
+}
+
+.tf-webapp-content h1{
+
+    font-size:34px;
+
+    line-height:1.12;
+
+    margin-bottom:18px;
+
+}
+
+.tf-webapp-content p{
+
+    font-size:16px;
+
+    margin-bottom:28px;
+
+}
+
+.tf-webapp-buttons{
+
+    gap:12px;
+    margin-bottom:34px;
+
+}
+
+.tf-btn-primary,
+.tf-btn-outline{
+
+    padding:14px 22px;
+
+    border-radius:12px;
+
+}
+
+.tf-webapp-features{
+
+    gap:12px;
+
+}
+
+.tf-webapp-features div{
+
+    padding:10px 0;
+
+    font-size:15px;
+
+}
+
+.tf-webapp-image{
+
+    margin-top:34px;
+
+}
+
+.tf-webapp-why,
+.tf-webapp-services,
+.tf-webapp-process{
+
+    padding:60px 0;
+
+}
+
+.tf-subtitle,
+.tf-service-subtitle,
+.tf-process-subtitle{
+
+    font-size:13px;
+
+    letter-spacing:1.4px;
+
+}
+
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+
+    font-size:28px;
+
+}
+
+.tf-webapp-heading br,
+.tf-service-heading br,
+.tf-process-heading br{
+
+    display:none;
+
+}
+
+.tf-why-card{
+
+    padding:24px 18px;
+
+    border-radius:18px;
+
+}
+
+.tf-why-icon{
+
+    width:66px;
+    height:66px;
+    font-size:26px;
+    margin-bottom:20px;
+
+}
+
+.tf-why-card h4{
+
+    font-size:19px;
+
+    margin-bottom:12px;
+
+}
+
+.tf-why-card p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.tf-service-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:14px;
+
+    padding:20px 18px;
+
+    border-radius:16px;
+
+}
+
+.tf-service-icon{
+
+    width:56px;
+    min-width:56px;
+    height:56px;
+
+}
+
+.tf-service-content h4{
+
+    font-size:17px;
+
+    margin-bottom:10px;
+
+}
+
+.tf-service-content p{
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.tf-process-step{
+
+    margin-bottom:30px;
+
+    padding:0 2px;
+
+}
+
+.tf-process-icon{
+
+    width:80px;
+    height:80px;
+
+}
+
+.tf-process-icon::before{
+
+    width:58px;
+    height:58px;
+
+}
+
+.tf-process-step h4{
+
+    font-size:18px;
+    margin-top:18px;
+    margin-bottom:10px;
+
+}
+
+.tf-process-step p{
+
+    font-size:14px;
+    max-width:100%;
+
+}
+
+.tf-webapp-hero::after{
+
+    width:180px;
+    height:180px;
+    top:26px;
+    right:-80px;
+
+}
+
+.tf-webapp-why::before{
+
+    width:160px;
+    height:160px;
+    top:20px;
+    left:-90px;
+
+}
+
+.tf-webapp-services::before{
+
+    width:180px;
+    height:180px;
+    top:28px;
+    right:-86px;
+
+}
+
+.tf-webapp-process::before{
+
+    width:180px;
+    height:180px;
+    bottom:-110px;
 
 }
 
@@ -643,7 +1068,7 @@ Mobile
 
 .tf-webapp-heading h2{
 
-    font-size:56px;
+    font-size:clamp(32px, 4.5vw, 56px);
 
     font-weight:800;
 
@@ -875,7 +1300,7 @@ OUR SERVICES
 
 .tf-service-heading h2{
 
-    font-size:54px;
+    font-size:clamp(32px, 4.3vw, 54px);
 
     font-weight:800;
 
@@ -1143,7 +1568,7 @@ HOW IT WORKS
 
 .tf-process-heading h2{
 
-    font-size:56px;
+    font-size:clamp(32px, 4.5vw, 56px);
 
     font-weight:800;
 
