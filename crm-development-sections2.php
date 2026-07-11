@@ -1014,8 +1014,8 @@ h3 {
         min-height:650px;
         padding-top:80px;
         background:
-        url("assets/images/bg/banner_crm.png")
-        center bottom / cover no-repeat;
+        url("assets/images/bg/banner_crm2.png")
+        center top / cover no-repeat;
     }
 
     .crm-content{
