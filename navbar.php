@@ -359,16 +359,16 @@
                     <a href="#">Service</a>
                     <ul>
                         <li><a href='#'>Web Design & Development</a></li>
-                        <li><a href='#'>Shopify</a></li>
-                        <li><a href='#'>WordPress</a></li>
-                        <li><a href='#'>Custom CMS</a></li>
-                        <li><a href='#'>iOS App</a></li>
-                        <li><a href='#'>Android App</a></li>
+                        <li><a href='shopify-development.php'>Shopify</a></li>
+                        <li><a href='wordpress.php'>WordPress</a></li>
+                        <li><a href='crm-development.php'>Custom CMS</a></li>
+                        <li><a href='ios-development.php'>iOS App</a></li>
+                        <li><a href='android-app-development.php'>Android App</a></li>
                         <li><a href='digital-marketing.php'>Digital Marketing</a></li>
                         <li><a href='#'>Search Engine Optimization (SEO)</a></li>
-                        <li><a href='#'>Paid Marketing (PPC)</a></li>
+                        <li><a href='ppc.php'>Paid Marketing (PPC)</a></li>
                         <li><a href='#'>Social Media Marketing</a></li>
-                        <li><a href='#'>Content Marketing</a></li>
+                        <li><a href='content-marketing.php'>Content Marketing</a></li>
                         <li><a href='#'>Branding</a></li>
                         <li><a href='#'>UI/UX</a></li>
                         <li><a href='#'>Domain & Hosting</a></li>
@@ -436,7 +436,7 @@
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
                                                             <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
                                                             <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
+                                                            <li><a href='crm-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
                                                             <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
                                                             <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
                                                         </ul>
@@ -447,10 +447,10 @@
                                                         <h4 class="mega-menu-heading">Online Marketing Services</h4>
                                                         <ul class="mega-menu-list">
                                                             <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
+                                                            <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
+                                                            <li><a href='ppc.php'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
+                                                            <li><a href='content-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
@@ -571,7 +571,7 @@
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
                                                             <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
                                                             <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
+                                                            <li><a href='crm-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>Custom CMS</span></a></li>
                                                             <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
                                                             <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
                                                         </ul>
@@ -583,9 +583,9 @@
                                                         <ul class="mega-menu-list">
                                                             <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
                                                             <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
+                                                            <li><a href='ppc.php'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
+                                                            <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
+                                                            <li><a href='content-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
                                                         </ul>
                                                     </div>
                                                 </li>
