@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PPC Hero Section</title>
+    <title>How We Execute SEO Campaigns</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -22,35 +22,51 @@
     <style>
       /* ============================================
    RESPONSIVE TYPOGRAPHY SCALE
+   Uses clamp(min, preferred, max) so text scales
+   fluidly between mobile (~320px) and desktop (~1440px)
+   with no media queries needed.
+
+   clamp(MIN, PREFERRED, MAX)
+   - MIN: smallest size (mobile floor)
+   - PREFERRED: fluid value tied to viewport width (vw)
+   - MAX: largest size (desktop ceiling)
    ============================================ */
 
       :root {
-        --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
-        --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
-        --h3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
-        --h4: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
-        --h5: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
-        --h6: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+        /* Headings */
+        --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem); /* 32px → 56px */
+        --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem); /* 28px → 44px */
+        --h3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem); /* 24px → 36px */
+        --h4: clamp(1.25rem, 1.1rem + 1vw, 1.75rem); /* 20px → 28px */
+        --h5: clamp(1.125rem, 1rem + 0.6vw, 1.375rem); /* 18px → 22px */
+        --h6: clamp(1rem, 0.95rem + 0.3vw, 1.125rem); /* 16px → 18px */
 
-        --p-large: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
-        --p: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
-        --p-small: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
-        --caption: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+        /* Body text */
+        --p-large: clamp(1.125rem, 1rem + 0.5vw, 1.25rem); /* 18px → 20px */
+        --p: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem); /* 16px → 17px */
+        --p-small: clamp(
+          0.875rem,
+          0.85rem + 0.15vw,
+          0.9375rem
+        ); /* 14px → 15px */
+        --caption: clamp(
+          0.75rem,
+          0.72rem + 0.15vw,
+          0.8125rem
+        ); /* 12px → 13px */
 
+        /* Line heights (pair with above) */
         --lh-heading: 1.2;
         --lh-body: 1.6;
         --lh-tight: 1.3;
 
+        /* Optional: letter spacing for large headings */
         --ls-heading: -0.02em;
-
-        --ppc-navy: #0d1b3e;
-        --ppc-blue: #2f5cf6;
-        --ppc-blue-light: #eaf0fe;
-        --ppc-text-muted: #5b6270;
-        --ppc-border: #dfe4f5;
-        --ppc-bg: #eef1fb;
-        --ppc-green: #16a34a;
       }
+
+      /* ============================================
+   APPLY THE SCALE
+   ============================================ */
 
       h1,
       .h1 {
@@ -112,23 +128,33 @@
       }
 
       /* ============================================
-   HERO SECTION
+   SEO PROCESS SECTION
    ============================================ */
+
+      :root {
+        --seo-bg: #f5f7fb;
+        --seo-navy: #0d1b3e;
+        --seo-blue: #2f5cf6;
+        --seo-indigo: #4338ca;
+        --seo-teal: #0d9488;
+        --seo-text-muted: #5b6270;
+        --seo-ring-track: #e3e8f4;
+      }
 
       body {
         font-family: "Inter", sans-serif;
-        color: var(--ppc-navy);
+        color: var(--seo-navy);
       }
 
-      .hero-section {
+      .seo-process-section {
         position: relative;
-        background-color: var(--ppc-bg);
+        background-color: var(--seo-bg);
         padding-top: clamp(3rem, 2rem + 4vw, 5.5rem);
         padding-bottom: clamp(3rem, 2rem + 4vw, 5.5rem);
         overflow: hidden;
       }
 
-      .hero-container {
+      .seo-process-container {
         max-width: 1320px;
         margin: 0 auto;
         padding-left: clamp(1rem, 0.5rem + 2vw, 2rem);
@@ -138,12 +164,14 @@
         z-index: 2;
       }
 
-      .hero-dots {
+      /* ---- Decorative dot grids ---- */
+
+      .seo-dots {
         position: absolute;
-        width: 120px;
-        height: 100px;
+        width: 110px;
+        height: 90px;
         background-image: radial-gradient(
-          var(--ppc-blue) 1.5px,
+          var(--seo-blue) 1.5px,
           transparent 1.5px
         );
         background-size: 14px 14px;
@@ -151,171 +179,215 @@
         z-index: 0;
       }
 
-      .hero-dots.top-right {
-        top: 2rem;
+      .seo-dots.top-right {
+        top: 1.5rem;
         right: 2rem;
       }
-      .hero-dots.bottom-right {
-        bottom: 2rem;
-        right: 4rem;
+      .seo-dots.bottom-left {
+        bottom: 1.5rem;
+        left: 1.5rem;
       }
 
-      /* ---- Left column ---- */
+      /* ---- Header ---- */
 
-      .hero-badge {
+      .seo-process-header {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+      }
+
+      .seo-eyebrow {
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
-        background-color: #ffffff;
-        color: var(--ppc-blue);
+        gap: 0.75rem;
         font-size: var(--p-small);
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        border: 1px solid var(--ppc-border);
-        border-radius: 2rem;
-        margin-bottom: 1.25rem;
+        font-weight: 700;
+        color: var(--seo-blue);
+        letter-spacing: 0.06em;
+        margin-bottom: 1rem;
       }
 
-      .hero-badge i {
-        font-size: 0.8rem;
+      .seo-eyebrow .line {
+        height: 1px;
+        width: 28px;
+        background-color: var(--seo-blue);
+        opacity: 0.6;
+        flex-shrink: 0;
       }
 
-      .hero-heading {
+      .seo-eyebrow i {
+        font-size: 0.7rem;
+        color: var(--seo-blue);
+      }
+
+      .seo-process-heading {
         font-size: var(--h1);
         font-weight: 800;
         line-height: 1.2;
-        margin-bottom: 1.25rem;
-        max-width: 16ch;
-        word-wrap: break-word;
+        color: var(--seo-navy);
+        margin-bottom: 1rem;
       }
 
-      .hero-heading .text-accent {
-        color: var(--ppc-blue);
+      .seo-process-heading .text-accent {
+        color: var(--seo-blue);
       }
 
-      .hero-heading .text-underline {
-        text-decoration: underline;
-        text-decoration-color: var(--ppc-blue);
-        text-decoration-thickness: 3px;
-        text-underline-offset: 6px;
-      }
-
-      .hero-desc {
+      .seo-process-sub {
         font-size: var(--p);
-        color: var(--ppc-text-muted);
+        color: var(--seo-text-muted);
         line-height: var(--lh-body);
-        max-width: 46ch;
-        margin-bottom: 1.75rem;
+        max-width: 52ch;
+        margin: 0 auto;
       }
 
-      .hero-cta-row {
+      /* ---- Steps row ---- */
+
+      .seo-steps-row {
         display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-bottom: 1.75rem;
-      }
-
-      .hero-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-        border-radius: 0.6rem;
-        padding: 0.85rem 1.5rem;
-        font-size: var(--p-small);
-        font-weight: 600;
-        text-decoration: none;
-        white-space: nowrap;
-        transition:
-          background-color 0.2s ease,
-          color 0.2s ease,
-          transform 0.2s ease;
-      }
-
-      .hero-btn i {
-        transition: transform 0.2s ease;
-        font-size: 0.85rem;
-      }
-
-      .hero-btn-primary {
-        background-color: var(--ppc-blue);
-        color: #ffffff;
-        border: 1.5px solid var(--ppc-blue);
-      }
-
-      .hero-btn-primary:hover {
-        background-color: #1c46e0;
-        color: #ffffff;
-      }
-
-      .hero-btn-secondary {
-        background-color: transparent;
-        color: var(--ppc-blue);
-        border: 1.5px solid var(--ppc-blue);
-      }
-
-      .hero-btn-secondary:hover {
-        background-color: var(--ppc-blue-light);
-        color: var(--ppc-blue);
-      }
-
-      .hero-btn:hover i {
-        transform: translateX(3px);
-      }
-
-      .hero-checklist {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1.25rem 1.75rem;
-      }
-
-      .hero-check-item {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: var(--p-small);
-        font-weight: 500;
-        color: var(--ppc-navy);
-        white-space: nowrap;
-      }
-
-      .hero-check-item i {
-        color: var(--ppc-blue);
-        font-size: 0.9rem;
-      }
-
-      /* ---- Right column: dashboard graphic ---- */
-
-      .hero-graphic-wrap {
+        align-items: flex-start;
+        justify-content: space-between;
         position: relative;
+      }
+
+      .seo-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0 0.5rem;
+      }
+
+      /* connector arrow between steps (desktop) */
+      .seo-connector {
+        flex: 0 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        width: clamp(28px, 3vw, 64px);
+        padding-top: clamp(
+          44px,
+          4vw + 20px,
+          60px
+        ); /* aligns with ring vertical center */
+        color: var(--seo-connector-color, var(--seo-blue));
+        flex-shrink: 0;
       }
 
-      .hero-graphic-wrap::before {
-        content: "";
-        position: absolute;
-        width: 78%;
-        height: 78%;
-        background: radial-gradient(
-          circle,
-          rgba(47, 92, 246, 0.14) 0%,
-          rgba(47, 92, 246, 0) 70%
-        );
-        border-radius: 50%;
-        z-index: 0;
-      }
-
-      .hero-graphic {
-        position: relative;
-        z-index: 1;
+      .seo-connector svg {
         width: 100%;
-        max-width: 620px;
-        height: auto;
+        height: 14px;
         display: block;
+      }
+
+      /* ---- Ring + icon + badge ---- */
+
+      .seo-ring-wrap {
+        position: relative;
+        width: clamp(96px, 6vw + 60px, 128px);
+        height: clamp(96px, 6vw + 60px, 128px);
+        margin-bottom: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .seo-ring-track {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 2px dashed var(--seo-ring-track);
+      }
+
+      .seo-ring-progress {
+        position: absolute;
+        inset: 6px;
+        border-radius: 50%;
+        border: 3px solid var(--seo-step-color, var(--seo-blue));
+        opacity: 0.35;
+      }
+
+      .seo-icon-circle {
+        position: absolute;
+        inset: 14px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 16px rgba(13, 27, 62, 0.08);
+      }
+
+      .seo-icon-circle i {
+        font-size: clamp(1.4rem, 1vw + 1.1rem, 1.75rem);
+        color: var(--seo-step-color, var(--seo-blue));
+      }
+
+      .seo-step-badge {
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: clamp(28px, 1.6vw + 22px, 34px);
+        height: clamp(28px, 1.6vw + 22px, 34px);
+        border-radius: 50%;
+        background-color: var(--seo-step-color, var(--seo-blue));
+        color: #ffffff;
+        font-size: var(--caption);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid var(--seo-bg);
+      }
+
+      /* ---- Step text ---- */
+
+      .seo-step-title {
+        font-size: var(--p-large);
+        font-weight: 700;
+        color: var(--seo-navy);
+        margin-bottom: 0.5rem;
+        word-wrap: break-word;
+      }
+
+      .seo-step-underline {
+        width: 28px;
+        height: 2px;
+        background-color: var(--seo-step-color, var(--seo-blue));
+        border-radius: 2px;
+        margin-bottom: 0.75rem;
+      }
+
+      .seo-step-text {
+        font-size: var(--p-small);
+        color: var(--seo-text-muted);
+        line-height: var(--lh-body);
+        max-width: 26ch;
+        word-wrap: break-word;
+      }
+
+      /* ---- Per-step accent colors (matches the blue -> teal progression in the reference) ---- */
+
+      .seo-step.step-1 {
+        --seo-step-color: #2f5cf6;
+      }
+      .seo-step.step-2 {
+        --seo-step-color: #3730a3;
+      }
+      .seo-step.step-3 {
+        --seo-step-color: #4c1d95;
+      }
+      .seo-step.step-4 {
+        --seo-step-color: #0d9488;
+      }
+
+      .seo-connector.connector-1 {
+        --seo-connector-color: #2f5cf6;
+      }
+      .seo-connector.connector-2 {
+        --seo-connector-color: #3730a3;
+      }
+      .seo-connector.connector-3 {
+        --seo-connector-color: #4c1d95;
       }
 
       /* ============================================
@@ -324,179 +396,288 @@
 
       /* below extra large */
       @media (max-width: 1919.98px) {
-        .hero-container {
+        .seo-process-container {
           max-width: 1200px;
         }
       }
 
       /* below large desktop */
       @media (max-width: 1599.98px) {
-        .hero-container {
+        .seo-process-container {
           max-width: 1100px;
         }
       }
 
       /* below desktop */
       @media (max-width: 1399.98px) {
-        .hero-heading {
-          max-width: 15ch;
-        }
-        .hero-graphic {
-          max-width: 540px;
+        .seo-step-text {
+          max-width: 24ch;
         }
       }
 
       /* below laptop */
       @media (max-width: 1199.98px) {
-        .hero-section {
+        .seo-process-section {
           padding-top: 3.5rem;
           padding-bottom: 3.5rem;
         }
-        .hero-graphic {
-          max-width: 460px;
+        .seo-connector {
+          width: clamp(20px, 2.2vw, 44px);
         }
       }
 
       /* below tablet landscape */
       @media (max-width: 991.98px) {
-        .hero-heading,
-        .hero-desc {
-          max-width: 100%;
+        .seo-process-header {
+          max-width: 90%;
         }
-        .hero-graphic-wrap {
-          margin-top: 3rem;
+        .seo-steps-row {
+          flex-wrap: wrap;
+          row-gap: 2.5rem;
         }
-        .hero-graphic {
-          max-width: 480px;
+        .seo-step {
+          flex: 1 1 40%;
+          min-width: 200px;
         }
-        .hero-dots {
+        .seo-connector {
+          display: none; /* connectors don't translate well to a 2-col wrap layout */
+        }
+        .seo-dots {
           display: none;
         }
       }
 
       /* below tablet portrait */
       @media (max-width: 767.98px) {
-        .hero-cta-row {
-          flex-direction: column;
-          align-items: stretch;
+        .seo-step {
+          flex: 1 1 100%;
+          min-width: 0;
         }
-        .hero-btn {
-          justify-content: center;
-          width: 100%;
+        .seo-steps-row {
+          row-gap: 2.25rem;
         }
-        .hero-checklist {
-          gap: 0.85rem 1.25rem;
-        }
-        .hero-graphic {
-          max-width: 400px;
+        .seo-step-text {
+          max-width: 34ch;
         }
       }
 
       /* below small tablet/landscape phone */
       @media (max-width: 575.98px) {
-        .hero-check-item {
-          font-size: var(--caption);
+        .seo-process-header {
+          margin-bottom: 2rem;
         }
-        .hero-graphic {
-          max-width: 320px;
+        .seo-ring-wrap {
+          margin-bottom: 1rem;
+        }
+        .seo-step-text {
+          max-width: 30ch;
         }
       }
 
       /* below large phone */
       @media (max-width: 479.98px) {
-        .hero-badge {
-          font-size: var(--caption);
-          padding: 0.4rem 0.85rem;
+        .seo-eyebrow .line {
+          width: 18px;
         }
-        .hero-checklist {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.6rem;
+        .seo-step-title {
+          font-size: var(--p);
         }
-        .hero-graphic {
-          max-width: 280px;
+        .seo-step-text {
+          max-width: 100%;
         }
       }
 
       /* below small phone */
       @media (max-width: 359.98px) {
-        .hero-container {
+        .seo-process-container {
           padding-left: 0.85rem;
           padding-right: 0.85rem;
         }
-        .hero-graphic {
-          max-width: 240px;
+        .seo-ring-wrap {
+          width: 88px;
+          height: 88px;
         }
       }
     </style>
   </head>
   <body>
-    <section class="hero-section">
-      <span class="hero-dots top-right"></span>
-      <span class="hero-dots bottom-right"></span>
+    <section class="seo-process-section">
+      <span class="seo-dots top-right"></span>
+      <span class="seo-dots bottom-left"></span>
 
-      <div class="hero-container">
-        <div class="row align-items-center g-5">
-          <!-- LEFT COLUMN -->
-          <div class="col-12 col-lg-6">
-            <span class="hero-badge">
-              <i class="fa-solid fa-star"></i>
-              ROI Driven PPC Campaigns
-            </span>
+      <div class="seo-process-container">
+        <!-- Header -->
+        <div class="seo-process-header">
+          <span class="seo-eyebrow">
+            <span class="line"></span>
+            Our Process
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+          <h2 class="seo-process-heading">
+            How We Execute <span class="text-accent">SEO Campaigns</span>
+          </h2>
+          <p class="seo-process-sub">
+            A proven, data-driven process that turns insight into impact and
+            delivers consistent organic growth.
+          </p>
+        </div>
 
-            <h1 class="hero-heading">
-              Run Smarter Ads.
-              <span class="text-accent">Get Quality Clicks.</span>
-              <span class="text-accent text-underline"
-                >Drive Better Results.</span
-              >
-            </h1>
-
-            <p class="hero-desc">
-              Maximize your ROI with data-driven PPC campaigns across Google
-              Ads, Meta Ads, and more. Reach the right audience, boost
-              conversions, and grow your business.
+        <!-- Steps -->
+        <div class="seo-steps-row">
+          <!-- Step 1 -->
+          <div class="seo-step step-1">
+            <div class="seo-ring-wrap">
+              <span class="seo-ring-track"></span>
+              <span class="seo-ring-progress"></span>
+              <span class="seo-icon-circle"
+                ><i class="fa-solid fa-magnifying-glass-chart"></i
+              ></span>
+              <span class="seo-step-badge">01</span>
+            </div>
+            <h3 class="seo-step-title">Audit &amp; Research</h3>
+            <div class="seo-step-underline"></div>
+            <p class="seo-step-text">
+              We review your website, competitors, keywords, and technical
+              issues to identify growth opportunities.
             </p>
-
-            <div class="hero-cta-row">
-              <a href="#" class="hero-btn hero-btn-primary">
-                Get Free PPC Audit
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-              <a href="#" class="hero-btn hero-btn-secondary">
-                Our PPC Services
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-
-            <div class="hero-checklist">
-              <span class="hero-check-item"
-                ><i class="fa-solid fa-circle-check"></i>Targeted
-                Campaigns</span
-              >
-              <span class="hero-check-item"
-                ><i class="fa-solid fa-circle-check"></i>Higher
-                Conversions</span
-              >
-              <span class="hero-check-item"
-                ><i class="fa-solid fa-circle-check"></i>Transparent
-                Reporting</span
-              >
-              <span class="hero-check-item"
-                ><i class="fa-solid fa-circle-check"></i>ROI Focused</span
-              >
-            </div>
           </div>
 
-          <!-- RIGHT COLUMN -->
-          <div class="col-12 col-lg-6">
-            <div class="hero-graphic-wrap">
-              <img
-                src="assets/hero-dashboard.png"
-                alt="PPC performance dashboard showing clicks, conversions, cost per conversion, CTR, and an upward performance trend across Google and Meta ads"
-                class="hero-graphic"
+          <!-- Connector 1 -->
+          <div class="seo-connector connector-1">
+            <svg
+              viewBox="0 0 64 14"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <line
+                x1="0"
+                y1="7"
+                x2="52"
+                y2="7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-dasharray="4 5"
+                stroke-linecap="round"
               />
+              <path
+                d="M50 2 L57 7 L50 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="seo-step step-2">
+            <div class="seo-ring-wrap">
+              <span class="seo-ring-track"></span>
+              <span class="seo-ring-progress"></span>
+              <span class="seo-icon-circle"
+                ><i class="fa-solid fa-clipboard-list"></i
+              ></span>
+              <span class="seo-step-badge">02</span>
             </div>
+            <h3 class="seo-step-title">Strategy Planning</h3>
+            <div class="seo-step-underline"></div>
+            <p class="seo-step-text">
+              We build a clear SEO roadmap with keyword targets, content
+              priorities, and optimization actions.
+            </p>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="seo-connector connector-2">
+            <svg
+              viewBox="0 0 64 14"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <line
+                x1="0"
+                y1="7"
+                x2="52"
+                y2="7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-dasharray="4 5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M50 2 L57 7 L50 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="seo-step step-3">
+            <div class="seo-ring-wrap">
+              <span class="seo-ring-track"></span>
+              <span class="seo-ring-progress"></span>
+              <span class="seo-icon-circle"
+                ><i class="fa-solid fa-gear"></i
+              ></span>
+              <span class="seo-step-badge">03</span>
+            </div>
+            <h3 class="seo-step-title">Optimization &amp; Publishing</h3>
+            <div class="seo-step-underline"></div>
+            <p class="seo-step-text">
+              We improve pages, content, metadata, and technical elements to
+              increase visibility and relevance.
+            </p>
+          </div>
+
+          <!-- Connector 3 -->
+          <div class="seo-connector connector-3">
+            <svg
+              viewBox="0 0 64 14"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <line
+                x1="0"
+                y1="7"
+                x2="52"
+                y2="7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-dasharray="4 5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M50 2 L57 7 L50 12"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="seo-step step-4">
+            <div class="seo-ring-wrap">
+              <span class="seo-ring-track"></span>
+              <span class="seo-ring-progress"></span>
+              <span class="seo-icon-circle"
+                ><i class="fa-solid fa-chart-line"></i
+              ></span>
+              <span class="seo-step-badge">04</span>
+            </div>
+            <h3 class="seo-step-title">Tracking &amp; Scaling</h3>
+            <div class="seo-step-underline"></div>
+            <p class="seo-step-text">
+              We monitor rankings, traffic, and leads, then refine the campaign
+              for long-term growth.
+            </p>
           </div>
         </div>
       </div>

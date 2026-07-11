@@ -1699,6 +1699,394 @@ include __DIR__ . '/header.php';
             max-width: 160px;
         }
     }
+
+    /* ============================================
+   SEO PROCESS SECTION
+   ============================================ */
+
+    :root {
+        --seo-bg: #f5f7fb;
+        --seo-navy: #0d1b3e;
+        --seo-blue: #2f5cf6;
+        --seo-indigo: #4338ca;
+        --seo-teal: #0d9488;
+        --seo-text-muted: #5b6270;
+        --seo-ring-track: #e3e8f4;
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+        color: var(--seo-navy);
+    }
+
+    .seo-process-section {
+        position: relative;
+        background-color: var(--seo-bg);
+        padding-top: clamp(3rem, 2rem + 4vw, 5.5rem);
+        padding-bottom: clamp(3rem, 2rem + 4vw, 5.5rem);
+        overflow: hidden;
+    }
+
+    .seo-process-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding-left: clamp(1rem, 0.5rem + 2vw, 2rem);
+        padding-right: clamp(1rem, 0.5rem + 2vw, 2rem);
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* ---- Decorative dot grids ---- */
+
+    .seo-dots {
+        position: absolute;
+        width: 110px;
+        height: 90px;
+        background-image: radial-gradient(var(--seo-blue) 1.5px,
+                transparent 1.5px);
+        background-size: 14px 14px;
+        opacity: 0.2;
+        z-index: 0;
+    }
+
+    .seo-dots.top-right {
+        top: 1.5rem;
+        right: 2rem;
+    }
+
+    .seo-dots.bottom-left {
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+
+    /* ---- Header ---- */
+
+    .seo-process-header {
+        text-align: center;
+        max-width: 640px;
+        margin: 0 auto clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+    }
+
+    .seo-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: var(--p-small);
+        font-weight: 700;
+        color: var(--seo-blue);
+        letter-spacing: 0.06em;
+        margin-bottom: 1rem;
+    }
+
+    .seo-eyebrow .line {
+        height: 1px;
+        width: 28px;
+        background-color: var(--seo-blue);
+        opacity: 0.6;
+        flex-shrink: 0;
+    }
+
+    .seo-eyebrow i {
+        font-size: 0.7rem;
+        color: var(--seo-blue);
+    }
+
+    .seo-process-heading {
+        font-size: var(--h1);
+        font-weight: 800;
+        line-height: 1.2;
+        color: var(--seo-navy);
+        margin-bottom: 1rem;
+    }
+
+    .seo-process-heading .text-accent {
+        color: var(--seo-blue);
+    }
+
+    .seo-process-sub {
+        font-size: var(--p);
+        color: var(--seo-text-muted);
+        line-height: var(--lh-body);
+        max-width: 52ch;
+        margin: 0 auto;
+    }
+
+    /* ---- Steps row ---- */
+
+    .seo-steps-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .seo-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0 0.5rem;
+    }
+
+    /* connector arrow between steps (desktop) */
+    .seo-connector {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: clamp(28px, 3vw, 64px);
+        padding-top: clamp(44px,
+                4vw + 20px,
+                60px);
+        /* aligns with ring vertical center */
+        color: var(--seo-connector-color, var(--seo-blue));
+        flex-shrink: 0;
+    }
+
+    .seo-connector svg {
+        width: 100%;
+        height: 14px;
+        display: block;
+    }
+
+    /* ---- Ring + icon + badge ---- */
+
+    .seo-ring-wrap {
+        position: relative;
+        width: clamp(96px, 6vw + 60px, 128px);
+        height: clamp(96px, 6vw + 60px, 128px);
+        margin-bottom: 1.25rem;
+        flex-shrink: 0;
+    }
+
+    .seo-ring-track {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 2px dashed var(--seo-ring-track);
+    }
+
+    .seo-ring-progress {
+        position: absolute;
+        inset: 6px;
+        border-radius: 50%;
+        border: 3px solid var(--seo-step-color, var(--seo-blue));
+        opacity: 0.35;
+    }
+
+    .seo-icon-circle {
+        position: absolute;
+        inset: 14px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 16px rgba(13, 27, 62, 0.08);
+    }
+
+    .seo-icon-circle i {
+        font-size: clamp(1.4rem, 1vw + 1.1rem, 1.75rem);
+        color: var(--seo-step-color, var(--seo-blue));
+    }
+
+    .seo-step-badge {
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: clamp(28px, 1.6vw + 22px, 34px);
+        height: clamp(28px, 1.6vw + 22px, 34px);
+        border-radius: 50%;
+        background-color: var(--seo-step-color, var(--seo-blue));
+        color: #ffffff;
+        font-size: var(--caption);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid var(--seo-bg);
+    }
+
+    /* ---- Step text ---- */
+
+    .seo-step-title {
+        font-size: var(--p-large);
+        font-weight: 700;
+        color: var(--seo-navy);
+        margin-bottom: 0.5rem;
+        word-wrap: break-word;
+    }
+
+    .seo-step-underline {
+        width: 28px;
+        height: 2px;
+        background-color: var(--seo-step-color, var(--seo-blue));
+        border-radius: 2px;
+        margin-bottom: 0.75rem;
+    }
+
+    .seo-step-text {
+        font-size: var(--p-small);
+        color: var(--seo-text-muted);
+        line-height: var(--lh-body);
+        max-width: 26ch;
+        word-wrap: break-word;
+    }
+
+    /* ---- Per-step accent colors (matches the blue -> teal progression in the reference) ---- */
+
+    .seo-step.step-1 {
+        --seo-step-color: #2f5cf6;
+    }
+
+    .seo-step.step-2 {
+        --seo-step-color: #3730a3;
+    }
+
+    .seo-step.step-3 {
+        --seo-step-color: #4c1d95;
+    }
+
+    .seo-step.step-4 {
+        --seo-step-color: #0d9488;
+    }
+
+    .seo-connector.connector-1 {
+        --seo-connector-color: #2f5cf6;
+    }
+
+    .seo-connector.connector-2 {
+        --seo-connector-color: #3730a3;
+    }
+
+    .seo-connector.connector-3 {
+        --seo-connector-color: #4c1d95;
+    }
+
+    /* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+    /* below extra large */
+    @media (max-width: 1919.98px) {
+        .seo-process-container {
+            max-width: 1200px;
+        }
+    }
+
+    /* below large desktop */
+    @media (max-width: 1599.98px) {
+        .seo-process-container {
+            max-width: 1100px;
+        }
+    }
+
+    /* below desktop */
+    @media (max-width: 1399.98px) {
+        .seo-step-text {
+            max-width: 24ch;
+        }
+    }
+
+    /* below laptop */
+    @media (max-width: 1199.98px) {
+        .seo-process-section {
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+        }
+
+        .seo-connector {
+            width: clamp(20px, 2.2vw, 44px);
+        }
+    }
+
+    /* below tablet landscape */
+    @media (max-width: 991.98px) {
+        .seo-process-header {
+            max-width: 90%;
+        }
+
+        .seo-steps-row {
+            flex-wrap: wrap;
+            row-gap: 2.5rem;
+        }
+
+        .seo-step {
+            flex: 1 1 40%;
+            min-width: 200px;
+        }
+
+        .seo-connector {
+            display: none;
+            /* connectors don't translate well to a 2-col wrap layout */
+        }
+
+        .seo-dots {
+            display: none;
+        }
+    }
+
+    /* below tablet portrait */
+    @media (max-width: 767.98px) {
+        .seo-step {
+            flex: 1 1 100%;
+            min-width: 0;
+        }
+
+        .seo-steps-row {
+            row-gap: 2.25rem;
+        }
+
+        .seo-step-text {
+            max-width: 34ch;
+        }
+    }
+
+    /* below small tablet/landscape phone */
+    @media (max-width: 575.98px) {
+        .seo-process-header {
+            margin-bottom: 2rem;
+        }
+
+        .seo-ring-wrap {
+            margin-bottom: 1rem;
+        }
+
+        .seo-step-text {
+            max-width: 30ch;
+        }
+    }
+
+    /* below large phone */
+    @media (max-width: 479.98px) {
+        .seo-eyebrow .line {
+            width: 18px;
+        }
+
+        .seo-step-title {
+            font-size: var(--p);
+        }
+
+        .seo-step-text {
+            max-width: 100%;
+        }
+    }
+
+    /* below small phone */
+    @media (max-width: 359.98px) {
+        .seo-process-container {
+            padding-left: 0.85rem;
+            padding-right: 0.85rem;
+        }
+
+        .seo-ring-wrap {
+            width: 88px;
+            height: 88px;
+        }
+    }
 </style>
 
 
@@ -1875,8 +2263,8 @@ include __DIR__ . '/header.php';
                     </p>
 
                     <p class="overview-desc">
-We work on keyword research, competitor analysis, content mapping, page optimization, Google Business Profile improvements, performance tracking, and long-term authority building so your website can compete consistently. 
-                </p>
+                        We work on keyword research, competitor analysis, content mapping, page optimization, Google Business Profile improvements, performance tracking, and long-term authority building so your website can compete consistently.
+                    </p>
 
                     <h3 class="overview-focus-label">SEO FOCUS AREAS</h3>
                     <p class="overview-focus-sub">
@@ -2036,6 +2424,171 @@ We work on keyword research, competitor analysis, content mapping, page optimiza
     </div>
 </section>
 
+
+<section class="seo-process-section">
+    <span class="seo-dots top-right"></span>
+    <span class="seo-dots bottom-left"></span>
+
+    <div class="seo-process-container">
+        <!-- Header -->
+        <div class="seo-process-header">
+            <span class="seo-eyebrow">
+                <span class="line"></span>
+                Our Process
+                <i class="fa-solid fa-arrow-right"></i>
+            </span>
+            <h2 class="seo-process-heading">
+                How We Execute <span class="text-accent">SEO Campaigns</span>
+            </h2>
+            <p class="seo-process-sub">
+                A proven, data-driven process that turns insight into impact and
+                delivers consistent organic growth.
+            </p>
+        </div>
+
+        <!-- Steps -->
+        <div class="seo-steps-row">
+            <!-- Step 1 -->
+            <div class="seo-step step-1">
+                <div class="seo-ring-wrap">
+                    <span class="seo-ring-track"></span>
+                    <span class="seo-ring-progress"></span>
+                    <span class="seo-icon-circle"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+                    <span class="seo-step-badge">01</span>
+                </div>
+                <h3 class="seo-step-title">Audit &amp; Research</h3>
+                <div class="seo-step-underline"></div>
+                <p class="seo-step-text">
+                    We review your website, competitors, keywords, and technical
+                    issues to identify growth opportunities.
+                </p>
+            </div>
+
+            <!-- Connector 1 -->
+            <div class="seo-connector connector-1">
+                <svg
+                    viewBox="0 0 64 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none">
+                    <line
+                        x1="0"
+                        y1="7"
+                        x2="52"
+                        y2="7"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-dasharray="4 5"
+                        stroke-linecap="round" />
+                    <path
+                        d="M50 2 L57 7 L50 12"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        fill="none" />
+                </svg>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="seo-step step-2">
+                <div class="seo-ring-wrap">
+                    <span class="seo-ring-track"></span>
+                    <span class="seo-ring-progress"></span>
+                    <span class="seo-icon-circle"><i class="fa-solid fa-clipboard-list"></i></span>
+                    <span class="seo-step-badge">02</span>
+                </div>
+                <h3 class="seo-step-title">Strategy Planning</h3>
+                <div class="seo-step-underline"></div>
+                <p class="seo-step-text">
+                    We build a clear SEO roadmap with keyword targets, content
+                    priorities, and optimization actions.
+                </p>
+            </div>
+
+            <!-- Connector 2 -->
+            <div class="seo-connector connector-2">
+                <svg
+                    viewBox="0 0 64 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none">
+                    <line
+                        x1="0"
+                        y1="7"
+                        x2="52"
+                        y2="7"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-dasharray="4 5"
+                        stroke-linecap="round" />
+                    <path
+                        d="M50 2 L57 7 L50 12"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        fill="none" />
+                </svg>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="seo-step step-3">
+                <div class="seo-ring-wrap">
+                    <span class="seo-ring-track"></span>
+                    <span class="seo-ring-progress"></span>
+                    <span class="seo-icon-circle"><i class="fa-solid fa-gear"></i></span>
+                    <span class="seo-step-badge">03</span>
+                </div>
+                <h3 class="seo-step-title">Optimization &amp; Publishing</h3>
+                <div class="seo-step-underline"></div>
+                <p class="seo-step-text">
+                    We improve pages, content, metadata, and technical elements to
+                    increase visibility and relevance.
+                </p>
+            </div>
+
+            <!-- Connector 3 -->
+            <div class="seo-connector connector-3">
+                <svg
+                    viewBox="0 0 64 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none">
+                    <line
+                        x1="0"
+                        y1="7"
+                        x2="52"
+                        y2="7"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-dasharray="4 5"
+                        stroke-linecap="round" />
+                    <path
+                        d="M50 2 L57 7 L50 12"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        fill="none" />
+                </svg>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="seo-step step-4">
+                <div class="seo-ring-wrap">
+                    <span class="seo-ring-track"></span>
+                    <span class="seo-ring-progress"></span>
+                    <span class="seo-icon-circle"><i class="fa-solid fa-chart-line"></i></span>
+                    <span class="seo-step-badge">04</span>
+                </div>
+                <h3 class="seo-step-title">Tracking &amp; Scaling</h3>
+                <div class="seo-step-underline"></div>
+                <p class="seo-step-text">
+                    We monitor rankings, traffic, and leads, then refine the campaign
+                    for long-term growth.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="faq-section">
     <div class="faq-container">
@@ -2323,8 +2876,3 @@ We work on keyword research, competitor analysis, content mapping, page optimiza
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
