@@ -4,252 +4,187 @@ WEB APP HERO
 ==================================================*/
 
 .tf-webapp-hero {
-
     position: relative;
     overflow: hidden;
-
-    padding-top: 180px;
-    padding-bottom: 120px;
-
-    background:
-    url(assets/images/bg/banner_webapp.png)
-    center center/cover no-repeat;
-
+    padding-top: clamp(130px, 14vw, 180px);
+    padding-bottom: clamp(70px, 8vw, 120px);
+    background: url(assets/images/bg/banner_webapp.png) center center/cover no-repeat;
 }
 
 .tf-webapp-hero::before{
-
     content:"";
-
     position:absolute;
-
     inset:0;
-
     background:rgba(255,255,255,.15);
-
     pointer-events:none;
-
 }
 
 .tf-webapp-content{
-
     position:relative;
     z-index:2;
-
 }
 
 .tf-webapp-badge{
-
     display:inline-flex;
-
     align-items:center;
-
     gap:10px;
-
     background:#eef5ff;
-
     color:#3568ff;
-
     padding:12px 22px;
-
     border-radius:50px;
-
     font-weight:600;
-
     font-size:15px;
-
     margin-bottom:35px;
-
+    max-width:100%;
 }
 
 .tf-webapp-badge i{
-
     width:34px;
     height:34px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     border-radius:50%;
-
     background:#3568ff;
-
     color:#fff;
-
     font-size:15px;
-
+    flex:0 0 34px;
 }
 
 .tf-webapp-content h1{
-
-    font-size:70px;
-
+    font-size:clamp(40px, 5vw, 70px);
     line-height:1.05;
-
     font-weight:800;
-
     color:#0f2346;
-
     margin-bottom:25px;
-
 }
 
 .tf-webapp-content p{
-
-    font-size:20px;
-
+    font-size:clamp(16px, 1.4vw, 20px);
     line-height:1.8;
-
     color:#5d6b82;
-
-    max-width:520px;
-
+    max-width:560px;
     margin-bottom:40px;
-
 }
 
 .tf-webapp-buttons{
-
     display:flex;
-
-    gap:18px;
-
+    gap:14px;
     flex-wrap:wrap;
-
     margin-bottom:45px;
-
 }
 
 .tf-btn-primary{
-
     background:linear-gradient(90deg,#3d82ff,#6447ff);
-
     color:#fff;
-
     padding:16px 38px;
-
     border-radius:14px;
-
     font-weight:700;
-
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:56px;
     transition:.3s;
-
     text-decoration:none;
-
     box-shadow:0 12px 30px rgba(77,102,255,.25);
-
 }
 
 .tf-btn-primary:hover{
-
     color:#fff;
-
     transform:translateY(-3px);
-
 }
 
 .tf-btn-outline{
-
     border:2px solid #dbe4ff;
-
     background:#fff;
-
     color:#16386b;
-
     padding:16px 38px;
-
     border-radius:14px;
-
     text-decoration:none;
-
     font-weight:700;
-
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:56px;
     transition:.3s;
-
 }
 
 .tf-btn-outline:hover{
-
     background:#3568ff;
-
     color:#fff;
-
 }
 
 .tf-webapp-features{
-
     display:flex;
-
     flex-wrap:wrap;
-
-    gap:35px;
-
+    gap:clamp(16px, 2vw, 35px);
 }
 
 .tf-webapp-features div{
-
     display:flex;
-
     align-items:center;
-
     gap:10px;
-
     color:#23385f;
-
     font-weight:600;
-
     font-size:16px;
-
 }
 
 .tf-webapp-features i{
-
     color:#3f6fff;
-
     font-size:18px;
-
 }
 
 .tf-webapp-image{
-
     position:relative;
-
     z-index:2;
-
     text-align:right;
-
 }
 
 .tf-webapp-image img{
-
     width:100%;
-
-    max-width:900px;
-
+    max-width:min(900px,100%);
     animation:floatDashboard 5s ease-in-out infinite;
-
     filter:drop-shadow(0 35px 45px rgba(0,0,0,.12));
-
     border-radius:25px;
-
 }
 
 @keyframes floatDashboard{
-
     0%{
         transform:translateY(0);
     }
-
     50%{
         transform:translateY(-10px);
     }
-
     100%{
         transform:translateY(0);
     }
+}
+
+@media(max-width:1199.98px){
+
+.tf-webapp-content h1{
+    font-size:clamp(38px, 4.2vw, 58px);
+}
+
+.tf-webapp-content p{
+    max-width:100%;
+}
+
+.tf-webapp-image img{
+    max-width:100%;
+}
+
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+    font-size:clamp(34px, 3.6vw, 50px);
+}
+
+.tf-webapp-heading,
+.tf-service-heading,
+.tf-process-heading{
+    margin-bottom:50px;
+}
 
 }
 
@@ -257,113 +192,316 @@ WEB APP HERO
 Tablet
 ==============================*/
 
-@media(max-width:991px){
+@media(max-width:991.98px){
 
 .tf-webapp-hero{
-
     padding-top:150px;
     padding-bottom:80px;
-
 }
 
 .tf-webapp-content{
-
     text-align:center;
-
 }
 
-.tf-webapp-content h1{
-
-    font-size:52px;
-
+.tf-webapp-badge{
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .tf-webapp-content p{
-
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom:35px;
-
 }
 
 .tf-webapp-buttons{
-
     justify-content:center;
-
 }
 
 .tf-webapp-features{
-
     justify-content:center;
-
 }
 
 .tf-webapp-image{
-
-    margin-top:60px;
-
+    margin-top:50px;
     text-align:center;
+}
 
+.tf-webapp-image img{
+    max-width:720px;
+}
+
+.tf-webapp-why,
+.tf-webapp-services,
+.tf-webapp-process{
+    padding:90px 0;
+}
+
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+    font-size:42px;
 }
 
 }
-
 
 /*==============================
 Mobile
 ==============================*/
 
-@media(max-width:767px){
+@media(max-width:767.98px){
 
 .tf-webapp-hero{
-
-    padding-top:130px;
+    padding-top:120px;
     padding-bottom:60px;
-
     background-position:center;
-
 }
 
 .tf-webapp-content h1{
-
     font-size:40px;
-
+    line-height:1.12;
 }
 
 .tf-webapp-content p{
-
     font-size:17px;
-
+    line-height:1.7;
 }
 
 .tf-webapp-buttons{
-
     flex-direction:column;
-
+    align-items:stretch;
 }
 
 .tf-btn-primary,
 .tf-btn-outline{
-
     width:100%;
-
     text-align:center;
-
 }
 
 .tf-webapp-features{
-
     flex-direction:column;
-
     gap:18px;
-
     align-items:flex-start;
+}
 
+.tf-webapp-features div{
+    width:100%;
+    justify-content:flex-start;
 }
 
 .tf-webapp-image{
-
     margin-top:45px;
+}
 
+.tf-webapp-image img{
+    max-width:100%;
+    border-radius:20px;
+}
+
+.tf-webapp-why,
+.tf-webapp-services,
+.tf-webapp-process{
+    padding:70px 0;
+}
+
+.tf-webapp-heading,
+.tf-service-heading,
+.tf-process-heading{
+    margin-bottom:38px;
+}
+
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+    font-size:32px;
+    line-height:1.25;
+}
+
+.tf-why-card,
+.tf-service-card{
+    padding:24px 20px;
+}
+
+.tf-why-card{
+    border-radius:18px;
+}
+
+.tf-why-icon{
+    width:70px;
+    height:70px;
+    font-size:28px;
+    margin-bottom:22px;
+}
+
+.tf-why-card h4,
+.tf-service-content h4,
+.tf-process-step h4{
+    font-size:19px;
+}
+
+.tf-why-card p,
+.tf-service-content p,
+.tf-process-step p{
+    font-size:14px;
+    line-height:1.7;
+}
+
+.tf-service-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.tf-service-icon{
+    min-width:60px;
+    height:60px;
+    font-size:24px;
+}
+
+.tf-process-step{
+    margin-bottom:40px;
+    padding:0 10px;
+}
+
+.tf-process-icon{
+    width:90px;
+    height:90px;
+}
+
+.tf-process-icon::before{
+    width:68px;
+    height:68px;
+}
+
+.tf-process-icon i{
+    font-size:28px;
+}
+
+}
+
+/*==============================
+Small Phone
+==============================*/
+
+@media(max-width:575.98px){
+
+.tf-webapp-hero{
+    padding-top:110px;
+    padding-bottom:50px;
+}
+
+.tf-webapp-badge{
+    width:100%;
+    justify-content:center;
+    padding:10px 16px;
+    font-size:14px;
+}
+
+.tf-webapp-badge i{
+    width:30px;
+    height:30px;
+    font-size:13px;
+    flex-basis:30px;
+}
+
+.tf-webapp-content h1{
+    font-size:34px;
+    letter-spacing:-.5px;
+}
+
+.tf-webapp-content p{
+    font-size:16px;
+}
+
+.tf-btn-primary,
+.tf-btn-outline{
+    min-height:52px;
+    padding:14px 24px;
+}
+
+.tf-webapp-features{
+    gap:14px;
+}
+
+.tf-webapp-features div{
+    font-size:15px;
+}
+
+.tf-webapp-why,
+.tf-webapp-services,
+.tf-webapp-process{
+    padding:70px 0;
+}
+
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+    font-size:28px;
+    line-height:1.25;
+}
+
+.tf-why-icon{
+    width:64px;
+    height:64px;
+    font-size:24px;
+}
+
+.tf-why-card h4,
+.tf-service-content h4,
+.tf-process-step h4{
+    font-size:18px;
+}
+
+.tf-process-icon{
+    width:82px;
+    height:82px;
+}
+
+.tf-process-icon::before{
+    width:62px;
+    height:62px;
+}
+
+.tf-process-icon i{
+    font-size:24px;
+}
+
+.tf-step-number{
+    width:30px;
+    height:30px;
+    font-size:12px;
+}
+
+}
+
+/*==============================
+Smallest Phones
+==============================*/
+
+@media(max-width:359.98px){
+
+.tf-webapp-content h1,
+.tf-webapp-heading h2,
+.tf-service-heading h2,
+.tf-process-heading h2{
+    font-size:26px;
+}
+
+.tf-webapp-content p,
+.tf-why-card p,
+.tf-service-content p,
+.tf-process-step p{
+    font-size:13px;
+}
+
+.tf-webapp-features div{
+    font-size:14px;
+}
+
+.tf-btn-primary,
+.tf-btn-outline{
+    font-size:14px;
+    padding:12px 18px;
 }
 
 }
@@ -373,507 +511,207 @@ Mobile
 ====================================*/
 
 .tf-webapp-why{
-
     position:relative;
-
     overflow:hidden;
-
-    padding:110px 0;
-
-    background:
-    url(assets/images/bg/banner_webapp2.png)
-    center center/cover no-repeat;
-
+    padding:clamp(70px,8vw,110px) 0;
+    background:url(assets/images/bg/banner_webapp2.png) center center/cover no-repeat;
 }
 
 .tf-webapp-heading{
-
     position:relative;
-
     z-index:2;
-
-    margin-bottom:65px;
-
+    margin-bottom:clamp(38px,5vw,65px);
 }
 
 .tf-subtitle{
-
     display:inline-block;
-
     font-size:15px;
-
     font-weight:700;
-
     letter-spacing:2px;
-
     color:#5b55ff;
-
     text-transform:uppercase;
-
     margin-bottom:18px;
-
 }
 
 .tf-webapp-heading h2{
-
-    font-size:56px;
-
+    font-size:23px;
     font-weight:800;
-
     line-height:1.2;
-
     color:#132247;
-
     margin:0;
-
 }
 
 .tf-webapp-heading h2 span{
-
     background:linear-gradient(90deg,#366dff,#6a40ff);
-
     -webkit-background-clip:text;
-
     -webkit-text-fill-color:transparent;
-
 }
 
 .tf-why-card{
-
     height:100%;
-
     background:#ffffff;
-
     border-radius:22px;
-
-    padding:38px 28px;
-
+    padding:clamp(26px,2.6vw,38px) clamp(20px,2.2vw,28px);
     text-align:center;
-
     border:1px solid #edf0fb;
-
     transition:.35s;
-
     box-shadow:0 10px 35px rgba(0,0,0,.05);
-
 }
 
 .tf-why-card:hover{
-
     transform:translateY(-10px);
-
     box-shadow:0 20px 50px rgba(77,94,255,.15);
-
 }
 
 .tf-why-icon{
-
     width:82px;
-
     height:82px;
-
     margin:0 auto 28px;
-
     border-radius:50%;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     background:#f4f3ff;
-
     color:#5a47ff;
-
     font-size:34px;
-
     transition:.3s;
-
 }
 
 .tf-why-card:hover .tf-why-icon{
-
     background:linear-gradient(135deg,#4a76ff,#6948ff);
-
     color:#fff;
-
     transform:rotate(8deg) scale(1.08);
-
 }
 
 .tf-why-card h4{
-
     font-size:22px;
-
     font-weight:700;
-
     color:#17254b;
-
     margin-bottom:18px;
-
 }
 
 .tf-why-card p{
-
     font-size:16px;
-
     line-height:1.8;
-
     color:#667085;
-
     margin:0;
-
 }
-
-/*=====================
- Tablet
-=====================*/
-
-@media(max-width:991px){
-
-.tf-webapp-why{
-
-    padding:90px 0;
-
-}
-
-.tf-webapp-heading h2{
-
-    font-size:42px;
-
-}
-
-}
-
-/*=====================
- Mobile
-=====================*/
-
-@media(max-width:767px){
-
-.tf-webapp-why{
-
-    padding:70px 0;
-
-}
-
-.tf-webapp-heading{
-
-    margin-bottom:45px;
-
-}
-
-.tf-webapp-heading h2{
-
-    font-size:32px;
-
-}
-
-.tf-why-card{
-
-    padding:30px 22px;
-
-}
-
-.tf-why-icon{
-
-    width:70px;
-
-    height:70px;
-
-    font-size:28px;
-
-}
-
-.tf-why-card h4{
-
-    font-size:20px;
-
-}
-
-.tf-why-card p{
-
-    font-size:15px;
-
-}
-
-}
-
 
 /*==========================================
 OUR SERVICES
 ==========================================*/
 
 .tf-webapp-services{
-
     position:relative;
-
-    padding:110px 0;
-
+    padding:clamp(70px,8vw,110px) 0;
     overflow:hidden;
-
-    background:url(assets/images/bg/banner_webapp3.png)
-    center center/cover no-repeat;
-
+    background:url(assets/images/bg/banner_webapp3.png) center center/cover no-repeat;
 }
 
 .tf-service-heading{
-
-    margin-bottom:65px;
-
+    margin-bottom:clamp(38px,5vw,65px);
 }
 
 .tf-service-subtitle{
-
     display:inline-block;
-
     padding:8px 18px;
-
     border-radius:30px;
-
     background:#eef0ff;
-
     color:#4e5dff;
-
     font-size:14px;
-
     font-weight:700;
-
     letter-spacing:1px;
-
     text-transform:uppercase;
-
     margin-bottom:18px;
-
 }
 
 .tf-service-heading h2{
-
-    font-size:54px;
-
+    font-size:clamp(32px,3.8vw,54px);
     font-weight:800;
-
     line-height:1.2;
-
     color:#12224b;
-
     margin-bottom:20px;
-
 }
 
 .tf-service-heading h2 span{
-
     display:block;
-
     background:linear-gradient(90deg,#326dff,#6947ff);
-
     -webkit-background-clip:text;
-
     -webkit-text-fill-color:transparent;
-
 }
 
 .tf-heading-divider{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     gap:15px;
-
 }
 
 .tf-heading-divider span{
-
     width:65px;
-
     height:3px;
-
     background:#4f63ff;
-
     border-radius:30px;
-
 }
 
 .tf-heading-divider i{
-
     font-size:8px;
-
     color:#4f63ff;
-
 }
 
 .tf-service-card{
-
     height:100%;
-
     display:flex;
-
     align-items:flex-start;
-
     gap:22px;
-
-    padding:30px;
-
+    padding:clamp(24px,2.4vw,30px);
     border-radius:18px;
-
     background:#fff;
-
     border:1px solid #edf0fb;
-
     box-shadow:0 8px 30px rgba(0,0,0,.05);
-
     transition:.35s;
-
 }
 
 .tf-service-card:hover{
-
     transform:translateY(-8px);
-
     box-shadow:0 18px 45px rgba(75,93,255,.15);
-
 }
 
 .tf-service-icon{
-
-    min-width:74px;
-
-    height:74px;
-
+    min-width:clamp(60px,6vw,74px);
+    height:clamp(60px,6vw,74px);
     border-radius:50%;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     background:#f3f3ff;
-
     color:#5b49ff;
-
     font-size:30px;
-
     transition:.35s;
-
 }
 
 .tf-service-card:hover .tf-service-icon{
-
     background:linear-gradient(135deg,#4a72ff,#6c45ff);
-
     color:#fff;
-
     transform:rotate(10deg);
-
 }
 
 .tf-service-content{
-
     flex:1;
-
 }
 
 .tf-service-content h4{
-
     font-size:22px;
-
     font-weight:700;
-
     color:#132248;
-
     margin-bottom:12px;
-
 }
 
 .tf-service-content p{
-
     margin:0;
-
     color:#68758b;
-
     line-height:1.8;
-
     font-size:15px;
-
-}
-
-/*=========================
-Tablet
-=========================*/
-
-@media(max-width:991px){
-
-.tf-webapp-services{
-
-    padding:90px 0;
-
-}
-
-.tf-service-heading h2{
-
-    font-size:42px;
-
-}
-
-}
-
-/*=========================
-Mobile
-=========================*/
-
-@media(max-width:767px){
-
-.tf-webapp-services{
-
-    padding:70px 0;
-
-}
-
-.tf-service-heading{
-
-    margin-bottom:45px;
-
-}
-
-.tf-service-heading h2{
-
-    font-size:32px;
-
-}
-
-.tf-service-card{
-
-    padding:25px;
-
-}
-
-.tf-service-icon{
-
-    min-width:60px;
-
-    height:60px;
-
-    font-size:24px;
-
-}
-
-.tf-service-content h4{
-
-    font-size:19px;
-
-}
-
-.tf-service-content p{
-
-    font-size:14px;
-
-}
-
 }
 
 /*==================================
@@ -881,94 +719,56 @@ HOW IT WORKS
 ==================================*/
 
 .tf-webapp-process{
-
     position:relative;
-
-    padding:110px 0;
-
+    padding:clamp(70px,8vw,110px) 0;
     overflow:hidden;
-
-    background:url(assets/images/bg/banner_webapp4.png)
-    center center/cover no-repeat;
-
+    background:url(assets/images/bg/banner_webapp4.png) center center/cover no-repeat;
 }
 
 .tf-process-heading{
-
-    margin-bottom:80px;
-
+    margin-bottom:clamp(40px,5.5vw,80px);
 }
 
 .tf-process-subtitle{
-
     display:inline-block;
-
     color:#4b5dff;
-
     font-size:15px;
-
     font-weight:700;
-
     text-transform:uppercase;
-
     letter-spacing:1px;
-
     margin-bottom:18px;
-
 }
 
 .tf-process-heading h2{
-
-    font-size:56px;
-
+    font-size:clamp(32px,4vw,56px);
     font-weight:800;
-
     color:#14254d;
-
     margin-bottom:18px;
-
 }
 
 .tf-process-heading h2 span{
-
     background:linear-gradient(90deg,#356eff,#6948ff);
-
     -webkit-background-clip:text;
-
     -webkit-text-fill-color:transparent;
-
 }
 
 .tf-process-divider{
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     gap:15px;
-
 }
 
 .tf-process-divider span{
-
     width:60px;
-
     height:3px;
-
     border-radius:30px;
-
     background:#4d63ff;
-
 }
 
 .tf-process-divider i{
-
     font-size:8px;
-
     color:#4d63ff;
-
 }
 
 /* Line Between Steps */
@@ -976,31 +776,20 @@ HOW IT WORKS
 @media(min-width:992px){
 
 .tf-process-step{
-
     position:relative;
-
 }
 
 .tf-process-step::after{
-
     content:"";
-
     position:absolute;
-
     top:55px;
-
-    left:72%;
-
-    width:90%;
-
+    left:calc(100% - 14px);
+    width:calc(100% + 24px);
     border-top:2px dashed #b7b7ff;
-
 }
 
 .tf-last-step::after{
-
     display:none;
-
 }
 
 }
@@ -1008,232 +797,80 @@ HOW IT WORKS
 /* Step */
 
 .tf-process-step{
-
     text-align:center;
-
     position:relative;
-
-    padding:0 20px;
-
+    padding:0 clamp(10px,1.4vw,20px);
 }
 
 .tf-process-icon{
-
-    width:110px;
-
-    height:110px;
-
+    width:clamp(82px,8vw,110px);
+    height:clamp(82px,8vw,110px);
     margin:auto;
-
     border-radius:50%;
-
     background:#f6f4ff;
-
     border:3px solid #e4ddff;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     position:relative;
-
     transition:.35s;
-
 }
 
 .tf-process-icon::before{
-
     content:"";
-
-    width:82px;
-
-    height:82px;
-
+    width:clamp(62px,6vw,82px);
+    height:clamp(62px,6vw,82px);
     border-radius:50%;
-
     background:linear-gradient(135deg,#4a73ff,#6b45ff);
-
     position:absolute;
-
 }
 
 .tf-process-icon i{
-
     position:relative;
-
     z-index:2;
-
-    font-size:34px;
-
+    font-size:clamp(24px,2.8vw,34px);
     color:#fff;
-
 }
 
 .tf-step-number{
-
     position:absolute;
-
     top:-8px;
-
     left:-8px;
-
-    width:34px;
-
-    height:34px;
-
+    width:clamp(30px,2.4vw,34px);
+    height:clamp(30px,2.4vw,34px);
     border-radius:50%;
-
     background:#4d5cff;
-
     color:#fff;
-
     font-size:13px;
-
     font-weight:700;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     z-index:3;
-
     box-shadow:0 8px 20px rgba(77,92,255,.25);
-
 }
 
 .tf-process-step h4{
-
     margin-top:28px;
-
     margin-bottom:16px;
-
-    font-size:24px;
-
+    font-size:clamp(18px,2vw,24px);
     font-weight:700;
-
     color:#132247;
-
 }
 
 .tf-process-step p{
-
     color:#6b7285;
-
-    font-size:16px;
-
+    font-size:clamp(14px,1.3vw,16px);
     line-height:1.8;
-
     max-width:240px;
-
     margin:auto;
-
 }
 
 .tf-process-step:hover .tf-process-icon{
-
     transform:translateY(-8px) rotate(5deg);
-
     box-shadow:0 18px 45px rgba(76,95,255,.20);
-
 }
 
-/*====================
-Tablet
-====================*/
-
-@media(max-width:991px){
-
-.tf-webapp-process{
-
-    padding:90px 0;
-
-}
-
-.tf-process-heading{
-
-    margin-bottom:60px;
-
-}
-
-.tf-process-heading h2{
-
-    font-size:42px;
-
-}
-
-.tf-process-step{
-
-    margin-bottom:45px;
-
-}
-
-}
-
-/*====================
-Mobile
-====================*/
-
-@media(max-width:767px){
-
-.tf-webapp-process{
-
-    padding:70px 0;
-
-}
-
-.tf-process-heading{
-
-    margin-bottom:45px;
-
-}
-
-.tf-process-heading h2{
-
-    font-size:32px;
-
-    line-height:1.3;
-
-}
-
-.tf-process-icon{
-
-    width:90px;
-
-    height:90px;
-
-}
-
-.tf-process-icon::before{
-
-    width:68px;
-
-    height:68px;
-
-}
-
-.tf-process-icon i{
-
-    font-size:28px;
-
-}
-
-.tf-process-step h4{
-
-    font-size:21px;
-
-}
-
-.tf-process-step p{
-
-    font-size:15px;
-
-}
-
-}
 </style>
 
 <main>
