@@ -40,7 +40,7 @@ include __DIR__ . '/header.php';
 
     .dh-hero {
         position: relative;
-        padding: 170px 0 110px;
+        padding: 170px 0 50px;
         z-index: 1;
     }
 
@@ -780,7 +780,7 @@ include __DIR__ . '/header.php';
         .dh-hero {
             padding: 138px 0 80px;
         }
-
+    
         .dh-title {
             font-size: 2.6rem;
         }
@@ -996,6 +996,377 @@ include __DIR__ . '/header.php';
             justify-content: center;
         }
     }
+    .dh-offer-services {
+        position: relative;
+        padding: 80px 0 80px;
+        background:
+            radial-gradient(circle at top center, rgba(113, 102, 255, 0.14) 0%, rgba(113, 102, 255, 0) 44%),
+            linear-gradient(180deg, #f7f8ff 0%, #f3f6ff 100%);
+        overflow: hidden;
+    }
+    .dh-offer-services::before,
+    .dh-offer-services::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        pointer-events: none;
+    }
+    .dh-offer-services::before {
+        width: 220px;
+        height: 220px;
+        top: 60px;
+        left: -40px;
+        background: rgba(122, 110, 255, 0.14);
+    }
+    .dh-offer-services::after {
+        width: 260px;
+        height: 260px;
+        top: 100px;
+        right: -80px;
+        background: rgba(61, 150, 255, 0.12);
+    }
+    .dh-offer-head {
+        position: relative;
+        z-index: 1;
+        max-width: 860px;
+        margin: 0 auto 44px;
+        text-align: center;
+    }
+    .dh-offer-kicker {
+        display: inline-block;
+        margin-bottom: 14px;
+        color: #5f63ff;
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+    .dh-offer-title {
+        margin: 0 0 16px;
+        color: #16213e;
+        font-size: clamp(2rem, 4.2vw, 3.5rem);
+        line-height: 1.12;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+    }
+    .dh-offer-text {
+        max-width: 650px;
+        margin: 0 auto;
+        color: #697593;
+        font-size: 1.02rem;
+        line-height: 1.8;
+    }
+    .dh-offer-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+    .dh-offer-card {
+        position: relative;
+        padding: 30px 26px 24px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.96);
+        border: 1px solid rgba(121, 137, 255, 0.12);
+        box-shadow: 0 18px 44px rgba(93, 112, 185, 0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+    }
+    .dh-offer-card:hover {
+        transform: translateY(-6px);
+        background: linear-gradient(135deg, #8f67ff 0%, #4797ff 100%);
+        box-shadow: 0 28px 54px rgba(79, 109, 255, 0.24);
+    }
+    .dh-offer-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        margin-bottom: 26px;
+        border-radius: 50%;
+        background: #ffffff;
+        color: #665dff;
+        font-size: 31px;
+        box-shadow: 0 16px 32px rgba(95, 99, 255, 0.12);
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .dh-offer-card:hover .dh-offer-icon {
+        transform: scale(1.04);
+        color: #6b63ff;
+    }
+    .dh-offer-card h3 {
+        margin: 0 0 14px;
+        color: #1f2947;
+        font-size: 1.85rem;
+        line-height: 1.2;
+        font-weight: 800;
+        transition: color 0.3s ease;
+    }
+    .dh-offer-card p {
+        margin: 0 0 18px;
+        color: #697593;
+        font-size: 1rem;
+        line-height: 1.75;
+        transition: color 0.3s ease;
+    }
+    .dh-offer-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: #4d67ff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .dh-offer-link i {
+        font-size: 0.9rem;
+    }
+    .dh-offer-card:hover h3,
+    .dh-offer-card:hover p,
+    .dh-offer-card:hover .dh-offer-link {
+        color: #ffffff;
+    }
+    .dh-offer-card:hover .dh-offer-link {
+        transform: translateX(2px);
+    }
+
+    .dh-faq-section {
+        position: relative;
+        padding: 80px 0 80px;
+        background:
+            radial-gradient(circle at top left, rgba(103, 113, 255, 0.12) 0%, rgba(103, 113, 255, 0) 38%),
+            linear-gradient(180deg, #fbfcff 0%, #f4f7ff 100%);
+    }
+
+    .dh-faq-wrap {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+        gap: 42px;
+        align-items: center;
+    }
+
+    .dh-faq-copy {
+        max-width: 680px;
+    }
+
+    .dh-faq-kicker {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 34px;
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: rgba(96, 99, 255, 0.1);
+        color: #5864ff;
+        font-size: 0.95rem;
+        font-weight: 700;
+    }
+
+    .dh-faq-title {
+        margin: 18px 0 12px;
+        color: #16213e;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.14;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+    }
+
+    .dh-faq-text {
+        margin: 0 0 28px;
+        color: #697593;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .dh-faq-list {
+        display: grid;
+        gap: 14px;
+    }
+
+    .dh-faq-item {
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(121, 137, 255, 0.12);
+        box-shadow: 0 16px 40px rgba(91, 109, 171, 0.09);
+        overflow: hidden;
+    }
+
+    .dh-faq-item[open] {
+        box-shadow: 0 20px 44px rgba(91, 109, 171, 0.14);
+    }
+
+    .dh-faq-question {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 18px;
+        padding: 22px 24px;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .dh-faq-question::-webkit-details-marker {
+        display: none;
+    }
+
+    .dh-faq-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: linear-gradient(180deg, #f5f7ff 0%, #eef2ff 100%);
+        color: #5d67ff;
+        font-size: 0.95rem;
+        font-weight: 800;
+        box-shadow: inset 0 0 0 1px rgba(114, 136, 255, 0.08);
+    }
+
+    .dh-faq-label {
+        color: #1b2648;
+        font-size: 1.08rem;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+
+    .dh-faq-icon {
+        color: #1b2648;
+        font-size: 0.95rem;
+        transition: transform 0.25s ease;
+    }
+
+    .dh-faq-item[open] .dh-faq-icon {
+        transform: rotate(180deg);
+    }
+
+    .dh-faq-answer {
+        padding: 0 24px 22px 86px;
+        color: #697593;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .dh-faq-answer p {
+        margin: 0;
+    }
+
+    .dh-faq-support {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .dh-faq-support-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #eef2ff 0%, #e6edff 100%);
+        color: #5864ff;
+        font-size: 1.35rem;
+        box-shadow: 0 14px 28px rgba(95, 99, 255, 0.14);
+    }
+
+    .dh-faq-support-copy p {
+        margin: 0 0 4px;
+        color: #7b84a2;
+        font-size: 0.96rem;
+    }
+
+    .dh-faq-support-copy a {
+        color: #4d67ff;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .dh-faq-support-copy a i {
+        margin-left: 8px;
+        font-size: 0.9rem;
+    }
+
+    .dh-faq-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+    }
+
+    .dh-faq-media img {
+        display: block;
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 28px;
+    }
+
+    @media (max-width: 991px) {
+        .dh-faq-wrap {
+            grid-template-columns: 1fr;
+        }
+
+        .dh-faq-copy {
+            max-width: none;
+        }
+
+        .dh-faq-media {
+            order: -1;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .dh-faq-question {
+            gap: 14px;
+            padding: 18px;
+        }
+
+        .dh-faq-label {
+            font-size: 1rem;
+        }
+
+        .dh-faq-answer {
+            padding: 0 18px 18px 18px;
+        }
+
+        .dh-faq-support {
+            align-items: flex-start;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .dh-solutions-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 767px) {
+        .dh-solutions-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .dh-offer-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 767px) {
+        .dh-offer-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .dh-offer-card {
+            padding: 24px 20px 20px;
+        }
+    }
 </style>
 
 <main class="dh-page">
@@ -1144,9 +1515,163 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </section>
+    <section class="dh-offer-services">
+        <div class="container">
+            <div class="dh-offer-head">
+                <span class="dh-offer-kicker">Our Services</span>
+                <h2 class="dh-offer-title">What We Offer for Your Website</h2>
+                <p class="dh-offer-text">Explore the essential services that help businesses secure their domain, protect their website, and maintain reliable hosting performance.</p>
+            </div>
+            <div class="dh-offer-grid">
+                <div class="dh-offer-card">
+                    <div class="dh-offer-icon">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <h3>Domain Registration</h3>
+                    <p>Register professional domain names with the extensions that best match your business, brand, or project goals.</p>
+                    <a href="contact.php" class="dh-offer-link">
+                        <span>Explore More</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="dh-offer-card">
+                    <div class="dh-offer-icon">
+                        <i class="fa fa-code-fork"></i>
+                    </div>
+                    <h3>DNS Management</h3>
+                    <p>Manage DNS records with ease so your domain connects correctly to websites, email services, and other online tools.</p>
+                    <a href="contact.php" class="dh-offer-link">
+                        <span>Explore More</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="dh-offer-card">
+                    <div class="dh-offer-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <h3>SSL Security</h3>
+                    <p>Protect visitor data with SSL support that improves trust, encrypts connections, and strengthens website security.</p>
+                    <a href="contact.php" class="dh-offer-link">
+                        <span>Explore More</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="dh-offer-card">
+                    <div class="dh-offer-icon">
+                        <i class="fa fa-cloud-upload"></i>
+                    </div>
+                    <h3>Backup Protection</h3>
+                    <p>Keep your website safe with backup options that help restore important files and content when needed.</p>
+                    <a href="contact.php" class="dh-offer-link">
+                        <span>Explore More</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="dh-offer-card">
+                    <div class="dh-offer-icon">
+                        <i class="fa fa-server"></i>
+                    </div>
+                    <h3>99.9% Uptime</h3>
+                    <p>Benefit from stable hosting performance designed to keep your website accessible and responsive throughout the day.</p>
+                    <a href="contact.php" class="dh-offer-link">
+                        <span>Explore More</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="dh-offer-card">
+                    <div class="dh-offer-icon">
+                        <i class="fa fa-headphones"></i>
+                    </div>
+                    <h3>Support Center</h3>
+                    <p>Reach out for technical help whenever you need guidance with setup, migration, renewals, or hosting concerns.</p>
+                    <a href="contact.php" class="dh-offer-link">
+                        <span>Explore More</span>
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dh-faq-section">
+        <div class="container">
+            <div class="dh-faq-wrap">
+                <div class="dh-faq-copy">
+                    <span class="dh-faq-kicker">FAQ</span>
+                    <h2 class="dh-faq-title">Frequently Asked Questions</h2>
+                    <p class="dh-faq-text">Everything you need to know about our domain and hosting services.</p>
+                    <div class="dh-faq-list">
+                        <details class="dh-faq-item" open>
+                            <summary class="dh-faq-question">
+                                <span class="dh-faq-number">01</span>
+                                <span class="dh-faq-label">How do I register a domain name?</span>
+                                <i class="fa fa-angle-down dh-faq-icon"></i>
+                            </summary>
+                            <div class="dh-faq-answer">
+                                <p>Choose your preferred name, check availability, and complete the registration process in minutes.</p>
+                            </div>
+                        </details>
+                        <details class="dh-faq-item">
+                            <summary class="dh-faq-question">
+                                <span class="dh-faq-number">02</span>
+                                <span class="dh-faq-label">What hosting plan is best for a small business?</span>
+                                <i class="fa fa-angle-down dh-faq-icon"></i>
+                            </summary>
+                            <div class="dh-faq-answer">
+                                <p>Shared or managed hosting is usually the best starting point for small business websites that need speed, security, and low maintenance.</p>
+                            </div>
+                        </details>
+                        <details class="dh-faq-item">
+                            <summary class="dh-faq-question">
+                                <span class="dh-faq-number">03</span>
+                                <span class="dh-faq-label">Do you provide SSL certificates?</span>
+                                <i class="fa fa-angle-down dh-faq-icon"></i>
+                            </summary>
+                            <div class="dh-faq-answer">
+                                <p>Yes, we provide SSL support to help protect customer data, encrypt connections, and improve website trust.</p>
+                            </div>
+                        </details>
+                        <details class="dh-faq-item">
+                            <summary class="dh-faq-question">
+                                <span class="dh-faq-number">04</span>
+                                <span class="dh-faq-label">Can I migrate my website to your hosting?</span>
+                                <i class="fa fa-angle-down dh-faq-icon"></i>
+                            </summary>
+                            <div class="dh-faq-answer">
+                                <p>Yes, we can help move your website, databases, and email configuration with minimal downtime during migration.</p>
+                            </div>
+                        </details>
+                        <details class="dh-faq-item">
+                            <summary class="dh-faq-question">
+                                <span class="dh-faq-number">05</span>
+                                <span class="dh-faq-label">Do you offer technical support?</span>
+                                <i class="fa fa-angle-down dh-faq-icon"></i>
+                            </summary>
+                            <div class="dh-faq-answer">
+                                <p>Our support team is available to help with setup, renewals, troubleshooting, hosting issues, and general technical guidance.</p>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="dh-faq-support">
+                        <span class="dh-faq-support-icon"><i class="fa fa-headphones"></i></span>
+                        <div class="dh-faq-support-copy">
+                            <p>Still have questions? We're here to help.</p>
+                            <a href="contact.php">Contact our support team <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dh-faq-media">
+                    <img src="./assets/images/new/dhfaq.png" alt="Domain and hosting FAQ image">
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
 
 
 
