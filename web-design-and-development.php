@@ -2,13 +2,6 @@
 $pageTitle = 'Web Design and Development | Technofra';
 include __DIR__ . '/header.php';
 
-// http://localhost/new-2026-technofra/index10.html  - banner
-// http://localhost/new-2026-technofra/index10.html  - about
-// services 
-// http://localhost/new-2026-technofra/index16.html  - feature
-// https://aiero-tech-template.netlify.app/index11   - partners list
-// http://localhost/new-2026-technofra/index9.html   - our tech
-// http://localhost/new-2026-technofra/index10.html  - faq
 ?>
 
 
