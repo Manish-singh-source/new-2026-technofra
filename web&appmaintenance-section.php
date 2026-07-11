@@ -31,6 +31,108 @@ WEB APP HERO
 
 }
 
+.tf-webapp-hero::after,
+.tf-webapp-why::before,
+.tf-webapp-services::before,
+.tf-webapp-process::before{
+
+    content:"";
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    filter:blur(14px);
+
+    animation:tfFloatGlow 10s ease-in-out infinite;
+
+}
+
+.tf-webapp-hero::after{
+
+    width:320px;
+
+    height:320px;
+
+    top:60px;
+
+    right:-120px;
+
+    background:radial-gradient(circle, rgba(90,116,255,.22) 0%, rgba(90,116,255,0) 72%);
+
+    z-index:0;
+
+}
+
+.tf-webapp-why::before{
+
+    width:280px;
+
+    height:280px;
+
+    top:70px;
+
+    left:-120px;
+
+    background:radial-gradient(circle, rgba(95,72,255,.16) 0%, rgba(95,72,255,0) 72%);
+
+    animation-delay:-2s;
+
+    z-index:0;
+
+}
+
+.tf-webapp-services::before{
+
+    width:320px;
+
+    height:320px;
+
+    top:100px;
+
+    right:-140px;
+
+    background:radial-gradient(circle, rgba(67,111,255,.14) 0%, rgba(67,111,255,0) 72%);
+
+    animation-delay:-4s;
+
+    z-index:0;
+
+}
+
+.tf-webapp-process::before{
+
+    width:300px;
+
+    height:300px;
+
+    left:50%;
+
+    bottom:-150px;
+
+    transform:translateX(-50%);
+
+    background:radial-gradient(circle, rgba(102,72,255,.15) 0%, rgba(102,72,255,0) 72%);
+
+    animation-delay:-6s;
+
+    z-index:0;
+
+}
+
+.tf-webapp-hero .container,
+.tf-webapp-why .container,
+.tf-webapp-services .container,
+.tf-webapp-process .container{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
 .tf-webapp-content{
 
     position:relative;
@@ -61,6 +163,39 @@ WEB APP HERO
     margin-bottom:35px;
 
 }
+
+.tf-animate{
+
+    opacity:0;
+
+    transform:translateY(22px);
+
+    filter:blur(3px);
+
+    transition:
+    opacity .8s cubic-bezier(.2,.8,.2,1),
+    transform .8s cubic-bezier(.2,.8,.2,1),
+    filter .8s cubic-bezier(.2,.8,.2,1);
+
+    will-change:transform, opacity, filter;
+
+}
+
+.tf-animate.is-visible{
+
+    opacity:1;
+
+    transform:none;
+
+    filter:none;
+
+}
+
+.tf-animate-delay-1{transition-delay:.08s;}
+.tf-animate-delay-2{transition-delay:.16s;}
+.tf-animate-delay-3{transition-delay:.24s;}
+.tf-animate-delay-4{transition-delay:.32s;}
+.tf-animate-delay-5{transition-delay:.40s;}
 
 .tf-webapp-badge i{
 
@@ -203,6 +338,14 @@ WEB APP HERO
 
     font-size:16px;
 
+    opacity:0;
+
+    transform:translateY(12px);
+
+    transition:
+    opacity .65s ease,
+    transform .65s cubic-bezier(.2,.8,.2,1);
+
 }
 
 .tf-webapp-features i{
@@ -229,9 +372,11 @@ WEB APP HERO
 
     max-width:900px;
 
-    animation:floatDashboard 5s ease-in-out infinite;
+    animation:floatDashboard 5.5s ease-in-out infinite;
 
     filter:drop-shadow(0 35px 45px rgba(0,0,0,.12));
+
+    border-radius:25px;
 
 }
 
@@ -250,6 +395,67 @@ WEB APP HERO
     }
 
 }
+
+@keyframes tfFloatGlow{
+
+    0%,100%{
+        transform:translate3d(0,0,0) scale(1);
+    }
+
+    50%{
+        transform:translate3d(0,-18px,0) scale(1.06);
+    }
+
+}
+
+.tf-why-card,
+.tf-service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.tf-why-card::after,
+.tf-service-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    background:linear-gradient(135deg, rgba(79,99,255,.10), rgba(108,69,255,.04), transparent 70%);
+
+    opacity:0;
+
+    transition:opacity .35s ease;
+
+    pointer-events:none;
+
+}
+
+.tf-why-card:hover::after,
+.tf-service-card:hover::after{
+
+    opacity:1;
+
+}
+
+.tf-webapp-features.is-visible div{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+.tf-webapp-features.is-visible div:nth-child(1){transition-delay:.15s;}
+.tf-webapp-features.is-visible div:nth-child(2){transition-delay:.28s;}
+.tf-webapp-features.is-visible div:nth-child(3){transition-delay:.41s;}
 
 /*==============================
 Tablet
@@ -363,6 +569,30 @@ Mobile
     margin-top:45px;
 
 }
+
+}
+
+@media (prefers-reduced-motion: reduce){
+
+    .tf-animate,
+    .tf-webapp-hero::after,
+    .tf-webapp-why::before,
+    .tf-webapp-services::before,
+    .tf-webapp-process::before,
+    .tf-webapp-image img,
+    .tf-webapp-features div{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        transform:none !important;
+
+        filter:none !important;
+
+        opacity:1 !important;
+
+    }
 
 }
 /*====================================
@@ -1230,6 +1460,53 @@ Mobile
 }
 </style>
 
+<script>
+(function () {
+    function initWebappMotion() {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const animatedItems = document.querySelectorAll('.tf-animate');
+
+        if (reduceMotion || !('IntersectionObserver' in window)) {
+            animatedItems.forEach((item) => item.classList.add('is-visible'));
+            return;
+        }
+
+        const staggerMap = [
+            ['.tf-webapp-content .tf-animate', 90],
+            ['.tf-webapp-why .tf-why-card', 110],
+            ['.tf-webapp-services .tf-service-card', 90],
+            ['.tf-webapp-process .tf-process-step', 120]
+        ];
+
+        staggerMap.forEach(([selector, step]) => {
+            document.querySelectorAll(selector).forEach((item, index) => {
+                item.style.transitionDelay = `${index * step}ms`;
+            });
+        });
+
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.18,
+            rootMargin: '0px 0px -8% 0px'
+        });
+
+        animatedItems.forEach((item) => observer.observe(item));
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initWebappMotion, { once: true });
+    } else {
+        initWebappMotion();
+    }
+})();
+</script>
+
 <main>
 <!--==============================
  Web & App Maintenance Hero
@@ -1245,22 +1522,22 @@ Mobile
 
                 <div class="tf-webapp-content">
 
-                    <div class="tf-webapp-badge">
+                    <div class="tf-webapp-badge tf-animate tf-animate-delay-1">
                         <i class="fa-solid fa-shield-halved"></i>
                         Reliable. Secure. Always On.
                     </div>
 
-                    <h1>
+                    <h1 class="tf-animate tf-animate-delay-2">
                         Website & App <br>
                         Maintenance
                     </h1>
 
-                    <p>
+                    <p class="tf-animate tf-animate-delay-3">
                         Secure, updated, and always running smoothly with our
                         proactive website and application maintenance services.
                     </p>
 
-                    <div class="tf-webapp-buttons">
+                    <div class="tf-webapp-buttons tf-animate tf-animate-delay-4">
 
                         <a href="#" class="tf-btn-primary">
                             Get Support
@@ -1272,7 +1549,7 @@ Mobile
 
                     </div>
 
-                    <div class="tf-webapp-features">
+                    <div class="tf-webapp-features tf-animate tf-animate-delay-5">
 
                         <div>
                             <i class="fa-solid fa-desktop"></i>
@@ -1299,7 +1576,7 @@ Mobile
             <!-- Right Image -->
             <div class="col-lg-7">
 
-                <div class="tf-webapp-image">
+                <div class="tf-webapp-image tf-animate tf-animate-delay-2">
 
                     <img src="assets/images/webapp1.png"
                         alt="Website Maintenance Dashboard">
@@ -1319,7 +1596,7 @@ Mobile
 <section class="tf-webapp-why">
     <div class="container">
 
-        <div class="tf-webapp-heading text-center">
+        <div class="tf-webapp-heading text-center tf-animate tf-animate-delay-1">
 
             <span class="tf-subtitle">
                 WHY CHOOSE US
@@ -1336,7 +1613,7 @@ Mobile
 
             <!-- Card 1 -->
             <div class="col-lg col-md-6">
-                <div class="tf-why-card">
+                <div class="tf-why-card tf-animate">
 
                     <div class="tf-why-icon">
                         <i class="fa-solid fa-shield-halved"></i>
@@ -1354,7 +1631,7 @@ Mobile
 
             <!-- Card 2 -->
             <div class="col-lg col-md-6">
-                <div class="tf-why-card">
+                <div class="tf-why-card tf-animate">
 
                     <div class="tf-why-icon">
                         <i class="fa-solid fa-arrows-rotate"></i>
@@ -1372,7 +1649,7 @@ Mobile
 
             <!-- Card 3 -->
             <div class="col-lg col-md-6">
-                <div class="tf-why-card">
+                <div class="tf-why-card tf-animate">
 
                     <div class="tf-why-icon">
                         <i class="fa-solid fa-gauge-high"></i>
@@ -1390,7 +1667,7 @@ Mobile
 
             <!-- Card 4 -->
             <div class="col-lg col-md-6">
-                <div class="tf-why-card">
+                <div class="tf-why-card tf-animate">
 
                     <div class="tf-why-icon">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -1408,7 +1685,7 @@ Mobile
 
             <!-- Card 5 -->
             <div class="col-lg col-md-6">
-                <div class="tf-why-card">
+                <div class="tf-why-card tf-animate">
 
                     <div class="tf-why-icon">
                         <i class="fa-solid fa-headset"></i>
@@ -1436,7 +1713,7 @@ Mobile
 
     <div class="container">
 
-        <div class="tf-service-heading text-center">
+        <div class="tf-service-heading text-center tf-animate tf-animate-delay-1">
 
             <span class="tf-service-subtitle">
                 OUR SERVICES
@@ -1461,7 +1738,7 @@ Mobile
 
             <div class="col-lg-4 col-md-6">
 
-                <div class="tf-service-card">
+                <div class="tf-service-card tf-animate">
 
                     <div class="tf-service-icon">
                         <i class="fa-solid fa-window-maximize"></i>
@@ -1486,7 +1763,7 @@ Mobile
 
             <div class="col-lg-4 col-md-6">
 
-                <div class="tf-service-card">
+                <div class="tf-service-card tf-animate">
 
                     <div class="tf-service-icon">
                         <i class="fa-solid fa-bug"></i>
@@ -1511,7 +1788,7 @@ Mobile
 
             <div class="col-lg-4 col-md-6">
 
-                <div class="tf-service-card">
+                <div class="tf-service-card tf-animate">
 
                     <div class="tf-service-icon">
                         <i class="fa-solid fa-shield-halved"></i>
@@ -1536,7 +1813,7 @@ Mobile
 
             <div class="col-lg-4 col-md-6">
 
-                <div class="tf-service-card">
+                <div class="tf-service-card tf-animate">
 
                     <div class="tf-service-icon">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -1561,7 +1838,7 @@ Mobile
 
             <div class="col-lg-4 col-md-6">
 
-                <div class="tf-service-card">
+                <div class="tf-service-card tf-animate">
 
                     <div class="tf-service-icon">
                         <i class="fa-solid fa-gauge-high"></i>
@@ -1586,7 +1863,7 @@ Mobile
 
             <div class="col-lg-4 col-md-6">
 
-                <div class="tf-service-card">
+                <div class="tf-service-card tf-animate">
 
                     <div class="tf-service-icon">
                         <i class="fa-solid fa-file-pen"></i>
@@ -1620,7 +1897,7 @@ Mobile
 
     <div class="container">
 
-        <div class="tf-process-heading text-center">
+        <div class="tf-process-heading text-center tf-animate tf-animate-delay-1">
 
             <span class="tf-process-subtitle">
                 HOW IT WORKS
@@ -1646,7 +1923,7 @@ Mobile
 
             <div class="col-lg-3 col-md-6">
 
-                <div class="tf-process-step">
+                <div class="tf-process-step tf-animate">
 
                     <div class="tf-process-icon">
 
@@ -1671,7 +1948,7 @@ Mobile
 
             <div class="col-lg-3 col-md-6">
 
-                <div class="tf-process-step">
+                <div class="tf-process-step tf-animate">
 
                     <div class="tf-process-icon">
 
@@ -1696,7 +1973,7 @@ Mobile
 
             <div class="col-lg-3 col-md-6">
 
-                <div class="tf-process-step">
+                <div class="tf-process-step tf-animate">
 
                     <div class="tf-process-icon">
 
@@ -1721,7 +1998,7 @@ Mobile
 
             <div class="col-lg-3 col-md-6">
 
-                <div class="tf-process-step tf-last-step">
+                <div class="tf-process-step tf-last-step tf-animate">
 
                     <div class="tf-process-icon">
 
