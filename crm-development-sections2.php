@@ -1236,6 +1236,7 @@ h3 {
 
     font-weight:800;
 
+    letter-spacing:-.02em;
 }
 
 
@@ -1358,6 +1359,652 @@ h3 {
     }
 
 
+}
+
+
+/*=========================================
+        CRM FAQ SECTION
+=========================================*/
+
+.tf-crm-faq{
+    padding:100px 0;
+    background:#f7f9ff;
+}
+
+.tf-crm-faq-heading{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 70px;
+}
+
+.tf-crm-faq-badge{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:50px;
+    background:#edf3ff;
+    color:#2367ff;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.tf-crm-faq-heading h2{
+    margin:22px 0 18px;
+    font-size:54px;
+    line-height:1;
+    font-weight:900;
+    color:#08173d;
+    letter-spacing:-2px;
+}
+
+.tf-crm-faq-heading p{
+    color:#6f7b93;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.tf-crm-faq-heading a{
+    color:#2563ff;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.tf-crm-faq-grid{
+    display:grid;
+    grid-template-columns:520px 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+/* LEFT CARD */
+
+.tf-crm-faq-graphic{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:45px;
+
+    box-shadow:
+    0 30px 70px rgba(28,46,90,.08);
+
+    border:1px solid #edf1fb;
+
+}
+
+/* CRM CIRCLE */
+
+.crm-circle-wrap{
+
+    position:relative;
+
+    width:380px;
+
+    height:380px;
+
+    margin:auto;
+
+}
+
+.crm-circle-wrap:before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:60px;
+
+    border:2px dashed #d7e2ff;
+
+    border-radius:50%;
+
+}
+
+.crm-center{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#1e74ff,#5b3dff);
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    box-shadow:
+    0 20px 45px rgba(32,86,255,.35);
+
+}
+
+/* NODES */
+
+.crm-node{
+
+    position:absolute;
+
+    width:105px;
+
+    text-align:center;
+
+}
+
+.crm-node .icon{
+
+    width:68px;
+
+    height:68px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:1px solid #e8eeff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#2367ff;
+
+    font-size:26px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.crm-node span{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-size:14px;
+
+    color:#091c45;
+
+    font-weight:700;
+
+}
+
+/* POSITIONS */
+
+.crm-top{
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.crm-right{
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.crm-left{
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.crm-bottom-left{
+    left:40px;
+    bottom:10px;
+}
+
+.crm-bottom-right{
+    right:40px;
+    bottom:10px;
+}
+
+/* BOTTOM INFO CARD */
+
+.crm-bottom-card{
+
+    margin-top:55px;
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:flex-start;
+
+    padding:24px;
+
+    border-radius:18px;
+
+    background:#f5f8ff;
+
+}
+
+.bottom-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#2367ff,#5b3dff);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.crm-bottom-card h4{
+
+    margin:0 0 10px;
+
+    font-size:22px;
+
+    color:#08173d;
+
+    font-weight:800;
+
+}
+
+.crm-bottom-card p{
+
+    margin:0;
+
+    color:#707b91;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* TABLET */
+
+@media(max-width:1100px){
+
+.tf-crm-faq-grid{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.tf-crm-faq-graphic{
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.tf-crm-faq{
+
+padding:70px 0;
+
+}
+
+.tf-crm-faq-heading h2{
+
+font-size:36px;
+
+}
+
+.tf-crm-faq-heading p{
+
+font-size:15px;
+
+}
+
+.tf-crm-faq-graphic{
+
+padding:25px;
+
+}
+
+.crm-circle-wrap{
+
+width:300px;
+
+height:300px;
+
+}
+
+.crm-circle-wrap:before{
+
+inset:45px;
+
+}
+
+.crm-center{
+
+width:105px;
+
+height:105px;
+
+font-size:26px;
+
+}
+
+.crm-node{
+
+width:80px;
+
+}
+
+.crm-node .icon{
+
+width:55px;
+
+height:55px;
+
+font-size:20px;
+
+}
+
+.crm-node span{
+
+font-size:12px;
+
+}
+
+.crm-bottom-card{
+
+margin-top:40px;
+
+padding:18px;
+
+}
+
+.crm-bottom-card h4{
+
+font-size:18px;
+
+}
+
+}
+/*=====================================
+        FAQ ACCORDION
+=====================================*/
+
+.tf-crm-faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid #e7ecf8;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s ease;
+    box-shadow:0 8px 24px rgba(20,40,90,.05);
+}
+
+.faq-item:hover{
+    transform:translateY(-2px);
+    box-shadow:0 18px 45px rgba(30,60,120,.08);
+}
+
+.faq-item.active{
+    border-color:#2563ff;
+    box-shadow:0 20px 50px rgba(37,99,255,.12);
+}
+
+.faq-question{
+
+    width:100%;
+
+    border:none;
+
+    background:#fff;
+
+    padding:24px 28px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#08173d;
+
+    transition:.3s;
+
+}
+
+.faq-question:hover{
+    background:#f8fbff;
+}
+
+.faq-question span{
+    flex:1;
+    padding-right:20px;
+    line-height:1.5;
+}
+
+.faq-question i{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#edf3ff;
+
+    color:#2367ff;
+
+    transition:.35s;
+
+    flex-shrink:0;
+
+}
+
+.faq-item.active .faq-question i{
+
+    background:#2367ff;
+
+    color:#fff;
+
+    transform:rotate(180deg);
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .45s ease,padding .35s ease;
+
+    padding:0 28px;
+
+    color:#6d7891;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:250px;
+
+    padding:0 28px 24px;
+
+}
+
+/* divider */
+
+.faq-item+.faq-item{
+    margin-top:2px;
+}
+
+/* Focus */
+
+.faq-question:focus{
+    outline:none;
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+    .faq-question{
+
+        padding:20px;
+
+        font-size:17px;
+
+    }
+
+    .faq-answer{
+
+        padding:0 20px;
+
+    }
+
+    .faq-item.active .faq-answer{
+
+        padding:0 20px 20px;
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .tf-crm-faq-list{
+
+        gap:14px;
+
+    }
+
+    .faq-question{
+
+        font-size:16px;
+
+        padding:18px;
+
+    }
+
+    .faq-question i{
+
+        width:34px;
+
+        height:34px;
+
+        font-size:13px;
+
+    }
+
+    .faq-answer{
+
+        font-size:14px;
+
+        line-height:1.7;
+
+    }
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+    .faq-question{
+
+        font-size:15px;
+
+        padding:16px;
+
+    }
+
+    .faq-question span{
+
+        padding-right:12px;
+
+    }
+
+    .faq-item.active .faq-answer{
+
+        padding:0 16px 18px;
+
+    }
+
+    .faq-answer{
+
+        padding:0 16px;
+
+    }
+
+}
+
+/* Smooth Animation */
+
+.faq-item,
+.faq-question,
+.faq-answer,
+.faq-question i{
+    transition:all .35s ease;
 }
 </style>
 
@@ -1819,4 +2466,267 @@ h3 {
 
     </div>
 </section>
+
+<!-- ==========================
+        CRM FAQ SECTION
+=========================== -->
+<section class="tf-crm-faq">
+    <div class="container">
+
+        <div class="tf-crm-faq-heading">
+
+            <span class="tf-crm-faq-badge">
+                FAQ
+            </span>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+            <p>
+                Everything you need to know about our CRM development services.
+                <br>
+                Can't find the answer you're looking for?
+                <a href="contact.php">Contact us.</a>
+            </p>
+
+        </div>
+
+
+        <div class="tf-crm-faq-grid">
+
+            <!-- LEFT -->
+            <div class="tf-crm-faq-graphic">
+
+                <div class="crm-circle-wrap">
+
+                    <div class="crm-center">
+                        CRM
+                    </div>
+
+                    <div class="crm-node crm-top">
+                        <div class="icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <span>Customers</span>
+                    </div>
+
+                    <div class="crm-node crm-right">
+                        <div class="icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <span>Sales</span>
+                    </div>
+
+                    <div class="crm-node crm-bottom-right">
+                        <div class="icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <span>Support</span>
+                    </div>
+
+                    <div class="crm-node crm-bottom-left">
+                        <div class="icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span>Reports</span>
+                    </div>
+
+                    <div class="crm-node crm-left">
+                        <div class="icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <span>Automation</span>
+                    </div>
+
+                </div>
+
+                <div class="crm-bottom-card">
+
+                    <div class="bottom-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Custom CRM Solutions Built for Growth
+                        </h4>
+
+                        <p>
+                            We build secure, scalable and user-friendly CRM
+                            systems that streamline your business operations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="tf-crm-faq-list">
+
+                <div class="faq-item active">
+
+                    <button class="faq-question">
+                        <span>What is CRM development?</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        CRM development is the process of building customized
+                        software to manage customer relationships, sales,
+                        leads, support and internal business workflows from
+                        one centralized platform.
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>How long does it take to develop a CRM?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Depending on project complexity, CRM development
+                        typically takes between 4 to 12 weeks.
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Can you integrate CRM with existing software?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Yes. We integrate CRMs with ERP, WhatsApp, Email,
+                        Payment Gateways, APIs and third-party platforms.
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Is the CRM mobile friendly?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Absolutely. Our CRM solutions work seamlessly on
+                        desktop, tablet and mobile devices.
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>What features can be included?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Lead Management, Sales Pipeline, Tasks, Automation,
+                        Reports, Billing, Customer Support, Inventory,
+                        Notifications and much more.
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>How much does CRM development cost?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Pricing depends on required modules, integrations,
+                        users and customizations. Contact us for a quotation.
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Do you provide maintenance after delivery?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        Yes. We provide regular maintenance, upgrades,
+                        monitoring and technical support after deployment.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
 </main>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+        const button = item.querySelector(".faq-question");
+        const icon = button.querySelector("i");
+        const answer = item.querySelector(".faq-answer");
+
+        button.addEventListener("click", function () {
+
+            const isActive = item.classList.contains("active");
+
+            // Close all FAQs
+            faqItems.forEach(faq => {
+
+                faq.classList.remove("active");
+
+                const faqAnswer = faq.querySelector(".faq-answer");
+                const faqIcon = faq.querySelector(".faq-question i");
+
+                faqAnswer.style.maxHeight = null;
+
+                faqIcon.classList.remove("fa-chevron-up");
+                faqIcon.classList.add("fa-chevron-down");
+
+            });
+
+            // Open clicked FAQ
+            if (!isActive) {
+
+                item.classList.add("active");
+
+                answer.style.maxHeight = answer.scrollHeight + "px";
+
+                icon.classList.remove("fa-chevron-down");
+                icon.classList.add("fa-chevron-up");
+
+            }
+
+        });
+
+    });
+
+});
+</script>
