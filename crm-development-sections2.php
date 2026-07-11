@@ -81,6 +81,208 @@ h3 {
     filter:grayscale(1);
 }
 
+/* -----------------------------
+   Motion enhancements
+------------------------------ */
+
+.crm-hero-bg{
+    position:relative;
+}
+
+.crm-hero-bg::after{
+    content:"";
+    position:absolute;
+    inset:auto auto 8% 50%;
+    width:320px;
+    height:320px;
+    transform:translateX(-50%);
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(0,114,255,.18) 0%, rgba(0,114,255,0) 70%);
+    filter:blur(10px);
+    animation:tf-hero-orb 10s ease-in-out infinite alternate;
+    pointer-events:none;
+    z-index:0;
+}
+
+.crm-content > *{
+    opacity:0;
+    transform:translateY(18px);
+    animation:tf-hero-rise .8s ease forwards;
+}
+
+.crm-tag{
+    animation-delay:.08s;
+}
+
+.crm-content h1{
+    animation:tf-hero-rise .9s ease forwards;
+    animation-delay:.18s;
+}
+
+.crm-content p{
+    animation:tf-hero-rise .9s ease forwards;
+    animation-delay:.3s;
+}
+
+.crm-buttons{
+    opacity:0;
+    transform:translateY(18px);
+    animation:tf-hero-rise .9s ease forwards;
+    animation-delay:.42s;
+}
+
+.crm-buttons a{
+    position:relative;
+    overflow:hidden;
+    transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,color .25s ease,border-color .25s ease;
+}
+
+.crm-buttons a::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(120deg, transparent 18%, rgba(255,255,255,.24) 50%, transparent 82%);
+    transform:translateX(-120%);
+    transition:transform .6s ease;
+    pointer-events:none;
+}
+
+.crm-buttons a:hover{
+    transform:translateY(-2px);
+    box-shadow:0 16px 34px rgba(18,109,255,.18);
+}
+
+.crm-buttons a:hover::after{
+    transform:translateX(120%);
+}
+
+.tf-brand-card,
+.tf-step-card,
+.tf-why-card,
+.tf-crm-stat,
+.tf-crm-list__row,
+.tf-crm-feature,
+.tf-crm-dark-image,
+.tf-crm-faq-graphic,
+.tf-crm-faq-list .faq-item,
+.tf-steps__visual,
+.tf-crm-dash,
+.tf-crm-list{
+    transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease,background-color .28s ease;
+}
+
+.tf-brand-card:hover,
+.tf-step-card:hover,
+.tf-why-card:hover,
+.tf-crm-stat:hover,
+.tf-crm-list__row:hover,
+.tf-crm-feature:hover,
+.tf-crm-dark-image:hover,
+.tf-crm-faq-graphic:hover,
+.tf-steps__visual:hover,
+.tf-crm-dash:hover,
+.tf-crm-list:hover{
+    transform:translateY(-4px);
+}
+
+.tf-step-card:hover{
+    box-shadow:0 20px 40px rgba(15,23,42,.09);
+}
+
+.tf-step-card:hover .tf-step-card__icon{
+    transform:translateY(-2px) scale(1.03);
+}
+
+.tf-step-card__icon{
+    transition:transform .28s ease, box-shadow .28s ease;
+}
+
+.tf-step-card__index{
+    transition:transform .28s ease, box-shadow .28s ease;
+}
+
+.tf-step-card:hover .tf-step-card__index{
+    transform:scale(1.04);
+    box-shadow:0 14px 26px rgba(65,103,255,.26);
+}
+
+.tf-why-card:hover{
+    box-shadow:0 22px 42px rgba(17,22,74,.1);
+}
+
+.tf-why-card:hover::before{
+    transform:scale(1.05);
+}
+
+.tf-why-card::before{
+    transition:transform .4s ease;
+}
+
+.tf-crm-list__row:hover{
+    background:rgba(93,82,255,.025);
+}
+
+.tf-crm-feature:hover .tf-crm-feature-icon{
+    transform:translateY(-2px) scale(1.03);
+    box-shadow:0 0 26px rgba(0,132,255,.32);
+}
+
+.tf-crm-feature-icon{
+    transition:transform .28s ease, box-shadow .28s ease;
+}
+
+.tf-crm-dash__head-icon,
+.tf-crm-stat__icon,
+.tf-crm-list__icon,
+.tf-crm-list__check,
+.tf-why-card__dot{
+    transition:transform .28s ease, box-shadow .28s ease, background-color .28s ease, color .28s ease;
+}
+
+.tf-crm-stat:hover .tf-crm-stat__icon,
+.tf-crm-list__row:hover .tf-crm-list__icon,
+.tf-crm-list__row:hover .tf-crm-list__check,
+.tf-why-card:hover .tf-why-card__dot{
+    transform:translateY(-1px) scale(1.04);
+}
+
+.tf-motion-reveal{
+    opacity:0;
+    transform:translateY(18px) scale(.985);
+    filter:blur(2px);
+    transition:opacity .7s ease, transform .7s ease, filter .7s ease;
+    transition-delay:var(--tf-delay, 0ms);
+    will-change:opacity, transform, filter;
+}
+
+.tf-motion-reveal.is-visible{
+    opacity:1;
+    transform:none;
+    filter:none;
+}
+
+@keyframes tf-hero-rise{
+    from{
+        opacity:0;
+        transform:translateY(18px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes tf-hero-orb{
+    from{
+        transform:translateX(-50%) translateY(0) scale(.96);
+        opacity:.55;
+    }
+    to{
+        transform:translateX(-50%) translateY(-12px) scale(1.03);
+        opacity:1;
+    }
+}
+
 @media(max-width:991px){
     .tf-brand-strip__inner{
         grid-template-columns:1fr;
@@ -517,6 +719,17 @@ h3 {
 }
 
 @media(prefers-reduced-motion:reduce){
+    .crm-content > *,
+    .crm-buttons,
+    .crm-hero-bg::after,
+    .tf-motion-reveal{
+        animation:none !important;
+        transition:none !important;
+        opacity:1 !important;
+        transform:none !important;
+        filter:none !important;
+    }
+
     .tf-why-card{
         animation:none;
         opacity:1;
@@ -2684,6 +2897,29 @@ font-size:18px;
 </main>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+    const motionTargets = document.querySelectorAll(
+        ".tf-brand-strip__inner, .tf-steps__header, .tf-steps__visual, .tf-step-card, .tf-why__header, .tf-crm-split__header, .tf-crm-dash, .tf-crm-list, .tf-crm-dark-content, .tf-crm-dark-image, .tf-crm-faq-heading, .tf-crm-faq-graphic, .tf-crm-faq-list .faq-item, .tf-crm-feature, .tf-crm-list__row"
+    );
+
+    motionTargets.forEach((element, index) => {
+        element.classList.add("tf-motion-reveal");
+        element.style.setProperty("--tf-delay", `${Math.min(index * 60, 360)}ms`);
+    });
+
+    const motionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.18,
+        rootMargin: "0px 0px -8% 0px"
+    });
+
+    motionTargets.forEach(element => motionObserver.observe(element));
 
     const faqItems = document.querySelectorAll(".faq-item");
 
