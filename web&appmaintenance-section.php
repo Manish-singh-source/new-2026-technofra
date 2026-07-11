@@ -875,6 +875,365 @@ Mobile
 }
 
 }
+
+/*==================================
+HOW IT WORKS
+==================================*/
+
+.tf-webapp-process{
+
+    position:relative;
+
+    padding:110px 0;
+
+    overflow:hidden;
+
+    background:url(assets/images/bg/banner_webapp4.png)
+    center center/cover no-repeat;
+
+}
+
+.tf-process-heading{
+
+    margin-bottom:80px;
+
+}
+
+.tf-process-subtitle{
+
+    display:inline-block;
+
+    color:#4b5dff;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+
+}
+
+.tf-process-heading h2{
+
+    font-size:56px;
+
+    font-weight:800;
+
+    color:#14254d;
+
+    margin-bottom:18px;
+
+}
+
+.tf-process-heading h2 span{
+
+    background:linear-gradient(90deg,#356eff,#6948ff);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.tf-process-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.tf-process-divider span{
+
+    width:60px;
+
+    height:3px;
+
+    border-radius:30px;
+
+    background:#4d63ff;
+
+}
+
+.tf-process-divider i{
+
+    font-size:8px;
+
+    color:#4d63ff;
+
+}
+
+/* Line Between Steps */
+
+@media(min-width:992px){
+
+.tf-process-step{
+
+    position:relative;
+
+}
+
+.tf-process-step::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:55px;
+
+    left:72%;
+
+    width:90%;
+
+    border-top:2px dashed #b7b7ff;
+
+}
+
+.tf-last-step::after{
+
+    display:none;
+
+}
+
+}
+
+/* Step */
+
+.tf-process-step{
+
+    text-align:center;
+
+    position:relative;
+
+    padding:0 20px;
+
+}
+
+.tf-process-icon{
+
+    width:110px;
+
+    height:110px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#f6f4ff;
+
+    border:3px solid #e4ddff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.tf-process-icon::before{
+
+    content:"";
+
+    width:82px;
+
+    height:82px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#4a73ff,#6b45ff);
+
+    position:absolute;
+
+}
+
+.tf-process-icon i{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:34px;
+
+    color:#fff;
+
+}
+
+.tf-step-number{
+
+    position:absolute;
+
+    top:-8px;
+
+    left:-8px;
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:50%;
+
+    background:#4d5cff;
+
+    color:#fff;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:3;
+
+    box-shadow:0 8px 20px rgba(77,92,255,.25);
+
+}
+
+.tf-process-step h4{
+
+    margin-top:28px;
+
+    margin-bottom:16px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#132247;
+
+}
+
+.tf-process-step p{
+
+    color:#6b7285;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    max-width:240px;
+
+    margin:auto;
+
+}
+
+.tf-process-step:hover .tf-process-icon{
+
+    transform:translateY(-8px) rotate(5deg);
+
+    box-shadow:0 18px 45px rgba(76,95,255,.20);
+
+}
+
+/*====================
+Tablet
+====================*/
+
+@media(max-width:991px){
+
+.tf-webapp-process{
+
+    padding:90px 0;
+
+}
+
+.tf-process-heading{
+
+    margin-bottom:60px;
+
+}
+
+.tf-process-heading h2{
+
+    font-size:42px;
+
+}
+
+.tf-process-step{
+
+    margin-bottom:45px;
+
+}
+
+}
+
+/*====================
+Mobile
+====================*/
+
+@media(max-width:767px){
+
+.tf-webapp-process{
+
+    padding:70px 0;
+
+}
+
+.tf-process-heading{
+
+    margin-bottom:45px;
+
+}
+
+.tf-process-heading h2{
+
+    font-size:32px;
+
+    line-height:1.3;
+
+}
+
+.tf-process-icon{
+
+    width:90px;
+
+    height:90px;
+
+}
+
+.tf-process-icon::before{
+
+    width:68px;
+
+    height:68px;
+
+}
+
+.tf-process-icon i{
+
+    font-size:28px;
+
+}
+
+.tf-process-step h4{
+
+    font-size:21px;
+
+}
+
+.tf-process-step p{
+
+    font-size:15px;
+
+}
+
+}
 </style>
 
 <main>
@@ -1249,6 +1608,141 @@ Mobile
                         </p>
 
                     </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==================================
+ How It Works
+===================================-->
+
+<section class="tf-webapp-process">
+
+    <div class="container">
+
+        <div class="tf-process-heading text-center">
+
+            <span class="tf-process-subtitle">
+                HOW IT WORKS
+            </span>
+
+            <h2>
+                Our Simple
+                <span>Maintenance</span>
+                Process
+            </h2>
+
+            <div class="tf-process-divider">
+                <span></span>
+                <i class="fa-solid fa-circle"></i>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="row position-relative justify-content-center">
+
+            <!-- Step 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tf-process-step">
+
+                    <div class="tf-process-icon">
+
+                        <span class="tf-step-number">01</span>
+
+                        <i class="fa-solid fa-clipboard-list"></i>
+
+                    </div>
+
+                    <h4>1. Analyze</h4>
+
+                    <p>
+                        We analyze your website or application and understand
+                        your maintenance requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Step 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tf-process-step">
+
+                    <div class="tf-process-icon">
+
+                        <span class="tf-step-number">02</span>
+
+                        <i class="fa-solid fa-desktop"></i>
+
+                    </div>
+
+                    <h4>2. Monitor</h4>
+
+                    <p>
+                        Continuous monitoring of uptime, security,
+                        performance and system health.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Step 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tf-process-step">
+
+                    <div class="tf-process-icon">
+
+                        <span class="tf-step-number">03</span>
+
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                    </div>
+
+                    <h4>3. Maintain</h4>
+
+                    <p>
+                        Regular updates, bug fixes, backups and
+                        optimization keep everything running smoothly.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Step 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="tf-process-step tf-last-step">
+
+                    <div class="tf-process-icon">
+
+                        <span class="tf-step-number">04</span>
+
+                        <i class="fa-solid fa-headset"></i>
+
+                    </div>
+
+                    <h4>4. Support</h4>
+
+                    <p>
+                        Dedicated experts are always available whenever
+                        you need technical assistance.
+                    </p>
 
                 </div>
 
