@@ -599,6 +599,282 @@ Mobile
 }
 
 }
+
+
+/*==========================================
+OUR SERVICES
+==========================================*/
+
+.tf-webapp-services{
+
+    position:relative;
+
+    padding:110px 0;
+
+    overflow:hidden;
+
+    background:url(assets/images/bg/banner_webapp3.png)
+    center center/cover no-repeat;
+
+}
+
+.tf-service-heading{
+
+    margin-bottom:65px;
+
+}
+
+.tf-service-subtitle{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:#eef0ff;
+
+    color:#4e5dff;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.tf-service-heading h2{
+
+    font-size:54px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    color:#12224b;
+
+    margin-bottom:20px;
+
+}
+
+.tf-service-heading h2 span{
+
+    display:block;
+
+    background:linear-gradient(90deg,#326dff,#6947ff);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.tf-heading-divider{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.tf-heading-divider span{
+
+    width:65px;
+
+    height:3px;
+
+    background:#4f63ff;
+
+    border-radius:30px;
+
+}
+
+.tf-heading-divider i{
+
+    font-size:8px;
+
+    color:#4f63ff;
+
+}
+
+.tf-service-card{
+
+    height:100%;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:22px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    background:#fff;
+
+    border:1px solid #edf0fb;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.tf-service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(75,93,255,.15);
+
+}
+
+.tf-service-icon{
+
+    min-width:74px;
+
+    height:74px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f3f3ff;
+
+    color:#5b49ff;
+
+    font-size:30px;
+
+    transition:.35s;
+
+}
+
+.tf-service-card:hover .tf-service-icon{
+
+    background:linear-gradient(135deg,#4a72ff,#6c45ff);
+
+    color:#fff;
+
+    transform:rotate(10deg);
+
+}
+
+.tf-service-content{
+
+    flex:1;
+
+}
+
+.tf-service-content h4{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#132248;
+
+    margin-bottom:12px;
+
+}
+
+.tf-service-content p{
+
+    margin:0;
+
+    color:#68758b;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/*=========================
+Tablet
+=========================*/
+
+@media(max-width:991px){
+
+.tf-webapp-services{
+
+    padding:90px 0;
+
+}
+
+.tf-service-heading h2{
+
+    font-size:42px;
+
+}
+
+}
+
+/*=========================
+Mobile
+=========================*/
+
+@media(max-width:767px){
+
+.tf-webapp-services{
+
+    padding:70px 0;
+
+}
+
+.tf-service-heading{
+
+    margin-bottom:45px;
+
+}
+
+.tf-service-heading h2{
+
+    font-size:32px;
+
+}
+
+.tf-service-card{
+
+    padding:25px;
+
+}
+
+.tf-service-icon{
+
+    min-width:60px;
+
+    height:60px;
+
+    font-size:24px;
+
+}
+
+.tf-service-content h4{
+
+    font-size:19px;
+
+}
+
+.tf-service-content p{
+
+    font-size:14px;
+
+}
+
+}
 </style>
 
 <main>
@@ -798,5 +1074,189 @@ Mobile
         </div>
 
     </div>
+</section>
+<!--==================================
+ Our Maintenance Services
+===================================-->
+
+<section class="tf-webapp-services">
+
+    <div class="container">
+
+        <div class="tf-service-heading text-center">
+
+            <span class="tf-service-subtitle">
+                OUR SERVICES
+            </span>
+
+            <h2>
+                Comprehensive Maintenance for
+                <span>Websites & Mobile Apps</span>
+            </h2>
+
+            <div class="tf-heading-divider">
+                <span></span>
+                <i class="fa-solid fa-circle"></i>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="tf-service-card">
+
+                    <div class="tf-service-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+
+                    <div class="tf-service-content">
+
+                        <h4>Website Updates</h4>
+
+                        <p>
+                            Keep your website updated with the latest features,
+                            plugin improvements, and compatibility enhancements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="tf-service-card">
+
+                    <div class="tf-service-icon">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+
+                    <div class="tf-service-content">
+
+                        <h4>Bug Fixing</h4>
+
+                        <p>
+                            Identify and resolve bugs, broken layouts,
+                            functionality issues, and unexpected errors.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="tf-service-card">
+
+                    <div class="tf-service-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div class="tf-service-content">
+
+                        <h4>Security Management</h4>
+
+                        <p>
+                            Regular security audits, malware scanning,
+                            vulnerability fixes and firewall protection.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="tf-service-card">
+
+                    <div class="tf-service-icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+
+                    <div class="tf-service-content">
+
+                        <h4>Backup & Recovery</h4>
+
+                        <p>
+                            Automated cloud backups with instant recovery to
+                            protect your valuable business data.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="tf-service-card">
+
+                    <div class="tf-service-icon">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+
+                    <div class="tf-service-content">
+
+                        <h4>Performance Optimization</h4>
+
+                        <p>
+                            Improve loading speed, optimize databases,
+                            caching, and deliver the best user experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 6 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="tf-service-card">
+
+                    <div class="tf-service-icon">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+
+                    <div class="tf-service-content">
+
+                        <h4>Content Updates</h4>
+
+                        <p>
+                            Update text, images, banners, blogs, and business
+                            information whenever required.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 </main>
