@@ -367,6 +367,238 @@ Mobile
 }
 
 }
+
+/*====================================
+ WHY CHOOSE US
+====================================*/
+
+.tf-webapp-why{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:110px 0;
+
+    background:
+    url(assets/images/bg/banner_webapp2.png)
+    center center/cover no-repeat;
+
+}
+
+.tf-webapp-heading{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-bottom:65px;
+
+}
+
+.tf-subtitle{
+
+    display:inline-block;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#5b55ff;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.tf-webapp-heading h2{
+
+    font-size:56px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    color:#132247;
+
+    margin:0;
+
+}
+
+.tf-webapp-heading h2 span{
+
+    background:linear-gradient(90deg,#366dff,#6a40ff);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.tf-why-card{
+
+    height:100%;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:38px 28px;
+
+    text-align:center;
+
+    border:1px solid #edf0fb;
+
+    transition:.35s;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.05);
+
+}
+
+.tf-why-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 50px rgba(77,94,255,.15);
+
+}
+
+.tf-why-icon{
+
+    width:82px;
+
+    height:82px;
+
+    margin:0 auto 28px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f4f3ff;
+
+    color:#5a47ff;
+
+    font-size:34px;
+
+    transition:.3s;
+
+}
+
+.tf-why-card:hover .tf-why-icon{
+
+    background:linear-gradient(135deg,#4a76ff,#6948ff);
+
+    color:#fff;
+
+    transform:rotate(8deg) scale(1.08);
+
+}
+
+.tf-why-card h4{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#17254b;
+
+    margin-bottom:18px;
+
+}
+
+.tf-why-card p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#667085;
+
+    margin:0;
+
+}
+
+/*=====================
+ Tablet
+=====================*/
+
+@media(max-width:991px){
+
+.tf-webapp-why{
+
+    padding:90px 0;
+
+}
+
+.tf-webapp-heading h2{
+
+    font-size:42px;
+
+}
+
+}
+
+/*=====================
+ Mobile
+=====================*/
+
+@media(max-width:767px){
+
+.tf-webapp-why{
+
+    padding:70px 0;
+
+}
+
+.tf-webapp-heading{
+
+    margin-bottom:45px;
+
+}
+
+.tf-webapp-heading h2{
+
+    font-size:32px;
+
+}
+
+.tf-why-card{
+
+    padding:30px 22px;
+
+}
+
+.tf-why-icon{
+
+    width:70px;
+
+    height:70px;
+
+    font-size:28px;
+
+}
+
+.tf-why-card h4{
+
+    font-size:20px;
+
+}
+
+.tf-why-card p{
+
+    font-size:15px;
+
+}
+
+}
 </style>
 
 <main>
@@ -450,5 +682,121 @@ Mobile
         </div>
     </div>
 
+</section>
+<!--==================================
+ Why Choose Us
+===================================-->
+
+<section class="tf-webapp-why">
+    <div class="container">
+
+        <div class="tf-webapp-heading text-center">
+
+            <span class="tf-subtitle">
+                WHY CHOOSE US
+            </span>
+
+            <h2>
+                We Keep Your Digital Presence <br>
+                <span>Secure, Fast & Hassle-Free</span>
+            </h2>
+
+        </div>
+
+        <div class="row g-4 mt-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg col-md-6">
+                <div class="tf-why-card">
+
+                    <div class="tf-why-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h4>Proactive Monitoring</h4>
+
+                    <p>
+                        We monitor your website and apps 24/7 to prevent
+                        downtime, errors, and security threats.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg col-md-6">
+                <div class="tf-why-card">
+
+                    <div class="tf-why-icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+
+                    <h4>Timely Updates</h4>
+
+                    <p>
+                        We keep your CMS, plugins, themes and applications
+                        updated with the latest stable versions.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg col-md-6">
+                <div class="tf-why-card">
+
+                    <div class="tf-why-icon">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+
+                    <h4>Performance Optimization</h4>
+
+                    <p>
+                        Faster loading speed, optimized databases and better
+                        overall user experience for every visitor.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg col-md-6">
+                <div class="tf-why-card">
+
+                    <div class="tf-why-icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+
+                    <h4>Regular Backups</h4>
+
+                    <p>
+                        Automated daily backups keep your valuable business
+                        data protected and ready for recovery.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg col-md-6">
+                <div class="tf-why-card">
+
+                    <div class="tf-why-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h4>Expert Support</h4>
+
+                    <p>
+                        Get quick assistance from experienced maintenance
+                        specialists whenever you need help.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </section>
 </main>
