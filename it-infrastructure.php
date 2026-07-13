@@ -5,6 +5,21 @@ include __DIR__ . '/header.php';
 ?>
 
 <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        letter-spacing: 0px;
+    }
+
     .it-infra-hero {
         position: relative;
         overflow: hidden;
@@ -383,6 +398,31 @@ include __DIR__ . '/header.php';
         }
     }
 
+    @media (max-width: 1024px) {
+
+        .it-infra-overview__card,
+        .it-infra-overview__stats {
+            flex-direction: column;
+        }
+
+        .it-infra-overview__stats .it-infra-overview__stat-content {
+            width: 100%;
+        }
+
+        .it-infra-overview__stats p {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 1024px) {
+        .it-infra-services__image {
+            width: 50%;
+            transform: translateX(-50%);
+            transform: translateY(-50%);
+            transform: translate(50%);
+        }
+    }
+
     @media (max-width: 767px) {
         .it-infra-hero {
             padding: 118px 0 60px;
@@ -652,7 +692,7 @@ include __DIR__ . '/header.php';
 
     .it-infra-services__image-wrap {
         position: relative;
-       
+
     }
 
 
@@ -853,7 +893,7 @@ include __DIR__ . '/header.php';
         text-align: center;
     }
 
-    .it-infra-strategy__card + .it-infra-strategy__card {
+    .it-infra-strategy__card+.it-infra-strategy__card {
         border-left: 1px solid rgba(28, 72, 180, 0.08);
     }
 
@@ -922,7 +962,7 @@ include __DIR__ . '/header.php';
 
     @media (max-width: 991px) {
         .it-infra-strategy {
-            padding: 0 0 85px;
+            padding: 85px 0 85px;
         }
 
         .it-infra-strategy::before,
@@ -934,7 +974,7 @@ include __DIR__ . '/header.php';
             grid-template-columns: 1fr;
         }
 
-        .it-infra-strategy__card + .it-infra-strategy__card {
+        .it-infra-strategy__card+.it-infra-strategy__card {
             border-left: 0;
             border-top: 1px solid rgba(28, 72, 180, 0.08);
         }
@@ -942,7 +982,7 @@ include __DIR__ . '/header.php';
 
     @media (max-width: 767px) {
         .it-infra-strategy {
-            padding: 0 0 70px;
+            padding: 70px 0 70px;
         }
 
         .it-infra-strategy__title {
@@ -978,7 +1018,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-7">
                 <div class="it-infra-hero__visual">
                     <div class="it-infra-hero__image-wrap">
-                        <img src="assets/images/new/iibanner.png" alt="IT infrastructure dummy hero visual" class="it-infra-hero__image">
+                        <img src="assets/images/it-infrastructure/banner.png" alt="IT infrastructure dummy hero visual" class="it-infra-hero__image">
                     </div>
                 </div>
             </div>
@@ -1007,7 +1047,7 @@ include __DIR__ . '/header.php';
                                 <i class="fas fa-server"></i>
                             </div>
                             <div class="it-infra-overview__stat-content">
-                                <strong>20+</strong>
+                                <strong>14+</strong>
                                 <span>Years of Experience</span>
                                 <p>Delivering robust IT infrastructure solutions across industries.</p>
                             </div>
@@ -1032,7 +1072,7 @@ include __DIR__ . '/header.php';
                 <div class="col-lg-6">
                     <div class="it-infra-overview__visual">
                         <div class="it-infra-overview__image-wrap">
-                            <img src="assets/images/new/iiabout.png" alt="Reliable IT infrastructure solutions" class="it-infra-overview__image">
+                            <img src="assets/images/it-infrastructure/about.png" alt="Reliable IT infrastructure solutions" class="it-infra-overview__image">
                         </div>
                     </div>
                 </div>
@@ -1124,7 +1164,7 @@ include __DIR__ . '/header.php';
                     <div class="it-infra-services__ring"></div>
                     <div class="it-infra-services__platform"></div>
                     <div class="it-infra-services__image-wrap">
-                        <img src="assets/images/new/iiwhy.png" alt="Reliable IT infrastructure services" class="it-infra-services__image">
+                        <img src="assets/images/it-infrastructure/why.png" alt="Reliable IT infrastructure services" class="it-infra-services__image">
                     </div>
                 </div>
 
@@ -1173,7 +1213,7 @@ include __DIR__ . '/header.php';
 
             <div class="it-infra-strategy__grid">
                 <div class="it-infra-strategy__card">
-                    <img src="assets/images/new/ii1.png" alt="Infrastructure planning" class="it-infra-strategy__visual">
+                    <img src="assets/images/it-infrastructure/ii1.png" alt="Infrastructure planning" class="it-infra-strategy__visual">
                     <div class="it-infra-strategy__step">01</div>
                     <h3>Infrastructure Planning</h3>
                     <div class="it-infra-strategy__line"></div>
@@ -1181,7 +1221,7 @@ include __DIR__ . '/header.php';
                 </div>
 
                 <div class="it-infra-strategy__card it-infra-strategy__card--active">
-                    <img src="assets/images/new/ii2.png" alt="Deployment and integration" class="it-infra-strategy__visual">
+                    <img src="assets/images/it-infrastructure/ii2.png" alt="Deployment and integration" class="it-infra-strategy__visual">
                     <div class="it-infra-strategy__step">02</div>
                     <h3>Deployment &amp; Integration</h3>
                     <div class="it-infra-strategy__line"></div>
@@ -1189,7 +1229,7 @@ include __DIR__ . '/header.php';
                 </div>
 
                 <div class="it-infra-strategy__card">
-                    <img src="assets/images/new/ii3.png" alt="Management and optimization" class="it-infra-strategy__visual">
+                    <img src="assets/images/it-infrastructure/ii3.png" alt="Management and optimization" class="it-infra-strategy__visual">
                     <div class="it-infra-strategy__step">03</div>
                     <h3>Management &amp; Optimization</h3>
                     <div class="it-infra-strategy__line"></div>
@@ -1200,7 +1240,3 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-

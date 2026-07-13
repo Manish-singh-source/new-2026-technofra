@@ -7,6 +7,8 @@ $whiteLogoPages = [
     'index.php',
     'ios-development.php',
     'web-design-and-development.php',
+    'ui-ux.php',
+    'domain-hosting.php',
 ];
 
 $useWhiteLogo = in_array($currentPage, $whiteLogoPages, true);
