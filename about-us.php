@@ -36,6 +36,32 @@
     </div>
 </section>
 <!-- End hero-style9 -->
+        <!-- her-style9 -->
+        <section class="hero-style14">
+            <div class="container-fluid">
+                <div class="row end g-2">
+                    <div class="col-xl-7 col-lg-12">
+                        <div class="hero-title">
+                            <h1 class="gradient-title14">Building Digital Growth With <span>Strategy, Design & Technology</span>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-xl-1">
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="hero-content14">
+                            <p>Technofra builds strong digital brands through websites, apps, branding, marketing, and smart tech solutions.
+                            </p>
+                            <a class='ibt-btn ibt-btn-secondary' href='contact.php' target='_blank' title>
+                                <span>Start Your Project</span>
+                                <i class="icon-arrow-top"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End hero-style9 -->
 
 <!-- service-sec20 -->
 <section class="service-sec20">
@@ -94,6 +120,17 @@
             </div>
             <div class="col-12 col-lg-3">
                 <!-- 
+        <!-- about-us-sec9 -->
+        <section class="about-us-sec9 ibt-section-gapTop pb-4">
+            <div class="container">
+                <div class="title-area row">
+                    <div class="sec-title col-12 col-lg-9">
+                        <span class="sub-title">About Company</span>
+                        <h2 class="title animated-heading">From Start to Success:</h2>
+                        <h2 class="title animated-heading">Technofra’s Milestones in Technology</h2>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <!-- 
                     <a class='mt-5 ibt-btn ibt-btn-secondary' href='index14.html' target='_blank' title>
                             <span>Download Company Profile</span>
                             <i class="fa-solid fa-file-pdf"></i>
@@ -193,6 +230,63 @@
     </div>
 </section>
 <!-- End journey-sec -->
+        <!-- journey-sec -->
+        <section class="journey-sec ibt-section-gapTop pb-5" id="journey">
+            <div class="container">
+                <div class="sec-title text-center journey-title">
+                    <span class="sub-title">Company Journey</span>
+                    <h2 class="title animated-heading">Our Journey Timeline</h2>
+                    <p class="journey-intro">A look at the key moments that shaped Technofra into a reliable digital partner for branding, web development, mobile apps, and IT solutions.</p>
+                </div>
+                <div class="journey-grid">
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="assets/images/new/about1.jpeg" alt="Technofra founded">
+                        </div>
+                        <div class="journey-content">
+                            <span class="journey-tag">Foundation</span>
+                            <h4>November 28th</h4>
+                            <p>Founded Technofra, specializing in branding and web development for growing businesses.</p>
+                        </div>
+                        <div class="journey-year">2012</div>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="assets/images/new/about2.jpeg" alt="Expanded into design and branding">
+                        </div>
+                        <div class="journey-content">
+                            <span class="journey-tag">Expansion</span>
+                            <h4>January</h4>
+                            <p>Expanded into website design, branding, and user-focused digital experiences.</p>
+                        </div>
+                        <div class="journey-year">2016</div>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="assets/images/new/about3.jpeg" alt="Started mobile applications">
+                        </div>
+                        <div class="journey-content">
+                            <span class="journey-tag">Innovation</span>
+                            <h4>April</h4>
+                            <p>Started developing mobile applications and API-driven solutions for modern businesses.</p>
+                        </div>
+                        <div class="journey-year">2020</div>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-image">
+                            <img src="assets/images/new/about4.jpeg" alt="Leading IT solutions agency">
+                        </div>
+                        <div class="journey-content">
+                            <span class="journey-tag">Growth</span>
+                            <h4>June</h4>
+                            <p>Built a trusted team delivering IT solutions, support, and long-term digital growth.</p>
+                        </div>
+                        <div class="journey-year">2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End journey-sec -->
 
 <!-- pricing-style1 -->
 <section class="pricing-style1 v2 ibt-section-gapTop">
