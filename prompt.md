@@ -1,4 +1,4 @@
-create same section using bootstrap and css. also make sure it is responsive on all devices. use font awesome icons where needed. use chatgpt provided image for now for all portfolio images. I will manually change that after.
+create same section using bootstrap and css. also make sure it is responsive on all devices. use font awesome icons where needed. use chatgpt provided image. 
 
 create same section using bootstrap and css and don't change existing css. also make sure it is responsive on all devices. use font awesome icons where needed. use proper padding and margin and also it is responsive. make sure text never overlaps with images and other content also it will fits within it's parent container.
 
