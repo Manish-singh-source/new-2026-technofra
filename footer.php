@@ -114,9 +114,8 @@
                 </div>
                 <div class="footer-bottom4">
                     <ul class="footer-bottom-nav4">
-                        <li><a href="about.php">About Us</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
-                        <li><a href="portfolio.php">Portfolio</a></li>
+                        <li><a href="about.php">Our Team</a></li>
+                        <li><a href="contact.php">Web & APP Maintenance</a></li>
                         <li><a href="blog.php">Blog</a></li>
                         <li><a href="privacy-policy.php">Privacy Policy</a></li>
                         <li><a href="refund-policy.php">Refund Policy</a></li>
