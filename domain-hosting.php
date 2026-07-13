@@ -492,7 +492,7 @@ include __DIR__ . '/header.php';
         font-weight: 600;
     }
 
-    .dh-about-bullets li + li {
+    .dh-about-bullets li+li {
         margin-top: 8px;
     }
 
@@ -579,6 +579,7 @@ include __DIR__ . '/header.php';
         font-size: 0.8rem;
         line-height: 1.45;
     }
+
     @media (max-width: 1199px) {
         .dh-hero {
             padding-top: 150px;
@@ -607,7 +608,7 @@ include __DIR__ . '/header.php';
     .dh-solutions {
         position: relative;
         padding: 0 0 110px;
-        
+
     }
 
     .dh-solutions-head {
@@ -780,7 +781,7 @@ include __DIR__ . '/header.php';
         .dh-hero {
             padding: 138px 0 80px;
         }
-    
+
         .dh-title {
             font-size: 2.6rem;
         }
@@ -819,10 +820,10 @@ include __DIR__ . '/header.php';
 
 
     .dh-solutions {
-    position: relative;
-    padding: 0 0 110px;
-    background: linear-gradient(180deg, #f5f6ff 0%, #f6f8ff 100%);
-}
+        position: relative;
+        padding: 0 0 110px;
+        background: linear-gradient(180deg, #f5f6ff 0%, #f6f8ff 100%);
+    }
 
     .dh-solutions-head {
         max-width: 760px;
@@ -944,6 +945,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 991px) {
+
         .dh-about-media,
         .dh-about-copy {
             padding: 0;
@@ -955,7 +957,7 @@ include __DIR__ . '/header.php';
 
         .dh-about-mini-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
-        }      
+        }
     }
 
     @media (max-width: 767px) {
@@ -996,6 +998,7 @@ include __DIR__ . '/header.php';
             justify-content: center;
         }
     }
+
     .dh-offer-services {
         position: relative;
         padding: 80px 0 80px;
@@ -1004,6 +1007,7 @@ include __DIR__ . '/header.php';
             linear-gradient(180deg, #f7f8ff 0%, #f3f6ff 100%);
         overflow: hidden;
     }
+
     .dh-offer-services::before,
     .dh-offer-services::after {
         content: "";
@@ -1012,6 +1016,7 @@ include __DIR__ . '/header.php';
         filter: blur(80px);
         pointer-events: none;
     }
+
     .dh-offer-services::before {
         width: 220px;
         height: 220px;
@@ -1019,6 +1024,7 @@ include __DIR__ . '/header.php';
         left: -40px;
         background: rgba(122, 110, 255, 0.14);
     }
+
     .dh-offer-services::after {
         width: 260px;
         height: 260px;
@@ -1026,6 +1032,7 @@ include __DIR__ . '/header.php';
         right: -80px;
         background: rgba(61, 150, 255, 0.12);
     }
+
     .dh-offer-head {
         position: relative;
         z-index: 1;
@@ -1033,6 +1040,7 @@ include __DIR__ . '/header.php';
         margin: 0 auto 44px;
         text-align: center;
     }
+
     .dh-offer-kicker {
         display: inline-block;
         margin-bottom: 14px;
@@ -1040,6 +1048,7 @@ include __DIR__ . '/header.php';
         font-size: 1.05rem;
         font-weight: 700;
     }
+
     .dh-offer-title {
         margin: 0 0 16px;
         color: #16213e;
@@ -1048,6 +1057,7 @@ include __DIR__ . '/header.php';
         font-weight: 800;
         letter-spacing: -0.05em;
     }
+
     .dh-offer-text {
         max-width: 650px;
         margin: 0 auto;
@@ -1055,6 +1065,7 @@ include __DIR__ . '/header.php';
         font-size: 1.02rem;
         line-height: 1.8;
     }
+
     .dh-offer-grid {
         position: relative;
         z-index: 1;
@@ -1062,6 +1073,7 @@ include __DIR__ . '/header.php';
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 20px;
     }
+
     .dh-offer-card {
         position: relative;
         padding: 30px 26px 24px;
@@ -1071,11 +1083,13 @@ include __DIR__ . '/header.php';
         box-shadow: 0 18px 44px rgba(93, 112, 185, 0.12);
         transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
     }
+
     .dh-offer-card:hover {
         transform: translateY(-6px);
         background: linear-gradient(135deg, #8f67ff 0%, #4797ff 100%);
         box-shadow: 0 28px 54px rgba(79, 109, 255, 0.24);
     }
+
     .dh-offer-icon {
         display: inline-flex;
         align-items: center;
@@ -1090,10 +1104,12 @@ include __DIR__ . '/header.php';
         box-shadow: 0 16px 32px rgba(95, 99, 255, 0.12);
         transition: transform 0.3s ease, color 0.3s ease;
     }
+
     .dh-offer-card:hover .dh-offer-icon {
         transform: scale(1.04);
         color: #6b63ff;
     }
+
     .dh-offer-card h3 {
         margin: 0 0 14px;
         color: #1f2947;
@@ -1102,6 +1118,7 @@ include __DIR__ . '/header.php';
         font-weight: 800;
         transition: color 0.3s ease;
     }
+
     .dh-offer-card p {
         margin: 0 0 18px;
         color: #697593;
@@ -1109,6 +1126,7 @@ include __DIR__ . '/header.php';
         line-height: 1.75;
         transition: color 0.3s ease;
     }
+
     .dh-offer-link {
         display: inline-flex;
         align-items: center;
@@ -1119,14 +1137,17 @@ include __DIR__ . '/header.php';
         text-decoration: none;
         transition: color 0.3s ease, transform 0.3s ease;
     }
+
     .dh-offer-link i {
         font-size: 0.9rem;
     }
+
     .dh-offer-card:hover h3,
     .dh-offer-card:hover p,
     .dh-offer-card:hover .dh-offer-link {
         color: #ffffff;
     }
+
     .dh-offer-card:hover .dh-offer-link {
         transform: translateX(2px);
     }
@@ -1367,6 +1388,16 @@ include __DIR__ . '/header.php';
             padding: 24px 20px 20px;
         }
     }
+
+    /* @media (max-width: 1024px) {
+        .flex-column-reverse-custom {
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: reverse !important;
+            -webkit-flex-direction: column-reverse !important;
+            -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+        }
+    } */
 </style>
 
 <main class="dh-page">
@@ -1388,34 +1419,35 @@ include __DIR__ . '/header.php';
                         <div class="dh-actions">
                             <a href="contact.php" class="dh-btn-primary">
                                 <i class="fa fa-rocket"></i>
-                                <span>Get Started</span>
+                                <span>Contact Us</span>
                             </a>
-                            <a href="contact.php" class="dh-btn-secondary">
+                            <!-- <a href="contact.php" class="dh-btn-secondary">
                                 <i class="fa fa-calendar"></i>
                                 <span>View Plans</span>
-                            </a>
+                            </a> -->
                         </div>
+                        <!-- 
                         <div class="dh-price">
                             <i class="fa fa-tag"></i>
-                            <span>Starting from <strong>&#8377;9.99</strong> per month</span>
-                        </div>
+                            <span>Starting from <strong>&#8377;999</strong> per month</span>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
-                   <img src="./assets/images/new/domain-hosting.png">
+                    <img src="./assets/images/new/domain-hosting.png">
                 </div>
             </div>
         </div>
     </section>
 
-   
+
 
     <section class="dh-about">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center flex-column-reverse-custom">
                 <div class="col-lg-6">
                     <div class="dh-about-media">
-                      <img src="./assets/images/new/dh-about.png" alt="" srcset="">
+                        <img src="./assets/images/new/dh-about.png" alt="" srcset="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -1424,7 +1456,7 @@ include __DIR__ . '/header.php';
                         <h2 class="dh-about-title">Why Choose Our Domain &amp; Hosting Services</h2>
                         <p>We provide secure, reliable, and high-performance domain and hosting solutions designed to help businesses build a strong online presence. From domain registration to managed hosting, we make it easy to launch and grow your website with confidence.</p>
                         <p>Our team focuses on speed, uptime, security, and support so your website stays accessible and performs smoothly. Whether you need hosting for a small business website, an online store, or a growing platform, we deliver solutions tailored to your needs.</p>
-                        
+
                         <div class="dh-about-mini-grid">
                             <div class="dh-about-mini">
                                 <i class="fa fa-line-chart"></i>
@@ -1467,9 +1499,9 @@ include __DIR__ . '/header.php';
                     <h3>Domain Registration</h3>
                     <p>Search, register, and manage your perfect domain name with ease.</p>
                     <div class="dh-solution-divider"></div>
-                    <div class="dh-solution-price">Starting from <strong>&#8377;499</strong><span>/year</span></div>
+                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;499</strong><span>/year</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
-                        <span>See Plans</span>
+                        <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1480,9 +1512,9 @@ include __DIR__ . '/header.php';
                     <h3>Shared Hosting</h3>
                     <p>Affordable hosting for small websites with reliable speed and security.</p>
                     <div class="dh-solution-divider"></div>
-                    <div class="dh-solution-price">Starting from <strong>&#8377;99</strong><span>/month</span></div>
+                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;99</strong><span>/month</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
-                        <span>See Plans</span>
+                        <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1493,9 +1525,9 @@ include __DIR__ . '/header.php';
                     <h3>VPS Hosting</h3>
                     <p>Powerful virtual servers with better performance and full control.</p>
                     <div class="dh-solution-divider"></div>
-                    <div class="dh-solution-price">Starting from <strong>&#8377;599</strong><span>/month</span></div>
+                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;599</strong><span>/month</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
-                        <span>See Plans</span>
+                        <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1506,9 +1538,9 @@ include __DIR__ . '/header.php';
                     <h3>Cloud Hosting</h3>
                     <p>Scalable cloud infrastructure built for uptime, flexibility, and growth.</p>
                     <div class="dh-solution-divider"></div>
-                    <div class="dh-solution-price">Starting from <strong>&#8377;799</strong><span>/month</span></div>
+                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;799</strong><span>/month</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
-                        <span>See Plans</span>
+                        <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1529,10 +1561,11 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>Domain Registration</h3>
                     <p>Register professional domain names with the extensions that best match your business, brand, or project goals.</p>
+                    <!-- 
                     <a href="contact.php" class="dh-offer-link">
                         <span>Explore More</span>
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1540,10 +1573,11 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>DNS Management</h3>
                     <p>Manage DNS records with ease so your domain connects correctly to websites, email services, and other online tools.</p>
+                    <!-- 
                     <a href="contact.php" class="dh-offer-link">
                         <span>Explore More</span>
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1551,10 +1585,11 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>SSL Security</h3>
                     <p>Protect visitor data with SSL support that improves trust, encrypts connections, and strengthens website security.</p>
+                    <!-- 
                     <a href="contact.php" class="dh-offer-link">
                         <span>Explore More</span>
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1562,10 +1597,11 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>Backup Protection</h3>
                     <p>Keep your website safe with backup options that help restore important files and content when needed.</p>
+                    <!-- 
                     <a href="contact.php" class="dh-offer-link">
                         <span>Explore More</span>
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1573,10 +1609,11 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>99.9% Uptime</h3>
                     <p>Benefit from stable hosting performance designed to keep your website accessible and responsive throughout the day.</p>
+                    <!-- 
                     <a href="contact.php" class="dh-offer-link">
                         <span>Explore More</span>
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1584,17 +1621,18 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>Support Center</h3>
                     <p>Reach out for technical help whenever you need guidance with setup, migration, renewals, or hosting concerns.</p>
+                    <!-- 
                     <a href="contact.php" class="dh-offer-link">
                         <span>Explore More</span>
                         <i class="fa fa-arrow-right"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
     </section>
     <section class="dh-faq-section">
         <div class="container">
-            <div class="dh-faq-wrap">
+            <div class="d-flex dh-faq-wrap flex-column-reverse-custom">
                 <div class="dh-faq-copy">
                     <span class="dh-faq-kicker">FAQ</span>
                     <h2 class="dh-faq-title">Frequently Asked Questions</h2>
@@ -1668,15 +1706,3 @@ include __DIR__ . '/header.php';
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-
-
-
-
-

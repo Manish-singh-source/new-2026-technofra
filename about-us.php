@@ -10,6 +10,7 @@
     }
 </style>
 
+
 <!-- her-style9 -->
 <section class="hero-style14">
     <div class="container-fluid">
@@ -26,7 +27,7 @@
                 <div class="hero-content14">
                     <p>Technofra builds strong digital brands through websites, apps, branding, marketing, and smart tech solutions.
                     </p>
-                    <a class='ibt-btn ibt-btn-secondary' href='contact' target='_blank' title>
+                    <a class='ibt-btn ibt-btn-secondary' href='contact.php' target='_blank' title>
                         <span>Start Your Project</span>
                         <i class="icon-arrow-top"></i>
                     </a>
@@ -84,7 +85,9 @@
 <!-- End service-sec20 -->
 
 <!-- about-us-sec9 -->
-<section class="about-us-sec9 ibt-section-gapTop">
+
+<!-- about-us-sec9 -->
+<section class="about-us-sec9 ibt-section-gapTop pb-4">
     <div class="container">
         <div class="title-area row">
             <div class="sec-title col-12 col-lg-9">
@@ -136,6 +139,7 @@
 <!-- End about-us-sec9 -->
 
 
+
 <!-- journey-sec -->
 <section class="journey-sec ibt-section-gapTop pb-5" id="journey">
     <div class="container">
@@ -147,7 +151,7 @@
         <div class="journey-grid">
             <div class="journey-card">
                 <div class="journey-image">
-                    <img src="assets/images/event/about1-1.png" alt="Technofra founded">
+                    <img src="assets/images/new/about1.jpeg" alt="Technofra founded">
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Foundation</span>
@@ -158,7 +162,7 @@
             </div>
             <div class="journey-card">
                 <div class="journey-image">
-                    <img src="assets/images/event/demo1-3.png" alt="Expanded into design and branding">
+                    <img src="assets/images/new/about2.jpeg" alt="Expanded into design and branding">
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Expansion</span>
@@ -169,7 +173,7 @@
             </div>
             <div class="journey-card">
                 <div class="journey-image">
-                    <img src="assets/images/event/choose2.png" alt="Started mobile applications">
+                    <img src="assets/images/new/about3.jpeg" alt="Started mobile applications">
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Innovation</span>
@@ -180,7 +184,7 @@
             </div>
             <div class="journey-card">
                 <div class="journey-image">
-                    <img src="assets/images/event/choose3-1.png" alt="Leading IT solutions agency">
+                    <img src="assets/images/new/about4.jpeg" alt="Leading IT solutions agency">
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Growth</span>

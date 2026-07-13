@@ -210,7 +210,7 @@
                 <img src="assets/images/new/web.png" alt="AI Agency & Technology HTML Template">
                 <div class="ser-content3">
                     <h4 class="title">Professional Web Development for Your Business Growth</h4>
-                    <a class='ser-btn3' href='/index4' target='_blank' title>Explore more</a>
+                    <a class='ser-btn3' href='web-design-and-development.php' title>Explore more</a>
                 </div>
                 <div class="ser-text">
                     <a href="#" title="">AI Solutions</a>
@@ -274,19 +274,19 @@
                 <div class="service-box7">
                     <div class="social-link3">
                         <img src="assets/images/new/b1.png" alt="AI Agency & Technology HTML Template">
-                        <span>Blue Orbith</span>
+                        <a href="https://blueorbith.com/" target="_blank" rel="noopener noreferrer"><span>Blue Orbith</span></a>
                     </div>
                     <div class="social-link3">
                         <img src="assets/images/new/b2.png" alt="AI Agency & Technology HTML Template">
-                        <span>Grid Infinity</span>
+                        <a href="https://gridinfinity.com/" target="_blank" rel="noopener noreferrer"><span>Grid Infinity</span></a>
                     </div>
                     <div class="social-link3">
                         <img src="assets/images/new/b3.png" alt="AI Agency & Technology HTML Template">
-                        <span>Mark Idenititiz</span>
+                        <a href="https://markidentitiez.com/" target="_blank" rel="noopener noreferrer"><span>Mark Idenititiz</span></a>
                     </div>
                     <div class="social-link3">
                         <img src="assets/images/new/b4.png" alt="AI Agency & Technology HTML Template">
-                        <span>Digi Kcon</span>
+                        <a href="https://digikcon.com/" target="_blank" rel="noopener noreferrer"><span>Digi Kcon</span></a>
                     </div>
 
                 </div>
@@ -306,14 +306,14 @@
                         <span class="sub-title"><span class="sub-text" style="overflow: hidden; display: inline-block; width: 142px;">Services We Provide</span></span>
                         <h2 class="title animated-heading">Services We Provide</h2>
                         <p>We build digital products and growth systems for companies that want stronger online presence, better performance, and measurable results.</p>
-                        <a class="ibt-btn ibt-btn-outline" href="/index8" title="">
+                        <a class="ibt-btn ibt-btn-outline explore-web-btn" href="web-design-and-development.php" title="">
                             <span>Explore more</span>
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
                     <div class="about-counter">
                         <div class="counter-box4">
-                            <span class="counter-number" data-target="270">270</span>
+                            <span class="counter-number" data-target="550">550</span>
                             <span class="counter-text">+</span>
                         </div>
                         <span class="solutions">Successful projects delivered</span>
@@ -327,7 +327,7 @@
                             <i class="fa-solid fa-code" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="#" title="#">Web/App development</a></h4>
+                            <h4 class="title"><a href="web-design-and-development.php" >Web</a>/<a href="/android-app-development.php" title="Android App Development">App</a> development</h4>
                             <p>Responsive websites, web apps, and mobile-ready experiences built for speed and usability.
                             </p>
                         </div>
@@ -337,7 +337,7 @@
                             <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="#" title="#">E-commerce development</a></h4>
+                            <h4 class="title"><a href="shopify-development.php">E-commerce development</a></h4>
                             <p>Online stores, product catalogs, cart flows, and checkout experiences that convert.
                             </p>
                         </div>
@@ -347,7 +347,7 @@
                             <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="#" title="#">Branding</a></h4>
+                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank" >Branding</a></h4>
                             <p>Logo systems, visual identity, and messaging that make your business memorable.
                             </p>
                         </div>
@@ -357,7 +357,7 @@
                             <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7 mb-0">
-                            <h4 class="title"><a href="#" title="#">Digital Marketing</a></h4>
+                            <h4 class="title"><a href="digital-marketing.php">Digital Marketing</a></h4>
                             <p>SEO, social media, paid ads, and content marketing that helps brands grow online.
                             </p>
                         </div>
@@ -433,7 +433,7 @@
 
 <!-- creative-banner-sec -->
 <section class="creative-banner-sec">
-    <div class="container2">
+    <div class="container">
         <div class="creative-banner-wrap">
             <div class="creative-banner-top">
                 <span class="creative-banner-badge">Your End-to-End Digital & Branding Partner</span>
@@ -612,7 +612,7 @@
 </section>
 <!-- End booking-call-sec -->
 <!-- testimonials-sec -->
-<section class="testimonials-sec ibt-section-gapTop">
+<section class="testimonials-sec">
     <div class="container2">
         <div class="row">
             <div class="col-lg-7">
@@ -652,7 +652,7 @@
                         </div>
                         <div class="testi-count">
                             <h4>
-                                <span class="counter-number" data-target="250">0</span>
+                                <span class="counter-number" data-target="500">0</span>
                                 <span class="counter-text">+</span>
                             </h4>
                             <span>Happy clients</span>
@@ -679,8 +679,8 @@
                 <div class="col-xl-6 col-lg-12">
                     <div class="sec-btn-box">
                         <p>Tailored digital experiences for businesses across fast-moving sectors.</p>
-                        <a class='ibt-btn ibt-btn-outline' href='service.html' title>
-                            <span>View Services</span>
+                        <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
+                            <span>Get Started</span>
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
@@ -714,7 +714,7 @@
                         <div class="industry-icon brand-orange">
                             <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
                         </div>
-                        <h4>Retail & Ecommerce</h4>
+                        <h4>Retail & E-commerce</h4>
                         <p>Conversion-focused storefronts, catalog systems, and customer engagement.</p>
                     </div>
                 </div>
@@ -783,7 +783,7 @@
             <div class="col-lg-8">
                 <div class="faq-content">
                     <div class="sec-title">
-                        <span class="sub-title">faq</span>
+                        <span class="sub-title">FAQ</span>
                         <h2 class="title animated-heading">Frequently Asked Questions</h2>
                     </div>
                     <div class="accordion" id="accordionExample">
@@ -836,7 +836,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class='ibt-btn ibt-btn-outline' href='/service' title>
+                    <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
                         <span>Explore More</span>
                         <i class="icon-arrow-top"></i>
                     </a>
@@ -955,8 +955,13 @@
             </div>
         </section> -->
 <!-- End newsletter-banner -->
+ 
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
 
 
 

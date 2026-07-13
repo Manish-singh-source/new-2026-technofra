@@ -625,7 +625,7 @@ include __DIR__ . '/header.php';
         -webkit-text-fill-color: transparent;
     }
 
-    .hero-contact10.hero-experience-card {  
+    .hero-contact10.hero-experience-card {
         display: flex;
         align-items: center;
         gap: 22px;
@@ -1249,7 +1249,7 @@ include __DIR__ . '/header.php';
     }
 
 
-    .hero-section10{
+    .hero-section10 {
         border-radius: 0px !important;
     }
 </style>
@@ -1620,14 +1620,14 @@ include __DIR__ . '/header.php';
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-swift"><i class="fab fa-apple"></i></span><span>Swift</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mysql"><i class="fas fa-database"></i></span><span>MySQL</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mongo"><i class="fas fa-leaf"></i></span><span>MongoDB</span></a></div>
-<div class="col-lg-3 col-md-4 col-sm-6">
-    <a href="#" title="" class="tech-stack-card">
-        <span class="tech-stack-icon tech-postgres">
-            <img src="https://www.svgrepo.com/show/354200/postgresql.svg" alt="PostgreSQL" width="32" height="32">
-        </span>
-        <span>PostgreSQL</span>
-    </a>
-</div>                
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" title="" class="tech-stack-card">
+                        <span class="tech-stack-icon tech-postgres">
+                            <img src="./assets/svg/postgresql.svg" alt="PostgreSQL" width="32" height="32">
+                        </span>
+                        <span>PostgreSQL</span>
+                    </a>
+                </div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-firebase"><i class="fas fa-fire"></i></span><span>Firebase</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-wordpress"><i class="fab fa-wordpress"></i></span><span>WordPress</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-shopify"><i class="fab fa-shopify"></i></span><span>Shopify</span></a></div>
