@@ -6,6 +6,10 @@ include __DIR__ . '/header.php';
 
 
 <style>
+    .hero-content10 .title {
+        font-weight: 600;
+    }
+
     .tech-stack-v2 {
         position: relative;
         overflow: hidden;
@@ -621,7 +625,7 @@ include __DIR__ . '/header.php';
         -webkit-text-fill-color: transparent;
     }
 
-    .hero-contact10.hero-experience-card {
+    .hero-contact10.hero-experience-card {  
         display: flex;
         align-items: center;
         gap: 22px;
@@ -1243,12 +1247,16 @@ include __DIR__ . '/header.php';
             font-size: 40px;
         }
     }
+
+
+    .hero-section10{
+        border-radius: 0px !important;
+    }
 </style>
 
 <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-/>
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 
 <!-- Banner Section-->
@@ -1612,7 +1620,14 @@ include __DIR__ . '/header.php';
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-swift"><i class="fab fa-apple"></i></span><span>Swift</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mysql"><i class="fas fa-database"></i></span><span>MySQL</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mongo"><i class="fas fa-leaf"></i></span><span>MongoDB</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-postgres"><i class="fa-brands fa-postgresql"></i></span><span>PostgreSQL</span></a></div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="#" title="" class="tech-stack-card">
+        <span class="tech-stack-icon tech-postgres">
+            <img src="https://www.svgrepo.com/show/354200/postgresql.svg" alt="PostgreSQL" width="32" height="32">
+        </span>
+        <span>PostgreSQL</span>
+    </a>
+</div>                
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-firebase"><i class="fas fa-fire"></i></span><span>Firebase</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-wordpress"><i class="fab fa-wordpress"></i></span><span>WordPress</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-shopify"><i class="fab fa-shopify"></i></span><span>Shopify</span></a></div>
@@ -1659,56 +1674,56 @@ include __DIR__ . '/header.php';
             <div class="portfolio-track dir-ltr" id="trackRow1">
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Analytics Dashboard"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/ish.jpg" alt="ISH International"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-desktop"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">SaaS Dashboard</div>
-                            <div class="portfolio-title">Analytics Dashboard</div>
+                            <div class="portfolio-category">E-commerce Website</div>
+                            <div class="portfolio-title">ISH International</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Community Platform"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/aeritx.jpg" alt="Aeritx"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">Mobile App</div>
-                            <div class="portfolio-title">Community Platform</div>
+                            <div class="portfolio-category">E-Commerce Website & CRM</div>
+                            <div class="portfolio-title">Aeritx</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Real Estate Platform"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/karantelecom.jpg" alt="Karantelecom"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-globe"></i></div>
                         <div class="portfolio-text">
                             <div class="portfolio-category">Website</div>
-                            <div class="portfolio-title">Real Estate Platform</div>
+                            <div class="portfolio-title">Karantelecom</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Fintech Application"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/urbon.jpg" alt="Urban Sports"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">Mobile App</div>
-                            <div class="portfolio-title">Fintech Application</div>
+                            <div class="portfolio-category">Website</div>
+                            <div class="portfolio-title">Urban Sports</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Organic Tea Store"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/vp-son.jpg" alt="VP Son"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-bag-shopping"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">E-Commerce Website</div>
-                            <div class="portfolio-title">Organic Tea Store</div>
+                            <div class="portfolio-category">Website</div>
+                            <div class="portfolio-title">VP Son</div>
                         </div>
                     </div>
                 </div>
@@ -1721,67 +1736,67 @@ include __DIR__ . '/header.php';
             <div class="portfolio-track dir-rtl" id="trackRow2">
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Fashion Store"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/link-promotion.jpg" alt="Link Promotion"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-bag-shopping"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">E-Commerce App</div>
-                            <div class="portfolio-title">Fashion Store</div>
+                            <div class="portfolio-category">Website</div>
+                            <div class="portfolio-title">Link Promotion</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Car Rental Platform"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/transhubtech.jpg" alt="Transhubtech"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-car"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">SaaS Dashboard</div>
-                            <div class="portfolio-title">Car Rental Platform</div>
+                            <div class="portfolio-category">Website</div>
+                            <div class="portfolio-title">Transhubtech</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Project Management Tool"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/wotm.jpg" alt="WOTM"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-chart-line"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">Web Application</div>
-                            <div class="portfolio-title">Project Management Tool</div>
+                            <div class="portfolio-category">E-Commerce Website</div>
+                            <div class="portfolio-title">WOTM</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Telemedicine Platform"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/sukanya.jpeg" alt="SukanyaIndia"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-heart-pulse"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">Healthcare Website</div>
-                            <div class="portfolio-title">Telemedicine Platform</div>
+                            <div class="portfolio-category">E-Commerce Website</div>
+                            <div class="portfolio-title">SukanyaIndia</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Drone Delivery Service"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/headquater.png" alt="Headquarters"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-signs-post"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">Landing Page</div>
-                            <div class="portfolio-title">Drone Delivery Service</div>
+                            <div class="portfolio-category">Web Application</div>
+                            <div class="portfolio-title">Headquarters</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/portfolio1.png" alt="Property Finder"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/frizcool.png" alt="Frizcool India"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-house"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">Web Application</div>
-                            <div class="portfolio-title">Property Finder</div>
+                            <div class="portfolio-category">Website</div>
+                            <div class="portfolio-title">Frizcool India</div>
                         </div>
                     </div>
                 </div>
@@ -1798,7 +1813,7 @@ include __DIR__ . '/header.php';
         <div class="row">
             <div class="col-lg-4 faq-img-sec">
                 <div class="faq-img2">
-                    <img src="assets/images/layers/layer2.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
                 </div>
             </div>
             <div class="col-lg-8">
