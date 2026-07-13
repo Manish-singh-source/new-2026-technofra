@@ -8,7 +8,7 @@
                     flex: 0 0 auto;
                 }
 
-                .sticky-active .header-menu-area .main-menu > ul {
+                .sticky-active .header-menu-area .main-menu>ul {
                     white-space: nowrap;
                 }
 
@@ -26,7 +26,7 @@
                     padding-right: 37px;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu {
                     left: 100%;
                     right: auto;
                     width: min(960px, calc(100vw - 48px));
@@ -39,42 +39,42 @@
                     gap: 0;
                     align-items: start;
                     -webkit-transform: translate(-50%, 10px);
-                        -ms-transform: translate(-50%, 10px);
-                            transform: translate(-50%, 10px);
+                    -ms-transform: translate(-50%, 10px);
+                    transform: translate(-50%, 10px);
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2):hover > .mega-sub-menu {
+                .sticky-active .main-menu>ul>li:nth-child(2):hover>.mega-sub-menu {
                     -webkit-transform: translate(-50%, 0);
-                        -ms-transform: translate(-50%, 0);
-                            transform: translate(-50%, 0);
+                    -ms-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu>li.mega-menu-column {
                     display: block;
                     padding: 0 12px;
                     border-right: 1px solid rgba(255, 255, 255, 0.16);
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:first-child {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu>li.mega-menu-column:first-child {
                     padding-left: 0;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:last-child {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu>li.mega-menu-column:last-child {
                     padding-right: 0;
                     border-right: 0;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-group + .mega-menu-group {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-group+.mega-menu-group {
                     margin-top: 10px;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-sub-divider {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-sub-divider {
                     height: 1px;
                     margin: 12px 0;
                     background: rgba(255, 255, 255, 0.16);
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-heading {
                     display: flex;
                     align-items: center;
                     gap: 8px;
@@ -87,7 +87,7 @@
                     text-transform: uppercase;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading::after {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-heading::after {
                     content: "";
                     width: 32px;
                     height: 2px;
@@ -96,7 +96,7 @@
                     flex: 0 0 auto;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list {
                     list-style: none;
                     margin: 0;
                     padding: 0;
@@ -105,7 +105,7 @@
                     gap: 8px;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list a {
                     display: flex;
                     align-items: center;
                     gap: 8px;
@@ -118,11 +118,11 @@
                     white-space: normal;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a:hover {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list a:hover {
                     color: #ff9f1a;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-icon {
                     width: 40px;
                     height: 40px;
                     border-radius: 10px;
@@ -136,11 +136,11 @@
                     font-size: 17px;
                 }
 
-                .sticky-active .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon i {
+                .sticky-active .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-icon i {
                     width: auto;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu {
                     left: 100%;
                     right: auto;
                     width: min(960px, calc(100vw - 48px));
@@ -153,42 +153,42 @@
                     gap: 0;
                     align-items: start;
                     -webkit-transform: translate(-50%, 10px);
-                        -ms-transform: translate(-50%, 10px);
-                            transform: translate(-50%, 10px);
+                    -ms-transform: translate(-50%, 10px);
+                    transform: translate(-50%, 10px);
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2):hover > .mega-sub-menu {
+                .header-bottom .main-menu>ul>li:nth-child(2):hover>.mega-sub-menu {
                     -webkit-transform: translate(-50%, 0);
-                        -ms-transform: translate(-50%, 0);
-                            transform: translate(-50%, 0);
+                    -ms-transform: translate(-50%, 0);
+                    transform: translate(-50%, 0);
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu>li.mega-menu-column {
                     display: block;
                     padding: 0 12px;
                     border-right: 1px solid rgba(255, 255, 255, 0.16);
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:first-child {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu>li.mega-menu-column:first-child {
                     padding-left: 0;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu > li.mega-menu-column:last-child {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu>li.mega-menu-column:last-child {
                     padding-right: 0;
                     border-right: 0;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-group + .mega-menu-group {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-group+.mega-menu-group {
                     margin-top: 10px;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-sub-divider {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-sub-divider {
                     height: 1px;
                     margin: 12px 0;
                     background: rgba(255, 255, 255, 0.16);
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-heading {
                     display: flex;
                     align-items: center;
                     gap: 8px;
@@ -201,7 +201,7 @@
                     text-transform: uppercase;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading::after {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-heading::after {
                     content: "";
                     width: 32px;
                     height: 2px;
@@ -210,7 +210,7 @@
                     flex: 0 0 auto;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list {
                     list-style: none;
                     margin: 0;
                     padding: 0;
@@ -219,7 +219,7 @@
                     gap: 8px;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list a {
                     display: flex;
                     align-items: center;
                     gap: 8px;
@@ -232,11 +232,11 @@
                     white-space: normal;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a:hover {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list a:hover {
                     color: #ff9f1a;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-icon {
                     width: 40px;
                     height: 40px;
                     border-radius: 10px;
@@ -250,11 +250,11 @@
                     font-size: 17px;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon i {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-icon i {
                     width: auto;
                 }
 
-                .header-bottom .main-menu > ul li .sub-menu {
+                .header-bottom .main-menu>ul li .sub-menu {
                     border-radius: 28px;
                     background: linear-gradient(180deg, #111111 0%, #050505 100%);
                     box-shadow: 0 32px 70px rgba(0, 0, 0, 0.35);
@@ -263,7 +263,7 @@
                     width: auto;
                 }
 
-                .header-bottom .main-menu > ul li .sub-menu li a {
+                .header-bottom .main-menu>ul li .sub-menu li a {
                     padding: 8px 12px;
                     color: #ffffff;
                     font-size: 13px;
@@ -272,48 +272,49 @@
                     border-radius: 10px;
                 }
 
-                .header-bottom .main-menu > ul li .sub-menu li a:hover {
+                .header-bottom .main-menu>ul li .sub-menu li a:hover {
                     background: rgba(255, 255, 255, 0.06);
                     color: #ff9f1a;
                 }
 
-                .header-bottom .main-menu > ul li .sub-menu li a::before,
-                .header-bottom .main-menu > ul li .sub-menu li a::after {
+                .header-bottom .main-menu>ul li .sub-menu li a::before,
+                .header-bottom .main-menu>ul li .sub-menu li a::after {
                     display: none;
                 }
 
-                .header-bottom .main-menu > ul li .sub-menu li {
+                .header-bottom .main-menu>ul li .sub-menu li {
                     margin: 0;
                 }
 
-                .header-bottom .main-menu > ul li .sub-menu li > .sub-menu {
+                .header-bottom .main-menu>ul li .sub-menu li>.sub-menu {
                     left: calc(100% + 12px);
                     top: 0;
                     margin-top: 0;
                     min-width: 260px;
                     padding: 14px;
                 }
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-column-stack {
+
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-column-stack {
                     display: flex;
                     flex-direction: column;
                 }
             }
 
             @media (max-width: 1399px) {
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu {
                     width: min(900px, calc(100vw - 40px));
                     padding: 14px 14px;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-heading {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-heading {
                     font-size: 15px;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-list a {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-list a {
                     font-size: 13px;
                 }
 
-                .header-bottom .main-menu > ul > li:nth-child(2) > .mega-sub-menu .mega-menu-icon {
+                .header-bottom .main-menu>ul>li:nth-child(2)>.mega-sub-menu .mega-menu-icon {
                     width: 36px;
                     height: 36px;
                     font-size: 16px;
@@ -347,7 +348,7 @@
                     <li><a href="https://www.youtube.com/" title=""><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
-        </div>      <!-- New Mobile Menu -->
+        </div> <!-- New Mobile Menu -->
         <div data-menu="mobileMenu" class="side-menu2">
             <div class="menu-btns">
                 <!-- <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a> -->
@@ -369,8 +370,8 @@
                         <li><a href='ppc.php'>Paid Marketing (PPC)</a></li>
                         <li><a href="social-media-marketing.php">Social Media Marketing</a></li>
                         <li><a href='content-marketing.php'>Content Marketing</a></li>
-                        <li><a href='#'>Branding</a></li>
-                        <li><a href='#'>UI/UX</a></li>
+                        <li><a href='https://markidentitiez.com/' target="_blank">Branding</a></li>
+                        <li><a href='ui-ux.php'>UI/UX</a></li>
                         <li><a href='#'>Domain & Hosting</a></li>
                         <li><a href="it-infrastructure.php">IT Infrastructure</a></li>
                     </ul>
@@ -415,84 +416,84 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                                                        <nav class="main-menu menu-style1 v4">
-                                    <ul>
-                                        <li>
-                                            <a href='about-us.php'>
-                                                <span class="menu-item">About us</span>
-                                                <span class="menu-item2">About us</span>
-                                            </a>
+                        <nav class="main-menu menu-style1 v4">
+                            <ul>
+                                <li>
+                                    <a href='about-us.php'>
+                                        <span class="menu-item">About us</span>
+                                        <span class="menu-item2">About us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='active' href='#'>
+                                        <span class="menu-item">Service</span>
+                                        <span class="menu-item2">Service</span>
+                                    </a>
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-column">
+                                            <div class="mega-menu-group">
+                                                <h4 class="mega-menu-heading">Web & App Solutions</h4>
+                                                <ul class="mega-menu-list">
+                                                    <li><a href="web-design-and-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
+                                                    <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
+                                                    <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
+                                                    <li><a href="crm-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>CRM Development</span></a></li>
+                                                    <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
+                                                    <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                                </ul>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a class='active' href='#'>
-                                                <span class="menu-item">Service</span>
-                                                <span class="menu-item2">Service</span>
-                                            </a>
-                                            <ul class="mega-sub-menu">
-                                                <li class="mega-menu-column">
-                                                    <div class="mega-menu-group">
-                                                        <h4 class="mega-menu-heading">Web & App Solutions</h4>
-                                                        <ul class="mega-menu-list">
-                                                            <li><a href="web-design-and-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
-                                                            <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
-                                                            <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
-                                                            <li><a href="crm-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>CRM Development</span></a></li>
-                                                            <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
-                                                            <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="mega-menu-column">
-                                                    <div class="mega-menu-group">
-                                                        <h4 class="mega-menu-heading">Online Marketing Services</h4>
-                                                        <ul class="mega-menu-list">
-                                                            <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
-                                                            <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
-                                                            <li><a href='ppc.php'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
-                                                            <li><a href="social-media-marketing.php"><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
-                                                            <li><a href='content-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="mega-menu-column mega-menu-column-stack">
-                                                    <div class="mega-menu-group">
-                                                        <h4 class="mega-menu-heading">Branding</h4>
-                                                        <ul class="mega-menu-list">
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="mega-sub-divider"></div>
-                                                    <div class="mega-menu-group">
-                                                        <h4 class="mega-menu-heading">Hosting & IT Services</h4>
-                                                        <ul class="mega-menu-list">
-                                                            <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
-                                                            <li><a href="it-infrastructure.php"><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
+                                        <li class="mega-menu-column">
+                                            <div class="mega-menu-group">
+                                                <h4 class="mega-menu-heading">Online Marketing Services</h4>
+                                                <ul class="mega-menu-list">
+                                                    <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
+                                                    <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
+                                                    <li><a href='ppc.php'><span class="mega-menu-icon"><i class="fa-solid fa-bullhorn"></i></span><span>Paid Marketing (PPC)</span></a></li>
+                                                    <li><a href="social-media-marketing.php"><span class="mega-menu-icon"><i class="fa-solid fa-share-nodes"></i></span><span>Social Media Marketing</span></a></li>
+                                                    <li><a href='content-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-pen-nib"></i></span><span>Content Marketing</span></a></li>
+                                                </ul>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a href='portfolios.php'>
-                                                <span class="menu-item">Portfolio</span>
-                                                <span class="menu-item2">Portfolio</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='career.php'>
-                                                <span class="menu-item">Career</span>
-                                                <span class="menu-item2">Career</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href='contact.php'>
-                                                <span class="menu-item">Contacts</span>
-                                                <span class="menu-item2">Contacts</span>
-                                            </a>
+                                        <li class="mega-menu-column mega-menu-column-stack">
+                                            <div class="mega-menu-group">
+                                                <h4 class="mega-menu-heading">Branding</h4>
+                                                <ul class="mega-menu-list">
+                                                    <li><a href='https://markidentitiez.com/' target="_blank"><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
+                                                    <li><a href='ui-ux.php'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-sub-divider"></div>
+                                            <div class="mega-menu-group">
+                                                <h4 class="mega-menu-heading">Hosting & IT Services</h4>
+                                                <ul class="mega-menu-list">
+                                                    <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
+                                                    <li><a href="it-infrastructure.php"><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
+                                                </ul>
+                                            </div>
                                         </li>
                                     </ul>
-                                </nav>
+                                </li>
+                                <li>
+                                    <a href='portfolios.php'>
+                                        <span class="menu-item">Portfolio</span>
+                                        <span class="menu-item2">Portfolio</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='career.php'>
+                                        <span class="menu-item">Career</span>
+                                        <span class="menu-item2">Career</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='contact.php'>
+                                        <span class="menu-item">Contacts</span>
+                                        <span class="menu-item2">Contacts</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="col-auto d-none d-xl-block">
                         <div class="btn-box">
@@ -550,7 +551,7 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                                                <nav class="main-menu menu-style1 v4">
+                                <nav class="main-menu menu-style1 v4">
                                     <ul>
                                         <li>
                                             <a href='about-us.php'>
@@ -593,8 +594,8 @@
                                                     <div class="mega-menu-group">
                                                         <h4 class="mega-menu-heading">Branding</h4>
                                                         <ul class="mega-menu-list">
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
-                                                            <li><a href='#'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
+                                                            <li><a href='https://markidentitiez.com/' target="_blank"><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
+                                                            <li><a href='ui-ux.php'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
                                                         </ul>
                                                     </div>
                                                     <div class="mega-sub-divider"></div>
@@ -648,9 +649,3 @@
             </div>
         </header>
         <!--======== / Header ========-->
-
-
-
-
-
-

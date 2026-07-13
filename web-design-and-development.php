@@ -6,6 +6,10 @@ include __DIR__ . '/header.php';
 
 
 <style>
+    .hero-content10 .title {
+        font-weight: 600;
+    }
+
     .tech-stack-v2 {
         position: relative;
         overflow: hidden;
@@ -1246,9 +1250,8 @@ include __DIR__ . '/header.php';
 </style>
 
 <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-/>
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 
 <!-- Banner Section-->
