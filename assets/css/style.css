@@ -571,8 +571,8 @@ input:-webkit-autofill:active {
   --color-surface-light-3: #f5f5f5;
   --color-body: #333333;
   --gradient-1: linear-gradient(159deg, #a2f5ff 2.13%, #ea84c2 95.42%);
-  --gradient-3: linear-gradient(113deg, #45d0bd 2.7%, #44b6e9 98.55%);
-  --gradient-btn-1: linear-gradient(102deg, #8258c8 0.77%, #6766c8 32.11%, #2c84c8 100.27%);
+  --gradient-3: linear-gradient(113deg, #036 2.7%, #44b6e9 98.55%);
+     --gradient-btn-1: linear-gradient(102deg, #6a7391 0.77%, #00cfff 32.11%, #2c84c8 100.27%);
   --border-width: 2px;
   --border-width-1: 1px;
   --color-border: #d9d9d9;
@@ -12790,7 +12790,6 @@ ul {
 }
 .ibt-btn.ibt-btn-outline {
   background: transparent;
-  border: 2px solid transparent;
 }
 .ibt-btn.ibt-btn-outline::before, .ibt-btn.ibt-btn-outline::after {
   content: "";
@@ -41567,7 +41566,7 @@ blockquote {
 .footer-cta4 {
   min-width: 190px;
   min-height: 66px;
-  border: 1px solid rgba(123, 143, 255, 0.9);
+     border: 1px solid rgb(0 209 255);
   border-radius: 18px;
   display: inline-flex;
   align-items: center;

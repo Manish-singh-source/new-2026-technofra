@@ -1,4 +1,34 @@
+<?php
+// Pages listed here will use the white logo in the normal header.
+// Add or remove filenames as needed, for example: 'index.php', 'ios-development.php'
+$currentPage = basename($_SERVER['SCRIPT_NAME'] ?? '');
+$bodyClass = $bodyClass ?? '';
+$whiteLogoPages = [
+    'index.php',
+    'ios-development.php',
+    'web-design-and-development.php',
+];
+
+$useWhiteLogo = in_array($currentPage, $whiteLogoPages, true);
+$normalHeaderLogo = $useWhiteLogo ? 'assets/images/new/logo.png' : 'assets/images/new/logo-black.png';
+$stickyHeaderLogo = 'assets/images/new/logo-black.png';
+$logoAssetVersion = max((int) @filemtime(__DIR__ . '/assets/images/new/logo.png'), (int) @filemtime(__DIR__ . '/assets/images/new/logo-black.png'));
+$normalHeaderLogoUrl = $normalHeaderLogo . '?v=' . $logoAssetVersion;
+$stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
+?>
         <style>
+<?php if ($useWhiteLogo): ?>
+            .vs-header4 .btn-box .ibt-btn {
+                color: #ffffff !important;
+            }
+<?php endif; ?>
+            .main-menu.menu-style1 > ul > li > a::before {
+                display: none;
+            }
+
+            .main-menu.menu-style1 > ul > li:nth-child(2) > a::before {
+                display: block;
+            }
             @media (min-width: 1200px) {
                 .sticky-active .header-menu-area .row {
                     flex-wrap: nowrap;
@@ -328,7 +358,7 @@
             <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
             <div class="menu-content">
                 <a class='logo' href='index.php'>
-                    <img src="assets/images/new/logo.png" class="wi" alt="logo">
+                    <img src="<?php echo htmlspecialchars($normalHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
                 </a>
                 <div class="sidebar-menu">
                     <h4 class="title">Contact Us</h4>
@@ -411,7 +441,7 @@
                         <div class="header-logo">
                             <a href="javascript:void(0)" class="menu-toggle"></a>
                             <a href='index.php'>
-                                <img src="assets/images/new/logo-black.png" class="wi" alt="logo">
+                                <img src="<?php echo htmlspecialchars($stickyHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -546,7 +576,7 @@
                                 <div class="header-logo">
                                     <a href="javascript:void(0)" class="menu-toggle"></a>
                                     <a href='index.php'>
-                                        <img src="assets/images/new/logo-black.png" class="wi" alt="logo">
+                                        <img src="<?php echo htmlspecialchars($normalHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
                                     </a>
                                 </div>
                             </div>
