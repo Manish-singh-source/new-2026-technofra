@@ -41905,14 +41905,14 @@ blockquote {
 
 .shopify-testimonials-sec {
   position: relative;
-  margin: 20px;
+  /* margin: 20px; */
   padding: 96px 0 84px;
   border-radius: 30px;
-  background:
+  /* background:
     radial-gradient(circle at 50% 34%, rgba(154, 199, 82, 0.16), transparent 30%),
     radial-gradient(circle at 12% 54%, rgba(154, 199, 82, 0.08), transparent 14%),
     radial-gradient(circle at 88% 34%, rgba(154, 199, 82, 0.08), transparent 12%),
-    #f7f6ef;
+    #f7f6ef; */
   overflow: hidden;
 }
 .shopify-testimonials-sec::before,
