@@ -9,6 +9,7 @@ $whiteLogoPages = [
     'web-design-and-development.php',
     'ui-ux.php',
     'domain-hosting.php',
+    'sapphire.php',
 ];
 
 $useWhiteLogo = in_array($currentPage, $whiteLogoPages, true);
