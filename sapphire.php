@@ -4,6 +4,14 @@ include __DIR__ . '/header.php';
 ?>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
   .sapphire-hero {
     position: relative;
     min-height: 100vh;
@@ -31,7 +39,7 @@ include __DIR__ . '/header.php';
     max-width: 1520px;
     min-height: 100vh;
     margin: 70px auto 0px;
-    padding: 110px 72px 70px;
+    padding: clamp(88px, 9vw, 110px) clamp(20px, 5vw, 72px) clamp(56px, 7vw, 70px);
     display: flex;
     align-items: center;
   }
@@ -58,7 +66,7 @@ include __DIR__ . '/header.php';
   .sapphire-hero__title {
     margin: 0;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 70px;
+    font-size: clamp(40px, 6vw, 70px);
     font-weight: 400;
     line-height: 0.9;
     letter-spacing: 0.04em;
@@ -70,10 +78,10 @@ include __DIR__ . '/header.php';
     display: block;
     margin-top: 16px;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 40px;
+    font-size: clamp(22px, 4vw, 40px);
     font-weight: 300;
     line-height: 1.1;
-    letter-spacing: 0.38em;
+    letter-spacing: clamp(0.16em, 0.9vw, 0.38em);
     text-transform: uppercase;
     color: #d5a86c;
   }
@@ -144,6 +152,7 @@ include __DIR__ . '/header.php';
   .sapphire-hero__features {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px 0;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -153,6 +162,7 @@ include __DIR__ . '/header.php';
     display: flex;
     flex-direction: column;
     gap: 12px;
+    flex: 1 1 25%;
     padding: 0 42px 0 0;
     min-height: 92px;
     color: #ece5db;
@@ -172,6 +182,20 @@ include __DIR__ . '/header.php';
     font-size: 24px;
   }
 
+  @media (max-width: 1199px) {
+    .sapphire-hero__wrap {
+      margin-top: 50px;
+    }
+
+    .sapphire-hero__content {
+      width: min(100%, 680px);
+    }
+
+    .sapphire-hero__features li {
+      flex-basis: 50%;
+    }
+  }
+
   @media (max-width: 991px) {
     .sapphire-hero {
       min-height: auto;
@@ -184,6 +208,7 @@ include __DIR__ . '/header.php';
 
     .sapphire-hero__wrap {
       min-height: auto;
+      margin-top: 0;
       padding: 84px 24px 56px;
     }
 
@@ -222,13 +247,49 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 640px) {
+    .sapphire-hero {
+      background:
+        linear-gradient(180deg, rgba(5, 5, 6, 0.9) 0%, rgba(5, 5, 6, 0.72) 38%, rgba(5, 5, 6, 0.86) 100%),
+        url('./assets/images/portfolios/sapphire1.png') 66% center / cover no-repeat,
+        #060606;
+    }
+
+    .sapphire-hero__eyebrow {
+      padding: 10px 16px;
+      margin-bottom: 24px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+    }
+
+    .sapphire-hero__line {
+      width: 140px;
+      margin: 24px 0;
+    }
+
     .sapphire-hero__meta {
       line-height: 1.8;
     }
 
+    .sapphire-hero__description {
+      margin-bottom: 32px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .sapphire-hero__actions {
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .sapphire-hero__button {
+      padding: 16px 20px;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+    }
+
     .sapphire-hero__features {
-      grid-template-columns: 1fr;
-      gap: 18px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 12px;
     }
 
     .sapphire-hero__features li,
@@ -237,6 +298,7 @@ include __DIR__ . '/header.php';
       border-left: 0;
       padding-left: 0;
       padding-right: 0;
+      min-width: 0;
     }
   }
 
@@ -250,7 +312,7 @@ include __DIR__ . '/header.php';
   .sapphire-overview__wrap {
     max-width: 1520px;
     margin: 0 auto;
-    padding: 0 72px;
+    padding: 0 clamp(20px, 5vw, 72px);
   }
 
   .sapphire-overview__top {
@@ -448,7 +510,7 @@ include __DIR__ . '/header.php';
 
   .sapphire-overview__service-card {
     min-height: 180px;
-    padding: 18px 0px 8px;
+    padding: 24px 18px 18px;
     text-align: center;
   }
 
@@ -474,17 +536,21 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 1199px) {
-    .sapphire-overview__wrap {
-      padding: 0 24px;
-    }
-
     .sapphire-overview__top,
     .sapphire-overview__bottom {
       grid-template-columns: 1fr;
     }
 
+    .sapphire-overview__info {
+      margin-top: 0;
+    }
+
     .sapphire-overview__visual {
       min-height: 460px;
+    }
+
+    .sapphire-overview__services-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
@@ -515,6 +581,8 @@ include __DIR__ . '/header.php';
     }
 
     .sapphire-overview__info-card {
+      flex-direction: column;
+      align-items: flex-start;
       padding: 22px 20px;
       min-height: auto;
     }
@@ -563,7 +631,7 @@ include __DIR__ . '/header.php';
     z-index: 1;
     max-width: 1520px;
     margin: 0 auto;
-    padding: 0 72px;
+    padding: 0 clamp(20px, 5vw, 72px);
   }
 
   .sapphire-showcase__layout {
@@ -659,6 +727,7 @@ include __DIR__ . '/header.php';
   .sapphire-showcase__visual-composition {
     position: relative;
     min-height: 720px;
+    padding-right: clamp(0px, 10vw, 120px);
   }
 
   .sapphire-showcase__frame {
@@ -819,10 +888,6 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 1199px) {
-    .sapphire-showcase__wrap {
-      padding: 0 24px;
-    }
-
     .sapphire-showcase__layout {
       grid-template-columns: 1fr;
     }
@@ -833,6 +898,7 @@ include __DIR__ . '/header.php';
 
     .sapphire-showcase__visual-composition {
       min-height: 640px;
+      padding-right: 80px;
     }
   }
 
@@ -843,6 +909,7 @@ include __DIR__ . '/header.php';
 
     .sapphire-showcase__visual-composition {
       min-height: auto;
+      padding-right: 0;
     }
 
     .sapphire-showcase__frame--primary {
@@ -853,8 +920,9 @@ include __DIR__ . '/header.php';
       position: relative;
       right: auto;
       bottom: auto;
-      width: 76%;
+      width: min(82%, 320px);
       margin: -46px 0 0 auto;
+      display: none;
     }
 
     .sapphire-showcase__intro-card,
@@ -862,16 +930,82 @@ include __DIR__ . '/header.php';
       padding: 24px;
     }
 
-    .sapphire-showcase__features li {
-      grid-template-columns: 46px minmax(0, 1fr);
+    .sapphire-showcase__features {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
-      font-size: 15px;
+      border-top: 0;
+    }
+
+    .sapphire-showcase__features li {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      justify-items: center;
+      text-align: center;
+      padding: 20px 14px;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.03);
     }
 
     .sapphire-showcase__feature-icon {
       width: 46px;
       height: 46px;
       border-radius: 14px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .sapphire-showcase__features {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .sapphire-overview__title,
+    .sapphire-showcase__title {
+      line-height: 1;
+    }
+
+    .sapphire-overview__accent {
+      width: 120px;
+      margin: 24px 0;
+    }
+
+    .sapphire-overview__description,
+    .sapphire-showcase__description,
+    .sapphire-showcase__intro-text,
+    .sapphire-showcase__caption-text {
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .sapphire-showcase__eyebrow {
+      gap: 10px;
+      margin-bottom: 20px;
+      letter-spacing: 0.18em;
+    }
+
+    .sapphire-showcase__eyebrow::before {
+      width: 40px;
+    }
+
+    .sapphire-showcase__floating-chip {
+      left: 16px;
+      top: 16px;
+      padding: 10px 14px;
+      font-size: 10px;
+      letter-spacing: 0.12em;
+    }
+
+    .sapphire-showcase__caption {
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      max-width: none;
+    }
+
+    .sapphire-showcase__stat-value {
+      margin-bottom: 12px;
     }
   }
 
@@ -884,6 +1018,7 @@ include __DIR__ . '/header.php';
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
   }
 
   .sapphire-showcase-image--mobile {
