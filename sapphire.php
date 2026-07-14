@@ -534,6 +534,375 @@ include __DIR__ . '/header.php';
       padding: 30px 22px 24px;
     }
   }
+
+  .sapphire-showcase {
+    position: relative;
+    overflow: hidden;
+    padding: 125px 0;
+    background:
+      radial-gradient(circle at 14% 22%, rgba(214, 173, 104, 0.14), transparent 22%),
+      radial-gradient(circle at 82% 14%, rgba(214, 173, 104, 0.1), transparent 18%),
+      linear-gradient(180deg, #0b0b0c 0%, #141110 100%);
+    color: #f8f1e8;
+  }
+
+  .sapphire-showcase::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 140px 140px;
+    opacity: 0.08;
+    pointer-events: none;
+  }
+
+  .sapphire-showcase__wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 72px;
+  }
+
+  .sapphire-showcase__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+    gap: 52px;
+    align-items: start;
+  }
+
+  .sapphire-showcase__left {
+    display: grid;
+    gap: 54px;
+  }
+
+  .sapphire-showcase__right {
+    display: grid;
+    gap: 18px;
+    align-content: start;
+    padding-top: 18px;
+  }
+
+  .sapphire-showcase__content {
+    max-width: 640px;
+  }
+
+  .sapphire-showcase__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    color: #d8b278;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  .sapphire-showcase__eyebrow::before {
+    content: "";
+    width: 64px;
+    height: 1px;
+    background: linear-gradient(90deg, #d8b278 0%, rgba(216, 178, 120, 0.18) 100%);
+  }
+
+  .sapphire-showcase__title {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(52px, 6vw, 98px);
+    line-height: 0.9;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #fffaf4;
+  }
+
+  .sapphire-showcase__title span {
+    display: block;
+    margin-top: 10px;
+    color: #d9b883;
+  }
+
+  .sapphire-showcase__description {
+    max-width: 560px;
+    margin: 28px 0 0;
+    color: rgba(248, 241, 232, 0.78);
+    font-size: 18px;
+    line-height: 1.95;
+  }
+
+  .sapphire-showcase__intro-card {
+    padding: 34px 34px 30px;
+    border: 1px solid rgba(216, 178, 120, 0.16);
+    border-radius: 26px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .sapphire-showcase__intro-label {
+    margin: 0 0 14px;
+    color: #d8b278;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .sapphire-showcase__intro-text {
+    margin: 0;
+    color: rgba(248, 241, 232, 0.82);
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .sapphire-showcase__visual-composition {
+    position: relative;
+    min-height: 720px;
+  }
+
+  .sapphire-showcase__frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #161311;
+    box-shadow: 0 32px 70px rgba(0, 0, 0, 0.26);
+  }
+
+  .sapphire-showcase__frame--primary {
+    width: min(100%, 760px);
+    min-height: 620px;
+  }
+
+  .sapphire-showcase__frame--secondary {
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+    width: min(44%, 320px);
+    aspect-ratio: 4 / 5;
+    border-width: 8px;
+    border-color: #efe2cf;
+    box-shadow: 0 26px 60px rgba(0, 0, 0, 0.32);
+  }
+
+  .sapphire-showcase__frame--secondary img {
+    object-position: top center;
+  }
+
+  .sapphire-showcase__frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .sapphire-showcase__frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 18%),
+      linear-gradient(0deg, rgba(10, 10, 10, 0.28), rgba(10, 10, 10, 0.02) 32%);
+    pointer-events: none;
+  }
+
+  .sapphire-showcase__floating-chip {
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: rgba(10, 10, 10, 0.58);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #fff7ee;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+  }
+
+  .sapphire-showcase__floating-chip i {
+    color: #d8b278;
+  }
+
+  .sapphire-showcase__caption {
+    position: absolute;
+    left: 30px;
+    bottom: 28px;
+    z-index: 2;
+    max-width: 320px;
+  }
+
+  .sapphire-showcase__caption-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #d8b278;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .sapphire-showcase__caption-text {
+    margin: 0;
+    color: rgba(255, 247, 238, 0.82);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .sapphire-showcase__details {
+    display: grid;
+    gap: 22px;
+  }
+
+  .sapphire-showcase__stat {
+    padding: 30px 30px 26px;
+    border-radius: 26px;
+    border: 1px solid rgba(216, 178, 120, 0.14);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+  }
+
+  .sapphire-showcase__stat-value {
+    margin: 0 0 8px;
+    color: #fffaf4;
+    font-size: clamp(32px, 3vw, 46px);
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  .sapphire-showcase__stat-label {
+    margin: 0;
+    color: rgba(248, 241, 232, 0.72);
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .sapphire-showcase__features {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .sapphire-showcase__features li {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 18px;
+    align-items: center;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #f8f1e8;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .sapphire-showcase__feature-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(216, 178, 120, 0.18), rgba(216, 178, 120, 0.06));
+    color: #d8b278;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1199px) {
+    .sapphire-showcase__wrap {
+      padding: 0 24px;
+    }
+
+    .sapphire-showcase__layout {
+      grid-template-columns: 1fr;
+    }
+
+    .sapphire-showcase__right {
+      padding-top: 0;
+    }
+
+    .sapphire-showcase__visual-composition {
+      min-height: 640px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .sapphire-showcase {
+      padding: 86px 0;
+    }
+
+    .sapphire-showcase__visual-composition {
+      min-height: auto;
+    }
+
+    .sapphire-showcase__frame--primary {
+      min-height: 360px;
+    }
+
+    .sapphire-showcase__frame--secondary {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: 76%;
+      margin: -46px 0 0 auto;
+    }
+
+    .sapphire-showcase__intro-card,
+    .sapphire-showcase__stat {
+      padding: 24px;
+    }
+
+    .sapphire-showcase__features li {
+      grid-template-columns: 46px minmax(0, 1fr);
+      gap: 14px;
+      font-size: 15px;
+    }
+
+    .sapphire-showcase__feature-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+    }
+  }
+
+  .sapphire-showcase-image {
+    display: block;
+    width: 100%;
+  }
+
+  .sapphire-showcase-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .sapphire-showcase-image--mobile {
+    display: none;
+  }
+
+  .sapphire-showcase-image--desktop {
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    .sapphire-showcase-image--mobile {
+      display: block;
+    }
+
+    .sapphire-showcase-image--desktop {
+      display: none;
+    }
+  }
 </style>
 
 <main>
@@ -695,6 +1064,96 @@ include __DIR__ . '/header.php';
       </div>
     </div>
   </section>
+
+  <section class="sapphire-showcase">
+    <div class="sapphire-showcase__wrap">
+      <div class="sapphire-showcase__layout">
+        <div class="sapphire-showcase__left">
+          <div class="sapphire-showcase__content">
+            <p class="sapphire-showcase__eyebrow">Website Showcase</p>
+
+            <h2 class="sapphire-showcase__title">
+              Designed For
+              <span>Performance.</span>
+            </h2>
+
+            <p class="sapphire-showcase__description">
+              A seamless e-commerce experience crafted with precision, modern design,
+              and powerful functionality across all devices.
+            </p>
+          </div>
+
+          <div class="sapphire-showcase__visual-composition">
+            <div class="sapphire-showcase__frame sapphire-showcase__frame--primary">
+              <span class="sapphire-showcase__floating-chip">
+                <i class="fa-solid fa-gem"></i>
+                Modern Commerce
+              </span>
+              <img src="./assets/images/portfolios/sapphire3.png" alt="Sapphire website premium homepage preview">
+              <div class="sapphire-showcase__caption">
+                <span class="sapphire-showcase__caption-label">Refined Interface</span>
+                <p class="sapphire-showcase__caption-text">
+                  Editorial-style presentation with immersive visuals and premium product focus.
+                </p>
+              </div>
+            </div>
+
+            <div class="sapphire-showcase__frame sapphire-showcase__frame--secondary">
+              <img src="./assets/images/portfolios/sapphire4.png" alt="Sapphire responsive e-commerce layout preview">
+            </div>
+          </div>
+        </div>
+
+        <div class="sapphire-showcase__right">
+          <div class="sapphire-showcase__intro-card">
+            <p class="sapphire-showcase__intro-label">Premium Experience</p>
+            <p class="sapphire-showcase__intro-text">
+              Built as a luxury storefront, the interface focuses on polish, speed,
+              and confidence at every step, from discovery to checkout.
+            </p>
+          </div>
+
+          <div class="sapphire-showcase__details">
+            <div class="sapphire-showcase__stat">
+              <p class="sapphire-showcase__stat-value">01</p>
+              <p class="sapphire-showcase__stat-label">A showcase section shaped for luxury positioning and conversion-focused browsing.</p>
+            </div>
+
+            <ul class="sapphire-showcase__features">
+              <li>
+                <span class="sapphire-showcase__feature-icon"><i class="fa-solid fa-gem"></i></span>
+                <span>Modern &amp; Premium Design</span>
+              </li>
+              <li>
+                <span class="sapphire-showcase__feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                <span>Fully Responsive Layout</span>
+              </li>
+              <li>
+                <span class="sapphire-showcase__feature-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                <span>Smooth Shopping Experience</span>
+              </li>
+              <li>
+                <span class="sapphire-showcase__feature-icon"><i class="fa-solid fa-gauge-high"></i></span>
+                <span>Optimized for Performance</span>
+              </li>
+              <li>
+                <span class="sapphire-showcase__feature-icon"><i class="fa-solid fa-shield-heart"></i></span>
+                <span>Secure &amp; User Friendly</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="sapphire-showcase-image sapphire-showcase-image--mobile">
+    <img src="./assets/images/portfolios/sapphire5.png" alt="Sapphire mobile website preview">
+  </div>
+
+  <div class="sapphire-showcase-image sapphire-showcase-image--desktop">
+    <img src="./assets/images/portfolios/sapphire6.png" alt="Sapphire desktop website preview">
+  </div>
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
