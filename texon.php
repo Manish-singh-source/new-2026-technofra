@@ -575,8 +575,8 @@ include __DIR__ . '/header.php';
         <div class="container">
             <div class="texon-hero__wrap">
                 <div class="texon-hero__content">
-                    <h1>Precision Measurement.<br><span>Trusted by Texon.</span></h1>
-                    <p>Precision instrumentation and measurement solutions for research, healthcare, industrial automation, and performance analysis.</p>
+                    <h1>Precision<br><span>Measurement Solutions.</span></h1>
+                    <p>Advanced instruments and analysis systems for research, healthcare, industrial automation, and performance testing.</p>
 
                     <div class="texon-hero__actions">
                         <a href="contact.php" class="texon-hero__btn texon-hero__btn--primary">Request a Quote</a>
@@ -662,6 +662,7 @@ include __DIR__ . '/header.php';
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
 
 
 
