@@ -361,7 +361,7 @@ include __DIR__ . '/header.php';
     height: 100%;
     object-fit: cover;
     opacity: 0.88;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
   }
 
   .sapphire-overview__visual::after {
@@ -373,70 +373,82 @@ include __DIR__ . '/header.php';
 
   .sapphire-overview__bottom {
     display: grid;
-    grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.18fr);
+    grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
     gap: 42px;
     align-items: start;
   }
 
   .sapphire-overview__info {
     display: grid;
-    gap: 20px;
+    gap: 26px;
+    margin-top: 75px;
   }
 
   .sapphire-overview__info-card,
   .sapphire-overview__service-card {
-    background: rgba(255, 255, 255, 0.94);
-    border: 1px solid rgba(31, 31, 31, 0.08);
-    border-radius: 22px;
-    box-shadow: 0 18px 38px rgba(38, 33, 23, 0.08);
+    background: #ffffff;
+    border: 1px solid rgba(194, 160, 112, 0.16);
+    border-radius: 24px;
+    box-shadow: 0 16px 42px rgba(80, 61, 33, 0.08);
   }
 
   .sapphire-overview__info-card {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     align-items: center;
-    padding: 28px 26px;
+    min-height: 172px;
+    padding: 34px 30px;
   }
 
   .sapphire-overview__info-icon {
-    width: 74px;
-    height: 74px;
+    width: 92px;
+    height: 92px;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(196, 148, 76, 0.22);
+    border: 1px solid rgba(196, 148, 76, 0.28);
     color: #c08c45;
-    font-size: 29px;
-    background: linear-gradient(180deg, rgba(255, 248, 239, 0.9), rgba(251, 244, 235, 0.8));
+    font-size: 34px;
+    background: linear-gradient(180deg, #fffdfa 0%, #fbf2e8 100%);
     flex: 0 0 auto;
   }
 
   .sapphire-overview__info-label {
     margin: 0 0 8px;
     color: #b88742;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
   }
 
   .sapphire-overview__info-value {
     margin: 0;
-    color: #232323;
-    font-size: clamp(24px, 2vw, 28px);
-    line-height: 1.35;
+    max-width: 540px;
+    color: #2b2b2b;
+    font-size: clamp(22px, 1.9vw, 28px);
+    line-height: 1.45;
+    font-weight: 400;
+  }
+
+  .sapphire-overview__services {
+    padding-top: 10px;
+  }
+
+  .sapphire-overview__services-title {
+    margin-bottom: 26px;
   }
 
   .sapphire-overview__services-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 24px;
   }
 
   .sapphire-overview__service-card {
-    min-height: 150px;
-    padding: 30px 24px 24px;
+    min-height: 180px;
+    padding: 18px 0px 8px;
     text-align: center;
   }
 
@@ -444,21 +456,21 @@ include __DIR__ . '/header.php';
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
-    height: 64px;
-    margin-bottom: 18px;
-    border-radius: 18px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 26px;
+    border-radius: 24px;
     color: #bf8c48;
-    font-size: 32px;
-    background: linear-gradient(180deg, rgba(252, 245, 235, 0.96), rgba(248, 239, 227, 0.8));
+    font-size: 38px;
+    background: linear-gradient(180deg, #fcf6ee 0%, #f7efe5 100%);
   }
 
   .sapphire-overview__service-card h3 {
     margin: 0;
-    color: #202020;
-    font-size: 18px;
-    line-height: 1.45;
-    font-weight: 500;
+    color: #242424;
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 400;
   }
 
   @media (max-width: 1199px) {
@@ -504,10 +516,22 @@ include __DIR__ . '/header.php';
 
     .sapphire-overview__info-card {
       padding: 22px 20px;
+      min-height: auto;
+    }
+
+    .sapphire-overview__info-icon {
+      width: 78px;
+      height: 78px;
+      font-size: 30px;
     }
 
     .sapphire-overview__services-grid {
       grid-template-columns: 1fr;
+    }
+
+    .sapphire-overview__service-card {
+      min-height: auto;
+      padding: 30px 22px 24px;
     }
   }
 </style>
@@ -592,7 +616,7 @@ include __DIR__ . '/header.php';
         </div>
 
         <div class="sapphire-overview__visual">
-          <img src="./assets/images/portfolios/sapphire1.png" alt="Sapphire Accessories project preview">
+          <img src="./assets/images/portfolios/sapphire2.webp" alt="Sapphire Accessories project preview">
         </div>
       </div>
 
