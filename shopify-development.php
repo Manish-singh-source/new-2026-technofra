@@ -13,23 +13,25 @@ include __DIR__ . '/header.php';
         height: 894px;
         background-image: url(./assets/images/new/bannerbg.png);
     }
+
     .ser-info14.v2 {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* match card3's height alongside it */
-}
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        /* match card3's height alongside it */
+    }
 
-.ser-card14-card5 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
+    .ser-card14-card5 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
-.ser-card14-card5 img {
-    flex: 1;
-    object-fit: cover;
-    width: 100%;
-}
+    .ser-card14-card5 img {
+        flex: 1;
+        object-fit: cover;
+        width: 100%;
+    }
 </style>
 
 <!-- main-sec4 -->
@@ -197,8 +199,8 @@ include __DIR__ . '/header.php';
                     <a href="#" title="Conversion Design"><i class="fa fa-filter"></i><span>Conversion Design</span></a>
                     <a href="#" title="Cart &amp; Checkout"><i class="fa fa-shopping-cart"></i><span>Cart &amp; Checkout</span></a>
                     <a href="#" title="Order Management"><i class="fa fa-clipboard"></i><span>Order Management</span></a>
-                 <a href="#" title="Inventory Setup"><i class="fab fa-dropbox"></i><span>Inventory Setup</span></a>
-<a href="#" title="WhatsApp Integration"><i class="fab fa-whatsapp"></i><span>WhatsApp Integration</span></a> <a href="#" title="Email Automation"><i class="fa fa-envelope"></i><span>Email Automation</span></a>
+                    <a href="#" title="Inventory Setup"><i class="fab fa-dropbox"></i><span>Inventory Setup</span></a>
+                    <a href="#" title="WhatsApp Integration"><i class="fab fa-whatsapp"></i><span>WhatsApp Integration</span></a> <a href="#" title="Email Automation"><i class="fa fa-envelope"></i><span>Email Automation</span></a>
                     <a href="#" title="Discount Setup"><i class="fa fa-tag"></i><span>Discount Setup</span></a>
                     <a href="#" title="Analytics Tracking"><i class="fa fa-bar-chart"></i><span>Analytics Tracking</span></a>
                     <a href="#" title="Custom Sections"><i class="fa fa-th-large"></i><span>Custom Sections</span></a>

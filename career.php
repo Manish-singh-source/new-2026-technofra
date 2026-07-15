@@ -387,7 +387,7 @@ body.role-modal-open {
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>HTML5, CSS3, JavaScript</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                <a href="job-application.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
                     data-role-title="Website Developer"
                     data-role-subtitle="Build modern, responsive, and high-performance websites using latest technologies."
                     data-role-skill="HTML5, CSS3, JavaScript, responsive layout, basic SEO, cross-browser compatibility"
@@ -408,7 +408,7 @@ body.role-modal-open {
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>Adobe Photoshop, Illustrator, Figma</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                <a href="job-application.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
                     data-role-title="Graphic Designer"
                     data-role-subtitle="Join our creative team to design visually compelling graphics, branding materials, and digital assets."
                     data-role-skill="Adobe Photoshop, Illustrator, Figma, branding, social media creatives, visual hierarchy"
@@ -429,7 +429,7 @@ body.role-modal-open {
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>Strategy, Content Creation, Facebook Ads</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                <a href="job-application.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
                     data-role-title="Social Media Marketing Executive"
                     data-role-subtitle="Plan, create, and manage engaging social media campaigns across Instagram, Facebook, LinkedIn, and more."
                     data-role-skill="Content strategy, copywriting, Meta Ads, analytics, community management, campaign planning"
@@ -450,7 +450,7 @@ body.role-modal-open {
                     <li><i class="fa fa-check"></i><span>1-2+ Years</span></li>
                     <li><i class="fa fa-check"></i><span>Android, iOS, Flutter / React Native</span></li>
                 </ul>
-                <a href="contact.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
+                <a href="job-application.php" class="ibt-btn ibt-btn-outline js-role-popup" title="Apply now"
                     data-role-title="App Developer"
                     data-role-subtitle="Build high-performance and scalable mobile applications for Android and iOS platforms."
                     data-role-skill="Android, iOS, Flutter, React Native, API integration, state management, app debugging"
@@ -502,7 +502,7 @@ body.role-modal-open {
                 <div class="role-detail-box">
                     <h4>How To Apply</h4>
                     <ul>
-                        <li>Use the Apply Now button below to open the contact page.</li>
+                        <li>Use the Apply Now button below to open the job application page.</li>
                         <li>Share your resume and a short note about your experience.</li>
                         <li>We’ll review the application and contact shortlisted candidates.</li>
                     </ul>
@@ -510,7 +510,7 @@ body.role-modal-open {
             </div>
 
             <div class="role-modal-actions">
-                <a href="contact.php" class="ibt-btn ibt-btn-outline" id="roleModalApplyLink" title="Apply now">
+                <a href="job-application.php" class="ibt-btn ibt-btn-outline" id="roleModalApplyLink" title="Apply now">
                     <span>Apply Now</span>
                     <i class="icon-arrow-top"></i>
                 </a>
@@ -590,7 +590,7 @@ body.role-modal-open {
         skillsEl.textContent = trigger.dataset.roleSkill || '-';
         aiEl.textContent = trigger.dataset.roleAi || '-';
         respEl.textContent = trigger.dataset.roleResponsibility || '-';
-        applyLink.href = trigger.href || 'contact.php';
+        applyLink.href = trigger.href || 'job-application.php';
         backdrop.classList.add('is-open');
         backdrop.setAttribute('aria-hidden', 'false');
         document.body.classList.add('role-modal-open');
@@ -626,3 +626,4 @@ body.role-modal-open {
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
