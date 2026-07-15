@@ -930,6 +930,188 @@
             margin-bottom: 18px;
         }
     }
+
+    .company-profile-modal .modal-dialog {
+        max-width: 640px;
+    }
+
+    .company-profile-modal .modal-content {
+        border: 0;
+        border-radius: 26px;
+        overflow: hidden;
+        background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+        box-shadow: 0 28px 80px rgba(15, 23, 42, 0.24);
+    }
+
+    .company-profile-modal .modal-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 26px 26px 10px;
+        border-bottom: 0;
+        background: transparent;
+    }
+
+    .company-profile-modal .modal-title {
+        margin: 0;
+        font-size: 28px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        font-weight: 700;
+        font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+        color: #0f172a;
+    }
+
+    .company-profile-modal .btn-close {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 50%;
+        background: #ffffff;
+        background-image: none;
+        opacity: 1;
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+        position: relative;
+        transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .company-profile-modal .btn-close::before,
+    .company-profile-modal .btn-close::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 2px;
+        border-radius: 999px;
+        background: #0f172a;
+        transition: background-color 0.25s ease;
+    }
+
+    .company-profile-modal .btn-close::before {
+        transform: rotate(45deg);
+    }
+
+    .company-profile-modal .btn-close::after {
+        transform: rotate(-45deg);
+    }
+
+    .company-profile-modal .btn-close:hover,
+    .company-profile-modal .btn-close:focus {
+        background: #0f172a;
+        box-shadow: 0 18px 34px rgba(15, 23, 42, 0.2);
+        transform: rotate(90deg);
+    }
+
+    .company-profile-modal .btn-close:hover::before,
+    .company-profile-modal .btn-close:hover::after,
+    .company-profile-modal .btn-close:focus::before,
+    .company-profile-modal .btn-close:focus::after {
+        background: #ffffff;
+    }
+
+    .company-profile-modal .modal-body {
+        padding: 10px 26px 28px !important;
+    }
+
+    .company-profile-modal .company-profile-form-shell {
+        padding: 26px;
+        border-radius: 24px;
+        background: #ffffff;
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .company-profile-modal .company-profile-intro {
+        margin: 0 0 22px;
+        color: #475569;
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .company-profile-modal .company-profile-field {
+        margin-bottom: 16px;
+    }
+
+    .company-profile-modal .company-profile-field .form-label {
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #0f172a;
+    }
+
+    .company-profile-modal .company-profile-field .form-control {
+        min-height: 54px;
+        border-radius: 16px;
+        border: 1px solid #d7dfeb;
+        background: #f8fafc;
+        padding: 14px 16px;
+        color: #0f172a;
+        box-shadow: none;
+    }
+
+    .company-profile-modal .company-profile-field .form-control:focus {
+        border-color: #0d6efd;
+        background: #ffffff;
+        box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+    }
+
+    .company-profile-modal .company-profile-captcha {
+        margin-top: 22px;
+        overflow-x: auto;
+        border-radius: 18px;
+    }
+
+    .company-profile-modal .company-profile-actions {
+        margin-top: 22px;
+    }
+
+    .company-profile-modal .company-profile-submit-btn {
+        width: 100%;
+        min-height: 54px;
+        border: 0;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #0d6efd 0%, #003b95 100%);
+        color: #ffffff;
+        font-weight: 700;
+        box-shadow: 0 18px 36px rgba(13, 110, 253, 0.22);
+    }
+
+    .company-profile-modal .company-profile-submit-btn:hover,
+    .company-profile-modal .company-profile-submit-btn:focus {
+        color: #ffffff;
+        transform: translateY(-1px);
+    }
+
+    @media (max-width: 767.98px) {
+        .company-profile-modal .modal-content {
+            border-radius: 22px;
+        }
+
+        .company-profile-modal .modal-header {
+            padding: 20px 20px 8px;
+        }
+
+        .company-profile-modal .modal-title {
+            font-size: 22px;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+        }
+
+        .company-profile-modal .modal-body {
+            padding: 8px 20px 22px !important;
+        }
+
+        .company-profile-modal .company-profile-form-shell {
+            padding: 18px;
+            border-radius: 18px;
+        }
+    }
 </style>
 
 
@@ -1355,13 +1537,13 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Download Company Profile</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close company-profile-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div
                 class="modal-body register-wrap p-5 bg-white shadow rounded-custom position-relative aos-init aos-animate">
-                <p>Fill in your details and we’ll email you the company profile.</p>
+                <p class="company-profile-intro">Fill in your details and we&rsquo;ll email you the company profile.</p>
                 <!-- Job Application Form -->
-                <form action="send7" method="post" enctype="multipart/form-data" id="companyProfileForm">
+                <form action="send7.php" method="post" enctype="multipart/form-data" id="companyProfileForm">
                     <div class="company-profile-form-shell">
                         <!-- Full Name -->
                         <div class="company-profile-field text-start">
@@ -1409,7 +1591,43 @@
     </div>
 </div>
 
+<script>
+    (function() {
+        const companyProfileForm = document.getElementById('companyProfileForm');
+        const companyProfileSubmitBtn = document.getElementById('companyProfileSubmitBtn');
+
+        if (!companyProfileForm || !companyProfileSubmitBtn) {
+            return;
+        }
+
+        function resetCompanyProfileButton() {
+            companyProfileSubmitBtn.disabled = false;
+            companyProfileSubmitBtn.classList.remove('is-loading');
+            companyProfileSubmitBtn.textContent = companyProfileSubmitBtn.dataset.defaultText;
+        }
+
+        companyProfileForm.addEventListener('submit', function() {
+            companyProfileSubmitBtn.disabled = true;
+            companyProfileSubmitBtn.classList.add('is-loading');
+            companyProfileSubmitBtn.textContent = companyProfileSubmitBtn.dataset.loadingText;
+        });
+
+        window.addEventListener('pageshow', resetCompanyProfileButton);
+    })();
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
+
+
+
+
+
 
 
 

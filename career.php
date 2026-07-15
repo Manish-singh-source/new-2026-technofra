@@ -113,7 +113,7 @@ include __DIR__ . '/header.php';
 
 .role-modal {
     width: min(920px, 100%);
-    max-height: min(88vh, 980px);
+    max-height: min(80dvh, 980px);
     overflow: auto;
     background: #fff;
     border-radius: 28px;
