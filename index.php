@@ -1,11 +1,11 @@
 <?php include __DIR__ . '/header.php'; ?>
 <style>
-.creative-banner-sec {
-    position: relative;
-    overflow: hidden;
-    padding: 78px 0;
-    background: linear-gradient(90deg, rgba(5, 12, 18, 0.92) 0%, rgb(8 22 31 / 17%) 34%, rgba(12, 44, 57, 0.58) 100%), radial-gradient(circle at 68% 26%, rgba(255, 244, 214, 0.28), transparent 26%), url(./assets/images/new/bannerhome.png) center center / cover no-repeat fixed;
-}
+    .creative-banner-sec {
+        position: relative;
+        overflow: hidden;
+        padding: 78px 0;
+        background: linear-gradient(90deg, rgba(5, 12, 18, 0.92) 0%, rgb(8 22 31 / 17%) 34%, rgba(12, 44, 57, 0.58) 100%), radial-gradient(circle at 68% 26%, rgba(255, 244, 214, 0.28), transparent 26%), url(./assets/images/new/bannerhome.png) center center / cover no-repeat fixed;
+    }
 
     .creative-banner-sec::before {
         content: '';
@@ -21,7 +21,7 @@
     .creative-banner-wrap {
         position: relative;
         z-index: 1;
-        min-height: 500px;
+        min-height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -110,10 +110,12 @@
             padding: 60px 0;
             background-attachment: scroll;
         }
+
         .creative-banner-top {
-    display: flex;
-    justify-content: center;
-}
+            display: flex;
+            justify-content: center;
+        }
+
         .creative-banner-wrap {
             min-height: auto;
             gap: 40px;
@@ -162,6 +164,25 @@
             font-size: 16px;
             line-height: 1.5;
         }
+
+        .mobile-view-off {
+            display: none;
+        }
+
+        .feature-sec7,
+        .industries-sec {
+            padding-top: 40px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .ser-card3 .ser-content {
+            top: 40px;
+        }
+
+        .calendar-head {
+            flex-direction: column-reverse;
+        }
     }
 </style>
 
@@ -173,32 +194,6 @@
         </video>
         <div class="hero-overlay4"></div>
     </div>
-    <div class="container2">
-        <div class="hero-info4">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-lg-8">
-                    <!-- <div class="hero-content4">
-                                <h1 class="title">Elevate engagement with our <span>Intelligent Chatbot</span> Service
-                                </h1>
-                                <form action="#" method="post" class="hero-form">
-                                    <div class="input-box">
-                                        <input type="text" placeholder="" required>
-                                        <label>Enter your email</label>
-                                    </div>
-                                    <button class="ibt-btn ibt-btn-dark">
-                                        <span>Sign up</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </button>
-                                </form>
-                                <ul class="required-list">
-                                    <li><i class="fontello icon-check-circle"></i>Free 14-day trial</li>
-                                    <li><i class="fontello icon-check-circle"></i>No credit card required</li>
-                                </ul> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 </section>
 <!-- End hero-style4 -->
 
@@ -207,23 +202,19 @@
     <div class="container2">
         <div class="service-content3">
             <div class="ser-card3">
-                <img src="assets/images/new/web.png" alt="AI Agency & Technology HTML Template">
+                <img src="assets/images/new/web.png" alt="Professional Web Development for Your Business Growth">
                 <div class="ser-content3">
                     <h4 class="title">Professional Web Development for Your Business Growth</h4>
                     <a class='ser-btn3' href='web-design-and-development.php' title>Explore more</a>
                 </div>
-                <div class="ser-text">
-                    <a href="#" title="">AI Solutions</a>
-                    <a href="#" title="">AI Services</a>
-                </div>
-                <a href="#" class="ser-btn">
+                <a href="javascript::void(0)" class="ser-btn">
                     <i class="icon fontello icon-button-arrow"></i>
                     <i class="icon2 fontello icon-button-arrow"></i>
                 </a>
             </div>
             <div class="ser-card3 v2">
-                <img src="assets/images/new/app.png" alt="AI Agency & Technology HTML Template">
-                <a href="#" class="view-btn">
+                <img src="assets/images/new/app.png" alt="Custom App Development for Smooth Business Operations">
+                <a href="javascript::void(0)" class="view-btn">
                     <i class="icon fontello icon-button-arrow"></i>
                     <i class="icon2 fontello icon-button-arrow"></i>
                 </a>
@@ -240,20 +231,16 @@
                         <span class="user">app users </span>
                     </div>
                 </div>
-                <a href="#" class="ser-btn">
-                    <i class="icon fontello icon-button-arrow"></i>
-                    <i class="icon2 fontello icon-button-arrow"></i>
-                </a>
             </div>
             <div class="ser-card3 v1">
-                <img src="assets/images/new/support.png" alt="AI Agency & Technology HTML Template">
+                <img src="assets/images/new/support.png" alt="Technical support for the entire service life">
                 <div class="ser-content">
                     <h4 class="title">Technical support for
                         the entire service life
                     </h4>
                     <p>Instant assistance for all your queries. Experience seamless service with our AI-powered
                         support</p>
-                    <img src="assets/images/icon/phone2.svg" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/icon/phone2.svg" alt="Technical support for the entire service life">
                 </div>
             </div>
         </div>
@@ -273,22 +260,21 @@
             <div class="col-lg-6">
                 <div class="service-box7">
                     <div class="social-link3">
-                        <img src="assets/images/new/b1.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b1.png" alt="Blue Orbith">
                         <a href="https://blueorbith.com/" target="_blank" rel="noopener noreferrer"><span>Blue Orbith</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b2.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b2.png" alt="Grid Infinity">
                         <a href="https://gridinfinity.com/" target="_blank" rel="noopener noreferrer"><span>Grid Infinity</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b3.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b3.png" alt="Mark Idenititiz">
                         <a href="https://markidentitiez.com/" target="_blank" rel="noopener noreferrer"><span>Mark Idenititiz</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b4.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b4.png" alt="Digi Kcon">
                         <a href="https://digikcon.com/" target="_blank" rel="noopener noreferrer"><span>Digi Kcon</span></a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -306,7 +292,7 @@
                         <span class="sub-title"><span class="sub-text" style="overflow: hidden; display: inline-block; width: 142px;">Services We Provide</span></span>
                         <h2 class="title animated-heading">Services We Provide</h2>
                         <p>We build digital products and growth systems for companies that want stronger online presence, better performance, and measurable results.</p>
-                        <a class="ibt-btn ibt-btn-outline explore-web-btn" href="web-design-and-development.php" title="">
+                        <a class="ibt-btn ibt-btn-outline" href="web-design-and-development.php" title="">
                             <span>Explore more</span>
                             <i class="icon-arrow-top"></i>
                         </a>
@@ -327,7 +313,9 @@
                             <i class="fa-solid fa-code" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="web-design-and-development.php" >Web</a>/<a href="/android-app-development.php" title="Android App Development">App</a> development</h4>
+                            <h4 class="title">
+                                <a href="web-design-and-development.php">Web</a>/<a href="/android-app-development.php" title="Android App Development">App</a> development
+                            </h4>
                             <p>Responsive websites, web apps, and mobile-ready experiences built for speed and usability.
                             </p>
                         </div>
@@ -347,7 +335,7 @@
                             <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank" >Branding</a></h4>
+                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank">Branding</a></h4>
                             <p>Logo systems, visual identity, and messaging that make your business memorable.
                             </p>
                         </div>
@@ -380,10 +368,6 @@
                         <h2 class="title">Trusted by 500+ clients worldwide from diverse industries.</h2>
                         <p>We partner with startups, SMEs, and enterprises across the globe, delivering innovative
                             IT solutions that drive growth, efficiency, and long-term success.</p>
-                        <a class="ibt-btn ibt-btn-outline" href="contact.php" title="">
-                            <span>View all clients</span>
-                            <i class="icon-arrow-top"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -396,16 +380,16 @@
                             <span class="label">Happy Clients Worldwide</span>
                         </div>
                         <div class="client-trust-grid1">
-                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="Frago Matric" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="Life Like" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="Sanjay Agencies" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="Urbon Sports" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="Aeritx" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="ChemPharma" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="Indore" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="Global Ocean Beyond Logistics" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="VLegends" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="Aspirias" srcset=""></div>
                         </div>
                         <div class="client-trust-note1">
                             <i class="fontello icon-check-circle"></i>
@@ -419,18 +403,6 @@
 </section>
 <!-- End client-trust-style -->
 
-<!-- marquee-sec -->
-<!-- <section class="marquee-sec">
-    <h2 style="display:none;">Marquee Section</h2>
-    <div class="marquee">
-        <div class="marquee-inner">
-            <span>/ Technofra builds websites, apps, and digital growth.</span>
-            <span>/ Technofra builds websites, apps, and digital growth.</span>
-        </div>
-    </div>
-</section> -->
-<!-- End marquee-sec -->
-
 <!-- creative-banner-sec -->
 <section class="creative-banner-sec">
     <div class="container">
@@ -442,7 +414,7 @@
                 <div class="creative-banner-copy">
                     <h2 class="creative-banner-title">Your End-to-End Digital &<br>Branding Partner For Business Growth</h2>
                     <div class="creative-banner-actions">
-                        <a class="creative-banner-btn" href="contact.html">Book A Call Now <i class="icon-arrow-top"></i></a>
+                        <a class="creative-banner-btn" href="contact.php">Book A Call Now <i class="icon-arrow-top"></i></a>
                         <span class="creative-banner-time">[ Tailored Web, App & Marketing Solutions ]</span>
                     </div>
                 </div>
@@ -453,65 +425,6 @@
 </section>
 <!-- End creative-banner-sec -->
 
-
-
-
-
-<!-- feature-style4 -->
-<!-- <section class="feature-style4 ibt-section-gap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="feature-img4">
-                    <img src="assets/images/new/why.png" alt="AI Agency & Technology HTML Template">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="feature-content4">
-                    <div class="sec-title">
-                        <span class="sub-title">features</span>
-                        <h2 class="title animated-heading">Why businesses choose Technofra
-                        </h2>
-                        <p class="para">Technofra builds digital experiences that are simple to use, easy to scale,
-                            and designed to support real business growth.
-                        </p>
-                        <p>From websites and apps to SEO and social media marketing, we keep the work focused on
-                            clarity, performance, and measurable results.
-                        </p>
-                    </div>
-                    <div class="app-features">
-                        <div class="feature-block4">
-                            <img src="assets/images/feature/feature4-1.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Website & App Development</h4>
-                            <p>Responsive websites and app-ready interfaces built for speed, usability, and
-                                a polished brand presence.
-                            </p>
-                        </div>
-                        <div class="feature-block4">
-                            <img src="assets/images/feature/feature4-2.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">E-Commerce Solutions</h4>
-                            <p>Online store experiences, product pages, and checkout flows designed to help
-                                visitors become paying customers.
-                            </p>
-                        </div>
-                        <div class="feature-block4 mb-0">
-                            <img src="assets/images/feature/feature4-3.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">SEO & Digital Marketing</h4>
-                            <p>Search visibility, content, and social campaigns that help your business grow
-                                steadily with a clear strategy.
-                            </p>
-                        </div>
-                    </div>
-                    <a class='ibt-btn ibt-btn-outline' href='service.html' title>
-                        <span>Explore Services</span>
-                        <i class="icon-arrow-top"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- End feature-style4 -->
 <!-- booking-call-sec -->
 <section class="booking-call-sec ibt-section-gapTop">
     <div class="container2">
@@ -586,7 +499,7 @@
                         </div>
 
                         <div class="booking-actions">
-                            <a href="#contact" class="ibt-btn ibt-btn-secondary">
+                            <a href="#contact" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
                                 <span>Book Your Call</span>
                             </a>
                             <a href="#contact" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
@@ -611,6 +524,8 @@
     </div>
 </section>
 <!-- End booking-call-sec -->
+
+
 <!-- testimonials-sec -->
 <section class="testimonials-sec">
     <div class="container2">
@@ -619,7 +534,7 @@
                 <div class="swiper testi-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/images/icon/comas.svg" alt="AI Agency & Technology HTML Template">
+                            <img src="assets/images/icon/comas.svg" alt="">
                             <p>Technofra delivered a clean, modern website that matched our brand
                                 perfectly. The team was responsive, clear with communication, and
                                 focused on creating a smooth user experience from start to finish.
@@ -627,7 +542,7 @@
                             <span>- Client Feedback</span>
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/images/icon/comas.svg" alt="AI Agency & Technology HTML Template">
+                            <img src="assets/images/icon/comas.svg" alt="">
                             <p>We saw a noticeable improvement in visibility after working with
                                 Technofra on our digital marketing strategy. Their approach was
                                 practical, measurable, and aligned with our business goals.
@@ -643,7 +558,7 @@
             </div>
             <div class="col-lg-5">
                 <div class="testimonial-content">
-                    <img src="assets/images/new/testinonial.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/new/testinonial.png" alt="">
                     <div class="title-area2">
                         <div class="sec-title white">
                             <span class="sub-title">testimonials</span>
@@ -775,9 +690,9 @@
 <section class="faq-sec ibt-section-gap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mobile-view-off">
                 <div class="faq-img">
-                    <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/new/elemets.png" alt="">
                 </div>
             </div>
             <div class="col-lg-8">
@@ -845,131 +760,6 @@
         </div>
     </div>
 </section>
-<!-- End faq-sec -->
 
-<!-- End faq-sec -->
-
-<!-- blog-sec2 -->
-<!-- <section class="blog-sec2 ibt-section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="blog-image2">
-                            <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="blog-info2">
-                            <div class="title-area">
-                                <div class="row end">
-                                    <div class="col-lg-8 col-md-7">
-                                        <div class="sec-title mb-0">
-                                            <span class="sub-title">blog</span>
-                                            <h2 class="title animated-heading">See Our Latest Blog
-                                                &amp; News
-                                            </h2>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-5">
-                                        <div class="sec-btn-box">
-                                            <a class='ibt-btn ibt-btn-outline' href='https://technofra.com/blog/' title>
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-top"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-post">
-                                <div class="blog-card2">
-                                    <div class="blog-img2">
-                                        <a href='https://technofra.com/blog/10-common-seo-myths-that-are-killing-your-website-rankings-in2026/'><img src="assets/images/new/blog2.png" alt="10 Common SEO Myths That Are Killing Your Website Rankings in 2026"></a>
-                                    </div>
-                                    <div class="blog-content2">
-                                        <div class="blog-meta2">
-                                            <span class="sub-title">technofra / April 14, 2026</span>
-                                            <div class="blog-text2">
-                                                <a href="#" title="">SEO</a>
-                                                <a href="#" title="">Myths</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="title"><a href='https://technofra.com/blog/10-common-seo-myths-that-are-killing-your-website-rankings-in2026/'>10 Common SEO Myths That Are Killing Your Website Rankings in 2026?</a>
-                                        </h4>
-                                        <p>Common SEO misconceptions can hold back your website rankings. This post helps
-                                            you focus on the tactics that actually improve visibility.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="blog-card2 mb-0">
-                                    <div class="blog-img2">
-                                        <a href='https://technofra.com/blog/ai-driven-seo-social-media-marketing-the-next-growth-engine-for-brands-in-2026/'><img src="assets/images/new/blog1.png" alt="AI-Driven SEO & Social Media Marketing: The Next Growth Engine for Brands in 2026"></a>
-                                    </div>
-                                    <div class="blog-content2">
-                                        <div class="blog-meta2">
-                                            <span class="sub-title">technofra / April 18, 2026</span>
-                                            <div class="blog-text2">
-                                                <a href="#" title="">SEO</a>
-                                                <a href="#" title="">Social Media</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="title"><a href='https://technofra.com/blog/ai-driven-seo-social-media-marketing-the-next-growth-engine-for-brands-in-2026/'>AI-Driven SEO &amp; Social Media Marketing: The Next Growth Engine for Brands in 2026</a>
-                                        </h4>
-                                        <p>SEO and social media work best together when your strategy is built around
-                                            visibility, engagement, and measurable brand growth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-<!-- End blog-sec2 -->
-
-<!-- newsletter-banner -->
-<!-- <section class="newsletter-banner">
-            <div class="parallax-wrap">
-                <img src="assets/images/new/banner1.png" alt="Banner" class="parallax-img">
-            </div>
-            <div class="container2">
-                <div class="newsletter-content ibt-section-gap">
-                    <h2 class="title">
-                        Let�s build your next website, app, or digital growth campaign
-                    </h2>
-                    <p>
-                        Technofra creates websites, mobile apps, e-commerce experiences, SEO plans, and social media
-                        marketing that help brands grow online with clarity and impact.
-                    </p>
-                    <form action="#" method="post" class="newsletter-form">
-                        <div class="input-box">
-                            <input type="text" placeholder="" required>
-                            <label>Enter your work email</label>
-                        </div>
-                        <button class="ibt-btn ibt-btn-dark">
-                            <span>Get in Touch</span>
-                            <i class="icon-arrow-top"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section> -->
-<!-- End newsletter-banner -->
- 
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
