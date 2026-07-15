@@ -469,50 +469,27 @@ include __DIR__ . '/header.php';
         }
 
         .dm-focus-bar {
-            position: relative;
-            padding: 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0;
+            padding: 18px 28px;
             background: linear-gradient(90deg, #1763ff 0%, #0d58f2 100%);
             box-shadow: 0 26px 48px rgba(23, 99, 255, 0.24);
-            overflow: hidden;
+            overflow-x: auto;
         }
 
-        .dm-focus-bar::before,
-        .dm-focus-bar::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 48px;
-            z-index: 2;
-            pointer-events: none;
+        .dm-focus-bar::-webkit-scrollbar {
+            height: 6px;
         }
 
-        .dm-focus-bar::before {
-            left: 0;
-            background: linear-gradient(90deg, #1763ff 0%, rgba(23, 99, 255, 0) 100%);
-        }
-
-        .dm-focus-bar::after {
-            right: 0;
-            background: linear-gradient(270deg, #0d58f2 0%, rgba(13, 88, 242, 0) 100%);
-        }
-
-        .dm-focus-track {
-            display: flex;
-            align-items: center;
-            width: max-content;
-            animation: dmFocusScroll 24s linear infinite;
-            will-change: transform;
-        }
-
-        .dm-focus-set {
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
+        .dm-focus-bar::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 999px;
         }
 
         .dm-focus-item {
-            flex: 0 0 auto;
+            flex: 1 0 0;
             min-width: 148px;
             display: flex;
             align-items: center;
@@ -525,10 +502,6 @@ include __DIR__ . '/header.php';
         }
 
         .dm-focus-item + .dm-focus-item {
-            border-left: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .dm-focus-set + .dm-focus-set .dm-focus-item:first-child {
             border-left: 1px solid rgba(255, 255, 255, 0.2);
         }
 
@@ -551,22 +524,9 @@ include __DIR__ . '/header.php';
             line-height: 1.3;
         }
 
-        .dm-focus-bar:hover .dm-focus-track {
-            animation-play-state: paused;
-        }
-
-        @keyframes dmFocusScroll {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
-
         @media (max-width: 1199px) {
             .dm-focus-bar {
-                padding: 16px 0;
+                padding: 16px 18px;
             }
 
             .dm-focus-item {
@@ -591,7 +551,9 @@ include __DIR__ . '/header.php';
             }
 
             .dm-focus-bar {
-                padding: 14px 0;
+                gap: 8px;
+                padding: 14px 10px;
+                scroll-snap-type: x proximity;
             }
 
             .dm-focus-item {
@@ -599,6 +561,7 @@ include __DIR__ . '/header.php';
                 min-width: 170px;
                 justify-content: flex-start;
                 text-align: left;
+                scroll-snap-align: start;
                 border-left: 0;
                 border-right: 1px solid rgba(255, 255, 255, 0.14);
             }
@@ -611,10 +574,6 @@ include __DIR__ . '/header.php';
                 border-left: 0;
             }
 
-            .dm-focus-set + .dm-focus-set .dm-focus-item:first-child {
-                border-left: 0;
-            }
-
             .dm-focus-icon {
                 width: 42px;
                 height: 42px;
@@ -623,16 +582,6 @@ include __DIR__ . '/header.php';
 
             .dm-focus-label {
                 font-size: 0.95rem;
-            }
-
-            .dm-focus-track {
-                animation-duration: 18s;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .dm-focus-track {
-                animation: none;
             }
         }
 
@@ -2227,12 +2176,31 @@ include __DIR__ . '/header.php';
             font-weight: 700;
         }
 
-        .dm-client-role,
         .dm-client-brand {
             margin: 0;
             color: #4f5668;
             font-size: 1rem;
             line-height: 1.6;
+        }
+
+        .dm-client-brand {
+            min-height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            padding: 10px 18px;
+            border-radius: 16px;
+            background: rgba(36, 78, 227, 0.06);
+        }
+
+        .dm-client-brand img {
+            display: block;
+            max-width: 150px;
+            max-height: 34px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
         }
 
         .dm-client-arrow {
@@ -2414,7 +2382,7 @@ include __DIR__ . '/header.php';
                         <h1 class="dm-title">Grow Your Brand with <span>Digital Marketing</span></h1>
                         <p class="dm-lead">From SEO and social media to paid ads and content strategy, we help you attract the right audience, build your brand, and generate high-quality leads that drive real growth.</p>
                         <div class="dm-actions">
-                            <a href="contact.php" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded"><span>Enquiry Now </span></a>
+                            <a href="contact.php" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded"><span>Explore Now </span></a>
                             <!-- <a href="#dm-services" class="dm-btn-secondary">
                                 <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                                 <span>See How It Works</span>
@@ -2437,67 +2405,33 @@ include __DIR__ . '/header.php';
 
     <section class="dm-focus-strip" aria-label="Digital marketing focus areas">
             <div class="dm-focus-bar">
-                <div class="dm-focus-track">
-                    <div class="dm-focus-set">
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-bullseye"></i></span>
-                            <span class="dm-focus-label">Strategy</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <span class="dm-focus-label">SEO</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-comments"></i></span>
-                            <span class="dm-focus-label">Social Media</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-bullhorn"></i></span>
-                            <span class="dm-focus-label">Paid Ads</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-pen-ruler"></i></span>
-                            <span class="dm-focus-label">Content</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
-                            <span class="dm-focus-label">Lead Generation</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-chart-simple"></i></span>
-                            <span class="dm-focus-label">Analytics</span>
-                        </div>
-                    </div>
-                    <div class="dm-focus-set" aria-hidden="true">
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-bullseye"></i></span>
-                            <span class="dm-focus-label">Strategy</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <span class="dm-focus-label">SEO</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-comments"></i></span>
-                            <span class="dm-focus-label">Social Media</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-bullhorn"></i></span>
-                            <span class="dm-focus-label">Paid Ads</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-pen-ruler"></i></span>
-                            <span class="dm-focus-label">Content</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
-                            <span class="dm-focus-label">Lead Generation</span>
-                        </div>
-                        <div class="dm-focus-item">
-                            <span class="dm-focus-icon"><i class="fa-solid fa-chart-simple"></i></span>
-                            <span class="dm-focus-label">Analytics</span>
-                        </div>
-                    </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-bullseye"></i></span>
+                    <span class="dm-focus-label">Strategy</span>
+                </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <span class="dm-focus-label">SEO</span>
+                </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-comments"></i></span>
+                    <span class="dm-focus-label">Social Media</span>
+                </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                    <span class="dm-focus-label">Paid Ads</span>
+                </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                    <span class="dm-focus-label">Content</span>
+                </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
+                    <span class="dm-focus-label">Lead Generation</span>
+                </div>
+                <div class="dm-focus-item">
+                    <span class="dm-focus-icon"><i class="fa-solid fa-chart-simple"></i></span>
+                    <span class="dm-focus-label">Analytics</span>
                 </div>
             </div>
     </section>
@@ -2818,37 +2752,43 @@ include __DIR__ . '/header.php';
                     <div class="dm-client-slider-track" data-dm-client-track>
                         <article class="dm-client-slide">
                             <div class="dm-client-avatar">
-                                <img src="https://img.magnific.com/free-photo/pleased-handsome-male-customer-show-thumb-up-approval_176420-17945.jpg?semt=ais_hybrid&w=740&q=80" alt="Rahul Mehta testimonial profile">
+                                <img src="./assets/images/testimonials/3.png" alt="Rahul Mehta testimonial profile">
                             </div>
                             <div class="dm-client-testimonial">
                                 <p>Technofra's Digital Marketing team understood our business goals perfectly and created a strategy that delivered real results. Our website traffic increased by <strong>150%</strong> and lead quality improved significantly within just 3 months. Their transparent reporting and proactive approach make them a trusted growth partner.</p>
                                 <div class="dm-client-divider"></div>
-                                <h3 class="dm-client-name">Rahul Mehta</h3>
-                                <p class="dm-client-role">Marketing Head</p>
+                                <h3 class="dm-client-name">Niraj Narsaria</h3>
+                                <div class="dm-client-brand">
+                                    <img src="assets/images/new/c9.png" alt="Mark Identitiez logo">
+                                </div>
                             </div>
                         </article>
 
                         <article class="dm-client-slide">
                             <div class="dm-client-avatar">
-                                <img src="https://img.magnific.com/free-photo/pleased-handsome-male-customer-show-thumb-up-approval_176420-17945.jpg?semt=ais_hybrid&w=740&q=80 alt="Sneha Kapoor testimonial profile">
+                                <img src="./assets/images/testimonials/2.png" alt="Sneha Kapoor testimonial profile">
                             </div>
                             <div class="dm-client-testimonial">
                                 <p>The team brought clarity to our ad spend and content strategy. Within a short span, our campaign performance improved, conversion costs dropped, and we started seeing more qualified inquiries from the right audience segments.</p>
                                 <div class="dm-client-divider"></div>
-                                <h3 class="dm-client-name">Sneha Kapoor</h3>
-                                <p class="dm-client-role">Growth Manager</p>
+                                <h3 class="dm-client-name">Kahan Mehta</h3>
+                                <div class="dm-client-brand">
+                                    <img src="assets/images/new/c12.png" alt="Digikcon logo">
+                                </div>
                             </div>
                         </article>
 
                         <article class="dm-client-slide">
                             <div class="dm-client-avatar">
-                                <img src="https://img.magnific.com/free-photo/pleased-handsome-male-customer-show-thumb-up-approval_176420-17945.jpg?semt=ais_hybrid&w=740&q=80" alt="Arjun Verma testimonial profile">
+                                <img src="./assets/images/testimonials/1.png" alt="Arjun Verma testimonial profile">
                             </div>
                             <div class="dm-client-testimonial">
                                 <p>What stood out most was their proactive communication and data-backed decision making. From SEO improvements to paid campaign scaling, every move felt intentional and tied directly to measurable business growth.</p>
                                 <div class="dm-client-divider"></div>
-                                <h3 class="dm-client-name">Arjun Verma</h3>
-                                <p class="dm-client-role">Founder</p>
+                                <h3 class="dm-client-name">Uday Parkhi</h3>
+                                <div class="dm-client-brand">
+                                    <img src="assets/images/new/c11.png" alt="Blue Orbith logo">
+                                </div>
                             </div>
                         </article>
                     </div>
