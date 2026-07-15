@@ -6,7 +6,6 @@ $bodyClass = $bodyClass ?? '';
 $whiteLogoPages = [
     'index.php',
     'ios-development.php',
-    'web-design-and-development.php',
     'ui-ux.php',
     'domain-hosting.php',
     'wotm.php',
@@ -372,7 +371,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
                     <a href="tel:+918080803375" title="" class="nmbr">+91 8080 80 3375</a>
                     <a href="mailto:info@technofra.com" class="email">info@technofra.com</a>
                     <a href="mailto:support@technofra.com" class="email">support@technofra.com</a>
-                    <a href="contact.php" title="" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
+                    <a href="enquirynow.php" title="" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
                         <span>Enquiry Now</span>
                     </a>
                 </div>
@@ -533,7 +532,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
                     <div class="col-auto d-none d-xl-block">
                         <div class="btn-box">
                             <!-- <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a> -->
-                            <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='contact.php' title>
+                            <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='enquirynow.php' title>
                                 <span>Enquiry Now</span>
                             </a>
                         </div>
@@ -668,7 +667,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
                             <div class="col-auto d-none d-xl-block">
                                 <div class="btn-box">
                                     <!-- <a href="#" class="popup-search" data-popup="1"><i class="fa fa-search"></i></a> -->
-                                    <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='contact.php' title>
+                                    <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='enquirynow.php' title>
                                         <span>Enquiry Now</span>
                                     </a>
                                 </div>

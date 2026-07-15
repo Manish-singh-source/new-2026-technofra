@@ -281,6 +281,10 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 991.98px) {
+        .services-cards-column {
+            margin-top: 0;
+        }
+
         .tech-stack-v2 .tech-stack-panel {
             padding: 72px 0;
         }
@@ -290,6 +294,29 @@ include __DIR__ . '/header.php';
         }
     }
 
+    @media (max-width: 1201px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    }
+
+    @media (max-width: 769px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
     @media (max-width: 575.98px) {
         .tech-stack-v2::before {
             width: 300px;
@@ -382,6 +409,29 @@ include __DIR__ . '/header.php';
         color: #3b5bfe;
     }
 
+    @media (max-width: 1201px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    }
+
+    @media (max-width: 769px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
     @media (max-width: 575.98px) {
         .hero-contact10.hero-experience-card {
             gap: 16px;
@@ -701,6 +751,29 @@ include __DIR__ . '/header.php';
         color: #3b5bfe;
     }
 
+    @media (max-width: 1201px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    }
+
+    @media (max-width: 769px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
     @media (max-width: 575.98px) {
         .hero-contact10.hero-experience-card {
             gap: 16px;
@@ -765,11 +838,21 @@ include __DIR__ . '/header.php';
     }
 
     .services-heading {
-        font-size: clamp(1.9rem, 2.4vw + 1rem, 2.5rem);
-        font-weight: 800;
+        font-size: 55px;
+        line-height: 60px;
+        font-weight: 400;
+        letter-spacing: -0.05em;
         color: var(--text-dark);
-        line-height: 1.2;
         margin-bottom: 22px;
+    }
+
+    .portfolio-heading {
+        font-size: 55px;
+        line-height: 60px;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+        color: var(--text-dark);
+        margin-bottom: 0;
     }
 
     .services-desc {
@@ -817,6 +900,10 @@ include __DIR__ . '/header.php';
     }
 
     /* ============ RIGHT COLUMN - SERVICE CARDS ============ */
+    .services-cards-column {
+        margin-top: 150px;
+    }
+
     .service-card {
         background: var(--card-bg);
         border: 1px solid var(--border-color);
@@ -869,6 +956,10 @@ include __DIR__ . '/header.php';
 
     /* ============ RESPONSIVE ============ */
     @media (max-width: 991.98px) {
+        .services-cards-column {
+            margin-top: 0;
+        }
+
         .services-section {
             padding: 56px 0;
         }
@@ -883,7 +974,11 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 767.98px) {
-        .service-card {
+        .services-cards-column {
+        margin-top: 150px;
+    }
+
+    .service-card {
             padding: 22px 20px;
             gap: 14px;
         }
@@ -914,12 +1009,41 @@ include __DIR__ . '/header.php';
         }
     }
 
+    @media (max-width: 1201px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    }
+
+    @media (max-width: 769px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
     @media (max-width: 575.98px) {
-        .services-heading {
-            font-size: 1.7rem;
+        .services-heading,
+        .portfolio-heading {
+            font-size: 32px;
+            line-height: 1.1em;
         }
 
-        .service-card {
+        .services-cards-column {
+        margin-top: 150px;
+    }
+
+    .service-card {
             flex-direction: column;
             align-items: flex-start;
         }
@@ -957,12 +1081,14 @@ include __DIR__ . '/header.php';
     }
 
     .portfolio-heading {
-        font-size: clamp(1.7rem, 2.2vw + 1rem, 2.2rem);
-        font-weight: 800;
+        font-size: 55px;
+        line-height: 60px;
+        font-weight: 400;
+        letter-spacing: -0.05em;
         color: var(--text-dark);
-        line-height: 1.25;
         margin-bottom: 0;
     }
+
 
     .portfolio-desc {
         color: var(--text-gray);
@@ -977,7 +1103,8 @@ include __DIR__ . '/header.php';
     }
 
     @media (min-width: 992px) {
-        .portfolio-desc {
+    
+    .portfolio-desc {
             text-align: right;
             margin-left: auto;
         }
@@ -1235,6 +1362,29 @@ include __DIR__ . '/header.php';
         }
     }
 
+    @media (max-width: 1201px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    }
+
+    @media (max-width: 769px) {
+        .services-heading,
+        .portfolio-heading {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
     @media (max-width: 575.98px) {
         .about-counter6 {
             margin: 40px;
@@ -1260,7 +1410,48 @@ include __DIR__ . '/header.php';
 
 
 <!-- Banner Section-->
-<section class="hero-section10">
+ <!-- her-style1 -->
+        <section class="hero-style1">
+            <div class="hero-info">
+                <div class="container-fluid">
+                    <div class="row end">
+                        <div class="col-lg-8"> 
+                            <div class="hero-title">
+                                <h1 class="gradient-title">Web Design & Development <span>Company in Mumbai
+                                    </span></h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="hero-content">
+                                <p>At Technofra, we build high-performance websites that attract visitors, engage users, and convert leads. With 14+ years of experience, we deliver custom web solutions for businesses of all sizes.
+
+                                </p>
+                                <a class='ibt-btn ibt-btn-secondary' href='contact.php' target='_blank' title>
+                                    <span>Explore Services</span>
+                                    <i class="icon-arrow-top"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-banner">
+                <div class="container2">
+                    <div class="banner-content">
+                        <span class="sub-title" id="animatedHeading"> Designing Digital Experiences That Drive Growth</span>
+                        <h1 class="title2">DIGITAL EXPERIENCE</h1>
+                        <!-- <p>Websites that engage and drive growth.
+                        </p> -->
+                        <a href="#" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
+                            <i class="fa fa-play"></i> Watch Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End hero-style1 -->
+
+<!-- <section class="hero-section10">
     <div class="container-fluid">
         <div class="row g-3">
             <div class="col-lg-4 col-md-12 col-sm-12">
@@ -1302,7 +1493,7 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- About Section -->
 <section class="main-sec3">
@@ -1314,7 +1505,7 @@ include __DIR__ . '/header.php';
                     <div class="about-counter6">
                         <div class="about-counter-content6">
                             <div class="counter-box15">
-                                <span class="counter-number percent-counter2" data-target="250">0</span>
+                                <span class="counter-number percent-counter2" data-target="2500">0</span>
                                 <span class="counter-text">+</span>
                             </div>
                             <span class="title">Web projects delivered</span>
@@ -1392,7 +1583,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <!-- RIGHT COLUMN -->
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-8 col-md-12 services-cards-column">
                 <div class="row g-4">
 
                     <div class="col-md-6">
@@ -1915,3 +2106,8 @@ include __DIR__ . '/header.php';
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
+

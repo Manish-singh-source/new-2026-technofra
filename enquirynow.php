@@ -249,7 +249,25 @@ include __DIR__ . '/header.php';
 .enquiry-choice input {
     width: 18px;
     min-height: 18px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    flex: 0 0 18px;
     accent-color: #003366;
+}
+
+.enquiry-choice:has(input:checked) {
+    border-color: #003366;
+    background: #eef5ff;
+    color: #003366;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.08);
+}
+
+.enquiry-choice:has(input:checked) span {
+    color: #003366;
 }
 
 .enquiry-note {
@@ -477,4 +495,6 @@ window.addEventListener('load', function () {
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
 
