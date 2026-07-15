@@ -11,6 +11,7 @@ $whiteLogoPages = [
     'domain-hosting.php',
     'wotm.php',
     'frago.php',
+    'sukanya.php'
 ];
 
 $useWhiteLogo = in_array($currentPage, $whiteLogoPages, true);
