@@ -28951,6 +28951,7 @@ ul {
 }
 .testimonials-sec .testi-slider .swiper-slide {
   height: auto;
+  padding: 50px 30px;
   min-height: 100%;
   display: -webkit-box;
   display: -webkit-flex;

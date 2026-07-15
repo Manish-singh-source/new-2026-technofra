@@ -705,8 +705,6 @@ include __DIR__ . '/header.php'; ?>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-prev industries-prev"></div>
-            <div class="swiper-button-next industries-next"></div>
         </div>
     </div>
 </section>
@@ -787,116 +785,6 @@ include __DIR__ . '/header.php'; ?>
     </div>
 </section>
 <!-- End faq-sec -->
-
-<!-- End faq-sec -->
-
-<!-- blog-sec2 -->
-<!-- <section class="blog-sec2 ibt-section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="blog-image2">
-                            <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="blog-info2">
-                            <div class="title-area">
-                                <div class="row end">
-                                    <div class="col-lg-8 col-md-7">
-                                        <div class="sec-title mb-0">
-                                            <span class="sub-title">blog</span>
-                                            <h2 class="title animated-heading">See Our Latest Blog
-                                                &amp; News
-                                            </h2>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-5">
-                                        <div class="sec-btn-box">
-                                            <a class='ibt-btn ibt-btn-outline' href='https://technofra.com/blog/' title>
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-top"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-post">
-                                <div class="blog-card2">
-                                    <div class="blog-img2">
-                                        <a href='https://technofra.com/blog/10-common-seo-myths-that-are-killing-your-website-rankings-in2026/'><img src="assets/images/new/blog2.png" alt="10 Common SEO Myths That Are Killing Your Website Rankings in 2026"></a>
-                                    </div>
-                                    <div class="blog-content2">
-                                        <div class="blog-meta2">
-                                            <span class="sub-title">technofra / April 14, 2026</span>
-                                            <div class="blog-text2">
-                                                <a href="#" title="">SEO</a>
-                                                <a href="#" title="">Myths</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="title"><a href='https://technofra.com/blog/10-common-seo-myths-that-are-killing-your-website-rankings-in2026/'>10 Common SEO Myths That Are Killing Your Website Rankings in 2026?</a>
-                                        </h4>
-                                        <p>Common SEO misconceptions can hold back your website rankings. This post helps
-                                            you focus on the tactics that actually improve visibility.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="blog-card2 mb-0">
-                                    <div class="blog-img2">
-                                        <a href='https://technofra.com/blog/ai-driven-seo-social-media-marketing-the-next-growth-engine-for-brands-in-2026/'><img src="assets/images/new/blog1.png" alt="AI-Driven SEO & Social Media Marketing: The Next Growth Engine for Brands in 2026"></a>
-                                    </div>
-                                    <div class="blog-content2">
-                                        <div class="blog-meta2">
-                                            <span class="sub-title">technofra / April 18, 2026</span>
-                                            <div class="blog-text2">
-                                                <a href="#" title="">SEO</a>
-                                                <a href="#" title="">Social Media</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="title"><a href='https://technofra.com/blog/ai-driven-seo-social-media-marketing-the-next-growth-engine-for-brands-in-2026/'>AI-Driven SEO &amp; Social Media Marketing: The Next Growth Engine for Brands in 2026</a>
-                                        </h4>
-                                        <p>SEO and social media work best together when your strategy is built around
-                                            visibility, engagement, and measurable brand growth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-<!-- End blog-sec2 -->
-
-<!-- newsletter-banner -->
-<!-- <section class="newsletter-banner">
-            <div class="parallax-wrap">
-                <img src="assets/images/new/banner1.png" alt="Banner" class="parallax-img">
-            </div>
-            <div class="container2">
-                <div class="newsletter-content ibt-section-gap">
-                    <h2 class="title">
-                        Let�s build your next website, app, or digital growth campaign
-                    </h2>
-                    <p>
-                        Technofra creates websites, mobile apps, e-commerce experiences, SEO plans, and social media
-                        marketing that help brands grow online with clarity and impact.
-                    </p>
-                    <form action="#" method="post" class="newsletter-form">
-                        <div class="input-box">
-                            <input type="text" placeholder="" required>
-                            <label>Enter your work email</label>
-                        </div>
-                        <button class="ibt-btn ibt-btn-dark">
-                            <span>Get in Touch</span>
-                            <i class="icon-arrow-top"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section> -->
-<!-- End newsletter-banner -->
- 
 
 <script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
