@@ -1392,7 +1392,7 @@ var SwiperSliders = {
           1366: { slidesPerView: 4, spaceBetween: 24 },
           1201: { slidesPerView: 3, spaceBetween: 24 },
           1025: { slidesPerView: 3, spaceBetween: 24 },
-          769: { slidesPerView: 1, spaceBetween: 20 },
+          769: { slidesPerView: 2, spaceBetween: 20 },
           577: { slidesPerView: 1, spaceBetween: 18 },
           480: { slidesPerView: 1, spaceBetween: 16 },
           375: { slidesPerView: 1, spaceBetween: 16 },
