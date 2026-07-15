@@ -100,7 +100,7 @@ include __DIR__ . '/header.php';
     }
 
     .contact-form.v2 .custom-form {
-        display: grid;
+        /* display: grid; */
         gap: 16px;
     }
 

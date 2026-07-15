@@ -6,7 +6,6 @@ $bodyClass = $bodyClass ?? '';
 $whiteLogoPages = [
     'index.php',
     'ios-development.php',
-    'web-design-and-development.php',
     'ui-ux.php',
     'domain-hosting.php',
     'wotm.php',
@@ -527,7 +526,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
             </div>
             <div class="col-auto d-none d-xl-block">
                 <div class="btn-box">
-                    <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='contact.php' title>
+                    <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='enquirynow.php' title>
                         <span>Enquiry Now</span>
                     </a>
                 </div>
@@ -656,7 +655,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
                     </div>
                     <div class="col-auto d-none d-xl-block">
                         <div class="btn-box">
-                            <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='contact.php' title>
+                            <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='enquirynow.php' title>
                                 <span>Enquiry Now</span>
                             </a>
                         </div>
