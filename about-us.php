@@ -257,6 +257,679 @@
             height: 420px;
         }
     }
+
+    /* Page-specific responsive refinement */
+    .about-us-sec9 .title-area,
+    .team-section2 .row,
+    .pricing-style1 .row {
+        row-gap: 24px;
+    }
+
+    .journey-card,
+    .team-card,
+    .price-card,
+    .service-sec20 .ser-card20_card1,
+    .service-sec20 .ser-card20_card2,
+    .service-sec20 .ser-card20_card3,
+    .service-sec20 .ser-card20_card4,
+    .service-sec20 .ser-card20_card5 {
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 1399.98px) {
+        .gradient-title14 {
+            font-size: 68px;
+            line-height: 1.08;
+        }
+
+        .hero-style14 .hero-content14 {
+            max-width: 520px;
+            margin-left: auto;
+        }
+
+        .about-content9 .title {
+            font-size: 78px;
+            line-height: 0.95;
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+        .hero-style14 {
+            padding-bottom: 90px;
+        }
+
+        .hero-style14 .row {
+            row-gap: 24px;
+        }
+
+        .hero-style14 .hero-content14 {
+            max-width: 100%;
+            margin-left: 0;
+        }
+
+        .gradient-title14 {
+            font-size: 58px;
+            line-height: 1.08;
+        }
+
+        .about-us-sec9 .title-area {
+            margin-bottom: 12px;
+        }
+
+        .about-content9 .title {
+            font-size: 64px;
+        }
+
+        .about-info9 p {
+            font-size: 15px;
+            line-height: 28px;
+        }
+
+        .pricing-style1 .pricing-content {
+            max-width: 520px;
+        }
+
+        .price-card {
+            padding: 42px 32px;
+            gap: 18px;
+        }
+
+        .price-card i {
+            font-size: 56px;
+        }
+
+        .price-heade {
+            padding-right: 0;
+        }
+
+        .price-heade .title {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .price-heade span {
+            max-width: none;
+        }
+
+        .team-img .sub-title {
+            font-size: 38px;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        .hero-style14 {
+            margin: 0 14px;
+            padding: 132px 0 76px;
+        }
+
+        .hero-style14::before {
+            height: 100%;
+            background-size: cover;
+            opacity: 0.7;
+        }
+
+        .gradient-title14 {
+            font-size: 48px;
+            line-height: 1.08;
+            max-width: 820px;
+        }
+
+        .hero-style14 .hero-content14 p {
+            max-width: 680px;
+            margin-bottom: 22px;
+        }
+
+        .service-sec20 {
+            margin-top: 10px;
+        }
+
+        .service-sec20 .row {
+            row-gap: 24px;
+        }
+
+        /* .service-sec20 .col-lg-12 {
+            min-height: 420px;
+        } */
+
+        .about-us-sec9 {
+            margin: 0 14px;
+        }
+
+        .about-us-sec9 .title-area {
+            row-gap: 18px;
+        }
+
+        .about-content9 .title {
+            font-size: 56px;
+        }
+
+        .journey-title {
+            margin-bottom: 38px;
+        }
+
+        .journey-grid {
+            gap: 24px;
+        }
+
+        .journey-card:nth-child(odd),
+        .journey-card:nth-child(even) {
+            transform: none;
+        }
+
+        .pricing-style1 {
+            margin: 0 14px;
+        }
+
+        .pricing-style1 .row {
+            row-gap: 22px;
+        }
+
+        .price-card {
+            padding: 34px 24px;
+            border-radius: 22px;
+        }
+
+        .team-section2 {
+            margin: 0 14px;
+        }
+
+        .team-section2 .row {
+            row-gap: 24px;
+            margin-bottom: 0;
+        }
+
+        .team-member2,
+        .team-member2.v2 {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .team-card,
+        .team-card.v3 {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .hero-style14 {
+            margin: 0 10px;
+            padding: 118px 0 62px;
+        }
+
+        .hero-style14 .container-fluid {
+            padding-inline: 12px;
+        }
+
+        .gradient-title14 {
+            font-size: 38px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-style14 .hero-content14 p {
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        .hero-style14 .hero-content14 .ibt-btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .service-sec20 .container2 {
+            padding-inline: 10px;
+        }
+
+        .service-sec20 .row {
+            row-gap: 18px;
+        }
+
+        .service-sec20 .ser-info20 {
+            gap: 18px;
+        }
+
+        .service-sec20 .ser-card20_card1 {
+            padding: 28px 22px;
+        }
+
+        .service-sec20 .ser-card20_card1 img {
+            margin-bottom: 20px;
+            width: 32px;
+        }
+
+        .service-sec20 .ser-card20_card1 .title,
+        .service-sec20 .ser-card20_card2 .title,
+        .service-sec20 .ser-card20_card3 .title,
+        .service-sec20 .ser-card20_card4 .title h4 {
+            font-size: 20px;
+            line-height: 1.25;
+        }
+
+        .service-sec20 .ser-card20_card1 p,
+        .service-sec20 .ser-card20_card2 span,
+        .service-sec20 .ser-card20_card3 p,
+        .service-sec20 .ser-card20_card4 p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .service-sec20 .ser-card20_card2 {
+            margin-top: 0;
+            min-height: auto;
+            margin-top: 20px;
+            padding: 22px 20px 20px 70px;
+        }
+
+        .service-sec20 .ser-card20_card2 img {
+            top: 22px;
+            left: 22px;
+            width: 28px;
+        }
+
+        .service-sec20 .ser-card20_card3,
+        .service-sec20 .ser-card20_card4 {
+            height: 230px;
+        }
+
+        .service-sec20 .ser-card20_card3 .title {
+            top: 24px;
+            left: 22px;
+            max-width: 180px;
+        }
+
+        .service-sec20 .ser-card20_card3 p {
+            top: 60px;
+            left: 22px;
+            right: 18px;
+        }
+
+        .service-sec20 .ser-card20_card4 .title {
+            left: 22px;
+            right: 18px;
+            bottom: 20px;
+            max-width: 220px;
+        }
+
+        .service-sec20 .ser-card20_card5 {
+            display: block;
+            height: 300px;
+            min-height: auto;
+            margin-top: 0;
+        }
+
+        .service-sec20 .ser-card20_card5 img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-us-sec9 {
+            margin: 0 10px;
+        }
+
+        .about-us-sec9 .container {
+            padding-inline: 12px;
+        }
+
+        .about-us-sec9 .sec-title .title {
+            font-size: 32px;
+            line-height: 1.15;
+        }
+
+        .about-us-sec9 .sub-title {
+            margin-bottom: 10px;
+        }
+
+        .about-us-sec9 button.ibt-btn {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .about-content9 .title {
+            font-size: 46px;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .about-info9 p {
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        .journey-sec .container,
+        .pricing-style1 .container,
+        .team-section2 .container {
+            padding-inline: 12px;
+        }
+
+        .journey-title .title {
+            font-size: 32px;
+            line-height: 1.15;
+        }
+
+        .journey-title .journey-intro {
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        .journey-image {
+            border-radius: 20px;
+        }
+
+        .journey-year {
+            width: 64px;
+            height: 64px;
+            font-size: 16px;
+        }
+
+        .price-card {
+            display: block;
+            padding: 28px 20px;
+            border-radius: 20px;
+        }
+
+        .price-card i {
+            font-size: 42px;
+        }
+
+        .price-heade {
+            padding: 10px 0 0;
+        }
+
+        .price-heade .title {
+            font-size: 28px;
+            line-height: 1.15;
+            margin-bottom: 10px;
+        }
+
+        .price-heade span {
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .team-section2 {
+            margin: 0 10px;
+        }
+
+        .team-section2 .sec-title .title {
+            font-size: 32px;
+            line-height: 1.15;
+        }
+
+        .team-card .team-content {
+            padding-inline: 18px;
+        }
+
+        .team-img .sub-title {
+            font-size: 28px;
+        }
+
+        .team-content .name {
+            font-size: 22px;
+        }
+
+        .team-content .designation {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .company-profile-modal .modal-dialog {
+            margin: 16px;
+        }
+
+        .company-profile-modal .modal-body {
+            padding: 24px 18px !important;
+        }
+
+        .company-profile-modal .modal-header {
+            padding: 18px 18px 0;
+        }
+
+        .company-profile-modal .modal-title {
+            font-size: 22px;
+        }
+
+        .company-profile-modal .company-profile-submit-btn {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 479.98px) {
+        .hero-style14 {
+            margin: 0 6px;
+            padding: 108px 0 54px;
+        }
+
+        .gradient-title14 {
+            font-size: 31px;
+        }
+
+        .service-sec20 .container2,
+        .about-us-sec9 .container,
+        .journey-sec .container,
+        .pricing-style1 .container,
+        .team-section2 .container {
+            padding-inline: 8px;
+        }
+
+        .service-sec20 .ser-card20_card1,
+        .service-sec20 .ser-card20_card2 {
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        .service-sec20 .ser-card20_card3,
+        .service-sec20 .ser-card20_card4,
+        .service-sec20 .ser-card20_card5 {
+            border-radius: 20px;
+            height: 210px;
+        }
+
+        .about-us-sec9 .sec-title .title,
+        .journey-title .title,
+        .team-section2 .sec-title .title {
+            font-size: 28px;
+        }
+
+        .about-content9 .title {
+            font-size: 38px;
+        }
+
+        .price-heade .title {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .about-us-sec9.ibt-section-gapTop,
+        .journey-sec.ibt-section-gapTop,
+        .pricing-style1.ibt-section-gapTop,
+        .team-section2.ibt-section-gapTop {
+            padding-top: 46px !important;
+        }
+
+        .about-us-sec9.pb-4,
+        .journey-sec.pb-5 {
+            padding-bottom: 10px !important;
+        }
+
+        .hero-style14 {
+            padding-bottom: 44px;
+        }
+
+        .service-sec20 {
+            padding-bottom: 6px;
+        }
+
+        .about-us-sec9,
+        .journey-sec,
+        .pricing-style1,
+        .team-section2 {
+            margin-top: 0;
+        }
+
+        .journey-sec::before,
+        .team-section2::before,
+        .pricing-style1.v2::before,
+        .pricing-style1.v2::after {
+            display: none !important;
+        }
+
+        .about-us-sec9 .title-area,
+        .team-section2 .title-area,
+        .pricing-content .sec-title,
+        .journey-title {
+            margin-bottom: 22px;
+        }
+
+        .about-us-sec9 .row,
+        .pricing-style1 .row,
+        .team-section2 .row {
+            row-gap: 18px;
+        }
+
+        .about-content9,
+        .pricing-content,
+        .team-section2 .sec-title {
+            margin-bottom: 0;
+        }
+
+        .about-content9 .title {
+            font-size: 42px;
+            line-height: 0.95;
+        }
+
+        .about-info9 p {
+            margin-bottom: 14px;
+        }
+
+        .journey-grid {
+            gap: 20px;
+        }
+
+        .journey-card {
+            padding-bottom: 8px;
+        }
+
+        .journey-content {
+            padding: 12px 4px 8px;
+        }
+
+        .journey-content h4 {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .journey-content p {
+            font-size: 14px;
+            line-height: 24px;
+            max-width: 100%;
+        }
+
+        .journey-year {
+            margin-top: 2px;
+        }
+
+        .price-card {
+            padding: 24px 18px;
+        }
+
+        .price-card + .price-card {
+            margin-top: 14px;
+        }
+
+        .price-card .d-flex {
+            justify-content: flex-start !important;
+            padding: 0 0 10px !important;
+        }
+
+        .price-heade {
+            padding-top: 0;
+        }
+
+        .price-heade .title {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .price-heade span {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .team-section2 .row {
+            row-gap: 18px;
+        }
+
+        .team-member2,
+        .team-member2.v2 {
+            gap: 18px;
+        }
+
+        .team-card .team-img img {
+            width: 100%;
+        }
+
+        .team-card .team-content {
+            padding-inline: 16px;
+            padding-bottom: 16px;
+        }
+
+        .team-img .sub-title {
+            font-size: 22px;
+        }
+
+        .team-content .name {
+            font-size: 20px;
+        }
+
+        .team-content .designation {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    @media (max-width: 479.98px) {
+        .about-us-sec9.ibt-section-gapTop,
+        .journey-sec.ibt-section-gapTop,
+        .pricing-style1.ibt-section-gapTop,
+        .team-section2.ibt-section-gapTop {
+            padding-top: 40px !important;
+        }
+
+        .hero-style14 {
+            padding-bottom: 38px;
+        }
+
+        .service-sec20 .row {
+            row-gap: 16px;
+        }
+
+        .service-sec20 .ser-info20 {
+            gap: 16px;
+        }
+
+        .about-us-sec9 .container,
+        .journey-sec .container,
+        .pricing-style1 .container,
+        .team-section2 .container,
+        .service-sec20 .container2 {
+            padding-inline: 10px;
+        }
+
+        .journey-grid,
+        .team-section2 .row,
+        .pricing-style1 .row {
+            gap: 16px;
+        }
+
+        .journey-title,
+        .pricing-content .sec-title,
+        .team-section2 .title-area {
+            margin-bottom: 18px;
+        }
+    }
 </style>
 
 
@@ -352,7 +1025,7 @@
                         </a> -->
                 <button type="button" class="mt-lg-5 ibt-btn ibt-btn-outline-3 ibt-btn-rounded" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
-                    Download Company Profile
+                    <span>Download Company Profile </span>
                     <i class="fa-solid fa-file-pdf"></i>
                 </button>
                 <!-- <img src="assets/images/event/cross1-1.png" alt="AI Agency & Technology HTML Template"> -->
@@ -393,8 +1066,8 @@
 <section class="journey-sec ibt-section-gapTop pb-5" id="journey">
     <div class="container">
         <div class="sec-title text-center journey-title">
-            <span class="sub-title">Company Journey</span>
-            <h2 class="title animated-heading">Our Journey Timeline</h2>
+            <span class="sub-title" style="width: 125px">Company Journey</span>
+            <h2 class="title animated-heading">Our Jour ney Timeline</h2>
             <p class="journey-intro">A look at the key moments that shaped Technofra into a reliable digital partner for branding, web development, mobile apps, and IT solutions.</p>
         </div>
         <div class="journey-grid">
@@ -514,7 +1187,7 @@
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/gopalsir.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/gopalsir.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">Director</span>
                             <div class="team-shap"></div>
                         </div>
@@ -532,7 +1205,7 @@
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Gopal Giri</a></h4>
+                            <h4 class="name"><a href='javascript:void(0)' title>Gopal Giri</a></h4>
                             <span class="designation">/ Director & Co-Founder /</span>
                         </div>
                     </div>
@@ -542,7 +1215,7 @@
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/bhavna.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/bhavna.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">CEO</span>
                             <div class="team-shap"></div>
                         </div>
@@ -560,13 +1233,13 @@
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Bhavna Giri</a></h4>
+                            <h4 class="name"><a href='javascript:void(0)' title>Bhavna Giri</a></h4>
                             <span class="designation">/ CEO & Co-Founder /</span>
                         </div>
                     </div>
                     <div class="team-card v3">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/manish.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/manish.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">Team Leader</span>
                             <div class="team-shap"></div>
                         </div>
@@ -584,7 +1257,7 @@
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Manish Singh</a></h4>
+                            <h4 class="name"><a href='javascript:void(0)' title>Manish Singh</a></h4>
                             <span class="designation">/ Software Engineer /</span>
                         </div>
                     </div>
@@ -594,7 +1267,7 @@
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/khushi.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/khushi.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">HR</span>
                             <div class="team-shap"></div>
                         </div>
@@ -612,13 +1285,13 @@
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Khushi Yadav</a></h4>
+                            <h4 class="name"><a href='javascript:void(0)' title>Khushi Yadav</a></h4>
                             <span class="designation">/ Digital Marketing Head /</span>
                         </div>
                     </div>
                     <div class="team-card ">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/saurabh.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/saurabh.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">Sr. Developer</span>
                             <div class="team-shap"></div>
                         </div>
@@ -636,7 +1309,7 @@
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Saurabh Damale</a></h4>
+                            <h4 class="name"><a href='javascript:void(0)' title>Saurabh Damale</a></h4>
                             <span class="designation">/ Laravel Developer /</span>
                         </div>
                     </div>
@@ -646,7 +1319,7 @@
                 <div class="team-member2 v2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/shubham.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/shubham.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">Sr. Developer</span>
                             <div class="team-shap"></div>
                         </div>
@@ -664,7 +1337,7 @@
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Shubham Shinde</a></h4>
+                            <h4 class="name"><a href='javascript:void(0)' title>Shubham Shinde</a></h4>
                             <span class="designation">/ App Developer /</span>
                         </div>
                     </div>
@@ -737,5 +1410,7 @@
 </div>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
 
 
