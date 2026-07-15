@@ -26543,19 +26543,19 @@ ul {
   border-radius: 22px;
   color: #fff;
   font-size: 30px;
-  background: linear-gradient(135deg, #2c84c8 0%, #8258c8 100%);
+  background: linear-gradient(180deg, #1b3664, #39c7f4);
   box-shadow: 0 14px 30px rgba(44, 132, 200, 0.22);
 }
 .feature-icon7.brand-orange {
-  background: linear-gradient(135deg, #3a8fcb 0%, #5e70d8 100%);
+  background: linear-gradient(180deg, #1b3664, #39c7f4);
   box-shadow: 0 14px 30px rgba(58, 143, 203, 0.22);
 }
 .feature-icon7.brand-purple {
-  background: linear-gradient(135deg, #5f7fcf 0%, #8258c8 100%);
+  background: linear-gradient(180deg, #1b3664, #39c7f4);
   box-shadow: 0 14px 30px rgba(95, 127, 207, 0.22);
 }
 .feature-icon7.brand-green {
-  background: linear-gradient(135deg, #2c84c8 0%, #5b8fd1 100%);
+  background: linear-gradient(180deg, #1b3664, #39c7f4);
   box-shadow: 0 14px 30px rgba(44, 132, 200, 0.22);
 }
 .feature-card7 .title {
@@ -41535,8 +41535,8 @@ blockquote {
     radial-gradient(circle at 12% 100%, rgba(0, 185, 255, 0.22), transparent 28%),
     radial-gradient(circle at 88% 100%, rgba(126, 87, 255, 0.28), transparent 32%),
     linear-gradient(180deg, #111214 0%, #0d0e11 100%);
-  margin: 12px;
-  border-radius: 34px;
+  margin: 0px;
+  border-radius: 0px;
   padding: 56px 0 28px;
 }
 .footer-style4::after {
