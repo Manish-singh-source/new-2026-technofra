@@ -1382,7 +1382,7 @@ var SwiperSliders = {
         loop: true,
         autoplay: { delay: 3000, disableOnInteraction: false },
         spaceBetween: 24,
-        slidesPerView: 4,
+        slidesPerView: 1,
         navigation: {
           nextEl: ".industries-next",
           prevEl: ".industries-prev",
