@@ -33749,7 +33749,7 @@ ul {
     padding: 81px 0 132px;
   }
 }
-.page-banner9::before {
+/* .page-banner9::before {
   content: "";
   position: absolute;
   top: -29%;
@@ -33761,7 +33761,7 @@ ul {
   background-position: center center;
   background-size: cover;
   z-index: -1;
-}
+} */
 @media (max-width: 1201px) {
   .page-banner9::before {
     aspect-ratio: 0.86;
@@ -39669,12 +39669,12 @@ blockquote {
 }
 @media (max-width: 1201px) {
   .contact-form {
-    padding: 43px 42px 53px;
+    padding: 43px 25px 53px;
   }
 }
 @media (max-width: 390px) {
   .contact-form {
-    padding: 43px 27px 53px;
+    padding: 43px 10px 53px;
   }
 }
 .contact-form .ibt-btn-outline {
@@ -39699,7 +39699,7 @@ blockquote {
 .custom-form select,
 .custom-form textarea {
   border: 1px solid #ADADAD;
-  border-radius: 20px;
+  border-radius: 10px;
   height: 50px;
   margin-bottom: 20px;
   font-size: 14px;
