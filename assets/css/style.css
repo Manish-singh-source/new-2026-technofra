@@ -41845,11 +41845,11 @@ blockquote {
   }
 }
 @media (max-width: 767px) {
-  .footer-style4 {
-    margin: 10px;
+.footer-style4 {
+    margin: 0px;
     padding: 34px 0 24px;
-    border-radius: 24px;
-  }
+    border-radius: 0px;
+}
   .footer-top4 {
     padding-bottom: 28px;
   }
