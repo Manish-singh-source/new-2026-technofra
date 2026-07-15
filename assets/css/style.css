@@ -31519,6 +31519,7 @@ ul {
   z-index: 999;
   background-color: var(--color-content-white);
   border-radius: 25px 25px 0 0;
+  display: none;
 }
 .team-shap::before {
   content: "";
@@ -31561,6 +31562,7 @@ ul {
   min-height: 155px;
   overflow: hidden;
   border-radius: 20px;
+  display: none;
 }
 
 .share-icon {
