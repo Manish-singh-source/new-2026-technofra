@@ -478,6 +478,7 @@ var CounterAnimation = {
     var duration = 6000;
     var startTime = performance.now();
     var isDecimal = counter.classList.contains("percent-counter3");
+    var usePlainNumber = counter.classList.contains("percent-counter2");
 
     function update(currentTime) {
       var elapsed = currentTime - startTime;
@@ -486,6 +487,8 @@ var CounterAnimation = {
 
       if (isDecimal) {
         counter.textContent = count.toFixed(1);
+      } else if (usePlainNumber) {
+        counter.textContent = Math.ceil(count).toString();
       } else {
         counter.textContent = CounterAnimation.formatNumber(Math.ceil(count));
       }
@@ -495,6 +498,8 @@ var CounterAnimation = {
       } else {
         if (isDecimal) {
           counter.textContent = target.toFixed(1);
+        } else if (usePlainNumber) {
+          counter.textContent = target.toString();
         } else {
           counter.textContent = CounterAnimation.formatNumber(target);
         }
@@ -2199,6 +2204,9 @@ document.addEventListener("DOMContentLoaded", function () {
  * END OF FILE
  * ============================
  */
+
+
+
 
 
 
