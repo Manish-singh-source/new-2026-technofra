@@ -469,27 +469,50 @@ include __DIR__ . '/header.php';
         }
 
         .dm-focus-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 0;
-            padding: 18px 28px;
+            position: relative;
+            padding: 18px 0;
             background: linear-gradient(90deg, #1763ff 0%, #0d58f2 100%);
             box-shadow: 0 26px 48px rgba(23, 99, 255, 0.24);
-            overflow-x: auto;
+            overflow: hidden;
         }
 
-        .dm-focus-bar::-webkit-scrollbar {
-            height: 6px;
+        .dm-focus-bar::before,
+        .dm-focus-bar::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 48px;
+            z-index: 2;
+            pointer-events: none;
         }
 
-        .dm-focus-bar::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.25);
-            border-radius: 999px;
+        .dm-focus-bar::before {
+            left: 0;
+            background: linear-gradient(90deg, #1763ff 0%, rgba(23, 99, 255, 0) 100%);
+        }
+
+        .dm-focus-bar::after {
+            right: 0;
+            background: linear-gradient(270deg, #0d58f2 0%, rgba(13, 88, 242, 0) 100%);
+        }
+
+        .dm-focus-track {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            animation: dmFocusScroll 24s linear infinite;
+            will-change: transform;
+        }
+
+        .dm-focus-set {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
         }
 
         .dm-focus-item {
-            flex: 1 0 0;
+            flex: 0 0 auto;
             min-width: 148px;
             display: flex;
             align-items: center;
@@ -502,6 +525,10 @@ include __DIR__ . '/header.php';
         }
 
         .dm-focus-item + .dm-focus-item {
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .dm-focus-set + .dm-focus-set .dm-focus-item:first-child {
             border-left: 1px solid rgba(255, 255, 255, 0.2);
         }
 
@@ -524,9 +551,22 @@ include __DIR__ . '/header.php';
             line-height: 1.3;
         }
 
+        .dm-focus-bar:hover .dm-focus-track {
+            animation-play-state: paused;
+        }
+
+        @keyframes dmFocusScroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
         @media (max-width: 1199px) {
             .dm-focus-bar {
-                padding: 16px 18px;
+                padding: 16px 0;
             }
 
             .dm-focus-item {
@@ -551,9 +591,7 @@ include __DIR__ . '/header.php';
             }
 
             .dm-focus-bar {
-                gap: 8px;
-                padding: 14px 10px;
-                scroll-snap-type: x proximity;
+                padding: 14px 0;
             }
 
             .dm-focus-item {
@@ -561,7 +599,6 @@ include __DIR__ . '/header.php';
                 min-width: 170px;
                 justify-content: flex-start;
                 text-align: left;
-                scroll-snap-align: start;
                 border-left: 0;
                 border-right: 1px solid rgba(255, 255, 255, 0.14);
             }
@@ -574,6 +611,10 @@ include __DIR__ . '/header.php';
                 border-left: 0;
             }
 
+            .dm-focus-set + .dm-focus-set .dm-focus-item:first-child {
+                border-left: 0;
+            }
+
             .dm-focus-icon {
                 width: 42px;
                 height: 42px;
@@ -582,6 +623,16 @@ include __DIR__ . '/header.php';
 
             .dm-focus-label {
                 font-size: 0.95rem;
+            }
+
+            .dm-focus-track {
+                animation-duration: 18s;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .dm-focus-track {
+                animation: none;
             }
         }
 
@@ -2363,11 +2414,11 @@ include __DIR__ . '/header.php';
                         <h1 class="dm-title">Grow Your Brand with <span>Digital Marketing</span></h1>
                         <p class="dm-lead">From SEO and social media to paid ads and content strategy, we help you attract the right audience, build your brand, and generate high-quality leads that drive real growth.</p>
                         <div class="dm-actions">
-                            <a href="contact.php" class="dm-btn-primary">Explore Now</a>
-                            <a href="#dm-services" class="dm-btn-secondary">
+                            <a href="contact.php" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded"><span>Enquiry Now </span></a>
+                            <!-- <a href="#dm-services" class="dm-btn-secondary">
                                 <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                                 <span>See How It Works</span>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -2386,33 +2437,67 @@ include __DIR__ . '/header.php';
 
     <section class="dm-focus-strip" aria-label="Digital marketing focus areas">
             <div class="dm-focus-bar">
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-bullseye"></i></span>
-                    <span class="dm-focus-label">Strategy</span>
-                </div>
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <span class="dm-focus-label">SEO</span>
-                </div>
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-comments"></i></span>
-                    <span class="dm-focus-label">Social Media</span>
-                </div>
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-bullhorn"></i></span>
-                    <span class="dm-focus-label">Paid Ads</span>
-                </div>
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-pen-ruler"></i></span>
-                    <span class="dm-focus-label">Content</span>
-                </div>
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
-                    <span class="dm-focus-label">Lead Generation</span>
-                </div>
-                <div class="dm-focus-item">
-                    <span class="dm-focus-icon"><i class="fa-solid fa-chart-simple"></i></span>
-                    <span class="dm-focus-label">Analytics</span>
+                <div class="dm-focus-track">
+                    <div class="dm-focus-set">
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-bullseye"></i></span>
+                            <span class="dm-focus-label">Strategy</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="dm-focus-label">SEO</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-comments"></i></span>
+                            <span class="dm-focus-label">Social Media</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                            <span class="dm-focus-label">Paid Ads</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                            <span class="dm-focus-label">Content</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
+                            <span class="dm-focus-label">Lead Generation</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-chart-simple"></i></span>
+                            <span class="dm-focus-label">Analytics</span>
+                        </div>
+                    </div>
+                    <div class="dm-focus-set" aria-hidden="true">
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-bullseye"></i></span>
+                            <span class="dm-focus-label">Strategy</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="dm-focus-label">SEO</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-comments"></i></span>
+                            <span class="dm-focus-label">Social Media</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-bullhorn"></i></span>
+                            <span class="dm-focus-label">Paid Ads</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                            <span class="dm-focus-label">Content</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-filter-circle-dollar"></i></span>
+                            <span class="dm-focus-label">Lead Generation</span>
+                        </div>
+                        <div class="dm-focus-item">
+                            <span class="dm-focus-icon"><i class="fa-solid fa-chart-simple"></i></span>
+                            <span class="dm-focus-label">Analytics</span>
+                        </div>
+                    </div>
                 </div>
             </div>
     </section>
