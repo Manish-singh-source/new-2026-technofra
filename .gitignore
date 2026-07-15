@@ -1,0 +1,10 @@
+# Local-only secret config files
+contact-config.local.php
+book-call-config.local.php
+
+# User-generated uploads
+uploads/
+
+# Optional local env files
+.env
+.env.local

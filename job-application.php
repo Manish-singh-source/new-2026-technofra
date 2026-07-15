@@ -1,576 +1,762 @@
 <?php
-$pageTitle = 'Job Application | Technofra';
-$bodyClass = 'job-application-page';
-include __DIR__ . '/header.php';
+session_start();
+
+$selectedRole = isset($_GET['role']) ? trim($_GET['role']) : '';
+$roles = [
+    'Frontend Developer',
+    'Backend Developer',
+    'Full Stack Developer',
+    'WordPress Developer',
+    'Shopify Developer',
+    'Mobile App Developer',
+    'UI/UX Designer',
+    'Motion Graphic Designer',
+    'SEO Executive',
+    'Digital Marketing Executive',
+    'Sales Executive',
+    'AI Tools Specialist',
+];
+
+if ($selectedRole !== '' && !in_array($selectedRole, $roles, true)) {
+    $selectedRole = '';
+}
+
+$defaultFormData = [
+    'fname' => '',
+    'email' => '',
+    'contact' => '',
+    'role' => $selectedRole,
+    'applicant_type' => '',
+    'experience' => '',
+    'ctc' => '',
+    'ectc' => '',
+    'location' => '',
+    'notice' => '',
+    'rn' => '',
+    'refrence' => '',
+    'link' => '',
+];
+
+$formNotice = $_SESSION['job_application_form_notice'] ?? null;
+$formData = $_SESSION['job_application_form_data'] ?? $defaultFormData;
+$skillRows = $_SESSION['job_application_skill_rows'] ?? [['name' => '', 'percentage' => '']];
+$aiToolRows = $_SESSION['job_application_ai_tool_rows'] ?? [['name' => '', 'level' => '']];
+
+unset(
+    $_SESSION['job_application_form_notice'],
+    $_SESSION['job_application_form_data'],
+    $_SESSION['job_application_skill_rows'],
+    $_SESSION['job_application_ai_tool_rows']
+);
+
+function jobApplicationValue($value)
+{
+    return htmlspecialchars((string) $value, ENT_QUOTES, 'UTF-8');
+}
 ?>
+<?php
+$pageTitle = 'Job Application Form - Technofra Careers';
+$bodyClass = 'job-application-page';
+include __DIR__ . '/header.php'; ?>
 
 <style>
-.job-application-hero {
-    position: relative;
-    overflow: hidden;
-    padding: 96px 0 46px;
-    background:
-        radial-gradient(circle at top left, rgba(0, 102, 204, 0.14), transparent 34%),
-        radial-gradient(circle at bottom right, rgba(7, 34, 78, 0.12), transparent 38%),
-        linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
-}
-
-.job-application-hero::before {
-    content: "";
-    position: absolute;
-    inset: auto -10% 0 auto;
-    width: 360px;
-    height: 360px;
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0.12), rgba(11, 94, 215, 0.02));
-    border-radius: 50%;
-    filter: blur(8px);
-    pointer-events: none;
-}
-
-.job-application-hero .hero-copy {
-    max-width: 760px;
-    position: relative;
-    z-index: 1;
-}
-
-.job-application-hero .hero-copy p {
-    color: #475569;
-    font-size: 18px;
-    line-height: 1.85;
-}
-
-.job-application-badges {
+.career-apply-hero {
+    background: linear-gradient(135deg, rgba(5, 15, 35, .86), rgb(119 177 220 / 49%)), url(./assets/images/new/jobbanner.png) center / cover no-repeat;
+    min-height: 430px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 22px;
-}
-
-.job-application-badges span {
-    display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 14px;
-    border-radius: 999px;
-    background: rgba(0, 51, 102, 0.08);
-    color: #003366;
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.job-application-badges i {
-    color: #0b5ed7;
-}
-
-.job-application-banner {
-    background-image: url('assets/images/new/jobbanner.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.job-application-layout {
+    color: #fff;
     position: relative;
-    z-index: 1;
 }
 
-.job-application-card {
-    height: 100%;
-    padding: 28px;
-    border-radius: 28px;
-    background: #ffffff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+.career-apply-hero h1 {
+    color: #fff;
+    font-size: 54px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
-.job-application-card .card-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 12px;
-    margin-bottom: 14px;
-    border-radius: 999px;
-    background: rgba(0, 51, 102, 0.08);
-    color: #003366;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.job-application-card h3 {
-    font-size: 28px;
-    line-height: 1.2;
-    margin-bottom: 12px;
-}
-
-.job-application-card p {
-    color: #475569;
+.career-apply-hero p {
+    color: rgba(255, 255, 255, .88);
+    max-width: 680px;
+    font-size: 18px;
     line-height: 1.75;
     margin-bottom: 0;
 }
 
-.job-summary-list {
-    list-style: none;
-    padding: 0;
-    margin: 24px 0 0;
+.career-apply-section {
+    background: #f7f9fc;
+    padding: 70px 0;
+}
+
+.career-apply-shell {
     display: grid;
-    gap: 14px;
+    grid-template-columns: minmax(260px, 360px) 1fr;
+    gap: 30px;
+    align-items: start;
 }
 
-.job-summary-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 14px 16px;
-    border-radius: 18px;
-    background: #f8fbff;
-    border: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-.job-summary-list li i {
-    margin-top: 3px;
-    color: #003366;
-    font-size: 16px;
-    flex-shrink: 0;
-}
-
-.job-summary-list strong {
-    display: block;
-    color: #0f172a;
-    font-size: 14px;
-    margin-bottom: 4px;
-}
-
-.job-summary-list span {
-    color: #475569;
-    font-size: 14px;
-    line-height: 1.55;
-}
-
-.application-form-wrap {
-    padding: 32px;
-    border-radius: 28px;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
-}
-
-.application-form-wrap h2 {
-    margin-bottom: 10px;
-    font-size: 32px;
-    line-height: 1.15;
-}
-
-.application-form-wrap > p {
-    color: #475569;
-    line-height: 1.75;
-    margin-bottom: 26px;
-}
-
-.application-form .form-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
-}
-
-.application-form .field-full {
-    grid-column: 1 / -1;
-}
-
-.application-form label {
-    display: block;
-    margin-bottom: 8px;
-    color: #0f172a;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.application-form input,
-.application-form select,
-.application-form textarea {
-    width: 100%;
-    min-height: 54px;
-    padding: 14px 16px;
-    border-radius: 16px;
-    border: 1px solid rgba(15, 23, 42, 0.12);
+.career-apply-panel,
+.career-form-card {
     background: #fff;
-    color: #0f172a;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    border: 1px solid rgba(15, 23, 42, .08);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, .08);
+    border-radius: 12px;
 }
 
-.application-form textarea {
-    min-height: 152px;
-    resize: vertical;
+.career-apply-panel {
+    padding: 30px;
+    position: sticky;
+    top: 100px;
 }
 
-.application-form input:focus,
-.application-form select:focus,
-.application-form textarea:focus {
-    border-color: rgba(0, 51, 102, 0.55);
-    box-shadow: 0 0 0 4px rgba(0, 51, 102, 0.08);
+.career-apply-panel h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-bottom: 16px;
 }
 
-.application-form .hint-text {
-    margin-top: 8px;
-    color: #64748b;
-    font-size: 13px;
-    line-height: 1.6;
+.career-apply-panel p,
+.career-apply-panel li {
+    color: #5d6675;
+    line-height: 1.7;
 }
 
-.application-form .file-row {
+.career-apply-panel ul {
+    padding-left: 0;
+    margin: 22px 0 0;
+    list-style: none;
+}
+
+.career-apply-panel li {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    gap: 10px;
+    margin-bottom: 14px;
 }
 
-.application-form .file-row .file-label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 18px;
-    min-height: 54px;
-    border-radius: 16px;
-    border: 1px dashed rgba(0, 51, 102, 0.28);
-    background: rgba(0, 51, 102, 0.04);
-    color: #003366;
-    font-weight: 700;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.application-form .file-row input[type="file"] {
-    padding: 11px 14px;
-}
-
-.application-form .terms-row {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-
-.application-form .terms-row input {
-    width: 18px;
-    height: 18px;
-    min-height: 18px;
-    margin-top: 3px;
-    flex-shrink: 0;
-}
-
-.application-form .terms-row span {
-    color: #475569;
-    font-size: 14px;
-    line-height: 1.65;
-}
-
-.application-form .form-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
+.career-apply-panel i {
+    color: #036;
     margin-top: 6px;
 }
 
-.role-strip {
-    padding: 18px 0 0;
+.career-form-card {
+    padding: 36px;
 }
 
-.role-strip-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 18px;
+.career-form-card .form-label {
+    font-weight: 600;
+    color: #162033;
 }
 
-.role-strip-card {
-    height: 100%;
-    padding: 20px;
-    border-radius: 22px;
+.career-form-card .required-mark {
+    color: #bf1c25;
+}
+
+.career-form-card .form-control {
+    min-height: 48px;
+    border-radius: 8px;
+    border: 1px solid #d9e1ec;
+}
+
+.career-form-card .form-control:focus {
+    border-color: #bf1c25;
+    box-shadow: 0 0 0 .2rem rgba(191, 28, 37, .12);
+}
+
+.career-form-card select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    background-image: linear-gradient(45deg, transparent 50%, #003366 50%),
+        linear-gradient(135deg, #003366 50%, transparent 50%);
+    background-position: calc(100% - 20px) 20px, calc(100% - 14px) 20px;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    padding-right: 42px;
+    cursor: pointer;
+}
+
+.career-applicant-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.career-applicant-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 10px 16px;
+    border: 1px solid #d9e1ec;
+    border-radius: 8px;
     background: #fff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05);
+    color: #162033;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.role-strip-card .role-icon {
-    width: 52px;
-    height: 52px;
+.career-applicant-option input {
+    accent-color: #003366;
+}
+
+.career-conditional-field.is-hidden {
+    display: none;
+}
+
+.career-form-popup {
+    position: fixed;
+    top: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92%, 620px);
+    z-index: 9999;
+}
+
+.career-form-popup-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 22px 55px rgba(15, 23, 42, .18);
+}
+
+.career-form-popup.success .career-form-popup-card {
+    border-color: #bbf7d0;
+}
+
+.career-form-popup.error .career-form-popup-card {
+    border-color: #fecaca;
+}
+
+.career-form-popup-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 16px;
-    background: rgba(0, 51, 102, 0.08);
-    color: #003366;
-    font-size: 1.1rem;
-    margin-bottom: 14px;
+    flex-shrink: 0;
 }
 
-.role-strip-card h4 {
+.career-form-popup.success .career-form-popup-icon {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.career-form-popup.error .career-form-popup-icon {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.career-form-popup-content {
+    flex: 1;
+}
+
+.career-form-popup-content h3 {
     font-size: 18px;
-    margin-bottom: 8px;
+    margin: 0 0 4px;
+    color: #0f172a;
 }
 
-.role-strip-card p {
+.career-form-popup-content p {
+    margin: 0;
     color: #475569;
-    margin-bottom: 0;
-    font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
-.application-note {
+.career-form-popup-close {
+    border: 0;
+    background: transparent;
+    color: #64748b;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.career-form-card .skill-row,
+.career-form-card .ai-tool-row {
+    align-items: center;
+}
+
+.career-form-card .btn-outline-danger {
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+}
+
+.career-form-card .add-skill-btn,
+.career-form-card .add-ai-tool-btn {
+    border: 1px dashed #036;
+    border-radius: 8px;
+    color: #036;
+    background: rgba(0, 51, 102, .04);
+    font-weight: 700;
+    padding: 9px 16px;
+}
+
+.career-form-card .add-skill-btn:hover,
+.career-form-card .add-ai-tool-btn:hover {
+    border-color: #036;
+    color: #fff !important;
+    background: #036;
+}
+
+.career-form-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 18px;
-    padding: 18px 20px;
-    border-radius: 20px;
-    background: rgba(0, 51, 102, 0.06);
-    border: 1px solid rgba(0, 51, 102, 0.08);
-    color: #334155;
-    line-height: 1.7;
 }
 
-@media (max-width: 1199.98px) {
-    .role-strip-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+.career-submit-btn {
+    background: #036;
+    border: 1px solid #036;
+    color: #fff;
+    border-radius: 8px;
+    min-height: 48px;
+    padding: 12px 24px;
+    font-weight: 700;
+}
+
+.career-submit-btn:hover {
+    background: #036;
+    color: #fff;
+}
+
+.career-back-link {
+    color: #162033;
+    border: 1px solid #d9e1ec;
+    border-radius: 8px;
+    min-height: 48px;
+    padding: 12px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background: #fff;
+}
+
+.career-back-link:hover {
+    color: #003366;
+    border-color: #003366;
+    background: rgb(0 51 102 / 12%);
 }
 
 @media (max-width: 991.98px) {
-    .job-application-hero {
-        padding-top: 78px;
+    .career-apply-shell {
+        grid-template-columns: 1fr;
     }
 
-    .application-form-wrap,
-    .job-application-card {
-        border-radius: 24px;
+    .career-apply-panel {
+        position: static;
     }
 }
 
 @media (max-width: 767.98px) {
-    .job-application-hero .hero-copy p {
-        font-size: 15px;
+    .career-apply-hero {
+        min-height: 360px;
     }
 
-    .job-application-card,
-    .application-form-wrap {
-        padding: 22px;
+    .career-apply-hero h1 {
+        font-size: 36px;
     }
 
-    .application-form-wrap h2 {
-        font-size: 26px;
+    .career-apply-section {
+        padding: 45px 0;
     }
 
-    .application-form .form-grid,
-    .role-strip-grid {
-        grid-template-columns: 1fr;
+    .career-form-card {
+        padding: 24px 18px;
     }
 
-    .application-form .file-row {
+    .career-form-card .skill-row,
+    .career-form-card .ai-tool-row {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .application-form .file-row .file-label {
-        width: 100%;
+    .career-form-card .remove-skill-btn,
+    .career-form-card .remove-ai-tool-btn {
+        width: 100% !important;
     }
 }
 </style>
 
-<section class="page-banner9 job-application-banner">
-    <div class="staff-text">Jobs</div>
-    <div class="container">
-        <div class="page-content">
-            <h1 class="title">Job Application /</h1>
+<?php if ($formNotice): ?>
+<div class="career-form-popup <?php echo jobApplicationValue($formNotice['status']); ?>" id="jobApplicationPopup"
+    role="alert" aria-live="assertive">
+    <div class="career-form-popup-card">
+        <div class="career-form-popup-icon">
+            <i class="fa <?php echo $formNotice['status'] === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation'; ?>"></i>
         </div>
+        <div class="career-form-popup-content">
+            <h3><?php echo jobApplicationValue($formNotice['title']); ?></h3>
+            <p><?php echo jobApplicationValue($formNotice['message']); ?></p>
+        </div>
+        <button type="button" class="career-form-popup-close" aria-label="Close popup"
+            onclick="document.getElementById('jobApplicationPopup').style.display='none'">&times;</button>
     </div>
-   
-</section>
+</div>
+<?php endif; ?>
 
-<section class="job-application-hero">
+<section class="career-apply-hero">
     <div class="container">
-        <div class="sec-title">
-            <span class="sub-title">apply now</span>
-            <h2 class="title animated-heading">Send your application to join the Technofra team</h2>
-        </div>
-        <div class="hero-copy">
-            <p>
-                This page is designed as a clean frontend application flow. You can select the role you want,
-                share your background, upload your resume, and submit the form once the backend is connected.
-            </p>
-            <div class="job-application-badges">
-                <span><i class="fa fa-check-circle"></i>Frontend only</span>
-                <span><i class="fa fa-check-circle"></i>Resume upload ready</span>
-                <span><i class="fa fa-check-circle"></i>Responsive layout</span>
+        <div class="row">
+            <div class="col-lg-8 pt-5">
+                <span class="span">Careers at Technofra</span>
+                <h1>Job Application Form</h1>
+                <p>Share your details, skills, AI tool experience, resume, and portfolio. Our hiring team will review
+                    your application and connect with you for the next steps.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="role-strip">
+<section class="career-apply-section">
     <div class="container">
-        <div class="role-strip-grid">
-            <article class="role-strip-card">
-                <div class="role-icon"><i class="fa fa-code"></i></div>
-                <h4>Website Developer</h4>
-                <p>Modern responsive websites, landing pages, and performance-focused frontends.</p>
-            </article>
-            <article class="role-strip-card">
-                <div class="role-icon"><i class="fa fa-paint-brush"></i></div>
-                <h4>Graphic Designer</h4>
-                <p>Brand visuals, marketing creatives, banners, and layout systems for digital content.</p>
-            </article>
-            <article class="role-strip-card">
-                <div class="role-icon"><i class="fa fa-bullhorn"></i></div>
-                <h4>Social Media Marketing</h4>
-                <p>Content planning, campaign management, copywriting, and engagement growth.</p>
-            </article>
-            <article class="role-strip-card">
-                <div class="role-icon"><i class="fa fa-mobile"></i></div>
-                <h4>App Developer</h4>
-                <p>Mobile app interfaces, API integration, and smooth user experiences across devices.</p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="ibt-section-gap">
-    <div class="container">
-        <div class="row g-4 align-items-start">
-            <div class="col-lg-5">
-                <div class="job-application-card">
-                    <span class="card-eyebrow">Role snapshot</span>
-                    <h3>What we are looking for</h3>
-                    <p>
-                        The form is structured to collect the same kind of candidate details that typically appear
-                        in a modern job application flow.
-                    </p>
-                    <ul class="job-summary-list">
-                        <li>
-                            <i class="fa fa-check"></i>
-                            <div>
-                                <strong>Experience</strong>
-                                <span>1 to 2+ years preferred, depending on the role and portfolio.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa fa-check"></i>
-                            <div>
-                                <strong>Core skills</strong>
-                                <span>HTML, CSS, JavaScript, design tools, marketing tools, or app tech stacks.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa fa-check"></i>
-                            <div>
-                                <strong>AI tools</strong>
-                                <span>Prompt-based tools, assistants, and productivity workflows are welcomed.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa fa-check"></i>
-                            <div>
-                                <strong>Resume</strong>
-                                <span>Upload a PDF or DOC file and include links to your portfolio or work samples.</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="application-note">
-                        <strong>Note:</strong> This is a frontend-only page. The submit button is intentionally
-                        non-functional until backend handling is added.
-                    </div>
+        <div class="career-apply-shell">
+            <aside class="career-apply-panel">
+                <div class="about-company-subtitle">
+                    <span>Apply Now</span>
+                    <img src="assets/image/arrow-red.png" alt="Apply Now">
                 </div>
-            </div>
+                <h2>Build your next chapter with us.</h2>
+                <p>Complete the application form carefully. Fields marked with an asterisk are required.</p>
+                <ul>
+                    <li><i class="fa fa-check"></i><span>Attach your latest resume or portfolio in PDF/DOCX format.</span></li>
+                    <li><i class="fa fa-check"></i><span>Add your top skills with proficiency percentage.</span></li>
+                    <li><i class="fa fa-check"></i><span>Mention AI tools you use in your daily workflow.</span></li>
+                </ul>
+            </aside>
 
-            <div class="col-lg-7">
-                <div class="application-form-wrap">
-                    <div class="sec-title">
-                        <span class="sub-title">application form</span>
-                        <h2 class="title animated-heading">Share your details</h2>
-                        <p>Fill the form below with your basic information and the role you want to apply for.</p>
-                    </div>
+            <div class="career-form-card" id="job-application-form">
+                <form action="jobapplication-handler.php" method="post" enctype="multipart/form-data"
+                    class="career-application-form">
+                    <div class="row">
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label for="name" class="form-label">Full Name<span class="required-mark">*</span></label>
+                            <input type="text" class="form-control ca-two-border" name="fname" id="name"
+                                value="<?php echo jobApplicationValue($formData['fname'] ?? ''); ?>" required>
+                        </div>
 
-                    <form class="application-form" action="#" method="post" enctype="multipart/form-data">
-                        <div class="form-grid">
-                            <div>
-                                <label for="full_name">Full Name</label>
-                                <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
-                            </div>
-                            <div>
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                            </div>
-                            <div>
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                            </div>
-                            <div>
-                                <label for="role">Applied For</label>
-                                <select id="role" name="role" required>
-                                    <option value="">Select role</option>
-                                    <option>Website Developer</option>
-                                    <option>Graphic Designer</option>
-                                    <option>Social Media Marketing Executive</option>
-                                    <option>App Developer</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="experience">Experience</label>
-                                <select id="experience" name="experience" required>
-                                    <option value="">Select experience</option>
-                                    <option>Fresher</option>
-                                    <option>1 Year</option>
-                                    <option>2 Years</option>
-                                    <option>3+ Years</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="city">Current City</label>
-                                <input type="text" id="city" name="city" placeholder="Enter your city">
-                            </div>
-                            <div class="field-full">
-                                <label for="skills">Key Skills</label>
-                                <input type="text" id="skills" name="skills" placeholder="Example: HTML, CSS, JavaScript, Figma, Meta Ads">
-                                <div class="hint-text">You can separate skills with commas so they are easy to scan later.</div>
-                            </div>
-                            <div class="field-full">
-                                <label for="ai_tools">AI Tools Used</label>
-                                <input type="text" id="ai_tools" name="ai_tools" placeholder="Example: ChatGPT, Canva AI, Copilot, Midjourney">
-                            </div>
-                            <div class="field-full">
-                                <label for="portfolio">Portfolio / LinkedIn</label>
-                                <input type="url" id="portfolio" name="portfolio" placeholder="Paste your portfolio or LinkedIn link">
-                            </div>
-                            <div class="field-full">
-                                <label for="resume">Upload Resume</label>
-                                <div class="file-row">
-                                    <label class="file-label" for="resume">Choose file</label>
-                                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-                                </div>
-                                <div class="hint-text">Accepted formats: PDF, DOC, DOCX.</div>
-                            </div>
-                            <div class="field-full">
-                                <label for="message">Cover Note</label>
-                                <textarea id="message" name="message" placeholder="Tell us a little about your background, interests, and why you want to join Technofra."></textarea>
-                            </div>
-                            <div class="field-full">
-                                <div class="terms-row">
-                                    <input type="checkbox" id="consent" name="consent" required>
-                                    <label for="consent" style="margin:0;font-weight:400;">
-                                        <span>I confirm that the information provided above is correct and I am okay with the team contacting me for this application.</span>
-                                    </label>
-                                </div>
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label for="email" class="form-label">Email ID<span class="required-mark">*</span></label>
+                            <input type="email" class="form-control ca-two-border" name="email" id="email"
+                                value="<?php echo jobApplicationValue($formData['email'] ?? ''); ?>" required>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label for="phone" class="form-label">Contact Details<span class="required-mark">*</span></label>
+                            <input type="tel" class="form-control ca-two-border" name="contact" id="phone"
+                                value="<?php echo jobApplicationValue($formData['contact'] ?? ''); ?>" required>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label for="role" class="form-label">Select Job Roles<span class="required-mark">*</span></label>
+                            <select name="role" id="role" class="form-control ca-two-border" required>
+                                <option value="" disabled <?php echo (($formData['role'] ?? $selectedRole) === '') ? 'selected' : ''; ?>>Select roles</option>
+                                <?php foreach ($roles as $role) : ?>
+                                    <option value="<?php echo jobApplicationValue($role); ?>" <?php echo (($formData['role'] ?? $selectedRole) === $role) ? 'selected' : ''; ?>>
+                                        <?php echo jobApplicationValue($role); ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12 mb-3 text-start">
+                            <label class="form-label">Applicant Type<span class="required-mark">*</span></label>
+                            <?php $applicantType = $formData['applicant_type'] ?? ''; ?>
+                            <div class="career-applicant-type">
+                                <label class="career-applicant-option">
+                                    <input type="radio" name="applicant_type" value="Fresher" <?php echo $applicantType === 'Fresher' ? 'checked' : ''; ?> required>
+                                    Fresher
+                                </label>
+                                <label class="career-applicant-option">
+                                    <input type="radio" name="applicant_type" value="Experience" <?php echo $applicantType === 'Experience' ? 'checked' : ''; ?> required>
+                                    Experience
+                                </label>
                             </div>
                         </div>
 
-                        <div class="form-actions">
-                            <button type="submit" class="ibt-btn ibt-btn-outline">
-                                <span>Submit Application</span>
-                                <i class="icon-arrow-top"></i>
+                        <div class="col-lg-6 mb-3 text-start career-conditional-field" data-experience-field>
+                            <label class="form-label">Years Of Experience</label>
+                            <input type="text" class="form-control ca-two-border" name="experience"
+                                value="<?php echo jobApplicationValue($formData['experience'] ?? ''); ?>">
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start career-conditional-field" data-experience-field>
+                            <label class="form-label">Current CTC</label>
+                            <input type="text" class="form-control ca-two-border" name="ctc"
+                                value="<?php echo jobApplicationValue($formData['ctc'] ?? ''); ?>">
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label class="form-label">Expected CTC</label>
+                            <input type="text" class="form-control ca-two-border" name="ectc"
+                                value="<?php echo jobApplicationValue($formData['ectc'] ?? ''); ?>">
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label class="form-label">Location<span class="required-mark">*</span></label>
+                            <input type="text" class="form-control ca-two-border" name="location"
+                                value="<?php echo jobApplicationValue($formData['location'] ?? ''); ?>" required>
+                        </div>
+
+                        <div class="col-lg-12 mb-3 text-start">
+                            <label class="form-label">Skills<span class="required-mark">*</span></label>
+                            <p class="text-muted small mb-2">Add your skills and proficiency level for each</p>
+                            <div class="skills-container">
+                                <?php foreach ($skillRows as $index => $skillRow): ?>
+                                <div class="skill-row d-flex gap-2 mb-2">
+                                    <input type="text" class="form-control ca-two-border" name="skill_name[]"
+                                        placeholder="Skill Name"
+                                        value="<?php echo jobApplicationValue($skillRow['name'] ?? ''); ?>" required
+                                        style="flex: 2;">
+                                    <input type="number" class="form-control ca-two-border" name="skill_percentage[]"
+                                        placeholder="% (e.g., 90)" min="0" max="100"
+                                        value="<?php echo jobApplicationValue($skillRow['percentage'] ?? ''); ?>"
+                                        required style="flex: 1;">
+                                    <button type="button" class="btn btn-outline-danger remove-skill-btn"
+                                        style="width: 48px;" title="Remove">x</button>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <button type="button" class="btn bt btn-outline-secondary btn-sm mt-2 add-skill-btn">
+                                + Add Another Skill
                             </button>
-                            <a href="career.php" class="ibt-btn" style="background:#003366;color:#fff;">
-                                <span>View Open Roles</span>
-                            </a>
+                            <input type="hidden" name="skills_combined" class="skills-combined">
                         </div>
-                    </form>
-                </div>
+
+                        <div class="col-lg-12 mb-3 text-start">
+                            <label class="form-label">AI Tools<span class="required-mark">*</span></label>
+                            <p class="text-muted small mb-2">Add AI tools you use and your proficiency level for each</p>
+                            <div class="ai-tools-container">
+                                <?php foreach ($aiToolRows as $aiToolRow): ?>
+                                <div class="ai-tool-row d-flex gap-2 mb-2">
+                                    <input type="text" class="form-control ca-two-border" name="ai_tool_name[]"
+                                        placeholder="AI Tool Name"
+                                        value="<?php echo jobApplicationValue($aiToolRow['name'] ?? ''); ?>" required
+                                        style="flex: 2;">
+                                    <select class="form-control ca-two-border" name="ai_tool_level[]" required
+                                        style="flex: 1;">
+                                        <option value="">Select Level</option>
+                                        <?php foreach (['Basic', 'Intermediate', 'Advanced', 'Expert'] as $level): ?>
+                                        <option value="<?php echo jobApplicationValue($level); ?>" <?php echo (($aiToolRow['level'] ?? '') === $level) ? 'selected' : ''; ?>>
+                                            <?php echo jobApplicationValue($level); ?>
+                                        </option>
+                                        <?php endforeach; ?>
+                                    </select>
+                                    <button type="button" class="btn btn-outline-danger remove-ai-tool-btn"
+                                        style="width: 48px;" title="Remove">x</button>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <button type="button" class="btn bt btn-outline-secondary btn-sm mt-2 add-ai-tool-btn">
+                                + Add Another AI Tool
+                            </button>
+                            <input type="hidden" name="ai_tools_combined" class="ai-tools-combined">
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label class="form-label">Notice Period<span class="required-mark">*</span></label>
+                            <input type="text" class="form-control ca-two-border" name="notice"
+                                value="<?php echo jobApplicationValue($formData['notice'] ?? ''); ?>" required>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label class="form-label">Referrer Name</label>
+                            <input type="text" class="form-control ca-two-border" name="rn"
+                                value="<?php echo jobApplicationValue($formData['rn'] ?? ''); ?>">
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label class="form-label">How did you hear about this job opening?<span class="required-mark">*</span></label>
+                            <select name="refrence" class="form-control ca-two-border" required>
+                                <?php foreach (['Please Select', 'Received a call from Technofra HR', 'Facebook', 'Instagram', 'LinkedIn', 'Google', 'Referred by a Friend', 'Other'] as $referenceOption): ?>
+                                <option value="<?php echo jobApplicationValue($referenceOption); ?>" <?php echo (($formData['refrence'] ?? '') === $referenceOption) ? 'selected' : ''; ?>>
+                                    <?php echo jobApplicationValue($referenceOption); ?>
+                                </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label for="file" class="form-label">Resume / Portfolio (.pdf/.docx only)<span class="required-mark">*</span></label>
+                            <input type="file" class="form-control ca-two-border" id="file" name="file"
+                                accept=".pdf,.doc,.docx" required>
+                        </div>
+
+                        <div class="col-lg-6 mb-3 text-start">
+                            <label class="form-label">Portfolio Link (if any)</label>
+                            <input type="text" class="form-control ca-two-border" name="link"
+                                value="<?php echo jobApplicationValue($formData['link'] ?? ''); ?>">
+                        </div>
+
+                        <input type="text" name="hidden_field" style="display:none;" tabindex="-1">
+
+                        <div class="col-12 mb-2">
+                            <div class="g-recaptcha" data-sitekey="6LekpbEqAAAAANkc3FduPE52-p4Wqu5ghQFXjPhF"></div>
+                        </div>
+
+                        <div class="col-12 career-form-actions">
+                            <button type="submit" class="career-submit-btn">Submit Application</button>
+                            <a href="career.php" class="career-back-link">Back to Careers</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function createRow(type) {
+        const row = document.createElement('div');
+
+        if (type === 'skill') {
+            row.className = 'skill-row d-flex gap-2 mb-2';
+            row.innerHTML =
+                '<input type="text" class="form-control ca-two-border" name="skill_name[]" placeholder="Skill Name" required style="flex: 2;">' +
+                '<input type="number" class="form-control ca-two-border" name="skill_percentage[]" placeholder="% (e.g., 90)" min="0" max="100" required style="flex: 1;">' +
+                '<button type="button" class="btn btn-outline-danger remove-skill-btn" style="width: 48px;" title="Remove">x</button>';
+            return row;
+        }
+
+        row.className = 'ai-tool-row d-flex gap-2 mb-2';
+        row.innerHTML =
+            '<input type="text" class="form-control ca-two-border" name="ai_tool_name[]" placeholder="AI Tool Name" required style="flex: 2;">' +
+            '<select class="form-control ca-two-border" name="ai_tool_level[]" required style="flex: 1;">' +
+            '<option value="">Select Level</option>' +
+            '<option value="Basic">Basic</option>' +
+            '<option value="Intermediate">Intermediate</option>' +
+            '<option value="Advanced">Advanced</option>' +
+            '<option value="Expert">Expert</option>' +
+            '</select>' +
+            '<button type="button" class="btn btn-outline-danger remove-ai-tool-btn" style="width: 48px;" title="Remove">x</button>';
+        return row;
+    }
+
+    function initializeForm(form) {
+        const skillsContainer = form.querySelector('.skills-container');
+        const aiToolsContainer = form.querySelector('.ai-tools-container');
+        const addSkillBtn = form.querySelector('.add-skill-btn');
+        const addAiToolBtn = form.querySelector('.add-ai-tool-btn');
+        const skillsCombinedInput = form.querySelector('.skills-combined');
+        const aiToolsCombinedInput = form.querySelector('.ai-tools-combined');
+        const applicantTypeInputs = form.querySelectorAll('input[name="applicant_type"]');
+        const experienceFields = form.querySelectorAll('[data-experience-field]');
+
+        function toggleExperienceFields() {
+            const selectedType = form.querySelector('input[name="applicant_type"]:checked');
+            const shouldHide = selectedType && selectedType.value === 'Fresher';
+
+            experienceFields.forEach(function(field) {
+                field.classList.toggle('is-hidden', shouldHide);
+            });
+        }
+
+        applicantTypeInputs.forEach(function(input) {
+            input.addEventListener('change', toggleExperienceFields);
+        });
+
+        toggleExperienceFields();
+
+        if (addSkillBtn && skillsContainer) {
+            addSkillBtn.addEventListener('click', function() {
+                skillsContainer.appendChild(createRow('skill'));
+            });
+        }
+
+        if (addAiToolBtn && aiToolsContainer) {
+            addAiToolBtn.addEventListener('click', function() {
+                aiToolsContainer.appendChild(createRow('ai-tool'));
+            });
+        }
+
+        form.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-skill-btn') && skillsContainer) {
+                const rows = skillsContainer.querySelectorAll('.skill-row');
+
+                if (rows.length > 1) {
+                    e.target.closest('.skill-row').remove();
+                } else if (rows[0]) {
+                    rows[0].querySelectorAll('input, select').forEach(function(field) {
+                        field.value = '';
+                    });
+                }
+            }
+
+            if (e.target.classList.contains('remove-ai-tool-btn') && aiToolsContainer) {
+                const rows = aiToolsContainer.querySelectorAll('.ai-tool-row');
+
+                if (rows.length > 1) {
+                    e.target.closest('.ai-tool-row').remove();
+                } else if (rows[0]) {
+                    rows[0].querySelectorAll('input, select').forEach(function(field) {
+                        field.value = '';
+                    });
+                }
+            }
+        });
+
+        form.addEventListener('submit', function() {
+            const skillNames = form.querySelectorAll('input[name="skill_name[]"]');
+            const skillPercentages = form.querySelectorAll('input[name="skill_percentage[]"]');
+            const aiToolNames = form.querySelectorAll('input[name="ai_tool_name[]"]');
+            const aiToolLevels = form.querySelectorAll('select[name="ai_tool_level[]"]');
+            const skillsArray = [];
+            const aiToolsArray = [];
+
+            skillNames.forEach(function(input, index) {
+                const percentageInput = skillPercentages[index];
+
+                if (input.value && percentageInput && percentageInput.value) {
+                    skillsArray.push(input.value + ' (' + percentageInput.value + '%)');
+                }
+            });
+
+            aiToolNames.forEach(function(input, index) {
+                const levelInput = aiToolLevels[index];
+
+                if (input.value && levelInput && levelInput.value) {
+                    aiToolsArray.push(input.value + ' - ' + levelInput.value);
+                }
+            });
+
+            if (skillsCombinedInput) {
+                skillsCombinedInput.value = skillsArray.join(', ');
+            }
+
+            if (aiToolsCombinedInput) {
+                aiToolsCombinedInput.value = aiToolsArray.join(', ');
+            }
+        });
+    }
+
+    document.querySelectorAll('.career-application-form').forEach(function(form) {
+        initializeForm(form);
+    });
+});
+</script>
+<script>
+const jobApplicationPopup = document.getElementById('jobApplicationPopup');
+if (jobApplicationPopup) {
+    setTimeout(function() {
+        jobApplicationPopup.style.display = 'none';
+    }, 6000);
+}
+</script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
