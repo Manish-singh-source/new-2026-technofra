@@ -4,12 +4,12 @@ $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 include __DIR__ . '/header.php'; ?>
 <style>
-.creative-banner-sec {
-    position: relative;
-    overflow: hidden;
-    padding: 78px 0;
-    background: linear-gradient(90deg, rgba(5, 12, 18, 0.92) 0%, rgb(8 22 31 / 17%) 34%, rgba(12, 44, 57, 0.58) 100%), radial-gradient(circle at 68% 26%, rgba(255, 244, 214, 0.28), transparent 26%), url(./assets/images/new/bannerhome.png) center center / cover no-repeat fixed;
-}
+    .creative-banner-sec {
+        position: relative;
+        overflow: hidden;
+        padding: 78px 0;
+        background: linear-gradient(90deg, rgba(5, 12, 18, 0.92) 0%, rgb(8 22 31 / 17%) 34%, rgba(12, 44, 57, 0.58) 100%), radial-gradient(circle at 68% 26%, rgba(255, 244, 214, 0.28), transparent 26%), url(./assets/images/new/bannerhome.png) center center / cover no-repeat fixed;
+    }
 
     .creative-banner-sec::before {
         content: '';
@@ -25,7 +25,7 @@ include __DIR__ . '/header.php'; ?>
     .creative-banner-wrap {
         position: relative;
         z-index: 1;
-        min-height: 500px;
+        min-height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -114,10 +114,12 @@ include __DIR__ . '/header.php'; ?>
             padding: 60px 0;
             background-attachment: scroll;
         }
+
         .creative-banner-top {
-    display: flex;
-    justify-content: center;
-}
+            display: flex;
+            justify-content: center;
+        }
+
         .creative-banner-wrap {
             min-height: auto;
             gap: 40px;
@@ -166,6 +168,25 @@ include __DIR__ . '/header.php'; ?>
             font-size: 16px;
             line-height: 1.5;
         }
+
+        .mobile-view-off {
+            display: none;
+        }
+
+        .feature-sec7,
+        .industries-sec {
+            padding-top: 40px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .ser-card3 .ser-content {
+            top: 40px;
+        }
+
+        .calendar-head {
+            flex-direction: column-reverse;
+        }
     }
 </style>
 
@@ -177,32 +198,6 @@ include __DIR__ . '/header.php'; ?>
         </video>
         <div class="hero-overlay4"></div>
     </div>
-    <div class="container2">
-        <div class="hero-info4">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-lg-8">
-                    <!-- <div class="hero-content4">
-                                <h1 class="title">Elevate engagement with our <span>Intelligent Chatbot</span> Service
-                                </h1>
-                                <form action="#" method="post" class="hero-form">
-                                    <div class="input-box">
-                                        <input type="text" placeholder="" required>
-                                        <label>Enter your email</label>
-                                    </div>
-                                    <button class="ibt-btn ibt-btn-dark">
-                                        <span>Sign up</span>
-                                        <i class="icon-arrow-top"></i>
-                                    </button>
-                                </form>
-                                <ul class="required-list">
-                                    <li><i class="fontello icon-check-circle"></i>Free 14-day trial</li>
-                                    <li><i class="fontello icon-check-circle"></i>No credit card required</li>
-                                </ul> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 </section>
 <!-- End hero-style4 -->
 
@@ -211,23 +206,19 @@ include __DIR__ . '/header.php'; ?>
     <div class="container2">
         <div class="service-content3">
             <div class="ser-card3">
-                <img src="assets/images/new/web.png" alt="AI Agency & Technology HTML Template">
+                <img src="assets/images/new/web.png" alt="Professional Web Development for Your Business Growth">
                 <div class="ser-content3">
                     <h4 class="title">Professional Web Development for Your Business Growth</h4>
                     <a class='ser-btn3' href='web-design-and-development.php' title>Explore more</a>
                 </div>
-                <div class="ser-text">
-                    <a href="#" title="">AI Solutions</a>
-                    <a href="#" title="">AI Services</a>
-                </div>
-                <a href="#" class="ser-btn">
+                <a href="javascript::void(0)" class="ser-btn">
                     <i class="icon fontello icon-button-arrow"></i>
                     <i class="icon2 fontello icon-button-arrow"></i>
                 </a>
             </div>
             <div class="ser-card3 v2">
-                <img src="assets/images/new/app.png" alt="AI Agency & Technology HTML Template">
-                <a href="#" class="view-btn">
+                <img src="assets/images/new/app.png" alt="Custom App Development for Smooth Business Operations">
+                <a href="javascript::void(0)" class="view-btn">
                     <i class="icon fontello icon-button-arrow"></i>
                     <i class="icon2 fontello icon-button-arrow"></i>
                 </a>
@@ -244,20 +235,16 @@ include __DIR__ . '/header.php'; ?>
                         <span class="user">app users </span>
                     </div>
                 </div>
-                <a href="#" class="ser-btn">
-                    <i class="icon fontello icon-button-arrow"></i>
-                    <i class="icon2 fontello icon-button-arrow"></i>
-                </a>
             </div>
             <div class="ser-card3 v1">
-                <img src="assets/images/new/support.png" alt="AI Agency & Technology HTML Template">
+                <img src="assets/images/new/support.png" alt="Technical support for the entire service life">
                 <div class="ser-content">
                     <h4 class="title">Technical support for
                         the entire service life
                     </h4>
                     <p>Instant assistance for all your queries. Experience seamless service with our AI-powered
                         support</p>
-                    <img src="assets/images/icon/phone2.svg" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/icon/phone2.svg" alt="Technical support for the entire service life">
                 </div>
             </div>
         </div>
@@ -277,22 +264,21 @@ include __DIR__ . '/header.php'; ?>
             <div class="col-lg-6">
                 <div class="service-box7">
                     <div class="social-link3">
-                        <img src="assets/images/new/b1.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b1.png" alt="Blue Orbith">
                         <a href="https://blueorbith.com/" target="_blank" rel="noopener noreferrer"><span>Blue Orbith</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b2.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b2.png" alt="Grid Infinity">
                         <a href="https://gridinfinity.com/" target="_blank" rel="noopener noreferrer"><span>Grid Infinity</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b3.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b3.png" alt="Mark Idenititiz">
                         <a href="https://markidentitiez.com/" target="_blank" rel="noopener noreferrer"><span>Mark Idenititiz</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b4.png" alt="AI Agency & Technology HTML Template">
+                        <img src="assets/images/new/b4.png" alt="Digi Kcon">
                         <a href="https://digikcon.com/" target="_blank" rel="noopener noreferrer"><span>Digi Kcon</span></a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -310,7 +296,7 @@ include __DIR__ . '/header.php'; ?>
                         <span class="sub-title"><span class="sub-text" style="overflow: hidden; display: inline-block; width: 142px;">Services We Provide</span></span>
                         <h2 class="title animated-heading">Services We Provide</h2>
                         <p>We build digital products and growth systems for companies that want stronger online presence, better performance, and measurable results.</p>
-                        <a class="ibt-btn ibt-btn-outline explore-web-btn" href="web-design-and-development.php" title="">
+                        <a class="ibt-btn ibt-btn-outline" href="web-design-and-development.php" title="">
                             <span>Explore more</span>
                             <i class="icon-arrow-top"></i>
                         </a>
@@ -331,7 +317,9 @@ include __DIR__ . '/header.php'; ?>
                             <i class="fa-solid fa-code" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="web-design-and-development.php" >Web</a>/<a href="/android-app-development.php" title="Android App Development">App</a> development</h4>
+                            <h4 class="title">
+                                <a href="web-design-and-development.php">Web</a>/<a href="/android-app-development.php" title="Android App Development">App</a> development
+                            </h4>
                             <p>Responsive websites, web apps, and mobile-ready experiences built for speed and usability.
                             </p>
                         </div>
@@ -351,7 +339,7 @@ include __DIR__ . '/header.php'; ?>
                             <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
                         </div>
                         <div class="feature-content7">
-                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank" >Branding</a></h4>
+                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank">Branding</a></h4>
                             <p>Logo systems, visual identity, and messaging that make your business memorable.
                             </p>
                         </div>
@@ -384,10 +372,6 @@ include __DIR__ . '/header.php'; ?>
                         <h2 class="title">Trusted by 500+ clients worldwide from diverse industries.</h2>
                         <p>We partner with startups, SMEs, and enterprises across the globe, delivering innovative
                             IT solutions that drive growth, efficiency, and long-term success.</p>
-                        <a class="ibt-btn ibt-btn-outline" href="contact.php" title="">
-                            <span>View all clients</span>
-                            <i class="icon-arrow-top"></i>
-                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -400,16 +384,16 @@ include __DIR__ . '/header.php'; ?>
                             <span class="label">Happy Clients Worldwide</span>
                         </div>
                         <div class="client-trust-grid1">
-                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="Frago Matric" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="Life Like" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="Sanjay Agencies" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="Urbon Sports" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="Aeritx" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="ChemPharma" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="Indore" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="Global Ocean Beyond Logistics" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="VLegends" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="Aspirias" srcset=""></div>
                         </div>
                         <div class="client-trust-note1">
                             <i class="fontello icon-check-circle"></i>
@@ -423,18 +407,6 @@ include __DIR__ . '/header.php'; ?>
 </section>
 <!-- End client-trust-style -->
 
-<!-- marquee-sec -->
-<!-- <section class="marquee-sec">
-    <h2 style="display:none;">Marquee Section</h2>
-    <div class="marquee">
-        <div class="marquee-inner">
-            <span>/ Technofra builds websites, apps, and digital growth.</span>
-            <span>/ Technofra builds websites, apps, and digital growth.</span>
-        </div>
-    </div>
-</section> -->
-<!-- End marquee-sec -->
-
 <!-- creative-banner-sec -->
 <section class="creative-banner-sec">
     <div class="container">
@@ -446,7 +418,7 @@ include __DIR__ . '/header.php'; ?>
                 <div class="creative-banner-copy">
                     <h2 class="creative-banner-title">Your End-to-End Digital &<br>Branding Partner For Business Growth</h2>
                     <div class="creative-banner-actions">
-                        <a class="creative-banner-btn" href="contact.html">Book A Call Now <i class="icon-arrow-top"></i></a>
+                        <a class="creative-banner-btn" href="contact.php">Book A Call Now <i class="icon-arrow-top"></i></a>
                         <span class="creative-banner-time">[ Tailored Web, App & Marketing Solutions ]</span>
                     </div>
                 </div>
@@ -457,65 +429,6 @@ include __DIR__ . '/header.php'; ?>
 </section>
 <!-- End creative-banner-sec -->
 
-
-
-
-
-<!-- feature-style4 -->
-<!-- <section class="feature-style4 ibt-section-gap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="feature-img4">
-                    <img src="assets/images/new/why.png" alt="AI Agency & Technology HTML Template">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="feature-content4">
-                    <div class="sec-title">
-                        <span class="sub-title">features</span>
-                        <h2 class="title animated-heading">Why businesses choose Technofra
-                        </h2>
-                        <p class="para">Technofra builds digital experiences that are simple to use, easy to scale,
-                            and designed to support real business growth.
-                        </p>
-                        <p>From websites and apps to SEO and social media marketing, we keep the work focused on
-                            clarity, performance, and measurable results.
-                        </p>
-                    </div>
-                    <div class="app-features">
-                        <div class="feature-block4">
-                            <img src="assets/images/feature/feature4-1.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">Website & App Development</h4>
-                            <p>Responsive websites and app-ready interfaces built for speed, usability, and
-                                a polished brand presence.
-                            </p>
-                        </div>
-                        <div class="feature-block4">
-                            <img src="assets/images/feature/feature4-2.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">E-Commerce Solutions</h4>
-                            <p>Online store experiences, product pages, and checkout flows designed to help
-                                visitors become paying customers.
-                            </p>
-                        </div>
-                        <div class="feature-block4 mb-0">
-                            <img src="assets/images/feature/feature4-3.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title">SEO & Digital Marketing</h4>
-                            <p>Search visibility, content, and social campaigns that help your business grow
-                                steadily with a clear strategy.
-                            </p>
-                        </div>
-                    </div>
-                    <a class='ibt-btn ibt-btn-outline' href='service.html' title>
-                        <span>Explore Services</span>
-                        <i class="icon-arrow-top"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- End feature-style4 -->
 <!-- booking-call-sec -->
 <style>
 .eep-status-alert{max-width:1180px;margin:24px auto 0;padding:14px 18px;border-radius:14px;font-size:15px;line-height:1.5}.eep-status-alert.success{background:#eaf8ef;border:1px solid #b8e2c3;color:#146c2e}.eep-status-alert.error{background:#fff1f1;border:1px solid #f0b9b9;color:#9c1d1d}.eep-calendar-day[disabled],.eep-time-option[disabled]{opacity:.35;cursor:not-allowed;pointer-events:none}.eep-time-option[disabled]{text-decoration:line-through}.eep-hero{padding-top:24px}.eep-container{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:32px;align-items:center}.eep-contact-wrap{width:100%}.eep-calendar-card{padding:32px;border-radius:28px;background:#fff;border:1px solid rgba(15,23,42,.08);box-shadow:0 24px 60px rgba(15,23,42,.08)}.eep-calendar-title-row{display:inline-flex;align-items:center;gap:14px}.eep-calendar-icon{font-size:38px;color:#003366}.eep-calendar-title{margin:0;font-size:34px;line-height:1.1}.eep-calendar-sub{margin:0;color:#475569;line-height:1.75}.eep-calendar-box{margin-top:22px;padding:22px;border-radius:24px;background:linear-gradient(180deg,#f7fbff 0%,#fff 100%);border:1px solid rgba(15,23,42,.06)}.eep-calendar-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.eep-cal-btn{width:42px;height:42px;border:0;border-radius:50%;background:#003366;color:#fff;font-size:22px}.eep-month-label{font-size:18px;font-weight:700;color:#0f172a}.eep-calendar-week,.eep-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}.eep-calendar-week{margin-bottom:12px}.eep-calendar-week span{font-size:12px;font-weight:700;color:#64748b;text-align:center;text-transform:uppercase}.eep-calendar-empty{height:46px}.eep-calendar-day{height:46px;border:1px solid rgba(15,23,42,.08);border-radius:14px;background:#fff;color:#0f172a;font-weight:700}.eep-calendar-day.eep-is-today{border-color:#003366}.eep-calendar-day.eep-is-selected{background:#003366;color:#fff}.eep-calendar-info{display:flex;gap:14px;align-items:center;margin-top:18px}.eep-selected-date,.eep-time-picker-wrap{flex:1}.eep-calendar-actions-inline{display:flex;align-items:center;justify-content:center}.eep-selected-date,.eep-time-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-radius:16px;border:1px solid rgba(15,23,42,.08);background:#fff;color:#0f172a}.eep-time-trigger.disabled{opacity:.55;cursor:not-allowed}.eep-pill-icon{color:#003366}.eep-time-picker-wrap{position:relative}.eep-time-dropdown{position:absolute;top:calc(100% + 10px);left:0;right:0;z-index:15;padding:14px;border-radius:18px;background:#fff;border:1px solid rgba(15,23,42,.08);box-shadow:0 20px 45px rgba(15,23,42,.14);display:none}.eep-time-dropdown.show{display:block}.eep-time-grid{display:grid;gap:10px;max-height:260px;overflow:auto}.eep-time-option{border:1px solid rgba(15,23,42,.08);border-radius:14px;background:#fff;color:#0f172a;padding:12px 14px;text-align:left;font-size:14px}.eep-time-option.active{background:#003366;color:#fff}.eep-timezone-note{margin-top:14px;font-size:13px;line-height:1.6;color:#475467}.eep-timezone-note strong,.eep-local-time-note strong{color:#12315f}.eep-local-time-note{margin-top:8px}.eep-btn-green{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;background:#16a34a;color:#fff;font-weight:700}.eep-btn-green:hover{color:#fff}.eep-right-inner{position:relative;min-height:520px;border-radius:34px;background:radial-gradient(circle at top left,rgba(0,51,102,.12),transparent 35%),linear-gradient(180deg,#eff6ff 0%,#fff 100%);overflow:hidden;border:1px solid rgba(15,23,42,.06)}.eep-circle,.eep-dot,.eep-center-circle{position:absolute;border-radius:50%}.eep-circle-1{width:420px;height:420px;border:1px solid rgba(0,51,102,.12);top:20px;right:-80px}.eep-circle-2{width:300px;height:300px;border:1px solid rgba(0,51,102,.14);top:80px;right:-20px}.eep-circle-3{width:180px;height:180px;border:1px solid rgba(0,51,102,.16);top:140px;right:40px}.eep-dot-1{width:16px;height:16px;background:#16a34a;top:90px;left:70px}.eep-dot-2{width:12px;height:12px;background:#003366;bottom:140px;left:120px}.eep-dot-3{width:14px;height:14px;background:#0ea5e9;top:180px;right:120px}.eep-center-circle{width:320px;height:320px;background:radial-gradient(circle,#dbeafe 0%,rgba(219,234,254,.18) 55%,transparent 75%);left:50%;top:50%;transform:translate(-50%,-50%)}.eep-person{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(82%,430px)}.eep-person img{display:block;width:100%;height:auto}.eep-book-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(7,15,43,.72)}.eep-book-modal.show{display:flex}.eep-book-modal-dialog{width:100%;max-width:520px;max-height:calc(100vh - 40px);background:#fff;border-radius:24px;box-shadow:0 24px 80px rgba(15,23,42,.24);overflow:hidden;display:flex;flex-direction:column}.eep-book-modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:24px 24px 12px}.eep-book-modal-head h3{margin:0 0 6px;font-size:28px;line-height:1.2;color:#101828}.eep-book-modal-head p{margin:0;color:#475467}.eep-book-close{border:0;width:40px;height:40px;border-radius:999px;background:#f3f4f6;color:#111827;font-size:28px;line-height:1}.eep-book-form{padding:0 24px 24px;overflow-y:auto}.eep-book-summary{padding:14px 16px;margin-bottom:18px;border-radius:16px;background:#f5f9ff;border:1px solid #dbe7ff;color:#12315f;font-size:14px}.eep-book-summary-line{margin-top:6px}.eep-book-field{margin-bottom:16px}.eep-book-field label{display:block;margin-bottom:8px;font-size:14px;font-weight:600;color:#111827}.eep-book-field input,.eep-book-field select,.eep-book-field textarea{width:100%;border:1px solid #d0d5dd;border-radius:14px;padding:0 16px;font-size:15px;color:#101828;outline:none;font-family:inherit}.eep-book-field input,.eep-book-field select{height:50px}.eep-book-field textarea{min-height:110px;padding:14px 16px;resize:vertical}.eep-phone-group{display:grid;grid-template-columns:170px minmax(0,1fr);gap:12px}.eep-book-submit{width:100%;border:0;border-radius:14px;background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;font-size:16px;font-weight:700;padding:14px 18px}@media (max-width:991px){.eep-container{grid-template-columns:1fr}.eep-right{order:-1}.eep-right-inner{min-height:420px}}@media (max-width:767px){.eep-calendar-info{display:grid}.eep-phone-group{grid-template-columns:1fr}.eep-calendar-card{padding:22px}.eep-right-inner{min-height:340px}.eep-book-modal{padding:12px;align-items:flex-start}.eep-book-modal-dialog{border-radius:18px;max-height:calc(100vh - 24px)}.eep-book-form{padding:0 20px 20px}}
@@ -637,6 +550,8 @@ include __DIR__ . '/header.php'; ?>
     </div>
 </div>
 <!-- End booking-call-sec -->
+
+
 <!-- testimonials-sec -->
 <section class="testimonials-sec">
     <div class="container2">
@@ -645,7 +560,7 @@ include __DIR__ . '/header.php'; ?>
                 <div class="swiper testi-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/images/icon/comas.svg" alt="AI Agency & Technology HTML Template">
+                            <img src="assets/images/icon/comas.svg" alt="">
                             <p>Technofra delivered a clean, modern website that matched our brand
                                 perfectly. The team was responsive, clear with communication, and
                                 focused on creating a smooth user experience from start to finish.
@@ -653,7 +568,7 @@ include __DIR__ . '/header.php'; ?>
                             <span>- Client Feedback</span>
                         </div>
                         <div class="swiper-slide">
-                            <img src="assets/images/icon/comas.svg" alt="AI Agency & Technology HTML Template">
+                            <img src="assets/images/icon/comas.svg" alt="">
                             <p>We saw a noticeable improvement in visibility after working with
                                 Technofra on our digital marketing strategy. Their approach was
                                 practical, measurable, and aligned with our business goals.
@@ -669,7 +584,7 @@ include __DIR__ . '/header.php'; ?>
             </div>
             <div class="col-lg-5">
                 <div class="testimonial-content">
-                    <img src="assets/images/new/testinonial.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/new/testinonial.png" alt="">
                     <div class="title-area2">
                         <div class="sec-title white">
                             <span class="sub-title">testimonials</span>
@@ -790,8 +705,6 @@ include __DIR__ . '/header.php'; ?>
                     </div>
                 </div>
             </div>
-            <div class="swiper-button-prev industries-prev"></div>
-            <div class="swiper-button-next industries-next"></div>
         </div>
     </div>
 </section>
@@ -801,9 +714,9 @@ include __DIR__ . '/header.php'; ?>
 <section class="faq-sec ibt-section-gap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 mobile-view-off">
                 <div class="faq-img">
-                    <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/new/elemets.png" alt="">
                 </div>
             </div>
             <div class="col-lg-8">
@@ -873,132 +786,8 @@ include __DIR__ . '/header.php'; ?>
 </section>
 <!-- End faq-sec -->
 
-<!-- End faq-sec -->
-
-<!-- blog-sec2 -->
-<!-- <section class="blog-sec2 ibt-section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="blog-image2">
-                            <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="blog-info2">
-                            <div class="title-area">
-                                <div class="row end">
-                                    <div class="col-lg-8 col-md-7">
-                                        <div class="sec-title mb-0">
-                                            <span class="sub-title">blog</span>
-                                            <h2 class="title animated-heading">See Our Latest Blog
-                                                &amp; News
-                                            </h2>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-5">
-                                        <div class="sec-btn-box">
-                                            <a class='ibt-btn ibt-btn-outline' href='https://technofra.com/blog/' title>
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-top"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-post">
-                                <div class="blog-card2">
-                                    <div class="blog-img2">
-                                        <a href='https://technofra.com/blog/10-common-seo-myths-that-are-killing-your-website-rankings-in2026/'><img src="assets/images/new/blog2.png" alt="10 Common SEO Myths That Are Killing Your Website Rankings in 2026"></a>
-                                    </div>
-                                    <div class="blog-content2">
-                                        <div class="blog-meta2">
-                                            <span class="sub-title">technofra / April 14, 2026</span>
-                                            <div class="blog-text2">
-                                                <a href="#" title="">SEO</a>
-                                                <a href="#" title="">Myths</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="title"><a href='https://technofra.com/blog/10-common-seo-myths-that-are-killing-your-website-rankings-in2026/'>10 Common SEO Myths That Are Killing Your Website Rankings in 2026?</a>
-                                        </h4>
-                                        <p>Common SEO misconceptions can hold back your website rankings. This post helps
-                                            you focus on the tactics that actually improve visibility.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="blog-card2 mb-0">
-                                    <div class="blog-img2">
-                                        <a href='https://technofra.com/blog/ai-driven-seo-social-media-marketing-the-next-growth-engine-for-brands-in-2026/'><img src="assets/images/new/blog1.png" alt="AI-Driven SEO & Social Media Marketing: The Next Growth Engine for Brands in 2026"></a>
-                                    </div>
-                                    <div class="blog-content2">
-                                        <div class="blog-meta2">
-                                            <span class="sub-title">technofra / April 18, 2026</span>
-                                            <div class="blog-text2">
-                                                <a href="#" title="">SEO</a>
-                                                <a href="#" title="">Social Media</a>
-                                            </div>
-                                        </div>
-                                        <h4 class="title"><a href='https://technofra.com/blog/ai-driven-seo-social-media-marketing-the-next-growth-engine-for-brands-in-2026/'>AI-Driven SEO &amp; Social Media Marketing: The Next Growth Engine for Brands in 2026</a>
-                                        </h4>
-                                        <p>SEO and social media work best together when your strategy is built around
-                                            visibility, engagement, and measurable brand growth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-<!-- End blog-sec2 -->
-
-<!-- newsletter-banner -->
-<!-- <section class="newsletter-banner">
-            <div class="parallax-wrap">
-                <img src="assets/images/new/banner1.png" alt="Banner" class="parallax-img">
-            </div>
-            <div class="container2">
-                <div class="newsletter-content ibt-section-gap">
-                    <h2 class="title">
-                        Let�s build your next website, app, or digital growth campaign
-                    </h2>
-                    <p>
-                        Technofra creates websites, mobile apps, e-commerce experiences, SEO plans, and social media
-                        marketing that help brands grow online with clarity and impact.
-                    </p>
-                    <form action="#" method="post" class="newsletter-form">
-                        <div class="input-box">
-                            <input type="text" placeholder="" required>
-                            <label>Enter your work email</label>
-                        </div>
-                        <button class="ibt-btn ibt-btn-dark">
-                            <span>Get in Touch</span>
-                            <i class="icon-arrow-top"></i>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section> -->
-<!-- End newsletter-banner -->
- 
-
 <script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

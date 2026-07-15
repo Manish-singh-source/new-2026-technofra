@@ -2,8 +2,8 @@
 <html lang="en">
 
 
-<!-- Mirrored from aiero-tech-template.netlify.app/index4 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jun 2026 12:43:44 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <?php
     $pageTitle = $pageTitle ?? 'Technofra Website';
@@ -49,6 +49,10 @@
         <link rel="stylesheet" href="assets/css/plugins/lightgallery-bundle.min.css">
     </noscript>
 
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
 </head>
 
 <body class="<?php echo htmlspecialchars($bodyClass, ENT_QUOTES, 'UTF-8'); ?>">
@@ -60,17 +64,5 @@
             </div>
         </div>
         <!-- End Preloader -->
-
-        <!-- <button id="themeBtn"><i class="far fa-moon"></i></button> -->
-        <!-- search-popup -->
-        <div class="search-popup" data-popup="1">
-            <div class="search-popup-content">
-                <form>
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Type Your Search..." required>
-                </form>
-                <button type="button" class="close-popup"></button>
-            </div>
-        </div>
 
         <?php include __DIR__ . '/navbar.php'; ?>
