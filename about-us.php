@@ -8,6 +8,255 @@
     .team-img .sub-title {
         font-size: 50px;
     }
+
+    .service-sec20 .ser-card20_card1,
+    .service-sec20 .ser-card20_card2,
+    .service-sec20 .ser-card20_card3,
+    .service-sec20 .ser-card20_card4,
+    .service-sec20 .ser-card20_card5 {
+        overflow: hidden;
+    }
+
+    @media (min-width: 992px) {
+        .service-sec20 .row {
+            align-items: stretch;
+        }
+
+        .service-sec20 .row > div {
+            display: flex;
+        }
+
+        .service-sec20 .ser-info20 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        .service-sec20 .ser-card20_card1,
+        .service-sec20 .ser-card20_card3,
+        .service-sec20 .ser-card20_card5 {
+            flex: 1 1 auto;
+        }
+
+        .service-sec20 .ser-card20_card5 {
+            height: 100%;
+        }
+
+        .service-sec20 .ser-card20_card5 img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599.98px) {
+        .service-sec20 .ser-card20_card1 {
+            padding: 36px 34px;
+        }
+
+        .service-sec20 .ser-card20_card1 img {
+            margin-bottom: 42px;
+            width: 40px;
+        }
+
+        .service-sec20 .ser-card20_card1 .title,
+        .service-sec20 .ser-card20_card3 .title,
+        .service-sec20 .ser-card20_card4 .title h4 {
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        .service-sec20 .ser-card20_card1 p,
+        .service-sec20 .ser-card20_card3 p,
+        .service-sec20 .ser-card20_card4 p {
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        .service-sec20 .ser-card20_card2 {
+            padding: 28px 28px 24px 84px;
+        }
+
+        .service-sec20 .ser-card20_card2 img {
+            top: 30px;
+            left: 30px;
+            width: 34px;
+        }
+
+        .service-sec20 .ser-card20_card2 .title {
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        .service-sec20 .ser-card20_card2 span {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .service-sec20 .ser-card20_card3 {
+            height: 270px;
+        }
+
+        .service-sec20 .ser-card20_card3 .title {
+            top: 34px;
+            left: 28px;
+            max-width: 210px;
+        }
+
+        .service-sec20 .ser-card20_card3 p {
+            top: 72px;
+            left: 28px;
+            right: 24px;
+        }
+
+        .service-sec20 .ser-card20_card4 {
+            height: 270px;
+        }
+
+        .service-sec20 .ser-card20_card4 .title {
+            left: 28px;
+            right: 24px;
+            bottom: 28px;
+            max-width: 250px;
+        }
+
+        .service-sec20 .ser-card20_card5 {
+            min-height: 560px;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .service-sec20 .ser-card20_card1 {
+            padding: 30px 26px;
+        }
+
+        .service-sec20 .ser-card20_card1 img {
+            margin-bottom: 28px;
+            width: 36px;
+        }
+
+        .service-sec20 .ser-card20_card1 .title,
+        .service-sec20 .ser-card20_card2 .title,
+        .service-sec20 .ser-card20_card3 .title,
+        .service-sec20 .ser-card20_card4 .title h4 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        .service-sec20 .ser-card20_card1 p,
+        .service-sec20 .ser-card20_card2 span,
+        .service-sec20 .ser-card20_card3 p,
+        .service-sec20 .ser-card20_card4 p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .service-sec20 .ser-card20_card2 {
+            padding: 24px 22px 22px 76px;
+        }
+
+        .service-sec20 .ser-card20_card2 img {
+            top: 25px;
+            left: 24px;
+            width: 32px;
+        }
+
+        .service-sec20 .ser-card20_card3 {
+            height: 235px;
+        }
+
+        .service-sec20 .ser-card20_card3 .title {
+            top: 26px;
+            left: 24px;
+            max-width: 180px;
+        }
+
+        .service-sec20 .ser-card20_card3 p {
+            top: 60px;
+            left: 24px;
+            right: 18px;
+        }
+
+        .service-sec20 .ser-card20_card4 {
+            height: 235px;
+        }
+
+        .service-sec20 .ser-card20_card4 .title {
+            left: 24px;
+            right: 18px;
+            bottom: 22px;
+            max-width: 210px;
+        }
+
+        .service-sec20 .ser-card20_card5 {
+            min-height: 420px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .service-sec20 .ser-card20_card1 {
+            padding: 28px 24px;
+        }
+
+        .service-sec20 .ser-card20_card1 img {
+            margin-bottom: 22px;
+            width: 34px;
+        }
+
+        .service-sec20 .ser-card20_card1 .title,
+        .service-sec20 .ser-card20_card2 .title,
+        .service-sec20 .ser-card20_card3 .title,
+        .service-sec20 .ser-card20_card4 .title h4 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        .service-sec20 .ser-card20_card1 p,
+        .service-sec20 .ser-card20_card2 span,
+        .service-sec20 .ser-card20_card3 p,
+        .service-sec20 .ser-card20_card4 p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .service-sec20 .ser-card20_card2 {
+            padding: 22px 20px 20px 72px;
+        }
+
+        .service-sec20 .ser-card20_card2 img {
+            top: 23px;
+            left: 22px;
+            width: 30px;
+        }
+
+        .service-sec20 .ser-card20_card3,
+        .service-sec20 .ser-card20_card4 {
+            height: 220px;
+        }
+
+        .service-sec20 .ser-card20_card3 .title {
+            top: 24px;
+            left: 22px;
+            max-width: 170px;
+        }
+
+        .service-sec20 .ser-card20_card3 p {
+            top: 58px;
+            left: 22px;
+            right: 16px;
+        }
+
+        .service-sec20 .ser-card20_card4 .title {
+            left: 22px;
+            right: 16px;
+            bottom: 20px;
+            max-width: 200px;
+        }
+
+        .service-sec20 .ser-card20_card5 {
+            height: 420px;
+        }
+    }
 </style>
 
 
@@ -27,7 +276,7 @@
                 <div class="hero-content14">
                     <p>Technofra builds strong digital brands through websites, apps, branding, marketing, and smart tech solutions.
                     </p>
-                    <a class='ibt-btn ibt-btn-secondary' href='contact.php' target='_blank' title>
+                    <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='contact.php' target='_blank' title>
                         <span>Start Your Project</span>
                         <i class="icon-arrow-top"></i>
                     </a>
@@ -101,7 +350,7 @@
                             <span>Download Company Profile</span>
                             <i class="fa-solid fa-file-pdf"></i>
                         </a> -->
-                <button type="button" class="mt-lg-5 ibt-btn ibt-btn-secondary" data-bs-toggle="modal"
+                <button type="button" class="mt-lg-5 ibt-btn ibt-btn-outline-3 ibt-btn-rounded" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">
                     Download Company Profile
                     <i class="fa-solid fa-file-pdf"></i>
@@ -488,3 +737,5 @@
 </div>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
