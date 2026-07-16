@@ -84,7 +84,7 @@
                                     </ul>
                                 </div>
                                 <div class="footer-apps4">
-                                    <a href="https://play.google.com/store" target="_blank" rel="noopener" title="Get it on Google Play">
+                                    <a href="https://play.google.com/store/apps/details?id=com.technofra.mycrm&pcampaignid=web_share" target="_blank" rel="noopener" title="Get it on Google Play">
                                         <img src="assets/images/new/app.webp" alt="Get it on Google Play">
                                     </a>
                                     <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener" title="Download on the App Store">
@@ -152,6 +152,7 @@
     <script src="assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 

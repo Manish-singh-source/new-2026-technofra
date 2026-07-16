@@ -52,7 +52,7 @@ include __DIR__ . '/header.php';
                             eCommerce stores with expert
                             development services in Mumbai, India.
                         </p>
-                        <a class='ibt-btn ibt-btn-secondary' href='#' target='_blank' title>
+                        <a class='ibt-btn ibt-btn-secondary' href='contact.php' target='_blank' title>
                             <span>Get a Free Consultation</span>
                             <i class="icon-arrow-top"></i>
                         </a>

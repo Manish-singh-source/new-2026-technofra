@@ -2176,12 +2176,31 @@ include __DIR__ . '/header.php';
             font-weight: 700;
         }
 
-        .dm-client-role,
         .dm-client-brand {
             margin: 0;
             color: #4f5668;
             font-size: 1rem;
             line-height: 1.6;
+        }
+
+        .dm-client-brand {
+            min-height: 52px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            padding: 10px 18px;
+            border-radius: 16px;
+            background: rgba(36, 78, 227, 0.06);
+        }
+
+        .dm-client-brand img {
+            display: block;
+            max-width: 150px;
+            max-height: 34px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
         }
 
         .dm-client-arrow {
@@ -2363,11 +2382,11 @@ include __DIR__ . '/header.php';
                         <h1 class="dm-title">Grow Your Brand with <span>Digital Marketing</span></h1>
                         <p class="dm-lead">From SEO and social media to paid ads and content strategy, we help you attract the right audience, build your brand, and generate high-quality leads that drive real growth.</p>
                         <div class="dm-actions">
-                            <a href="contact.php" class="dm-btn-primary">Explore Now</a>
-                            <a href="#dm-services" class="dm-btn-secondary">
+                            <a href="contact.php" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded"><span>Explore Now </span></a>
+                            <!-- <a href="#dm-services" class="dm-btn-secondary">
                                 <span class="play-icon"><i class="fa-solid fa-play"></i></span>
                                 <span>See How It Works</span>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -2733,37 +2752,43 @@ include __DIR__ . '/header.php';
                     <div class="dm-client-slider-track" data-dm-client-track>
                         <article class="dm-client-slide">
                             <div class="dm-client-avatar">
-                                <img src="https://img.magnific.com/free-photo/pleased-handsome-male-customer-show-thumb-up-approval_176420-17945.jpg?semt=ais_hybrid&w=740&q=80" alt="Rahul Mehta testimonial profile">
+                                <img src="./assets/images/testimonials/3.png" alt="Rahul Mehta testimonial profile">
                             </div>
                             <div class="dm-client-testimonial">
                                 <p>Technofra's Digital Marketing team understood our business goals perfectly and created a strategy that delivered real results. Our website traffic increased by <strong>150%</strong> and lead quality improved significantly within just 3 months. Their transparent reporting and proactive approach make them a trusted growth partner.</p>
                                 <div class="dm-client-divider"></div>
-                                <h3 class="dm-client-name">Rahul Mehta</h3>
-                                <p class="dm-client-role">Marketing Head</p>
+                                <h3 class="dm-client-name">Niraj Narsaria</h3>
+                                <div class="dm-client-brand">
+                                    <img src="assets/images/new/c9.png" alt="Mark Identitiez logo">
+                                </div>
                             </div>
                         </article>
 
                         <article class="dm-client-slide">
                             <div class="dm-client-avatar">
-                                <img src="https://img.magnific.com/free-photo/pleased-handsome-male-customer-show-thumb-up-approval_176420-17945.jpg?semt=ais_hybrid&w=740&q=80 alt="Sneha Kapoor testimonial profile">
+                                <img src="./assets/images/testimonials/2.png" alt="Sneha Kapoor testimonial profile">
                             </div>
                             <div class="dm-client-testimonial">
                                 <p>The team brought clarity to our ad spend and content strategy. Within a short span, our campaign performance improved, conversion costs dropped, and we started seeing more qualified inquiries from the right audience segments.</p>
                                 <div class="dm-client-divider"></div>
-                                <h3 class="dm-client-name">Sneha Kapoor</h3>
-                                <p class="dm-client-role">Growth Manager</p>
+                                <h3 class="dm-client-name">Kahan Mehta</h3>
+                                <div class="dm-client-brand">
+                                    <img src="assets/images/new/c12.png" alt="Digikcon logo">
+                                </div>
                             </div>
                         </article>
 
                         <article class="dm-client-slide">
                             <div class="dm-client-avatar">
-                                <img src="https://img.magnific.com/free-photo/pleased-handsome-male-customer-show-thumb-up-approval_176420-17945.jpg?semt=ais_hybrid&w=740&q=80" alt="Arjun Verma testimonial profile">
+                                <img src="./assets/images/testimonials/1.png" alt="Arjun Verma testimonial profile">
                             </div>
                             <div class="dm-client-testimonial">
                                 <p>What stood out most was their proactive communication and data-backed decision making. From SEO improvements to paid campaign scaling, every move felt intentional and tied directly to measurable business growth.</p>
                                 <div class="dm-client-divider"></div>
-                                <h3 class="dm-client-name">Arjun Verma</h3>
-                                <p class="dm-client-role">Founder</p>
+                                <h3 class="dm-client-name">Uday Parkhi</h3>
+                                <div class="dm-client-brand">
+                                    <img src="assets/images/new/c11.png" alt="Blue Orbith logo">
+                                </div>
                             </div>
                         </article>
                     </div>
