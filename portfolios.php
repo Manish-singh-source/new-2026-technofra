@@ -294,6 +294,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <div class="col-lg-6 col-md-6">
+                <a href="frago.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/3.png" alt="Digital marketing portfolio project">
@@ -306,6 +307,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </article>
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
@@ -339,6 +341,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <div class="col-lg-6 col-md-6">
+                <a href="texon.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/texon.png" alt="Creative studio portfolio project">
@@ -351,6 +354,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </article>
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
@@ -369,6 +373,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <div class="col-lg-6 col-md-6">
+                <a href="sukanya.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/8.png" alt="Corporate presentation portfolio project">
@@ -376,14 +381,16 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Corporate Presentation</h3>
+                            <h3 class="portfolio-card__heading">Sukanya India</h3>
                             <span class="portfolio-card__tag">Portfolio 08</span>
                         </div>
                     </div>
                 </article>
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
+                <a href="wotm.php"></a>
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">
