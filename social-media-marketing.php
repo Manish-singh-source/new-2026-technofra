@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'Social Media Marketing || Technofra Website';
+$pageTitle = 'Social Media Marketing Comapny in Mumbai | SMM Services - Technofra';
+$metaKeywords = 'Social media marketing company in Mumbai, Social media marketing services, Social media advertising, Social media marketing company in Mumbai for small business, Instagram marketing services Mumbai, Social media marketing company in Kandivali, Instagram marketing services Kandivali, Shopify development companies, Shopify development services, Shopify website development, shopify web development company, Shopify agency, shopify web development agency, shopify website developer, Shopify ecommerce development';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>
@@ -1426,3 +1427,5 @@ include __DIR__ . '/header.php';
     });
 </script>
 <?php include __DIR__ . '/footer.php'; ?>
+
+

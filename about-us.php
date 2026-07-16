@@ -1,4 +1,6 @@
-<?php include __DIR__ . '/header.php'; ?>
+<?php
+$pageTitle = 'About Technofra - Leading Web & Digital Solutions Provider';
+include __DIR__ . '/header.php'; ?>
 <style>
     .counter-box8 .counter-number,
     .counter-box8 .counter-text {

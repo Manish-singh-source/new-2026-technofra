@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Domain Hosting || Technofra Website';
+$pageTitle = 'Reliable Domain & Hosting Services | Technofra';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

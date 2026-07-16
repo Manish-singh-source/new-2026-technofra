@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Aeritx || Technofra Website';
+$pageTitle = 'Aeritx | Technofra';
 include __DIR__ . '/header.php';
 ?>
 
@@ -1739,3 +1739,4 @@ include __DIR__ . '/header.php';
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
+

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'iOS App Development || Technofra Website';
+$pageTitle = 'Technofra';
 $bodyClass = 'hero-video-page tf-ios-page';
 include __DIR__ . '/header.php';
 ?>

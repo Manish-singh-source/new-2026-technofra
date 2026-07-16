@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'iOS App Development || Technofra Website';
+$pageTitle = 'Mobile App Development Company in Mumbai | Android & iOS Services - Technofra';
+$metaKeywords = 'Mobile app development company in Mumbai, Android app development, iOS app development, Mobile app development company in Mumbai for startups, Custom app development services India, Mobile app development company in Kandivali, Mobile app development company, Mobile app development services, Android app development, Ios app development, app development services, Mobile app development agency';
 $bodyClass = 'hero-video-page tf-ios-page';
 include __DIR__ . '/header.php';
 ?>
@@ -404,3 +405,6 @@ include __DIR__ . '/header.php';
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+

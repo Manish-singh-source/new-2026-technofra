@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Sukanya India || Technofra Website';
+$pageTitle = 'Sukanya India Case Study | Technofra';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>
@@ -411,3 +411,4 @@ include __DIR__ . '/header.php';
 </section>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
