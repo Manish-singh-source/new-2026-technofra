@@ -219,7 +219,7 @@ include __DIR__ . '/header.php';
 
     .smm-trusted__logos {
         display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 28px;
         align-items: center;
         flex: 1;
@@ -692,14 +692,14 @@ include __DIR__ . '/header.php';
     }
 
     .smm-growth__stat-icon i {
-    display: block;
-    line-height: 1;
-    width: 1em;
-    height: 1em;
-    left: 20px;
-    position: relative;
-    top: 20px;
-}
+        display: block;
+        line-height: 1;
+        width: 1em;
+        height: 1em;
+        left: 20px;
+        position: relative;
+        top: 20px;
+    }
 
     .smm-growth__stat strong {
         display: block;
@@ -1152,6 +1152,10 @@ include __DIR__ . '/header.php';
             inset: 10% 2% 3% 2%;
         }
     }
+
+    h3 {
+        letter-spacing: normal;
+    }
 </style>
 
 <main class="smm-page">
@@ -1191,13 +1195,13 @@ include __DIR__ . '/header.php';
     <section class="smm-trusted">
         <div class="container">
             <div class="smm-trusted__box">
-                <p class="smm-trusted__title">Trusted by<br>Top Companies</p>
+                <p class="smm-trusted__title">Trusted by<br>Top Brands</p>
                 <div class="smm-trusted__logos" aria-label="Trusted brand logos">
-                    <span class="smm-trusted__logo">amazon</span>
-                    <span class="smm-trusted__logo">FedEx</span>
-                    <span class="smm-trusted__logo smm-trusted__logo--google">Google</span>
-                    <span class="smm-trusted__logo smm-trusted__logo--microsoft">Microsoft</span>
-                    <span class="smm-trusted__logo smm-trusted__logo--airbnb">airbnb</span>
+                    <span class="smm-trusted__logo">Blue Orbith</span>
+                    <span class="smm-trusted__logo">Grid Infinity</span>
+                    <span class="smm-trusted__logo">Digi Kcon</span>
+                    <span class="smm-trusted__logo">Mark Identitiez</span>
+                    <!-- <span class="smm-trusted__logo smm-trusted__logo--airbnb">airbnb</span> -->
                 </div>
             </div>
         </div>
@@ -1380,7 +1384,7 @@ include __DIR__ . '/header.php';
                                 </div>
                                 <div class="smm-faq__answer">Posting frequency depends on your package and strategy, but we usually create a consistent monthly calendar to keep your brand active and visible.</div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -1391,53 +1395,34 @@ include __DIR__ . '/header.php';
 </main>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    var faqItems = document.querySelectorAll(".smm-faq__item");
+    document.addEventListener("DOMContentLoaded", function() {
+        var faqItems = document.querySelectorAll(".smm-faq__item");
 
-    faqItems.forEach(function (item) {
-        var question = item.querySelector(".smm-faq__question");
-        var toggleIcon = item.querySelector(".smm-faq__toggle i");
+        faqItems.forEach(function(item) {
+            var question = item.querySelector(".smm-faq__question");
+            var toggleIcon = item.querySelector(".smm-faq__toggle i");
 
-        if (!question || !toggleIcon) {
-            return;
-        }
+            if (!question || !toggleIcon) {
+                return;
+            }
 
-        question.addEventListener("click", function () {
-            var isOpen = item.classList.contains("is-open");
+            question.addEventListener("click", function() {
+                var isOpen = item.classList.contains("is-open");
 
-            faqItems.forEach(function (faqItem) {
-                faqItem.classList.remove("is-open");
-                var icon = faqItem.querySelector(".smm-faq__toggle i");
-                if (icon) {
-                    icon.className = "fas fa-plus";
+                faqItems.forEach(function(faqItem) {
+                    faqItem.classList.remove("is-open");
+                    var icon = faqItem.querySelector(".smm-faq__toggle i");
+                    if (icon) {
+                        icon.className = "fas fa-plus";
+                    }
+                });
+
+                if (!isOpen) {
+                    item.classList.add("is-open");
+                    toggleIcon.className = "fas fa-minus";
                 }
             });
-
-            if (!isOpen) {
-                item.classList.add("is-open");
-                toggleIcon.className = "fas fa-minus";
-            }
         });
     });
-});
 </script>
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

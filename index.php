@@ -101,7 +101,7 @@ include __DIR__ . '/header.php'; ?>
     }
 
     .creative-banner-text {
-        max-width: 420px;
+        max-width: 430px;
         margin: 0 18px 8px 0;
         color: rgba(255, 255, 255, 0.94);
         font-size: 19px;
@@ -137,7 +137,7 @@ include __DIR__ . '/header.php'; ?>
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         .creative-banner-sec {
             padding: 60px 0;
         }
@@ -188,249 +188,7 @@ include __DIR__ . '/header.php'; ?>
             flex-direction: column-reverse;
         }
     }
-</style>
 
-<!-- hero-style4 -->
-<section class="hero-style4">
-    <div class="hero-bg4" aria-hidden="true">
-        <video class="hero-video4" autoplay muted loop playsinline preload="metadata">
-            <source src="assets/images/new/technofra_hero.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay4"></div>
-    </div>
-</section>
-<!-- End hero-style4 -->
-
-<!-- service-sec8 -->
-<section class="service-sec8 pt-3">
-    <div class="container2">
-        <div class="service-content3">
-            <div class="ser-card3">
-                <img src="assets/images/new/web.png" alt="Professional Web Development for Your Business Growth">
-                <div class="ser-content3">
-                    <h4 class="title">Professional Web Development for Your Business Growth</h4>
-                    <a class='ser-btn3' href='web-design-and-development.php' title>Explore more</a>
-                </div>
-                <a href="javascript::void(0)" class="ser-btn">
-                    <i class="icon fontello icon-button-arrow"></i>
-                    <i class="icon2 fontello icon-button-arrow"></i>
-                </a>
-            </div>
-            <div class="ser-card3 v2">
-                <img src="assets/images/new/app.png" alt="Custom App Development for Smooth Business Operations">
-                <a href="javascript::void(0)" class="view-btn">
-                    <i class="icon fontello icon-button-arrow"></i>
-                    <i class="icon2 fontello icon-button-arrow"></i>
-                </a>
-                <div class="ser-team">
-                    <h4 class="title">Custom App Development for Smooth Business Operations</h4>
-                    <p>Build powerful mobile applications with smart features.
-                        Improve customer experience and business growth
-                    </p>
-                    <div class="ser-team-info">
-                        <div class="counter-box3 m-0">
-                            <span class="counter-number" data-target="20">0</span>
-                            <span class="counter-text">k+</span>
-                        </div>
-                        <span class="user">app users </span>
-                    </div>
-                </div>
-            </div>
-            <div class="ser-card3 v1">
-                <img src="assets/images/new/support.png" alt="Technical support for the entire service life">
-                <div class="ser-content">
-                    <h4 class="title">Technical support for
-                        the entire service life
-                    </h4>
-                    <p>Instant assistance for all your queries. Experience seamless service with our AI-powered
-                        support</p>
-                    <img src="assets/images/icon/phone2.svg" alt="Technical support for the entire service life">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End service-sec8 -->
-
-<!-- service-sec7 -->
-<section class="service-sec7 mb-0">
-    <div class="container2">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="service-content7">
-                    <h4 class="title">We prouduly work with our brands</h4>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="service-box7">
-                    <div class="social-link3">
-                        <img src="assets/images/new/b1.png" alt="Blue Orbith">
-                        <a href="https://blueorbith.com/" target="_blank" rel="noopener noreferrer"><span>Blue Orbith</span></a>
-                    </div>
-                    <div class="social-link3">
-                        <img src="assets/images/new/b2.png" alt="Grid Infinity">
-                        <a href="https://gridinfinity.com/" target="_blank" rel="noopener noreferrer"><span>Grid Infinity</span></a>
-                    </div>
-                    <div class="social-link3">
-                        <img src="assets/images/new/b3.png" alt="Mark Idenititiz">
-                        <a href="https://markidentitiez.com/" target="_blank" rel="noopener noreferrer"><span>Mark Idenititiz</span></a>
-                    </div>
-                    <div class="social-link3">
-                        <img src="assets/images/new/b4.png" alt="Digi Kcon">
-                        <a href="https://digikcon.com/" target="_blank" rel="noopener noreferrer"><span>Digi Kcon</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End service-sec7 -->
-
-<!-- service-sec17 -->
-<section class="feature-sec7 ibt-section-gapTop ibt-section-gapBottom" id="fature-down">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="ser-content7">
-                    <div class="sec-title">
-                        <span class="sub-title"><span class="sub-text" style="overflow: hidden; display: inline-block; width: 142px;">Services We Provide</span></span>
-                        <h2 class="title animated-heading">Services We Provide</h2>
-                        <p>We build digital products and growth systems for companies that want stronger online presence, better performance, and measurable results.</p>
-                        <a class="ibt-btn ibt-btn-outline" href="web-design-and-development.php" title="">
-                            <span>Explore more</span>
-                            <i class="icon-arrow-top"></i>
-                        </a>
-                    </div>
-                    <div class="about-counter">
-                        <div class="counter-box4">
-                            <span class="counter-number" data-target="550">550</span>
-                            <span class="counter-text">+</span>
-                        </div>
-                        <span class="solutions">Successful projects delivered</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="feature-info7">
-                    <div class="feature-card7">
-                        <div class="feature-icon7 brand-blue">
-                            <i class="fa-solid fa-code" aria-hidden="true"></i>
-                        </div>
-                        <div class="feature-content7">
-                            <h4 class="title">
-                                <a href="web-design-and-development.php">Web</a>/<a href="/android-app-development.php" title="Android App Development">App</a> development
-                            </h4>
-                            <p>Responsive websites, web apps, and mobile-ready experiences built for speed and usability.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-card7">
-                        <div class="feature-icon7 brand-orange">
-                            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
-                        </div>
-                        <div class="feature-content7">
-                            <h4 class="title"><a href="shopify-development.php">E-commerce development</a></h4>
-                            <p>Online stores, product catalogs, cart flows, and checkout experiences that convert.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-card7">
-                        <div class="feature-icon7 brand-purple">
-                            <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
-                        </div>
-                        <div class="feature-content7">
-                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank">Branding</a></h4>
-                            <p>Logo systems, visual identity, and messaging that make your business memorable.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="feature-card7">
-                        <div class="feature-icon7 brand-green">
-                            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
-                        </div>
-                        <div class="feature-content7 mb-0">
-                            <h4 class="title"><a href="digital-marketing.php">Digital Marketing</a></h4>
-                            <p>SEO, social media, paid ads, and content marketing that helps brands grow online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End service-sec17 -->
-
-<!-- client-trust-style -->
-<section class="client-trust-sec1">
-    <div class="container">
-        <div class="client-trust-wrap1">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-6">
-                    <div class="client-trust-content1">
-                        <span class="sub-title">[ Our Clients ]</span>
-                        <h2 class="title">Trusted by 500+ clients worldwide from diverse industries.</h2>
-                        <p>We partner with startups, SMEs, and enterprises across the globe, delivering innovative
-                            IT solutions that drive growth, efficiency, and long-term success.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="client-trust-visual1">
-                        <div class="client-trust-map1" aria-hidden="true">
-                            <img src="assets/images/layers/map-layer.png" alt="">
-                        </div>
-                        <div class="client-trust-figure1">
-                            <span class="count">500+</span>
-                            <span class="label">Happy Clients Worldwide</span>
-                        </div>
-                        <div class="client-trust-grid1">
-                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="Frago Matric" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="Life Like" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="Sanjay Agencies" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="Urbon Sports" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="Aeritx" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="ChemPharma" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="Indore" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="Global Ocean Beyond Logistics" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="VLegends" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="Aspirias" srcset=""></div>
-                        </div>
-                        <div class="client-trust-note1">
-                            <i class="fontello icon-check-circle"></i>
-                            <span>Long-term relationships built on trust, quality, and results.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End client-trust-style -->
-
-<!-- creative-banner-sec -->
-<section class="creative-banner-sec">
-    <div class="container">
-        <div class="creative-banner-wrap">
-            <div class="creative-banner-top">
-                <span class="creative-banner-badge">Your End-to-End Digital & Branding Partner</span>
-            </div>
-            <div class="creative-banner-content">
-                <div class="creative-banner-copy">
-                    <h2 class="creative-banner-title">Your End-to-End Digital &<br>Branding Partner For Business Growth</h2>
-                    <div class="creative-banner-actions">
-                        <a class="creative-banner-btn" href="contact.php">Book A Call Now <i class="icon-arrow-top"></i></a>
-                        <span class="creative-banner-time">[ Tailored Web, App & Marketing Solutions ]</span>
-                    </div>
-                </div>
-                <p class="creative-banner-text">[ Technofra offers tailored web design, development, branding, and marketing solutions that help businesses thrive and achieve impactful outcomes in the digital landscape. ]</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End creative-banner-sec -->
-
-<!-- booking-call-sec -->
-<style>
     .eep-status-alert {
         max-width: 1180px;
         margin: 24px auto 0;
@@ -960,8 +718,8 @@ include __DIR__ . '/header.php'; ?>
             padding: 0 20px 20px
         }
     }
-</style>
-<style>
+
+
     .eep-hero {
         padding: 56px 0 64px
     }
@@ -1481,7 +1239,297 @@ include __DIR__ . '/header.php'; ?>
             max-height: 260px
         }
     }
+
+    @media (max-width: 390px) {
+
+        .ser-team {
+            left: 25px;
+        }
+
+        .ser-card3 {
+            height: 390px;
+        }
+
+        .ser-card3.v1 .title {
+            font-size: 30px;
+        }
+
+        .ser-card3.v1 p {
+            margin-bottom: 20px;
+        }
+
+        .eep-calendar-actions-inline {
+            justify-content: center;
+        }
+
+        .footer-links {
+            width: 140px;
+        }
+
+        .footer-social4 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0px;
+        }
+
+        .ibt-section-gap {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+
+
+    @media (max-width: 425px) {
+        .footer-social4 {
+            width: 100%;
+            justify-content: center;
+        }
+    }
 </style>
+
+<!-- hero-style4 -->
+<section class="hero-style4">
+    <div class="hero-bg4" aria-hidden="true">
+        <video class="hero-video4" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/images/new/technofra_hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay4"></div>
+    </div>
+</section>
+<!-- End hero-style4 -->
+
+<!-- service-sec8 -->
+<section class="service-sec8 pt-3">
+    <div class="container2">
+        <div class="service-content3">
+            <div class="ser-card3">
+                <img src="assets/images/new/web.png" alt="Professional Web Development for Your Business Growth">
+                <div class="ser-content3">
+                    <h4 class="title">Professional Web Development for Your Business Growth</h4>
+                    <a class='ser-btn3' href='web-design-and-development.php' title>Explore more</a>
+                </div>
+                <a href="web-design-and-development.php" class="ser-btn">
+                    <i class="icon fontello icon-button-arrow"></i>
+                    <i class="icon2 fontello icon-button-arrow"></i>
+                </a>
+            </div>
+            <div class="ser-card3 v2">
+                <img src="assets/images/new/app.png" alt="Custom App Development for Smooth Business Operations">
+                <a href="android-app-development.php" class="view-btn">
+                    <i class="icon fontello icon-button-arrow"></i>
+                    <i class="icon2 fontello icon-button-arrow"></i>
+                </a>
+                <div class="ser-team">
+                    <h4 class="title">Custom App Development for Smooth Business Operations</h4>
+                    <p>Build powerful mobile applications with smart features.
+                        Improve customer experience and business growth
+                    </p>
+                    <div class="ser-team-info">
+                        <div class="counter-box3 m-0">
+                            <span class="counter-number" data-target="20">0</span>
+                            <span class="counter-text">k+</span>
+                        </div>
+                        <span class="user">app users </span>
+                    </div>
+                </div>
+            </div>
+            <div class="ser-card3 v1">
+                <img src="assets/images/new/support.png" alt="Technical support for the entire service life">
+                <div class="ser-content">
+                    <h4 class="title">Technical support for
+                        the entire service life
+                    </h4>
+                    <p>Instant assistance for all your queries. Experience seamless service with our AI-powered
+                        support</p>
+                    <img src="assets/images/icon/phone2.svg" alt="Technical support for the entire service life">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End service-sec8 -->
+
+<!-- service-sec7 -->
+<section class="service-sec7 mb-0">
+    <div class="container2">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="service-content7">
+                    <h4 class="title">We prouduly work with our brands</h4>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-box7">
+                    <div class="social-link3">
+                        <img src="assets/images/new/b1.png" alt="Blue Orbith">
+                        <a href="https://blueorbith.com/" target="_blank" rel="noopener noreferrer"><span>Blue Orbith</span></a>
+                    </div>
+                    <div class="social-link3">
+                        <img src="assets/images/new/b2.png" alt="Grid Infinity">
+                        <a href="https://gridinfinity.com/" target="_blank" rel="noopener noreferrer"><span>Grid Infinity</span></a>
+                    </div>
+                    <div class="social-link3">
+                        <img src="assets/images/new/b3.png" alt="Mark Idenititiez">
+                        <a href="https://markidentitiez.com/" target="_blank" rel="noopener noreferrer"><span>Mark Idenititiez</span></a>
+                    </div>
+                    <div class="social-link3">
+                        <img src="assets/images/new/b4.png" alt="Digi Kcon">
+                        <a href="https://digikcon.com/" target="_blank" rel="noopener noreferrer"><span>Digi Kcon</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End service-sec7 -->
+
+<!-- service-sec17 -->
+<section class="feature-sec7 ibt-section-gapTop ibt-section-gapBottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="ser-content7">
+                    <div class="sec-title">
+                        <span class="sub-title"><span class="sub-text" style="overflow: hidden; display: inline-block; width: 142px;">Services We Provide</span></span>
+                        <h2 class="title animated-heading">Services We Provide</h2>
+                        <p>We build digital products and growth systems for companies that want stronger online presence, better performance, and measurable results.</p>
+                        <a class="ibt-btn ibt-btn-outline" href="web-design-and-development.php">
+                            <span>Explore more</span>
+                            <i class="icon-arrow-top"></i>
+                        </a>
+                    </div>
+                    <div class="about-counter">
+                        <div class="counter-box4">
+                            <span class="counter-number" data-target="550">550</span>
+                            <span class="counter-text">+</span>
+                        </div>
+                        <span class="solutions">Successful projects delivered</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feature-info7">
+                    <div class="feature-card7">
+                        <div class="feature-icon7 brand-blue">
+                            <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content7">
+                            <h4 class="title">
+                                <a href="web-design-and-development.php">Web</a>/<a href="android-app-development.php" title="Android App Development">App</a> development
+                            </h4>
+                            <p>Responsive websites, web apps, and mobile-ready experiences built for speed and usability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-card7">
+                        <div class="feature-icon7 brand-orange">
+                            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content7">
+                            <h4 class="title"><a href="shopify-development.php">E-commerce development</a></h4>
+                            <p>Online stores, product catalogs, cart flows, and checkout experiences that convert.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-card7">
+                        <div class="feature-icon7 brand-purple">
+                            <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content7">
+                            <h4 class="title"><a href="https://markidentitiez.com/" target="_blank">Branding</a></h4>
+                            <p>Logo systems, visual identity, and messaging that make your business memorable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-card7">
+                        <div class="feature-icon7 brand-green">
+                            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content7 mb-0">
+                            <h4 class="title"><a href="digital-marketing.php">Digital Marketing</a></h4>
+                            <p>SEO, social media, paid ads, and content marketing that helps brands grow online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End service-sec17 -->
+
+<!-- client-trust-style -->
+<section class="client-trust-sec1">
+    <div class="container">
+        <div class="client-trust-wrap1">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="client-trust-content1">
+                        <span class="sub-title">[ Our Clients ]</span>
+                        <h2 class="title">Trusted by 500+ clients worldwide from diverse industries.</h2>
+                        <p>We partner with startups, SMEs, and enterprises across the globe, delivering innovative
+                            IT solutions that drive growth, efficiency, and long-term success.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="client-trust-visual1">
+                        <div class="client-trust-map1" aria-hidden="true">
+                            <img src="assets/images/layers/map-layer.png" alt="">
+                        </div>
+                        <div class="client-trust-figure1">
+                            <span class="count">500+</span>
+                            <span class="label">Happy Clients Worldwide</span>
+                        </div>
+                        <div class="client-trust-grid1">
+                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="Frago Matric" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="Life Like" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="Sanjay Agencies" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="Urbon Sports" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="Aeritx" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="ChemPharma" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="Indore" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="Global Ocean Beyond Logistics" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="VLegends" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="Aspirias" srcset=""></div>
+                        </div>
+                        <div class="client-trust-note1">
+                            <i class="fontello icon-check-circle"></i>
+                            <span>Long-term relationships built on trust, quality, and results.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End client-trust-style -->
+
+<!-- creative-banner-sec -->
+<section class="creative-banner-sec">
+    <div class="container">
+        <div class="creative-banner-wrap">
+            <div class="creative-banner-top">
+                <span class="creative-banner-badge">Your End-to-End Digital & Branding Partner</span>
+            </div>
+            <div class="creative-banner-content">
+                <div class="creative-banner-copy">
+                    <h2 class="creative-banner-title">Your End-to-End Digital &<br>Branding Partner For Business Growth</h2>
+                    <div class="creative-banner-actions">
+                        <a class="creative-banner-btn" href="contact.php">Book A Call Now <i class="icon-arrow-top"></i></a>
+                        <span class="creative-banner-time">[ Tailored Web, App & Marketing Solutions ]</span>
+                    </div>
+                </div>
+                <p class="creative-banner-text">[ Technofra offers tailored web design, development, branding, and marketing solutions that help businesses thrive and achieve impactful outcomes in the digital landscape. ]</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End creative-banner-sec -->
+
+<!-- booking-call-sec -->
 <?php if ($bookCallStatus): ?>
     <div class="eep-status-alert <?php echo htmlspecialchars($bookCallStatus['type']); ?>">
         <?php echo htmlspecialchars($bookCallStatus['message']); ?>
@@ -1666,7 +1714,7 @@ include __DIR__ . '/header.php'; ?>
                     <div class="sec-btn-box">
                         <p>Tailored digital experiences for businesses across fast-moving sectors.</p>
                         <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
-                            <span>Get Started</span>
+                            <span>Contact Us</span>
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
@@ -1820,10 +1868,10 @@ include __DIR__ . '/header.php'; ?>
                             </div>
                         </div>
                     </div>
-                    <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
-                        <span>Explore More</span>
+                    <!-- <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
+                        <span>Contact Us</span>
                         <i class="icon-arrow-top"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
