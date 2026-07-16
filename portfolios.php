@@ -403,6 +403,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </article>
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
