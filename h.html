@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .brand-process-section {
+            position: relative;
+            padding: 100px 0;
+            background: linear-gradient(180deg, #f8fbff 0%, #eef5ff 100%);
+            overflow: hidden;
+        }
+
+        .brand-process-section::before,
+        .brand-process-section::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .brand-process-section::before {
+            top: -120px;
+            left: -120px;
+            width: 280px;
+            height: 280px;
+            background: rgba(47, 106, 255, 0.08);
+        }
+
+        .brand-process-section::after {
+            bottom: -140px;
+            right: -140px;
+            width: 320px;
+            height: 320px;
+            background: rgba(0, 174, 255, 0.08);
+        }
+
+        .brand-process-section .container {
+            position: relative;
+            z-index: 2;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .brand-process-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 70px;
+        }
+
+        .process-badge {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 50px;
+            background: rgba(47, 106, 255, 0.10);
+            color: #2f6aff;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            margin-bottom: 18px;
+        }
+
+        .brand-process-header h2 {
+            margin: 0 0 15px;
+            font-size: 46px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #0c1c4c;
+        }
+
+        .brand-process-header h2 span {
+            color: #2f6aff;
+        }
+
+        .brand-process-header p {
+            margin: 0;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #5c6b86;
+        }
+
+        .brand-process-wrap {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px 80px;
+            align-items: start;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .vertical-line {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            bottom: 20px;
+            width: 4px;
+            transform: translateX(-50%);
+            background: linear-gradient(180deg, #2f6aff 0%, rgba(47, 106, 255, 0.12) 100%);
+            border-radius: 20px;
+            z-index: 0;
+        }
+
+        .brand-process-item {
+            position: relative;
+            z-index: 2;
+        }
+
+        .item-1,
+        .item-3 {
+            padding-right: 35px;
+        }
+
+        .item-2,
+        .item-4 {
+            padding-left: 35px;
+            margin-top: 80px;
+        }
+
+        .process-card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(47, 106, 255, 0.12);
+            border-radius: 28px;
+            padding: 32px 28px 28px;
+            box-shadow: 0 20px 60px rgba(9, 30, 66, 0.08);
+            transition: all 0.35s ease;
+            overflow: hidden;
+        }
+
+        .process-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #2f6aff 0%, #00b7ff 100%);
+        }
+
+        .process-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 28px 70px rgba(47, 106, 255, 0.16);
+        }
+
+        .process-number {
+            position: absolute;
+            top: 22px;
+            right: 22px;
+            font-size: 44px;
+            font-weight: 800;
+            color: rgba(47, 106, 255, 0.10);
+            line-height: 1;
+        }
+
+        .process-icon {
+            width: 74px;
+            height: 74px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #2f6aff 0%, #00a6ff 100%);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 14px 30px rgba(47, 106, 255, 0.24);
+            margin-bottom: 22px;
+        }
+
+        .process-card h3 {
+            margin: 0 0 14px;
+            font-size: 24px;
+            line-height: 1.3;
+            font-weight: 800;
+            color: #0c1c4c;
+        }
+
+        .process-card p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.85;
+            color: #5c6b86;
+        }
+
+        /* connector dots */
+        .brand-process-item::before {
+            content: "";
+            position: absolute;
+            top: 55px;
+            width: 18px;
+            height: 18px;
+            background: #ffffff;
+            border: 4px solid #2f6aff;
+            border-radius: 50%;
+            z-index: 3;
+            box-shadow: 0 0 0 6px rgba(47, 106, 255, 0.08);
+        }
+
+        .item-1::before,
+        .item-3::before {
+            right: -9px;
+        }
+
+        .item-2::before,
+        .item-4::before {
+            left: -9px;
+        }
+
+        /* Tablet */
+        @media (max-width: 1199px) {
+            .brand-process-header h2 {
+                font-size: 40px;
+            }
+
+            .brand-process-wrap {
+                gap: 24px 50px;
+            }
+        }
+
+        /* Medium */
+        @media (max-width: 991px) {
+            .brand-process-section {
+                padding: 80px 0;
+            }
+
+            .brand-process-header {
+                margin-bottom: 50px;
+            }
+
+            .brand-process-header h2 {
+                font-size: 34px;
+            }
+
+            .brand-process-header p {
+                font-size: 16px;
+            }
+
+            .brand-process-wrap {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                max-width: 700px;
+            }
+
+            .vertical-line {
+                left: 24px;
+                top: 0;
+                bottom: 0;
+                transform: none;
+            }
+
+            .item-1,
+            .item-2,
+            .item-3,
+            .item-4 {
+                padding: 0 0 0 60px;
+                margin-top: 0;
+            }
+
+            .brand-process-item::before {
+                left: 15px !important;
+                right: auto !important;
+                top: 48px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .brand-process-section {
+                padding: 65px 0;
+            }
+
+            .brand-process-header h2 {
+                font-size: 28px;
+            }
+
+            .brand-process-header p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            .process-badge {
+                font-size: 13px;
+                padding: 8px 14px;
+            }
+
+            .process-card {
+                padding: 24px 18px 22px;
+                border-radius: 22px;
+            }
+
+            .process-icon {
+                width: 62px;
+                height: 62px;
+                font-size: 24px;
+                border-radius: 18px;
+                margin-bottom: 18px;
+            }
+
+            .process-card h3 {
+                font-size: 20px;
+            }
+
+            .process-card p {
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+            .process-number {
+                font-size: 36px;
+                top: 18px;
+                right: 18px;
+            }
+
+            .vertical-line {
+                left: 20px;
+            }
+
+            .brand-process-item::before {
+                left: 11px !important;
+                width: 16px;
+                height: 16px;
+            }
+
+            .item-1,
+            .item-2,
+            .item-3,
+            .item-4 {
+                padding-left: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="brand-process-section">
+        <div class="container">
+            <div class="brand-process-header">
+                <span class="process-badge">Our Work Process</span>
+                <h2>From Ideas to <span>Digital Growth</span></h2>
+                <p>
+                    We combine strategy, creativity, and execution to build brands,
+                    websites, and marketing systems that drive real business growth.
+                </p>
+            </div>
+
+            <div class="brand-process-wrap">
+
+                <div class="brand-process-item item-1">
+                    <div class="process-card">
+                        <div class="process-number">01</div>
+                        <div class="process-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Consultation & Discovery</h3>
+                        <p>
+                            We understand your business goals, target audience, brand needs,
+                            website requirements, and marketing objectives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="brand-process-item item-2">
+                    <div class="process-card">
+                        <div class="process-number">02</div>
+                        <div class="process-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Strategy & Planning</h3>
+                        <p>
+                            We create a clear roadmap for your brand identity, website structure,
+                            content direction, and digital marketing approach.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="brand-process-item item-3">
+                    <div class="process-card">
+                        <div class="process-number">03</div>
+                        <div class="process-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design & Execution</h3>
+                        <p>
+                            Our team designs your brand visuals, develops responsive websites,
+                            and creates engaging social media content with proper planning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="brand-process-item item-4">
+                    <div class="process-card">
+                        <div class="process-number">04</div>
+                        <div class="process-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Launch, Marketing & Growth</h3>
+                        <p>
+                            We launch, promote, analyze, and improve your digital presence
+                            to help your business grow with measurable results.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-line vertical-line"></div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
