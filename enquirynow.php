@@ -301,6 +301,10 @@ include __DIR__ . '/header.php';
         transform: scale(0.92);
     }
 }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    letter-spacing: normal;
+} 
 </style>
 
 <?php if ($enquiryNotice): ?>
@@ -333,7 +337,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-5">
                 <div class="enquiry-side-card">
                     <div class="sec-title">
-                        <span class="sub-title">project brief</span>
+                        <span class="sub-title">Start Your Enquiry</span>
                         <h2 class="title animated-heading">Share your enquiry and get the right direction</h2>
                         <p>We use your submission to understand your business needs, service interest, and priorities so we can connect you with the most suitable team and solution from the start.</p>
                     </div>
