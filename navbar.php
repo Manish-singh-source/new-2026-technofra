@@ -533,9 +533,9 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
             </div>
         </div>
         <button class="hamburger popup-menu" data-menu="mobileMenu">
-            <span style="<?= $useWhiteLogo ? 'background-color: black' : 'background-color: white' ?>"></span>
-            <span style="<?= $useWhiteLogo ? 'background-color: black' : 'background-color: white' ?>"></span>
-            <span style="<?= $useWhiteLogo ? 'background-color: black' : 'background-color: white' ?>"></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
     </div>
 </header>
