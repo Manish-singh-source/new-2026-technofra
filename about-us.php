@@ -22,7 +22,7 @@
             align-items: stretch;
         }
 
-        .service-sec20 .row > div {
+        .service-sec20 .row>div {
             display: flex;
         }
 
@@ -199,7 +199,7 @@
         }
 
         .service-sec20 .ser-card20_card1 img {
-            margin-bottom: 22px;
+            margin-bottom: 96px;
             width: 34px;
         }
 
@@ -237,7 +237,7 @@
         .service-sec20 .ser-card20_card3 .title {
             top: 24px;
             left: 22px;
-            max-width: 170px;
+            /* max-width: 170px; */
         }
 
         .service-sec20 .ser-card20_card3 p {
@@ -360,12 +360,6 @@
         .hero-style14 {
             margin: 0 14px;
             padding: 132px 0 76px;
-        }
-
-        .hero-style14::before {
-            height: 100%;
-            background-size: cover;
-            opacity: 0.7;
         }
 
         .gradient-title14 {
@@ -742,6 +736,7 @@
     }
 
     @media (max-width: 767.98px) {
+
         .about-us-sec9.ibt-section-gapTop,
         .journey-sec.ibt-section-gapTop,
         .pricing-style1.ibt-section-gapTop,
@@ -835,7 +830,7 @@
             padding: 24px 18px;
         }
 
-        .price-card + .price-card {
+        .price-card+.price-card {
             margin-top: 14px;
         }
 
@@ -891,6 +886,7 @@
     }
 
     @media (max-width: 479.98px) {
+
         .about-us-sec9.ibt-section-gapTop,
         .journey-sec.ibt-section-gapTop,
         .pricing-style1.ibt-section-gapTop,
@@ -1112,6 +1108,26 @@
             border-radius: 18px;
         }
     }
+
+    .gradient-title14 span {
+        background-image: -webkit-linear-gradient(348deg, #39c7f4 0%, #1b3664 100%);
+        background-image: linear-gradient(102deg, #39c7f4 0%, #1b3664 100%);
+    }
+
+    @media (max-width: 425px) {
+        .hero-style14 .row {
+            row-gap: 0px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .service-sec20 .row {
+            row-gap: 0px;
+        }
+        .service-sec20 .ser-card20_card5 {
+            margin-top: 20px;
+        }
+    }
 </style>
 
 
@@ -1145,7 +1161,7 @@
 <!-- service-sec20 -->
 <section class="service-sec20">
     <div class="container2">
-        <div class="row g-4">
+        <div class="row g-sm-4">
             <div class="col-xl-3 col-lg-6 col-md-6">
                 <div class="ser-info20">
                     <div class="ser-card20_card1">
@@ -1194,12 +1210,12 @@
 <section class="about-us-sec9 ibt-section-gapTop pb-4">
     <div class="container">
         <div class="title-area row">
-            <div class="sec-title col-12 col-lg-9">
+            <div class="sec-title col-12 col-lg-8">
                 <span class="sub-title">About Company</span>
                 <h2 class="title animated-heading">From Start to Success:</h2>
                 <h2 class="title animated-heading">Technofra’s Milestones in Technology</h2>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-4">
                 <!-- 
                     <a class='mt-5 ibt-btn ibt-btn-secondary' href='index14.html' target='_blank' title>
                             <span>Download Company Profile</span>
@@ -1342,7 +1358,7 @@
 
 
 <!-- team-section2 -->
-<section class="team-section2 ibt-section-gapTop">
+<section class="team-section2 ibt-section-gap">
     <div class="container">
         <div class="title-area">
             <div class="row align-items-end mb-0">
@@ -1619,16 +1635,3 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
