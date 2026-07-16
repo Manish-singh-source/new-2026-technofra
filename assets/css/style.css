@@ -9371,7 +9371,7 @@ input[type=submit]:hover {
 .side-menu2 {
   position: fixed;
   top: 0;
-  right: -323px;
+  right: 0;
   box-sizing: border-box;
   width: 312px;
   max-width: calc(100vw - 24px);
@@ -9386,8 +9386,13 @@ input[type=submit]:hover {
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
   z-index: 111111111;
-  -webkit-transition: right 0.3s ease-in-out;
-  transition: right 0.3s ease-in-out;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .side-menu2>ul {
@@ -9547,7 +9552,9 @@ input[type=submit]:hover {
 }
 
 .side-menu2.active {
-  right: 0;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .menu-btns {
@@ -9671,6 +9678,34 @@ input[type=submit]:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1201px) {
+  .side-menu2 {
+    width: min(460px, calc(100vw - 40px));
+    padding: 28px 48px;
+  }
+
+  .side-menu2>ul {
+    padding-top: 84px;
+  }
+
+  .side-menu2>ul>li>a {
+    height: auto;
+    min-height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .side-menu2>ul ul li a {
+    min-height: 38px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .side-menu2 .sub-menu ul {
+    padding-left: 30px;
+  }
+}
+
 .hamburger {
   position: absolute;
   top: 50%;
@@ -9714,7 +9749,7 @@ input[type=submit]:hover {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1111;
+  z-index: 111111110;
   display: none;
 }
 
@@ -10447,6 +10482,12 @@ input[type=submit]:hover {
 
 .main-menu {
   position: relative;
+}
+
+@media (max-width: 1201px) {
+  .main-menu {
+    display: none;
+  }
 }
 
 .main-menu>ul li:hover>.mega-sub-menu,
