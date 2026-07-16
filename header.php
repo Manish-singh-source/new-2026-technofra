@@ -7,11 +7,15 @@
 <head>
     <?php
     $pageTitle = $pageTitle ?? 'Technofra Website';
+    $metaKeywords = $metaKeywords ?? '';
     $bodyClass = $bodyClass ?? 'hero-video-page';
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
+    <?php if ($metaKeywords !== ''): ?>
+    <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
 
     <!-- Preconnect for faster font loading (PUT THIS FIRST!) -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -66,3 +70,4 @@
         <!-- End Preloader -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
+

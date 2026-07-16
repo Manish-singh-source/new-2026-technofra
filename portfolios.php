@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Portfolio || Technofra Website';
+$pageTitle = 'Our Work | Technofra Portfolio - Web, App & Digital Projects';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

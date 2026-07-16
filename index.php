@@ -1,5 +1,7 @@
 <?php
 session_start();
+$pageTitle = 'Technofra - Expert Web Design, Development & Digital Solutions';
+$metaKeywords = 'Website development company in Mumbai, Digital marketing agency in Mumbai, Web design company Mumbai, Website development company in Mumbai for business growth, Digital marketing agency in Mumbai for lead generation, Digital marketing company in Kandivali, Website development company in Kandivali';
 $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 include __DIR__ . '/header.php'; ?>
@@ -1881,3 +1883,4 @@ include __DIR__ . '/header.php'; ?>
 
 <script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
+

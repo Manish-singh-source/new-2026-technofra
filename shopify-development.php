@@ -1,5 +1,6 @@
-﻿<?php
-$pageTitle = 'Shopify Development | Technofra';
+<?php
+$pageTitle = 'Shopify Website Development Company in Mumbai | eCommerce Experts - Technofra';
+$metaKeywords = 'Shopify development company, Shopify development company in Mumbai, Shopify website development, Shopify experts India, Shopify development company in Mumbai for ecommerce brands, Shopify store setup services India, Shopify development company in Kandivali, shopify development services in mumbai, Shopify development companies, Shopify development services, Shopify website development, shopify web development company, Shopify agency, shopify web development agency, shopify website developer, Shopify ecommerce development';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>
@@ -382,7 +383,7 @@ include __DIR__ . '/header.php';
         <div class="portfolio-head">
             <div class="sec-title">
                 <span class="sub-title">/ our portfolio /</span>
-                <h2 class="title">Shopify stores we’ve built that <span>drive results.</span></h2>
+                <h2 class="title">Shopify stores we�ve built that <span>drive results.</span></h2>
                 <p>From elegant design to seamless functionality, we create Shopify stores that not only look great but also convert visitors into loyal customers.</p>
                 <span class="title-line"></span>
             </div>
@@ -624,3 +625,5 @@ include __DIR__ . '/header.php';
 </section>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+

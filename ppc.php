@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'PPC Management | Technofra';
+$pageTitle = 'PPC Services Company  | Technofra';
 include __DIR__ . '/header.php';
 
 ?>

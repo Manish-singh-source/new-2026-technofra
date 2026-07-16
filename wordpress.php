@@ -1,6 +1,6 @@
 <?php
 session_start();
-$pageTitle = 'Portfolio || Technofra Website';
+$pageTitle = 'WordPress Development Services | Custom Websites & Solutions | Technofra';
 $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 $bodyClass = 'hero-video-page';
@@ -633,3 +633,4 @@ include __DIR__ . '/header.php';
 
 <script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
+

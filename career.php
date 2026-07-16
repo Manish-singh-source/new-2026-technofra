@@ -1,4 +1,5 @@
 <?php
+$pageTitle = 'Careers at Technofra - Join Our Team of Digital Experts';
 $bodyClass = 'job-application-page';
 include __DIR__ . '/header.php';
 ?>
@@ -621,4 +622,6 @@ body.role-modal-open {
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
 
