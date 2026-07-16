@@ -8944,10 +8944,6 @@ input[type=submit]:hover {
   background-color: var(--color-surface-dark-2);
 }
 
-.active-body .faq-sec2::before {
-  left: -15%;
-}
-
 .active-body .user-count .counter-box5 .counter-number,
 .active-body .user-count .counter-box5 .counter-text {
   color: #1a1a1a;
@@ -15477,7 +15473,7 @@ ul {
 
 @media (max-width: 1440px) {
   .banner-content .title2 {
-    font-size: 250px;
+    font-size: 100px;
     bottom: -35px;
     left: -20px;
   }
@@ -15485,21 +15481,21 @@ ul {
 
 @media (max-width: 1201px) {
   .banner-content .title2 {
-    font-size: 180px;
+    font-size: 100px;
     line-height: 180px;
   }
 }
 
 @media (max-width: 820px) {
   .banner-content .title2 {
-    font-size: 144px;
+    font-size: 80px;
     line-height: 150px;
   }
 }
 
 @media (max-width: 769px) {
   .banner-content .title2 {
-    font-size: 120px;
+    font-size: 70px;
     line-height: 120px;
   }
 }
@@ -32076,7 +32072,7 @@ ul {
   background-color: transparent;
   color: #ffffff;
   font-family: "Manrope", Sans-serif;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 90px;
   letter-spacing: -0.05em;
@@ -32115,6 +32111,17 @@ ul {
 @media (max-width: 1025px) {
   .solutions {
     margin-left: 26px;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-counter {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .solutions {
+    margin-left: 0px;
   }
 }
 
@@ -42796,45 +42803,6 @@ blockquote {
   position: relative;
 }
 
-.faq-sec2::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  left: 0;
-  width: 842px;
-  height: 1394px;
-  background-image: url(../images/layers/layer2-1.png);
-}
-
-@media (max-width: 1440px) {
-  .faq-sec2::before {
-    top: 44%;
-    width: 771px;
-    height: 1308px;
-  }
-}
-
-@media (max-width: 820px) {
-  .faq-sec2::before {
-    top: 22%;
-  }
-}
-
-@media (max-width: 577px) {
-  .faq-sec2::before {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    -webkit-transform: unset;
-    -ms-transform: unset;
-    transform: unset;
-  }
-}
 
 .faq-sec2 .sec-title {
   max-width: 517px;

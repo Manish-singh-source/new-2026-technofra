@@ -295,6 +295,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1201px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 45px;
@@ -303,6 +304,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1025px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 50px;
@@ -311,12 +313,14 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 769px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 35px;
             line-height: 40px;
         }
     }
+
     @media (max-width: 575.98px) {
         .tech-stack-v2::before {
             width: 300px;
@@ -410,6 +414,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1201px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 45px;
@@ -418,6 +423,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1025px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 50px;
@@ -426,12 +432,14 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 769px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 35px;
             line-height: 40px;
         }
     }
+
     @media (max-width: 575.98px) {
         .hero-contact10.hero-experience-card {
             gap: 16px;
@@ -453,8 +461,7 @@ include __DIR__ . '/header.php';
             font-size: 0.92rem;
         }
     }
-</style>
-<style>
+
     :root {
         --accent-green: #22c55e;
         --border-color: #e9ecf1;
@@ -752,6 +759,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1201px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 45px;
@@ -760,6 +768,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1025px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 50px;
@@ -768,12 +777,14 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 769px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 35px;
             line-height: 40px;
         }
     }
+
     @media (max-width: 575.98px) {
         .hero-contact10.hero-experience-card {
             gap: 16px;
@@ -975,10 +986,10 @@ include __DIR__ . '/header.php';
 
     @media (max-width: 767.98px) {
         .services-cards-column {
-        margin-top: 150px;
-    }
+            margin-top: 150px;
+        }
 
-    .service-card {
+        .service-card {
             padding: 22px 20px;
             gap: 14px;
         }
@@ -1010,6 +1021,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1201px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 45px;
@@ -1018,6 +1030,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1025px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 50px;
@@ -1026,13 +1039,16 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 769px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 35px;
             line-height: 40px;
         }
     }
+
     @media (max-width: 575.98px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 32px;
@@ -1040,10 +1056,10 @@ include __DIR__ . '/header.php';
         }
 
         .services-cards-column {
-        margin-top: 150px;
-    }
+            margin-top: 150px;
+        }
 
-    .service-card {
+        .service-card {
             flex-direction: column;
             align-items: flex-start;
         }
@@ -1103,8 +1119,8 @@ include __DIR__ . '/header.php';
     }
 
     @media (min-width: 992px) {
-    
-    .portfolio-desc {
+
+        .portfolio-desc {
             text-align: right;
             margin-left: auto;
         }
@@ -1363,6 +1379,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1201px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 45px;
@@ -1371,6 +1388,7 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 1025px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 50px;
@@ -1379,12 +1397,14 @@ include __DIR__ . '/header.php';
     }
 
     @media (max-width: 769px) {
+
         .services-heading,
         .portfolio-heading {
             font-size: 35px;
             line-height: 40px;
         }
     }
+
     @media (max-width: 575.98px) {
         .about-counter6 {
             margin: 40px;
@@ -1402,6 +1422,75 @@ include __DIR__ . '/header.php';
     .hero-section10 {
         border-radius: 0px !important;
     }
+
+
+
+
+    @media (max-width: 1024px) {
+
+        .banner-content .title2 {
+            font-size: 40px;
+        }
+
+        .services-cards-column {
+            margin-top: 100px;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+        .video-banner::before {
+            width: 275px;
+        }
+
+        .banner-content .title2 {
+            font-size: 40px;
+        }
+
+        .services-cards-column {
+            margin-top: 40px;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+        .services-cards-column {
+            margin-top: 60px;
+        }
+
+        .main-sec3 {
+            border-radius: 0px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .services-cards-column {
+            margin-top: 60px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .services-cards-column {
+            margin-top: 45px;
+        }
+
+        .about-counter6 .counter-box15 .counter-number,
+        .about-counter6 .counter-box15 .counter-text {
+            font-size: 35px;
+        }
+
+        .banner-content .title2 {
+            line-height: 43px;
+        }
+
+        .video-banner::before {
+            width: 228px;
+        }
+
+        .video-popup {
+            right: 17px;
+        }
+    }
 </style>
 
 <link
@@ -1409,95 +1498,43 @@ include __DIR__ . '/header.php';
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
 
-<!-- Banner Section-->
- <!-- her-style1 -->
-        <section class="hero-style1">
-            <div class="hero-info">
-                <div class="container-fluid">
-                    <div class="row end">
-                        <div class="col-lg-8"> 
-                            <div class="hero-title">
-                                <h1 class="gradient-title">Web Design & Development <span>Company in Mumbai
-                                    </span></h1>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="hero-content">
-                                <p>At Technofra, we build high-performance websites that attract visitors, engage users, and convert leads. With 14+ years of experience, we deliver custom web solutions for businesses of all sizes.
-
-                                </p>
-                                <a class='ibt-btn ibt-btn-secondary' href='contact.php' target='_blank' title>
-                                    <span>Explore Services</span>
-                                    <i class="icon-arrow-top"></i>
-                                </a>
-                            </div>
-                        </div>
+<section class="hero-style1">
+    <div class="hero-info">
+        <div class="container-fluid">
+            <div class="row end">
+                <div class="col-lg-8">
+                    <div class="hero-title">
+                        <h1 class="gradient-title">Web Design & Development <span>Company in Mumbai
+                            </span></h1>
                     </div>
                 </div>
-            </div>
-            <div class="video-banner">
-                <div class="container2">
-                    <div class="banner-content">
-                        <span class="sub-title" id="animatedHeading"> Designing Digital Experiences That Drive Growth</span>
-                        <h1 class="title2">DIGITAL EXPERIENCE</h1>
-                        <!-- <p>Websites that engage and drive growth.
-                        </p> -->
-                        <a href="#" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
-                            <i class="fa fa-play"></i> Watch Video
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End hero-style1 -->
-
-<!-- <section class="hero-section10">
-    <div class="container-fluid">
-        <div class="row g-3">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="hero-content10">
-                    <div class="hero-info10">
-                        <h1 class="title">Web Design & Development
-                            <span class="highlight">Company in Mumbai</span>
-                        </h1>
-                        <p>At Technofra, we create stunning, high-performance websites
-                            that drive traffic, engage visitors, and convert leads into
-                            customers. With 14+ years of experience, we deliver custom
-                            website design and development services tailored for
-                            businesses of all sizes.
+                <div class="col-lg-4">
+                    <div class="hero-content">
+                        <p>At Technofra, we build high-performance websites that attract visitors, engage users, and convert leads. With 14+ years of experience, we deliver custom web solutions for businesses of all sizes.
                         </p>
-                        <a class='ibt-btn ibt-btn-secondary' href='index10.html' target='_blank' title>
-                            <span>Explore Services</span>
+                        <a class='ibt-btn ibt-btn-outline' href='contact.php' target='_blank' title>
+                            <span>Contact Us</span>
                             <i class="icon-arrow-top"></i>
                         </a>
                     </div>
-                    <div class="hero-contact10 hero-experience-card">
-                        <div class="hero-experience-icon"><i class="fas fa-gem"></i></div>
-                        <div class="hero-experience-content">
-                            <h3 class="hero-experience-title">14+ Years Experience</h3>
-                            <div class="hero-experience-line"></div>
-                            <ul class="hero-experience-list">
-                                <li>Custom Websites</li>
-                                <li>E-Commerce</li>
-                                <li>Corporate Sites</li>
-                                <li>Landing Pages</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-sm-12">
-                <div class="hero-img10">
-                    <img src="assets/images/about/banner2.png" alt="AI Agency & Technology HTML Template">
                 </div>
             </div>
         </div>
     </div>
-</section> -->
+    <div class="video-banner">
+        <div class="container2">
+            <div class="banner-content">
+                <span class="sub-title" id="animatedHeading"> Designing Digital Experiences That Drive Growth</span>
+                <h1 class="title2">DIGITAL EXPERIENCE</h1>
+                <a href="javascript:void(0)" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
+                    <i class="fa fa-play"></i> Watch Video
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- About Section -->
 <section class="main-sec3">
-    <!-- about-us-sec6 -->
     <div class="about-us-sec6 ibt-section-gap">
         <div class="container">
             <div class="row align-items-end g-3 flex-column-reverse-custom">
@@ -1532,7 +1569,7 @@ include __DIR__ . '/header.php';
                                 business needs. From startups to established brands, we turn ideas into
                                 powerful digital experiences.
                             </p>
-                            <a class='ibt-btn ibt-btn-outline' href='index10.html' title>
+                            <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
@@ -1542,22 +1579,19 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </div>
-    <!-- End about-us-sec6 -->
 </section>
 
-<!-- Services Section -->
 <section class="services-section">
     <div class="container">
         <div class="row g-5 align-items-start">
 
-            <!-- LEFT COLUMN -->
             <div class="col-lg-4 col-md-12 service-content-sec">
                 <div class="services-eyebrow">Our Services</div>
                 <hr class="services-rule">
                 <h2 class="services-heading">Our Web Design &amp; Development Services</h2>
                 <p class="services-desc">
                     We create modern, responsive, and high-performance websites tailored to your business goals.
-                    From beautiful designs to powerful functionality — we build digital experiences that engage
+                    From beautiful designs to powerful functionality &mdash; we build digital experiences that engage
                     users and drive growth.
                 </p>
                 <hr class="services-divider">
@@ -1620,7 +1654,7 @@ include __DIR__ . '/header.php';
                         <div class="service-card">
                             <div class="service-number">04</div>
                             <div>
-                                <h3 class="service-title">E-Commerce Development</h3>
+                                <h3 class="service-title">E-commerce Development</h3>
                                 <p class="service-text">Online stores with product management, secure checkout, and smooth shopping flow.</p>
                             </div>
                         </div>
@@ -1659,7 +1693,7 @@ include __DIR__ . '/header.php';
         <div class="row">
             <div class="col-lg-6 feature-img-sec">
                 <div class="feature-img14">
-                    <img src="assets/images/about/about2.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/about/about2.png" alt="Web design and development illustration">
                 </div>
             </div>
             <div class="col-lg-6 feature-content-sec">
@@ -1683,7 +1717,7 @@ include __DIR__ . '/header.php';
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <p>We design responsive interfaces that adapt smoothly across desktop, tablet, and mobile devices for a consistent user experience.</p>
                             <p>Every layout is built to feel clear, modern, and easy to navigate, helping your visitors find what they need faster.</p>
-                            <a href="#" class="ibt-btn ibt-btn-outline-2">
+                            <a href="contact.php" class="ibt-btn ibt-btn-outline">
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
@@ -1691,7 +1725,7 @@ include __DIR__ . '/header.php';
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <p>We build custom websites and web applications with clean code, scalable structure, and business-specific functionality.</p>
                             <p>From front-end interactions to back-end integrations, we tailor the development process to match your goals and workflow.</p>
-                            <a href="#" class="ibt-btn ibt-btn-outline-2">
+                            <a href="contact.php" class="ibt-btn ibt-btn-outline">
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
@@ -1699,7 +1733,7 @@ include __DIR__ . '/header.php';
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                             <p>We optimize websites for speed, search visibility, and conversion so your pages load faster and perform better.</p>
                             <p>Technical SEO, structured content, and performance improvements work together to help your business reach more people online.</p>
-                            <a href="#" class="ibt-btn ibt-btn-outline-2">
+                            <a href="contact.php" class="ibt-btn ibt-btn-outline">
                                 <span>Explore more</span>
                                 <i class="icon-arrow-top"></i>
                             </a>
@@ -1715,7 +1749,7 @@ include __DIR__ . '/header.php';
 <section class="trusted-section">
     <div class="container-fluid">
         <h2 class="trusted-heading">
-            More than <span class="count">50+</span> brand trusted us worldwide
+            More than <span class="count">50</span> brands trust us worldwide
         </h2>
     </div>
 
@@ -1768,7 +1802,6 @@ include __DIR__ . '/header.php';
                     <img src="./assets/images/new/c8.png" alt="Life Like">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -1797,43 +1830,39 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
             <div class="row g-3 tech-stack-grid">
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-html5"><i class="fab fa-html5"></i></span><span>HTML5</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-css3"><i class="fab fa-css3-alt"></i></span><span>CSS3</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-js"><i class="fab fa-js-square"></i></span><span>JavaScript</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-react"><i class="fab fa-react"></i></span><span>React</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-bootstrap"><i class="fab fa-bootstrap"></i></span><span>Bootstrap</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-php"><i class="fab fa-php"></i></span><span>PHP</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-laravel"><i class="fab fa-laravel"></i></span><span>Laravel</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-node"><i class="fab fa-node-js"></i></span><span>Node.js</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-python"><i class="fab fa-python"></i></span><span>Python</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-flutter"><i class="fas fa-mobile-alt"></i></span><span>Flutter</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-kotlin"><i class="fab fa-android"></i></span><span>Kotlin</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-swift"><i class="fab fa-apple"></i></span><span>Swift</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mysql"><i class="fas fa-database"></i></span><span>MySQL</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mongo"><i class="fas fa-leaf"></i></span><span>MongoDB</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-html5"><i class="fab fa-html5"></i></span><span>HTML5</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-css3"><i class="fab fa-css3-alt"></i></span><span>CSS3</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-js"><i class="fab fa-js-square"></i></span><span>JavaScript</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-react"><i class="fab fa-react"></i></span><span>React</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-bootstrap"><i class="fab fa-bootstrap"></i></span><span>Bootstrap</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-php"><i class="fab fa-php"></i></span><span>PHP</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-laravel"><i class="fab fa-laravel"></i></span><span>Laravel</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-node"><i class="fab fa-node-js"></i></span><span>Node.js</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-python"><i class="fab fa-python"></i></span><span>Python</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-flutter"><i class="fas fa-mobile-alt"></i></span><span>Flutter</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-kotlin"><i class="fab fa-android"></i></span><span>Kotlin</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-swift"><i class="fab fa-apple"></i></span><span>Swift</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mysql"><i class="fas fa-database"></i></span><span>MySQL</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-mongo"><i class="fas fa-leaf"></i></span><span>MongoDB</span></a></div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
-                    <a href="#" title="" class="tech-stack-card">
+                    <a href="javascript:void(0)" title="" class="tech-stack-card">
                         <span class="tech-stack-icon tech-postgres">
                             <img src="./assets/svg/postgresql.svg" alt="PostgreSQL" width="32" height="32">
                         </span>
                         <span>PostgreSQL</span>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-firebase"><i class="fas fa-fire"></i></span><span>Firebase</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-wordpress"><i class="fab fa-wordpress"></i></span><span>WordPress</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-shopify"><i class="fab fa-shopify"></i></span><span>Shopify</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-woocommerce"><i class="fas fa-shopping-bag"></i></span><span>WooCommerce</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-github"><i class="fab fa-github"></i></span><span>GitHub</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-figma"><i class="fab fa-figma"></i></span><span>Figma</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-aws"><i class="fab fa-aws"></i></span><span>AWS</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-google"><i class="fab fa-google"></i></span><span>Google Cloud</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-docker"><i class="fa-brands fa-docker"></i></span><span>Docker</span></a></div>
-                <div class="col-lg-3 col-md-4 col-sm-6"><a href="#" title="" class="tech-stack-card"><span class="tech-stack-icon tech-cpanel"><i class="fas fa-server"></i></span><span>cPanel</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-firebase"><i class="fas fa-fire"></i></span><span>Firebase</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-wordpress"><i class="fab fa-wordpress"></i></span><span>WordPress</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-shopify"><i class="fab fa-shopify"></i></span><span>Shopify</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-woocommerce"><i class="fas fa-shopping-bag"></i></span><span>WooCommerce</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-github"><i class="fab fa-github"></i></span><span>GitHub</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-figma"><i class="fab fa-figma"></i></span><span>Figma</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-aws"><i class="fab fa-aws"></i></span><span>AWS</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-google"><i class="fab fa-google"></i></span><span>Google Cloud</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-docker"><i class="fa-brands fa-docker"></i></span><span>Docker</span></a></div>
+                <div class="col-lg-3 col-md-4 col-sm-6"><a href="javascript:void(0)" title="" class="tech-stack-card"><span class="tech-stack-icon tech-cpanel"><i class="fas fa-server"></i></span><span>cPanel</span></a></div>
             </div>
-            <a class="tech-stack-cta" href="index9.html" title>
-                <span>Explore Technology Stack</span>
-                <i class="icon-arrow-top"></i>
-            </a>
         </div>
     </div>
 </section>
@@ -1854,7 +1883,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-6 mt-3 mt-lg-0">
                 <p class="portfolio-desc">
                     We craft scalable websites, intuitive UI/UX experiences, SaaS dashboards, mobile apps, and
-                    e-commerce interfaces — built with clean design, modern technology, and a focus on performance
+                    E-commerce interfaces &mdash; built with clean design, modern technology, and a focus on performance
                     and results.
                 </p>
             </div>
@@ -1880,7 +1909,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">E-Commerce Website & CRM</div>
+                            <div class="portfolio-category">E-commerce Website & CRM</div>
                             <div class="portfolio-title">Aeritx</div>
                         </div>
                     </div>
@@ -1892,7 +1921,7 @@ include __DIR__ . '/header.php';
                         <div class="portfolio-icon"><i class="fa-solid fa-globe"></i></div>
                         <div class="portfolio-text">
                             <div class="portfolio-category">Website</div>
-                            <div class="portfolio-title">Karantelecom</div>
+                            <div class="portfolio-title">Karan Telecom</div>
                         </div>
                     </div>
                 </div>
@@ -1943,7 +1972,7 @@ include __DIR__ . '/header.php';
                         <div class="portfolio-icon"><i class="fa-solid fa-car"></i></div>
                         <div class="portfolio-text">
                             <div class="portfolio-category">Website</div>
-                            <div class="portfolio-title">Transhubtech</div>
+                            <div class="portfolio-title">Transhub Tech</div>
                         </div>
                     </div>
                 </div>
@@ -1953,7 +1982,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-chart-line"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">E-Commerce Website</div>
+                            <div class="portfolio-category">E-commerce Website</div>
                             <div class="portfolio-title">WOTM</div>
                         </div>
                     </div>
@@ -1964,14 +1993,14 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-heart-pulse"></i></div>
                         <div class="portfolio-text">
-                            <div class="portfolio-category">E-Commerce Website</div>
-                            <div class="portfolio-title">SukanyaIndia</div>
+                            <div class="portfolio-category">E-commerce Website</div>
+                            <div class="portfolio-title">Sukanya India</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="portfolio-card">
-                    <div class="portfolio-thumb"><img src="./assets/images/about/files/headquater.png" alt="Headquarters"></div>
+                    <div class="portfolio-thumb"><img src="./assets/images/about/files/headquarter.png" alt="Headquarters"></div>
                     <div class="portfolio-info">
                         <div class="portfolio-icon"><i class="fa-solid fa-signs-post"></i></div>
                         <div class="portfolio-text">
@@ -2004,7 +2033,7 @@ include __DIR__ . '/header.php';
         <div class="row">
             <div class="col-lg-4 faq-img-sec">
                 <div class="faq-img2">
-                    <img src="assets/images/new/elemets.png" alt="AI Agency & Technology HTML Template">
+                    <img src="assets/images/new/elemets.png" alt="Frequently asked questions illustration">
                 </div>
             </div>
             <div class="col-lg-8">
@@ -2081,10 +2110,6 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <a class='ibt-btn ibt-btn-outline' href='service.html' title>
-                        <span>Explore More</span>
-                        <i class="icon-arrow-top"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -2106,8 +2131,3 @@ include __DIR__ . '/header.php';
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
