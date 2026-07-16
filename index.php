@@ -1405,7 +1405,7 @@ include __DIR__ . '/header.php'; ?>
                     </div>
                     <div class="about-counter">
                         <div class="counter-box4">
-                            <span class="counter-number" data-target="550">550</span>
+                            <span class="counter-number percent-counter2" data-target="2500">2500</span>
                             <span class="counter-text">+</span>
                         </div>
                         <span class="solutions">Successful projects delivered</span>
