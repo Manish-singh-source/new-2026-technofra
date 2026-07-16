@@ -1266,7 +1266,7 @@ include __DIR__ . '/header.php'; ?>
 <section class="journey-sec ibt-section-gapTop pb-5" id="journey">
     <div class="container">
         <div class="sec-title text-center journey-title">
-            <span class="sub-title" style="width: 125px">Company Journey</span>
+                            <span class="sub-title">Company Journey</span>
             <h2 class="title animated-heading">Our Jour ney Timeline</h2>
             <p class="journey-intro">A look at the key moments that shaped Technofra into a reliable digital partner for branding, web development, mobile apps, and IT solutions.</p>
         </div>

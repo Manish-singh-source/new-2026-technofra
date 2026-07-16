@@ -798,19 +798,20 @@ var GsapAnimations = {
   // =====================================
   // SUBTITLE ANIMATION
   // =====================================
-  animateSubtitles: function () {
-    const subtitles = document.querySelectorAll(".sec-title .sub-title");
-
-    subtitles.forEach(function (sub) {
-      const text = sub.textContent.trim();
-      sub.innerHTML = '<span class="sub-text">' + text + "</span>";
-      const innerSpan = sub.querySelector(".sub-text");
-
-      gsap.set(innerSpan, {
-        width: 1,
-        display: "inline-block",
-        overflow: "hidden",
-      });
+	  animateSubtitles: function () {
+	    const subtitles = document.querySelectorAll(".sec-title .sub-title");
+	
+	    subtitles.forEach(function (sub) {
+	      const text = sub.textContent.trim().replace(/^\[\s*/, "").replace(/\s*\]$/, "");
+	      sub.innerHTML = '<span class="sub-text">' + text + "</span>";
+	      const innerSpan = sub.querySelector(".sub-text");
+	
+	      gsap.set(innerSpan, {
+	        width: 1,
+	        display: "inline-block",
+	        overflow: "hidden",
+	        whiteSpace: "nowrap",
+	      });
 
       gsap.to(innerSpan, {
         width: innerSpan.scrollWidth,

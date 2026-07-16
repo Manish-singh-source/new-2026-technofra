@@ -1395,7 +1395,7 @@ include __DIR__ . '/header.php'; ?>
             <div class="col-lg-6">
                 <div class="ser-content7">
                     <div class="sec-title">
-                        <span class="sub-title"><span class="sub-text" style="overflow: hidden; display: inline-block; width: 142px;">Services We Provide</span></span>
+                        <span class="sub-title">Services We Provide</span>
                         <h2 class="title animated-heading">Services We Provide</h2>
                         <p>We build digital products and growth systems for companies that want stronger online presence, better performance, and measurable results.</p>
                         <a class="ibt-btn ibt-btn-outline" href="web-design-and-development.php">
