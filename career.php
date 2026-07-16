@@ -5,8 +5,7 @@ include __DIR__ . '/header.php';
 
 <style>
 .career-page-hero {
-    padding: 90px 0 26px;
-    background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+    padding: 90px 15px 26px;
 }
 
 .career-page-hero .hero-copy {
@@ -229,10 +228,6 @@ include __DIR__ . '/header.php';
 
 body.role-modal-open {
     overflow: hidden;
-}
-
-.feature-sec15 {
-    background: linear-gradient(180deg, #f6f9ff 0%, #ffffff 100%);
 }
 
 .why-join-copy {

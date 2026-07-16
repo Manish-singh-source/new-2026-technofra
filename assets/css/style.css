@@ -31602,19 +31602,6 @@ ul {
   position: relative;
 }
 
-.feature-sec15::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  background-image: url(../images/layers/shade1-3.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 @media (max-width: 1025px) {
   .feature-sec15::before {
     bottom: -35%;
