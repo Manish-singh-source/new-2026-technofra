@@ -116,6 +116,7 @@ include __DIR__ . '/header.php';
     }
 
     .contact-captcha-box {
+        margin-bottom: 5px;
         transform-origin: left top;
     }
 
@@ -166,7 +167,7 @@ include __DIR__ . '/header.php';
                             Reach out to our team and we will get back to you as soon as possible.
                         </p>
                     </div>
-                    <div class="row">
+                    <div class="row g-5">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="contact-info">
                                 <div class="call-center2">
@@ -189,7 +190,7 @@ include __DIR__ . '/header.php';
                                 </div>
                                 <div class="call-center2 mb-0">
                                     <h4 class="title">Office Hours</h4>
-                                    <p>Monday - Saturday<br>10:00 AM - 07:00 PM</p>
+                                    <p>Monday - Saturday<br>09:00 AM - 06:00 PM</p>
                                 </div>
                             </div>
                         </div>
