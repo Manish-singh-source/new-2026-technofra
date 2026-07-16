@@ -106,6 +106,9 @@ var SideMenu2 = {
           );
 
           if (menu) {
+            menu.querySelectorAll(".sub-menu.active").forEach(function (el) {
+              el.classList.remove("active");
+            });
             menu.classList.add("active");
             overlay2.classList.add("active");
           }
@@ -152,19 +155,21 @@ var SideMenu2 = {
         });
       });
 
-      // Side menu list item toggle
-      var sideMenuItems = document.querySelectorAll(".side-menu2 > ul > li");
-      sideMenuItems.forEach(function (item) {
-        item.addEventListener("click", function () {
-          this.classList.toggle("active");
-        });
-      });
+      // Side menu dropdown toggle
+      var sideSubMenuLinks = document.querySelectorAll(".side-menu2 .sub-menu > a");
+      sideSubMenuLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          var currentSubMenu = this.parentElement;
+          var menu = this.closest(".side-menu2");
 
-      var sideSubMenus = document.querySelectorAll(".side-menu2 .sub-menu");
-      sideSubMenus.forEach(function (subMenu) {
-        subMenu.addEventListener("click", function (e) {
-          e.stopPropagation();
-          this.classList.toggle("active");
+          menu.querySelectorAll(".sub-menu.active").forEach(function (subMenu) {
+            if (subMenu !== currentSubMenu) {
+              subMenu.classList.remove("active");
+            }
+          });
+
+          currentSubMenu.classList.toggle("active");
         });
       });
     }
