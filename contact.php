@@ -199,7 +199,7 @@ include __DIR__ . '/header.php';
             </div>
             <div class="col-lg-6">
                 <div class="contact-form v2">
-                    <form action="contact-handler.php" method="post" class="custom-form">
+                    <form action="contact-handler" method="post" class="custom-form">
                         <h2>Let's Start Your Growth Journey</h2>
                         <div class="form-row">
                             <input type="text" id="fname" name="fname" placeholder="First name" required value="<?php echo contactFormValue($contactFormData['fname'] ?? ''); ?>">

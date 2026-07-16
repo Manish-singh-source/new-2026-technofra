@@ -1612,7 +1612,7 @@ include __DIR__ . '/header.php'; ?>
             </div>
             <button type="button" class="eep-book-close" id="bookCallClose" aria-label="Close">&times;</button>
         </div>
-        <form class="eep-book-form" action="book-call-handler.php" method="post">
+        <form class="eep-book-form" action="book-call-handler" method="post">
             <div class="eep-book-summary">
                 <strong>Date:</strong> <span id="modalSelectedDate">Not selected</span><br>
                 <div class="eep-book-summary-line"><strong>Time (IST):</strong> <span id="modalSelectedTime">Not selected</span></div>

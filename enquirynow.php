@@ -407,7 +407,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
                         <p>Complete the form below with accurate details so our team can review your enquiry properly and respond with relevant information.</p>
                     </div>
 
-                    <form action="enquiry-handler.php" class="enquiry-form" method="post">
+                    <form action="enquiry-handler" class="enquiry-form" method="post">
                         <div class="enquiry-form-grid">
                             <div>
                                 <label for="quoteName">Full Name <span class="text-danger">*</span></label>

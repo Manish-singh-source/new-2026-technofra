@@ -440,7 +440,7 @@ include __DIR__ . '/header.php'; ?>
             </aside>
 
             <div class="career-form-card" id="job-application-form">
-                <form action="jobapplication-handler.php" method="post" enctype="multipart/form-data"
+                <form action="jobapplication-handler" method="post" enctype="multipart/form-data"
                     class="career-application-form">
                     <div class="row">
                         <div class="col-lg-6 mb-3 text-start">

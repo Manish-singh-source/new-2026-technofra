@@ -47357,8 +47357,8 @@ blockquote {
 /*# 150 media */
 @media (max-width: 1280px) {
   .wi {
-    width: 190px;
-}
+    width: 200px;
+  }
 }
 
 /* 125% zoom / smaller viewport ke liye styles */
