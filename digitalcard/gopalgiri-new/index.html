@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopal Giri | Business Card Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+    <!-- Background effect start -->
+    <canvas id="background-canvas"></canvas>
+    <div class="container bg">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-left">
+
+                <div class="logo-text">
+                    <img src="assets/images/logo.png" alt="" width="180px" style="margin-left: -10px;">
+                </div>
+            </div>
+            <div class="logo-right">
+                <img src="assets/images/girdinfinity-logo.jpg" alt="EQUIS" class="badge">
+                <img src="assets\images\blueorbith1.png" alt="AACSB" class="badge">
+                <img src="assets\images\digikcon-logo.png" alt="AMBA" class="badge">
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="tagline">
+                Prepare for the <strong>next step</strong> in your<br>
+                <strong>sales and marketing journey</strong>
+            </div>
+
+            <div class="main-title">
+                <div class="title-small">Advanced Programme for</div>
+                <div class="title-large">Marketing and<br>Sales Professionals</div>
+                <div class="subtitle">Transformative Journey to C-Suite Roles</div>
+            </div>
+
+            <div class="features">
+                <div class="feature-pills">
+                    <div class="feature-pill">
+                        <div class="feature-dot"></div>
+                        <div class="feature-text"><a href="https://technofra.com/web-design" target="_blank">Web
+                                Development</a></div>
+                    </div>
+                    <div class="feature-pill">
+                        <div class="feature-dot"></div>
+                        <div class="feature-text"><a href="https://technofra.com/ios-app-development"
+                                target="_blank">App Development</a></div>
+                    </div>
+                    <div class="feature-pill">
+                        <div class="feature-dot"></div>
+                        <div class="feature-text"><a href="https://technofra.com/branding" target="_blank">Branding</a>
+                        </div>
+                    </div>
+                    <div class="feature-pill">
+                        <div class="feature-dot"></div>
+                        <div class="feature-text"><a href="https://technofra.com/ui-ux" target="_blank">UI/UX Design</a>
+                        </div>
+                    </div>
+                    <div class="feature-pill">
+                        <div class="feature-dot"></div>
+                        <div class="feature-text"><a href="https://technofra.com/payment-gateway"
+                                target="_blank">Payment Integration</a></div>
+                    </div>
+                    <div class="feature-pill">
+                        <div class="feature-dot"></div>
+                        <div class="feature-text"><a href="https://technofra.com/digital-marketing"
+                                target="_blank">Digital Marketing</a></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="image-section">
+                <img src="assets\images\sir.png" alt="Professional" class="professional-image">
+            </div>
+        </div>
+        <!--  Scan modal start -->
+        <div class="modal fade" id="scan-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="scan-content">
+                            <div class="scanner">
+                                <img src="assets\images\gopalgirqr.jpg" alt="scanner-img" class="">
+                            </div>
+                            <div class="scan-txt mt-20">
+                                <p>Scan me</p>
+                            </div>
+                        </div>
+                        <div class="qr-btn mt-30">
+                            <div class="btn1">
+                                <a href="javascript:void(0)" onclick="downloadImage()">Download</a>
+                            </div>
+                            <div class="btn1">
+                                <a href="javascript:void(0)" onclick="shareImage()">Share</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Scan modal end -->
+        <!--  Share modal start -->
+        <div class="modal fade" id="share-media-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Share On</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="social-media-content">
+                            <div class="social-media-img">
+                                <a href="https://www.facebook.com/sharer.php?u=2bcard.com/ccc397184&t=Michele+Prieto"
+                                    target="_blank"><img src="assets/images/social-icon/icon2.svg"
+                                        alt="social-icon"></a>
+                            </div>
+                            <div class="social-media-img">
+                                <a href="https://www.instagram.com/technofra.company/" target="_blank"><img
+                                        src="assets/images/social-icon/icon3.svg" alt="social-icon"></a>
+                            </div>
+                            <div class="social-media-img">
+                                <a href="https://wa.me/+918080803374" target="_blank"><img
+                                        src="assets/images/social-icon/icon4.svg" alt="social-icon"></a>
+                            </div>
+                            <div class="social-media-img">
+                                <a href="https://www.linkedin.com/company/technofra" target="_blank"><img
+                                        src="assets/images/social-icon/icon5.svg" alt="social-icon"></a>
+                            </div>
+                            <div class="social-media-img">
+                                <a href="https://x.com/Technofra_" target="_blank"><img
+                                        src="assets/images/social-icon/icon6.svg" alt="social-icon"></a>
+                            </div>
+
+                            <div class="social-media-img">
+                                <a href="mailto:gopal@technofra.com" target="_blank"><img
+                                        src="assets/images/social-icon/icon9.svg" alt="social-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Share modal end -->
+        <div class="add-to-contact container">
+            <div class="add-to-contact-wrap">
+                <a href="javascript:void(0)" class="scan-btn" data-bs-toggle="modal" data-bs-target="#scan-modal">
+                    <img src="assets/images/bottom-sec/scan-icon.svg" alt="scan-icon">
+                </a>
+                <a href="javascript:void(0)" class="scan-btn" data-bs-toggle="modal"
+                    data-bs-target="#share-media-modal">
+                    <img src="assets/images/bottom-sec/share-icon.svg" alt="share-icon">
+                </a>
+                <a href="tel:+918080803374" class="add-to-btn">
+                    <div class="add-to-btn-sec">
+                        <div class="add-txt">Add to Contact</div>
+                        <div class="plus-btn"><img src="assets/images/bottom-sec/plus-icon.svg" alt="plus-icon">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Footer Section -->
+        <div class="footer-section">
+            <div class="footer-card"><a href="mailto:gopal@technofra.com"> <i class="fas fa-envelope"></i>
+                    <span>gopal@technofra.com</span></a>
+            </div>
+
+            <div class="footer-card"><a href="tel:+919702395473"> <i class="fas fa-phone-alt"
+                        style="rotate: 91deg;"></i>
+                    <span>+91 - 9702 39 5473</span></a>
+            </div>
+
+            <div class="footer-card"> <a href="tel:+918080803374"> <i class="fas fa-mobile-alt"></i>
+                    <span>+91 - 8080 80 3374</span></a>
+            </div>
+
+            <div class="footer-card">
+                <a href="https://www.technofra.com/" target="_blank">
+                    <i class="fas fa-globe"></i>
+                    <span>www.technofra.com</span> </a>
+
+            </div>
+
+            <div class="footer-card address">
+                <a href="https://maps.app.goo.gl/qyciMbkHxN5StrRn7"
+                    target="_blank"> <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                        Office No. 501, 5th Floor, Ghanshyam Enclave,
+                        Laljipada New Link Road, Kandivali (West),
+                        Mumbai - 400067
+                    </span></a>
+
+            </div>
+
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps?q=Technofra%20Kandivali%20West%20Mumbai&output=embed"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+
+
+
+        <!-- Image Section -->
+
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.ui.min.js"></script>
+    <script src="assets/js/fancybox.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/datepiker.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/TweenMax.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

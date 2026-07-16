@@ -1,0 +1,362 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Montserrat', sans-serif;
+     overflow-x: hidden;
+     background: #1a0b2e;
+     min-height: 100vh;
+ }
+
+
+ .container {
+     max-width: 100%;
+     position: relative;
+
+     overflow: hidden;
+ }
+
+ .bg {
+     background: linear-gradient(98deg, #5b3a8f 0%, #1e1230 50%, #0b0315 100%);
+ }
+
+ /* Decorative Pattern Background */
+ /* .container::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 60%;
+     height: 100%;
+     background-image:
+         repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.03) 10px, rgba(255, 255, 255, 0.03) 20px),
+         repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.03) 10px, rgba(255, 255, 255, 0.03) 20px);
+     pointer-events: none;
+ } */
+
+ /* Curved Accent */
+ .container::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     right: -10%;
+     width: 50%;
+     height: 100%;
+     background: rgba(255, 255, 255, 0.02);
+     border-radius: 50% 0 0 50%;
+     pointer-events: none;
+ }
+
+ /* Header */
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 5px;
+     position: relative;
+     z-index: 10;
+     gap: 8px;
+ }
+
+ .logo-left {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .logo-circle {
+     width: 60px;
+     height: 60px;
+     background: white;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 8px;
+ }
+
+ .logo-text {
+     color: white;
+     font-size: 11px;
+     font-weight: 700;
+     line-height: 1.3;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+     margin-left: -13px;
+ }
+
+ .badge:empty {
+     display: block !important;
+ }
+
+ .logo-right {
+     background: white;
+     padding: 8px 1px;
+     border-radius: 5px;
+     display: flex;
+     gap: 10px;
+     align-items: center;
+ }
+
+ .badge {
+    height: 23px;
+    padding: 4px 1px;
+}
+
+ /* Content Section */
+ .content {
+     padding: 40px 5px 0;
+     position: relative;
+     z-index: 5;
+ }
+
+.tagline {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    border-left: 3px solid white;
+    padding-left: 15px;
+}
+
+ .tagline strong {
+     font-weight: 600;
+ }
+
+ .main-title {
+     margin-bottom: 10px;
+ }
+
+ .title-small {
+     font-size: 16px;
+     color: white;
+     font-weight: 500;
+     margin-bottom: 5px;
+ }
+
+.title-large {
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+ .subtitle {
+     font-size: 15px;
+     color: white;
+     font-weight: 400;
+     font-style: italic;
+     margin-bottom: 35px;
+ }
+
+ /* Feature Pills */
+ .features {
+     display: flex;
+     /* margin-bottom: 30px; */
+ }
+
+ .feature-pill {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     background: rgba(255, 255, 255, 0.1);
+     border: 1.5px solid rgba(255, 255, 255, 0.3);
+     border-radius: 10px;
+     padding: 12px 6px;
+     /* max-width: fit-content; */
+     margin-bottom: 10px;
+     backdrop-filter: blur(10px);
+ }
+
+ .feature-dot {
+     width: 11px;
+     height: 11px;
+     background: white;
+     border-radius: 50%;
+     flex-shrink: 0;
+     margin-left: -11px;
+ }
+
+.feature-text a {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+ /* Image Section */
+ .image-section {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     padding: 0;
+     margin: 0;
+      
+ }
+
+ .professional-image {
+     width: 100%;
+     max-width: 450px;
+     height: auto;
+     display: block;
+     margin: 0;
+     padding: 0;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 480px) {
+     .header {
+         padding: 15px 5px;
+     }
+
+     .logo-circle {
+         width: 50px;
+         height: 50px;
+     }
+
+     .logo-text {
+         font-size: 9px;
+     }
+
+     .badge {
+         height: 24px;
+     }
+
+     .content {
+         padding: 30px 10px 0;
+     }
+
+     .tagline {
+         font-size: 18px;
+     }
+
+     .title-large {
+         font-size: 12px;
+     }
+
+     .feature-pill {
+         padding: 10px 8px;
+     }
+
+     .feature-text a {
+         font-size: 12px;
+     }
+
+     /* .image-section {
+         margin-right: -35px;
+     } */
+
+ }
+
+ @media (max-width: 375px) {
+     .tagline {
+         font-size: 16px;
+     }
+
+     .title-large {
+         font-size: 12px;
+     }
+
+     .title-small {
+         font-size: 14px;
+     }
+
+     .subtitle {
+         font-size: 13px;
+     }
+ }
+
+ /* iPhone SE and smaller */
+ @media (max-width: 320px) {
+     .logo-right {
+         padding: 6px 10px;
+         gap: 6px;
+     }
+
+     .badge {
+         height: 18px;
+     }
+
+     .title-large {
+         font-size: 12px;
+     }
+
+     .feature-pill {
+         max-width: 200px;
+     }
+ }
+
+ .add-to-contact {
+     position: fixed !important;
+     width: 100%;
+     bottom: 0;
+     max-width: 425px;
+     left: 0;
+     right: 0;
+     padding-bottom: 20px;
+     z-index: 99;
+ }
+
+ /* Larger phones and tablets */
+ @media (min-width: 481px) and (max-width: 768px) {
+     .container {
+         max-width: 600px;
+         margin: 0 auto;
+     }
+ }
+
+ /* Desktop */
+ @media (min-width: 769px) {
+     .container {
+
+         margin: 0 auto;
+     }
+ }
+
+ .footer-section {
+     /* margin-top: 40px; */
+     padding: 20px;
+     background: #000;
+     height: 80vh;
+     margin-bottom: 40px;
+ }
+
+ .footer-card a {
+     display: flex;
+     align-items: flex-start;
+     gap: 12px;
+     background: #2a2a2a;
+     color: #fff;
+     padding: 14px 16px;
+     border-radius: 12px;
+     margin-bottom: 12px;
+     font-size: 14px;
+ }
+
+ .footer-card i {
+     font-size: 18px;
+     color: #ffffff;
+     min-width: 20px;
+     margin-top: 3px;
+ }
+
+ .footer-card.address span {
+     line-height: 1.6;
+ }
+
+ .map-wrapper {
+     margin-top: 15px;
+     overflow: hidden;
+     border-radius: 14px;
+ }
+
+ .map-wrapper iframe {
+     width: 100%;
+     height: 220px;
+     border: 0;
+ }
