@@ -1,0 +1,27 @@
+tf_chatbot_history|a:10:{i:0;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:20:"Ready to scale? 🚀";}i:1;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:22:"What&#039;s your name?";}i:2;a:2:{s:4:"role";s:4:"user";s:4:"html";s:3:"hii";}i:3;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:26:"What&#039;s your email ID?";}i:4;a:2:{s:4:"role";s:4:"user";s:4:"html";s:20:"manish@technofra.com";}i:5;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:32:"What&#039;s your contact number?";}i:6;a:2:{s:4:"role";s:4:"user";s:4:"html";s:10:"8080721003";}i:7;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:27:"What do you need help with?";}i:8;a:2:{s:4:"role";s:4:"user";s:4:"html";s:35:"aap domain hosting provide karte ho";}i:9;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:1805:"Thanks hii, your details have been saved. Let me help you with that.<br />
+Technofra provides the following core services:<br />
+- Website Development: <a href="https://technofra.com/web-design" target="_blank" rel="noopener noreferrer">Website Development</a><br />
+- App Development: <a href="https://technofra.com/android-app-development" target="_blank" rel="noopener noreferrer">App Development</a><br />
+- Branding &amp; UI/UX: <a href="https://technofra.com/branding" target="_blank" rel="noopener noreferrer">Branding &amp; UI/UX</a><br />
+- Digital Marketing &amp; SEO: <a href="https://technofra.com/digital-marketing" target="_blank" rel="noopener noreferrer">Digital Marketing &amp; SEO</a><br />
+- Social Media Marketing: <a href="https://technofra.com/smm" target="_blank" rel="noopener noreferrer">Social Media Marketing</a><br />
+- Payment Gateway Integration: <a href="https://technofra.com/payment-gateway" target="_blank" rel="noopener noreferrer">Payment Gateway Integration</a><br />
+- Chatbot Solutions: <a href="https://technofra.com/chatbot" target="_blank" rel="noopener noreferrer">Chatbot Solutions</a><br />
+- WhatsApp Solutions: <a href="https://technofra.com/whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp Solutions</a><br />
+- SMS / OTP Solutions: <a href="https://technofra.com/sms-otp" target="_blank" rel="noopener noreferrer">SMS / OTP Solutions</a><br />
+- Google Forms Integration: <a href="https://technofra.com/google-forms" target="_blank" rel="noopener noreferrer">Google Forms Integration</a><br />
+- Domain &amp; Hosting: <a href="https://technofra.com/domain-hosting-services" target="_blank" rel="noopener noreferrer">Domain &amp; Hosting</a><br />
+If you want, tell me your exact requirement and I will suggest the most suitable service for you.";}}tf_chatbot_lead|a:5:{s:4:"name";s:3:"hii";s:5:"email";s:20:"manish@technofra.com";s:5:"phone";s:10:"8080721003";s:11:"requirement";s:35:"aap domain hosting provide karte ho";s:11:"source_page";s:1:"/";}tf_chatbot_messages|a:2:{i:0;a:2:{s:4:"role";s:4:"user";s:4:"text";s:35:"aap domain hosting provide karte ho";}i:1;a:2:{s:4:"role";s:9:"assistant";s:4:"text";s:1131:"Thanks hii, your details have been saved. Let me help you with that.
+Technofra provides the following core services:
+- Website Development: [[Website Development|https://technofra.com/web-design]]
+- App Development: [[App Development|https://technofra.com/android-app-development]]
+- Branding & UI/UX: [[Branding & UI/UX|https://technofra.com/branding]]
+- Digital Marketing & SEO: [[Digital Marketing & SEO|https://technofra.com/digital-marketing]]
+- Social Media Marketing: [[Social Media Marketing|https://technofra.com/smm]]
+- Payment Gateway Integration: [[Payment Gateway Integration|https://technofra.com/payment-gateway]]
+- Chatbot Solutions: [[Chatbot Solutions|https://technofra.com/chatbot]]
+- WhatsApp Solutions: [[WhatsApp Solutions|https://technofra.com/whatsapp]]
+- SMS / OTP Solutions: [[SMS / OTP Solutions|https://technofra.com/sms-otp]]
+- Google Forms Integration: [[Google Forms Integration|https://technofra.com/google-forms]]
+- Domain & Hosting: [[Domain & Hosting|https://technofra.com/domain-hosting-services]]
+If you want, tell me your exact requirement and I will suggest the most suitable service for you.";}}tf_chatbot_session_token|s:26:"loh5e651nh6tr7k4kr6ct9re9j";

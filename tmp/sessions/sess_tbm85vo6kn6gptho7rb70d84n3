@@ -1,0 +1,35 @@
+tf_chatbot_history|a:18:{i:0;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:20:"Ready to scale? 🚀";}i:1;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:22:"What&#039;s your name?";}i:2;a:2:{s:4:"role";s:4:"user";s:4:"html";s:7:"Pradnya";}i:3;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:26:"What&#039;s your email ID?";}i:4;a:2:{s:4:"role";s:4:"user";s:4:"html";s:21:"Pradnya@technofra.com";}i:5;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:32:"What&#039;s your contact number?";}i:6;a:2:{s:4:"role";s:4:"user";s:4:"html";s:10:"7558542831";}i:7;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:27:"What do you need help with?";}i:8;a:2:{s:4:"role";s:4:"user";s:4:"html";s:12:"website make";}i:9;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:372:"Thanks Pradnya, your details have been saved. Let me help you with that.<br />
+We can certainly help with website design, WordPress, Shopify, and custom business websites.<br />
+Please review our <a href="https://technofra.com/web-design" target="_blank" rel="noopener noreferrer">Website Services</a> page, or share your requirement and I will suggest the right solution.";}i:10;a:2:{s:4:"role";s:4:"user";s:4:"html";s:19:"total services list";}i:11;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:1749:"Technofra provides the following core services:<br />
+- Website Development: <a href="https://technofra.com/web-design" target="_blank" rel="noopener noreferrer">Website Development</a><br />
+- App Development: <a href="https://technofra.com/android-app-development" target="_blank" rel="noopener noreferrer">App Development</a><br />
+- Branding &amp; UI/UX: <a href="https://technofra.com/branding" target="_blank" rel="noopener noreferrer">Branding &amp; UI/UX</a><br />
+- Digital Marketing &amp; SEO: <a href="https://technofra.com/digital-marketing" target="_blank" rel="noopener noreferrer">Digital Marketing &amp; SEO</a><br />
+- Social Media Marketing: <a href="https://technofra.com/social-media-marketing" target="_blank" rel="noopener noreferrer">Social Media Marketing</a><br />
+- Payment Gateway Integration: <a href="https://technofra.com/payment-gateway" target="_blank" rel="noopener noreferrer">Payment Gateway Integration</a><br />
+- Chatbot Solutions: <a href="https://technofra.com/chatbot" target="_blank" rel="noopener noreferrer">Chatbot Solutions</a><br />
+- WhatsApp Solutions: <a href="https://technofra.com/whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp Solutions</a><br />
+- SMS / OTP Solutions: <a href="https://technofra.com/sms-otp" target="_blank" rel="noopener noreferrer">SMS / OTP Solutions</a><br />
+- Google Forms Integration: <a href="https://technofra.com/google-forms" target="_blank" rel="noopener noreferrer">Google Forms Integration</a><br />
+- Domain &amp; Hosting: <a href="https://technofra.com/domain-hosting-services" target="_blank" rel="noopener noreferrer">Domain &amp; Hosting</a><br />
+If you want, tell me your exact requirement and I will suggest the most suitable service for you.";}i:12;a:2:{s:4:"role";s:4:"user";s:4:"html";s:17:"i want to go pune";}i:13;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:230:"Thank you for your message. You are currently browsing our domain hosting services page.<br />
+Please let me know whether you need website development, app development, branding, marketing, payment integration, or chatbot support.";}i:14;a:2:{s:4:"role";s:4:"user";s:4:"html";s:6:"career";}i:15;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:267:"You can explore current career opportunities and job-related details on our <a href="https://technofra.com/career" target="_blank" rel="noopener noreferrer">Career Opportunities</a> page.<br />
+If you want, I can also help you with the application or contact process.";}i:16;a:2:{s:4:"role";s:4:"user";s:4:"html";s:3:"job";}i:17;a:2:{s:4:"role";s:3:"bot";s:4:"html";s:267:"You can explore current career opportunities and job-related details on our <a href="https://technofra.com/career" target="_blank" rel="noopener noreferrer">Career Opportunities</a> page.<br />
+If you want, I can also help you with the application or contact process.";}}tf_chatbot_lead|a:5:{s:4:"name";s:7:"Pradnya";s:5:"email";s:21:"Pradnya@technofra.com";s:5:"phone";s:10:"7558542831";s:11:"requirement";s:12:"website make";s:11:"source_page";s:24:"/domain-hosting-services";}tf_chatbot_messages|a:10:{i:0;a:2:{s:4:"role";s:4:"user";s:4:"text";s:12:"website make";}i:1;a:2:{s:4:"role";s:9:"assistant";s:4:"text";s:308:"Thanks Pradnya, your details have been saved. Let me help you with that.
+We can certainly help with website design, WordPress, Shopify, and custom business websites.
+Please review our [[Website Services|https://technofra.com/web-design]] page, or share your requirement and I will suggest the right solution.";}i:2;a:2:{s:4:"role";s:4:"user";s:4:"text";s:19:"total services list";}i:3;a:2:{s:4:"role";s:9:"assistant";s:4:"text";s:1081:"Technofra provides the following core services:
+- Website Development: [[Website Development|https://technofra.com/web-design]]
+- App Development: [[App Development|https://technofra.com/android-app-development]]
+- Branding & UI/UX: [[Branding & UI/UX|https://technofra.com/branding]]
+- Digital Marketing & SEO: [[Digital Marketing & SEO|https://technofra.com/digital-marketing]]
+- Social Media Marketing: [[Social Media Marketing|https://technofra.com/social-media-marketing]]
+- Payment Gateway Integration: [[Payment Gateway Integration|https://technofra.com/payment-gateway]]
+- Chatbot Solutions: [[Chatbot Solutions|https://technofra.com/chatbot]]
+- WhatsApp Solutions: [[WhatsApp Solutions|https://technofra.com/whatsapp]]
+- SMS / OTP Solutions: [[SMS / OTP Solutions|https://technofra.com/sms-otp]]
+- Google Forms Integration: [[Google Forms Integration|https://technofra.com/google-forms]]
+- Domain & Hosting: [[Domain & Hosting|https://technofra.com/domain-hosting-services]]
+If you want, tell me your exact requirement and I will suggest the most suitable service for you.";}i:4;a:2:{s:4:"role";s:4:"user";s:4:"text";s:17:"i want to go pune";}i:5;a:2:{s:4:"role";s:9:"assistant";s:4:"text";s:224:"Thank you for your message. You are currently browsing our domain hosting services page.
+Please let me know whether you need website development, app development, branding, marketing, payment integration, or chatbot support.";}i:6;a:2:{s:4:"role";s:4:"user";s:4:"text";s:6:"career";}i:7;a:2:{s:4:"role";s:9:"assistant";s:4:"text";s:209:"You can explore current career opportunities and job-related details on our [[Career Opportunities|https://technofra.com/career]] page.
+If you want, I can also help you with the application or contact process.";}i:8;a:2:{s:4:"role";s:4:"user";s:4:"text";s:3:"job";}i:9;a:2:{s:4:"role";s:9:"assistant";s:4:"text";s:209:"You can explore current career opportunities and job-related details on our [[Career Opportunities|https://technofra.com/career]] page.
+If you want, I can also help you with the application or contact process.";}}tf_chatbot_session_token|s:26:"tbm85vo6kn6gptho7rb70d84n3";
