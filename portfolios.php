@@ -179,64 +179,89 @@ include __DIR__ . '/header.php';
             font-size: 1.06rem;
         }
     }
+
+    .project-track {
+        padding: 15px;
+    }
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        letter-spacing: normal;
+    }
+
+        @media (max-width: 1024px) {
+        .hero-style7 {
+            padding: 135px 0 60px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .hero-style7 {
+            padding: 120px 0 60px;
+        }
+    }
 </style>
 
 
-        <section class="hero-style7">
-            <div class="container2">
-                <div class="hero-content7">
-                    <h1 class="title"><span>Our</span> Portfolios</h1>
-                    <p>Convert text to natural-sounding speech. Customizable,
-                        multilingual, and high-quality audio output.
-                    </p>
-                    <a class='ibt-btn ibt-btn-secondary' href='index7.html' target='_blank' title>
-                        <span>Discover</span>
-                        <i class="icon-arrow-top"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- End hero-style7 -->
+<section class="hero-style7">
+    <div class="container2">
+        <div class="hero-content7">
+            <h1 class="title"><span>Our</span> Portfolios</h1>
+            <p>Discover our portfolio of client websites, built with clean design, smooth performance, and business-focused digital experiences.</p>
+            <a class='ibt-btn ibt-btn-outline-3 ibt-btn-rounded' href='contact.php'>
+                <span>Contact Us</span>
+                <i class="icon-arrow-top"></i>
+            </a>
+        </div>
+    </div>
+</section>
 
-        <!-- project-sec3 -->
-        <section class="project-sec3">
-            <h2 class="visually-hidden">Partner Section</h2>
-            <div class="container2">
-                <div class="project-track">
-                    <div class="project-block3">
-                        <img src="assets/images/project/project3-1.png" alt="AI Agency & Technology HTML Template">
-                        <span class="text">Solutions</span>
-                    </div>
-                    <div class="project-block3">
-                        <img src="assets/images/project/project3-2.png" alt="AI Agency & Technology HTML Template">
-                    </div>
-                    <div class="project-block3">
-                        <img src="assets/images/project/project3-3.png" alt="AI Agency & Technology HTML Template">
-                    </div>
-                    <div class="project-block3">
-                        <img src="assets/images/project/project3-4.png" alt="AI Agency & Technology HTML Template">
-                        <span class="text v2">Creative</span>
-                    </div>
-                    <div class="project-block3">
-                        <img src="assets/images/project/project3-5.png" alt="AI Agency & Technology HTML Template">
-                    </div>
-                    <div class="project-block3">
-                        <img src="assets/images/project/project3-6.png" alt="AI Agency & Technology HTML Template">
-                        <span class="text v3">Vision</span>
-                    </div>
-                </div>
+<section class="project-sec3">
+    <h2 class="visually-hidden">Partner Section</h2>
+    <div class="container2">
+        <div class="project-track">
+            <div class="project-block3">
+                <img src="assets/images/project/project3-1.png" alt="AI Agency & Technology HTML Template">
+                <span class="text">Solutions</span>
             </div>
-        </section>
-        <!-- End project-sec3 -->
-         <!-- newsection -->
-                  <section class="portfolio-showcase">
+            <div class="project-block3">
+                <img src="assets/images/project/project3-2.png" alt="AI Agency & Technology HTML Template">
+            </div>
+            <div class="project-block3">
+                <img src="assets/images/project/project3-3.png" alt="AI Agency & Technology HTML Template">
+            </div>
+            <div class="project-block3">
+                <img src="assets/images/project/project3-4.png" alt="AI Agency & Technology HTML Template">
+                <span class="text v2">Creative</span>
+            </div>
+            <div class="project-block3">
+                <img src="assets/images/project/project3-5.png" alt="AI Agency & Technology HTML Template">
+            </div>
+            <div class="project-block3">
+                <img src="assets/images/project/project3-6.png" alt="AI Agency & Technology HTML Template">
+                <span class="text v3">Vision</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio-showcase">
     <div class="container2">
         <div class="portfolio-intro">
             <span class="portfolio-kicker">Portfolio Gallery</span>
             <h2 class="portfolio-title">Our Awesome Portfolio</h2>
-            <p class="portfolio-lead">A polished 10-card portfolio grid designed for a balanced two-column layout on desktop and a smooth stacked layout on smaller screens.</p>
+            <p class="portfolio-lead">Browse our latest client website projects, crafted with modern design, responsive layouts, and user-friendly experiences that help each brand stand out online.</p>
         </div>
-
         <div class="row portfolio-grid">
             <div class="col-lg-6 col-md-6">
                 <article class="portfolio-card">
@@ -247,7 +272,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Brand Identity System</h3>
-                            <span class="portfolio-card__tag">Design 01</span>
+                            <span class="portfolio-card__tag">Portfolio 01</span>
                         </div>
                     </div>
                 </article>
@@ -262,14 +287,13 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Creative Web Experience</h3>
-                            <span class="portfolio-card__tag">Design 02</span>
+                            <span class="portfolio-card__tag">Portfolio 02</span>
                         </div>
                     </div>
                 </article>
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="frago.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/3.png" alt="Digital marketing portfolio project">
@@ -278,11 +302,10 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Frago Matrix</h3>
-                            <span class="portfolio-card__tag">Design 03</span>
+                            <span class="portfolio-card__tag">Portfolio 03</span>
                         </div>
                     </div>
                 </article>
-                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
@@ -294,7 +317,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Modern App Interface</h3>
-                            <span class="portfolio-card__tag">Design 04</span>
+                            <span class="portfolio-card__tag">Portfolio 04</span>
                         </div>
                     </div>
                 </article>
@@ -309,14 +332,13 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">E-Commerce Storefront</h3>
-                            <span class="portfolio-card__tag">Design 05</span>
+                            <span class="portfolio-card__tag">Portfolio 05</span>
                         </div>
                     </div>
                 </article>
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="texon.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/texon.png" alt="Creative studio portfolio project">
@@ -325,11 +347,10 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Texon - Corporation</h3>
-                            <span class="portfolio-card__tag">Design 06</span>
+                            <span class="portfolio-card__tag">Portfolio 06</span>
                         </div>
                     </div>
                 </article>
-                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
@@ -341,7 +362,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Analytics Dashboard</h3>
-                            <span class="portfolio-card__tag">Design 07</span>
+                            <span class="portfolio-card__tag">Portfolio 07</span>
                         </div>
                     </div>
                 </article>
@@ -356,14 +377,13 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Corporate Presentation</h3>
-                            <span class="portfolio-card__tag">Design 08</span>
+                            <span class="portfolio-card__tag">Portfolio 08</span>
                         </div>
                     </div>
                 </article>
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="wotm.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">
@@ -372,11 +392,10 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">We Own The Move</h3>
-                            <span class="portfolio-card__tag">Design 09</span>
+                            <span class="portfolio-card__tag">Portfolio 09</span>
                         </div>
                     </div>
                 </article>
-                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
@@ -388,7 +407,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Premium Landing Page</h3>
-                            <span class="portfolio-card__tag">Design 10</span>
+                            <span class="portfolio-card__tag">Portfolio 10</span>
                         </div>
                     </div>
                 </article>
@@ -396,8 +415,5 @@ include __DIR__ . '/header.php';
         </div>
     </div>
 </section>
-
-          <!-- end section -->
-
 
 <?php include __DIR__ . '/footer.php'; ?>
