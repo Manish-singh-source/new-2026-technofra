@@ -4,7 +4,7 @@ book-call-config.local.php
 
 # User-generated uploads
 uploads/
-
+inovizideas/
 # Optional local env files
 .env
 .env.local
