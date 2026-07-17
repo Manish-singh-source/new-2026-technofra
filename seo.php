@@ -2088,6 +2088,12 @@ include __DIR__ . '/header.php';
             height: 88px;
         }
     }
+
+    @media (max-width: 426px) {
+    .services-section {
+        padding-bottom: 0px;
+    }
+}
 </style>
 
 
@@ -2115,12 +2121,12 @@ include __DIR__ . '/header.php';
                 </p>
 
                 <div class="hero-cta-row">
-                    <a href="#" class="hero-btn hero-btn-primary">
-                        Get Free SEO Audit
+                    <a href="enquirynow.php" class="hero-btn hero-btn-primary">
+                        Enquiry Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="hero-btn hero-btn-secondary">
-                        Our SEO Services
+                    <a href="contact.php" class="hero-btn hero-btn-secondary">
+                        Contact Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -2158,8 +2164,8 @@ include __DIR__ . '/header.php';
                 <p class="ppc-desc">
                     We help businesses rank higher, attract the right audience, and turn organic traffic into measurable results. Our data-driven SEO strategies are designed to deliver long-term visibility, sustainable growth, and a strong online presence.
                 </p>
-                <a href="#" class="ppc-btn">
-                    Explore SEO Services
+                <a href="enquirynow.php" class="ppc-btn">
+                     Enquire Now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
@@ -2303,8 +2309,8 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
 
-                    <a href="#" class="overview-btn">
-                        Explore SEO Services
+                    <a href="contact.php" class="overview-btn">
+                        Contact Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>

@@ -390,6 +390,12 @@ include __DIR__ . '/header.php'; ?>
         width: 100% !important;
     }
 }
+/* @media (min-width: 1200px) and (max-width: 1400px) { */
+    input[type=checkbox], input[type=radio] {
+    opacity: 0;
+    position: unset;
+}
+
 </style>
 
 <?php if ($formNotice): ?>
