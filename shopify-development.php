@@ -383,7 +383,7 @@ include __DIR__ . '/header.php';
         <div class="portfolio-head">
             <div class="sec-title">
                 <span class="sub-title">/ our portfolio /</span>
-                <h2 class="title">Shopify stores we’ve built that <span>drive results.</span></h2>
+                <h2 class="title">Shopify stores we've built that <span>drive results.</span></h2>
                 <p>From elegant design to seamless functionality, we create Shopify stores that not only look great but also convert visitors into loyal customers.</p>
                 <span class="title-line"></span>
             </div>

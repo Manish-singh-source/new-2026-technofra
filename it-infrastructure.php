@@ -1010,7 +1010,7 @@ include __DIR__ . '/header.php';
                         network support, and infrastructure management.
                     </p>
                     <a href="contact.php" class="it-infra-hero__btn">
-                        <span>Get Started</span>
+                        <span>Contact Us</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1018,7 +1018,7 @@ include __DIR__ . '/header.php';
             <div class="col-lg-7">
                 <div class="it-infra-hero__visual">
                     <div class="it-infra-hero__image-wrap">
-                        <img src="assets/images/it-infrastructure/banner.png" alt="IT infrastructure dummy hero visual" class="it-infra-hero__image">
+                        <img src="assets/images/it-infrastructure/banner.png" alt="IT infrastructure hero visual" class="it-infra-hero__image">
                     </div>
                 </div>
             </div>
@@ -1064,7 +1064,7 @@ include __DIR__ . '/header.php';
                     </div>
 
                     <a href="contact.php" class="it-infra-overview__btn">
-                        <span>Explore Our Services</span>
+                        <span>Enquiry Now</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
