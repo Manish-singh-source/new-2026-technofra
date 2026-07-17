@@ -897,7 +897,7 @@ include __DIR__ . '/header.php'; ?>
         }
 
         .hero-style14 {
-            padding-bottom: 38px;
+            padding-bottom: 0px;
         }
 
         .service-sec20 .row {
@@ -1561,7 +1561,7 @@ include __DIR__ . '/header.php'; ?>
                 class="modal-body register-wrap p-5 bg-white shadow rounded-custom position-relative aos-init aos-animate">
                 <p class="company-profile-intro">Fill in your details and we&rsquo;ll email you the company profile.</p>
                 <!-- Job Application Form -->
-                <form action="send7" method="post" enctype="multipart/form-data" id="companyProfileForm">
+                <form action="send7.php" method="post" enctype="multipart/form-data" id="companyProfileForm">
                     <div class="company-profile-form-shell">
                         <!-- Full Name -->
                         <div class="company-profile-field text-start">
