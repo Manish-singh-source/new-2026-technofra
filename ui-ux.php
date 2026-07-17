@@ -6,8 +6,8 @@ include __DIR__ . '/header.php';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-============================================ */
+        RESPONSIVE TYPOGRAPHY SCALE
+    ============================================ */
     :root {
         --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
         --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
@@ -105,8 +105,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   BASE
-============================================ */
+        BASE
+    ============================================ */
     body {
         font-family:
             "Poppins",
@@ -237,8 +237,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+        MEDIA QUERIES
+    ============================================ */
     @media (max-width: 1919.98px) {
         .di-hero-section {
             padding-block: 5.5rem;
@@ -256,7 +256,7 @@ include __DIR__ . '/header.php';
     @media (max-width: 1399.98px) {
         .di-hero-section {
             padding-block: 4.5rem;
-            padding-top: 110px;
+            padding-top: 174px;
         }
     }
 
@@ -337,8 +337,8 @@ include __DIR__ . '/header.php';
 
 
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-============================================ */
+        RESPONSIVE TYPOGRAPHY SCALE
+    ============================================ */
     :root {
         --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
         --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
@@ -437,8 +437,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   BASE
-============================================ */
+        BASE
+    ============================================ */
     body {
         font-family:
             "Inter",
@@ -709,8 +709,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+        MEDIA QUERIES
+    ============================================ */
     @media (max-width: 1919.98px) {
         .bento-section {
             padding-block: 5rem;
@@ -902,11 +902,11 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-   Uses clamp(min, preferred, max) so text scales
-   fluidly between mobile (~320px) and desktop (~1440px)
-   with no media queries needed.
-============================================ */
+        RESPONSIVE TYPOGRAPHY SCALE
+        Uses clamp(min, preferred, max) so text scales
+        fluidly between mobile (~320px) and desktop (~1440px)
+        with no media queries needed.
+    ============================================ */
 
     :root {
         /* Headings */
@@ -943,8 +943,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   APPLY THE SCALE
-============================================ */
+        APPLY THE SCALE
+    ============================================ */
 
     h1,
     .h1 {
@@ -1015,8 +1015,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   BASE / RESET (scoped to this section only)
-============================================ */
+        BASE / RESET (scoped to this section only)
+    ============================================ */
 
     body {
         font-family:
@@ -1286,8 +1286,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+        MEDIA QUERIES
+    ============================================ */
 
     @media (max-width: 1919.98px) {
         .design-tools-section {
@@ -1432,8 +1432,8 @@ include __DIR__ . '/header.php';
 
 
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-============================================ */
+        RESPONSIVE TYPOGRAPHY SCALE
+    ============================================ */
     :root {
         --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
         --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
@@ -1531,8 +1531,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   BASE
-============================================ */
+        BASE
+    ============================================ */
     body {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         color: var(--ed-body);
@@ -1738,8 +1738,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+        MEDIA QUERIES
+    ============================================ */
     @media (max-width: 1919.98px) {
         .expert-designers-section {
             padding-block: 6rem;
@@ -1902,8 +1902,8 @@ include __DIR__ . '/header.php';
 
 
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-============================================ */
+        RESPONSIVE TYPOGRAPHY SCALE
+    ============================================ */
     :root {
         --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
         --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
@@ -2000,8 +2000,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   BASE
-============================================ */
+        BASE
+    ============================================ */
     body {
         font-family:
             "Inter",
@@ -2246,8 +2246,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+        MEDIA QUERIES
+    ============================================ */
     @media (max-width: 1919.98px) {
         .why-choose-section {
             padding-block: 6rem;
@@ -2372,8 +2372,8 @@ include __DIR__ . '/header.php';
 
 
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-============================================ */
+        RESPONSIVE TYPOGRAPHY SCALE
+    ============================================ */
     :root {
         --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
         --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
@@ -2481,8 +2481,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   SECTION WRAPPER
-============================================ */
+        SECTION WRAPPER
+    ============================================ */
     .design-section {
         background: radial-gradient(120% 90% at 50% 0%,
                 #131a3d 0%,
@@ -2511,8 +2511,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   TABS: Design / Build / Present
-============================================ */
+        TABS: Design / Build / Present
+    ============================================ */
     .design-tabs {
         border-bottom: none;
         gap: clamp(1.5rem, 1rem + 2vw, 3.5rem);
@@ -2553,8 +2553,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   FRAME / CANVAS SHOWCASE
-============================================ */
+    FRAME / CANVAS SHOWCASE
+    ============================================ */
     .design-frame-wrap {
         position: relative;
         max-width: 1180px;
@@ -2602,8 +2602,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+        MEDIA QUERIES
+    ============================================ */
     @media (max-width: 1919.98px) {
         .design-frame-wrap {
             max-width: 1080px;
@@ -2713,8 +2713,8 @@ include __DIR__ . '/header.php';
 
 
     /* ============================================
-   RESPONSIVE TYPOGRAPHY SCALE
-============================================ */
+    RESPONSIVE TYPOGRAPHY SCALE
+    ============================================ */
     :root {
         --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
         --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
@@ -2820,8 +2820,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   SECTION WRAPPER
-============================================ */
+        SECTION WRAPPER
+    ============================================ */
     .ow-section {
         background: var(--ow-bg);
         position: relative;
@@ -2857,8 +2857,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   HEADER
-============================================ */
+        HEADER
+    ============================================ */
     .ow-header {
         max-width: 700px;
         margin-inline: auto;
@@ -2901,8 +2901,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   CAROUSEL
-============================================ */
+        CAROUSEL
+    ============================================ */
     .ow-carousel-wrap {
         position: relative;
         z-index: 1;
@@ -3070,8 +3070,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   NAV ARROWS
-============================================ */
+    NAV ARROWS
+    ============================================ */
     .ow-nav-btn {
         position: absolute;
         top: 40%;
@@ -3106,8 +3106,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   CTA BUTTON
-============================================ */
+    CTA BUTTON
+    ============================================ */
     .ow-cta-wrap {
         text-align: center;
         margin-top: clamp(2rem, 1.6rem + 1.2vw, 2.75rem);
@@ -3139,8 +3139,8 @@ include __DIR__ . '/header.php';
     }
 
     /* ============================================
-   MEDIA QUERIES
-============================================ */
+    MEDIA QUERIES
+    ============================================ */
     @media (max-width: 1919.98px) {
         .ow-card {
             width: calc((100% - 5 * 1.25rem) / 4);
@@ -3253,8 +3253,8 @@ include __DIR__ . '/header.php';
             design solutions.
         </p>
 
-        <a href="#" class="di-cta">
-            Get Started Now
+        <a href="contact.php" class="di-cta">
+            Contact Us
             <i class="fa-solid fa-arrow-right"></i>
         </a>
     </div>
@@ -3263,22 +3263,14 @@ include __DIR__ . '/header.php';
 <section class="bento-section">
     <div class="container-fluid px-3 px-md-4 px-lg-5">
         <div class="bento-grid">
-            <!-- Photo tile (replace placeholder with real <img>) -->
             <div class="bento-tile bento-photo">
                 <div class="bento-image-placeholder">
                     <img src="./assets/images/about/ui1.jpg" alt="">
-                    <!-- <i class="fa-regular fa-image"></i>
-                    <span>Designer at desk — add image</span> -->
                 </div>
             </div>
 
-            <!-- Column 2: Figma badge + Agency tile -->
             <div class="bento-col-2">
                 <div class="bento-tile bento-figma">
-                    <!-- <div class="bento-figma-ring">
-                        <i class="fa-brands fa-figma" style="color: #35d8f0"></i>
-                    </div>
-                    <span class="bento-figma-label">Figma</span> -->
                     <img src="./assets/images/about/ui2.jpg" alt="">
                 </div>
 
@@ -3291,12 +3283,9 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
 
-            <!-- Column 3: wave image + 2x2 icon tiles -->
             <div class="bento-col-3">
                 <div class="bento-tile bento-wave">
                     <div class="bento-image-placeholder tint-purple">
-                        <!-- <i class="fa-regular fa-image"></i>
-                        <span>Abstract 3D shape — add image</span> -->
                         <img src="./assets/images/about/ui-3.jpg" alt="">
                     </div>
                 </div>
@@ -3321,19 +3310,14 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
 
-            <!-- Column 4: ribbons image + wavy lines image -->
             <div class="bento-col-4">
                 <div class="bento-tile">
                     <div class="bento-image-placeholder tint-blue">
-                        <!-- <i class="fa-regular fa-image"></i>
-                        <span>Glass ribbon render — add image</span> -->
                         <img src="./assets/images/about/ui-4.jpg" alt="">
                     </div>
                 </div>
                 <div class="bento-tile">
                     <div class="bento-image-placeholder tint-cyan">
-                        <!-- <i class="fa-regular fa-image"></i>
-                        <span>Wave lines render — add image</span> -->
                         <img src="./assets/images/about/ui-5.jpg" alt="">
                     </div>
                 </div>
@@ -3344,7 +3328,6 @@ include __DIR__ . '/header.php';
 
 <section class="design-tools-section">
     <div class="container">
-        <!-- Header -->
         <div class="row justify-content-center text-center">
             <div class="col-12 col-lg-8 col-xl-7">
                 <span class="dt-eyebrow p-small">
@@ -3364,7 +3347,6 @@ include __DIR__ . '/header.php';
             </div>
         </div>
 
-        <!-- Cards -->
         <div
             class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 g-md-4 justify-content-center mt-4 mt-md-5">
             <!-- Photopea -->
@@ -3839,7 +3821,7 @@ include __DIR__ . '/header.php';
         </div>
 
         <div class="ow-cta-wrap">
-            <a href="#" class="ow-cta-btn">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="portfolios.php" class="ow-cta-btn">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 </section>
