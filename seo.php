@@ -2372,9 +2372,9 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="service-icon-circle meta-icons">
-                        <i class="fa-solid fa-gears meta-infinity"></i>
+                        <!-- <i class="fa-solid fa-gears meta-infinity"></i> -->
                         <span class="meta-brand-row">
-                            <i class="fa-solid fa-code"></i>
+                            <!-- <i class="fa-solid fa-code"></i> -->
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </span>
                     </div>

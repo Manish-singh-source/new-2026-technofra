@@ -1728,12 +1728,12 @@ include __DIR__ . '/header.php';
                 </p>
 
                 <div class="hero-cta-row">
-                    <a href="#" class="hero-btn hero-btn-primary">
-                        Get Free PPC Audit
+                    <a href="enquirynow.php" class="hero-btn hero-btn-primary">
+                        Enquiry Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="hero-btn hero-btn-secondary">
-                        Our PPC Services
+                    <a href="contact.php" class="hero-btn hero-btn-secondary">
+                        Contact Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1776,8 +1776,8 @@ include __DIR__ . '/header.php';
                     businesses enter competitive markets faster, test offers quickly, and scale the channels that
                     produce stronger returns.
                 </p>
-                <a href="#" class="ppc-btn">
-                    Explore PPC Services
+                <a href="enquirynow.php" class="ppc-btn">
+                    Enquire Now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
@@ -1933,8 +1933,8 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
 
-                    <a href="#" class="overview-btn">
-                        Explore PPC Services
+                    <a href="contact.php" class="overview-btn">
+                        Contact Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
@@ -1997,10 +1997,10 @@ include __DIR__ . '/header.php';
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="service-card">
                     <div class="service-icon-circle meta-icons">
-                        <i class="fa-solid fa-infinity meta-infinity"></i>
+                        <!-- <i class="fa-solid fa-infinity meta-infinity"></i> -->
                         <span class="meta-brand-row">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
+                            <!-- <i class="fa-brands fa-facebook"></i> -->
+                            <i class="fa-brands fa-meta"></i>
                         </span>
                     </div>
                     <h3 class="service-title">Meta Ads Management</h3>
