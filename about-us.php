@@ -897,7 +897,7 @@ include __DIR__ . '/header.php'; ?>
         }
 
         .hero-style14 {
-            padding-bottom: 38px;
+            padding-bottom: 0px;
         }
 
         .service-sec20 .row {
@@ -1126,8 +1126,15 @@ include __DIR__ . '/header.php'; ?>
         .service-sec20 .row {
             row-gap: 0px;
         }
+
         .service-sec20 .ser-card20_card5 {
             margin-top: 20px;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .about-content9 .title {
+            font-size: 185px;
         }
     }
 </style>
@@ -1266,7 +1273,7 @@ include __DIR__ . '/header.php'; ?>
 <section class="journey-sec ibt-section-gapTop pb-5" id="journey">
     <div class="container">
         <div class="sec-title text-center journey-title">
-                            <span class="sub-title">Company Journey</span>
+            <span class="sub-title">Company Journey</span>
             <h2 class="title animated-heading">Our Jour ney Timeline</h2>
             <p class="journey-intro">A look at the key moments that shaped Technofra into a reliable digital partner for branding, web development, mobile apps, and IT solutions.</p>
         </div>
@@ -1561,7 +1568,7 @@ include __DIR__ . '/header.php'; ?>
                 class="modal-body register-wrap p-5 bg-white shadow rounded-custom position-relative aos-init aos-animate">
                 <p class="company-profile-intro">Fill in your details and we&rsquo;ll email you the company profile.</p>
                 <!-- Job Application Form -->
-                <form action="send7" method="post" enctype="multipart/form-data" id="companyProfileForm">
+                <form action="send7.php" method="post" enctype="multipart/form-data" id="companyProfileForm">
                     <div class="company-profile-form-shell">
                         <!-- Full Name -->
                         <div class="company-profile-field text-start">

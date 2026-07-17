@@ -1421,20 +1421,11 @@ include __DIR__ . '/header.php';
                                 <i class="fa fa-rocket"></i>
                                 <span>Contact Us</span>
                             </a>
-                            <!-- <a href="contact.php" class="dh-btn-secondary">
-                                <i class="fa fa-calendar"></i>
-                                <span>View Plans</span>
-                            </a> -->
                         </div>
-                        <!-- 
-                        <div class="dh-price">
-                            <i class="fa fa-tag"></i>
-                            <span>Starting from <strong>&#8377;999</strong> per month</span>
-                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="./assets/images/new/domain-hosting.png">
+                    <img src="./assets/images/domain-hosting/domain-hosting.png" alt="Premium Domain Hosting Solutions">
                 </div>
             </div>
         </div>
@@ -1447,7 +1438,7 @@ include __DIR__ . '/header.php';
             <div class="row align-items-center flex-column-reverse-custom">
                 <div class="col-lg-6">
                     <div class="dh-about-media">
-                        <img src="./assets/images/new/dh-about.png" alt="" srcset="">
+                        <img src="./assets/images/domain-hosting/dh-about.png" alt="Why Choose Our Domain Hosting Services">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -1499,7 +1490,6 @@ include __DIR__ . '/header.php';
                     <h3>Domain Registration</h3>
                     <p>Search, register, and manage your perfect domain name with ease.</p>
                     <div class="dh-solution-divider"></div>
-                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;499</strong><span>/year</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
                         <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
@@ -1512,7 +1502,6 @@ include __DIR__ . '/header.php';
                     <h3>Shared Hosting</h3>
                     <p>Affordable hosting for small websites with reliable speed and security.</p>
                     <div class="dh-solution-divider"></div>
-                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;99</strong><span>/month</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
                         <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
@@ -1525,7 +1514,6 @@ include __DIR__ . '/header.php';
                     <h3>VPS Hosting</h3>
                     <p>Powerful virtual servers with better performance and full control.</p>
                     <div class="dh-solution-divider"></div>
-                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;599</strong><span>/month</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
                         <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
@@ -1538,7 +1526,6 @@ include __DIR__ . '/header.php';
                     <h3>Cloud Hosting</h3>
                     <p>Scalable cloud infrastructure built for uptime, flexibility, and growth.</p>
                     <div class="dh-solution-divider"></div>
-                    <!-- <div class="dh-solution-price">Starting from <strong>&#8377;799</strong><span>/month</span></div> -->
                     <a href="contact.php" class="dh-solution-btn">
                         <span>Contact Us</span>
                         <i class="fa fa-arrow-right"></i>
@@ -1561,11 +1548,6 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>Domain Registration</h3>
                     <p>Register professional domain names with the extensions that best match your business, brand, or project goals.</p>
-                    <!-- 
-                    <a href="contact.php" class="dh-offer-link">
-                        <span>Explore More</span>
-                        <i class="fa fa-arrow-right"></i>
-                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1573,11 +1555,6 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>DNS Management</h3>
                     <p>Manage DNS records with ease so your domain connects correctly to websites, email services, and other online tools.</p>
-                    <!-- 
-                    <a href="contact.php" class="dh-offer-link">
-                        <span>Explore More</span>
-                        <i class="fa fa-arrow-right"></i>
-                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1585,11 +1562,6 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>SSL Security</h3>
                     <p>Protect visitor data with SSL support that improves trust, encrypts connections, and strengthens website security.</p>
-                    <!-- 
-                    <a href="contact.php" class="dh-offer-link">
-                        <span>Explore More</span>
-                        <i class="fa fa-arrow-right"></i>
-                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1597,11 +1569,6 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>Backup Protection</h3>
                     <p>Keep your website safe with backup options that help restore important files and content when needed.</p>
-                    <!-- 
-                    <a href="contact.php" class="dh-offer-link">
-                        <span>Explore More</span>
-                        <i class="fa fa-arrow-right"></i>
-                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1609,11 +1576,6 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>99.9% Uptime</h3>
                     <p>Benefit from stable hosting performance designed to keep your website accessible and responsive throughout the day.</p>
-                    <!-- 
-                    <a href="contact.php" class="dh-offer-link">
-                        <span>Explore More</span>
-                        <i class="fa fa-arrow-right"></i>
-                    </a> -->
                 </div>
                 <div class="dh-offer-card">
                     <div class="dh-offer-icon">
@@ -1621,11 +1583,6 @@ include __DIR__ . '/header.php';
                     </div>
                     <h3>Support Center</h3>
                     <p>Reach out for technical help whenever you need guidance with setup, migration, renewals, or hosting concerns.</p>
-                    <!-- 
-                    <a href="contact.php" class="dh-offer-link">
-                        <span>Explore More</span>
-                        <i class="fa fa-arrow-right"></i>
-                    </a> -->
                 </div>
             </div>
         </div>
@@ -1698,7 +1655,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
                 <div class="dh-faq-media">
-                    <img src="./assets/images/new/dhfaq.png" alt="Domain and hosting FAQ image">
+                    <img src="./assets/images/domain-hosting/dhfaq.png" alt="Domain and hosting FAQ image">
                 </div>
             </div>
         </div>

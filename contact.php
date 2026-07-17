@@ -150,7 +150,7 @@ include __DIR__ . '/header.php';
     <div class="staff-text">Contact</div>
     <div class="container">
         <div class="page-content">
-            <h1 class="title">/ Contact Us /</h1>
+            <h1 class="title">Contact Us</h1>
         </div>
     </div>
 </section>
