@@ -3639,15 +3639,15 @@ include __DIR__ . '/header.php';
                 drive business growth.
             </p>
 
-            <ul class="nav design-tabs justify-content-center">
+            <ul class="nav design-tabs justify-content-center" role="tablist" aria-label="Design technology preview">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="#" class="nav-link active" role="tab" aria-selected="true" data-image-src="./assets/design-mockup.png" data-image-alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen">
                         <i class="fa-solid fa-display" aria-hidden="true"></i>
                         <span>Design</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link" role="tab" aria-selected="false" data-image-src="./assets/design-mockup.png" data-image-alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen">
                         <i
                             class="fa-solid fa-mobile-screen-button"
                             aria-hidden="true"></i>
@@ -3655,7 +3655,7 @@ include __DIR__ . '/header.php';
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link" role="tab" aria-selected="false" data-image-src="./assets/design-mockup.png" data-image-alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen">
                         <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>
                         <span>Present</span>
                     </a>
@@ -3666,6 +3666,7 @@ include __DIR__ . '/header.php';
         <div class="design-frame-wrap">
             <div class="design-frame">
                 <img
+                    id="designPreviewImage"
                     src="./assets/design-mockup.png"
                     alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen"
                     class="img-fluid design-frame-img" />
@@ -3828,6 +3829,27 @@ include __DIR__ . '/header.php';
 
 
 <script>
+    const designTabs = document.querySelectorAll(".design-tabs .nav-link");
+    const designPreviewImage = document.getElementById("designPreviewImage");
+
+    designTabs.forEach((tab) => {
+        tab.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            designTabs.forEach((item) => {
+                item.classList.remove("active");
+                item.setAttribute("aria-selected", "false");
+            });
+
+            tab.classList.add("active");
+            tab.setAttribute("aria-selected", "true");
+
+            if (designPreviewImage) {
+                designPreviewImage.src = tab.dataset.imageSrc;
+                designPreviewImage.alt = tab.dataset.imageAlt;
+            }
+        });
+    });
     const track = document.getElementById("owTrack");
     const prevBtn = document.querySelector(".ow-nav-prev");
     const nextBtn = document.querySelector(".ow-nav-next");
