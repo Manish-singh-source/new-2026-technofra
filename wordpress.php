@@ -7,7 +7,720 @@ $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>
 <style>
-.eep-status-alert{max-width:1180px;margin:24px auto 0;padding:14px 18px;border-radius:14px;font-size:15px;line-height:1.5}.eep-status-alert.success{background:#eaf8ef;border:1px solid #b8e2c3;color:#146c2e}.eep-status-alert.error{background:#fff1f1;border:1px solid #f0b9b9;color:#9c1d1d}.eep-calendar-day[disabled],.eep-time-option[disabled]{opacity:.35;cursor:not-allowed;pointer-events:none}.eep-time-option[disabled]{text-decoration:line-through}.eep-book-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(7,15,43,.72)}.eep-book-modal.show{display:flex}.eep-book-modal-dialog{width:100%;max-width:520px;max-height:calc(100vh - 40px);background:#fff;border-radius:24px;box-shadow:0 24px 80px rgba(15,23,42,.24);overflow:hidden;display:flex;flex-direction:column}.eep-book-modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:24px 24px 12px}.eep-book-modal-head h3{margin:0 0 6px;font-size:28px;line-height:1.2;color:#101828}.eep-book-modal-head p{margin:0;color:#475467}.eep-book-close{border:0;width:40px;height:40px;border-radius:999px;background:#f3f4f6;color:#111827;font-size:28px;line-height:1}.eep-book-form{padding:0 24px 24px;overflow-y:auto}.eep-book-summary{padding:14px 16px;margin-bottom:18px;border-radius:16px;background:#f5f9ff;border:1px solid #dbe7ff;color:#12315f;font-size:14px}.eep-book-summary-line{margin-top:6px}.eep-book-field{margin-bottom:16px}.eep-book-field label{display:block;margin-bottom:8px;font-size:14px;font-weight:600;color:#111827}.eep-book-field input,.eep-book-field select,.eep-book-field textarea{width:100%;border:1px solid #d0d5dd;border-radius:14px;padding:0 16px;font-size:15px;color:#101828;outline:none;font-family:inherit}.eep-book-field input,.eep-book-field select{height:50px}.eep-book-field textarea{min-height:110px;padding:14px 16px;resize:vertical}.eep-phone-group{display:grid;grid-template-columns:170px minmax(0,1fr);gap:12px}.eep-book-submit{width:100%;border:0;border-radius:14px;background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;font-size:16px;font-weight:700;padding:14px 18px}.eep-hero{padding:56px 0 64px}.eep-container.container2{max-width:1680px;width:calc(100% - 40px);margin:0 auto;padding:34px 36px;border-radius:32px;border:1px solid #cfe0f5;background:linear-gradient(180deg,#f7fbff 0%,#eef5ff 100%);display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:stretch;box-sizing:border-box}.eep-contact-wrap,.eep-right{min-width:0;width:100%}.eep-contact-wrap{display:flex;width:100%}.eep-calendar-card{width:100%;padding:10px 0 0;background:transparent;border:0;box-shadow:none}.eep-calendar-title-row{display:inline-flex;align-items:center;gap:16px}.eep-calendar-icon{font-size:38px;color:#003366}.eep-calendar-title{margin:0;font-size:34px;line-height:1.05;color:#111827}.eep-calendar-sub{font-size:16px;line-height:1.75;max-width:760px;color:#4b5563}.eep-calendar-box{margin-top:24px;padding:18px;border-radius:24px;background:#fff;border:1px solid #d8e5f5;box-shadow:0 10px 24px rgba(16,24,40,.04)}.eep-calendar-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.eep-cal-btn{width:42px;height:42px;border:0;border-radius:50%;background:#0b3f78;color:#fff;font-size:22px}.eep-month-label{font-size:18px;font-weight:700;color:#0f172a}.eep-calendar-week,.eep-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}.eep-calendar-week{margin-bottom:12px}.eep-calendar-week span{font-size:12px;font-weight:700;color:#7083a3;text-align:center;text-transform:uppercase}.eep-calendar-empty,.eep-calendar-day{height:44px}.eep-calendar-day{border:1px solid #e3ebf6;border-radius:13px;background:#fff;color:#102342;font-weight:700}.eep-calendar-day.eep-is-selected{background:#1e5fa4;color:#fff;border-color:#1e5fa4}.eep-calendar-day.eep-is-today{border-color:#1e5fa4}.eep-calendar-info{display:flex;gap:14px;align-items:center;margin-top:18px}.eep-selected-date,.eep-time-picker-wrap{flex:1;min-width:0}.eep-selected-date,.eep-time-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-radius:16px;border:1px solid #d9e5f4;background:#fff;color:#0f172a}.eep-time-trigger.disabled{opacity:.55;cursor:not-allowed}.eep-pill-icon{color:#1e5fa4}.eep-time-picker-wrap{position:relative}.eep-time-dropdown{position:absolute;top:calc(100% + 10px);left:0;right:0;z-index:15;padding:14px;border-radius:18px;background:#fff;border:1px solid #d9e5f4;box-shadow:0 20px 45px rgba(15,23,42,.14);display:none}.eep-time-dropdown.show{display:block}.eep-time-grid{display:grid;gap:10px;max-height:260px;overflow:auto}.eep-time-option{border:1px solid #e3ebf6;border-radius:14px;background:#fff;color:#0f172a;padding:12px 14px;text-align:left;font-size:14px}.eep-time-option.active{background:#1e5fa4;color:#fff;border-color:#1e5fa4}.eep-calendar-bottom-row{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:12px}.eep-timezone-note{margin:0;font-size:12px;line-height:1.55;color:#5d6b82}.eep-local-time-note{margin-top:6px}.eep-calendar-actions-inline{display:flex;align-items:center;justify-content:flex-start;width:100%}.eep-btn-green{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:16px;background:linear-gradient(135deg,#0b3f78,#1e72c3);color:#fff;font-weight:700;box-shadow:0 12px 24px rgba(30,95,164,.18)}.eep-btn-green:hover{color:#fff}.eep-right{display:flex;width:100%}.eep-right-inner{position:relative;width:100%;max-width:none;min-height:696px;display:flex;align-items:center;justify-content:center;padding:24px;border-radius:28px;background:#fff;border:1px solid #d8e5f5;overflow:hidden}.eep-center-circle{width:400px;height:400px;background:radial-gradient(circle,#dbeafe 0%,rgba(219,234,254,.14) 58%,transparent 76%)}.eep-circle,.eep-dot,.eep-center-circle{position:absolute;border-radius:50%}.eep-circle-1{width:560px;height:560px;border:1px dashed rgba(30,95,164,.35);top:50%;right:50%;transform:translate(50%,-50%)}.eep-circle-2{width:420px;height:420px;border:1px solid rgba(30,95,164,.18);top:50%;right:50%;transform:translate(50%,-50%)}.eep-circle-3{width:280px;height:280px;border:1px solid rgba(30,95,164,.14);top:50%;right:50%;transform:translate(50%,-50%)}.eep-dot-1{width:16px;height:16px;background:#16a34a;top:72px;left:72px}.eep-dot-2{width:12px;height:12px;background:#1e5fa4;bottom:92px;left:110px}.eep-dot-3{width:14px;height:14px;background:#0ea5e9;top:114px;right:90px}.eep-person{position:relative;left:auto;bottom:auto;transform:none;width:min(100%,570px);display:flex;align-items:center;justify-content:center;z-index:2}.eep-person img{display:block;width:100%;max-height:620px;height:auto;object-fit:contain}@media (max-width:1399px){.eep-container.container2{grid-template-columns:1.02fr .84fr;padding:30px}.eep-right-inner{min-height:620px}.eep-person{width:min(100%,510px)}.eep-person img{max-height:560px}.eep-circle-1{width:500px;height:500px}.eep-circle-2{width:380px;height:380px}.eep-circle-3{width:250px;height:250px}.eep-center-circle{width:350px;height:350px}}@media (max-width:1199px){.eep-container.container2{grid-template-columns:1fr .78fr;gap:24px;padding:26px}.eep-calendar-title{font-size:29px}.eep-right-inner{min-height:560px}.eep-person{width:min(100%,430px)}.eep-person img{max-height:480px}}@media (max-width:991px){.eep-hero{padding:46px 0 54px}.eep-container.container2{grid-template-columns:1fr;width:calc(100% - 24px);padding:22px 20px;gap:18px}.eep-right-inner{min-height:380px}.eep-person{width:min(100%,330px)}.eep-person img{max-height:320px}.eep-center-circle{width:250px;height:250px}.eep-circle-1{width:320px;height:320px}.eep-circle-2{width:240px;height:240px}.eep-circle-3{width:160px;height:160px}}@media (max-width:767px){.eep-hero{padding:40px 0 48px}.eep-container.container2{width:calc(100% - 16px);padding:18px 16px}.eep-calendar-title{font-size:22px}.eep-calendar-sub{font-size:15px}.eep-calendar-box{padding:14px}.eep-calendar-empty,.eep-calendar-day{height:38px}.eep-calendar-info{display:grid;grid-template-columns:1fr;gap:12px}.eep-right-inner{min-height:300px;padding:18px}.eep-person{width:min(100%,270px)}.eep-person img{max-height:260px}.eep-book-modal{padding:12px;align-items:flex-start}.eep-book-modal-dialog{border-radius:18px;max-height:calc(100vh - 24px)}.eep-book-form{padding:0 20px 20px}.eep-phone-group{grid-template-columns:1fr}}
+    .eep-status-alert {
+        max-width: 1180px;
+        margin: 24px auto 0;
+        padding: 14px 18px;
+        border-radius: 14px;
+        font-size: 15px;
+        line-height: 1.5
+    }
+
+    .eep-status-alert.success {
+        background: #eaf8ef;
+        border: 1px solid #b8e2c3;
+        color: #146c2e
+    }
+
+    .eep-status-alert.error {
+        background: #fff1f1;
+        border: 1px solid #f0b9b9;
+        color: #9c1d1d
+    }
+
+    .eep-calendar-day[disabled],
+    .eep-time-option[disabled] {
+        opacity: .35;
+        cursor: not-allowed;
+        pointer-events: none
+    }
+
+    .eep-time-option[disabled] {
+        text-decoration: line-through
+    }
+
+    .eep-book-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(7, 15, 43, .72)
+    }
+
+    .eep-book-modal.show {
+        display: flex
+    }
+
+    .eep-book-modal-dialog {
+        width: 100%;
+        max-width: 520px;
+        max-height: calc(100vh - 40px);
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 24px 80px rgba(15, 23, 42, .24);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column
+    }
+
+    .eep-book-modal-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 24px 24px 12px
+    }
+
+    .eep-book-modal-head h3 {
+        margin: 0 0 6px;
+        font-size: 28px;
+        line-height: 1.2;
+        color: #101828
+    }
+
+    .eep-book-modal-head p {
+        margin: 0;
+        color: #475467
+    }
+
+    .eep-book-close {
+        border: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        background: #f3f4f6;
+        color: #111827;
+        font-size: 28px;
+        line-height: 1
+    }
+
+    .eep-book-form {
+        padding: 0 24px 24px;
+        overflow-y: auto
+    }
+
+    .eep-book-summary {
+        padding: 14px 16px;
+        margin-bottom: 18px;
+        border-radius: 16px;
+        background: #f5f9ff;
+        border: 1px solid #dbe7ff;
+        color: #12315f;
+        font-size: 14px
+    }
+
+    .eep-book-summary-line {
+        margin-top: 6px
+    }
+
+    .eep-book-field {
+        margin-bottom: 16px
+    }
+
+    .eep-book-field label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #111827
+    }
+
+    .eep-book-field input,
+    .eep-book-field select,
+    .eep-book-field textarea {
+        width: 100%;
+        border: 1px solid #d0d5dd;
+        border-radius: 14px;
+        padding: 0 16px;
+        font-size: 15px;
+        color: #101828;
+        outline: none;
+        font-family: inherit
+    }
+
+    .eep-book-field input,
+    .eep-book-field select {
+        height: 50px
+    }
+
+    .eep-book-field textarea {
+        min-height: 110px;
+        padding: 14px 16px;
+        resize: vertical
+    }
+
+    .eep-phone-group {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        gap: 12px
+    }
+
+    .eep-book-submit {
+        width: 100%;
+        border: 0;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #16a34a, #15803d);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 14px 18px
+    }
+
+    .eep-hero {
+        padding: 56px 0 64px
+    }
+
+    .eep-container.container2 {
+        max-width: 1680px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        padding: 34px 36px;
+        border-radius: 32px;
+        border: 1px solid #cfe0f5;
+        background: linear-gradient(180deg, #f7fbff 0%, #eef5ff 100%);
+        display: grid;
+        grid-template-columns: 1.08fr .92fr;
+        gap: 34px;
+        align-items: stretch;
+        box-sizing: border-box
+    }
+
+    .eep-contact-wrap,
+    .eep-right {
+        min-width: 0;
+        width: 100%
+    }
+
+    .eep-contact-wrap {
+        display: flex;
+        width: 100%
+    }
+
+    .eep-calendar-card {
+        width: 100%;
+        padding: 10px 0 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none
+    }
+
+    .eep-calendar-title-row {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px
+    }
+
+    .eep-calendar-icon {
+        font-size: 38px;
+        color: #003366
+    }
+
+    .eep-calendar-title {
+        margin: 0;
+        font-size: 34px;
+        line-height: 1.05;
+        color: #111827
+    }
+
+    .eep-calendar-sub {
+        font-size: 16px;
+        line-height: 1.75;
+        max-width: 760px;
+        color: #4b5563
+    }
+
+    .eep-calendar-box {
+        margin-top: 24px;
+        padding: 18px;
+        border-radius: 24px;
+        background: #fff;
+        border: 1px solid #d8e5f5;
+        box-shadow: 0 10px 24px rgba(16, 24, 40, .04)
+    }
+
+    .eep-calendar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px
+    }
+
+    .eep-cal-btn {
+        width: 42px;
+        height: 42px;
+        border: 0;
+        border-radius: 50%;
+        background: #0b3f78;
+        color: #fff;
+        font-size: 22px
+    }
+
+    .eep-month-label {
+        font-size: 18px;
+        font-weight: 700;
+        color: #0f172a
+    }
+
+    .eep-calendar-week,
+    .eep-calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        gap: 10px
+    }
+
+    .eep-calendar-week {
+        margin-bottom: 12px
+    }
+
+    .eep-calendar-week span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #7083a3;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    .eep-calendar-empty,
+    .eep-calendar-day {
+        height: 44px
+    }
+
+    .eep-calendar-day {
+        border: 1px solid #e3ebf6;
+        border-radius: 13px;
+        background: #fff;
+        color: #102342;
+        font-weight: 700
+    }
+
+    .eep-calendar-day.eep-is-selected {
+        background: #1e5fa4;
+        color: #fff;
+        border-color: #1e5fa4
+    }
+
+    .eep-calendar-day.eep-is-today {
+        border-color: #1e5fa4
+    }
+
+    .eep-calendar-info {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        margin-top: 18px
+    }
+
+    .eep-selected-date,
+    .eep-time-picker-wrap {
+        flex: 1;
+        min-width: 0
+    }
+
+    .eep-selected-date,
+    .eep-time-trigger {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 14px 16px;
+        border-radius: 16px;
+        border: 1px solid #d9e5f4;
+        background: #fff;
+        color: #0f172a
+    }
+
+    .eep-time-trigger.disabled {
+        opacity: .55;
+        cursor: not-allowed
+    }
+
+    .eep-pill-icon {
+        color: #1e5fa4
+    }
+
+    .eep-time-picker-wrap {
+        position: relative
+    }
+
+    .eep-time-dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        z-index: 15;
+        padding: 14px;
+        border-radius: 18px;
+        background: #fff;
+        border: 1px solid #d9e5f4;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, .14);
+        display: none
+    }
+
+    .eep-time-dropdown.show {
+        display: block
+    }
+
+    .eep-time-grid {
+        display: grid;
+        gap: 10px;
+        max-height: 260px;
+        overflow: auto
+    }
+
+    .eep-time-option {
+        border: 1px solid #e3ebf6;
+        border-radius: 14px;
+        background: #fff;
+        color: #0f172a;
+        padding: 12px 14px;
+        text-align: left;
+        font-size: 14px
+    }
+
+    .eep-time-option.active {
+        background: #1e5fa4;
+        color: #fff;
+        border-color: #1e5fa4
+    }
+
+    .eep-calendar-bottom-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-top: 12px
+    }
+
+    .eep-timezone-note {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.55;
+        color: #5d6b82
+    }
+
+    .eep-local-time-note {
+        margin-top: 6px
+    }
+
+    .eep-calendar-actions-inline {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%
+    }
+
+    .eep-btn-green {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 28px;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #0b3f78, #1e72c3);
+        color: #fff;
+        font-weight: 700;
+        box-shadow: 0 12px 24px rgba(30, 95, 164, .18)
+    }
+
+    .eep-btn-green:hover {
+        color: #fff
+    }
+
+    .eep-right {
+        display: flex;
+        width: 100%
+    }
+
+    .eep-right-inner {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        min-height: 696px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        border-radius: 28px;
+        background: #fff;
+        border: 1px solid #d8e5f5;
+        overflow: hidden
+    }
+
+    .eep-center-circle {
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, #dbeafe 0%, rgba(219, 234, 254, .14) 58%, transparent 76%)
+    }
+
+    .eep-circle,
+    .eep-dot,
+    .eep-center-circle {
+        position: absolute;
+        border-radius: 50%
+    }
+
+    .eep-circle-1 {
+        width: 560px;
+        height: 560px;
+        border: 1px dashed rgba(30, 95, 164, .35);
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%)
+    }
+
+    .eep-circle-2 {
+        width: 420px;
+        height: 420px;
+        border: 1px solid rgba(30, 95, 164, .18);
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%)
+    }
+
+    .eep-circle-3 {
+        width: 280px;
+        height: 280px;
+        border: 1px solid rgba(30, 95, 164, .14);
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%)
+    }
+
+    .eep-dot-1 {
+        width: 16px;
+        height: 16px;
+        background: #16a34a;
+        top: 72px;
+        left: 72px
+    }
+
+    .eep-dot-2 {
+        width: 12px;
+        height: 12px;
+        background: #1e5fa4;
+        bottom: 92px;
+        left: 110px
+    }
+
+    .eep-dot-3 {
+        width: 14px;
+        height: 14px;
+        background: #0ea5e9;
+        top: 114px;
+        right: 90px
+    }
+
+    .eep-person {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        transform: none;
+        width: min(100%, 570px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2
+    }
+
+    .eep-person img {
+        display: block;
+        width: 100%;
+        max-height: 620px;
+        height: auto;
+        object-fit: contain
+    }
+
+    @media (max-width:1399px) {
+        .eep-container.container2 {
+            grid-template-columns: 1.02fr .84fr;
+            padding: 30px
+        }
+
+        .eep-right-inner {
+            min-height: 620px
+        }
+
+        .eep-person {
+            width: min(100%, 510px)
+        }
+
+        .eep-person img {
+            max-height: 560px
+        }
+
+        .eep-circle-1 {
+            width: 500px;
+            height: 500px
+        }
+
+        .eep-circle-2 {
+            width: 380px;
+            height: 380px
+        }
+
+        .eep-circle-3 {
+            width: 250px;
+            height: 250px
+        }
+
+        .eep-center-circle {
+            width: 350px;
+            height: 350px
+        }
+    }
+
+    @media (max-width:1199px) {
+        .eep-container.container2 {
+            grid-template-columns: 1fr .78fr;
+            gap: 24px;
+            padding: 26px
+        }
+
+        .eep-calendar-title {
+            font-size: 29px
+        }
+
+        .eep-right-inner {
+            min-height: 560px
+        }
+
+        .eep-person {
+            width: min(100%, 430px)
+        }
+
+        .eep-person img {
+            max-height: 480px
+        }
+    }
+
+    @media (max-width:991px) {
+        .eep-hero {
+            padding: 46px 0 54px
+        }
+
+        .eep-container.container2 {
+            grid-template-columns: 1fr;
+            width: calc(100% - 24px);
+            padding: 22px 20px;
+            gap: 18px
+        }
+
+        .eep-right-inner {
+            min-height: 380px
+        }
+
+        .eep-person {
+            width: min(100%, 330px)
+        }
+
+        .eep-person img {
+            max-height: 320px
+        }
+
+        .eep-center-circle {
+            width: 250px;
+            height: 250px
+        }
+
+        .eep-circle-1 {
+            width: 320px;
+            height: 320px
+        }
+
+        .eep-circle-2 {
+            width: 240px;
+            height: 240px
+        }
+
+        .eep-circle-3 {
+            width: 160px;
+            height: 160px
+        }
+    }
+
+    @media (max-width:767px) {
+        .eep-hero {
+            padding: 40px 0 48px
+        }
+
+        .eep-container.container2 {
+            width: calc(100% - 16px);
+            padding: 18px 16px
+        }
+
+        .eep-calendar-title {
+            font-size: 22px
+        }
+
+        .eep-calendar-sub {
+            font-size: 15px
+        }
+
+        .eep-calendar-box {
+            padding: 14px
+        }
+
+        .eep-calendar-empty,
+        .eep-calendar-day {
+            height: 38px
+        }
+
+        .eep-calendar-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px
+        }
+
+        .eep-right-inner {
+            min-height: 300px;
+            padding: 18px
+        }
+
+        .eep-person {
+            width: min(100%, 270px)
+        }
+
+        .eep-person img {
+            max-height: 260px
+        }
+
+        .eep-book-modal {
+            padding: 12px;
+            align-items: flex-start
+        }
+
+        .eep-book-modal-dialog {
+            border-radius: 18px;
+            max-height: calc(100vh - 24px)
+        }
+
+        .eep-book-form {
+            padding: 0 20px 20px
+        }
+
+        .eep-phone-group {
+            grid-template-columns: 1fr
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .feature-img8 img {
+            object-fit: fill;
+        }
+
+        .ibt-section-gap {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .ibt-section-gapTop {
+            padding-top: 50px;
+        }
+    }
 </style>
 
 
@@ -519,9 +1232,9 @@ include __DIR__ . '/header.php';
 
 
 <?php if ($bookCallStatus): ?>
-<div class="eep-status-alert <?php echo htmlspecialchars($bookCallStatus['type']); ?>">
-    <?php echo htmlspecialchars($bookCallStatus['message']); ?>
-</div>
+    <div class="eep-status-alert <?php echo htmlspecialchars($bookCallStatus['type']); ?>">
+        <?php echo htmlspecialchars($bookCallStatus['message']); ?>
+    </div>
 <?php endif; ?>
 <section class="eep-hero ibt-section-gapTop" id="book-call-widget">
     <div class="eep-container container2">
@@ -563,16 +1276,17 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                 </div>
-                <div class="eep-calendar-bottom-row"><div class="eep-timezone-note">
-                    <strong>Slots Time</strong>
-                    <span id="viewerTimezoneNote"></span>
-                    <div id="selectedLocalTimeNote" class="eep-local-time-note"></div>
-                </div>
-                <div class="mt-20 pt-3 eep-calendar-actions-inline">
-                    <a href="#book-call" class="eep-btn-green" id="bookCallBtn"><i class="fa fa-phone"></i> Book A Call With Us</a>
+                <div class="eep-calendar-bottom-row">
+                    <div class="eep-timezone-note">
+                        <strong>Slots Time</strong>
+                        <span id="viewerTimezoneNote"></span>
+                        <div id="selectedLocalTimeNote" class="eep-local-time-note"></div>
+                    </div>
+                    <div class="mt-20 pt-3 eep-calendar-actions-inline">
+                        <a href="#book-call" class="eep-btn-green" id="bookCallBtn"><i class="fa fa-phone"></i> Book A Call With Us</a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="eep-right">
             <div class="eep-right-inner">
@@ -633,4 +1347,3 @@ include __DIR__ . '/header.php';
 
 <script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
-
