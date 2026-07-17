@@ -1157,6 +1157,12 @@ include __DIR__ . '/header.php';
     h3 {
         letter-spacing: normal;
     }
+
+    @media (max-width: 425px) {
+        .smm-growth__stats {
+            padding-top: 0px;
+        }
+    }
 </style>
 
 <main class="smm-page">
@@ -1171,8 +1177,8 @@ include __DIR__ . '/header.php';
                             We help businesses build visibility, engage audiences, and generate quality leads through strategic social media campaigns and content marketing.
                         </p>
                         <div class="smm-hero__actions">
-                            <a class="smm-hero__btn smm-hero__btn--primary" href="contact.php">
-                                Start Growing Now
+                            <a class="smm-hero__btn smm-hero__btn--primary" href="enquirynow.php">
+                                Enquiry Now
                                 <i class="fas fa-arrow-right"></i>
                             </a>
                             <a class="smm-hero__btn smm-hero__btn--secondary" href="contact.php">
@@ -1229,8 +1235,8 @@ include __DIR__ . '/header.php';
                             <li><i class="fas fa-check"></i>Community Engagement</li>
                             <li><i class="fas fa-check"></i>Profile Optimization &amp; Analysis</li>
                         </ul>
-                        <a class="smm-why__btn" href="contact.php">
-                            Explore Our Services
+                        <a class="smm-why__btn" href="enquirynow.php">
+                            Enquiry Now
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
