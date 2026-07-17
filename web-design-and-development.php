@@ -1492,6 +1492,16 @@ include __DIR__ . '/header.php';
             right: 17px;
         }
     }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .gradient-title {
+            font-size: 75px;
+        }
+
+        .banner-content .title2 {
+            font-size: 75px;
+        }
+    }
 </style>
 
 <link
@@ -2132,11 +2142,3 @@ include __DIR__ . '/header.php';
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-

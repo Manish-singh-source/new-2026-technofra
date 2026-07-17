@@ -5,333 +5,339 @@ include __DIR__ . '/header.php';
 ?>
 
 <style>
-.career-page-hero {
-    padding: 90px 15px 26px;
-}
-
-.career-page-hero .hero-copy {
-    max-width: 760px;
-}
-
-.career-page-hero .hero-copy p {
-    color: #475569;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.career-openings-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.career-opening-card {
-    height: 100%;
-    padding: 28px;
-    border-radius: 24px;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-    border: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-.career-opening-card .job-icon {
-    width: 54px;
-    height: 54px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #003366 0%, #0b5ed7 100%);
-    color: #fff;
-    font-size: 1.2rem;
-    margin-bottom: 18px;
-    box-shadow: 0 12px 24px rgba(0, 51, 102, 0.24);
-}
-
-.career-opening-card .job-label {
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: rgba(0, 51, 102, 0.08);
-    color: #003366;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-
-.career-opening-card h3 {
-    font-size: 24px;
-    line-height: 1.25;
-    margin-bottom: 12px;
-}
-
-.career-opening-card p {
-    color: #475569;
-    line-height: 1.7;
-    margin-bottom: 18px;
-}
-
-.career-opening-card .career-mini-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 22px;
-    display: grid;
-    gap: 10px;
-}
-
-.career-opening-card .career-mini-list li {
-    display: flex;
-    gap: 10px;
-    color: #334155;
-    font-size: 14px;
-}
-
-.career-opening-card .career-mini-list li i {
-    color: #003366;
-    margin-top: 4px;
-    flex-shrink: 0;
-}
-
-.role-modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: rgba(15, 23, 42, 0.62);
-    backdrop-filter: blur(8px);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    z-index: 2000;
-}
-
-.role-modal-backdrop.is-open {
-    display: flex;
-}
-
-.role-modal {
-    width: min(920px, 100%);
-    max-height: min(80dvh, 980px);
-    overflow: auto;
-    background: #fff;
-    border-radius: 28px;
-    box-shadow: 0 30px 90px rgba(15, 23, 42, 0.28);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.role-modal-head {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 28px 28px 18px;
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-}
-
-.role-modal-head h3 {
-    margin: 0;
-    font-size: 28px;
-    line-height: 1.2;
-}
-
-.role-modal-head p {
-    margin: 8px 0 0;
-    color: #475569;
-}
-
-.role-modal-close {
-    border: 0;
-    background: rgba(0, 51, 102, 0.08);
-    color: #003366;
-    width: 44px;
-    height: 44px;
-    border-radius: 999px;
-    font-size: 22px;
-    line-height: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.role-modal-body {
-    padding: 24px 28px 28px;
-}
-
-.role-meta-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
-}
-
-.role-meta-card {
-    padding: 18px;
-    border-radius: 20px;
-    background: #f8fbff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-}
-
-.role-meta-card span {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #64748b;
-    margin-bottom: 8px;
-}
-
-.role-meta-card strong {
-    color: #0f172a;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.role-detail-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.role-detail-box {
-    padding: 20px;
-    border-radius: 22px;
-    background: #ffffff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-}
-
-.role-detail-box h4 {
-    margin: 0 0 12px;
-    font-size: 18px;
-    color: #003366;
-}
-
-.role-detail-box ul {
-    margin: 0;
-    padding-left: 18px;
-    color: #334155;
-    line-height: 1.75;
-}
-
-.role-modal-actions {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 22px;
-}
-
-.role-modal-actions .ibt-btn {
-    min-width: 170px;
-}
-
-body.role-modal-open {
-    overflow: hidden;
-}
-
-.why-join-copy {
-    max-width: 760px;
-    color: #475569;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-.why-join-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-    margin-top: 34px;
-}
-
-.why-join-card {
-    height: 100%;
-    padding: 24px;
-    border-radius: 22px;
-    background: #fff;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.05);
-}
-
-.why-join-card .why-icon {
-    width: 52px;
-    height: 52px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    background: rgba(0, 51, 102, 0.08);
-    color: #003366;
-    font-size: 1.15rem;
-    margin-bottom: 14px;
-}
-
-.why-join-card h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #0f172a;
-}
-
-.why-join-card p {
-    margin-bottom: 0;
-    color: #475569;
-    line-height: 1.7;
-}
-
-@media (max-width: 1199.98px) {
-    .career-openings-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .why-join-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 767.98px) {
     .career-page-hero {
-        padding-top: 72px;
+        padding: 90px 15px 26px;
     }
 
-    .career-page-hero .hero-copy p,
-    .why-join-copy {
+    .career-page-hero .hero-copy {
+        max-width: 760px;
+    }
+
+    .career-page-hero .hero-copy p {
+        color: #475569;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .career-openings-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .career-opening-card {
+        height: 100%;
+        padding: 28px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+        border: 1px solid rgba(15, 23, 42, 0.06);
+    }
+
+    .career-opening-card .job-icon {
+        width: 54px;
+        height: 54px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        background: linear-gradient(135deg, #003366 0%, #0b5ed7 100%);
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+        box-shadow: 0 12px 24px rgba(0, 51, 102, 0.24);
+    }
+
+    .career-opening-card .job-label {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(0, 51, 102, 0.08);
+        color: #003366;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    .career-opening-card h3 {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 12px;
+    }
+
+    .career-opening-card p {
+        color: #475569;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    .career-opening-card .career-mini-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 22px;
+        display: grid;
+        gap: 10px;
+    }
+
+    .career-opening-card .career-mini-list li {
+        display: flex;
+        gap: 10px;
+        color: #334155;
+        font-size: 14px;
+    }
+
+    .career-opening-card .career-mini-list li i {
+        color: #003366;
+        margin-top: 4px;
+        flex-shrink: 0;
+    }
+
+    .role-modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, 0.62);
+        backdrop-filter: blur(8px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        z-index: 2000;
+    }
+
+    .role-modal-backdrop.is-open {
+        display: flex;
+    }
+
+    .role-modal {
+        width: min(920px, 100%);
+        max-height: min(80dvh, 980px);
+        overflow: auto;
+        background: #fff;
+        border-radius: 28px;
+        box-shadow: 0 30px 90px rgba(15, 23, 42, 0.28);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .role-modal-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 28px 28px 18px;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .role-modal-head h3 {
+        margin: 0;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .role-modal-head p {
+        margin: 8px 0 0;
+        color: #475569;
+    }
+
+    .role-modal-close {
+        border: 0;
+        background: rgba(0, 51, 102, 0.08);
+        color: #003366;
+        width: 44px;
+        height: 44px;
+        border-radius: 999px;
+        font-size: 22px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .role-modal-body {
+        padding: 24px 28px 28px;
+    }
+
+    .role-meta-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .role-meta-card {
+        padding: 18px;
+        border-radius: 20px;
+        background: #f8fbff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .role-meta-card span {
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #64748b;
+        margin-bottom: 8px;
+    }
+
+    .role-meta-card strong {
+        color: #0f172a;
         font-size: 15px;
+        line-height: 1.5;
     }
 
-    .career-openings-grid,
-    .why-join-grid {
-        grid-template-columns: 1fr;
+    .role-detail-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
     }
 
-    .career-opening-card,
+    .role-detail-box {
+        padding: 20px;
+        border-radius: 22px;
+        background: #ffffff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .role-detail-box h4 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        color: #003366;
+    }
+
+    .role-detail-box ul {
+        margin: 0;
+        padding-left: 18px;
+        color: #334155;
+        line-height: 1.75;
+    }
+
+    .role-modal-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 22px;
+    }
+
+    .role-modal-actions .ibt-btn {
+        min-width: 170px;
+    }
+
+    body.role-modal-open {
+        overflow: hidden;
+    }
+
+    .why-join-copy {
+        max-width: 760px;
+        color: #475569;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .why-join-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 34px;
+    }
+
     .why-join-card {
-        padding: 22px;
-        border-radius: 20px;
+        height: 100%;
+        padding: 24px;
+        border-radius: 22px;
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.05);
     }
 
-    .role-modal-head,
-    .role-modal-body {
-        padding-left: 20px;
-        padding-right: 20px;
+    .why-join-card .why-icon {
+        width: 52px;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        background: rgba(0, 51, 102, 0.08);
+        color: #003366;
+        font-size: 1.15rem;
+        margin-bottom: 14px;
     }
 
-    .role-meta-grid,
-    .role-detail-grid {
-        grid-template-columns: 1fr;
+    .why-join-card h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #0f172a;
     }
-}
+
+    .why-join-card p {
+        margin-bottom: 0;
+        color: #475569;
+        line-height: 1.7;
+    }
+
+    @media (max-width: 1199.98px) {
+        .career-openings-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .why-join-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .career-page-hero {
+            padding-top: 72px;
+        }
+
+        .career-page-hero .hero-copy p,
+        .why-join-copy {
+            font-size: 15px;
+        }
+
+        .career-openings-grid,
+        .why-join-grid {
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .career-opening-card,
+        .why-join-card {
+            padding: 22px;
+            border-radius: 20px;
+        }
+
+        .role-modal-head,
+        .role-modal-body {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .role-meta-grid,
+        .role-detail-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        .role-modal {
+            margin-top: 10dvh;
+        }
+    }
 </style>
 
 <section class="page-banner9">
     <div class="staff-text">Jobs</div>
     <div class="container">
         <div class="page-content">
-            <h1 class="title">/ Career /</h1>
+            <h1 class="title">Career</h1>
         </div>
     </div>
-    
+
 </section>
 
 <section class="career-page-hero">
@@ -567,61 +573,58 @@ body.role-modal-open {
 <!-- End feature-style15 -->
 
 <script>
-(function () {
-    const backdrop = document.getElementById('roleModalBackdrop');
-    const closeBtn = document.getElementById('roleModalClose');
-    const dismissBtn = document.getElementById('roleModalDismissBtn');
-    const titleEl = document.getElementById('roleModalTitle');
-    const subtitleEl = document.getElementById('roleModalSubtitle');
-    const expEl = document.getElementById('roleModalExp');
-    const skillsEl = document.getElementById('roleModalSkills');
-    const aiEl = document.getElementById('roleModalAi');
-    const respEl = document.getElementById('roleModalResponsibility');
-    const applyLink = document.getElementById('roleModalApplyLink');
+    (function() {
+        const backdrop = document.getElementById('roleModalBackdrop');
+        const closeBtn = document.getElementById('roleModalClose');
+        const dismissBtn = document.getElementById('roleModalDismissBtn');
+        const titleEl = document.getElementById('roleModalTitle');
+        const subtitleEl = document.getElementById('roleModalSubtitle');
+        const expEl = document.getElementById('roleModalExp');
+        const skillsEl = document.getElementById('roleModalSkills');
+        const aiEl = document.getElementById('roleModalAi');
+        const respEl = document.getElementById('roleModalResponsibility');
+        const applyLink = document.getElementById('roleModalApplyLink');
 
-    function openModal(trigger) {
-        titleEl.textContent = trigger.dataset.roleTitle || 'Role Details';
-        subtitleEl.textContent = trigger.dataset.roleSubtitle || '';
-        expEl.textContent = trigger.dataset.roleExp || '-';
-        skillsEl.textContent = trigger.dataset.roleSkill || '-';
-        aiEl.textContent = trigger.dataset.roleAi || '-';
-        respEl.textContent = trigger.dataset.roleResponsibility || '-';
-        applyLink.href = trigger.href || 'job-application.php';
-        backdrop.classList.add('is-open');
-        backdrop.setAttribute('aria-hidden', 'false');
-        document.body.classList.add('role-modal-open');
-        closeBtn.focus();
-    }
+        function openModal(trigger) {
+            titleEl.textContent = trigger.dataset.roleTitle || 'Role Details';
+            subtitleEl.textContent = trigger.dataset.roleSubtitle || '';
+            expEl.textContent = trigger.dataset.roleExp || '-';
+            skillsEl.textContent = trigger.dataset.roleSkill || '-';
+            aiEl.textContent = trigger.dataset.roleAi || '-';
+            respEl.textContent = trigger.dataset.roleResponsibility || '-';
+            applyLink.href = trigger.href || 'job-application.php';
+            backdrop.classList.add('is-open');
+            backdrop.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('role-modal-open');
+            closeBtn.focus();
+        }
 
-    function closeModal() {
-        backdrop.classList.remove('is-open');
-        backdrop.setAttribute('aria-hidden', 'true');
-        document.body.classList.remove('role-modal-open');
-    }
+        function closeModal() {
+            backdrop.classList.remove('is-open');
+            backdrop.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('role-modal-open');
+        }
 
-    document.querySelectorAll('.js-role-popup').forEach((btn) => {
-        btn.addEventListener('click', function (event) {
-            event.preventDefault();
-            openModal(this);
+        document.querySelectorAll('.js-role-popup').forEach((btn) => {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                openModal(this);
+            });
         });
-    });
 
-    closeBtn.addEventListener('click', closeModal);
-    dismissBtn.addEventListener('click', closeModal);
-    backdrop.addEventListener('click', function (event) {
-        if (event.target === backdrop) {
-            closeModal();
-        }
-    });
-    document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
-            closeModal();
-        }
-    });
-})();
+        closeBtn.addEventListener('click', closeModal);
+        dismissBtn.addEventListener('click', closeModal);
+        backdrop.addEventListener('click', function(event) {
+            if (event.target === backdrop) {
+                closeModal();
+            }
+        });
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
+                closeModal();
+            }
+        });
+    })();
 </script>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
