@@ -18336,9 +18336,10 @@ ul {
 }
 
 .hero-style13 {
-  position: relative;
-  padding: 185px 0 109px;
-  z-index: 99;
+    position: relative;
+    padding: 185px 0 109px;
+    background: linear-gradient(180deg, #ffffff 0%, #eef8fc 38%, #0f88bdc2 100%);
+    z-index: 99;
 }
 
 @media (max-width: 1201px) {
@@ -26973,6 +26974,10 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: end;
   -webkit-align-items: end;
   -ms-flex-align: end;
@@ -30718,6 +30723,8 @@ ul {
 
 .feature-sec8 {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 @media (max-width: 1366px) {
@@ -50025,3 +50032,5 @@ blockquote {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
     letter-spacing: normal;
 }
+
+

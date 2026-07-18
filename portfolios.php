@@ -390,7 +390,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="wotm.php"></a>
+                <a href="wotm.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">

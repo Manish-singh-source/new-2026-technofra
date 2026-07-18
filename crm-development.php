@@ -328,45 +328,21 @@ include __DIR__ . '/header.php';
         transform: translateY(-1px) scale(1.04);
     }
 
-    .tf-motion-reveal {
-        opacity: 0;
-        transform: translate3d(0, 24px, 0) scale(.985);
-        filter: blur(10px) saturate(.94);
-        transition: opacity .95s cubic-bezier(.22, 1, .36, 1), transform .95s cubic-bezier(.22, 1, .36, 1), filter .95s cubic-bezier(.22, 1, .36, 1);
-        transition-delay: var(--tf-delay, 0ms);
-        will-change: opacity, transform, filter;
-    }
-
-    .tf-motion-reveal.tf-reveal-up {
-        transform: translate3d(0, 24px, 0) scale(.985);
-    }
-
-    .tf-motion-reveal.tf-reveal-left {
-        transform: translate3d(-42px, 18px, 0) scale(.98);
-    }
-
-    .tf-motion-reveal.tf-reveal-right {
-        transform: translate3d(42px, 18px, 0) scale(.98);
-    }
-
-    .tf-motion-reveal.tf-reveal-zoom {
-        transform: translate3d(0, 18px, 0) scale(.94);
-    }
-
-    .tf-motion-reveal.tf-reveal-media {
-        transform: translate3d(0, 28px, 0) scale(.95);
-        clip-path: inset(8% 0 8% 0 round 24px);
-    }
-
-    .tf-motion-reveal.is-visible {
+    .tf-motion-reveal,
+    .tf-motion-reveal.tf-reveal-up,
+    .tf-motion-reveal.tf-reveal-left,
+    .tf-motion-reveal.tf-reveal-right,
+    .tf-motion-reveal.tf-reveal-zoom,
+    .tf-motion-reveal.tf-reveal-media,
+    .tf-motion-reveal.is-visible,
+    .tf-motion-reveal.is-visible.tf-reveal-media {
         opacity: 1;
         transform: none;
         filter: none;
         clip-path: none;
-    }
-
-    .tf-motion-reveal.is-visible.tf-reveal-media {
-        clip-path: inset(0 round 24px);
+        transition: none;
+        animation: none;
+        will-change: auto;
     }
 
     .tf-crm-stat__spark polyline {
@@ -2486,12 +2462,12 @@ include __DIR__ . '/header.php';
 
                 <div class="crm-buttons">
 
-                    <a href="#" class="crm-btn-primary">
-                        Request a Demo &rarr;
-                    </a>
+                    <!-- <a href="#" class="crm-btn-primary">
+                        &rarr;
+                    </a> -->
 
-                    <a href="#" class="crm-btn-outline">
-                        Talk to Our Experts
+                    <a href="contact.php" class="crm-btn-outline">
+                         Request a Demo
                     </a>
 
                 </div>

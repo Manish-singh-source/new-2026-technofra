@@ -43,7 +43,7 @@ include __DIR__ . '/header.php';
             <div class="row end">
                 <div class="col-lg-8">
                     <div class="hero-title">
-                        <h1 class="gradient-title9"><span>Shopify Website Development in Mumbai</span></h1>
+                        <h1 class="gradient-title9"><span><img src="./assets/images/new/shopify.webp" style="width:90px; height:100px;">Shopify Website <br>Development in Mumbai</span></h1>
                         <p class="gradient-title10">Custom Shopify stores built to boost sales and grow your business.</p>
                     </div>
                 </div>

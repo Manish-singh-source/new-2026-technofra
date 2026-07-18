@@ -981,9 +981,7 @@ include __DIR__ . '/header.php';
         <p class="hero-subtext">We design and develop scalable, user-friendly Android applications with smooth performance, clean UI, and reliable backend integration.</p>
 
         <div class="hero-ctas">
-            <a href="#" class="hero-btn hero-btn-primary"><i class="fa-solid fa-paper-plane"></i> Start Your Project</a>
-            <a href="#" class="hero-btn hero-btn-outline"><i class="fa-solid fa-briefcase"></i> View Portfolio</a>
-        </div>
+            <a href="contact.php" class="hero-btn hero-btn-primary"><i class="fa-solid fa-paper-plane"></i> Start Your Project</a>
     </div>
 
     <div class="hero-phones">
@@ -1019,7 +1017,7 @@ include __DIR__ . '/header.php';
                     <p>From feature-rich functionality and API integrations to rigorous testing and Google Play deployment, we handle everything end-to-end.</p>
                     <p>Whether you're a startup or an enterprise, we turn your ideas into powerful Android apps that drive engagement and growth.</p>
 
-                    <a href="#" class="wcu-btn">
+                    <a href="portfolios.php" class="wcu-btn">
                         Explore our work <i class="fa-solid fa-arrow-up-right"></i>
                     </a>
                 </div>
@@ -1132,9 +1130,9 @@ include __DIR__ . '/header.php';
 
         </div>
 
-        <div class="svc-cta-wrap">
+        <!-- <div class="svc-cta-wrap">
             <a href="#" class="svc-cta">Explore Our Android Services <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+        </div> -->
 
     </div>
 </section>

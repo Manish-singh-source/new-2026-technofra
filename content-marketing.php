@@ -1733,14 +1733,11 @@ include __DIR__ . '/header.php';
                 </p>
 
                 <div class="hero-cta-row">
-                    <a href="#" class="hero-btn hero-btn-primary">
-                        Explore Our Services
+                    <a href="enquirynow.php" class="hero-btn hero-btn-primary">
+                       Enquiry Now
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="hero-btn hero-btn-secondary">
-                        Let's Create Impact
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                   
                 </div>
 
                 <div class="hero-checklist">
@@ -1784,8 +1781,8 @@ include __DIR__ . '/header.php';
                     engaged even when they are not ready to buy
                     immediately.
                 </p>
-                <a href="#" class="ppc-btn">
-                    Explore Content Services
+                <a href="contact.php" class="ppc-btn">
+                   Contact Now
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
@@ -1945,8 +1942,8 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
 
-                    <a href="#" class="overview-btn">
-                        Explore Content Services
+                    <a href="contact.php" class="overview-btn">
+                       Contact Us
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>

@@ -727,7 +727,7 @@ include __DIR__ . '/header.php';
 <div class="hero-style13">
     <div class="container">
         <div class="hero-content13">
-            <h1 class="title">Best WordPress Development Company for Scalable Business Websites
+            <h1 class="title"> <img src ="./assets/images/new/wordpress.webp" style="width: 100px;"><br>Best WordPress Development Company for Scalable Business Websites
             </h1>
             <p>Looking for a reliable WordPress development company? Technofra delivers high-performing, secure, and scalable WordPress solutions tailored to your business needs.
             </p>
@@ -974,7 +974,7 @@ include __DIR__ . '/header.php';
                     <h2 class="title">Enquiry Now or reach out to us today!</h2>
                     <p class="sub-title">Get Your Quote or Call : +91 8080 80 3374</p>
                 </div>
-                <a href="#" title="" class="ibt-btn ibt-btn-outline">
+                <a href="contact.php" title="" class="ibt-btn ibt-btn-outline">
                     <span>Enquiry Now</span>
                     <i class="icon-arrow-top"></i>
                 </a>
@@ -1018,7 +1018,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">WOTM
                                 </h4>
                                 <!-- <p>E-Commerce</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1031,7 +1031,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">KARAN TELECOM
                                 </h4>
                                 <!-- <p>Business Website</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1044,7 +1044,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">AERITX
                                 </h4>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1057,7 +1057,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">ISH
                                 </h4>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1070,7 +1070,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">URBAN SPORTS
                                 </h4>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1083,7 +1083,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">VP & SONS
                                 </h4>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1096,7 +1096,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">LINK PROMOTIONS
                                 </h4>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1109,7 +1109,7 @@ include __DIR__ . '/header.php';
                                 <h4 class="title">TRANSHUB TECH
                                 </h4>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
-                                <a class='ser-btn3' href='project-single.html' title>View more</a>
+                                <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
                         </div>
                     </div>
@@ -1138,7 +1138,7 @@ include __DIR__ . '/header.php';
         <div class="row">
             <div class="col-xl-12 col-lg-12">
                 <div class="faq-content5">
-                    <div class="faq-content4 ibt-section-gapTop">
+                    <div class="faq-content4">
                         <div class="sec-title">
                             <h2 class="title animated-heading mb-0">Frequently Asked Questions</h2>
                         </div>

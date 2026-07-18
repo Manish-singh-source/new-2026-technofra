@@ -363,14 +363,14 @@ include __DIR__ . '/header.php';
                     <div class="sukanya-product-media">
                         <img src="https://www.sukanyaindia.in/cdn/shop/files/Untitled_design_40.png?v=1769163272&width=750" alt="Premium Handbag">
                     </div>
-                    <h3>Premium Handbag</h3>
+                    <h3>PYJAMA SET</h3>
                   
                 </article>
 
                 <article class="sukanya-product-card">
                     <span class="sukanya-product-like"><i class="far fa-heart"></i></span>
                     <div class="sukanya-product-media">
-                        <img src="./assets/images/event/shop1-2.png" alt="Minimal Watch">
+                        <img src="https://www.sukanyaindia.in/cdn/shop/files/Untitled_design_36.png?v=1769161152&width=750" alt="Minimal Watch">
                     </div>
                     <h3>Minimal Watch</h3>
                     <p class="sukanya-product-price">?1,999</p>
