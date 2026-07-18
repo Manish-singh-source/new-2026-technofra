@@ -38,7 +38,7 @@ include __DIR__ . '/header.php';
         font-weight: 800;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #ffffff;
+        color: #b6c803;
     }
 
     .sukanya-hero-content p {
@@ -130,6 +130,37 @@ include __DIR__ . '/header.php';
         display: block;
     }
 
+    .wotm-selected-work {
+        padding: 95px 0;
+        background: linear-gradient(180deg, #ffffff 0%, #f8f8f6 100%);
+    }
+
+    .wotm-selected-expertise {
+        display: grid;
+        gap: 30px;
+    }
+
+    .wotm-selected-expertise h2 {
+        margin: 0;
+        color: #b6c803;
+        font-size: clamp(44px, 6vw, 88px);
+        line-height: 0.95;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: -0.05em;
+    }
+
+    .wotm-selected-expertise-media {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 24px 60px rgba(20, 20, 20, 0.12);
+    }
+
+    .wotm-selected-expertise-media img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 .sukanya-products-showcase {
     padding: 42px 0 96px;
     background: linear-gradient(180deg, #f3f1ef 0%, #f3f1ee 100%);
@@ -298,6 +329,10 @@ include __DIR__ . '/header.php';
             padding: 72px 0;
         }
 
+        .wotm-selected-work {
+            padding: 72px 0;
+        }
+
         .wotm-branding-visual {
             min-height: auto;
         }
@@ -347,7 +382,16 @@ include __DIR__ . '/header.php';
         </div>
     </div>
 </section>
-
+<section class="wotm-selected-work" id="work">
+    <div class="container">
+        <div class="wotm-selected-expertise">
+            <h2>Our Expertise</h2>
+            <div class="wotm-selected-expertise-media" aria-hidden="true">
+                <img src="./assets/images/new/SUKNAYA2.png" alt="Our Expertise">
+            </div>
+        </div>
+    </div>
+</section>
 <section class="sukanya-products-showcase">
     <div class="container">
         <div class="sukanya-products-shell">
@@ -372,43 +416,47 @@ include __DIR__ . '/header.php';
                     <div class="sukanya-product-media">
                         <img src="https://www.sukanyaindia.in/cdn/shop/files/Untitled_design_36.png?v=1769161152&width=750" alt="Minimal Watch">
                     </div>
-                    <h3>Minimal Watch</h3>
-                    <p class="sukanya-product-price">?1,999</p>
-                    <div class="sukanya-product-meta">
-                        <span class="sukanya-product-rating">?????</span>
-                        <span>(96)</span>
-                    </div>
+                    <h3>LOUNGE WEAR GOWN</h3>
+                   
                 </article>
 
                 <article class="sukanya-product-card">
                     <span class="sukanya-product-like"><i class="far fa-heart"></i></span>
                     <div class="sukanya-product-media">
-                        <img src="./assets/images/event/shop1-3.png" alt="Urban Sneakers">
+                        <img src="https://www.sukanyaindia.in/cdn/shop/collections/Untitled_design_76.png?v=1769764398&width=535" alt="Urban Sneakers">
                     </div>
-                    <h3>Urban Sneakers</h3>
-                    <p class="sukanya-product-price">?2,299</p>
-                    <div class="sukanya-product-meta">
-                        <span class="sukanya-product-rating">?????</span>
-                        <span>(154)</span>
-                    </div>
+                    <h3>PRINTED CO-ORD SETS</h3>
+                    
+                  
                 </article>
 
                 <article class="sukanya-product-card">
                     <span class="sukanya-product-like"><i class="far fa-heart"></i></span>
                     <div class="sukanya-product-media">
-                        <img src="./assets/images/event/shop1-4.png" alt="Aviator Sunglasses">
+                        <img src="https://www.sukanyaindia.in/cdn/shop/files/Untitled_design_37.png?v=1769162912&width=750" alt="Aviator Sunglasses">
                     </div>
-                    <h3>Aviator Sunglasses</h3>
-                    <p class="sukanya-product-price">?1,199</p>
-                    <div class="sukanya-product-meta">
-                        <span class="sukanya-product-rating">?????</span>
-                        <span>(87)</span>
-                    </div>
+                    <h3>BERMUDA SETS</h3>
+                   
+                    
                 </article>
             </div>
         </div>
     </div>
 </section>
-
+<section class="wotm-selected-work" id="work">
+    <div class="container">
+        <div class="wotm-selected-expertise">
+            <h2>E-Commerce Customization</h2>
+            <div class="wotm-selected-expertise-media" aria-hidden="true">
+                <img src="./assets/images/new/sukanya3.png" alt="Our Expertise">
+            </div>
+        </div>
+    </div>
+</section>
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
+
 
