@@ -263,37 +263,8 @@ include __DIR__ . '/header.php';
             <p class="portfolio-lead">Browse our latest client website projects, crafted with modern design, responsive layouts, and user-friendly experiences that help each brand stand out online.</p>
         </div>
         <div class="row portfolio-grid">
-            <div class="col-lg-6 col-md-6">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/1.png" alt="Brand identity portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Brand Identity System</h3>
-                            <span class="portfolio-card__tag">Portfolio 01</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/2.png" alt="Creative web portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Creative Web Experience</h3>
-                            <span class="portfolio-card__tag">Portfolio 02</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
+         
+<div class="col-lg-6 col-md-6">
                 <a href="frago.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
@@ -303,43 +274,63 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Frago Matrix</h3>
-                            <span class="portfolio-card__tag">Portfolio 03</span>
+                            <span class="portfolio-card__tag">Portfolio 01</span>
+                        </div>
+                    </div>
+                </article>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <a href="aeritx.php">
+                <article class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <img src="./assets/images/portfolios/2.png" alt="Creative web portfolio project">
+                        <div class="portfolio-card__overlay"></div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__meta">
+                            <h3 class="portfolio-card__heading">Aeritx</h3>
+                            <span class="portfolio-card__tag">Portfolio 02</span>
                         </div>
                     </div>
                 </article>
                 </a>
             </div>
 
+            
+
             <div class="col-lg-6 col-md-6">
+                <a href="vkpaints.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/4.png" alt="Modern app interface portfolio project">
+                        <img src="./assets/images/portfolios/vkpaints.png" alt="Modern app interface portfolio project">
                         <div class="portfolio-card__overlay"></div>
                     </div>
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Modern App Interface</h3>
+                            <h3 class="portfolio-card__heading">Oceanic Paints</h3>
+                            <span class="portfolio-card__tag">Portfolio 03</span>
+                        </div>
+                    </div>
+                </article>
+                </a>
+            </div>
+             <div class="col-lg-6 col-md-6">
+                <a href="wotm.php">
+                <article class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">
+                        <div class="portfolio-card__overlay"></div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__meta">
+                            <h3 class="portfolio-card__heading">We Own The Move</h3>
                             <span class="portfolio-card__tag">Portfolio 04</span>
                         </div>
                     </div>
                 </article>
+                </a>
             </div>
-
-            <div class="col-lg-6 col-md-6">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/5.png" alt="E-commerce storefront portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">E-Commerce Storefront</h3>
-                            <span class="portfolio-card__tag">Portfolio 05</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
             <div class="col-lg-6 col-md-6">
                 <a href="texon.php">
                 <article class="portfolio-card">
@@ -350,7 +341,7 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Texon - Corporation</h3>
-                            <span class="portfolio-card__tag">Portfolio 06</span>
+                            <span class="portfolio-card__tag">Portfolio 05</span>
                         </div>
                     </div>
                 </article>
@@ -358,6 +349,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <div class="col-lg-6 col-md-6">
+                <a href="sapphire.php">
                 <article class="portfolio-card">
                     <div class="portfolio-card__image">
                         <img src="./assets/images/portfolios/7.png" alt="Analytics dashboard portfolio project">
@@ -365,11 +357,12 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Analytics Dashboard</h3>
-                            <span class="portfolio-card__tag">Portfolio 07</span>
+                            <h3 class="portfolio-card__heading">Sapphire</h3>
+                            <span class="portfolio-card__tag">Portfolio 06</span>
                         </div>
                     </div>
                 </article>
+                </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
@@ -382,6 +375,23 @@ include __DIR__ . '/header.php';
                     <div class="portfolio-card__content">
                         <div class="portfolio-card__meta">
                             <h3 class="portfolio-card__heading">Sukanya India</h3>
+                            <span class="portfolio-card__tag">Portfolio 07</span>
+                        </div>
+                    </div>
+                </article>
+                </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <a href="ish.php">
+                <article class="portfolio-card">
+                    <div class="portfolio-card__image">
+                        <img src="./assets/images/portfolios/5.png" alt="Corporate presentation portfolio project">
+                        <div class="portfolio-card__overlay"></div>
+                    </div>
+                    <div class="portfolio-card__content">
+                        <div class="portfolio-card__meta">
+                            <h3 class="portfolio-card__heading">ISH International</h3>
                             <span class="portfolio-card__tag">Portfolio 08</span>
                         </div>
                     </div>
@@ -389,37 +399,9 @@ include __DIR__ . '/header.php';
                 </a>
             </div>
 
-            <div class="col-lg-6 col-md-6">
-                <a href="wotm.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">We Own The Move</h3>
-                            <span class="portfolio-card__tag">Portfolio 09</span>
-                        </div>
-                    </div>
-                </article>
-                </a>
-            </div>
+           
 
-            <div class="col-lg-6 col-md-6">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/10.png" alt="Premium landing page portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Premium Landing Page</h3>
-                            <span class="portfolio-card__tag">Portfolio 10</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
+           
         </div>
     </div>
 </section>

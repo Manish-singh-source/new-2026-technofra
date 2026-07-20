@@ -177,6 +177,46 @@ include __DIR__ . '/header.php';
             max-width: 620px;
             margin: 0 auto;
         }
+
+        .vk-about {
+            padding: 80px 0 110px;
+        }
+
+        .vk-about__grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .vk-about__copy {
+            max-width: 100%;
+        }
+
+        .vk-about__copy p {
+            max-width: 100%;
+        }
+
+        .vk-about__visual {
+            padding-bottom: 110px;
+        }
+
+        .vk-about__image-wrap {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .vk-about__stats {
+            left: 0;
+            right: 0;
+        }
+
+        .wotm-screen-grid {
+            grid-template-columns: 1fr;
+            gap: 34px;
+        }
+
+        .wotm-screen-copy {
+            max-width: 100%;
+        }
     }
 
     @media (max-width: 767px) {
@@ -203,8 +243,154 @@ include __DIR__ . '/header.php';
             width: 100%;
         }
 
+        .vk-about {
+            padding: 72px 0 88px;
+        }
+
+        .vk-about::before {
+            display: none;
+        }
+
+        .vk-about__eyebrow {
+            margin-bottom: 18px;
+        }
+
+        .vk-about__copy h2 {
+            margin-bottom: 18px;
+            font-size: clamp(30px, 10vw, 42px);
+        }
+
+        .vk-about__copy p {
+            margin-bottom: 26px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .vk-about__features {
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .vk-about__feature {
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        .vk-about__icon {
+            width: 58px;
+            height: 58px;
+            font-size: 24px;
+        }
+
+        .vk-about__feature h3 {
+            font-size: 17px;
+        }
+
+        .vk-about__feature p {
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        .vk-about__visual {
+            padding-bottom: 0;
+        }
+
+        .vk-about__image-wrap {
+            border-radius: 26px 26px 0 0;
+        }
+
+        .vk-about__image-wrap::after {
+            display: none;
+        }
+
+        .vk-about__stats {
+            position: static;
+            margin-top: 18px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0;
+            border-radius: 22px;
+        }
+
+        .vk-about__stat {
+            padding: 16px 12px;
+            border-right: 0;
+            border-bottom: 1px solid rgba(16, 35, 59, 0.08);
+        }
+
+        .vk-about__stat:nth-child(odd) {
+            border-right: 1px solid rgba(16, 35, 59, 0.08);
+        }
+
+        .vk-about__stat:nth-last-child(-n+2) {
+            border-bottom: 0;
+        }
+
+        .wotm-responsive-media {
+            padding: 0 0 50px !important;
+        }
+
+        .wotm-responsive-image .wotm-desktop-image {
+            display: none;
+        }
+
+        .wotm-responsive-image .wotm-mobile-image {
+            display: block;
+        }
+
         .wotm-selected-work {
             padding: 72px 0;
+        }
+
+        .wotm-selected-expertise {
+            gap: 22px;
+        }
+
+        .wotm-selected-expertise h2 {
+            font-size: clamp(34px, 12vw, 56px);
+        }
+
+        .wotm-screen-showcase {
+            padding: 72px 0;
+        }
+
+        .wotm-screen-copy h2 {
+            margin-bottom: 18px;
+            font-size: clamp(32px, 11vw, 48px);
+        }
+
+        .wotm-screen-copy p {
+            margin-bottom: 24px;
+            font-size: 15px;
+            line-height: 1.75;
+        }
+
+        .wotm-screen-features {
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .wotm-screen-features li {
+            padding-top: 0;
+            padding-left: 64px;
+            min-height: 46px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .wotm-screen-features li::before {
+            width: 44px;
+            height: 44px;
+        }
+
+        .wotm-screen-features li::after {
+            top: 11px;
+            left: 11px;
+        }
+
+        .wotm-screen-features li:nth-child(2)::after,
+        .wotm-screen-features li:nth-child(3)::after {
+            left: 14px;
         }
     }
 
@@ -239,7 +425,7 @@ include __DIR__ . '/header.php';
         align-items: center;
         gap: 12px;
         margin-bottom: 24px;
-        color: #2367de;
+        color: #21b1ea;
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 0.08em;
@@ -250,7 +436,7 @@ include __DIR__ . '/header.php';
         content: "";
         width: 42px;
         height: 2px;
-        background: #2367de;
+        background: #21b1ea;
         border-radius: 999px;
     }
 
@@ -264,7 +450,7 @@ include __DIR__ . '/header.php';
     }
 
     .vk-about__copy h2 span {
-        color: #2367de;
+        color: #21b1ea;
     }
 
     .vk-about__copy p {
@@ -296,7 +482,7 @@ include __DIR__ . '/header.php';
         justify-content: center;
         border-radius: 50%;
         background: linear-gradient(180deg, #eef5ff 0%, #dceaff 100%);
-        color: #2367de;
+        color: #21b1ea;
         font-size: 30px;
         box-shadow: inset 0 0 0 1px rgba(35, 103, 222, 0.08);
     }
@@ -322,7 +508,7 @@ include __DIR__ . '/header.php';
         gap: 12px;
         padding: 16px 28px;
         border-radius: 14px;
-        background: linear-gradient(135deg, #2367de 0%, #2cb1e6 100%);
+        background: linear-gradient(135deg, #21b1ea 0%, #2cb1e6 100%);
         color: #ffffff;
         font-size: 16px;
         font-weight: 700;
@@ -400,14 +586,14 @@ include __DIR__ . '/header.php';
     .vk-about__stat i {
         display: inline-flex;
         margin-bottom: 14px;
-        color: #2367de;
+        color: #21b1ea;
         font-size: 28px;
     }
 
     .vk-about__stat strong {
         display: block;
         margin-bottom: 6px;
-        color: #2367de;
+        color: #21b1ea;
         font-size: clamp(28px, 3vw, 44px);
         line-height: 1;
         font-weight: 800;
@@ -432,7 +618,7 @@ include __DIR__ . '/header.php';
 
     .wotm-selected-expertise h2 {
         margin: 0;
-        color: #b6c803;
+        color: #21b1ea;
         font-size: clamp(44px, 6vw, 88px);
         line-height: 0.95;
         font-weight: 700;
@@ -450,6 +636,314 @@ include __DIR__ . '/header.php';
         width: 100%;
         height: auto;
         display: block;
+    }
+
+    .wotm-responsive-media {
+        padding: 50px 0 50px;
+        background: #fff;
+    }
+
+    .wotm-responsive-image {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .wotm-responsive-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .wotm-responsive-image .wotm-mobile-image {
+        display: none;
+    }
+.wotm-screen-showcase {
+    padding: 50px 0 50px;
+    background: linear-gradient(180deg, #97c2e9 0%, #5f93cc 100%);
+    overflow: hidden;
+}
+
+    .wotm-screen-grid {
+        display: grid;
+        grid-template-columns: minmax(280px, 410px) 1fr;
+        align-items: center;
+        gap: 44px;
+    }
+
+    .wotm-screen-copy {
+        max-width: 390px;
+        color: #2d2117;
+    }
+
+    .wotm-screen-eyebrow {
+        display: inline-block;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid rgba(120, 82, 48, 0.28);
+        color: #9b7450;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+    }
+
+    .wotm-screen-copy h2 {
+        margin: 0 0 26px;
+        color: #1f150f;
+        font-size: clamp(40px, 5vw, 78px);
+        line-height: 0.95;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+    }
+
+    .wotm-screen-copy h2 em {
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .wotm-screen-copy p {
+        margin: 0 0 34px;
+        color: #5a4a3c;
+        font-size: 16px;
+        line-height: 1.9;
+    }
+
+    .wotm-screen-features {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .wotm-screen-features li {
+        position: relative;
+        padding-top: 58px;
+        color: #5a4a3c;
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .wotm-screen-features li::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 46px;
+        height: 46px;
+        border: 2px solid rgba(144, 104, 63, 0.55);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.38);
+    }
+
+    .wotm-screen-features li::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 22px;
+        height: 18px;
+        border: 2px solid #8c6847;
+        border-radius: 4px;
+    }
+
+    .wotm-screen-features li:nth-child(2)::after {
+        top: 8px;
+        left: 15px;
+        width: 16px;
+        height: 24px;
+        border-radius: 4px;
+    }
+
+    .wotm-screen-features li:nth-child(3)::after {
+        top: 9px;
+        left: 15px;
+        width: 16px;
+        height: 26px;
+        border-radius: 5px;
+    }    .wotm-screen-showcase .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .wotm-screen-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wotm-screen-visual img {
+        width: 100%;
+        max-width: 680px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    @media (max-width: 767px) {
+        .vk-about {
+            padding: 72px 0 88px;
+        }
+
+        .vk-about .container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .vk-about::before {
+            display: none;
+        }
+
+        .vk-about__grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+
+        .vk-about__copy,
+        .vk-about__copy p,
+        .vk-about__visual,
+        .vk-about__image-wrap {
+            max-width: 100%;
+        }
+
+        .vk-about__copy h2 {
+            margin-bottom: 18px;
+            font-size: clamp(30px, 10vw, 42px);
+        }
+
+        .vk-about__copy p {
+            margin-bottom: 26px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .vk-about__features {
+            gap: 18px;
+            margin-bottom: 28px;
+        }
+
+        .vk-about__feature {
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        .vk-about__icon {
+            width: 58px;
+            height: 58px;
+            font-size: 24px;
+        }
+
+        .vk-about__feature h3 {
+            font-size: 17px;
+        }
+
+        .vk-about__feature p {
+            font-size: 15px;
+            line-height: 1.65;
+        }
+
+        .vk-about__visual {
+            padding-bottom: 0;
+        }
+
+        .vk-about__image-wrap {
+            margin-left: 0;
+            border-radius: 26px 26px 0 0;
+        }
+
+        .vk-about__image-wrap::after {
+            display: none;
+        }
+
+        .vk-about__stats {
+            position: static;
+            left: auto;
+            right: auto;
+            bottom: auto;
+            margin-top: 18px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0;
+            border-radius: 22px;
+        }
+
+        .vk-about__stat {
+            padding: 16px 12px;
+            border-right: 0;
+            border-bottom: 1px solid rgba(16, 35, 59, 0.08);
+        }
+
+        .vk-about__stat:nth-child(odd) {
+            border-right: 1px solid rgba(16, 35, 59, 0.08);
+        }
+
+        .vk-about__stat:nth-last-child(-n+2) {
+            border-bottom: 0;
+        }
+
+        .vk-about__stat strong {
+            font-size: 26px;
+        }
+
+        .vk-about__stat span {
+            font-size: 13px;
+        }
+    }
+    @media (max-width: 767px) {
+        .wotm-screen-showcase {
+            padding: 64px 0;
+        }
+
+        .wotm-screen-showcase .container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .wotm-screen-grid {
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+
+        .wotm-screen-copy {
+            max-width: 100%;
+            order: 1;
+        }
+
+        .wotm-screen-copy h2 {
+            margin-bottom: 18px;
+            font-size: clamp(32px, 11vw, 48px);
+        }
+
+        .wotm-screen-copy p {
+            margin-bottom: 22px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .wotm-screen-features {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .wotm-screen-features li {
+            min-height: 46px;
+            padding-top: 0;
+            padding-left: 64px;
+            display: flex;
+            align-items: center;
+        }
+
+        .wotm-screen-visual {
+            order: 2;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .wotm-screen-visual img {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 </style>
 
@@ -550,7 +1044,35 @@ Quality that protects, colors that inspire.</p>
         <div class="wotm-selected-expertise">
             <h2>Our Expertise</h2>
             <div class="wotm-selected-expertise-media" aria-hidden="true">
-                <img src="./assets/images/new/frago1.webp" alt="Our Expertise">
+                <img src="./assets/images/new/vk2.png" alt="Our Expertise">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wotm-responsive-media">
+    <div class="container">
+        <div class="wotm-responsive-image" aria-hidden="true">
+            <img class="wotm-desktop-image" src="./assets/images/new/vk3.png" alt="">
+            <img class="wotm-mobile-image" src="./assets/images/new/vk4.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="wotm-screen-showcase">
+    <div class="container">
+        <div class="wotm-screen-grid">
+            <div class="wotm-screen-copy">
+                <span class="wotm-screen-eyebrow">Responsive Experience</span>
+                <h2>Built for<br><em>Every Screen</em></h2>
+                <p>We designed the Oceanic layout to deliver a smooth shopping experience across desktop, tablet, and mobile devices. Every section stays clean, elegant, and easy to browse on any screen size.</p>
+                <ul class="wotm-screen-features">
+                    <li>Desktop Friendly</li>
+                    <li>Tablet Ready</li>
+                    <li>Mobile Optimized</li>
+                </ul>
+            </div>
+
+            <div class="wotm-screen-visual" aria-hidden="true">
+                <img src="./assets/images/new/vk5.png" alt="">
             </div>
         </div>
     </div>
@@ -558,6 +1080,14 @@ Quality that protects, colors that inspire.</p>
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
+
+
+
+
+
 
 
 
