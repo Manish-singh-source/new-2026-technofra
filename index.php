@@ -1290,18 +1290,130 @@ include __DIR__ . '/header.php'; ?>
             justify-content: center;
         }
     }
+    .hero-bg4 {
+        position: relative;
+    }
+
+    .hero-audio-toggle4 {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        background: rgba(0, 0, 0, 0.35);
+        color: #fff;
+        border-radius: 999px;
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .hero-audio-toggle4:hover,
+    .hero-audio-toggle4:focus-visible {
+        background: rgba(0, 0, 0, 0.55);
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+
+    @media (max-width: 767px) {
+        .hero-audio-toggle4 {
+            right: 12px;
+            bottom: 12px;
+            padding: 9px 14px;
+            font-size: 13px;
+        }
+    }
 </style>
 
 <!-- hero-style4 -->
 <section class="hero-style4">
     <div class="hero-bg4" aria-hidden="true">
-        <video class="hero-video4" autoplay muted loop playsinline preload="metadata">
+        <video
+            class="hero-video4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            data-desktop-src="assets/images/new/technofra_hero.mp4"
+            data-mobile-src="assets/images/new/technofra_hero-vertical.mp4">
             <source src="assets/images/new/technofra_hero.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay4"></div>
+        <button type="button" class="hero-audio-toggle4" aria-pressed="false" aria-label="Unmute hero video">
+            Sound On
+        </button>
     </div>
 </section>
 <!-- End hero-style4 -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var heroVideo = document.querySelector('.hero-video4');
+        var audioToggle = document.querySelector('.hero-audio-toggle4');
+
+        if (!heroVideo || !audioToggle) {
+            return;
+        }
+
+        var desktopSrc = heroVideo.getAttribute('data-desktop-src');
+        var mobileSrc = heroVideo.getAttribute('data-mobile-src');
+        var sourceEl = heroVideo.querySelector('source');
+        var mobileBreakpoint = window.matchMedia('(max-width: 767px)');
+
+        function updateToggleLabel() {
+            var isMuted = heroVideo.muted;
+            audioToggle.textContent = isMuted ? 'Sound On' : 'Sound Off';
+            audioToggle.setAttribute('aria-pressed', String(!isMuted));
+            audioToggle.setAttribute('aria-label', isMuted ? 'Unmute hero video' : 'Mute hero video');
+        }
+
+        function ensurePlayback() {
+            var playPromise = heroVideo.play();
+
+            if (playPromise && typeof playPromise.catch === 'function') {
+                playPromise.catch(function() {
+                    heroVideo.controls = true;
+                });
+            }
+        }
+
+        function updateVideoSource() {
+            if (!sourceEl) {
+                return;
+            }
+
+            var nextSrc = mobileBreakpoint.matches ? mobileSrc : desktopSrc;
+            if (!nextSrc || sourceEl.getAttribute('src') === nextSrc) {
+                return;
+            }
+
+            sourceEl.setAttribute('src', nextSrc);
+            heroVideo.load();
+            ensurePlayback();
+        }
+
+        heroVideo.muted = true;
+        updateToggleLabel();
+        updateVideoSource();
+        ensurePlayback();
+
+        audioToggle.addEventListener('click', function() {
+            heroVideo.muted = !heroVideo.muted;
+            updateToggleLabel();
+            ensurePlayback();
+        });
+
+        if (typeof mobileBreakpoint.addEventListener === 'function') {
+            mobileBreakpoint.addEventListener('change', updateVideoSource);
+        } else if (typeof mobileBreakpoint.addListener === 'function') {
+            mobileBreakpoint.addListener(updateVideoSource);
+        }
+    });
+</script>
 
 <!-- service-sec8 -->
 <section class="service-sec8 pt-3">
