@@ -199,7 +199,7 @@ include __DIR__ . '/header.php';
         letter-spacing: normal;
     }
 
-        @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
         .hero-style7 {
             padding: 135px 0 60px;
         }
@@ -263,145 +263,177 @@ include __DIR__ . '/header.php';
             <p class="portfolio-lead">Browse our latest client website projects, crafted with modern design, responsive layouts, and user-friendly experiences that help each brand stand out online.</p>
         </div>
         <div class="row portfolio-grid">
-         
-<div class="col-lg-6 col-md-6">
-                <a href="frago.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/3.png" alt="Digital marketing portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Frago Matrix</h3>
-                            <span class="portfolio-card__tag">Portfolio 01</span>
+
+            <div class="col-lg-6 col-md-6">
+                <a href="frago.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/3.png" alt="Digital marketing portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Frago Matrix</h3>
+                                <span class="portfolio-card__tag">Portfolio 01</span>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
             <div class="col-lg-6 col-md-6">
-                <a href="aeritx.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/2.png" alt="Creative web portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Aeritx</h3>
-                            <span class="portfolio-card__tag">Portfolio 02</span>
+                <a href="aeritx.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/2.png" alt="Creative web portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Aeritx</h3>
+                                <span class="portfolio-card__tag">Portfolio 02</span>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
 
-            
+
 
             <div class="col-lg-6 col-md-6">
-                <a href="vkpaints.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/vkpaints.png" alt="Modern app interface portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Oceanic Paints</h3>
-                            <span class="portfolio-card__tag">Portfolio 03</span>
+                <a href="vkpaints.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/vkpaints.png" alt="Modern app interface portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
-                </a>
-            </div>
-             <div class="col-lg-6 col-md-6">
-                <a href="wotm.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">We Own The Move</h3>
-                            <span class="portfolio-card__tag">Portfolio 04</span>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Oceanic Paints</h3>
+                                <span class="portfolio-card__tag">Portfolio 03</span>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
                 </a>
             </div>
             <div class="col-lg-6 col-md-6">
-                <a href="texon.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/texon.png" alt="Creative studio portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Texon - Corporation</h3>
-                            <span class="portfolio-card__tag">Portfolio 05</span>
+                <a href="wotm.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/9.png" alt="Product launch portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">We Own The Move</h3>
+                                <span class="portfolio-card__tag">Portfolio 04</span>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
-
             <div class="col-lg-6 col-md-6">
-                <a href="sapphire.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/7.png" alt="Analytics dashboard portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Sapphire</h3>
-                            <span class="portfolio-card__tag">Portfolio 06</span>
+                <a href="texon.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/texon.png" alt="Creative studio portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Texon - Corporation</h3>
+                                <span class="portfolio-card__tag">Portfolio 05</span>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="sukanya.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/8.png" alt="Corporate presentation portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">Sukanya India</h3>
-                            <span class="portfolio-card__tag">Portfolio 07</span>
+                <a href="sapphire.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/7.png" alt="Analytics dashboard portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Sapphire</h3>
+                                <span class="portfolio-card__tag">Portfolio 06</span>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="ish.php">
-                <article class="portfolio-card">
-                    <div class="portfolio-card__image">
-                        <img src="./assets/images/portfolios/5.png" alt="Corporate presentation portfolio project">
-                        <div class="portfolio-card__overlay"></div>
-                    </div>
-                    <div class="portfolio-card__content">
-                        <div class="portfolio-card__meta">
-                            <h3 class="portfolio-card__heading">ISH International</h3>
-                            <span class="portfolio-card__tag">Portfolio 08</span>
+                <a href="sukanya.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/8.png" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
                         </div>
-                    </div>
-                </article>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Sukanya India</h3>
+                                <span class="portfolio-card__tag">Portfolio 07</span>
+                            </div>
+                        </div>
+                    </article>
                 </a>
             </div>
 
-           
+            <div class="col-lg-6 col-md-6">
+                <a href="ish.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/5.png" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">ISH International</h3>
+                                <span class="portfolio-card__tag">Portfolio 08</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
 
-           
+
+            <div class="col-lg-6 col-md-6">
+                <a href="https://wrappackncarry.com/" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/wrappackncarry.webp" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Wrap Pack N Carry</h3>
+                                <span class="portfolio-card__tag">Portfolio 09</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <a href="https://aakritispacedesigns.com/" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/aakritispacedesigns.webp" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Aakriti Space Designs</h3>
+                                <span class="portfolio-card__tag">Portfolio 10</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
