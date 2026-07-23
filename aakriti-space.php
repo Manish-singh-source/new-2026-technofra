@@ -2348,6 +2348,458 @@ include __DIR__ . '/header.php';
     }
 </style>
 
+<style>
+    /* ============================================
+   RESPONSIVE TYPOGRAPHY SCALE
+   ============================================ */
+    :root {
+        --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+        --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
+        --h3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+        --h4: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
+        --h5: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+        --h6: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+
+        --p-large: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+        --p: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+        --p-small: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
+        --caption: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+
+        --lh-heading: 1.2;
+        --lh-body: 1.6;
+        --lh-tight: 1.3;
+        --ls-heading: -0.02em;
+
+        --svc-purple: #7a4fc9;
+        --svc-purple-dark: #4a2f82;
+        --svc-gold: #e0a63c;
+        --svc-ink: #1f2033;
+        --svc-muted: #6b6d76;
+        --svc-border: #ece7f5;
+        --svc-lilac: #f3eefc;
+        --svc-bg: #fbfaff;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: var(--svc-ink);
+        background: #fff;
+    }
+
+    /* ============================================
+   SECTION SHELL
+   ============================================ */
+    .aakriti-services {
+        position: relative;
+        background: var(--svc-bg);
+        overflow: hidden;
+        padding-top: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+        padding-bottom: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+    }
+
+    .aakriti-services .glow-a {
+        position: absolute;
+        left: -10%;
+        bottom: -10%;
+        width: 42%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background: radial-gradient(circle, #e7dcf7 0%, transparent 70%);
+        z-index: 0;
+    }
+
+    /* ---------------- Header ---------------- */
+    .services-header {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: clamp(2rem, 1.6rem + 1.6vw, 3rem);
+    }
+
+    .services-eyebrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .services-eyebrow .line {
+        height: 1px;
+        width: 46px;
+        background: var(--svc-muted);
+        opacity: .5;
+    }
+
+    .services-eyebrow span.label {
+        font-size: var(--caption);
+        font-weight: 600;
+        letter-spacing: 0.22em;
+        color: var(--svc-purple);
+    }
+
+    .services-heading {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: var(--h1);
+        line-height: var(--lh-heading);
+        letter-spacing: var(--ls-heading);
+        color: var(--svc-ink);
+        text-transform: uppercase;
+        margin-bottom: 0.85rem;
+    }
+
+    .services-heading .accent {
+        color: var(--svc-purple);
+    }
+
+    .services-rule {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        margin-bottom: clamp(1rem, 0.8rem + 0.8vw, 1.5rem);
+    }
+
+    .services-rule .bar {
+        width: 70px;
+        height: 4px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, var(--svc-purple), transparent);
+    }
+
+    .services-rule .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--svc-gold);
+    }
+
+    .services-sub {
+        font-size: var(--p);
+        color: var(--svc-muted);
+        line-height: var(--lh-body);
+        max-width: 62ch;
+        margin: 0 auto;
+    }
+
+    /* ---------------- Cards ---------------- */
+    .services-grid {
+        position: relative;
+        z-index: 2;
+    }
+
+    .service-card {
+        background: #fff;
+        border: 1px solid var(--svc-border);
+        border-radius: 16px;
+        padding: clamp(1.25rem, 1rem + 1vw, 1.75rem) clamp(1rem, 0.85rem + 0.6vw, 1.5rem) clamp(1.5rem, 1.2rem + 1vw, 2rem);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 10px 30px -20px rgba(80, 50, 130, 0.18);
+        transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 36px -18px rgba(80, 50, 130, 0.28);
+    }
+
+    .service-card .icon-box {
+        width: 76px;
+        height: 76px;
+        border-radius: 18px;
+        background: var(--svc-lilac);
+        color: var(--svc-purple);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        margin: 0 auto 1rem;
+    }
+
+    .service-card .title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: var(--h4);
+        color: var(--svc-ink);
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-card .title-rule {
+        width: 34px;
+        height: 3px;
+        border-radius: 2px;
+        background: var(--svc-purple);
+        margin: 0 auto clamp(1rem, 0.85rem + 0.6vw, 1.35rem);
+    }
+
+    .service-card .photo {
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: clamp(1rem, 0.85rem + 0.6vw, 1.35rem);
+        aspect-ratio: 4/3;
+    }
+
+    .service-card .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .service-card .checklist {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 auto 0;
+        flex: 1 1 auto;
+    }
+
+    .service-card .checklist li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        font-size: var(--p-small);
+        color: var(--svc-muted);
+        margin-bottom: 0.6rem;
+        line-height: var(--lh-tight);
+    }
+
+    .service-card .checklist li:last-child {
+        margin-bottom: 0;
+    }
+
+    .service-card .checklist i {
+        color: var(--svc-purple);
+        margin-top: 2px;
+        flex: 0 0 auto;
+    }
+
+    .service-card .card-arrow {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--svc-lilac);
+        color: var(--svc-ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: clamp(1rem, 0.85rem + 0.6vw, 1.35rem) auto 0;
+        transition: background .2s ease, color .2s ease, transform .2s ease;
+        text-decoration: none;
+    }
+
+    .service-card .card-arrow:hover {
+        background: var(--svc-purple);
+        color: #fff;
+        transform: translateX(3px);
+    }
+
+    /* ---------------- Bottom CTA bar ---------------- */
+    .services-cta {
+        position: relative;
+        z-index: 2;
+        margin-top: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
+        background: var(--svc-lilac);
+        border-radius: 16px;
+        padding: clamp(1.1rem, 0.9rem + 0.8vw, 1.6rem) clamp(1.25rem, 1rem + 1vw, 2rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    .services-cta .cta-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        min-width: 0;
+    }
+
+    .services-cta .cta-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--svc-purple-dark);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex: 0 0 auto;
+    }
+
+    .services-cta .cta-text .title {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: var(--h5);
+        color: var(--svc-ink);
+        margin-bottom: 0.15rem;
+    }
+
+    .services-cta .cta-text .sub {
+        font-size: var(--p-small);
+        color: var(--svc-muted);
+    }
+
+    .btn-services-primary {
+        font-size: var(--p);
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(90deg, var(--svc-purple-dark), var(--svc-purple));
+        border: none;
+        border-radius: 999px;
+        padding: 0.85rem 1.6rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        white-space: nowrap;
+        flex: 0 0 auto;
+        box-shadow: 0 10px 22px -10px rgba(74, 47, 130, 0.5);
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn-services-primary:hover {
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 14px 26px -10px rgba(74, 47, 130, 0.6);
+    }
+
+    .btn-services-primary i {
+        transition: transform .2s ease;
+    }
+
+    .btn-services-primary:hover i {
+        transform: translateX(3px);
+    }
+
+    /* ============================================
+   MEDIA QUERIES
+   ============================================ */
+    @media (max-width: 1919.98px) {
+
+        /* below extra large */
+        .aakriti-services {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    @media (max-width: 1599.98px) {
+
+        /* below large desktop */
+        .services-sub {
+            max-width: 58ch;
+        }
+    }
+
+    @media (max-width: 1399.98px) {
+
+        /* below desktop */
+        .service-card .icon-box {
+            width: 68px;
+            height: 68px;
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+
+        /* below laptop */
+        .service-card {
+            padding: 1.25rem 0.9rem 1.5rem;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        /* below tablet landscape */
+        .services-grid .col-service {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 1.5rem;
+        }
+
+        .glow-a {
+            display: none;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+
+        /* below tablet portrait */
+        .aakriti-services {
+            padding-top: 2.25rem;
+            padding-bottom: 2.25rem;
+        }
+
+        .services-cta {
+            flex-direction: column;
+            align-items: stretch;
+            text-align: center;
+        }
+
+        .services-cta .cta-left {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .btn-services-primary {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+
+        /* below small tablet/landscape phone */
+        .services-grid .col-service {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .services-eyebrow .line {
+            display: none;
+        }
+    }
+
+    @media (max-width: 479.98px) {
+
+        /* below large phone */
+        .service-card .icon-box {
+            width: 60px;
+            height: 60px;
+            font-size: 1.3rem;
+            border-radius: 14px;
+        }
+
+        .services-cta .cta-icon {
+            width: 46px;
+            height: 46px;
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 359.98px) {
+
+        /* below small phone */
+        .service-card {
+            padding: 1rem 0.75rem 1.25rem;
+        }
+
+        .btn-services-primary {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>
+
 <section class="aakriti-hero">
     <span class="deco-circle"></span>
     <span class="deco-dots"></span>
@@ -2742,12 +3194,116 @@ include __DIR__ . '/header.php';
                         <span class="badge-icon"><i class="fa-solid fa-couch"></i></span>
                         Creating Spaces, Enhancing Lives
                     </span>
-                    
+
                 </div>
             </div>
 
         </div>
     </div>
+</section>
+
+<section class="aakriti-services">
+  <span class="glow-a"></span>
+
+  <div class="container-xl">
+
+    <div class="services-header">
+      <div class="services-eyebrow">
+        <span class="line"></span>
+        <span class="label">OUR SERVICES</span>
+        <span class="line"></span>
+      </div>
+      <h2 class="services-heading">Our Featured <span class="accent">Services</span></h2>
+      <div class="services-rule">
+        <span class="bar"></span>
+        <span class="dot"></span>
+      </div>
+      <p class="services-sub">
+        Thoughtful design. Timeless spaces. Tailored for you.<br>
+        Explore our range of interior solutions crafted with creativity, functionality and style.
+      </p>
+    </div>
+
+    <div class="row services-grid gy-4">
+
+      <div class="col-service col-12 col-sm-6 col-lg-3">
+        <div class="service-card">
+          <span class="icon-box"><i class="fa-solid fa-blinds"></i></span>
+          <div class="title">Interior</div>
+          <span class="title-rule"></span>
+          <div class="photo"><img src="assets\images\portfolios\aakruti\service-interior.png" alt="Modern living room interior design with warm ambient lighting and marble accents"></div>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i>Structural Plan</li>
+            <li><i class="fa-solid fa-circle-check"></i>3D Design view</li>
+            <li><i class="fa-solid fa-circle-check"></i>3D walk through</li>
+          </ul>
+          <a href="#interior" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-service col-12 col-sm-6 col-lg-3">
+        <div class="service-card">
+          <span class="icon-box"><i class="fa-solid fa-door-open"></i></span>
+          <div class="title">Exterior</div>
+          <span class="title-rule"></span>
+          <div class="photo"><img src="assets\images\portfolios\aakruti\service-exterior.png" alt="Modern house exterior design with glass balconies and landscaped garden"></div>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i>Structural Plan</li>
+            <li><i class="fa-solid fa-circle-check"></i>Aerodynamic view</li>
+            <li><i class="fa-solid fa-circle-check"></i>3D Design view</li>
+            <li><i class="fa-solid fa-circle-check"></i>3D walk through</li>
+          </ul>
+          <a href="#exterior" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-service col-12 col-sm-6 col-lg-3">
+        <div class="service-card">
+          <span class="icon-box"><i class="fa-solid fa-seedling"></i></span>
+          <div class="title">Home Decor</div>
+          <span class="title-rule"></span>
+          <div class="photo"><img src="assets\images\portfolios\aakruti\service-homedecor.png" alt="Cozy home decor styling with potted plants, cushions and wooden coffee table"></div>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i>Artificial Lawns</li>
+            <li><i class="fa-solid fa-circle-check"></i>Green Walls for</li>
+            <li><i class="fa-solid fa-circle-check"></i>Terrace and Garden</li>
+          </ul>
+          <a href="#decor" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-service col-12 col-sm-6 col-lg-3">
+        <div class="service-card">
+          <span class="icon-box"><i class="fa-solid fa-chair"></i></span>
+          <div class="title">Furniture</div>
+          <span class="title-rule"></span>
+          <div class="photo"><img src="assets\images\portfolios\aakruti\service-furniture.png" alt="Elegant pink velvet sofa furniture set styled with cushions and a side table"></div>
+          <ul class="checklist">
+            <li><i class="fa-solid fa-circle-check"></i>Sofa</li>
+            <li><i class="fa-solid fa-circle-check"></i>Dining</li>
+            <li><i class="fa-solid fa-circle-check"></i>Leisure chair</li>
+            <li><i class="fa-solid fa-circle-check"></i>Open Seating</li>
+          </ul>
+          <a href="#furniture" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services-cta">
+      <div class="cta-left">
+        <span class="cta-icon"><i class="fa-solid fa-headset"></i></span>
+        <div class="cta-text">
+          <div class="title">Need a Custom Solution?</div>
+          <div class="sub">Let's design a space that's perfect for you.</div>
+        </div>
+      </div>
+      <a href="#consult" class="btn-services-primary">
+        Consult Our Experts <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
 </section>
 
 <?php include __DIR__ . '/footer.php'; ?>

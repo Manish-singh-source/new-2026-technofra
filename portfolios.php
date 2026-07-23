@@ -401,7 +401,7 @@ include __DIR__ . '/header.php';
 
 
             <div class="col-lg-6 col-md-6">
-                <a href="https://wrappackncarry.com/" target="_blank">
+                <a href="wrappackncarry.php" target="_blank">
                     <article class="portfolio-card">
                         <div class="portfolio-card__image">
                             <img src="./assets/images/portfolios/wrappackncarry.webp" alt="Corporate presentation portfolio project">
@@ -418,7 +418,7 @@ include __DIR__ . '/header.php';
             </div>
 
             <div class="col-lg-6 col-md-6">
-                <a href="https://aakritispacedesigns.com/" target="_blank">
+                <a href="aakriti-space.php" target="_blank">
                     <article class="portfolio-card">
                         <div class="portfolio-card__image">
                             <img src="./assets/images/portfolios/aakritispacedesigns.webp" alt="Corporate presentation portfolio project">
