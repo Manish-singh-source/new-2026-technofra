@@ -1295,7 +1295,7 @@ include __DIR__ . '/header.php'; ?>
 <!-- hero-style4 -->
 <section class="hero-style4">
     <div class="hero-bg4" aria-hidden="true">
-        <video class="hero-video4" autoplay muted loop playsinline preload="metadata">
+        <video class="hero-video4" autoplay loop playsinline preload="metadata">
             <source src="assets/images/new/technofra_hero.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay4"></div>
