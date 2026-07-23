@@ -17,6 +17,7 @@ include __DIR__ . '/header.php';
     position: relative;
     overflow: hidden;
     padding: clamp(118px, 10vw, 148px) 0 42px;
+    padding: 10vw 0 0 0;
     background:
       radial-gradient(circle at 8% 14%, rgba(95, 162, 255, 0.22), transparent 28%),
       radial-gradient(circle at 82% 12%, rgba(161, 207, 255, 0.2), transparent 30%),
@@ -25,8 +26,9 @@ include __DIR__ . '/header.php';
   }
 
   .aeritx-page > section {
-    width: min(100% - 32px, 1320px);
-    margin-inline: auto;
+    /* width: min(100% - 32px, 1320px); */
+    /* margin-inline: auto; */
+    width: 100%;
   }
 
   .aeritx-page::before,
@@ -58,7 +60,7 @@ include __DIR__ . '/header.php';
     width: 100%;
     margin: 20px 0 0;
     padding: clamp(28px, 4vw, 52px);
-    border-radius: 32px;
+    /* border-radius: 32px; */
     background: url("assets/images/portfolios/aeritx1.png") center center / cover no-repeat;
     box-shadow: 0 26px 60px rgba(24, 64, 126, 0.12);
     overflow: hidden;
@@ -394,9 +396,9 @@ include __DIR__ . '/header.php';
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0;
-    margin: 32px auto 0;
+    /* margin: 32px auto 0; */
     padding: 22px;
-    border-radius: 28px;
+    /* border-radius: 28px; */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(248, 251, 255, 0.92));
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
   }
@@ -462,13 +464,13 @@ include __DIR__ . '/header.php';
   }
 
   .aeritx-showcase {
-    padding: 34px 0 0;
+    /* padding: 34px 0 0; */
   }
 
   .aeritx-showcase__section {
     margin-top: 28px;
     padding: clamp(24px, 4vw, 38px);
-    border-radius: 32px;
+    /* border-radius: 32px; */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(244, 249, 255, 0.95));
     box-shadow: 0 22px 48px rgba(46, 91, 167, 0.1);
   }
@@ -735,7 +737,7 @@ include __DIR__ . '/header.php';
   }
 
   .aeritx-device-preview {
-    padding: 28px 0 0;
+    /* padding: 28px 0 0; */
   }
 
   .aeritx-logo-design {
@@ -973,7 +975,7 @@ include __DIR__ . '/header.php';
 
   .aeritx-device-preview__frame {
     overflow: hidden;
-    border-radius: 32px;
+    /* border-radius: 32px; */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(241, 247, 255, 0.98));
     box-shadow: 0 24px 52px rgba(18, 42, 89, 0.12);
   }
@@ -985,7 +987,7 @@ include __DIR__ . '/header.php';
   }
 
   .aeritx-app-download {
-    padding: 28px 0 0;
+    /* padding: 28px 0 0; */
   }
 
   .aeritx-app-download__card {
@@ -1001,7 +1003,7 @@ include __DIR__ . '/header.php';
       radial-gradient(circle at bottom right, rgba(39, 103, 237, 0.18), transparent 26%),
       linear-gradient(135deg, #08172c 0%, #102a4d 54%, #1d4f88 100%);
     box-shadow: 0 28px 64px rgba(16, 42, 89, 0.18);
-    border-radius: 32px;
+    /* border-radius: 32px; */
   }
 
   .aeritx-app-download__card::before {
@@ -1182,13 +1184,94 @@ include __DIR__ . '/header.php';
     display: block;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: 1919.98px) {
+    /* below extra large */
+  }
+
+  @media (max-width: 1599.98px) {
+    /* below large desktop */
     .aeritx-page > section {
-      width: min(100% - 28px, 1180px);
+      /* width: min(100% - 32px, 1240px); */
+      width: 100%;
+    }
+
+    .aeritx-hero {
+      min-height: clamp(430px, 48vw, 590px);
+    }
+
+    .aeritx-showcase__panel {
+      width: min(100%, 650px);
+    }
+
+    .aeritx-showcase__panel-small {
+      width: min(58%, 250px);
+    }
+  }
+
+  @media (max-width: 1399.98px) {
+    /* below desktop */
+    .aeritx-page {
+      padding-top: clamp(110px, 10vw, 132px);
+    }
+
+    .aeritx-page > section {
+      /* width: min(100% - 30px, 1140px); */
+    }
+
+    .aeritx-hero {
+      min-height: clamp(400px, 45vw, 540px);
+      padding: clamp(26px, 3.4vw, 44px);
+    }
+
+    .aeritx-hero__body {
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    }
+
+    .aeritx-hero__description {
+      margin-top: 34px;
+    }
+
+    .aeritx-stat {
+      gap: 18px;
+      padding-inline: 18px;
+    }
+
+    .aeritx-stat__icon {
+      width: 74px;
+      height: 74px;
+      font-size: 29px;
+    }
+
+    .aeritx-showcase__visual {
+      min-height: 380px;
+    }
+
+    .aeritx-app-download__card {
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    /* below laptop */
+    .aeritx-page > section {
+      /* width: min(100% - 28px, 1180px); */
+    }
+
+    .aeritx-hero {
+      min-height: auto;
+      background-position: 66% center;
+    }
+
+    .aeritx-hero::before {
+      background: linear-gradient(90deg, rgba(233, 244, 255, 0.96) 0%, rgba(233, 244, 255, 0.92) 44%, rgba(233, 244, 255, 0.5) 72%, rgba(233, 244, 255, 0.14) 100%);
     }
 
     .aeritx-hero__body {
       grid-template-columns: 1fr;
+    }
+
+    .aeritx-hero__content {
+      max-width: 720px;
     }
 
     .aeritx-hero__description {
@@ -1201,12 +1284,20 @@ include __DIR__ . '/header.php';
     }
 
     .aeritx-hero__stats {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      padding: 18px;
+    }
+
+    .aeritx-stat {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 18px;
     }
 
     .aeritx-stat + .aeritx-stat {
-      border-left: 0;
-      border-top: 1px solid rgba(16, 24, 40, 0.1);
+      border-left: 1px solid rgba(16, 24, 40, 0.1);
+      border-top: 0;
     }
 
     .aeritx-showcase__grid,
@@ -1233,27 +1324,36 @@ include __DIR__ . '/header.php';
     }
 
     .aeritx-device-preview__frame {
-      border-radius: 26px;
+      /* border-radius: 26px; */
     }
 
     .aeritx-app-download__card {
       grid-template-columns: 1fr;
     }
+
+    .aeritx-app-download__content {
+      max-width: 760px;
+    }
+
+    .aeritx-app-download__card {
+          padding: 20px;
+    }
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 991.98px) {
+    /* below tablet landscape */
     .aeritx-page {
-      padding: 104px 0 30px;
+      /* padding: 104px 0 30px; */
     }
 
     .aeritx-page > section {
-      width: min(100% - 24px, 100%);
+      /* width: min(100% - 24px, 100%); */
     }
 
     .aeritx-hero {
       min-height: auto;
       padding: 24px 20px 28px;
-      border-radius: 24px;
+      /* border-radius: 24px; */
       background-position: 72% center;
     }
 
@@ -1283,11 +1383,6 @@ include __DIR__ . '/header.php';
     .aeritx-hero__eyebrow {
       letter-spacing: 0.14em;
     }
-/* 
-    .aeritx-hero__title-accent::after {
-      width: 74%;
-      bottom: -14px;
-    } */
 
     .aeritx-hero__description {
       margin-top: 24px;
@@ -1304,8 +1399,19 @@ include __DIR__ . '/header.php';
     }
 
     .aeritx-stat {
+      flex-direction: row;
+      align-items: center;
       padding: 18px 8px;
       gap: 18px;
+    }
+
+    .aeritx-hero__stats {
+      grid-template-columns: 1fr;
+    }
+
+    .aeritx-stat + .aeritx-stat {
+      border-left: 0;
+      border-top: 1px solid rgba(16, 24, 40, 0.1);
     }
 
     .aeritx-stat__icon {
@@ -1320,9 +1426,8 @@ include __DIR__ . '/header.php';
 
     .aeritx-showcase__section,
     .aeritx-solution-gallery__section,
-    .aeritx-app-download__card,
-    .aeritx-device-preview__frame {
-      border-radius: 24px;
+    .aeritx-app-download__card {
+      /* border-radius: 24px; */
     }
 
     .aeritx-solution-gallery__card {
@@ -1338,13 +1443,14 @@ include __DIR__ . '/header.php';
     }
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 767.98px) {
+    /* below tablet portrait */
     .aeritx-page {
       padding-top: 96px;
     }
 
     .aeritx-page > section {
-      width: min(100% - 20px, 100%);
+      /* width: min(100% - 20px, 100%); */
     }
 
     .aeritx-page::before,
@@ -1355,8 +1461,9 @@ include __DIR__ . '/header.php';
     .aeritx-hero {
       margin-top: 12px;
       padding: 22px 16px 24px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
       background-position: 68% center;
+      background: none;
     }
 
     .aeritx-hero__pill {
@@ -1376,7 +1483,8 @@ include __DIR__ . '/header.php';
     }
 
     .aeritx-hero__title {
-      font-size: clamp(32px, 10vw, 42px);
+      font-size: clamp(32px, 9vw, 44px);
+      letter-spacing: -0.025em;
     }
 
     .aeritx-hero__title-accent {
@@ -1409,17 +1517,20 @@ include __DIR__ . '/header.php';
 
     .aeritx-hero__stats {
       padding: 18px 16px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
     }
 
     .aeritx-showcase__section {
       padding: 22px 18px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
     }
 
     .aeritx-showcase__title,
+    .aeritx-solution-gallery__title,
+    .aeritx-logo-design__title,
     .aeritx-app-download__title {
       line-height: 1.08;
+      letter-spacing: -0.025em;
     }
 
     .aeritx-showcase__visual {
@@ -1446,8 +1557,8 @@ include __DIR__ . '/header.php';
 
     .aeritx-showcase__badge {
       position: relative;
-      top: 16px;
-      left: 16px;
+      top: auto;
+      left: auto;
       padding: 8px 12px;
       width: fit-content;
     }
@@ -1504,12 +1615,12 @@ include __DIR__ . '/header.php';
     }
 
     .aeritx-device-preview__frame {
-      border-radius: 20px;
+      /* border-radius: 20px; */
     }
 
     .aeritx-app-download__card {
       padding: 24px 18px;
-      border-radius: 20px;
+      /* border-radius: 20px; */
     }
 
     .aeritx-app-download__store {
@@ -1520,6 +1631,445 @@ include __DIR__ . '/header.php';
     .aeritx-app-download__note {
       align-items: flex-start;
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    /* below small tablet/landscape phone */
+    .aeritx-page {
+      padding-top: 88px;
+    }
+
+    .aeritx-page > section {
+      /* width: min(100% - 18px, 100%); */
+    }
+
+    .aeritx-hero {
+      padding: 20px 14px 22px;
+      /* border-radius: 18px; */
+      background-position: 62% center;
+    }
+
+    .aeritx-hero__brand {
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .aeritx-hero__brand img {
+      width: min(58vw, 156px);
+    }
+
+    .aeritx-hero__eyebrow,
+    .aeritx-showcase__eyebrow,
+    .aeritx-solution-gallery__eyebrow,
+    .aeritx-logo-design__eyebrow,
+    .aeritx-app-download__eyebrow {
+      letter-spacing: 0.1em;
+    }
+
+    .aeritx-hero__stats {
+      /* margin-top: 22px; */
+      padding: 14px;
+    }
+
+    .aeritx-stat__icon {
+      width: 62px;
+      height: 62px;
+      font-size: 24px;
+    }
+
+    .aeritx-stat__value {
+      font-size: 36px;
+    }
+
+    .aeritx-showcase,
+    .aeritx-solution-gallery,
+    .aeritx-device-preview,
+    .aeritx-logo-design,
+    .aeritx-app-download {
+      /* padding-top: 22px; */
+    }
+
+    .aeritx-showcase__section,
+    .aeritx-solution-gallery__section,
+    .aeritx-app-download__card {
+      padding: 20px 14px;
+    }
+
+    .aeritx-showcase__list li,
+    .aeritx-app-download__list li {
+      align-items: flex-start;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .aeritx-showcase__list i,
+    .aeritx-app-download__list i {
+      width: 30px;
+      height: 30px;
+      margin-top: 1px;
+      font-size: 12px;
+    }
+
+    .aeritx-showcase__panel,
+    .aeritx-showcase__panel-small {
+      border-radius: 16px;
+    }
+
+    .aeritx-showcase__panel img,
+    .aeritx-showcase__panel-small img {
+      border-radius: 12px;
+    }
+
+    .aeritx-showcase__panel-small {
+      width: 100%;
+    }
+
+    .aeritx-solution-gallery__card {
+      min-height: 210px;
+      border-radius: 18px;
+    }
+
+    .aeritx-solution-gallery__card--large {
+      min-height: 260px;
+    }
+
+    .aeritx-logo-design__points li {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .aeritx-logo-design__mini-card,
+    .aeritx-logo-design__stamp {
+      width: min(100%, 170px);
+    }
+
+    .aeritx-app-download__text,
+    .aeritx-showcase__text,
+    .aeritx-solution-gallery__text,
+    .aeritx-logo-design__text {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+  }
+
+  @media (max-width: 479.98px) {
+    /* below large phone */
+    .aeritx-page {
+      padding-top: 82px;
+    }
+
+    .aeritx-page > section {
+      /* width: min(100% - 14px, 100%); */
+    }
+
+    .aeritx-hero {
+      margin-top: 8px;
+      padding: 18px 12px 20px;
+    }
+
+    .aeritx-hero__topbar {
+      margin-bottom: 22px;
+    }
+
+    .aeritx-hero__title {
+      font-size: clamp(30px, 10vw, 38px);
+    }
+
+    .aeritx-hero__description {
+      font-size: 15px;
+    }
+
+    .aeritx-showcase__title,
+    .aeritx-solution-gallery__title,
+    .aeritx-logo-design__title {
+      font-size: clamp(27px, 8vw, 34px);
+    }
+
+    .aeritx-app-download__title {
+      font-size: clamp(29px, 8.5vw, 36px);
+    }
+
+    .aeritx-showcase__section,
+    .aeritx-solution-gallery__section,
+    .aeritx-app-download__card,
+    .aeritx-logo-design__card {
+      padding-inline: 12px;
+    }
+
+    .aeritx-showcase__panel,
+    .aeritx-showcase__panel-small {
+      padding: 8px;
+    }
+
+    .aeritx-solution-gallery__info {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      margin: -10px 10px 10px;
+      padding: 12px;
+    }
+
+    .aeritx-app-download__store {
+      gap: 12px;
+      padding: 12px 14px;
+    }
+
+    .aeritx-app-download__store strong {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 359.98px) {
+    /* below small phone */
+    .aeritx-page > section {
+      /* width: min(100% - 10px, 100%); */
+    }
+
+    .aeritx-hero {
+      padding-inline: 10px;
+      /* border-radius: 16px; */
+    }
+
+    .aeritx-hero__brand {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .aeritx-hero__title {
+      font-size: 29px;
+    }
+
+    .aeritx-hero__eyebrow {
+      font-size: 12px;
+      word-spacing: 0;
+    }
+
+    .aeritx-hero__stats {
+      padding: 12px 10px;
+    }
+
+    .aeritx-stat {
+      padding: 14px 4px;
+    }
+
+    .aeritx-stat__icon {
+      width: 54px;
+      height: 54px;
+      font-size: 21px;
+    }
+
+    .aeritx-stat__value {
+      font-size: 32px;
+    }
+
+    .aeritx-showcase__section,
+    .aeritx-solution-gallery__section,
+    .aeritx-app-download__card,
+    .aeritx-logo-design__card {
+      padding-inline: 10px;
+    }
+
+    .aeritx-showcase__title,
+    .aeritx-solution-gallery__title,
+    .aeritx-logo-design__title,
+    .aeritx-app-download__title {
+      font-size: 28px;
+      overflow-wrap: anywhere;
+    }
+
+    .aeritx-app-download__store {
+      padding-inline: 12px;
+    }
+
+    .aeritx-app-download__store i {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .aeritx-showcase__visual {
+      width: 860px;
+      min-height: clamp(360px, 52vw, 470px);
+      margin-inline: auto;
+    }
+
+    .aeritx-showcase__panel {
+      width: min(78%, 640px);
+      right: 0;
+    }
+
+    .aeritx-showcase__panel-small {
+      width: min(46%, 360px);
+      left: 0;
+      bottom: 4px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .aeritx-showcase__visual {
+      min-height: clamp(310px, 58vw, 410px);
+    }
+
+    .aeritx-showcase__panel {
+      width: min(82%, 620px);
+      padding: 12px;
+      border-radius: 20px;
+    }
+
+    .aeritx-showcase__panel-small {
+      width: min(48%, 320px);
+      padding: 10px;
+      border-radius: 18px;
+    }
+
+    .aeritx-showcase__badge {
+      top: 16px;
+      left: 16px;
+      font-size: 11px;
+      padding: 8px 12px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .aeritx-showcase__visual {
+      width: 100%;
+      max-width: 560px;
+      min-height: auto;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .aeritx-showcase__badge,
+    .aeritx-showcase__panel,
+    .aeritx-showcase__panel-small {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      transform: none;
+    }
+
+    .aeritx-showcase__badge {
+      align-self: flex-start;
+      order: 1;
+    }
+
+    .aeritx-showcase__panel {
+      order: 2;
+      display: block;
+      width: 100%;
+      max-width: none;
+    }
+
+    .aeritx-showcase__panel-small {
+      order: 3;
+      display: block;
+      width: 100%;
+      max-width: 420px;
+      margin-inline: auto;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .aeritx-showcase__visual {
+      gap: 10px;
+    }
+
+    .aeritx-showcase__panel,
+    .aeritx-showcase__panel-small {
+      padding: 8px;
+      border-radius: 14px;
+      box-shadow: 0 14px 28px rgba(18, 42, 89, 0.12);
+    }
+
+    .aeritx-showcase__panel img,
+    .aeritx-showcase__panel-small img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 359.98px) {
+    .aeritx-showcase__badge {
+      white-space: normal;
+      border-radius: 14px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    .aeritx-showcase__visual {
+      max-width: 860px;
+      min-height: clamp(360px, 52vw, 470px);
+      margin-inline: auto;
+    }
+
+    .aeritx-showcase__panel,
+    .aeritx-showcase__panel-small {
+      display: block;
+      min-width: 1px;
+      min-height: 1px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .aeritx-showcase__panel {
+      width: min(78%, 640px);
+      min-height: clamp(230px, 35vw, 360px);
+      right: 0;
+    }
+
+    .aeritx-showcase__panel-small {
+      width: min(46%, 360px);
+      min-height: clamp(130px, 20vw, 220px);
+      left: 0;
+      bottom: 4px;
+    }
+
+    .aeritx-showcase__panel img,
+    .aeritx-showcase__panel-small img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .aeritx-showcase__visual {
+      min-height: clamp(310px, 58vw, 410px);
+    }
+
+    .aeritx-showcase__panel {
+      width: min(82%, 620px);
+      min-height: clamp(220px, 40vw, 330px);
+    }
+
+    .aeritx-showcase__panel-small {
+      width: min(48%, 320px);
+      min-height: clamp(130px, 24vw, 190px);
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .aeritx-showcase__visual {
+      min-height: auto;
+    }
+
+    .aeritx-showcase__panel,
+    .aeritx-showcase__panel-small {
+      width: 100%;
+      min-height: auto;
+      aspect-ratio: 16 / 9;
+    }
+
+    .aeritx-showcase__panel-small {
+      max-width: 420px;
     }
   }
 </style>
