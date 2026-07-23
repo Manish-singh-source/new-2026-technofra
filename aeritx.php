@@ -25,7 +25,7 @@ include __DIR__ . '/header.php';
       linear-gradient(180deg, #d8ecff 0%, #eaf5ff 46%, #d8ebff 100%);
   }
 
-  .aeritx-page > section {
+  .aeritx-page>section {
     /* width: min(100% - 32px, 1320px); */
     /* margin-inline: auto; */
     width: 100%;
@@ -410,7 +410,7 @@ include __DIR__ . '/header.php';
     padding: 12px 26px;
   }
 
-  .aeritx-stat + .aeritx-stat {
+  .aeritx-stat+.aeritx-stat {
     border-left: 1px solid rgba(16, 24, 40, 0.1);
   }
 
@@ -1189,8 +1189,9 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 1599.98px) {
+
     /* below large desktop */
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 32px, 1240px); */
       width: 100%;
     }
@@ -1209,12 +1210,13 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 1399.98px) {
+
     /* below desktop */
     .aeritx-page {
       padding-top: clamp(110px, 10vw, 132px);
     }
 
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 30px, 1140px); */
     }
 
@@ -1252,8 +1254,9 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 1199.98px) {
+
     /* below laptop */
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 28px, 1180px); */
     }
 
@@ -1295,7 +1298,7 @@ include __DIR__ . '/header.php';
       padding: 14px 18px;
     }
 
-    .aeritx-stat + .aeritx-stat {
+    .aeritx-stat+.aeritx-stat {
       border-left: 1px solid rgba(16, 24, 40, 0.1);
       border-top: 0;
     }
@@ -1336,17 +1339,18 @@ include __DIR__ . '/header.php';
     }
 
     .aeritx-app-download__card {
-          padding: 20px;
+      padding: 20px;
     }
   }
 
   @media (max-width: 991.98px) {
+
     /* below tablet landscape */
     .aeritx-page {
       /* padding: 104px 0 30px; */
     }
 
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 24px, 100%); */
     }
 
@@ -1409,7 +1413,7 @@ include __DIR__ . '/header.php';
       grid-template-columns: 1fr;
     }
 
-    .aeritx-stat + .aeritx-stat {
+    .aeritx-stat+.aeritx-stat {
       border-left: 0;
       border-top: 1px solid rgba(16, 24, 40, 0.1);
     }
@@ -1444,12 +1448,13 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 767.98px) {
+
     /* below tablet portrait */
     .aeritx-page {
       padding-top: 96px;
     }
 
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 20px, 100%); */
     }
 
@@ -1635,12 +1640,13 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 575.98px) {
+
     /* below small tablet/landscape phone */
     .aeritx-page {
       padding-top: 88px;
     }
 
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 18px, 100%); */
     }
 
@@ -1754,12 +1760,13 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 479.98px) {
+
     /* below large phone */
     .aeritx-page {
       padding-top: 82px;
     }
 
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 14px, 100%); */
     }
 
@@ -1822,8 +1829,9 @@ include __DIR__ . '/header.php';
   }
 
   @media (max-width: 359.98px) {
+
     /* below small phone */
-    .aeritx-page > section {
+    .aeritx-page>section {
       /* width: min(100% - 10px, 100%); */
     }
 
@@ -2102,14 +2110,14 @@ include __DIR__ . '/header.php';
       </div>
 
       <!-- <div class="aeritx-hero__visual"> -->
-        <!-- <div class="aeritx-laptop">
+      <!-- <div class="aeritx-laptop">
           <div class="aeritx-laptop__screen">
             <img src="assets/images/about/files/aeritx.jpg" alt="Aeritx website interface on laptop">
           </div>
           <div class="aeritx-laptop__base"></div>
         </div> -->
 
-        <!-- <div class="aeritx-phone" aria-hidden="true">
+      <!-- <div class="aeritx-phone" aria-hidden="true">
           <div class="aeritx-phone__screen">
             <div class="aeritx-phone__top">Create <span>Account</span></div>
             <div class="aeritx-phone__logo">Aeritx</div>
@@ -2267,10 +2275,10 @@ include __DIR__ . '/header.php';
     </div>
   </section>
 
-<section class="aeritx-device-preview">
+  <section class="aeritx-device-preview">
     <div class="aeritx-device-preview__frame">
       <picture>
-       
+
         <img src="assets/images/portfolios/ban2.webp" alt="Aeritx responsive website and mobile preview">
       </picture>
     </div>
@@ -2289,4 +2297,3 @@ include __DIR__ . '/header.php';
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
