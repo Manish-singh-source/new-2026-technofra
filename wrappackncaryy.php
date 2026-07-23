@@ -1051,14 +1051,14 @@ include __DIR__ . '/header.php';
                     <div class="wrappack-products__tag">Curated six-pack range</div>
                 </div>
                 <div class="wrappack-products__grid">
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/12.png');">
+                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/ogr_paper.png');">
                         <span class="wrappack-product-card__index">01</span>
                         <div class="wrappack-product-card__category">PACKAGING PAPER</div>
                         <h3 class="wrappack-product-card__name">Oil Grease Resistant Paper</h3>
                         <p class="wrappack-product-card__copy">Oil-resistant paper ideal for wrapping greasy
                             food items neatly.</p>
                     </article>
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/3.png');">
+                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/wrappackncaryy.webp');">
                         <span class="wrappack-product-card__index">02</span>
                         <div class="wrappack-product-card__category">Gifting</div>
                         <h3 class="wrappack-product-card__name">Ribbon Case</h3>
