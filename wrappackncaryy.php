@@ -895,8 +895,8 @@ include __DIR__ . '/header.php';
                                 portfolio-style banner that highlights the packaging story beautifully.
                             </p>
                             <div class="wrappack-banner__actions">
-                                <a href="contact.php" class="wrappack-banner__button wrappack-banner__button--primary">
-                                    View Portfolio
+                                <a href="https://www.wrappackncarry.com/" class="wrappack-banner__button wrappack-banner__button--primary" target="_blank" rel="noopener noreferrer">
+                                    View Project
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
                                 <a href="portfolios.php" class="wrappack-banner__button wrappack-banner__button--secondary">
@@ -1045,10 +1045,10 @@ include __DIR__ . '/header.php';
                 <div class="wrappack-products__head">
                     <div>
                         <span class="wrappack-products__eyebrow">Section 02</span>
-                        <h2 class="wrappack-products__title">Premium Storefront Series</h2>
-                        <p class="wrappack-products__lead">A darker, richer presentation layer for products meant to feel elevated, giftable, and instantly memorable on arrival.</p>
+                        <h2 class="wrappack-products__title">Food Packaging Essentials</h2>
+                        <p class="wrappack-products__lead">A practical product range built around food wrapping, takeaway carrying, serving, and delivery needs, with each item reflecting the packaging formats shown below.</p>
                     </div>
-                    <div class="wrappack-products__tag">Curated six-pack range</div>
+                    <div class="wrappack-products__tag">Six core food packaging products</div>
                 </div>
                 <div class="wrappack-products__grid">
                     <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/ogr_paper.png');">
@@ -1058,35 +1058,40 @@ include __DIR__ . '/header.php';
                         <p class="wrappack-product-card__copy">Oil-resistant paper ideal for wrapping greasy
                             food items neatly.</p>
                     </article>
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/wrappackncaryy.webp');">
+                    <article class="wrappack-product-card" style="--card-image:url('./assets/images/wrappack/wrappackncaryy.webp');">
                         <span class="wrappack-product-card__index">02</span>
-                        <div class="wrappack-product-card__category">Gifting</div>
-                        <h3 class="wrappack-product-card__name">Ribbon Case</h3>
-                        <p class="wrappack-product-card__copy">Decorative secondary packaging for festive launches, boutique gifting, and premium events.</p>
+                        <div class="wrappack-product-card__category">PACKAGING PAPER</div>
+                        <h3 class="wrappack-product-card__name">Baking & Cooking Paper</h3>
+                        <p class="wrappack-product-card__copy">Reliable paper suitable for baking, packing,
+                            and food wrapping.</p>
                     </article>
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/2.png');">
+                    <article class="wrappack-product-card" style="--card-image:url('./assets/images/wrappack/Slip_Easy_Paper.webp');">
                         <span class="wrappack-product-card__index">03</span>
-                        <div class="wrappack-product-card__category">Boutique</div>
-                        <h3 class="wrappack-product-card__name">Drawer Pack</h3>
-                        <p class="wrappack-product-card__copy">Slide-open structure that adds ceremony to unboxing without making packing operations slow.</p>
+                        <div class="wrappack-product-card__category">PACKAGING PAPER</div>
+                        <h3 class="wrappack-product-card__name">Slip Easy Paper</h3>
+                        <p class="wrappack-product-card__copy">Smooth-finish paper designed for easy
+                            wrapping and handling.</p>
                     </article>
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/4.png');">
+                    <article class="wrappack-product-card" style="--card-image:url('./assets/images/wrappack/Kraft_Paper_Bag.webp');">
                         <span class="wrappack-product-card__index">04</span>
-                        <div class="wrappack-product-card__category">Cosmetics</div>
-                        <h3 class="wrappack-product-card__name">Bottle Cradle</h3>
-                        <p class="wrappack-product-card__copy">Protective insert-led packaging that keeps delicate containers stable through handling.</p>
+                        <div class="wrappack-product-card__category">PACKAGING PAPER</div>
+                        <h3 class="wrappack-product-card__name">Kraft Paper Bag</h3>
+                        <p class="wrappack-product-card__copy">Strong and durable paper bags for takeaway
+                            and carrying.</p>
                     </article>
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/1.webp');">
+                    <article class="wrappack-product-card" style="--card-image:url('./assets/images/wrappack/Tableware.webp');">
                         <span class="wrappack-product-card__index">05</span>
-                        <div class="wrappack-product-card__category">Seasonal</div>
-                        <h3 class="wrappack-product-card__name">Festival Hamper</h3>
-                        <p class="wrappack-product-card__copy">A gift-ready hamper box built for assortments, holiday collections, and celebratory campaigns.</p>
+                        <div class="wrappack-product-card__category">PACKAGING PAPER</div>
+                        <h3 class="wrappack-product-card__name">Tableware</h3>
+                        <p class="wrappack-product-card__copy">Eco-friendly tableware for hygienic serving and
+                            food presentation.</p>
                     </article>
-                    <article class="wrappack-product-card" style="--card-image:url('assets/images/wrappack/12.png');">
+                    <article class="wrappack-product-card" style="--card-image:url('./assets/images/wrappack/Pizza_Boxes.webp');">
                         <span class="wrappack-product-card__index">06</span>
-                        <div class="wrappack-product-card__category">Signature</div>
-                        <h3 class="wrappack-product-card__name">Foil Sleeve</h3>
-                        <p class="wrappack-product-card__copy">A finishing layer that adds metallic detailing and stronger visual recall at point of sale.</p>
+                        <div class="wrappack-product-card__category">PACKAGING PAPER</div>
+                        <h3 class="wrappack-product-card__name">Pizza Boxes</h3>
+                        <p class="wrappack-product-card__copy">Strong pizza boxes made for safe packing and
+                            delivery.</p>
                     </article>
                 </div>
             </section>
