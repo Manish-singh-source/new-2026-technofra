@@ -895,7 +895,7 @@ include __DIR__ . '/header.php';
                                 portfolio-style banner that highlights the packaging story beautifully.
                             </p>
                             <div class="wrappack-banner__actions">
-                                <a href="https://www.wrappackncarry.com/" class="wrappack-banner__button wrappack-banner__button--primary" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.wrappackncarry.com/" class="wrappack-banner__button wrappack-banner__button--primary" target="_blank" rel="noopener noreferrer" >
                                     View Project
                                     <i class="fas fa-arrow-right"></i>
                                 </a>
