@@ -3652,7 +3652,7 @@ include __DIR__ . '/header.php';
 
             <div class="col-service col-12 col-sm-6 col-lg-3">
                 <div class="service-card">
-                    <span class="icon-box"><i class="fa-solid fa-blinds"></i></span>
+                    <span class="icon-box"><i class="fa-solid fa-couch"></i></span>
                     <div class="title">Interior</div>
                     <span class="title-rule"></span>
                     <div class="photo"><img src="assets\images\portfolios\aakruti\service-interior.png" alt="Modern living room interior design with warm ambient lighting and marble accents"></div>
