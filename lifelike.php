@@ -764,6 +764,10 @@ body {
   color: var(--dtc-text-dark);
 }
 
+.dtc-section--legacy {
+  display: none;
+}
+
 .dtc-section::before {
   content: "";
   position: absolute;
@@ -802,6 +806,18 @@ body {
   padding: 0 clamp(1rem, 2vw, 2rem);
   position: relative;
   z-index: 2;
+}
+
+.dtc-image-shell {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 22px 50px -28px rgba(60, 45, 20, 0.18);
+}
+
+.dtc-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .dtc-leaf-bg {
@@ -1144,6 +1160,7 @@ body {
 
 @media (max-width: 767.98px) {
   .dtc-section { padding: 2.5rem 0; }
+  .dtc-image-shell { border-radius: 18px; }
   .dtc-row1 { margin-bottom: 2.5rem; }
   .dtc-hero-wrap { padding: 12px 12px 0 0; }
   .dtc-hero-frame { inset: 0 26px 14px 0; border-radius: 18px; }
@@ -1531,6 +1548,511 @@ body {
   .vtr-card-label { font-size: 1rem; }
 }
 </style>
+<style>
+/* ============================================
+   RESPONSIVE TYPOGRAPHY SCALE
+============================================ */
+:root {
+  --h1: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+  --h2: clamp(1.75rem, 1.3rem + 2.2vw, 2.75rem);
+  --h3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  --h4: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
+  --h5: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+  --h6: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+
+  --p-large: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  --p: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  --p-small: clamp(0.875rem, 0.85rem + 0.15vw, 0.9375rem);
+  --caption: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+
+  --lh-heading: 1.2;
+  --lh-body: 1.6;
+  --lh-tight: 1.3;
+  --ls-heading: -0.02em;
+
+  /* Brand palette pulled from the reference design */
+  --rbd-bg: #FBF3EA;
+  --rbd-navy: #1B2545;
+  --rbd-terracotta: #B5652E;
+  --rbd-terracotta-dark: #8C4A20;
+  --rbd-text-muted: #565B63;
+  --rbd-divider: #D9CBB8;
+  --rbd-sidebar-start: #8A5227;
+  --rbd-sidebar-end: #5E3418;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--rbd-bg);
+  color: var(--rbd-navy);
+}
+
+.rbd-section {
+  background: var(--rbd-bg);
+  padding: clamp(2.5rem, 2rem + 2vw, 5rem) 0;
+  overflow: hidden;
+}
+
+.rbd-shell {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 1vw + 0.5rem, 2.5rem);
+}
+
+/* ---------- Two column grid: content + sidebar ---------- */
+.rbd-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: clamp(1.5rem, 2vw, 3rem);
+  align-items: stretch;
+}
+
+/* ---------- Left content ---------- */
+.rbd-content {
+  min-width: 0;
+  padding-block: clamp(0.5rem, 1vw, 1.5rem);
+}
+
+.rbd-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--rbd-terracotta);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: var(--p-small);
+  margin-bottom: 1rem;
+}
+
+.rbd-eyebrow::after {
+  content: "";
+  flex: 1 1 auto;
+  max-width: 340px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--rbd-terracotta), transparent);
+}
+
+.rbd-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: clamp(1.25rem, 3vw, 3rem);
+  margin-bottom: clamp(2rem, 3vw, 3rem);
+}
+
+.rbd-heading-col {
+  flex: 1 1 380px;
+  min-width: 0;
+}
+
+.rbd-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: var(--h1);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  color: var(--rbd-navy);
+  margin: 0;
+}
+
+.rbd-heading .script {
+  display: block;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--rbd-terracotta);
+}
+
+.rbd-lead-col {
+  flex: 1 1 320px;
+  min-width: 0;
+  display: flex;
+  gap: 1.25rem;
+  padding-top: 0.35rem;
+}
+
+.rbd-lead-divider {
+  flex: 0 0 auto;
+  width: 2px;
+  align-self: stretch;
+  background: var(--rbd-divider);
+  min-height: 4rem;
+}
+
+.rbd-lead {
+  font-size: var(--p-large);
+  line-height: var(--lh-body);
+  color: var(--rbd-text-muted);
+  margin: 0;
+  max-width: 42ch;
+}
+
+/* ---------- Devices mockup ---------- */
+.rbd-devices {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.rbd-devices-glow {
+  position: absolute;
+  inset: 10% 12%;
+  background: radial-gradient(circle, rgba(197, 143, 90, 0.28) 0%, rgba(197, 143, 90, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.rbd-devices img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 40px rgba(40, 22, 8, 0.22));
+}
+
+/* ---------- Right sidebar ---------- */
+.rbd-sidebar {
+  position: relative;
+  border-radius: 1.75rem;
+  background: linear-gradient(165deg, var(--rbd-sidebar-start) 0%, var(--rbd-sidebar-end) 100%);
+  color: #fff;
+  padding: clamp(1.75rem, 2vw, 2.75rem) clamp(1.5rem, 1.8vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(1.1rem, 1.8vw, 1.6rem);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.rbd-sidebar::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -35%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 0 0 34px rgba(255,255,255,0.05),
+    0 0 0 68px rgba(255,255,255,0.035);
+  z-index: 0;
+}
+
+.rbd-sidebar-watermark {
+  position: absolute;
+  bottom: -8%;
+  right: -6%;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: clamp(4rem, 9vw, 7rem);
+  color: rgba(255,255,255,0.06);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.rbd-feature {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.rbd-feature + .rbd-feature {
+  padding-top: clamp(1.1rem, 1.8vw, 1.6rem);
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+.rbd-feature-icon {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.rbd-feature-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: var(--h6);
+  margin: 0 0 0.35rem;
+  color: #fff;
+}
+
+.rbd-feature-text {
+  font-size: var(--p-small);
+  line-height: var(--lh-body);
+  color: rgba(255,255,255,0.82);
+  margin: 0;
+}
+
+/* ============================================
+   MEDIA QUERIES
+============================================ */
+@media (max-width: 1919.98px) {
+  .rbd-shell { max-width: 1600px; }
+}
+
+@media (max-width: 1599.98px) {
+  .rbd-shell { max-width: 1360px; }
+  .rbd-grid { grid-template-columns: minmax(0, 1fr) minmax(240px, 290px); }
+}
+
+@media (max-width: 1399.98px) {
+  .rbd-shell { max-width: 1200px; }
+  .rbd-sidebar-watermark { font-size: clamp(3.5rem, 8vw, 5.5rem); }
+}
+
+@media (max-width: 1199.98px) {
+  .rbd-grid { grid-template-columns: minmax(0, 1fr) minmax(220px, 260px); }
+  .rbd-feature-text { font-size: var(--caption); }
+  .rbd-devices img { max-width: 720px; }
+}
+
+@media (max-width: 991.98px) {
+  .rbd-grid {
+    grid-template-columns: 1fr;
+  }
+  .rbd-top {
+    flex-direction: column;
+  }
+  .rbd-lead-col {
+    padding-top: 0;
+  }
+  .rbd-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+  }
+  .rbd-feature {
+    flex: 1 1 260px;
+  }
+  .rbd-feature + .rbd-feature {
+    border-top: none;
+    padding-top: 0;
+  }
+  .rbd-sidebar-watermark { display: none; }
+}
+
+@media (max-width: 767.98px) {
+  .rbd-eyebrow::after { max-width: 140px; }
+  .rbd-devices img { max-width: 100%; }
+  .rbd-sidebar { flex-direction: column; }
+  .rbd-feature { flex: 1 1 auto; }
+}
+
+@media (max-width: 575.98px) {
+  .rbd-shell { padding: 0 1rem; }
+  .rbd-sidebar { border-radius: 1.25rem; }
+  .rbd-feature-icon { width: 44px; height: 44px; font-size: 1rem; }
+  .rbd-lead-divider { min-height: 3rem; }
+}
+
+@media (max-width: 479.98px) {
+  .rbd-eyebrow { flex-wrap: wrap; gap: 0.6rem; }
+  .rbd-eyebrow::after { max-width: 90px; }
+  .rbd-lead { max-width: 100%; }
+}
+
+@media (max-width: 359.98px) {
+  .rbd-feature { gap: 0.7rem; }
+  .rbd-feature-title { font-size: 1rem; }
+}
+
+/* ============================================
+   PAGE RESPONSIVE HARDENING
+============================================ */
+img {
+  max-width: 100%;
+}
+
+.hero-section,
+.studio-section,
+.dtc-section,
+.vtr-section,
+.rbd-section {
+  overflow: clip;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding-block: 1.5rem 2.5rem;
+  }
+
+  .hero-copy,
+  .studio-header,
+  .dtc-container,
+  .vtr-shell,
+  .rbd-shell {
+    max-width: 100%;
+  }
+
+  .studio-section__leaf,
+  .studio-card::before {
+    display: none;
+  }
+
+  .studio-photo,
+  .studio-card,
+  .vtr-card,
+  .vtr-sidebar,
+  .rbd-sidebar {
+    height: auto;
+  }
+
+  .studio-photo {
+    min-height: 360px;
+  }
+
+  .studio-card__title,
+  .studio-card__lead,
+  .studio-card__text,
+  .vtr-lead,
+  .rbd-lead {
+    max-width: none;
+  }
+
+  .vtr-content,
+  .rbd-content {
+    padding-block: 0;
+  }
+
+  .vtr-cards,
+  .studio-row {
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section__diagonal,
+  .hero-section__dots,
+  .studio-section::before,
+  .studio-section::after,
+  .dtc-section::before {
+    display: none;
+  }
+
+  .hero-section .container-fluid,
+  .studio-section .container,
+  .dtc-container,
+  .vtr-shell,
+  .rbd-shell {
+    padding-inline: 1rem;
+  }
+
+  .hero-copy__desc,
+  .studio-header__subtitle,
+  .studio-card__text,
+  .vtr-lead,
+  .rbd-lead {
+    max-width: none;
+  }
+
+  .hero-visual__frame {
+    width: min(100%, 360px);
+  }
+
+  .hero-visual__photo img {
+    transform: skewX(9deg) scale(1.12) translateX(-2%);
+  }
+
+  .studio-header {
+    margin-bottom: 2rem;
+  }
+
+  .studio-photo {
+    min-height: 280px;
+  }
+
+  .studio-card__btn,
+  .vtr-feature,
+  .rbd-feature {
+    width: 100%;
+  }
+
+  .dtc-image-shell {
+    border-radius: 16px;
+  }
+
+  .vtr-eyebrow,
+  .rbd-eyebrow {
+    gap: 0.75rem;
+  }
+
+  .vtr-heading,
+  .rbd-heading {
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-copy {
+    padding-block: 1rem 0.5rem;
+  }
+
+  .hero-copy__title {
+    line-height: 1;
+  }
+
+  .hero-copy__btn,
+  .studio-header__btn,
+  .studio-card__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .studio-section,
+  .dtc-section,
+  .vtr-section,
+  .rbd-section {
+    padding-block: 2rem;
+  }
+
+  .studio-photo {
+    min-height: 240px;
+    border-width: 5px;
+  }
+
+  .studio-photo__corner {
+    width: 24px;
+    height: 24px;
+  }
+
+  .vtr-card-media,
+  .rbd-devices {
+    min-height: auto;
+  }
+
+  .vtr-card-media img {
+    max-width: 68%;
+  }
+
+  .rbd-lead-col {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .rbd-lead-divider {
+    width: 56px;
+    height: 2px;
+    min-height: 0;
+  }
+}
+</style>
 
 
 <section class="hero-section">
@@ -1659,6 +2181,17 @@ body {
 </section>
 
 <section class="dtc-section">
+  <div class="dtc-container">
+    <div class="dtc-image-shell">
+      <picture>
+        <source media="(max-width: 767.98px)" srcset="./assets/images/lifelike/001.png">
+        <img class="dtc-image" src="./assets/images/lifelike/002.png" alt="Life Like section showcase">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="dtc-section dtc-section--legacy">
 
   <!-- decorative leaf background elements -->
   <svg class="dtc-leaf-bg leaf-top-right" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1874,6 +2407,74 @@ body {
           <div>
             <h3 class="vtr-feature-title">End-to-End Support</h3>
             <p class="vtr-feature-text">We handle the details so you can focus on the bigger picture.</p>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<section class="rbd-section">
+  <div class="rbd-shell">
+    <div class="rbd-grid">
+
+      <!-- LEFT: content -->
+      <div class="rbd-content">
+        <div class="rbd-eyebrow">Built to Adapt</div>
+
+        <div class="rbd-top">
+          <div class="rbd-heading-col">
+            <h2 class="rbd-heading">Responsive<span class="script">by Design</span></h2>
+          </div>
+          <div class="rbd-lead-col">
+            <span class="rbd-lead-divider"></span>
+            <p class="rbd-lead">
+              Seamless experience across all devices &mdash; designed to look stunning,
+              load faster, and perform better everywhere.
+            </p>
+          </div>
+        </div>
+
+        <div class="rbd-devices">
+          <div class="rbd-devices-glow"></div>
+          <img src="./assets/images/lifelike/devices-mockup.png" alt="Website preview shown on a MacBook Air, tablet and phone">
+        </div>
+      </div>
+
+      <!-- RIGHT: sidebar -->
+      <aside class="rbd-sidebar">
+        <span class="rbd-sidebar-watermark">LikE</span>
+
+        <div class="rbd-feature">
+          <span class="rbd-feature-icon"><i class="fa-solid fa-desktop"></i></span>
+          <div>
+            <h3 class="rbd-feature-title">Fully Responsive</h3>
+            <p class="rbd-feature-text">Optimized for desktops, tablets &amp; mobile devices.</p>
+          </div>
+        </div>
+
+        <div class="rbd-feature">
+          <span class="rbd-feature-icon"><i class="fa-solid fa-gauge-high"></i></span>
+          <div>
+            <h3 class="rbd-feature-title">Faster Performance</h3>
+            <p class="rbd-feature-text">Lightweight, optimized code for blazing fast load times.</p>
+          </div>
+        </div>
+
+        <div class="rbd-feature">
+          <span class="rbd-feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+          <div>
+            <h3 class="rbd-feature-title">Seamless Experience</h3>
+            <p class="rbd-feature-text">Consistent design and smooth navigation across all screens.</p>
+          </div>
+        </div>
+
+        <div class="rbd-feature">
+          <span class="rbd-feature-icon"><i class="fa-solid fa-circle-check"></i></span>
+          <div>
+            <h3 class="rbd-feature-title">Future Ready</h3>
+            <p class="rbd-feature-text">Built with scalability and the latest web standards.</p>
           </div>
         </div>
       </aside>
