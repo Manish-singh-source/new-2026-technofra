@@ -351,8 +351,8 @@ body.pdf-tool-page .menu-links .ibt-btn span {
         <div class="pdf-tool-surface">
             <main id="homeView" class="home">
                 <section class="hero">
-                    <h1>Choose the PDF action you want to run</h1>
-                    <p>Use the toolkit below to process business documents, proposals, invoices, reports, and editable exports with a cleaner interface that now sits in line with the rest of your site.</p>
+                    <h1>Every tool you need to work with PDFs, in one place</h1>
+                    <p>Merge, split, compress, convert, rotate and organize - 100% offline.</p>
                     <div class="pdf-tool-chip-row">
                         <span class="pdf-tool-chip">Organize PDFs</span>
                         <span class="pdf-tool-chip">Convert Files</span>
@@ -544,5 +544,6 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf-tool/vendor/pdf.worker.min.js';
 })();
 </script>
 <?php include __DIR__ . '/../footer.php'; ?>
+
 
 
