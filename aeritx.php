@@ -552,54 +552,21 @@ include __DIR__ . '/header.php';
   }
 
   .aeritx-showcase__visual {
-    position: relative;
+    display: block;
+    width: 100%;
     min-height: 420px;
-  }
-
-  .aeritx-showcase__panel,
-  .aeritx-showcase__panel-small {
-    position: absolute;
-    overflow: hidden;
     border-radius: 24px;
+    object-fit: cover;
     background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 24px 50px rgba(18, 42, 89, 0.14);
   }
 
-  .aeritx-showcase__panel {
-    top: 0;
-    right: 0;
-    width: min(100%, 560px);
-    padding: 16px;
-  }
-
+  .aeritx-showcase__panel,
   .aeritx-showcase__panel-small {
-    left: 0;
-    bottom: 0;
-    width: min(62%, 320px);
-    padding: 12px;
-  }
-
-  .aeritx-showcase__section--reverse .aeritx-showcase__panel {
-    left: 0;
-    right: auto;
-  }
-
-  .aeritx-showcase__section--reverse .aeritx-showcase__panel-small {
-    right: 0;
-    left: auto;
-  }
-
-  .aeritx-showcase__panel img,
-  .aeritx-showcase__panel-small img {
-    width: 100%;
-    border-radius: 18px;
+    display: none;
   }
 
   .aeritx-showcase__badge {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    z-index: 2;
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -1898,20 +1865,7 @@ include __DIR__ . '/header.php';
 
   @media (max-width: 1199.98px) {
     .aeritx-showcase__visual {
-      width: 860px;
       min-height: clamp(360px, 52vw, 470px);
-      margin-inline: auto;
-    }
-
-    .aeritx-showcase__panel {
-      width: min(78%, 640px);
-      right: 0;
-    }
-
-    .aeritx-showcase__panel-small {
-      width: min(46%, 360px);
-      left: 0;
-      bottom: 4px;
     }
   }
 
@@ -1919,88 +1873,19 @@ include __DIR__ . '/header.php';
     .aeritx-showcase__visual {
       min-height: clamp(310px, 58vw, 410px);
     }
-
-    .aeritx-showcase__panel {
-      width: min(82%, 620px);
-      padding: 12px;
-      border-radius: 20px;
-    }
-
-    .aeritx-showcase__panel-small {
-      width: min(48%, 320px);
-      padding: 10px;
-      border-radius: 18px;
-    }
-
-    .aeritx-showcase__badge {
-      top: 16px;
-      left: 16px;
-      font-size: 11px;
-      padding: 8px 12px;
-    }
   }
 
   @media (max-width: 767.98px) {
     .aeritx-showcase__visual {
-      width: 100%;
       max-width: 560px;
       min-height: auto;
-      margin-inline: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .aeritx-showcase__badge,
-    .aeritx-showcase__panel,
-    .aeritx-showcase__panel-small {
-      position: relative;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: auto;
-      transform: none;
-    }
-
-    .aeritx-showcase__badge {
-      align-self: flex-start;
-      order: 1;
-    }
-
-    .aeritx-showcase__panel {
-      order: 2;
-      display: block;
-      width: 100%;
-      max-width: none;
-    }
-
-    .aeritx-showcase__panel-small {
-      order: 3;
-      display: block;
-      width: 100%;
-      max-width: 420px;
       margin-inline: auto;
     }
   }
 
   @media (max-width: 575.98px) {
     .aeritx-showcase__visual {
-      gap: 10px;
-    }
-
-    .aeritx-showcase__panel,
-    .aeritx-showcase__panel-small {
-      padding: 8px;
-      border-radius: 14px;
-      box-shadow: 0 14px 28px rgba(18, 42, 89, 0.12);
-    }
-
-    .aeritx-showcase__panel img,
-    .aeritx-showcase__panel-small img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+      border-radius: 18px;
     }
   }
 
@@ -2013,71 +1898,20 @@ include __DIR__ . '/header.php';
 
   @media (max-width: 1199.98px) {
     .aeritx-showcase__visual {
-      max-width: 860px;
-      min-height: clamp(360px, 52vw, 470px);
-      margin-inline: auto;
-    }
-
-    .aeritx-showcase__panel,
-    .aeritx-showcase__panel-small {
-      display: block;
-      min-width: 1px;
-      min-height: 1px;
+      max-width: 100%;
       aspect-ratio: 16 / 9;
-    }
-
-    .aeritx-showcase__panel {
-      width: min(78%, 640px);
-      min-height: clamp(230px, 35vw, 360px);
-      right: 0;
-    }
-
-    .aeritx-showcase__panel-small {
-      width: min(46%, 360px);
-      min-height: clamp(130px, 20vw, 220px);
-      left: 0;
-      bottom: 4px;
-    }
-
-    .aeritx-showcase__panel img,
-    .aeritx-showcase__panel-small img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
   }
 
   @media (max-width: 991.98px) {
     .aeritx-showcase__visual {
-      min-height: clamp(310px, 58vw, 410px);
-    }
-
-    .aeritx-showcase__panel {
-      width: min(82%, 620px);
-      min-height: clamp(220px, 40vw, 330px);
-    }
-
-    .aeritx-showcase__panel-small {
-      width: min(48%, 320px);
-      min-height: clamp(130px, 24vw, 190px);
+      aspect-ratio: 16 / 9;
     }
   }
 
   @media (max-width: 767.98px) {
     .aeritx-showcase__visual {
       min-height: auto;
-    }
-
-    .aeritx-showcase__panel,
-    .aeritx-showcase__panel-small {
-      width: 100%;
-      min-height: auto;
-      aspect-ratio: 16 / 9;
-    }
-
-    .aeritx-showcase__panel-small {
-      max-width: 420px;
     }
   }
 </style>
@@ -2189,15 +2023,10 @@ include __DIR__ . '/header.php';
           </ul>
         </div>
 
-        <div class="aeritx-showcase__visual">
-          <span class="aeritx-showcase__badge"><i class="fa-solid fa-layer-group"></i> CRM Dashboard</span>
-          <div class="aeritx-showcase__panel">
-            <img src="assets/images/portfolios/aertix3.png" alt="Aeritx CRM dashboard preview">
-          </div>
-          <div class="aeritx-showcase__panel-small">
-            <img src="assets/images/portfolios/aertix4.png" alt="Aeritx CRM secondary preview">
-          </div>
-        </div>
+        <video class="aeritx-showcase__visual" autoplay muted loop playsinline preload="auto">
+          <source src="assets/images/portfolios/aeritxvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
 
@@ -2243,14 +2072,14 @@ include __DIR__ . '/header.php';
           <li><i class="fa-solid fa-check"></i> Banner visual added from the supplied ban1.webp asset</li>
         </ul>
         <div class="aeritx-app-download__actions">
-          <a class="aeritx-app-download__store" href="https://play.google.com/store" target="_blank" rel="noopener" title="Get it on Google Play">
+          <a class="aeritx-app-download__store" href="https://play.google.com/store/apps/details?id=com.aeritx.app&hl=en_IN" target="_blank" rel="noopener" title="Get it on Google Play">
             <i class="fab fa-google-play"></i>
             <span>
               <small>Available on</small>
               <strong>Google Play</strong>
             </span>
           </a>
-          <a class="aeritx-app-download__store" href="https://www.apple.com/app-store/" target="_blank" rel="noopener" title="Download on the App Store">
+          <a class="aeritx-app-download__store" href="https://apps.apple.com/in/app/aeritx-customer/id6759282237" target="_blank" rel="noopener" title="Download on the App Store">
             <i class="fab fa-apple"></i>
             <span>
               <small>Download on the</small>
