@@ -54,7 +54,7 @@ include __DIR__ . '/header.php'; ?>
     .technofra-services-showcase .service-card-link:hover { background: #08cfff; color: #041116; }
     @media (max-width: 991px) { .technofra-services-showcase .services-intro { grid-template-columns: 210px 1fr; } .technofra-services-showcase .services-controls { grid-column: 2; } .technofra-services-showcase .services-content { grid-template-columns: 1fr; } .technofra-services-showcase .services-stat { display: grid; grid-template-columns: auto auto 1fr; align-items: center; column-gap: 14px; padding-top: 0; } .technofra-services-showcase .services-stat-number { margin: 0; } .technofra-services-showcase .services-stat-title { margin: 0; } .technofra-services-showcase .services-stat-copy { grid-column: 3; } }
     @media (max-width: 991px) { .technofra-services-showcase .technofra-service-card { flex-basis: calc((100% - 12px) / 2); } }
-    @media (max-width: 767px) { .technofra-services-showcase { padding: 65px 0 52px; } .technofra-services-showcase .services-intro { grid-template-columns: 1fr; gap: 20px; } .technofra-services-showcase .services-intro-image { max-width: 320px; height: 180px; } .technofra-services-showcase .services-controls { grid-column: auto; } .technofra-services-showcase .technofra-service-card { flex-basis: min(82vw, 320px); } }
+    @media (max-width: 767px) { .studio-showcase-thumb:has(.showcase-video-duplicate), .studio-showcase-thumb:has(.showcase-fp2-duplicate) { display: none; } .showcase-mobile-duplicate { display: none !important; } .technofra-services-showcase { padding: 65px 0 52px; } .technofra-services-showcase .services-intro { grid-template-columns: 1fr; gap: 20px; } .technofra-services-showcase .services-intro-image { max-width: 320px; height: 180px; } .technofra-services-showcase .services-controls { grid-column: auto; } .technofra-services-showcase .technofra-service-card { flex-basis: min(82vw, 320px); } }
     @media (max-width: 480px) { .technofra-services-showcase .services-stat { grid-template-columns: auto 1fr; } .technofra-services-showcase .services-stat-copy { grid-column: 1 / -1; } }
     .creative-banner-sec {
         position: relative;
@@ -1439,6 +1439,14 @@ include __DIR__ . '/header.php'; ?>
         }
     }
 
+/* client logo hover interaction */
+.client-trust-grid1 .client-brand-card1 { position: relative; overflow: hidden; cursor: pointer; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease, background .35s ease; }
+.client-trust-grid1 .client-brand-card1::after { content: ''; position: absolute; inset: 0; border: 1px solid transparent; border-radius: inherit; background: linear-gradient(135deg, rgba(8,207,255,.7), transparent 55%) border-box; -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity .35s ease; pointer-events: none; }
+.client-trust-grid1 .client-brand-card1 img { transition: transform .4s cubic-bezier(.2,.8,.2,1), filter .35s ease; }
+.client-trust-grid1 .client-brand-card1:hover { z-index: 2; transform: translateY(-8px) scale(1.04); box-shadow: 0 16px 34px rgba(0,0,0,.28), 0 0 22px rgba(8,207,255,.18); background: rgba(8,207,255,.08); }
+.client-trust-grid1 .client-brand-card1:hover::after { opacity: 1; }
+.client-trust-grid1 .client-brand-card1:hover img { transform: scale(1.08); filter: saturate(1.15) contrast(1.04); }
+@media (prefers-reduced-motion: reduce) { .client-trust-grid1 .client-brand-card1, .client-trust-grid1 .client-brand-card1 img { transition: none; } }
 /* modern FAQ layout */
 .technofra-faq-modern {
   background: #fff;
@@ -1529,7 +1537,7 @@ include __DIR__ . '/header.php'; ?>
   .studio-showcase-area { margin-bottom: 120px; }
 }
 @media (max-width: 767px) {
-  .studio-showcase-wrap { height: 1580px; margin: 0; }
+  .studio-showcase-wrap { height: 1212px; margin: 0; }
   .studio-showcase-main { grid-template-columns: 1fr; column-gap: 0; margin-top: -160px; }
   .studio-showcase-item { width: 100%; gap: 0; }
   .studio-showcase-area { margin-bottom: 0; }
@@ -1629,7 +1637,7 @@ include __DIR__ . '/header.php'; ?>
     <div class="container"><div class="row">
         <div class="col-xl-3"><span class="mark-about-kicker">[ Who we are ]</span></div>
         <div class="col-xl-9">
-            <h2 class="mark-about-main" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h2>
+            <h2 class="mark-about-main title animated-heading" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h2>
             <div class="row align-items-start">
                 <div class="col-xl-5 col-lg-4 col-md-5"><div class="mark-about-image"><img src="assets/images/new/technofra-about.png" alt="Technofra team creating digital solutions"></div></div>
                 <div class="col-xl-7 col-lg-8 col-md-7"><div class="mark-about-details">
@@ -1671,7 +1679,7 @@ include __DIR__ . '/header.php'; ?>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><h3>Web Design &amp; Development</h3><p>Fast, responsive websites and web applications built to turn visitors into customers.</p><a class="service-card-link" href="web-design-and-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div><h3>E-Commerce Development</h3><p>Conversion-focused online stores with smooth product, cart, and checkout journeys.</p><a class="service-card-link" href="shopify-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div><h3>iOS &amp; Android App Development</h3><p>Reliable, user-friendly mobile apps that keep your business connected to customers.</p><a class="service-card-link" href="android-app-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
-                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div><h3>Branding</h3><p>Distinctive visual identities and brand systems that make your business memorable.</p><a class="service-card-link" href="contact.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div><h3>Branding</h3><p>Distinctive visual identities and brand systems that make your business memorable.</p><a class="service-card-link" href="https://markidentitiez.com/" target="_blank">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div><h3>Digital Marketing</h3><p>SEO, social media, paid campaigns, and content strategies designed for growth.</p><a class="service-card-link" href="digital-marketing.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div><h3>Domain &amp; Hosting</h3><p>Secure domains, reliable hosting, and dependable support for your online presence.</p><a class="service-card-link" href="domain-hosting.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
             </div>
@@ -1927,34 +1935,34 @@ include __DIR__ . '/header.php'; ?>
                         <img src="assets/img/new-images/FP-4.png" alt="Featured portfolio project">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                        <img class="showcase-fp2-primary" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-primary" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/new-images/FP-3.png" alt="Featured portfolio project">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
@@ -1974,7 +1982,7 @@ include __DIR__ . '/header.php'; ?>
                         <img src="assets/img/new-images/FP-1.png" alt="Featured digital project showcase">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-2.png" alt="Featured digital project showcase">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured digital project showcase">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/home-06/showcase/showcase-9.jpg" alt="Creative website showcase">
@@ -2319,13 +2327,57 @@ include __DIR__ . '/header.php'; ?>
 
 <script>
 (function () {
-    function initTechnofraShowcaseMotion() {
+    function dedupeShowcaseMobile() {
+        var isMobile = window.matchMedia('(max-width: 767px)').matches;
+        var seen = {};
+        document.querySelectorAll('.studio-showcase-item:not(.d-none) .studio-showcase-thumb').forEach(function (thumb) {
+            thumb.classList.remove('showcase-mobile-duplicate');
+            if (!isMobile) return;
+            var media = thumb.querySelector('img, video');
+            if (!media) return;
+            var key = media.tagName.toLowerCase() + ':' + (media.currentSrc || media.src || media.querySelector('source')?.src || '');
+            if (seen[key]) thumb.classList.add('showcase-mobile-duplicate');
+            seen[key] = true;
+        });
+    }
+    dedupeShowcaseMobile();
+    window.addEventListener('resize', dedupeShowcaseMobile);    function initTechnofraShowcaseMotion() {
         document.querySelectorAll('.technofra-testimonial-row-track').forEach(function (track) {
             if (!track.dataset.cloned) { track.innerHTML += track.innerHTML; track.dataset.cloned = 'true'; }
         });
         if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-        gsap.registerPlugin(ScrollTrigger);
-        document.querySelectorAll('.studio-showcase-item[data-speed]').forEach(function (column) {
+        gsap.registerPlugin(ScrollTrigger);        gsap.fromTo('.mark-about-main, .mark-about-description, .mark-about-stat',
+            { y: 38, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.85, stagger: 0.12, ease: 'power3.out', scrollTrigger: { trigger: '.mark-about-section', start: 'top 78%', once: true } }
+        );
+        gsap.fromTo('.mark-about-image',
+            { x: -55, opacity: 0, scale: 0.94 },
+            { x: 0, opacity: 1, scale: 1, duration: 1.05, ease: 'power3.out', scrollTrigger: { trigger: '.mark-about-section', start: 'top 82%', once: true } }
+        );
+        gsap.fromTo('.technofra-services-showcase .services-intro > *, .technofra-service-card',
+            { y: 34, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.75, stagger: 0.1, ease: 'power3.out', scrollTrigger: { trigger: '.technofra-services-showcase', start: 'top 78%', once: true } }
+        );
+        gsap.fromTo('.technofra-services-showcase .services-intro-image img',
+            { scale: 1.14 },
+            { scale: 1, duration: 1.25, ease: 'power2.out', scrollTrigger: { trigger: '.technofra-services-showcase', start: 'top 78%', once: true } }
+        );
+        gsap.fromTo('.technofra-faq-heading',
+            { y: 36, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: '.technofra-faq-modern', start: 'top 80%', once: true } }
+        );
+        gsap.fromTo('.technofra-faq-item',
+            { y: 22, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.55, stagger: 0.08, ease: 'power2.out', scrollTrigger: { trigger: '.technofra-faq-modern', start: 'top 72%', once: true } }
+        );
+        gsap.fromTo('.technofra-testimonial-heading',
+            { y: 34, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: '.technofra-testimonial-area', start: 'top 80%', once: true } }
+        );
+        gsap.fromTo('.client-trust-content1',
+            { x: -45, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.client-trust-sec1', start: 'top 80%', once: true } }
+        );        document.querySelectorAll('.studio-showcase-item[data-speed]').forEach(function (column) {
             var speed = parseFloat(column.getAttribute('data-speed')) || 1;
             gsap.fromTo(column, { y: 90 * speed }, {
                 y: -90 * speed,
@@ -2361,7 +2413,14 @@ include __DIR__ . '/header.php'; ?>
     }
 })();
 </script>
-<script src='assets/js/book-call-widget.js' defer></script>
+<script>
+window.addEventListener('load', function () {
+    if (window.LenisScroll && typeof LenisScroll.getInstance === 'function' && !LenisScroll.getInstance()) {
+        LenisScroll.init();
+    }
+    if (window.ScrollTrigger) { ScrollTrigger.refresh(); }
+});
+</script><script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
 
 
