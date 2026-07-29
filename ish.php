@@ -256,7 +256,7 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
             <div class="wotm-branding-copy">
                 <h2>Brands That<br>Leave A <span>Mark.</span></h2>
                 <p>We craft unique brand identities that connect, communicate and create lasting impressions.</p>
-                <a class="wotm-branding-cta" href="#">View Branding Work <span>&rarr;</span></a>
+                <a class="wotm-branding-cta" href="https://www.ishinternational.in/" target="_blank">View Live Website <span>&rarr;</span></a>
             </div>
 
             <div class="wotm-branding-visual" aria-hidden="true">
