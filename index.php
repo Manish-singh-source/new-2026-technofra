@@ -1537,7 +1537,7 @@ include __DIR__ . '/header.php'; ?>
   .studio-showcase-area { margin-bottom: 120px; }
 }
 @media (max-width: 767px) {
-  .studio-showcase-wrap { height: 1212px; margin: 0; }
+  .studio-showcase-wrap { height: 1150px; margin: 0; }
   .studio-showcase-main { grid-template-columns: 1fr; column-gap: 0; margin-top: -160px; }
   .studio-showcase-item { width: 100%; gap: 0; }
   .studio-showcase-area { margin-bottom: 0; }
