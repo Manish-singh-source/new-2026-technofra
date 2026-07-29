@@ -13,6 +13,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
+    <?php if (!empty($baseHref)): ?>
+    <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
     <?php if ($metaKeywords !== ''): ?>
     <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
@@ -70,4 +73,5 @@
         <!-- End Preloader -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
+
 

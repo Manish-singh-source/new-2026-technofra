@@ -1,8 +1,10 @@
 <?php
 // Pages listed here will use the white logo in the normal header.
 // Add or remove filenames as needed, for example: 'index.php', 'ios-development.php'
-$currentPage = basename($_SERVER['SCRIPT_NAME'] ?? '');
+$currentScript = trim(str_replace('\\', '/', $_SERVER['SCRIPT_NAME'] ?? ''), '/');
+$currentPage = basename($currentScript);
 $bodyClass = $bodyClass ?? '';
+$forceBlackHeader = !empty($forceBlackHeader);
 $whiteLogoPages = [
     'index.php',
     'ios-development.php',
@@ -12,8 +14,16 @@ $whiteLogoPages = [
     'frago.php',
     'sukanya.php'
 ];
+$whiteLogoScriptPaths = [
+];
+$blackLogoScriptPaths = [
+    'pdf-tool/index.php',
+];
 
-$useWhiteLogo = in_array($currentPage, $whiteLogoPages, true);
+$useWhiteLogo = !$forceBlackHeader
+    && (in_array($currentPage, $whiteLogoPages, true)
+    || in_array($currentScript, $whiteLogoScriptPaths, true))
+    && !in_array($currentScript, $blackLogoScriptPaths, true);
 $normalHeaderLogo = $useWhiteLogo ? 'assets/images/new/logo.png' : 'assets/images/new/logo-black.png';
 $stickyHeaderLogo = 'assets/images/new/logo-black.png';
 $logoAssetVersion = max((int) @filemtime(__DIR__ . '/assets/images/new/logo.png'), (int) @filemtime(__DIR__ . '/assets/images/new/logo-black.png'));
@@ -671,3 +681,4 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
     </div>
 </header>
 <!--======== / Header ========-->
+
