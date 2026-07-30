@@ -1,0 +1,91 @@
+responsive checking 
+
+2. career page
+
+
+5. portfolio - 20 
+6. blog page setup 
+
+
+1. our team -                  - done
+4. branding link with mark     - done
+
+3. web-design and development projects images.  - done
+    font bold  - done 
+
+
+    rgb(27 54 100)          1b3664
+
+    rgb(55 198 244)         39c7f4
+
+
+
+
+
+
+
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    letter-spacing: normal;
+} 
+
+
+
+
+
+
+
+
+
+modified:   assets/css/style.css
+modified:   assets/css/style2.css
+modified:   assets/images/layers/dotes.html
+modified:   assets/images/layers/dotes2.html
+modified:   assets/images/loading.html
+modified:   assets/js/book-call-widget.js
+modified:   assets/js/main.js
+
+
+contact 
+job app
+enqui
+about 
+index 
+
+
+
+
+
+
+
+
+
+TECHNOFRA-SAHIL@DESKTOP-DJIR74K MINGW64 /c/xampp/htdocs/new-2026-technofra (main)
+$ curl -G \
+"https://graph.facebook.com/v25.0/275874792498442/leadgen_forms" \
+--data-urlencode "fields=id,name,status" \
+--data-urlencode "access_token=EAAXf4ZBZB4VZAEBR64LrSpVL2jNgWWrTUhM19JlxkAgFEPeSsT3OtLHWpDXlXZCUFSAshY6p6ZCul6Lq2dOi67WvcYpJ3ZBbz0SPTqxANM3zQIHcdT3GrqrZCAKQN8RFboOdDbdDmTMvQMNkJ7DSdTOQ1GinChtoIaXKy54rjvZAVeCcQKwTFr5AZBr7kaLzIIeaZAzgZDZD"
+{"error":{"message":"(#200) Requires pages_manage_ads permission to manage the object","type":"OAuthException","code":200,"fbtrace_id":"AyLZjGJ_Rb2yP4Q7BsSPMpF"}}
+TECHNOFRA-SAHIL@DESKTOP-DJIR74K MINGW64 /c/xampp/htdocs/new-2026-technofra (main)
+$ curl -G \
+"https://graph.facebook.com/v25.0/debug_token" \
+--data-urlencode "input_token=EAAXf4ZBZB4VZAEBR64LrSpVL2jNgWWrTUhM19JlxkAgFEPeSsT3OtLHWpDXlXZCUFSAshY6p6ZCul6Lq2dOi67WvcYpJ3ZBbz0SPTqxANM3zQIHcdT3GrqrZCAKQN8RFboOdDbdDmTMvQMNkJ7DSdTOQ1GinChtoIaXKy54rjvZAVeCcQKwTFr5AZBr7kaLzIIeaZAzgZDZD" \
+--data-urlencode "access_token=1653544955958673|babbb1ec7f4b266bdb32e2fe4d55de28"
+{"data":{"app_id":"1653544955958673","type":"SYSTEM_USER","application":"MyCRM","data_access_expires_at":0,"expires_at":0,"is_valid":true,"issued_at":1784373189,"scopes":["pages_show_list","ads_read","leads_retrieval","pages_read_engagement","pages_manage_metadata","public_profile"],"granular_scopes":[{"scope":"pages_show_list"},{"scope":"ads_read"},{"scope":"leads_retrieval"},{"scope":"pages_read_engagement"},{"scope":"pages_manage_metadata"}],"user_id":"122104965945393912"}}
+TECHNOFRA-SAHIL@DESKTOP-DJIR74K MINGW64 /c/xampp/htdocs/new-2026-technofra (main)
+$ curl -G \
+"https://graph.facebook.com/v25.0/275874792498442" \
+--data-urlencode "fields=id,name" \
+--data-urlencode "access_token=EAAXf4ZBZB4VZAEBR64LrSpVL2jNgWWrTUhM19JlxkAgFEPeSsT3OtLHWpDXlXZCUFSAshY6p6ZCul6Lq2dOi67WvcYpJ3ZBbz0SPTqxANM3zQIHcdT3GrqrZCAKQN8RFboOdDbdDmTMvQMNkJ7DSdTOQ1GinChtoIaXKy54rjvZAVeCcQKwTFr5AZBr7kaLzIIeaZAzgZDZD"
+{"id":"275874792498442","name":"Technofra"}
+TECHNOFRA-SAHIL@DESKTOP-DJIR74K MINGW64 /c/xampp/htdocs/new-2026-technofra (main)
+$ curl -G \
+"https://graph.facebook.com/v25.0/275874792498442/leadgen_forms" \
+--data-urlencode "fields=id,name,status" \
+--data-urlencode "access_token=EAAXf4ZBZB4VZAEBR64LrSpVL2jNgWWrTUhM19JlxkAgFEPeSsT3OtLHWpDXlXZCUFSAshY6p6ZCul6Lq2dOi67WvcYpJ3ZBbz0SPTqxANM3zQIHcdT3GrqrZCAKQN8RFboOdDbdDmTMvQMNkJ7DSdTOQ1GinChtoIaXKy54rjvZAVeCcQKwTFr5AZBr7kaLzIIeaZAzgZDZD"
+{"error":{"message":"(#200) Requires pages_manage_ads permission to manage the object","type":"OAuthException","code":200,"fbtrace_id":"AlJZBk2qdEKJHI5bRwkFgKH"}}
+TECHNOFRA-SAHIL@DESKTOP-DJIR74K MINGW64 /c/xampp/htdocs/new-2026-technofra (main)
+$ 
+
