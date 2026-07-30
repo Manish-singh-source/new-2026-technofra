@@ -304,4 +304,4 @@ if (!$clientMail->send()) {
     redirectEnquiryForm('error', 'Mail Failed', 'Client confirmation email could not be sent right now. Please try again.', $formData);
 }
 
-redirect('success', 'Enquiry Submitted Successfully', 'Thank you for sharing your enquiry. We have emailed our team and also sent a confirmation to your email address.');
+redirectEnquiryForm('success', 'Enquiry Submitted Successfully', 'Thank you for sharing your enquiry. We have emailed our team and also sent a confirmation to your email address.');
