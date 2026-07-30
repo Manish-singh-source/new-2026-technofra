@@ -1493,7 +1493,7 @@ include __DIR__ . '/header.php'; ?>
                                 </ul>
                             </div>
                             <h4 class="name"><a href='javascript:void(0)' title>Khushi Yadav</a></h4>
-                            <span class="designation">/ Digital Marketing Head /</span>
+                            <span class="designation">/ Human Resources /</span>
                         </div>
                     </div>
                     <div class="team-card ">

@@ -6,6 +6,56 @@ $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 include __DIR__ . '/header.php'; ?>
 <style>
+    /* Reference-style About section */
+    .mark-about-section { padding: 80px 0 80px; background: #fff; color: #111; }
+    .mark-about-section .mark-about-kicker { display: inline-block; color: #036; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .mark-about-section .mark-about-main { margin: 0 60px 40px 0; color: #111; font-size: 55px; font-weight: 400; line-height: 60px; letter-spacing: -.05em; display: block; }
+    .mark-about-section .mark-about-main em { color: #036; font-style: normal; }
+    .mark-about-section .mark-about-image { width: 100%; max-width: 450px; height: 540px; overflow: hidden; }
+    .mark-about-section .mark-about-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .mark-about-section .mark-about-details { margin: 25px 0 0 60px; }
+    .mark-about-section .mark-about-description { margin: 0 0 33px; padding-bottom: 33px; border-bottom: 1px solid #dedede; color: #3c3c3c; font-size: 17px; line-height: 1.65; }
+    .mark-about-section .mark-about-stat { margin-bottom: 30px; }
+    .mark-about-section .mark-about-stat strong { display: block; margin-bottom: 17px; color: #111; font-size: clamp(45px, 5vw, 70px); font-weight: 400; letter-spacing: -.04em; line-height: 1; }
+    .mark-about-section .mark-about-stat p { margin: 0; color: #3c3c3c; font-size: 16px; line-height: 1.33; }
+    @media (max-width: 1199px) { .mark-about-section .mark-about-main, .mark-about-section .mark-about-details { margin-left: 0; } .mark-about-section .mark-about-main { margin-right: 0; } }
+    @media (max-width: 991px) { .mark-about-section { padding: 40px 0; } .mark-about-section .mark-about-kicker { margin-bottom: 28px; } .mark-about-section .mark-about-image { max-width: 100%; height: auto; aspect-ratio: 5 / 6; } .mark-about-section .mark-about-details { margin-top: 35px; } }
+    @media (max-width: 1201px) { .mark-about-section .mark-about-main { font-size: 45px; line-height: 50px; } }
+    @media (max-width: 1025px) { .mark-about-section .mark-about-main { font-size: 50px; line-height: 55px; } }
+    @media (max-width: 769px) { .mark-about-section .mark-about-main { font-size: 35px; line-height: 40px; } }
+    @media (max-width: 577px) { .mark-about-section .mark-about-main { font-size: 32px; line-height: 1.1em; } .mark-about-section .mark-about-description { font-size: 16px; } }
+
+    /* Technofra service showcase */
+    .technofra-services-showcase { position: relative; overflow: hidden; padding: 86px 0 68px; background: #050505; color: #fff; isolation: isolate; }
+    .technofra-services-showcase::before { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(125deg, transparent 0 24%, rgba(255,255,255,.045) 24.1% 34%, transparent 34.1% 54%, rgba(255,255,255,.035) 54.1% 65%, transparent 65.1%), linear-gradient(118deg, #050505 0 43%, #101010 43.1% 54%, #070707 54.1% 100%); }
+    .technofra-services-showcase .services-intro { display: grid; grid-template-columns: 260px minmax(0,1fr) auto; align-items: center; gap: 26px; margin-bottom: 30px; }
+    .technofra-services-showcase .services-intro-image { height: 158px; overflow: hidden; border-radius: 3px; }
+    .technofra-services-showcase .services-intro-image img { width: 100%; height: 100%; object-fit: cover; }
+    .technofra-services-showcase .services-eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 10px; color: #fff; font-size: 13px; }
+    .technofra-services-showcase .services-eyebrow i { color: #09c9ff; font-size: 17px; }
+    .technofra-services-showcase .services-heading { margin: 0 0 10px; color: #fff; font-size: clamp(34px, 4vw, 55px); font-weight: 400; line-height: 1.08; letter-spacing: -.05em; }
+    .technofra-services-showcase .services-copy { max-width: 520px; margin: 0; color: rgba(255,255,255,.68); font-size: 15px; line-height: 1.55; }
+    .technofra-services-showcase .services-controls { display: flex; gap: 10px; }
+    .technofra-services-showcase .services-control { display: grid; width: 41px; height: 41px; place-items: center; padding: 0; border: 1px dashed #08cfff; border-radius: 50%; background: transparent; color: #08cfff; transition: .25s ease; }
+    .technofra-services-showcase .services-control:hover, .technofra-services-showcase .services-control:focus-visible { border-style: solid; background: #08cfff; color: #041116; outline: none; }
+    .technofra-services-showcase .services-content { display: grid; grid-template-columns: 190px minmax(0,1fr); gap: 24px; align-items: stretch; }
+    .technofra-services-showcase .services-stat { padding-top: 22px; }
+    .technofra-services-showcase .services-stat-icon { color: #08cfff; font-size: 28px; line-height: 1; }
+    .technofra-services-showcase .services-stat-number { display: block; margin-top: 10px; color: #14c8ff; font-size: clamp(44px, 4vw, 62px); font-weight: 500; line-height: 1; letter-spacing: -.06em; }
+    .technofra-services-showcase .services-stat-title { margin: 10px 0 7px; color: #fff; font-size: 16px; font-weight: 600; }
+    .technofra-services-showcase .services-stat-copy { margin: 0; color: rgba(255,255,255,.62); font-size: 12px; line-height: 1.55; }
+    .technofra-services-showcase .technofra-services-cards { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; scroll-behavior: smooth; scroll-snap-type: x mandatory; }
+    .technofra-services-showcase .technofra-services-cards::-webkit-scrollbar { display: none; }
+    .technofra-services-showcase .technofra-service-card { flex: 0 0 calc((100% - 24px) / 3); min-height: 244px; padding: 20px 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 7px; background: linear-gradient(145deg, rgba(32,32,32,.78), rgba(12,12,12,.87)); scroll-snap-align: start; }
+    .technofra-services-showcase .service-card-icon { display: grid; width: 54px; height: 54px; place-items: center; margin-bottom: 17px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: radial-gradient(circle at 36% 30%, rgba(255,255,255,.16), rgba(255,255,255,.025) 55%); color: #08cfff; font-size: 23px; }
+    .technofra-services-showcase .technofra-service-card h3 { margin: 0 0 10px; color: #fff; font-size: 17px; font-weight: 500; line-height: 1.25; }
+    .technofra-services-showcase .technofra-service-card p { min-height: 58px; margin: 0 0 15px; color: rgba(255,255,255,.66); font-size: 13px; line-height: 1.48; }
+    .technofra-services-showcase .service-card-link { display: inline-flex; align-items: center; justify-content: space-between; width: 132px; padding: 7px 13px 7px 17px; border: 1px solid #08cfff; border-radius: 999px; color: #08cfff; font-size: 12px; text-decoration: none; transition: .25s ease; }
+    .technofra-services-showcase .service-card-link:hover { background: #08cfff; color: #041116; }
+    @media (max-width: 991px) { .technofra-services-showcase .services-intro { grid-template-columns: 210px 1fr; } .technofra-services-showcase .services-controls { grid-column: 2; } .technofra-services-showcase .services-content { grid-template-columns: 1fr; } .technofra-services-showcase .services-stat { display: grid; grid-template-columns: auto auto 1fr; align-items: center; column-gap: 14px; padding-top: 0; } .technofra-services-showcase .services-stat-number { margin: 0; } .technofra-services-showcase .services-stat-title { margin: 0; } .technofra-services-showcase .services-stat-copy { grid-column: 3; } }
+    @media (max-width: 991px) { .technofra-services-showcase .technofra-service-card { flex-basis: calc((100% - 12px) / 2); } }
+    @media (max-width: 767px) { .studio-showcase-thumb:has(.showcase-video-duplicate), .studio-showcase-thumb:has(.showcase-fp2-duplicate) { display: none; } .showcase-mobile-duplicate { display: none !important; } .technofra-services-showcase { padding: 65px 0 52px; } .technofra-services-showcase .services-intro { grid-template-columns: 1fr; gap: 20px; } .technofra-services-showcase .services-intro-image { max-width: 320px; height: 180px; } .technofra-services-showcase .services-controls { grid-column: auto; } .technofra-services-showcase .technofra-service-card { flex-basis: min(82vw, 320px); } }
+    @media (max-width: 480px) { .technofra-services-showcase .services-stat { grid-template-columns: auto 1fr; } .technofra-services-showcase .services-stat-copy { grid-column: 1 / -1; } }
     .creative-banner-sec {
         position: relative;
         overflow: hidden;
@@ -112,7 +162,38 @@ include __DIR__ . '/header.php'; ?>
     }
 
     @media (max-width: 991px) {
-        .creative-banner-sec {
+        /* Technofra service showcase */
+    .technofra-services-showcase { position: relative; overflow: hidden; padding: 86px 0 68px; background: #050505; color: #fff; isolation: isolate; }
+    .technofra-services-showcase::before { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(125deg, transparent 0 24%, rgba(255,255,255,.045) 24.1% 34%, transparent 34.1% 54%, rgba(255,255,255,.035) 54.1% 65%, transparent 65.1%), linear-gradient(118deg, #050505 0 43%, #101010 43.1% 54%, #070707 54.1% 100%); }
+    .technofra-services-showcase .services-intro { display: grid; grid-template-columns: 260px minmax(0,1fr) auto; align-items: center; gap: 26px; margin-bottom: 20px; }
+    .technofra-services-showcase .services-intro-image { height: 158px; overflow: hidden; border-radius: 3px; }
+    .technofra-services-showcase .services-intro-image img { width: 100%; height: 100%; object-fit: cover; }
+    .technofra-services-showcase .services-eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 10px; color: #fff; font-size: 13px; }
+    .technofra-services-showcase .services-eyebrow i { color: #09c9ff; font-size: 17px; }
+    .technofra-services-showcase .services-heading { margin: 0 0 10px; color: #fff; font-size: clamp(34px, 4vw, 55px); font-weight: 400; line-height: 1.08; letter-spacing: -.05em; }
+    .technofra-services-showcase .services-copy { max-width: 520px; margin: 0; color: rgba(255,255,255,.68); font-size: 15px; line-height: 1.55; }
+    .technofra-services-showcase .services-controls { display: flex; gap: 10px; }
+    .technofra-services-showcase .services-control { display: grid; width: 41px; height: 41px; place-items: center; padding: 0; border: 1px dashed #08cfff; border-radius: 50%; background: transparent; color: #08cfff; transition: .25s ease; }
+    .technofra-services-showcase .services-control:hover, .technofra-services-showcase .services-control:focus-visible { border-style: solid; background: #08cfff; color: #041116; outline: none; }
+    .technofra-services-showcase .services-content { display: grid; grid-template-columns: 190px minmax(0,1fr); gap: 24px; align-items: stretch; }
+    .technofra-services-showcase .services-stat { padding-top: 22px; }
+    .technofra-services-showcase .services-stat-icon { color: #08cfff; font-size: 28px; line-height: 1; }
+    .technofra-services-showcase .services-stat-number { display: block; margin-top: 10px; color: #14c8ff; font-size: clamp(44px, 4vw, 62px); font-weight: 500; line-height: 1; letter-spacing: -.06em; }
+    .technofra-services-showcase .services-stat-title { margin: 10px 0 7px; color: #fff; font-size: 16px; font-weight: 600; }
+    .technofra-services-showcase .services-stat-copy { margin: 0; color: rgba(255,255,255,.62); font-size: 12px; line-height: 1.55; }
+    .technofra-services-showcase .technofra-services-cards { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; scroll-behavior: smooth; scroll-snap-type: x mandatory; }
+    .technofra-services-showcase .technofra-services-cards::-webkit-scrollbar { display: none; }
+    .technofra-services-showcase .technofra-service-card { flex: 0 0 calc((100% - 24px) / 3); min-height: 244px; padding: 20px 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 7px; background: linear-gradient(145deg, rgba(32,32,32,.78), rgba(12,12,12,.87)); scroll-snap-align: start; }
+    .technofra-services-showcase .service-card-icon { display: grid; width: 54px; height: 54px; place-items: center; margin-bottom: 17px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: radial-gradient(circle at 36% 30%, rgba(255,255,255,.16), rgba(255,255,255,.025) 55%); color: #08cfff; font-size: 23px; }
+    .technofra-services-showcase .technofra-service-card h3 { margin: 0 0 10px; color: #fff; font-size: 17px; font-weight: 500; line-height: 1.25; }
+    .technofra-services-showcase .technofra-service-card p { min-height: 58px; margin: 0 0 15px; color: rgba(255,255,255,.66); font-size: 13px; line-height: 1.48; }
+    .technofra-services-showcase .service-card-link { display: inline-flex; align-items: center; justify-content: space-between; width: 132px; padding: 7px 13px 7px 17px; border: 1px solid #08cfff; border-radius: 999px; color: #08cfff; font-size: 12px; text-decoration: none; transition: .25s ease; }
+    .technofra-services-showcase .service-card-link:hover { background: #08cfff; color: #041116; }
+    @media (max-width: 991px) { .technofra-services-showcase .services-intro { grid-template-columns: 210px 1fr; } .technofra-services-showcase .services-controls { grid-column: 2; } .technofra-services-showcase .services-content { grid-template-columns: 1fr; } .technofra-services-showcase .services-stat { display: grid; grid-template-columns: auto auto 1fr; align-items: center; column-gap: 14px; padding-top: 0; } .technofra-services-showcase .services-stat-number { margin: 0; } .technofra-services-showcase .services-stat-title { margin: 0; } .technofra-services-showcase .services-stat-copy { grid-column: 3; } }
+    @media (max-width: 991px) { .technofra-services-showcase .technofra-service-card { flex-basis: calc((100% - 12px) / 2); } }
+    @media (max-width: 767px) { .technofra-services-showcase { padding: 65px 0 52px; } .technofra-services-showcase .services-intro { grid-template-columns: 1fr; gap: 20px; } .technofra-services-showcase .services-intro-image { max-width: 320px; height: 180px; } .technofra-services-showcase .services-controls { grid-column: auto; } .technofra-services-showcase .technofra-service-card { flex-basis: min(82vw, 320px); } }
+    @media (max-width: 480px) { .technofra-services-showcase .services-stat { grid-template-columns: auto 1fr; } .technofra-services-showcase .services-stat-copy { grid-column: 1 / -1; } }
+    .creative-banner-sec {
             padding: 60px 0;
             background-attachment: scroll;
         }
@@ -140,7 +221,38 @@ include __DIR__ . '/header.php'; ?>
     }
 
     @media (max-width: 768px) {
-        .creative-banner-sec {
+        /* Technofra service showcase */
+    .technofra-services-showcase { position: relative; overflow: hidden; padding: 86px 0 68px; background: #050505; color: #fff; isolation: isolate; }
+    .technofra-services-showcase::before { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(125deg, transparent 0 24%, rgba(255,255,255,.045) 24.1% 34%, transparent 34.1% 54%, rgba(255,255,255,.035) 54.1% 65%, transparent 65.1%), linear-gradient(118deg, #050505 0 43%, #101010 43.1% 54%, #070707 54.1% 100%); }
+    .technofra-services-showcase .services-intro { display: grid; grid-template-columns: 260px minmax(0,1fr) auto; align-items: center; gap: 26px; margin-bottom: 20px; }
+    .technofra-services-showcase .services-intro-image { height: 158px; overflow: hidden; border-radius: 3px; }
+    .technofra-services-showcase .services-intro-image img { width: 100%; height: 100%; object-fit: cover; }
+    .technofra-services-showcase .services-eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 10px; color: #fff; font-size: 13px; }
+    .technofra-services-showcase .services-eyebrow i { color: #09c9ff; font-size: 17px; }
+    .technofra-services-showcase .services-heading { margin: 0 0 10px; color: #fff; font-size: clamp(34px, 4vw, 55px); font-weight: 400; line-height: 1.08; letter-spacing: -.05em; }
+    .technofra-services-showcase .services-copy { max-width: 520px; margin: 0; color: rgba(255,255,255,.68); font-size: 15px; line-height: 1.55; }
+    .technofra-services-showcase .services-controls { display: flex; gap: 10px; }
+    .technofra-services-showcase .services-control { display: grid; width: 41px; height: 41px; place-items: center; padding: 0; border: 1px dashed #08cfff; border-radius: 50%; background: transparent; color: #08cfff; transition: .25s ease; }
+    .technofra-services-showcase .services-control:hover, .technofra-services-showcase .services-control:focus-visible { border-style: solid; background: #08cfff; color: #041116; outline: none; }
+    .technofra-services-showcase .services-content { display: grid; grid-template-columns: 190px minmax(0,1fr); gap: 24px; align-items: stretch; }
+    .technofra-services-showcase .services-stat { padding-top: 22px; }
+    .technofra-services-showcase .services-stat-icon { color: #08cfff; font-size: 28px; line-height: 1; }
+    .technofra-services-showcase .services-stat-number { display: block; margin-top: 10px; color: #14c8ff; font-size: clamp(44px, 4vw, 62px); font-weight: 500; line-height: 1; letter-spacing: -.06em; }
+    .technofra-services-showcase .services-stat-title { margin: 10px 0 7px; color: #fff; font-size: 16px; font-weight: 600; }
+    .technofra-services-showcase .services-stat-copy { margin: 0; color: rgba(255,255,255,.62); font-size: 12px; line-height: 1.55; }
+    .technofra-services-showcase .technofra-services-cards { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; scroll-behavior: smooth; scroll-snap-type: x mandatory; }
+    .technofra-services-showcase .technofra-services-cards::-webkit-scrollbar { display: none; }
+    .technofra-services-showcase .technofra-service-card { flex: 0 0 calc((100% - 24px) / 3); min-height: 244px; padding: 20px 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 7px; background: linear-gradient(145deg, rgba(32,32,32,.78), rgba(12,12,12,.87)); scroll-snap-align: start; }
+    .technofra-services-showcase .service-card-icon { display: grid; width: 54px; height: 54px; place-items: center; margin-bottom: 17px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: radial-gradient(circle at 36% 30%, rgba(255,255,255,.16), rgba(255,255,255,.025) 55%); color: #08cfff; font-size: 23px; }
+    .technofra-services-showcase .technofra-service-card h3 { margin: 0 0 10px; color: #fff; font-size: 17px; font-weight: 500; line-height: 1.25; }
+    .technofra-services-showcase .technofra-service-card p { min-height: 58px; margin: 0 0 15px; color: rgba(255,255,255,.66); font-size: 13px; line-height: 1.48; }
+    .technofra-services-showcase .service-card-link { display: inline-flex; align-items: center; justify-content: space-between; width: 132px; padding: 7px 13px 7px 17px; border: 1px solid #08cfff; border-radius: 999px; color: #08cfff; font-size: 12px; text-decoration: none; transition: .25s ease; }
+    .technofra-services-showcase .service-card-link:hover { background: #08cfff; color: #041116; }
+    @media (max-width: 991px) { .technofra-services-showcase .services-intro { grid-template-columns: 210px 1fr; } .technofra-services-showcase .services-controls { grid-column: 2; } .technofra-services-showcase .services-content { grid-template-columns: 1fr; } .technofra-services-showcase .services-stat { display: grid; grid-template-columns: auto auto 1fr; align-items: center; column-gap: 14px; padding-top: 0; } .technofra-services-showcase .services-stat-number { margin: 0; } .technofra-services-showcase .services-stat-title { margin: 0; } .technofra-services-showcase .services-stat-copy { grid-column: 3; } }
+    @media (max-width: 991px) { .technofra-services-showcase .technofra-service-card { flex-basis: calc((100% - 12px) / 2); } }
+    @media (max-width: 767px) { .technofra-services-showcase { padding: 65px 0 52px; } .technofra-services-showcase .services-intro { grid-template-columns: 1fr; gap: 20px; } .technofra-services-showcase .services-intro-image { max-width: 320px; height: 180px; } .technofra-services-showcase .services-controls { grid-column: auto; } .technofra-services-showcase .technofra-service-card { flex-basis: min(82vw, 320px); } }
+    @media (max-width: 480px) { .technofra-services-showcase .services-stat { grid-template-columns: auto 1fr; } .technofra-services-showcase .services-stat-copy { grid-column: 1 / -1; } }
+    .creative-banner-sec {
             padding: 60px 0;
         }
 
@@ -230,7 +342,7 @@ include __DIR__ . '/header.php'; ?>
     .eep-container {
         display: grid;
         grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
-        gap: 32px;
+        gap: 30px;
         align-items: center
     }
 
@@ -1326,6 +1438,111 @@ include __DIR__ . '/header.php'; ?>
             font-size: 13px;
         }
     }
+
+/* client logo hover interaction */
+.client-trust-grid1 .client-brand-card1 { position: relative; overflow: hidden; cursor: pointer; transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease, background .35s ease; }
+.client-trust-grid1 .client-brand-card1::after { content: ''; position: absolute; inset: 0; border: 1px solid transparent; border-radius: inherit; background: linear-gradient(135deg, rgba(8,207,255,.7), transparent 55%) border-box; -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity .35s ease; pointer-events: none; }
+.client-trust-grid1 .client-brand-card1 img { transition: transform .4s cubic-bezier(.2,.8,.2,1), filter .35s ease; }
+.client-trust-grid1 .client-brand-card1:hover { z-index: 2; transform: translateY(-8px) scale(1.04); box-shadow: 0 16px 34px rgba(0,0,0,.28), 0 0 22px rgba(8,207,255,.18); background: rgba(8,207,255,.08); }
+.client-trust-grid1 .client-brand-card1:hover::after { opacity: 1; }
+.client-trust-grid1 .client-brand-card1:hover img { transform: scale(1.08); filter: saturate(1.15) contrast(1.04); }
+@media (prefers-reduced-motion: reduce) { .client-trust-grid1 .client-brand-card1, .client-trust-grid1 .client-brand-card1 img { transition: none; } }
+/* modern FAQ layout */
+.technofra-faq-modern {
+  background: #fff;
+  color: #252525;
+  padding: 78px 0 88px;
+}
+.technofra-faq-heading { text-align: center; margin-bottom: 36px; }
+.technofra-faq-heading .sub-title { color: #0b477e; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.technofra-faq-heading h2 { margin: 6px 0 0; color: #262626; font-size: clamp(30px, 3.4vw, 46px); font-weight: 700; line-height: 1.12; }
+.technofra-faq-list { border-top: 1px solid #e3e7ec; }
+.technofra-faq-item { border-bottom: 1px solid #e3e7ec; }
+.technofra-faq-trigger { width: 100%; min-height: 66px; display: flex; align-items: center; gap: 18px; padding: 16px 6px; border: 0; background: transparent; color: #30343a; text-align: left; font-size: 16px; font-weight: 600; line-height: 1.35; transition: color .25s ease, background .25s ease; }
+.technofra-faq-trigger:focus, .technofra-faq-trigger:active, .technofra-faq-trigger:focus-visible { outline: none !important; border: 0 !important; box-shadow: none !important; }
+.technofra-faq-trigger > i:first-child { width: 24px; color: #0b477e; font-size: 16px; text-align: center; flex: 0 0 24px; }
+.technofra-faq-trigger .faq-plus { margin-left: auto; color: #68717a; font-size: 14px; transition: transform .25s ease, color .25s ease; }
+.technofra-faq-trigger:not(.collapsed), .technofra-faq-trigger:hover { color: #0b477e; }
+.technofra-faq-trigger:not(.collapsed) .faq-plus { transform: rotate(45deg); color: #0b477e; }
+.technofra-faq-answer { padding: 0 42px 18px 48px; color: #68717a; font-size: 14px; line-height: 1.65; }
+@media (max-width: 991px) { .technofra-faq-modern { padding: 62px 0 70px; } .technofra-faq-list + .technofra-faq-list { margin-top: 0; } }
+@media (max-width: 767px) { .technofra-faq-modern { padding: 52px 0 60px; } .technofra-faq-trigger { gap: 12px; padding: 15px 2px; font-size: 14px; } .technofra-faq-answer { padding-left: 38px; padding-right: 20px; } }
+/* source-style testimonial area */
+.technofra-testimonial-area { margin: 0 0px; border-radius: 0px; background: #050505; color: #fff; padding: 96px 0 90px; overflow: hidden; }
+.technofra-testimonial-heading { max-width: 720px; margin: 0 auto 56px; position: relative; text-align: center; }
+.technofra-testimonial-heading > span { color: #32c5ff; font-size: 13px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.technofra-testimonial-heading h2 { margin: 12px 0 0; color: #fff; font-size: clamp(30px, 4vw, 52px); font-weight: 700; line-height: 1.08; }
+.technofra-testimonial-score { position: absolute; left: calc(100% + 18px); top: 24px; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.technofra-testimonial-score strong { color: #32c5ff; font-size: 64px; line-height: .9; font-weight: 700; }
+.technofra-testimonial-score small { margin-top: 8px; color: #9ca7b2; font-size: 12px; white-space: nowrap; }
+.technofra-testimonial-rows { display: flex; flex-direction: column; gap: 24px; overflow: hidden; }
+.technofra-testimonial-row { width: 100%; overflow: hidden; }
+.technofra-testimonial-row-track { display: flex; gap: 24px; width: max-content; padding: 0 24px; }
+.technofra-testimonial-row-left .technofra-testimonial-row-track { animation: technofraTestimonialMarqueeLeft 34s linear infinite; }
+.technofra-testimonial-row-right .technofra-testimonial-row-track { animation: technofraTestimonialMarqueeRight 34s linear infinite; }
+.technofra-testimonial-row:hover .technofra-testimonial-row-track { animation-play-state: paused; }
+.technofra-testimonial-card { width: min(390px, 82vw); min-height: 248px; padding: 28px; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.035)); }
+.technofra-testimonial-person { display: flex; align-items: center; gap: 14px; }
+.technofra-testimonial-person img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.technofra-testimonial-person h4 { margin: 0; color: #fff; font-size: 16px; font-weight: 600; }
+.technofra-testimonial-person p { margin: 4px 0 0; color: #8f9aa5; font-size: 12px; }
+.technofra-testimonial-quote { margin: 28px 0 22px; color: #d4dbe1; font-size: 16px; line-height: 1.65; }
+.technofra-testimonial-stars { color: #ffaf1b; letter-spacing: 4px; font-size: 14px; }
+@keyframes technofraTestimonialMarqueeLeft { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 12px)); } }
+@keyframes technofraTestimonialMarqueeRight { from { transform: translateX(calc(-50% - 12px)); } to { transform: translateX(0); } }
+@media (max-width: 991px) { .technofra-testimonial-area { margin: 0 20px; border-radius: 24px; } .technofra-testimonial-score { position: static; align-items: center; text-align: center; margin: 26px auto 0; } .technofra-testimonial-score strong { font-size: 52px; } }
+@media (max-width: 767px) { .technofra-testimonial-area { margin: 0; border-radius: 0; } .technofra-testimonial-rows { gap: 16px; } }
+@media (prefers-reduced-motion: reduce) { .technofra-testimonial-row-track { animation: none !important; } }
+/* showcase area start */
+.studio-showcase-area {
+  background: #050505;
+  overflow: hidden;
+}
+.studio-showcase-wrap {
+  height: 1700px;
+  overflow: hidden;
+  margin: 0 -370px;
+}
+.studio-showcase-main {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 0;
+  margin-top: -370px;
+  justify-content: center;
+}
+.studio-showcase-item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.studio-showcase-thumb {
+  overflow: hidden;
+  margin-bottom: 30px !important;
+}
+.studio-showcase-item .studio-showcase-thumb:last-child {
+  margin-bottom: 0 !important;
+}
+.studio-showcase-thumb img,
+.studio-showcase-thumb .studio-showcase-video {
+  width: 100%;
+  display: block;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .studio-showcase-wrap { height: 1000px; }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .studio-showcase-wrap { height: 700px; }
+  .studio-showcase-area { margin-bottom: 120px; }
+}
+@media (max-width: 767px) {
+  .studio-showcase-wrap { height: 1150px; margin: 0; }
+  .studio-showcase-main { grid-template-columns: 1fr; column-gap: 0; margin-top: -160px; }
+  .studio-showcase-item { width: 100%; gap: 0; }
+  .studio-showcase-area { margin-bottom: 0; }
+}
+/* showcase area end */
 </style>
 
 <!-- hero-style4 -->
@@ -1415,8 +1632,76 @@ include __DIR__ . '/header.php'; ?>
     });
 </script>
 
+<!-- Technofra-about-section -->
+<section class="mark-about-section" aria-labelledby="mark-about-heading">
+    <div class="container"><div class="row">
+        <div class="col-xl-3"><span class="mark-about-kicker">[ Who we are ]</span></div>
+        <div class="col-xl-9">
+            <h2 class="mark-about-main title animated-heading" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h2>
+            <div class="row align-items-start">
+                <div class="col-xl-5 col-lg-4 col-md-5"><div class="mark-about-image"><img src="assets/images/new/technofra-about.png" alt="Technofra team creating digital solutions"></div></div>
+                <div class="col-xl-7 col-lg-8 col-md-7"><div class="mark-about-details">
+                    <p class="mark-about-description">Technofra is your all-in-one digital solutions partner. We create high-performing websites and mobile apps, build memorable brands, and run data-driven marketing that helps businesses attract the right audience, convert more leads, and scale with confidence.</p>
+                    <div class="row">
+                        <div class="col-6"><div class="mark-about-stat"><strong>2.5K+</strong><p>Successful Projects<br>Delivered</p></div></div>
+                        <div class="col-6"><div class="mark-about-stat"><strong>500+</strong><p>Happy Clients<br>Worldwide</p></div></div>
+                        <div class="col-6"><div class="mark-about-stat"><strong>14+</strong><p>Years of Digital<br>Expertise</p></div></div>
+                        <div class="col-6"><div class="mark-about-stat"><strong>18+</strong><p>Core Digital<br>Service Areas</p></div></div>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+    </div></div>
+</section>
+<!-- End Technofra-about-section -->
+<!-- Technofra-services-showcase -->
+<section class="technofra-services-showcase" aria-labelledby="technofra-services-heading">
+    <div class="container">
+        <div class="services-intro">
+            <div class="services-intro-image"><img src="assets/images/new/servicehome.png" alt="Technofra team collaborating on a digital project"></div>
+            <div>
+                <p class="services-eyebrow"><i class="fa-solid fa-asterisk" aria-hidden="true"></i> Digital Solutions</p>
+                <h2 class="services-heading" id="technofra-services-heading">Services We Provide</h2>
+                <p class="services-copy">From websites, ecommerce stores, and mobile apps to branding, digital marketing, domain, and hosting, we deliver complete digital solutions that help businesses launch, grow, and perform better online.</p>
+            </div>
+            <div class="services-controls" aria-label="Service card controls">
+                <button class="services-control" type="button" data-services-direction="prev" aria-label="Show previous services"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+                <button class="services-control" type="button" data-services-direction="next" aria-label="Show next services"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="services-content">
+            <aside class="services-stat">
+                <i class="services-stat-icon fa-solid fa-sun" aria-hidden="true"></i>
+                <strong class="services-stat-number">2500+</strong>
+                <div><h3 class="services-stat-title">Successful projects delivered</h3><p class="services-stat-copy">Trusted by businesses for design, development, branding, and digital growth.</p></div>
+            </aside>
+            <div class="technofra-services-cards" id="technofra-services-cards">
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><h3>Web Design &amp; Development</h3><p>Fast, responsive websites and web applications built to turn visitors into customers.</p><a class="service-card-link" href="web-design-and-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div><h3>E-Commerce Development</h3><p>Conversion-focused online stores with smooth product, cart, and checkout journeys.</p><a class="service-card-link" href="shopify-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div><h3>iOS &amp; Android App Development</h3><p>Reliable, user-friendly mobile apps that keep your business connected to customers.</p><a class="service-card-link" href="android-app-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div><h3>Branding</h3><p>Distinctive visual identities and brand systems that make your business memorable.</p><a class="service-card-link" href="https://markidentitiez.com/" target="_blank">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div><h3>Digital Marketing</h3><p>SEO, social media, paid campaigns, and content strategies designed for growth.</p><a class="service-card-link" href="digital-marketing.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div><h3>Domain &amp; Hosting</h3><p>Secure domains, reliable hosting, and dependable support for your online presence.</p><a class="service-card-link" href="domain-hosting.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var servicesCards = document.getElementById('technofra-services-cards');
+        if (!servicesCards) return;
+        document.querySelectorAll('[data-services-direction]').forEach(function (button) {
+            button.addEventListener('click', function () {
+                var direction = button.getAttribute('data-services-direction') === 'next' ? 1 : -1;
+                servicesCards.scrollBy({ left: direction * Math.min(servicesCards.clientWidth, 360), behavior: 'smooth' });
+            });
+        });
+    });
+</script>
+<!-- End Technofra-services-showcase -->
+
 <!-- service-sec8 -->
-<section class="service-sec8 pt-3">
+<!-- <section class="service-sec8 pt-3">
     <div class="container2">
         <div class="service-content3">
             <div class="ser-card3">
@@ -1463,11 +1748,11 @@ include __DIR__ . '/header.php'; ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End service-sec8 -->
 
 <!-- service-sec7 -->
-<section class="service-sec7 mb-0">
+<!-- <section class="service-sec7 mb-0">
     <div class="container2">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -1497,11 +1782,11 @@ include __DIR__ . '/header.php'; ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End service-sec7 -->
 
 <!-- service-sec17 -->
-<section class="feature-sec7 ibt-section-gapTop ibt-section-gapBottom">
+<!-- <section class="feature-sec7 ibt-section-gapTop ibt-section-gapBottom">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -1572,7 +1857,7 @@ include __DIR__ . '/header.php'; ?>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End service-sec17 -->
 
 <!-- client-trust-style -->
@@ -1620,28 +1905,95 @@ include __DIR__ . '/header.php'; ?>
     </div>
 </section>
 <!-- End client-trust-style -->
-
-<!-- creative-banner-sec -->
-<section class="creative-banner-sec">
-    <div class="container">
-        <div class="creative-banner-wrap">
-            <div class="creative-banner-top">
-                <span class="creative-banner-badge">Your End-to-End Digital & Branding Partner</span>
-            </div>
-            <div class="creative-banner-content">
-                <div class="creative-banner-copy">
-                    <h2 class="creative-banner-title">Your End-to-End Digital &<br>Branding Partner For Business Growth</h2>
-                    <div class="creative-banner-actions">
-                        <a class="creative-banner-btn" href="contact.php">Book A Call Now <i class="icon-arrow-top"></i></a>
-                        <span class="creative-banner-time">[ Tailored Web, App & Marketing Solutions ]</span>
+<!-- showcase area start -->
+<div class="studio-showcase-area">
+    <div class="container-fluid">
+        <div class="studio-showcase-wrap">
+            <div class="studio-showcase-main d-flex">
+                <div class="studio-showcase-item d-none d-md-block" data-speed=".7">
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/Portfolio-1.png" alt="Portfolio showcase project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/Portfolio-1.png" alt="Portfolio showcase project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/FP-7.png" alt="Featured digital project showcase">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/FP-8.png" alt="Featured digital project showcase">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/Portfolio-1.png" alt="Portfolio showcase project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/home-06/showcase/showcase-7.jpg" alt="Creative website showcase">
                     </div>
                 </div>
-                <p class="creative-banner-text">[ Technofra offers tailored web design, development, branding, and marketing solutions that help businesses thrive and achieve impactful outcomes in the digital landscape. ]</p>
+                <div class="studio-showcase-item" data-speed="1.1">
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/FP-4.png" alt="Featured portfolio project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img class="showcase-fp2-primary" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <video class="studio-showcase-video showcase-video-primary" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/FP-3.png" alt="Featured portfolio project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
+                    </div>
+                </div>
+                <div class="studio-showcase-item d-none d-md-block" data-speed=".7">
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/Portfolio-3.png" alt="Portfolio showcase project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/Portfolio-3.png" alt="Portfolio showcase project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/Portfolio-2.png" alt="Portfolio showcase project">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/new-images/FP-1.png" alt="Featured digital project showcase">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured digital project showcase">
+                    </div>
+                    <div class="studio-showcase-thumb mb-30">
+                        <img src="assets/img/home-06/showcase/showcase-9.jpg" alt="Creative website showcase">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<!-- End creative-banner-sec -->
+</div>
+<!-- showcase area end -->
+
 
 <!-- booking-call-sec -->
 <?php if ($bookCallStatus): ?>
@@ -1759,59 +2111,34 @@ include __DIR__ . '/header.php'; ?>
 <!-- End booking-call-sec -->
 
 
-<!-- testimonials-sec -->
-<section class="testimonials-sec">
-    <div class="container2">
-        <div class="row">
-            <div class="col-lg-7">
-                <div class="swiper testi-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="assets/images/icon/comas.svg" alt="">
-                            <p>Technofra delivered a clean, modern website that matched our brand
-                                perfectly. The team was responsive, clear with communication, and
-                                focused on creating a smooth user experience from start to finish.
-                            </p>
-                            <span>- Client Feedback</span>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/icon/comas.svg" alt="">
-                            <p>We saw a noticeable improvement in visibility after working with
-                                Technofra on our digital marketing strategy. Their approach was
-                                practical, measurable, and aligned with our business goals.
-                            </p>
-                            <span>- Client Feedback</span>
-                        </div>
-                    </div>
-                    <div class="slider-btn">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="testimonial-content">
-                    <img src="assets/images/new/testinonial.png" alt="">
-                    <div class="title-area2">
-                        <div class="sec-title white">
-                            <span class="sub-title">testimonials</span>
-                            <h2 class="title animated-heading">What clients say about working with
-                                Technofra</h2>
-                        </div>
-                        <div class="testi-count">
-                            <h4>
-                                <span class="counter-number" data-target="500">0</span>
-                                <span class="counter-text">+</span>
-                            </h4>
-                            <span>Happy clients</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- testimonial area start -->
+<section class="technofra-testimonial-area">
+    <div class="container">
+        <div class="technofra-testimonial-heading">
+            <span>Client Reviews</span>
+            <h2>What Our Clients Say<br>About Our Branding Work</h2>
+            <!-- <div class="technofra-testimonial-score"><strong>4.86</strong><small>Average client rating</small></div> -->
         </div>
     </div>
-</section>
-<!-- End testimonials-sec -->
+    <div class="technofra-testimonial-rows">
+        <div class="technofra-testimonial-row technofra-testimonial-row-left">
+            <div class="technofra-testimonial-row-track">
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h4>Rohan Mehta</h4><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h4>Priya Shah</h4><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h4>Arjun Nair</h4><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h4>Neha Kapoor</h4><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+            </div>
+        </div>
+        <div class="technofra-testimonial-row technofra-testimonial-row-right">
+            <div class="technofra-testimonial-row-track">
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h4>Arjun Nair</h4><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h4>Neha Kapoor</h4><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h4>Rohan Mehta</h4><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h4>Priya Shah</h4><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+            </div>
+        </div>
+    </div></section>
+<!-- End testimonial area -->
 
 <!-- industries-sec -->
 <section class="industries-sec ibt-section-gapTop">
@@ -1918,74 +2245,79 @@ include __DIR__ . '/header.php'; ?>
 <!-- End industries-sec -->
 
 <!-- faq-sec -->
-<section class="faq-sec ibt-section-gap">
+<section class="faq-sec technofra-faq-modern">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mobile-view-off">
-                <div class="faq-img">
-                    <img src="assets/images/new/elemets.png" alt="">
+        <div class="technofra-faq-heading">
+            <span class="sub-title">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="row gx-lg-5">
+            <div class="col-lg-6">
+                <div class="technofra-faq-list" id="faqModernLeft">
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernOne" aria-expanded="false" aria-controls="faqModernOne">
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>What services does Technofra provide?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernOne" class="collapse" data-bs-parent="#faqModernLeft"><div class="technofra-faq-answer">We provide website design and development, ecommerce, mobile apps, branding, digital marketing, domain registration, hosting, and complete IT solutions.</div></div>
+                    </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernTwo" aria-expanded="false" aria-controls="faqModernTwo">
+                            <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i><span>Do you provide custom website design?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernTwo" class="collapse" data-bs-parent="#faqModernLeft"><div class="technofra-faq-answer">Yes. Every website is designed around your brand, audience, business goals, and conversion journey.</div></div>
+                    </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernThree" aria-expanded="false" aria-controls="faqModernThree">
+                            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><span>Do you develop mobile applications?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernThree" class="collapse" data-bs-parent="#faqModernLeft"><div class="technofra-faq-answer">We build scalable Android and iOS applications with intuitive interfaces and reliable performance.</div></div>
+                    </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernFour" aria-expanded="false" aria-controls="faqModernFour">
+                            <i class="fa-solid fa-server" aria-hidden="true"></i><span>Do you offer domain registration and hosting services?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernFour" class="collapse" data-bs-parent="#faqModernLeft"><div class="technofra-faq-answer">Yes. We help you choose, register, host, secure, and maintain the right domain and hosting setup.</div></div>
+                    </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernFive" aria-expanded="false" aria-controls="faqModernFive">
+                            <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i><span>Can you redesign my existing website?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernFive" class="collapse" data-bs-parent="#faqModernLeft"><div class="technofra-faq-answer">Absolutely. We can refresh your visual identity, user experience, content, speed, and mobile performance.</div></div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="faq-content">
-                    <div class="sec-title">
-                        <span class="sub-title">FAQ</span>
-                        <h2 class="title animated-heading">Frequently Asked Questions</h2>
+            <div class="col-lg-6">
+                <div class="technofra-faq-list" id="faqModernRight">
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernSix" aria-expanded="false" aria-controls="faqModernSix">
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i><span>Will my website be mobile-friendly and SEO optimized?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernSix" class="collapse" data-bs-parent="#faqModernRight"><div class="technofra-faq-answer">Yes. Our websites are responsive, fast, accessible, and structured with SEO best practices.</div></div>
                     </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What services does Technofra provide?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Technofra provides a wide range of digital solutions including website design and development, mobile app development, branding, digital marketing, domain and hosting services, E-Commerce Websites, Social Media Marketing and IT infrastructure solutions.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do you provide custom website design?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Yes, we create fully customized website designs tailored to your brand, business goals, and target audience to ensure a unique and professional online presence.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Do you develop mobile applications?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Yes, Technofra develops mobile applications for both Android and iOS platforms, helping businesses reach customers through mobile devices.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-0">
-                            <h2 class="accordion-header" id="headingfour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                    Will my website be mobile-friendly and SEO optimized?
-                                </button>
-                            </h2>
-                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Yes, all our websites are responsive, fast-loading, and built with SEO best practices to ensure better performance and rankings.
-                                </div>
-                            </div>
-                        </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernSeven" aria-expanded="false" aria-controls="faqModernSeven">
+                            <i class="fa-solid fa-building" aria-hidden="true"></i><span>What industries do you work with?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernSeven" class="collapse" data-bs-parent="#faqModernRight"><div class="technofra-faq-answer">We work with startups, ecommerce brands, professional services, education, healthcare, finance, and growing enterprises.</div></div>
                     </div>
-                    <!-- <a class='ibt-btn ibt-btn-outline' href='contact.php' title>
-                        <span>Contact Us</span>
-                        <i class="icon-arrow-top"></i>
-                    </a> -->
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernEight" aria-expanded="false" aria-controls="faqModernEight">
+                            <i class="fa-solid fa-credit-card" aria-hidden="true"></i><span>Do you provide payment gateway and API integrations?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernEight" class="collapse" data-bs-parent="#faqModernRight"><div class="technofra-faq-answer">Yes. We integrate payment gateways, CRMs, analytics, shipping tools, and third-party APIs as required.</div></div>
+                    </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernNine" aria-expanded="false" aria-controls="faqModernNine">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Is my data and project information secure?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernNine" class="collapse" data-bs-parent="#faqModernRight"><div class="technofra-faq-answer">We follow secure development practices and keep your project data, access, and business information confidential.</div></div>
+                    </div>
+                    <div class="technofra-faq-item">
+                        <button class="technofra-faq-trigger collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqModernTen" aria-expanded="false" aria-controls="faqModernTen">
+                            <i class="fa-solid fa-medal" aria-hidden="true"></i><span>Why should I choose Technofra?</span><i class="fa-solid fa-plus faq-plus" aria-hidden="true"></i>
+                        </button>
+                        <div id="faqModernTen" class="collapse" data-bs-parent="#faqModernRight"><div class="technofra-faq-answer">You get a dedicated digital partner focused on thoughtful design, dependable technology, clear communication, and measurable growth.</div></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1993,6 +2325,104 @@ include __DIR__ . '/header.php'; ?>
 </section>
 <!-- End faq-sec -->
 
-<script src='assets/js/book-call-widget.js' defer></script>
+<script>
+(function () {
+    function dedupeShowcaseMobile() {
+        var isMobile = window.matchMedia('(max-width: 767px)').matches;
+        var seen = {};
+        document.querySelectorAll('.studio-showcase-item:not(.d-none) .studio-showcase-thumb').forEach(function (thumb) {
+            thumb.classList.remove('showcase-mobile-duplicate');
+            if (!isMobile) return;
+            var media = thumb.querySelector('img, video');
+            if (!media) return;
+            var key = media.tagName.toLowerCase() + ':' + (media.currentSrc || media.src || media.querySelector('source')?.src || '');
+            if (seen[key]) thumb.classList.add('showcase-mobile-duplicate');
+            seen[key] = true;
+        });
+    }
+    dedupeShowcaseMobile();
+    window.addEventListener('resize', dedupeShowcaseMobile);    function initTechnofraShowcaseMotion() {
+        document.querySelectorAll('.technofra-testimonial-row-track').forEach(function (track) {
+            if (!track.dataset.cloned) { track.innerHTML += track.innerHTML; track.dataset.cloned = 'true'; }
+        });
+        if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+        gsap.registerPlugin(ScrollTrigger);        gsap.fromTo('.mark-about-main, .mark-about-description, .mark-about-stat',
+            { y: 38, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.85, stagger: 0.12, ease: 'power3.out', scrollTrigger: { trigger: '.mark-about-section', start: 'top 78%', once: true } }
+        );
+        gsap.fromTo('.mark-about-image',
+            { x: -55, opacity: 0, scale: 0.94 },
+            { x: 0, opacity: 1, scale: 1, duration: 1.05, ease: 'power3.out', scrollTrigger: { trigger: '.mark-about-section', start: 'top 82%', once: true } }
+        );
+        gsap.fromTo('.technofra-services-showcase .services-intro > *, .technofra-service-card',
+            { y: 34, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.75, stagger: 0.1, ease: 'power3.out', scrollTrigger: { trigger: '.technofra-services-showcase', start: 'top 78%', once: true } }
+        );
+        gsap.fromTo('.technofra-services-showcase .services-intro-image img',
+            { scale: 1.14 },
+            { scale: 1, duration: 1.25, ease: 'power2.out', scrollTrigger: { trigger: '.technofra-services-showcase', start: 'top 78%', once: true } }
+        );
+        gsap.fromTo('.technofra-faq-heading',
+            { y: 36, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: '.technofra-faq-modern', start: 'top 80%', once: true } }
+        );
+        gsap.fromTo('.technofra-faq-item',
+            { y: 22, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.55, stagger: 0.08, ease: 'power2.out', scrollTrigger: { trigger: '.technofra-faq-modern', start: 'top 72%', once: true } }
+        );
+        gsap.fromTo('.technofra-testimonial-heading',
+            { y: 34, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: '.technofra-testimonial-area', start: 'top 80%', once: true } }
+        );
+        gsap.fromTo('.client-trust-content1',
+            { x: -45, opacity: 0 },
+            { x: 0, opacity: 1, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.client-trust-sec1', start: 'top 80%', once: true } }
+        );        document.querySelectorAll('.studio-showcase-item[data-speed]').forEach(function (column) {
+            var speed = parseFloat(column.getAttribute('data-speed')) || 1;
+            gsap.fromTo(column, { y: 90 * speed }, {
+                y: -90 * speed,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.studio-showcase-area',
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: 1.2
+                }
+            });
+        });
+        gsap.fromTo('.studio-showcase-thumb',
+            { opacity: 0, y: 34 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                stagger: 0.06,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.studio-showcase-area',
+                    start: 'top 85%',
+                    once: true
+                }
+            }
+        );
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTechnofraShowcaseMotion);
+    } else {
+        initTechnofraShowcaseMotion();
+    }
+})();
+</script>
+<script>
+window.addEventListener('load', function () {
+    if (window.LenisScroll && typeof LenisScroll.getInstance === 'function' && !LenisScroll.getInstance()) {
+        LenisScroll.init();
+    }
+    if (window.ScrollTrigger) { ScrollTrigger.refresh(); }
+});
+</script><script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
 

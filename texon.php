@@ -579,8 +579,8 @@ include __DIR__ . '/header.php';
                     <p>Advanced instruments and analysis systems for research, healthcare, industrial automation, and performance testing.</p>
 
                     <div class="texon-hero__actions">
-                        <a href="contact.php" class="texon-hero__btn texon-hero__btn--primary">Request a Quote</a>
-                        <a href="contact.php" class="texon-hero__btn texon-hero__btn--ghost">Explore Products</a>
+                        <a href="https://www.texon-corporation.com/" class="texon-hero__btn texon-hero__btn--primary" target="_blank">Explore the Website</a>
+                        <a href="portfolios.php" class="texon-hero__btn texon-hero__btn--ghost" target="_blank ">View More Projects</a>
                     </div>
 
                     <ul class="texon-hero__features">
@@ -610,7 +610,7 @@ include __DIR__ . '/header.php';
             <div class="wotm-branding-copy">
                 <h2>Texon CRM<br>for <span>Smarter Operations.</span></h2>
                 <p>We built Texon a tailored CRM system to manage products, handle blog inquiries, track customer activity, and measure business performance through Google Analytics and connected reporting tools.</p>
-                <a class="wotm-branding-cta" href="#">See Texon CRM <span>&rarr;</span></a>
+                <a class="wotm-branding-cta" href="contact.php">Contact Us <span>&rarr;</span></a>
             </div>
 
             <div class="wotm-branding-visual" aria-hidden="true">

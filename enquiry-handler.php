@@ -100,6 +100,7 @@ if (!file_exists($configPath)) {
 }
 
 $config = require $configPath;
+$db = $config['db'] ?? [];
 $mailConfig = $config['mail'] ?? [];
 $recaptchaConfig = $config['recaptcha'] ?? [];
 
@@ -150,6 +151,108 @@ if (!verifyEnquiryRecaptcha((string) ($recaptchaConfig['secret_key'] ?? ''))) {
 if (!empty($errors)) {
     redirectEnquiryForm('error', 'Submission Failed', implode(' ', array_unique($errors)), $formData);
 }
+
+mysqli_report(MYSQLI_REPORT_OFF);
+
+$dbHost = trim((string) ($db['host'] ?? 'localhost'));
+$dbPort = (int) ($db['port'] ?? 3306);
+$dbUser = (string) ($db['username'] ?? 'root');
+$dbPass = (string) ($db['password'] ?? '');
+$dbName = trim((string) ($db['database'] ?? 'tech_2026_manish'));
+
+$hostCandidates = array_values(array_unique(array_filter([
+    $dbHost,
+    $dbHost === '127.0.0.1' ? 'localhost' : null,
+    $dbHost === 'localhost' ? '127.0.0.1' : null,
+])));
+
+$serverConnection = null;
+$lastConnectError = '';
+
+foreach ($hostCandidates as $hostCandidate) {
+    $connection = @new mysqli($hostCandidate, $dbUser, $dbPass, '', $dbPort);
+
+    if (!$connection->connect_errno) {
+        $serverConnection = $connection;
+        break;
+    }
+
+    $lastConnectError = sprintf(
+        '[%s:%d] (%d) %s',
+        $hostCandidate,
+        $dbPort,
+        $connection->connect_errno,
+        $connection->connect_error
+    );
+}
+
+if (!$serverConnection instanceof mysqli) {
+    error_log('Enquiry form DB server connection failed: ' . $lastConnectError);
+    redirectEnquiryForm('error', 'Database Error', 'Database connection failed. Please update contact-config.php.', $formData);
+}
+
+$serverConnection->set_charset('utf8mb4');
+$dbNameEscaped = str_replace('`', '``', $dbName);
+
+if (!$serverConnection->query("CREATE DATABASE IF NOT EXISTS `{$dbNameEscaped}` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci")) {
+    $serverConnection->close();
+    redirectEnquiryForm('error', 'Database Error', 'Could not create the enquiry form database.', $formData);
+}
+
+$serverConnection->select_db($dbName);
+$serverConnection->query("SET time_zone = '+05:30'");
+
+$createTableSql = "CREATE TABLE IF NOT EXISTS enquiryform (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    company VARCHAR(180) NOT NULL,
+    contact VARCHAR(25) NOT NULL,
+    designation VARCHAR(180) NOT NULL,
+    delivery_time VARCHAR(120) NOT NULL,
+    nature_of_project VARCHAR(120) NOT NULL,
+    message TEXT NOT NULL,
+    source_page VARCHAR(120) NOT NULL DEFAULT 'enquirynow.php',
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
+
+if (!$serverConnection->query($createTableSql)) {
+    $serverConnection->close();
+    redirectEnquiryForm('error', 'Database Error', 'Could not create the enquiryform table.', $formData);
+}
+
+$sourcePage = 'enquirynow.php';
+$insert = $serverConnection->prepare(
+    'INSERT INTO enquiryform (name, email, company, contact, designation, delivery_time, nature_of_project, message, source_page, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+);
+
+if (!$insert) {
+    $serverConnection->close();
+    redirectEnquiryForm('error', 'Database Error', 'Could not prepare the enquiry save query.', $formData);
+}
+
+$insert->bind_param(
+    'ssssssssss',
+    $name,
+    $email,
+    $company,
+    $contact,
+    $designation,
+    $deliveryTime,
+    $natureOfProject,
+    $message,
+    $sourcePage,
+    $submittedAt
+);
+
+if (!$insert->execute()) {
+    $insert->close();
+    $serverConnection->close();
+    redirectEnquiryForm('error', 'Database Error', 'Enquiry data could not be saved right now. Please try again.', $formData);
+}
+
+$insert->close();
+$serverConnection->close();
 
 $host = trim((string) ($mailConfig['host'] ?? ''));
 $port = (int) ($mailConfig['port'] ?? 587);

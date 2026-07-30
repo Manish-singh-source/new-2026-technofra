@@ -1009,6 +1009,87 @@ include __DIR__ . '/header.php';
     }
   }
 
+  .sapphire-video {
+    padding: 110px 0;
+    background:
+      radial-gradient(circle at 18% 18%, rgba(214, 173, 104, 0.14), transparent 24%),
+      radial-gradient(circle at 82% 12%, rgba(214, 173, 104, 0.1), transparent 18%),
+      linear-gradient(180deg, #faf7f2 0%, #f3ede5 100%);
+  }
+
+  .sapphire-video__wrap {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 72px);
+  }
+
+  .sapphire-video__header {
+    max-width: 740px;
+    margin-bottom: 30px;
+  }
+
+  .sapphire-video__eyebrow {
+    margin: 0 0 16px;
+    color: #b88742;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .sapphire-video__title {
+    margin: 0 0 18px;
+    color: #181818;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 72px);
+    line-height: 0.98;
+    font-weight: 400;
+  }
+
+  .sapphire-video__description {
+    margin: 0;
+    color: #585858;
+    font-size: 18px;
+    line-height: 1.85;
+    max-width: 620px;
+  }
+
+  .sapphire-video__frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid rgba(194, 160, 112, 0.16);
+    background: #111;
+    box-shadow: 0 30px 60px rgba(80, 61, 33, 0.12);
+    aspect-ratio: 16 / 9;
+  }
+
+  .sapphire-video__frame video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    .sapphire-video {
+      padding: 76px 0;
+    }
+
+    .sapphire-video__header {
+      margin-bottom: 22px;
+    }
+
+    .sapphire-video__description {
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .sapphire-video__frame {
+      border-radius: 22px;
+    }
+  }
+
   .sapphire-showcase-image {
     display: block;
     width: 100%;
@@ -1200,6 +1281,25 @@ include __DIR__ . '/header.php';
     </div>
   </section>
 
+ <section class="sapphire-video">
+    <div class="sapphire-video__wrap">
+      <div class="sapphire-video__header">
+        <p class="sapphire-video__eyebrow">Project Video</p>
+        <h2 class="sapphire-video__title">Sapphire in Motion</h2>
+        <p class="sapphire-video__description">
+          Watch the Sapphire experience come to life through a short video preview of the project.
+        </p>
+      </div>
+
+      <div class="sapphire-video__frame">
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="./assets/images/portfolios/sapphire_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <section class="sapphire-showcase">
     <div class="sapphire-showcase__wrap">
       <div class="sapphire-showcase__layout">
@@ -1280,8 +1380,7 @@ include __DIR__ . '/header.php';
         </div>
       </div>
     </div>
-  </section>
-
+  </section> 
   <div class="sapphire-showcase-image sapphire-showcase-image--mobile">
     <img src="./assets/images/portfolios/sapphire5.png" alt="Sapphire mobile website preview">
   </div>
@@ -1289,6 +1388,8 @@ include __DIR__ . '/header.php';
   <div class="sapphire-showcase-image sapphire-showcase-image--desktop">
     <img src="./assets/images/portfolios/sapphire6.png" alt="Sapphire desktop website preview">
   </div>
+
+ 
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
