@@ -202,7 +202,7 @@ if (!$serverConnection->query("CREATE DATABASE IF NOT EXISTS `{$dbNameEscaped}` 
 $serverConnection->select_db($dbName);
 $serverConnection->query("SET time_zone = '+05:30'");
 
-$createTableSql = "CREATE TABLE IF NOT EXISTS enquiryform (
+$createTableSql = "CREATE TABLE IF NOT EXISTS enquiry_forms (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
     email VARCHAR(150) NOT NULL,
@@ -218,12 +218,12 @@ $createTableSql = "CREATE TABLE IF NOT EXISTS enquiryform (
 
 if (!$serverConnection->query($createTableSql)) {
     $serverConnection->close();
-    redirectEnquiryForm('error', 'Database Error', 'Could not create the enquiryform table.', $formData);
+    redirect('error', 'Database Error', 'Could not create the enquiryform table.', $formData);
 }
 
 $sourcePage = 'enquirynow.php';
 $insert = $serverConnection->prepare(
-    'INSERT INTO enquiryform (name, email, company, contact, designation, delivery_time, nature_of_project, message, source_page, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+    'INSERT INTO enquiry_forms (name, email, company, contact, designation, delivery_time, nature_of_project, message, source_page, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
 );
 
 if (!$insert) {
@@ -304,4 +304,4 @@ if (!$clientMail->send()) {
     redirectEnquiryForm('error', 'Mail Failed', 'Client confirmation email could not be sent right now. Please try again.', $formData);
 }
 
-redirectEnquiryForm('success', 'Enquiry Submitted Successfully', 'Thank you for sharing your enquiry. We have emailed our team and also sent a confirmation to your email address.');
+redirect('success', 'Enquiry Submitted Successfully', 'Thank you for sharing your enquiry. We have emailed our team and also sent a confirmation to your email address.');
