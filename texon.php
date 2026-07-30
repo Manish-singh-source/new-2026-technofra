@@ -361,10 +361,10 @@ include __DIR__ . '/header.php';
         display: block;
     }
 
-.wotm-branding-work {
-    padding: 0 0 92px;
-    background: radial-gradient(circle at left top, #f3f8ff 0%, #f5f9ff 48%, #f3f8ff 100%);
-}
+    .wotm-branding-work {
+        padding: 0 0 92px;
+        background: radial-gradient(circle at left top, #f3f8ff 0%, #f5f9ff 48%, #f3f8ff 100%);
+    }
 
     .wotm-branding-visual {
         position: relative;
@@ -389,10 +389,10 @@ include __DIR__ . '/header.php';
         }
     }
 
-   .wotm-selected-work {
-    padding: 95px 0;
-    background: linear-gradient(180deg, #f7f9fe 0%, #f9fbfd 100%);
-}
+    .wotm-selected-work {
+        padding: 95px 0;
+        background: linear-gradient(180deg, #f7f9fe 0%, #f9fbfd 100%);
+    }
 
     .wotm-selected-expertise {
         display: grid;
@@ -427,11 +427,11 @@ include __DIR__ . '/header.php';
         }
     }
 
-   .wotm-screen-showcase {
-    padding: 50px 0 50px;
-    background: linear-gradient(180deg, #e8f0fd 0%, #c1d2f0 100%);
-    overflow: hidden;
-}
+    .wotm-screen-showcase {
+        padding: 50px 0 50px;
+        background: linear-gradient(180deg, #e8f0fd 0%, #c1d2f0 100%);
+        overflow: hidden;
+    }
 
     .wotm-screen-grid {
         display: grid;
@@ -604,77 +604,72 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </section>
-<section class="wotm-branding-work">
-    <div class="container">
-        <div class="wotm-branding-grid">
-            <div class="wotm-branding-copy">
-                <h2>Texon CRM<br>for <span>Smarter Operations.</span></h2>
-                <p>We built Texon a tailored CRM system to manage products, handle blog inquiries, track customer activity, and measure business performance through Google Analytics and connected reporting tools.</p>
-                <a class="wotm-branding-cta" href="contact.php">Contact Us <span>&rarr;</span></a>
-            </div>
+    <section class="wotm-branding-work">
+        <div class="container">
+            <div class="wotm-branding-grid">
+                <div class="wotm-branding-copy">
+                    <h2>Texon CRM<br>for <span>Smarter Operations.</span></h2>
+                    <p>We built Texon a tailored CRM system to manage products, handle blog inquiries, track customer activity, and measure business performance through Google Analytics and connected reporting tools.</p>
+                    <a class="wotm-branding-cta" href="contact.php">Contact Us <span>&rarr;</span></a>
+                </div>
 
-            <div class="wotm-branding-visual" aria-hidden="true">
-                <img src="./assets/images/new/texon1.png" alt="">
+                <div class="wotm-branding-visual" aria-hidden="true">
+                    <img src="./assets/images/new/texon1.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="wotm-selected-work" id="work">
-    <div class="container">
-        <div class="wotm-selected-expertise">
-            <h2>Google Analytics</h2>
-            <div class="wotm-selected-expertise-media" aria-hidden="true">
-                <img src="./assets/images/new/texon2.png" alt="Our Expertise">
+    </section>
+    <section class="wotm-selected-work" id="work">
+        <div class="container">
+            <div class="wotm-selected-expertise">
+                <h2>Google Analytics</h2>
+                <div class="wotm-selected-expertise-media" aria-hidden="true">
+                    <img src="./assets/images/new/texon2.png" alt="Our Expertise">
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="wotm-screen-showcase">
-    <div class="container">
-        <div class="wotm-screen-grid">
-            <div class="wotm-screen-copy">
-                <span class="wotm-screen-eyebrow">Responsive Experience</span>
-                <h2>Built for<br><em>Every Screen</em></h2>
-                <p>We designed the Texon layout to deliver a smooth shopping experience across desktop, tablet, and mobile devices. Every section stays clean, elegant, and easy to browse on any screen size.</p>
-                <ul class="wotm-screen-features">
-                    <li>Desktop Friendly</li>
-                    <li>Tablet Ready</li>
-                    <li>Mobile Optimized</li>
-                </ul>
-            </div>
+    </section>
+    <section class="wotm-screen-showcase">
+        <div class="container">
+            <div class="wotm-screen-grid">
+                <div class="wotm-screen-copy">
+                    <span class="wotm-screen-eyebrow">Responsive Experience</span>
+                    <h2>Built for<br><em>Every Screen</em></h2>
+                    <p>We designed the Texon layout to deliver a smooth shopping experience across desktop, tablet, and mobile devices. Every section stays clean, elegant, and easy to browse on any screen size.</p>
+                    <ul class="wotm-screen-features">
+                        <li>Desktop Friendly</li>
+                        <li>Tablet Ready</li>
+                        <li>Mobile Optimized</li>
+                    </ul>
+                </div>
 
-            <div class="wotm-screen-visual" aria-hidden="true">
-                <img src="./assets/images/new/texon3.png" alt="">
+                <div class="wotm-screen-visual" aria-hidden="true">
+                    <img src="./assets/images/new/texon3.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="wotm-selected-work" id="work">
-    <div class="container">
-        <div class="wotm-selected-expertise">
-            <h2>Our Products</h2>
-            <div class="wotm-selected-expertise-media" aria-hidden="true">
-                <img src="./assets/images/new/texon4.png" alt="Our Expertise">
+    </section>
+    <section class="texon-video-section" style="padding:95px 0;background:linear-gradient(180deg,#f7fbff 0%,#edf4ff 100%);">
+        <div class="container">
+            <div style="max-width:980px;margin:0 auto;text-align:center;">
+                <h2 style="margin:0 0 14px;color:#17233f;font-size:clamp(34px,4vw,56px);line-height:1.05;font-weight:800;letter-spacing:-0.04em;">Project Video</h2>
+                <p style="max-width:680px;margin:0 auto 34px;color:#5f6f90;font-size:16px;line-height:1.8;">A quick walkthrough of the Texon experience, highlighting the product presentation and the overall interface we delivered.</p>
+                <div style="overflow:hidden;border-radius:24px;background:#0f172a;box-shadow:0 28px 60px rgba(23,35,63,0.16);"><video autoplay loop muted playsinline preload="auto" style="display:block;width:100%;height:auto;">
+                        <source src="assets/images/portfolios/texon.mp4" type="video/mp4">Your browser does not support the video tag.
+                    </video></div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section class="wotm-selected-work" id="work">
+        <div class="container">
+            <div class="wotm-selected-expertise">
+                <h2>Our Products</h2>
+                <div class="wotm-selected-expertise-media" aria-hidden="true">
+                    <img src="./assets/images/new/texon4.png" alt="Our Expertise">
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php include __DIR__ . '/footer.php'; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
