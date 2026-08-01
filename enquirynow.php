@@ -402,7 +402,7 @@ include __DIR__ . '/header.php';
                                 <ul class="enquiry-social-list">
                                     <li><a href="https://www.facebook.com/Technofra/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://www.instagram.com/technofra.company/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://x.com/Technofra_" aria-label="X" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://x.com/Technofra_" aria-label="X" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://hk.linkedin.com/company/technofra" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>

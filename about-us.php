@@ -1407,7 +1407,7 @@ include __DIR__ . '/header.php'; ?>
                                     <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-twitter"></i></a></li>
+                                                class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/" target="_blank" title=""><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
@@ -1435,7 +1435,7 @@ include __DIR__ . '/header.php'; ?>
                                     <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-twitter"></i></a></li>
+                                                class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/" target="_blank" title=""><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
@@ -1459,7 +1459,7 @@ include __DIR__ . '/header.php'; ?>
                                     <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-twitter"></i></a></li>
+                                                class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/" target="_blank" title=""><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
@@ -1487,7 +1487,7 @@ include __DIR__ . '/header.php'; ?>
                                     <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-twitter"></i></a></li>
+                                                class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/" target="_blank" title=""><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
@@ -1511,7 +1511,7 @@ include __DIR__ . '/header.php'; ?>
                                     <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-twitter"></i></a></li>
+                                                class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/" target="_blank" title=""><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
@@ -1539,7 +1539,7 @@ include __DIR__ . '/header.php'; ?>
                                     <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
                                                 class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-twitter"></i></a></li>
+                                                class="fab fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.facebook.com/" target="_blank" title=""><i
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
