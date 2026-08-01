@@ -958,7 +958,7 @@ Surface</span></h1>
                     <p>Leading manufacturer of Marine Paints, Industrial Coatings, and Decorative Paints.
 Quality that protects, colors that inspire.</p>
                     <div class="vk-hero__actions">
-                        <a href="contact.php" class="vk-hero__btn vk-hero__btn--primary">Get Started</a>
+                        <a href="https://vkpaintsindustries.com/" class="vk-hero__btn vk-hero__btn--primary" target="_blank">Visit Website</a>
                         <a href="portfolios.php" class="vk-hero__btn vk-hero__btn--secondary">View Portfolio</a>
                     </div>
                 </div>

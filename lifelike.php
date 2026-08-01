@@ -597,7 +597,7 @@ body {
   font-weight: 500;
   color: var(--studio-rust);
   line-height: 1.25;
-  max-width: 13ch;
+  max-width: 570px;
   margin-bottom: 1.45rem;
 }
 

@@ -434,6 +434,77 @@ include __DIR__ . '/header.php';
                 </a>
             </div>
 
+            <div class="col-lg-6 col-md-6">
+                <a href="jaijagannath.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/jaijagannath/b1.png" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Jai Jagannath</h3>
+                                <span class="portfolio-card__tag">Portfolio 11</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+ 
+
+            <div class="col-lg-6 col-md-6">
+                <a href="frizzcool.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/frizcoolindia.webp" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Frizcool India</h3>
+                                <span class="portfolio-card__tag">Portfolio 12</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <a href="lifelike.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/lifelike.webp" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">LifeLike</h3>
+                                <span class="portfolio-card__tag">Portfolio 13</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6">
+                <a href="shivam.php" target="_blank">
+                    <article class="portfolio-card">
+                        <div class="portfolio-card__image">
+                            <img src="./assets/images/portfolios/shivaminds.webp" alt="Corporate presentation portfolio project">
+                            <div class="portfolio-card__overlay"></div>
+                        </div>
+                        <div class="portfolio-card__content">
+                            <div class="portfolio-card__meta">
+                                <h3 class="portfolio-card__heading">Shivam Industries</h3>
+                                <span class="portfolio-card__tag">Portfolio 14</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+
+
         </div>
     </div>
 </section>
