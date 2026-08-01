@@ -7,8 +7,11 @@ unset($_SESSION['book_call_status']);
 include __DIR__ . '/header.php'; ?>
 <style>
     /* Reference-style About section */
-    .mark-about-section { padding: 80px 0 80px; background: #fff; color: #111; }
-    .mark-about-section .mark-about-kicker { display: inline-block; color: #036; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .mark-about-section { position: relative; padding: 80px 0 80px; background: #fff; color: #111; overflow: hidden; }
+.mark-about-section .mark-about-kicker { display: inline-block; color: #036; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .mark-about-section .mark-about-accent { max-width: 255px; }
+    .mark-about-section .mark-about-shape-board { position: absolute; left: 0; bottom: 0; margin-top: 0; pointer-events: none; }
+    .mark-about-section .mark-about-shape-board img { width: 100%; height: auto; display: block; }
     .mark-about-section .mark-about-main { margin: 0 60px 40px 0; color: #111; font-size: 55px; font-weight: 400; line-height: 60px; letter-spacing: -.05em; display: block; }
     .mark-about-section .mark-about-main em { color: #036; font-style: normal; }
     .mark-about-section .mark-about-image { width: 100%; max-width: 450px; height: 540px; overflow: hidden; }
@@ -18,12 +21,12 @@ include __DIR__ . '/header.php'; ?>
     .mark-about-section .mark-about-stat { margin-bottom: 30px; }
     .mark-about-section .mark-about-stat strong { display: block; margin-bottom: 17px; color: #111; font-size: clamp(45px, 5vw, 70px); font-weight: 400; letter-spacing: -.04em; line-height: 1; }
     .mark-about-section .mark-about-stat p { margin: 0; color: #3c3c3c; font-size: 16px; line-height: 1.33; }
-    @media (max-width: 1199px) { .mark-about-section .mark-about-main, .mark-about-section .mark-about-details { margin-left: 0; } .mark-about-section .mark-about-main { margin-right: 0; } }
-    @media (max-width: 991px) { .mark-about-section { padding: 40px 0; } .mark-about-section .mark-about-kicker { margin-bottom: 28px; } .mark-about-section .mark-about-image { max-width: 100%; height: auto; aspect-ratio: 5 / 6; } .mark-about-section .mark-about-details { margin-top: 35px; } }
+    @media (max-width: 1199px) { .mark-about-section .mark-about-main, .mark-about-section .mark-about-details { margin-left: 0; } .mark-about-section .mark-about-main { margin-right: 0; } .mark-about-section .mark-about-accent { max-width: 320px; margin-bottom: 36px; } }
+    @media (max-width: 991px) { .mark-about-section { padding: 40px 0; } .mark-about-section .mark-about-kicker { margin-bottom: 28px; } .mark-about-section .mark-about-accent { max-width: 100%; margin-bottom: 28px; } .mark-about-section .mark-about-image { max-width: 100%; height: auto; aspect-ratio: 5 / 6; } .mark-about-section .mark-about-details { margin-top: 35px; } }
     @media (max-width: 1201px) { .mark-about-section .mark-about-main { font-size: 45px; line-height: 50px; } }
     @media (max-width: 1025px) { .mark-about-section .mark-about-main { font-size: 50px; line-height: 55px; } }
     @media (max-width: 769px) { .mark-about-section .mark-about-main { font-size: 35px; line-height: 40px; } }
-    @media (max-width: 577px) { .mark-about-section .mark-about-main { font-size: 32px; line-height: 1.1em; } .mark-about-section .mark-about-description { font-size: 16px; } }
+    @media (max-width: 577px) { .mark-about-section .mark-about-main { font-size: 32px; line-height: 1.1em; } .mark-about-section .mark-about-description { font-size: 16px; } .mark-about-section .mark-about-shape-board { display: none; } }
 
     /* Technofra service showcase */
     .technofra-services-showcase { position: relative; overflow: hidden; padding: 86px 0 68px; background: #050505; color: #fff; isolation: isolate; }
@@ -1635,7 +1638,12 @@ include __DIR__ . '/header.php'; ?>
 <!-- Technofra-about-section -->
 <section class="mark-about-section" aria-labelledby="mark-about-heading">
     <div class="container"><div class="row">
-        <div class="col-xl-3"><span class="mark-about-kicker">[ Who we are ]</span></div>
+        <div class="col-xl-3">
+            <div class="mark-about-accent">
+                <span class="mark-about-kicker">[ Who we are ]</span>
+                <div class="mark-about-shape-board"><img src="assets/images/new/about-shpe.png" alt="Abstract about section shape"></div>
+            </div>
+        </div>
         <div class="col-xl-9">
             <h2 class="mark-about-main title animated-heading" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h2>
             <div class="row align-items-start">
@@ -2422,6 +2430,9 @@ window.addEventListener('load', function () {
 });
 </script><script src='assets/js/book-call-widget.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
+
+
+
 
 
 
