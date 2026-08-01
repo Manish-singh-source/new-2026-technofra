@@ -208,6 +208,7 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
     }
 
     @media (max-width: 991px) {
+
         .wotm-branding-grid,
         .wotm-screen-grid {
             grid-template-columns: 1fr;
@@ -215,6 +216,7 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
     }
 
     @media (max-width: 767px) {
+
         .wotm-branding-work,
         .wotm-screen-showcase {
             padding: 72px 0;
@@ -245,8 +247,7 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
         <img
             class="ish-hero__image"
             src="<?php echo htmlspecialchars($desktopHeroImage, ENT_QUOTES, 'UTF-8'); ?>"
-            alt="Ish International"
-        >
+            alt="Ish International">
     </picture>
 </section>
 
@@ -265,18 +266,17 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
         </div>
     </div>
 </section>
-
-<section class="ish-hero" aria-label="Ish International Additional Visuals">
-    <picture>
-        <source media="(max-width: 767px)" srcset="<?php echo htmlspecialchars($mobileSecondaryHeroImage, ENT_QUOTES, 'UTF-8'); ?>">
-        <img
-            class="ish-hero__image"
-            src="<?php echo htmlspecialchars($desktopSecondaryHeroImage, ENT_QUOTES, 'UTF-8'); ?>"
-            alt="Ish International Additional Visual"
-        >
-    </picture>
+<section class="ish-video-section" style="padding:95px 0;background:linear-gradient(180deg,#f7fbff 0%,#edf4ff 100%);">
+    <div class="container">
+        <div style="max-width:1300px;margin:0 auto;text-align:center;">
+            <h2 style="margin:0 0 14px;color:#17233f;font-size:clamp(34px,4vw,56px);line-height:1.05;font-weight:800;letter-spacing:-0.04em;">Project Video</h2>
+            <p style="max-width:680px;margin:0 auto 34px;color:#5f6f90;font-size:16px;line-height:1.8;">A visual walkthrough of the Ish International experience, presented as an autoplaying showcase of the delivered interface.</p>
+            <div style="overflow:hidden;border-radius:24px;background:#0f172a;box-shadow:0 28px 60px rgba(23,35,63,0.16);"><video autoplay loop muted playsinline preload="auto" style="display:block;width:100%;height:auto;">
+                    <source src="assets/images/portfolios/ishinternational.mp4" type="video/mp4">Your browser does not support the video tag.
+                </video></div>
+        </div>
+    </div>
 </section>
-
 <section class="wotm-screen-showcase">
     <div class="container">
         <div class="wotm-screen-grid">
@@ -297,6 +297,17 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
         </div>
     </div>
 </section>
+<section class="ish-hero" aria-label="Ish International Additional Visuals">
+    <picture>
+        <source media="(max-width: 767px)" srcset="<?php echo htmlspecialchars($mobileSecondaryHeroImage, ENT_QUOTES, 'UTF-8'); ?>">
+        <img
+            class="ish-hero__image"
+            src="<?php echo htmlspecialchars($desktopSecondaryHeroImage, ENT_QUOTES, 'UTF-8'); ?>"
+            alt="Ish International Additional Visual">
+    </picture>
+</section>
+
+
 
 <section class="ish-hero" aria-label="Ish International Closing Banner">
     <picture>
@@ -304,9 +315,10 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
         <img
             class="ish-hero__image"
             src="<?php echo htmlspecialchars($desktopTertiaryHeroImage, ENT_QUOTES, 'UTF-8'); ?>"
-            alt="Ish International Banner"
-        >
+            alt="Ish International Banner">
     </picture>
 </section>
+
+
 
 <?php include __DIR__ . '/footer.php'; ?>
