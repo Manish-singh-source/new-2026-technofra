@@ -2,7 +2,7 @@
 
 header('Content-Type: application/json');
 
-$config = require __DIR__ . '/contact-config.php';
+$config = require __DIR__ . '/book-call-config.php';
 $db = $config['db'] ?? [];
 $date = trim($_GET['date'] ?? '');
 
@@ -25,7 +25,7 @@ if ($mysqli->connect_errno) {
 }
 
 $mysqli->set_charset('utf8mb4');
-$tableCheck = $mysqli->query("SHOW TABLES LIKE 'book_call_bookings'");
+$tableCheck = $mysqli->query("SHOW TABLES LIKE 'bookcall'");
 if (!$tableCheck || $tableCheck->num_rows === 0) {
     echo json_encode(['success' => true, 'slots' => []]);
     $mysqli->close();
@@ -35,7 +35,7 @@ if ($tableCheck) {
     $tableCheck->close();
 }
 
-$stmt = $mysqli->prepare('SELECT booking_time FROM book_call_bookings WHERE booking_date = ?');
+$stmt = $mysqli->prepare("SELECT DATE_FORMAT(booking_time, '%H:%i') AS booking_time FROM bookcall WHERE booking_date = ?");
 $stmt->bind_param('s', $date);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -47,3 +47,5 @@ $stmt->close();
 $mysqli->close();
 
 echo json_encode(['success' => true, 'slots' => $slots]);
+
+
