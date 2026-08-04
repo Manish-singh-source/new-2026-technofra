@@ -664,7 +664,7 @@ $smtpReady = !empty($mailConfig['host']) && !empty($mailConfig['username']) && !
 if (!empty($meetData['meet_link'])) {
     $meetLinkForDb = $meetData['meet_link'];
     $googleEventIdForDb = $meetData['event_id'] ?? null;
-    $meetDurationForDb = (int) ($meetData['duration_minutes'] ?? ($googleCalendarConfig['meeting_duration_minutes'] ?? 60));
+    $meetDurationForDb = (int) ($meetData['duration_minutes'] ?? ($googleCalendarConfig['meeting_duration_minutes'] ?? 30));
 
     $meetUpdate = $mysqli->prepare(
         'UPDATE bookcall SET meet_link = ?, google_event_id = ?, meet_duration_minutes = ? WHERE id = ?'
@@ -849,5 +849,6 @@ if ($whatsappProblem) {
 }
 
 redirectWithStatus('success', 'Booking submitted successfully. Admin/client confirmation emails and WhatsApp message were sent successfully.');
+
 
 

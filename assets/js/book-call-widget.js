@@ -28,6 +28,9 @@
     }
 
     const istTimezone = 'Asia/Kolkata';
+    const slotDurationMinutes = 30;
+    const businessStartMinutes = 10 * 60;
+    const businessEndMinutes = 19 * 60;
     const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Local Time';
     const now = new Date();
     let viewYear = now.getFullYear();
@@ -169,13 +172,24 @@
             return 'Not selected';
         }
         const slotDate = createIstDate(date, timeValue);
-        return formatDateTimeInTimezone(slotDate, userTimezone) + ' (' + getTimezoneShortLabel(userTimezone, slotDate) + ')';
+        const slotEndDate = addMinutes(slotDate, slotDurationMinutes);
+        return formatDateTimeInTimezone(slotDate, userTimezone) + ' - ' + formatTimeInTimezone(slotEndDate, userTimezone) + ' (' + getTimezoneShortLabel(userTimezone, slotDate) + ')';
+    }
+
+    function addMinutes(date, minutes) {
+        return new Date(date.getTime() + minutes * 60000);
+    }
+
+    function getSlotRangeLabel(date, timeValue, timezone, includeTimezone) {
+        const startDate = createIstDate(date, timeValue);
+        const endDate = addMinutes(startDate, slotDurationMinutes);
+        const timezoneLabel = includeTimezone ? ' ' + getTimezoneShortLabel(timezone, startDate) : '';
+        return formatTimeInTimezone(startDate, timezone) + ' - ' + formatTimeInTimezone(endDate, timezone) + timezoneLabel;
     }
 
     function getTimeOptionLabel(date, timeValue, isBooked) {
-        const istDate = createIstDate(date, timeValue);
-        const istLabel = formatTimeInTimezone(istDate, istTimezone) + ' IST';
-        const localLabel = formatTimeInTimezone(istDate, userTimezone) + ' ' + getTimezoneShortLabel(userTimezone, istDate);
+        const istLabel = getSlotRangeLabel(date, timeValue, istTimezone, true);
+        const localLabel = getSlotRangeLabel(date, timeValue, userTimezone, true);
         return istLabel + ' / ' + localLabel + (isBooked ? ' - Already Booked' : '');
     }
 
@@ -193,7 +207,7 @@
 
     function updateBookingSummary() {
         modalSelectedDate.textContent = selectedDate ? formatDate(selectedDate) : 'Not selected';
-        modalSelectedTime.textContent = selectedTime ? selectedTime + ' IST' : 'Not selected';
+        modalSelectedTime.textContent = selectedDate && selectedTime ? getSlotRangeLabel(selectedDate, selectedTime, istTimezone, true) : 'Not selected';
         modalSelectedLocalTime.textContent = getLocalTimeSummary(selectedDate, selectedTime);
         bookingDateInput.value = selectedDate ? getDateKey(selectedDate) : '';
         bookingTimeInput.value = selectedTime || '';
@@ -226,11 +240,18 @@
         const istNow = getIstNowParts();
         const selectedIsToday = sameDay(selectedDate, istToday);
 
-        for (let hour = 10; hour <= 19; hour++) {
+        for (let minutes = businessStartMinutes; minutes < businessEndMinutes; minutes += slotDurationMinutes) {
+            const hour = Math.floor(minutes / 60);
+            const minute = minutes % 60;
+            const currentIstMinutes = istNow.hour * 60 + istNow.minute;
+            const isPastTime = selectedIsToday && minutes <= currentIstMinutes;
+
+            if (isPastTime) {
+                continue;
+            }
+
             const option = document.createElement('button');
-            const hourValue = String(hour).padStart(2, '0');
-            const timeValue = hourValue + ':00';
-            const isPastTime = selectedIsToday && (hour < istNow.hour || (hour === istNow.hour && istNow.minute > 0));
+            const timeValue = String(hour).padStart(2, '0') + ':' + String(minute).padStart(2, '0');
             const isBooked = bookedSlots.includes(timeValue);
             option.type = 'button';
             option.className = 'eep-time-option';
@@ -238,7 +259,7 @@
             if (selectedTime === timeValue) {
                 option.classList.add('active');
             }
-            if (isPastTime || isBooked) {
+            if (isBooked) {
                 option.disabled = true;
             }
             option.addEventListener('click', function() {
@@ -246,7 +267,7 @@
                     return;
                 }
                 selectedTime = timeValue;
-                selectedTimeText.textContent = timeValue + ' IST';
+                selectedTimeText.textContent = getSlotRangeLabel(selectedDate, timeValue, istTimezone, true);
                 timeDropdown.classList.remove('show');
                 updateBookingSummary();
                 renderTimeSlots();
@@ -409,3 +430,6 @@
         initializeBookCallWidget();
     }
 })();
+
+
+

@@ -26,7 +26,7 @@ $config = [
         'refresh_token' => getenv('TECHNOFRA_GOOGLE_REFRESH_TOKEN') ?: '',
         'calendar_id' => getenv('TECHNOFRA_GOOGLE_CALENDAR_ID') ?: 'primary',
         'timezone' => getenv('TECHNOFRA_GOOGLE_TIMEZONE') ?: 'Asia/Kolkata',
-        'meeting_duration_minutes' => (int) (getenv('TECHNOFRA_MEETING_DURATION_MINUTES') ?: 60),
+        'meeting_duration_minutes' => (int) (getenv('TECHNOFRA_MEETING_DURATION_MINUTES') ?: 30),
     ],
     'whatsapp' => [
         'enabled' => filter_var(getenv('K3_WHATSAPP_ENABLED') ?: true, FILTER_VALIDATE_BOOLEAN),
@@ -50,4 +50,5 @@ if (is_file($localConfigPath)) {
 }
 
 return $config;
+
 
