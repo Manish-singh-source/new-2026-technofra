@@ -474,6 +474,9 @@ if (!$mysqli->query($createTableSql)) {
 
 $mysqli->query('ALTER TABLE bookcall ADD UNIQUE KEY unique_booking_slot (booking_date, booking_time)');
 $mysqli->query("ALTER TABLE bookcall ADD COLUMN meeting_agenda TEXT NOT NULL AFTER phone");
+$mysqli->query("ALTER TABLE bookcall ADD COLUMN meet_link VARCHAR(500) NULL AFTER booking_datetime");
+$mysqli->query("ALTER TABLE bookcall ADD COLUMN google_event_id VARCHAR(255) NULL AFTER meet_link");
+$mysqli->query("ALTER TABLE bookcall ADD COLUMN meet_duration_minutes INT UNSIGNED NULL AFTER google_event_id");
 
 $bookingDateForDb = $bookingDateTime->format('Y-m-d');
 $bookingTimeForDb = $bookingDateTime->format('H:i:s');
@@ -525,7 +528,7 @@ if (!$insert->execute()) {
 }
 
 $insert->close();
-$mysqli->close();
+$bookingId = $mysqli->insert_id;
 
 $formattedDate = $bookingDateTime->format('d M Y');
 $formattedTime = $bookingDateTime->format('H:i');
@@ -558,6 +561,25 @@ if (googleCalendarIsReady($googleCalendarConfig)) {
 
 $smtpReady = !empty($mailConfig['host']) && !empty($mailConfig['username']) && !empty($mailConfig['password']);
 
+if (!empty($meetData['meet_link'])) {
+    $meetLinkForDb = $meetData['meet_link'];
+    $googleEventIdForDb = $meetData['event_id'] ?? null;
+    $meetDurationForDb = (int) ($meetData['duration_minutes'] ?? ($googleCalendarConfig['meeting_duration_minutes'] ?? 60));
+
+    $meetUpdate = $mysqli->prepare(
+        'UPDATE bookcall SET meet_link = ?, google_event_id = ?, meet_duration_minutes = ? WHERE id = ?'
+    );
+
+    if ($meetUpdate) {
+        $meetUpdate->bind_param('ssii', $meetLinkForDb, $googleEventIdForDb, $meetDurationForDb, $bookingId);
+        $meetUpdate->execute();
+        $meetUpdate->close();
+    } else {
+        error_log('Book call Meet details update prepare failed: ' . $mysqli->error);
+    }
+}
+
+$mysqli->close();
 if ($smtpReady) {
     require __DIR__ . '/PHPMailer/PHPMailerAutoload.php';
     require __DIR__ . '/PHPMailer/class.phpmailer.php';
@@ -719,3 +741,5 @@ if ($meetProblem) {
 }
 
 redirectWithStatus('success', 'Booking submitted successfully. Admin and client confirmation emails were sent successfully.');
+
+
