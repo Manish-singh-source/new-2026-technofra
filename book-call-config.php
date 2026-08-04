@@ -32,13 +32,15 @@ $config = [
         'enabled' => filter_var(getenv('K3_WHATSAPP_ENABLED') ?: true, FILTER_VALIDATE_BOOLEAN),
         'base_url' => getenv('K3_WHATSAPP_BASE_URL') ?: 'https://partnersv1.pinbot.ai',
         'business_id' => getenv('K3_WHATSAPP_BUSINESS_ID') ?: '',
+        'phone_number_id' => getenv('K3_WHATSAPP_PHONE_NUMBER_ID') ?: (getenv('K3_WHATSAPP_BUSINESS_ID') ?: ''),
+        'wanumber' => getenv('K3_WHATSAPP_WANUMBER') ?: '918097950348',
         'api_key' => getenv('K3_WHATSAPP_API_KEY') ?: '',
         'template_name' => getenv('K3_WHATSAPP_BOOK_CALL_TEMPLATE') ?: 'book_call_confirmation',
         'template_id' => getenv('K3_WHATSAPP_BOOK_CALL_TEMPLATE_ID') ?: '3632264',
         'language' => getenv('K3_WHATSAPP_DEFAULT_LANGUAGE') ?: 'en',
         'default_country_code' => getenv('K3_WHATSAPP_DEFAULT_COUNTRY_CODE') ?: '91',
         'admin_phone' => getenv('K3_WHATSAPP_ADMIN_PHONE') ?: '',
-        'send_endpoint' => getenv('K3_WHATSAPP_SEND_ENDPOINT') ?: '/api/v1/message/%s/template',
+        'send_endpoint' => getenv('K3_WHATSAPP_SEND_ENDPOINT') ?: '/v3/%s/messages',
     ],
 ];
 
@@ -51,6 +53,8 @@ if (is_file($localConfigPath)) {
 }
 
 return $config;
+
+
 
 
 

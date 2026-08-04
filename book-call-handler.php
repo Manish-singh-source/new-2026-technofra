@@ -48,6 +48,26 @@ function normalizeWhatsAppPhone($phone, $defaultCountryCode = '91')
     return $digits;
 }
 
+function whatsappResponseLooksQueued($body)
+{
+    if (!is_array($body)) {
+        return false;
+    }
+
+    $encodedBody = strtolower(json_encode($body));
+
+    if (preg_match('/"(message_?id|wamid|id)"\s*:/', $encodedBody)) {
+        return true;
+    }
+
+    foreach (['success', 'sent', 'queued', 'accepted', 'submitted', 'delivered'] as $successWord) {
+        if (strpos($encodedBody, $successWord) !== false) {
+            return true;
+        }
+    }
+
+    return false;
+}
 function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValues)
 {
     $recipientPhone = normalizeWhatsAppPhone($phone, $whatsappConfig['default_country_code'] ?? '91');
@@ -58,9 +78,9 @@ function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValu
 
     $baseUrl = rtrim($whatsappConfig['base_url'], '/');
     $apiKey = $whatsappConfig['api_key'];
-    $businessId = $whatsappConfig['business_id'];
+    $phoneNumberId = $whatsappConfig['phone_number_id'] ?? ($whatsappConfig['business_id'] ?? '');
+    $wanumber = $whatsappConfig['wanumber'] ?? '918097950348';
     $templateName = $whatsappConfig['template_name'];
-    $templateId = $whatsappConfig['template_id'] ?? $templateName;
     $language = $whatsappConfig['language'] ?? 'en';
     $parameters = [];
 
@@ -71,30 +91,16 @@ function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValu
         ];
     }
 
-    $templatePayload = [
+    $payload = [
+        'messaging_product' => 'whatsapp',
+        'recipient_type' => 'individual',
         'to' => $recipientPhone,
         'type' => 'template',
         'template' => [
-            'name' => $templateName,
             'language' => [
-                'policy' => 'deterministic',
                 'code' => $language,
             ],
-            'components' => [
-                [
-                    'type' => 'body',
-                    'parameters' => $parameters,
-                ],
-            ],
-        ],
-    ];
-
-    $legacyPayload = [
-        'to' => $recipientPhone,
-        'message' => [
-            'messageType' => 'template',
             'name' => $templateName,
-            'language' => $language,
             'components' => [
                 [
                     'type' => 'body',
@@ -104,55 +110,33 @@ function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValu
         ],
     ];
 
-    $flatPayload = [
-        'business_id' => $businessId,
-        'phone_number' => $recipientPhone,
-        'template_name' => $templateName,
-        'template_id' => $templateId,
-        'language_code' => $language,
-    ];
+    $endpointTemplate = $whatsappConfig['send_endpoint'] ?? '/v3/%s/messages';
+    $endpoint = strpos($endpointTemplate, '%s') !== false
+        ? sprintf($endpointTemplate, rawurlencode($phoneNumberId))
+        : $endpointTemplate;
+    $url = $baseUrl . $endpoint;
+    $response = performJsonRequest(
+        $url,
+        [
+            'Content-Type: application/json',
+            'apikey: ' . $apiKey,
+            'wanumber: ' . $wanumber,
+            'Wanumber: ' . $wanumber,
+        ],
+        $payload,
+        'POST'
+    );
+    $safeBody = is_array($response['body']) ? json_encode($response['body']) : '';
 
-    foreach (array_values($templateValues) as $index => $value) {
-        $flatPayload['variable' . ($index + 1)] = (string) $value;
-        $flatPayload['param' . ($index + 1)] = (string) $value;
+    if ($response['success'] && whatsappResponseLooksQueued($response['body'])) {
+        error_log('Book call WhatsApp queued: ' . $url . ' => ' . $safeBody);
+        return [true, ''];
     }
 
-    $headers = [
-        'Content-Type: application/json',
-        'X-API-Key: ' . $apiKey,
-        'Authorization: Bearer ' . $apiKey,
-    ];
+    $safeError = (string) ($response['error'] ?: ($safeBody ?: 'WhatsApp API response did not confirm queue.'));
+    $safeError = str_replace($apiKey, '***', $safeError);
 
-    $attempts = [
-        ['POST', $baseUrl . '/v1/whatsapp/send?apikey=' . urlencode($apiKey), $flatPayload],
-        ['POST', $baseUrl . '/api/v1/whatsapp/send?apikey=' . urlencode($apiKey), $flatPayload],
-        ['POST', $baseUrl . '/messages?apikey=' . urlencode($apiKey), $templatePayload],
-        ['POST', $baseUrl . '/message?apikey=' . urlencode($apiKey), $templatePayload],
-        ['POST', $baseUrl . '/v1/messages?apikey=' . urlencode($apiKey), $templatePayload],
-        ['POST', $baseUrl . '/v1/message?apikey=' . urlencode($apiKey), $templatePayload],
-        ['POST', $baseUrl . '/api/v1/messages?apikey=' . urlencode($apiKey), $templatePayload],
-        ['POST', $baseUrl . '/api/v1/message?apikey=' . urlencode($apiKey), $templatePayload],
-        ['POST', $baseUrl . sprintf('/api/v1/message/%s/template?apikey=%s', rawurlencode($businessId), urlencode($apiKey)), $legacyPayload],
-    ];
-
-    $errors = [];
-
-    foreach ($attempts as $attempt) {
-        list($method, $url, $payload) = $attempt;
-        $response = performJsonRequest($url, $headers, $payload, $method);
-
-        if ($response['success']) {
-            return [true, ''];
-        }
-
-        $safeUrl = preg_replace('/apikey=[^&]+/', 'apikey=***', $url);
-        $safeError = (string) ($response['error'] ?: 'Unknown error.');
-        $safeError = preg_replace('/apikey=[^&\s]+/', 'apikey=***', $safeError);
-        $safeError = str_replace($apiKey, '***', $safeError);
-        $errors[] = $safeUrl . ' => ' . $safeError;
-    }
-
-    return [false, implode(' | ', $errors)];
+    return [false, $url . ' => ' . $safeError];
 }
 function performJsonRequest($url, array $headers, $body = null, $method = 'POST')
 {
@@ -902,6 +886,10 @@ if ($whatsappProblem) {
 }
 
 redirectWithStatus('success', 'Booking submitted successfully. Admin/client confirmation emails and WhatsApp message were sent successfully.');
+
+
+
+
 
 
 
