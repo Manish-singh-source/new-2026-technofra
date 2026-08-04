@@ -23,6 +23,84 @@ function googleCalendarIsReady(array $googleCalendarConfig)
         && !empty($googleCalendarConfig['calendar_id']);
 }
 
+function whatsappIsReady(array $whatsappConfig)
+{
+    return !empty($whatsappConfig['enabled'])
+        && !empty($whatsappConfig['base_url'])
+        && !empty($whatsappConfig['business_id'])
+        && !empty($whatsappConfig['api_key'])
+        && !empty($whatsappConfig['template_name']);
+}
+
+function normalizeWhatsAppPhone($phone, $defaultCountryCode = '91')
+{
+    $digits = preg_replace('/\D+/', '', (string) $phone);
+    $countryCode = preg_replace('/\D+/', '', (string) $defaultCountryCode);
+
+    if (strpos($digits, '00') === 0) {
+        $digits = substr($digits, 2);
+    }
+
+    if ($countryCode !== '' && strlen($digits) <= 10 && strpos($digits, $countryCode) !== 0) {
+        $digits = $countryCode . $digits;
+    }
+
+    return $digits;
+}
+
+function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValues)
+{
+    $recipientPhone = normalizeWhatsAppPhone($phone, $whatsappConfig['default_country_code'] ?? '91');
+
+    if ($recipientPhone === '' || strlen($recipientPhone) < 10) {
+        return [false, 'WhatsApp recipient phone number is invalid.'];
+    }
+
+    $baseUrl = rtrim($whatsappConfig['base_url'], '/');
+    $endpointTemplate = $whatsappConfig['send_endpoint'] ?? '/api/v1/message/%s/template';
+    $endpoint = sprintf($endpointTemplate, rawurlencode($whatsappConfig['business_id']));
+    $url = $baseUrl . $endpoint . (strpos($endpoint, '?') === false ? '?' : '&') . 'apikey=' . urlencode($whatsappConfig['api_key']);
+    $parameters = [];
+
+    foreach ($templateValues as $value) {
+        $parameters[] = [
+            'type' => 'text',
+            'text' => (string) $value,
+        ];
+    }
+
+    $payload = [
+        'to' => $recipientPhone,
+        'message' => [
+            'messageType' => 'template',
+            'name' => $whatsappConfig['template_name'],
+            'language' => $whatsappConfig['language'] ?? 'en',
+            'components' => [
+                [
+                    'type' => 'body',
+                    'parameters' => $parameters,
+                ],
+            ],
+        ],
+    ];
+
+    $response = performJsonRequest(
+        $url,
+        [
+            'Content-Type: application/json',
+            'X-API-Key: ' . $whatsappConfig['api_key'],
+        ],
+        $payload,
+        'POST'
+    );
+
+    if (!$response['success']) {
+        return [false, $response['error'] ?: 'WhatsApp API request failed.'];
+    }
+
+    return [true, ''];
+}
+
 function performJsonRequest($url, array $headers, $body = null, $method = 'POST')
 {
     if (!function_exists('curl_init')) {
@@ -407,6 +485,7 @@ if (!$bookingDateTime || $bookingDateTime < $now) {
 $db = $config['db'] ?? [];
 $mailConfig = $config['mail'] ?? [];
 $googleCalendarConfig = $config['google_calendar'] ?? [];
+$whatsappConfig = $config['whatsapp'] ?? [];
 
 mysqli_report(MYSQLI_REPORT_OFF);
 
@@ -548,6 +627,8 @@ $mailProblem = false;
 $meetData = null;
 $meetProblem = false;
 $meetMessage = '';
+$whatsappProblem = false;
+$whatsappMessage = '';
 
 if (googleCalendarIsReady($googleCalendarConfig)) {
     list($meetData, $meetError) = createGoogleMeetLink($googleCalendarConfig, $bookingDateTime, $name, $email, $meetingAgenda);
@@ -559,6 +640,25 @@ if (googleCalendarIsReady($googleCalendarConfig)) {
     }
 }
 
+if (whatsappIsReady($whatsappConfig)) {
+    $meetLinkForWhatsApp = !empty($meetData['meet_link'])
+        ? $meetData['meet_link']
+        : 'Our team will share the meeting link shortly.';
+
+    list($whatsappSent, $whatsappError) = sendBookCallWhatsApp($whatsappConfig, $phone, [
+        $name,
+        $formattedDate,
+        $formattedTimeIst,
+        $meetingAgenda,
+        $meetLinkForWhatsApp,
+    ]);
+
+    if (!$whatsappSent) {
+        $whatsappProblem = true;
+        $whatsappMessage = $whatsappError ?: 'WhatsApp message could not be sent.';
+        error_log('Book call WhatsApp error: ' . $whatsappMessage);
+    }
+}
 $smtpReady = !empty($mailConfig['host']) && !empty($mailConfig['username']) && !empty($mailConfig['password']);
 
 if (!empty($meetData['meet_link'])) {
@@ -639,7 +739,7 @@ if ($smtpReady) {
 
     $adminBody = renderBookCallEmail([
         'preheader' => 'A new call booking has been submitted on the Technofra website.',
-        'headline' => 'Appointment Scheduled via Website – Technofra',
+        'headline' => 'Appointment Scheduled via Website - Technofra',
         'lead' => 'A new enquiry has just been scheduled. Below is the complete booking summary captured from the website form.',
         'cta_label' => 'Review Booking',
         'cta_href' => 'mailto:' . $safeEmail,
@@ -736,10 +836,18 @@ if ($mailProblem) {
     redirectWithStatus('error', 'Booking was saved, but admin/client confirmation emails could not be sent. Please review SMTP settings in book-call-config.php.');
 }
 
+if ($meetProblem && $whatsappProblem) {
+    redirectWithStatus('success', 'Booking submitted successfully and confirmation emails were sent, but the Google Meet link and WhatsApp message could not be completed automatically. Please check Google Calendar and WhatsApp settings in book-call-config.php.');
+}
+
 if ($meetProblem) {
     redirectWithStatus('success', 'Booking submitted successfully and confirmation emails were sent, but the Google Meet link could not be created automatically. Please check Google Calendar settings in book-call-config.php.');
 }
 
-redirectWithStatus('success', 'Booking submitted successfully. Admin and client confirmation emails were sent successfully.');
+if ($whatsappProblem) {
+    redirectWithStatus('success', 'Booking submitted successfully and confirmation emails were sent, but the WhatsApp message could not be sent automatically. Please check WhatsApp settings in book-call-config.php.');
+}
+
+redirectWithStatus('success', 'Booking submitted successfully. Admin/client confirmation emails and WhatsApp message were sent successfully.');
 
 
