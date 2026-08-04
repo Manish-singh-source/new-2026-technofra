@@ -1335,6 +1335,24 @@ include __DIR__ . '/header.php';
   }
 </style>
 
+<style>
+  .jjct-image-showcase {
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .jjct-image-showcase picture,
+  .jjct-image-showcase img {
+    display: block;
+    width: 100%;
+  }
+
+  .jjct-image-showcase img {
+    height: auto;
+  }
+</style>
+
 <section class="jjct-hero">
   <div class="container jjct-container">
     <div class="row">
@@ -1635,6 +1653,17 @@ include __DIR__ . '/header.php';
         fill="#ffffff" />
     </svg>
   </div>
+</section>
+
+<section class="jjct-image-showcase" aria-label="Jai Jagannath website showcase">
+  <picture>
+    <source
+      media="(max-width: 767.98px)"
+      srcset="./assets/images/portfolios/jaijagannath/jaganath.png" />
+    <img
+      src="./assets/images/portfolios/jaijagannath/jai.png"
+      alt="Jai Jagannath website showcase" />
+  </picture>
 </section>
 
 <section class="jjct-tech">
