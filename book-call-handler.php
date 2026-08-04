@@ -57,9 +57,11 @@ function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValu
     }
 
     $baseUrl = rtrim($whatsappConfig['base_url'], '/');
-    $endpointTemplate = $whatsappConfig['send_endpoint'] ?? '/api/v1/message/%s/template';
-    $endpoint = sprintf($endpointTemplate, rawurlencode($whatsappConfig['business_id']));
-    $url = $baseUrl . $endpoint . (strpos($endpoint, '?') === false ? '?' : '&') . 'apikey=' . urlencode($whatsappConfig['api_key']);
+    $apiKey = $whatsappConfig['api_key'];
+    $businessId = $whatsappConfig['business_id'];
+    $templateName = $whatsappConfig['template_name'];
+    $templateId = $whatsappConfig['template_id'] ?? $templateName;
+    $language = $whatsappConfig['language'] ?? 'en';
     $parameters = [];
 
     foreach ($templateValues as $value) {
@@ -69,12 +71,15 @@ function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValu
         ];
     }
 
-    $payload = [
+    $templatePayload = [
         'to' => $recipientPhone,
-        'message' => [
-            'messageType' => 'template',
-            'name' => $whatsappConfig['template_name'],
-            'language' => $whatsappConfig['language'] ?? 'en',
+        'type' => 'template',
+        'template' => [
+            'name' => $templateName,
+            'language' => [
+                'policy' => 'deterministic',
+                'code' => $language,
+            ],
             'components' => [
                 [
                     'type' => 'body',
@@ -84,23 +89,71 @@ function sendBookCallWhatsApp(array $whatsappConfig, $phone, array $templateValu
         ],
     ];
 
-    $response = performJsonRequest(
-        $url,
-        [
-            'Content-Type: application/json',
-            'X-API-Key: ' . $whatsappConfig['api_key'],
+    $legacyPayload = [
+        'to' => $recipientPhone,
+        'message' => [
+            'messageType' => 'template',
+            'name' => $templateName,
+            'language' => $language,
+            'components' => [
+                [
+                    'type' => 'body',
+                    'parameters' => $parameters,
+                ],
+            ],
         ],
-        $payload,
-        'POST'
-    );
+    ];
 
-    if (!$response['success']) {
-        return [false, $response['error'] ?: 'WhatsApp API request failed.'];
+    $flatPayload = [
+        'business_id' => $businessId,
+        'phone_number' => $recipientPhone,
+        'template_name' => $templateName,
+        'template_id' => $templateId,
+        'language_code' => $language,
+    ];
+
+    foreach (array_values($templateValues) as $index => $value) {
+        $flatPayload['variable' . ($index + 1)] = (string) $value;
+        $flatPayload['param' . ($index + 1)] = (string) $value;
     }
 
-    return [true, ''];
-}
+    $headers = [
+        'Content-Type: application/json',
+        'X-API-Key: ' . $apiKey,
+        'Authorization: Bearer ' . $apiKey,
+    ];
 
+    $attempts = [
+        ['POST', $baseUrl . '/v1/whatsapp/send?apikey=' . urlencode($apiKey), $flatPayload],
+        ['POST', $baseUrl . '/api/v1/whatsapp/send?apikey=' . urlencode($apiKey), $flatPayload],
+        ['POST', $baseUrl . '/messages?apikey=' . urlencode($apiKey), $templatePayload],
+        ['POST', $baseUrl . '/message?apikey=' . urlencode($apiKey), $templatePayload],
+        ['POST', $baseUrl . '/v1/messages?apikey=' . urlencode($apiKey), $templatePayload],
+        ['POST', $baseUrl . '/v1/message?apikey=' . urlencode($apiKey), $templatePayload],
+        ['POST', $baseUrl . '/api/v1/messages?apikey=' . urlencode($apiKey), $templatePayload],
+        ['POST', $baseUrl . '/api/v1/message?apikey=' . urlencode($apiKey), $templatePayload],
+        ['POST', $baseUrl . sprintf('/api/v1/message/%s/template?apikey=%s', rawurlencode($businessId), urlencode($apiKey)), $legacyPayload],
+    ];
+
+    $errors = [];
+
+    foreach ($attempts as $attempt) {
+        list($method, $url, $payload) = $attempt;
+        $response = performJsonRequest($url, $headers, $payload, $method);
+
+        if ($response['success']) {
+            return [true, ''];
+        }
+
+        $safeUrl = preg_replace('/apikey=[^&]+/', 'apikey=***', $url);
+        $safeError = (string) ($response['error'] ?: 'Unknown error.');
+        $safeError = preg_replace('/apikey=[^&\s]+/', 'apikey=***', $safeError);
+        $safeError = str_replace($apiKey, '***', $safeError);
+        $errors[] = $safeUrl . ' => ' . $safeError;
+    }
+
+    return [false, implode(' | ', $errors)];
+}
 function performJsonRequest($url, array $headers, $body = null, $method = 'POST')
 {
     if (!function_exists('curl_init')) {
@@ -849,6 +902,9 @@ if ($whatsappProblem) {
 }
 
 redirectWithStatus('success', 'Booking submitted successfully. Admin/client confirmation emails and WhatsApp message were sent successfully.');
+
+
+
 
 
 

@@ -34,6 +34,7 @@ $config = [
         'business_id' => getenv('K3_WHATSAPP_BUSINESS_ID') ?: '',
         'api_key' => getenv('K3_WHATSAPP_API_KEY') ?: '',
         'template_name' => getenv('K3_WHATSAPP_BOOK_CALL_TEMPLATE') ?: 'book_call_confirmation',
+        'template_id' => getenv('K3_WHATSAPP_BOOK_CALL_TEMPLATE_ID') ?: '3632264',
         'language' => getenv('K3_WHATSAPP_DEFAULT_LANGUAGE') ?: 'en',
         'default_country_code' => getenv('K3_WHATSAPP_DEFAULT_COUNTRY_CODE') ?: '91',
         'admin_phone' => getenv('K3_WHATSAPP_ADMIN_PHONE') ?: '',
@@ -50,5 +51,6 @@ if (is_file($localConfigPath)) {
 }
 
 return $config;
+
 
 
