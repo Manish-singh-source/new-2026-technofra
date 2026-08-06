@@ -1274,7 +1274,7 @@ include __DIR__ . '/header.php'; ?>
     <div class="container">
         <div class="sec-title text-center journey-title">
             <span class="sub-title">Company Journey</span>
-            <h2 class="title animated-heading">Our Jour ney Timeline</h2>
+            <h2 class="title animated-heading">Our Journey Timeline</h2>
             <p class="journey-intro">A look at the key moments that shaped Technofra into a reliable digital partner for branding, web development, mobile apps, and IT solutions.</p>
         </div>
         <div class="journey-grid">

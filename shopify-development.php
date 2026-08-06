@@ -472,8 +472,8 @@ include __DIR__ . '/header.php';
                             <img src="assets/images/project/urbon.webp" alt="Urbon Shopify store">
                         </div>
                         <div class="portfolio-card__body">
-                            <span class="portfolio-card__tag">Urbon</span>
-                            <h4 class="portfolio-card__title">Urbon</h4>
+                            <span class="portfolio-card__tag">Urban</span>
+                            <h4 class="portfolio-card__title">Urban</h4>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>

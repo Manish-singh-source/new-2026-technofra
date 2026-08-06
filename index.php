@@ -1546,6 +1546,21 @@ include __DIR__ . '/header.php'; ?>
   .studio-showcase-area { margin-bottom: 0; }
 }
 /* showcase area end */
+@media (max-width: 1366px) {
+  .studio-showcase-wrap {
+    height: 1300px;
+    overflow: hidden;
+    margin: 0 -370px;
+}}
+/* Medium Laptop: 1201px to 1440px */
+@media (min-width: 1441px) {
+ .studio-showcase-wrap {
+    height: 1300px;
+    overflow: hidden;
+    margin: 0 -370px;
+}
+}
+Recomme
 </style>
 
 <!-- hero-style4 -->
