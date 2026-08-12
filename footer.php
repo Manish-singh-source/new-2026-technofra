@@ -87,7 +87,7 @@
                   <a href="https://play.google.com/store/apps/details?id=com.technofra.mycrm&pcampaignid=web_share" target="_blank" rel="noopener" title="Get it on Google Play">
                       <img src="assets/images/new/app.webp" alt="Get it on Google Play">
                   </a>
-                  <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener" title="Download on the App Store">
+                  <a href="https://apps.apple.com/in/app/my-crm-complete-business-crm/id6792998604" target="_blank" rel="noopener" title="Download on the App Store">
                       <img src="assets/images/new/ios.webp" alt="Download on the App Store">
                   </a>
               </div>
