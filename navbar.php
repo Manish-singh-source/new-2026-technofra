@@ -388,7 +388,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
             <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://x.com/Technofra_" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
             <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </div>
 </div>
@@ -436,7 +436,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
             <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://x.com/Technofra_" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
             <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
         </ul>
         <a href="contact.php" title="Contact Us" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
             <span>Enquiry Now</span>
@@ -571,7 +571,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
                     <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://x.com/Technofra_" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

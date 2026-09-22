@@ -80,7 +80,7 @@
                       <li><a href="https://x.com/Technofra_" title="X" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a></li>
                       <li><a href="https://www.linkedin.com/company/technofra/" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
                       <li><a href="https://youtube.com/@technofra?si=bSGDnJfZ6HMZd2Uw" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
-                      <li><a href="https://www.instagram.com/technofra/" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
                   </ul>
               </div>
               <div class="footer-apps4">
