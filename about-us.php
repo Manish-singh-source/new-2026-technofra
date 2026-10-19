@@ -1474,7 +1474,7 @@ include __DIR__ . '/header.php'; ?>
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='javascript:void(0)'><img src="assets/images/team/khushi.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img src="assets/images/team/khushi-hr.png" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">HR</span>
                             <div class="team-shap"></div>
                         </div>
