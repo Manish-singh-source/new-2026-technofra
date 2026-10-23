@@ -14,21 +14,21 @@ $whiteLogoPages = [
     'frago.php',
     'sukanya.php'
 ];
-$whiteLogoScriptPaths = [
-];
+$whiteLogoScriptPaths = [];
 $blackLogoScriptPaths = [
     'pdf-tool/index.php',
 ];
 
 $useWhiteLogo = !$forceBlackHeader
     && (in_array($currentPage, $whiteLogoPages, true)
-    || in_array($currentScript, $whiteLogoScriptPaths, true))
+        || in_array($currentScript, $whiteLogoScriptPaths, true))
     && !in_array($currentScript, $blackLogoScriptPaths, true);
 $normalHeaderLogo = $useWhiteLogo ? 'assets/images/new/logo.png' : 'assets/images/new/logo-black.png';
 $stickyHeaderLogo = 'assets/images/new/logo-black.png';
 $logoAssetVersion = max((int) @filemtime(__DIR__ . '/assets/images/new/logo.png'), (int) @filemtime(__DIR__ . '/assets/images/new/logo-black.png'));
 $normalHeaderLogoUrl = $normalHeaderLogo . '?v=' . $logoAssetVersion;
 $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
+$offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
 
 ?>
 
@@ -374,7 +374,7 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
     <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
     <div class="menu-content">
         <a class='logo' href='index.php'>
-            <img src="<?php echo htmlspecialchars($normalHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
+            <img src="<?php echo htmlspecialchars($offcanvasLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
         </a>
         <div class="sidebar-menu">
             <h4 class="title">Contact Us</h4>
@@ -681,4 +681,3 @@ $stickyHeaderLogoUrl = $stickyHeaderLogo . '?v=' . $logoAssetVersion;
     </div>
 </header>
 <!--======== / Header ========-->
-

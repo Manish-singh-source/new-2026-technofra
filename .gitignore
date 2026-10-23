@@ -10,3 +10,6 @@ blog/
 # Optional local env files
 .env
 .env.local
+
+# to remove pdfs 
+assets/images/brandbook/*.pdf
