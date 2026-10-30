@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Aakriti Space Designs';
+$metaDescription = 'Aakriti Space Designs website by Technofra: designing spaces and creating experiences with smart, responsive design.';
 include __DIR__ . '/header.php';
 ?>
 

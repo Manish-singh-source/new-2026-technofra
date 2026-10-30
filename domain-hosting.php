@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Reliable Domain & Hosting Services | Technofra';
+$metaDescription = 'Reliable domain registration and web hosting services from Technofra. Premium, secure domain and hosting solutions for your business.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

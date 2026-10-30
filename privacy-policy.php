@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php
+$pageTitle = 'Privacy Policy | Technofra';
+$metaDescription = 'Read Technofra\'s Privacy Policy to learn how we collect, use and protect your personal information when you use our website and services.';
+include 'header.php'; ?>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
 <script>
@@ -25,7 +28,6 @@
     })(window, document, "clarity", "script", "mxzdn16ndk");
 </script>
 <!--END MS Clarity -->
-<title>Technofra</title>
 
 
 <style>

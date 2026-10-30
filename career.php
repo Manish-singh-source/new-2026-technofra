@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Careers at Technofra - Join Our Team of Digital Experts';
+$metaDescription = 'Explore careers at Technofra. Join our Mumbai team of designers, developers and digital marketers and grow with real client projects.';
 $bodyClass = 'job-application-page';
 include __DIR__ . '/header.php';
 ?>
@@ -539,32 +540,32 @@ include __DIR__ . '/header.php';
         <div class="why-join-grid">
             <div class="why-join-card">
                 <div class="why-icon"><i class="fa fa-line-chart"></i></div>
-                <h4>Career Growth</h4>
+                <h3 class="h4">Career Growth</h3>
                 <p>Take on meaningful responsibilities and grow into bigger opportunities with time, experience, and performance.</p>
             </div>
             <div class="why-join-card">
                 <div class="why-icon"><i class="fa fa-book"></i></div>
-                <h4>Learning Opportunities</h4>
+                <h3 class="h4">Learning Opportunities</h3>
                 <p>Work on real projects and continuously develop practical, in-demand skills in a fast-moving environment.</p>
             </div>
             <div class="why-join-card">
                 <div class="why-icon"><i class="fa fa-lightbulb"></i></div>
-                <h4>Creative Freedom</h4>
+                <h3 class="h4">Creative Freedom</h3>
                 <p>Share your ideas, think differently, and bring innovation into your work with a team that values fresh perspectives.</p>
             </div>
             <div class="why-join-card">
                 <div class="why-icon"><i class="fa fa-users"></i></div>
-                <h4>Supportive Team</h4>
+                <h3 class="h4">Supportive Team</h3>
                 <p>Collaborate with people who believe in teamwork, open communication, and helping each other succeed.</p>
             </div>
             <div class="why-join-card">
                 <div class="why-icon"><i class="fa fa-briefcase"></i></div>
-                <h4>Real Impact</h4>
+                <h3 class="h4">Real Impact</h3>
                 <p>Your work contributes directly to projects, clients, and results that matter, giving you valuable real-world exposure.</p>
             </div>
             <div class="why-join-card">
                 <div class="why-icon"><i class="fa fa-inr"></i></div>
-                <h4>Competitive Pay</h4>
+                <h3 class="h4">Competitive Pay</h3>
                 <p>Receive fair and competitive compensation that reflects your skills, experience, and contributions, with opportunities for growth as you progress.</p>
             </div>
         </div>

@@ -1,6 +1,7 @@
-<?php include 'header.php'; ?>
-<title>Return Policy – Easy Returns with Clear Guidelines</title>
-<meta name="description" content="Our Return Policy ensures a hassle-free experience. If you're not satisfied, return your items easily with our simple, customer-friendly process.">
+<?php
+$pageTitle = 'Return Policy – Easy Returns with Clear Guidelines';
+$metaDescription = 'Our Return Policy ensures a hassle-free experience. If you\'re not satisfied, return your items easily with our simple, customer-friendly process.';
+include 'header.php'; ?>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
@@ -14,7 +15,6 @@
 
     gtag('config', 'G-189WWHXLSS');
 </script>
-<title>Technofra</title>
 
 <style>
     html {

@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Technofra';
+$metaDescription = 'Meet the Technofra team and leadership: designers, developers and marketers working together to grow your business.';
 $bodyClass = 'hero-video-page tf-ios-page';
 include __DIR__ . '/header.php';
 ?>
@@ -649,7 +650,7 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Gopal Giri</a></h4>
+                            <h3 class="name h4"><a href='team-single.html' title>Gopal Giri</a></h3>
                             <span class="designation">/ Director & Co-Founder /</span>
                         </div>
                     </div>
@@ -677,7 +678,7 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Bhavna Giri</a></h4>
+                            <h3 class="name h4"><a href='team-single.html' title>Bhavna Giri</a></h3>
                             <span class="designation">/ CEO & Co-Founder /</span>
                         </div>
                     </div>
@@ -701,7 +702,7 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Manish Singh</a></h4>
+                            <h3 class="name h4"><a href='team-single.html' title>Manish Singh</a></h3>
                             <span class="designation">/ Software Engineer /</span>
                         </div>
                     </div>
@@ -729,7 +730,7 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Khushi Yadav</a></h4>
+                            <h3 class="name h4"><a href='team-single.html' title>Khushi Yadav</a></h3>
                             <span class="designation">/ Digital Marketing Head /</span>
                         </div>
                     </div>
@@ -753,7 +754,7 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Saurabh Damale</a></h4>
+                            <h3 class="name h4"><a href='team-single.html' title>Saurabh Damale</a></h3>
                             <span class="designation">/ Laravel Developer /</span>
                         </div>
                     </div>
@@ -781,7 +782,7 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Shubham Shinde</a></h4>
+                            <h3 class="name h4"><a href='team-single.html' title>Shubham Shinde</a></h3>
                             <span class="designation">/ App Developer /</span>
                         </div>
                     </div>

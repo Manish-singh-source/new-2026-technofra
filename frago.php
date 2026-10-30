@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Fragomatrix Case Study | Technofra';
+$metaDescription = 'Fragomatrix case study by Technofra: the website and brand experience designed and developed for Fragomatrix.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

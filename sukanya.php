@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Sukanya India Case Study | Technofra';
+$metaDescription = 'Sukanya India case study: website and brand work designed and developed by Technofra.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

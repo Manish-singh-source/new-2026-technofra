@@ -2,6 +2,7 @@
 session_start();
 
 $pageTitle = 'Enquiry Now | Technofra';
+$metaDescription = 'Share your enquiry with Technofra and get the right direction for your website, app or digital marketing project.';
 $bodyClass = 'enquiry-page';
 
 $defaultEnquiryData = [
@@ -326,7 +327,7 @@ include __DIR__ . '/header.php';
                 <i class="fa <?php echo $enquiryNotice['status'] === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'; ?>"></i>
             </div>
             <div class="enquiry-status-popup-content">
-                <h3><?php echo enquiryValue($enquiryNotice['title']); ?></h3>
+                <p class="h3"><?php echo enquiryValue($enquiryNotice['title']); ?></p>
                 <p><?php echo enquiryValue($enquiryNotice['message']); ?></p>
             </div>
             <button type="button" class="enquiry-status-popup-close" aria-label="Close popup" onclick="document.getElementById('enquiryStatusPopup').style.display='none'">&times;</button>

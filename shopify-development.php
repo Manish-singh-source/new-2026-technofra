@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Shopify Website Development Company in Mumbai | eCommerce Experts - Technofra';
-$metaKeywords = 'Shopify development company, Shopify development company in Mumbai, Shopify website development, Shopify experts India, Shopify development company in Mumbai for ecommerce brands, Shopify store setup services India, Shopify development company in Kandivali, shopify development services in mumbai, Shopify development companies, Shopify development services, Shopify website development, shopify web development company, Shopify agency, shopify web development agency, shopify website developer, Shopify ecommerce development';
+$metaDescription = 'Technofra is a Shopify website development company in Mumbai, building fast, custom eCommerce stores for modern businesses.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>
@@ -72,9 +72,9 @@ include __DIR__ . '/header.php';
             <div class="outer-box2">
                 <div class="ser-info14">
                     <div class="ser-card14-card1" style="background: linear-gradient(rgb(16 32 22) 0%, rgb(16 31 22) 100%);  border-radius: 28px; color: #fff;">
-                        <h4 class="title" style="color: #fff;">Shopify store solutions for
+                        <h2 class="title h4" style="color: #fff;">Shopify store solutions for
                             modern eCommerce growth.
-                        </h4>
+                        </h2>
                         <ul class="rating">
                             <li><i class="fa fa-star" style="color: #8bc34a;"></i></li>
                             <li><i class="fa fa-star" style="color: #8bc34a;"></i></li>
@@ -86,10 +86,10 @@ include __DIR__ . '/header.php';
                         <img src="assets/images/new/shopify1.png" alt="Shopify store growth solutions">
                     </div>
                     <div class="ser-card14-card2" style="background: #fbfcf8; border-radius: 28px; box-shadow: 0 10px 30px rgba(28, 53, 34, 0.08);">
-                        <h4 class="title">Custom Shopify websites built
+                        <h2 class="title h4">Custom Shopify websites built
                             for speed, sales, and smooth
                             shopping experiences.
-                        </h4>
+                        </h2>
                         <div class="ser-counter14">
                             <div class="counter-content14">
                                 <div class="counter-box14" style="color: #6aa84f;">
@@ -110,10 +110,10 @@ include __DIR__ . '/header.php';
                 <div class="ser-card14-card3" style="background: linear-gradient(180deg, #f6f9ef 0%, #eef5e4 100%); border-radius: 30px; box-shadow: 0 12px 40px rgba(38, 74, 42, 0.08);">
                     <img src="assets/images/new/shopify2.jpg" alt="Shopify website development in Mumbai">
                     <div class="ser-content14">
-                        <h4 class="title">Shopify Website
+                        <h2 class="title h4">Shopify Website
                             Development Company
                             in Mumbai
-                        </h4>
+                        </h2>
                         <p style="margin: 18px 0 20px; max-width: 420px;">Custom stores, theme setup,
                             conversion-focused design, app
                             integration, and growth-ready
@@ -131,7 +131,7 @@ include __DIR__ . '/header.php';
                 <div class="ser-info14 v2">
                     <div class="ser-card14-card4" style="background: #ffffff; border-radius: 28px; box-shadow: 0 10px 30px rgba(28, 53, 34, 0.08);">
                         <div class="ser-content14">
-                            <h4 class="title2">Why brands choose our Shopify team</h4>
+                            <h2 class="title2 h4">Why brands choose our Shopify team</h2>
                             <ul class="rating">
                                 <li><i class="fa fa-star" style="color: #8bc34a;"></i></li>
                                 <li><i class="fa fa-star" style="color: #8bc34a;"></i></li>
@@ -275,7 +275,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">01</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Discovery & Strategy</h4>
+                        <h3 class="title h4">Discovery & Strategy</h3>
                         <p>We understand your business,
                             products, audience, and goals to
                             plan the right Shopify store
@@ -287,7 +287,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">02</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Store Design & Setup</h4>
+                        <h3 class="title h4">Store Design & Setup</h3>
                         <p>We create a clean storefront,
                             organize collections, and set up
                             pages for a smooth shopping
@@ -299,7 +299,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">03</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Apps & Integrations</h4>
+                        <h3 class="title h4">Apps & Integrations</h3>
                         <p>We connect payment gateways,
                             shipping, WhatsApp, analytics,
                             and essential Shopify apps for
@@ -311,7 +311,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">04</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Launch & Growth</h4>
+                        <h3 class="title h4">Launch & Growth</h3>
                         <p>fter testing and launch, we
                             optimize speed, usability, and
                             conversions to help your store
@@ -323,7 +323,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">01</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Discovery & Strategy</h4>
+                        <h3 class="title h4">Discovery & Strategy</h3>
                         <p>We understand your business,
                             products, audience, and goals to
                             plan the right Shopify store
@@ -335,7 +335,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">02</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Store Design & Setup</h4>
+                        <h3 class="title h4">Store Design & Setup</h3>
                         <p>We create a clean storefront,
                             organize collections, and set up
                             pages for a smooth shopping
@@ -347,7 +347,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">03</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Apps & Integrations</h4>
+                        <h3 class="title h4">Apps & Integrations</h3>
                         <p>We connect payment gateways,
                             shipping, WhatsApp, analytics,
                             and essential Shopify apps for
@@ -359,7 +359,7 @@ include __DIR__ . '/header.php';
                     <div class="choose-block4">
                         <span class="sub-title">04</span>
                         <span class="step">[ step ]</span>
-                        <h4 class="title">Launch & Growth</h4>
+                        <h3 class="title h4">Launch & Growth</h3>
                         <p>fter testing and launch, we
                             optimize speed, usability, and
                             conversions to help your store
@@ -401,7 +401,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">WOTM</span>
-                            <h4 class="portfolio-card__title">WOTM</h4>
+                            <h3 class="portfolio-card__title h4">WOTM</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -413,7 +413,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">ISH</span>
-                            <h4 class="portfolio-card__title">ISH</h4>
+                            <h3 class="portfolio-card__title h4">ISH</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -425,7 +425,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">Link Promotions</span>
-                            <h4 class="portfolio-card__title">Link Promotions</h4>
+                            <h3 class="portfolio-card__title h4">Link Promotions</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -437,7 +437,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">Aeritx</span>
-                            <h4 class="portfolio-card__title">Aeritx</h4>
+                            <h3 class="portfolio-card__title h4">Aeritx</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -449,7 +449,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">Karan Telecom</span>
-                            <h4 class="portfolio-card__title">Karan Telecom</h4>
+                            <h3 class="portfolio-card__title h4">Karan Telecom</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -461,7 +461,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">Transhub Tech</span>
-                            <h4 class="portfolio-card__title">Transhub Tech</h4>
+                            <h3 class="portfolio-card__title h4">Transhub Tech</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -473,7 +473,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">Urban</span>
-                            <h4 class="portfolio-card__title">Urban</h4>
+                            <h3 class="portfolio-card__title h4">Urban</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -485,7 +485,7 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="portfolio-card__body">
                             <span class="portfolio-card__tag">VP & Son</span>
-                            <h4 class="portfolio-card__title">VP & Son</h4>
+                            <h3 class="portfolio-card__title h4">VP & Son</h3>
                             <a class="portfolio-card__link" href="#">View Store <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </article>
@@ -553,7 +553,7 @@ include __DIR__ . '/header.php';
                 <div class="shopify-reviewer">
                     <div class="shopify-avatar is-olive"><i class="fa fa-shopping-bag"></i></div>
                     <div>
-                        <h4>Olivia Parker</h4>
+                        <h3 class="h4">Olivia Parker</h3>
                         <span>Founder, Luxora Fashion</span>
                     </div>
                 </div>
@@ -573,7 +573,7 @@ include __DIR__ . '/header.php';
                     <div class="shopify-avatar is-sand"><i class="fa fa-shopping-bag"></i></div>
 
                     <div>
-                        <h4>James Carter</h4>
+                        <h3 class="h4">James Carter</h3>
                         <span>CEO, TechVibe Store</span>
                     </div>
                     <!-- <div class="shopify-badge"><i class="fa fa-desktop"></i></div> -->
@@ -593,7 +593,7 @@ include __DIR__ . '/header.php';
                 <div class="shopify-reviewer">
                     <div class="shopify-avatar is-green"><i class="fa fa-shopping-bag"></i></div>
                     <div>
-                        <h4>Sophia Bennett</h4>
+                        <h3 class="h4">Sophia Bennett</h3>
                         <span>Owner, Glow Beauty</span>
                     </div>
                     <!-- <div class="shopify-badge"><i class="fa fa-leaf"></i></div> -->
@@ -614,7 +614,7 @@ include __DIR__ . '/header.php';
                     <div class="shopify-avatar is-gold"><i class="fa fa-shopping-bag"></i></div>
 
                     <div>
-                        <h4>Daniel Brooks</h4>
+                        <h3 class="h4">Daniel Brooks</h3>
                         <span>Founder, Nestify Home</span>
                     </div>
                     <!-- <div class="shopify-badge"><i class="fa fa-home"></i></div> -->

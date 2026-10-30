@@ -1,8 +1,11 @@
 
 
-<?php include 'header.php'; ?>
+<?php
+$pageTitle = '404 - Page Not Found | Technofra';
+$metaDescription = 'The page you are looking for could not be found. Return to the Technofra homepage to continue browsing.';
+$canonicalUrl = false; // error page: no canonical
+include 'header.php'; ?>
 
-<title>404</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
 <script>
@@ -45,7 +48,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-5 col-md-6">
                         <div class="error-page-content-wrap">
-                            <h2 class="error-404 text-warning">404</h2>
+                            <p class="error-404 text-warning h2">404</p>
                             <h1 class="display-5 fw-bold">Page Not Found</h1>
                             <p class="lead">Efficiently reinvent next-generation scenarios without focused networks. Collaboratively productize superior technology before robust potentialities. </p>
 

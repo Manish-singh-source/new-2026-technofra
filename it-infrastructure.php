@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'IT Infrastructure || Technofra Website';
+$metaDescription = 'IT infrastructure services and solutions from Technofra, including cloud infrastructure, to power reliable business operations.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

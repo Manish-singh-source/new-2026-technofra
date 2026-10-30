@@ -1,6 +1,7 @@
 <?php
 session_start();
 $pageTitle = 'WordPress Development Services | Custom Websites & Solutions | Technofra';
+$metaDescription = 'Technofra is a WordPress development company building custom WordPress websites and solutions for scalable business growth.';
 $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 $bodyClass = 'hero-video-page';
@@ -766,15 +767,15 @@ include __DIR__ . '/header.php';
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <img src="assets/images/feature/multiple-device-accessibility.png" alt="Multiple device accessibility">
-                            <h4 class="title"></h4>
+                            <p class="title h4"></p>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <img src="assets/images/feature/seo-friendly.png" alt="SEO Friendly">
-                            <h4 class="title"></h4>
+                            <p class="title h4"></p>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                             <img src="assets/images/feature/low-investment.png" alt="AI Agency & Technology HTML Template">
-                            <h4 class="title"></h4>
+                            <p class="title h4"></p>
                         </div>
                     </div>
                 </div>
@@ -790,7 +791,7 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">
                                 <div class="feature-block8">
                                     <img src="assets/images/feature/feature8-1.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">01. Multiple device accessibility</h4>
+                                    <h3 class="title h4">01. Multiple device accessibility</h3>
                                     <p>WordPress is a powerful platform that simplifies creating responsive, mobile-optimized websites for all devices.</p>
                                 </div>
                             </a>
@@ -799,7 +800,7 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">
                                 <div class="feature-block8">
                                     <img src="assets/images/feature/feature8-2.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">02. SEO Friendly</h4>
+                                    <h3 class="title h4">02. SEO Friendly</h3>
                                     <p>Building a website is easier with WordPress, thanks to built-in SEO tools that help optimize content for keywords and phrases.</p>
                                 </div>
                             </a>
@@ -808,7 +809,7 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">
                                 <div class="feature-block8">
                                     <img src="assets/images/feature/feature8-3.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">03. Low Investment</h4>
+                                    <h3 class="title h4">03. Low Investment</h3>
                                     <p>WordPress offers a cost-effective solution for small businesses and helps large businesses save time for other priorities.</p>
                                 </div>
                             </a>
@@ -852,7 +853,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <div class="service-block19 m-0">
                     <img src="assets/images/service/ser19-4.png" alt="AI Agency & Technology HTML Template">
-                    <h4 class="title">Professional team & tech</h4>
+                    <h3 class="title h4">Professional team & tech</h3>
                 </div>
             </div>
             <div class="ser-info19">
@@ -890,7 +891,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <div class="col-lg-6">
                     <div class="title-content">
-                        <h4 class="title">Wordpress</h4>
+                        <h3 class="title h4">Wordpress</h3>
                         <p>We design, develop and optimize WordPress websites that are fast, secure, scalable and built to convert visitors into customers.</p>
                     </div>
                 </div>
@@ -922,7 +923,7 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-1.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">WordPress Website Design</h4>
+                                    <h3 class="title h4">WordPress Website Design</h3>
                                     <p>Modern UI/UX focused websites designed for speed, conversions and brand identity.
                                     </p>
                                 </div>
@@ -932,7 +933,7 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-2.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Custom WordPress Development</h4>
+                                    <h3 class="title h4">Custom WordPress Development</h3>
                                     <p>Custom themes, plugins and scalable solutions built specifically for your business.
                                     </p>
                                 </div>
@@ -942,7 +943,7 @@ include __DIR__ . '/header.php';
                             <a href="#" title="" class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-3.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Speed & SEO Optimization</h4>
+                                    <h3 class="title h4">Speed & SEO Optimization</h3>
                                     <p>Improve Core Web Vitals, Google rankings and loading speed for better conversions.
                                     </p>
                                 </div>
@@ -952,7 +953,7 @@ include __DIR__ . '/header.php';
                             <a href="#" class="nav-link" id="cont-tab" data-bs-toggle="tab" data-bs-target="#cont" role="tab" aria-controls="cont" aria-selected="false">
                                 <div class="feature-block">
                                     <img src="assets/images/feature/feature3-4.svg" alt="AI Agency & Technology HTML Template">
-                                    <h4 class="title">Maintenance & Support</h4>
+                                    <h3 class="title h4">Maintenance & Support</h3>
                                     <p>Regular updates, backups, malware protection and technical support.
                                     </p>
                                 </div>
@@ -1015,8 +1016,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>E-Commerce</span>
                             <div class="projec-content">
-                                <h4 class="title">WOTM
-                                </h4>
+                                <h3 class="title h4">WOTM
+                                </h3>
                                 <!-- <p>E-Commerce</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1028,8 +1029,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>Business Website</span>
                             <div class="projec-content">
-                                <h4 class="title">KARAN TELECOM
-                                </h4>
+                                <h3 class="title h4">KARAN TELECOM
+                                </h3>
                                 <!-- <p>Business Website</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1041,8 +1042,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>Business Websites</span>
                             <div class="projec-content">
-                                <h4 class="title">AERITX
-                                </h4>
+                                <h3 class="title h4">AERITX
+                                </h3>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1054,8 +1055,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>E-commerce</span>
                             <div class="projec-content">
-                                <h4 class="title">ISH
-                                </h4>
+                                <h3 class="title h4">ISH
+                                </h3>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1067,8 +1068,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>Booking Websites</span>
                             <div class="projec-content">
-                                <h4 class="title">URBAN SPORTS
-                                </h4>
+                                <h3 class="title h4">URBAN SPORTS
+                                </h3>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1080,8 +1081,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>Business Websites</span>
                             <div class="projec-content">
-                                <h4 class="title">VP & SONS
-                                </h4>
+                                <h3 class="title h4">VP & SONS
+                                </h3>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1093,8 +1094,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>Business Websites</span>
                             <div class="projec-content">
-                                <h4 class="title">LINK PROMOTIONS
-                                </h4>
+                                <h3 class="title h4">LINK PROMOTIONS
+                                </h3>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>
@@ -1106,8 +1107,8 @@ include __DIR__ . '/header.php';
                         <div class="empty">
                             <span>Business Websites</span>
                             <div class="projec-content">
-                                <h4 class="title">TRANSHUB TECH
-                                </h4>
+                                <h3 class="title h4">TRANSHUB TECH
+                                </h3>
                                 <!-- <p>The inputs are multiplied by their respective weights, summed up.</p> -->
                                 <a class='ser-btn3' href='portfolios.php' title>View more</a>
                             </div>

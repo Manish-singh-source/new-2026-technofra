@@ -1,7 +1,7 @@
 <?php
 session_start();
 $pageTitle = 'Technofra - Expert Web Design, Development & Digital Solutions';
-$metaKeywords = 'Website development company in Mumbai, Digital marketing agency in Mumbai, Web design company Mumbai, Website development company in Mumbai for business growth, Digital marketing agency in Mumbai for lead generation, Digital marketing company in Kandivali, Website development company in Kandivali';
+$metaDescription = 'Technofra is a Mumbai web design, app development and digital marketing company helping businesses grow with websites, SEO, PPC and branding.';
 $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 include __DIR__ . '/header.php'; ?>
@@ -1660,7 +1660,7 @@ Recomme
             </div>
         </div>
         <div class="col-xl-9">
-            <h2 class="mark-about-main title animated-heading" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h2>
+            <h1 class="mark-about-main title animated-heading h2" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h1>
             <div class="row align-items-start">
                 <div class="col-xl-5 col-lg-4 col-md-5"><div class="mark-about-image"><img src="assets/images/new/technofra-about.png" alt="Technofra team creating digital solutions"></div></div>
                 <div class="col-xl-7 col-lg-8 col-md-7"><div class="mark-about-details">
@@ -2146,18 +2146,18 @@ Recomme
     <div class="technofra-testimonial-rows">
         <div class="technofra-testimonial-row technofra-testimonial-row-left">
             <div class="technofra-testimonial-row-track">
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h4>Rohan Mehta</h4><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h4>Priya Shah</h4><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h4>Arjun Nair</h4><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h4>Neha Kapoor</h4><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h3 class="h4">Rohan Mehta</h3><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h3 class="h4">Priya Shah</h3><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h3 class="h4">Arjun Nair</h3><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h3 class="h4">Neha Kapoor</h3><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
             </div>
         </div>
         <div class="technofra-testimonial-row technofra-testimonial-row-right">
             <div class="technofra-testimonial-row-track">
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h4>Arjun Nair</h4><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h4>Neha Kapoor</h4><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h4>Rohan Mehta</h4><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h4>Priya Shah</h4><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h3 class="h4">Arjun Nair</h3><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h3 class="h4">Neha Kapoor</h3><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h3 class="h4">Rohan Mehta</h3><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h3 class="h4">Priya Shah</h3><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
             </div>
         </div>
     </div></section>
@@ -2194,7 +2194,7 @@ Recomme
                         <div class="industry-icon brand-blue">
                             <i class="fa-solid fa-industry" aria-hidden="true"></i>
                         </div>
-                        <h4>Manufacturing</h4>
+                        <h3 class="h4">Manufacturing</h3>
                         <p>Smart production, automation, and workflow optimization for modern factories.</p>
                     </div>
                 </div>
@@ -2203,7 +2203,7 @@ Recomme
                         <div class="industry-icon brand-red">
                             <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
                         </div>
-                        <h4>Healthcare</h4>
+                        <h3 class="h4">Healthcare</h3>
                         <p>Patient-first digital solutions, secure systems, and better care journeys.</p>
                     </div>
                 </div>
@@ -2212,7 +2212,7 @@ Recomme
                         <div class="industry-icon brand-orange">
                             <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
                         </div>
-                        <h4>Retail & E-commerce</h4>
+                        <h3 class="h4">Retail & E-commerce</h3>
                         <p>Conversion-focused storefronts, catalog systems, and customer engagement.</p>
                     </div>
                 </div>
@@ -2221,7 +2221,7 @@ Recomme
                         <div class="industry-icon brand-teal">
                             <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
                         </div>
-                        <h4>Logistics</h4>
+                        <h3 class="h4">Logistics</h3>
                         <p>Real-time tracking, route efficiency, and dependable delivery operations.</p>
                     </div>
                 </div>
@@ -2230,7 +2230,7 @@ Recomme
                         <div class="industry-icon brand-purple">
                             <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
                         </div>
-                        <h4>Education</h4>
+                        <h3 class="h4">Education</h3>
                         <p>Interactive platforms, learning experiences, and student engagement tools.</p>
                     </div>
                 </div>
@@ -2239,7 +2239,7 @@ Recomme
                         <div class="industry-icon brand-gold">
                             <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                         </div>
-                        <h4>Finance</h4>
+                        <h3 class="h4">Finance</h3>
                         <p>Secure digital finance workflows, analytics, and customer-friendly interfaces.</p>
                     </div>
                 </div>
@@ -2248,7 +2248,7 @@ Recomme
                         <div class="industry-icon brand-amber">
                             <i class="fa-solid fa-helmet-safety" aria-hidden="true"></i>
                         </div>
-                        <h4>Construction</h4>
+                        <h3 class="h4">Construction</h3>
                         <p>Project visibility, field coordination, and smarter site operations.</p>
                     </div>
                 </div>
@@ -2257,7 +2257,7 @@ Recomme
                         <div class="industry-icon brand-lime">
                             <i class="fa-solid fa-bolt" aria-hidden="true"></i>
                         </div>
-                        <h4>Energy</h4>
+                        <h3 class="h4">Energy</h3>
                         <p>Utilities, renewables, and performance dashboards built for growth.</p>
                     </div>
                 </div>

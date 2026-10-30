@@ -56,6 +56,7 @@ function jobApplicationValue($value)
 ?>
 <?php
 $pageTitle = 'Job Application Form - Technofra Careers';
+$metaDescription = 'Apply for a job at Technofra. Fill in the job application form and build your next career chapter with our Mumbai digital team.';
 $bodyClass = 'job-application-page';
 include __DIR__ . '/header.php'; ?>
 
@@ -406,7 +407,7 @@ include __DIR__ . '/header.php'; ?>
             <i class="fa <?php echo $formNotice['status'] === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation'; ?>"></i>
         </div>
         <div class="career-form-popup-content">
-            <h3><?php echo jobApplicationValue($formNotice['title']); ?></h3>
+            <p class="h3"><?php echo jobApplicationValue($formNotice['title']); ?></p>
             <p><?php echo jobApplicationValue($formNotice['message']); ?></p>
         </div>
         <button type="button" class="career-form-popup-close" aria-label="Close popup"

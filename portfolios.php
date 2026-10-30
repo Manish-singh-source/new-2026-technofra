@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Our Work | Technofra Portfolio - Web, App & Digital Projects';
+$metaDescription = 'Explore Technofra\'s portfolio of web, app and digital marketing projects delivered for clients across industries.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

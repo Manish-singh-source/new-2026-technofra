@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Ish International | Technofra';
+$metaDescription = 'Ish International project by Technofra: a website case study built for every screen.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 
@@ -255,7 +256,7 @@ $mobileTertiaryHeroImage = 'assets/images/new/ish7.png';
     <div class="container">
         <div class="wotm-branding-grid">
             <div class="wotm-branding-copy">
-                <h2>Brands That<br>Leave A <span>Mark.</span></h2>
+                <h1 class="h2">Brands That<br>Leave A <span>Mark.</span></h1>
                 <p>We craft unique brand identities that connect, communicate and create lasting impressions.</p>
                 <a class="wotm-branding-cta" href="https://www.ishinternational.in/" target="_blank">View Live Website <span>&rarr;</span></a>
             </div>

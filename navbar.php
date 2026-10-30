@@ -377,7 +377,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
             <img src="<?php echo htmlspecialchars($offcanvasLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
         </a>
         <div class="sidebar-menu">
-            <h4 class="title">Contact Us</h4>
+            <p class="title h4">Contact Us</p>
             <p>Office No. 501, 5th Floor, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai - 400067. Maharashtra - INDIA.</p>
             <a href="tel:+918080803374" title="" class="nmbr">+91 8080 80 3374</a>
             <a href="tel:+918080803375" title="" class="nmbr">+91 8080 80 3375</a>
@@ -474,7 +474,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                             <ul class="mega-sub-menu">
                                 <li class="mega-menu-column">
                                     <div class="mega-menu-group">
-                                        <h4 class="mega-menu-heading">Web & App Solutions</h4>
+                                        <p class="mega-menu-heading h4">Web & App Solutions</p>
                                         <ul class="mega-menu-list">
                                             <li><a href="web-design-and-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
                                             <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
@@ -487,7 +487,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                 </li>
                                 <li class="mega-menu-column">
                                     <div class="mega-menu-group">
-                                        <h4 class="mega-menu-heading">Online Marketing Services</h4>
+                                        <p class="mega-menu-heading h4">Online Marketing Services</p>
                                         <ul class="mega-menu-list">
                                             <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
                                             <li><a href='seo.php'><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
@@ -499,7 +499,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                 </li>
                                 <li class="mega-menu-column mega-menu-column-stack">
                                     <div class="mega-menu-group">
-                                        <h4 class="mega-menu-heading">Branding</h4>
+                                        <p class="mega-menu-heading h4">Branding</p>
                                         <ul class="mega-menu-list">
                                             <li><a href='https://markidentitiez.com/' target="_blank"><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
                                             <li><a href='ui-ux.php'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
@@ -507,7 +507,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                     </div>
                                     <div class="mega-sub-divider"></div>
                                     <div class="mega-menu-group">
-                                        <h4 class="mega-menu-heading">Hosting & IT Services</h4>
+                                        <p class="mega-menu-heading h4">Hosting & IT Services</p>
                                         <ul class="mega-menu-list">
                                             <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
                                             <li><a href="it-infrastructure.php"><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>
@@ -603,7 +603,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                     <ul class="mega-sub-menu">
                                         <li class="mega-menu-column">
                                             <div class="mega-menu-group">
-                                                <h4 class="mega-menu-heading">Web & App Solutions</h4>
+                                                <p class="mega-menu-heading h4">Web & App Solutions</p>
                                                 <ul class="mega-menu-list">
                                                     <li><a href="web-design-and-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-display"></i></span><span>Web Design & Development</span></a></li>
                                                     <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
@@ -616,7 +616,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                         </li>
                                         <li class="mega-menu-column">
                                             <div class="mega-menu-group">
-                                                <h4 class="mega-menu-heading">Online Marketing Services</h4>
+                                                <p class="mega-menu-heading h4">Online Marketing Services</p>
                                                 <ul class="mega-menu-list">
                                                     <li><a href='digital-marketing.php'><span class="mega-menu-icon"><i class="fa-solid fa-chart-line"></i></span><span>Digital Marketing</span></a></li>
                                                     <li><a href="seo.php"><span class="mega-menu-icon"><i class="fa-solid fa-magnifying-glass"></i></span><span>Search Engine Optimization (SEO)</span></a></li>
@@ -628,7 +628,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                         </li>
                                         <li class="mega-menu-column mega-menu-column-stack">
                                             <div class="mega-menu-group">
-                                                <h4 class="mega-menu-heading">Branding</h4>
+                                                <p class="mega-menu-heading h4">Branding</p>
                                                 <ul class="mega-menu-list">
                                                     <li><a href='https://markidentitiez.com/' target="_blank"><span class="mega-menu-icon"><i class="fa-solid fa-palette"></i></span><span>Branding</span></a></li>
                                                     <li><a href='ui-ux.php'><span class="mega-menu-icon"><i class="fa-solid fa-object-group"></i></span><span>UI/UX</span></a></li>
@@ -636,7 +636,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                             </div>
                                             <div class="mega-sub-divider"></div>
                                             <div class="mega-menu-group">
-                                                <h4 class="mega-menu-heading">Hosting & IT Services</h4>
+                                                <p class="mega-menu-heading h4">Hosting & IT Services</p>
                                                 <ul class="mega-menu-list">
                                                     <li><a href='domain-hosting.php'><span class="mega-menu-icon"><i class="fa-solid fa-server"></i></span><span>Domain & Hosting</span></a></li>
                                                     <li><a href="it-infrastructure.php"><span class="mega-menu-icon"><i class="fa-solid fa-cloud"></i></span><span>IT Infrastructure</span></a></li>

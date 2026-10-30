@@ -1,6 +1,7 @@
-<?php include 'header.php'; ?>
-<title>Cancellation Policy – Flexible & Transparent Process</title>
-<meta name="description" content="Our Cancellation Policy allows you to cancel orders easily. Enjoy a smooth process with clear guidelines and no hidden fees.">
+<?php
+$pageTitle = 'Cancellation Policy – Flexible & Transparent Process';
+$metaDescription = 'Our Cancellation Policy allows you to cancel orders easily. Enjoy a smooth process with clear guidelines and no hidden fees.';
+include 'header.php'; ?>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
@@ -14,7 +15,6 @@
 
     gtag('config', 'G-189WWHXLSS');
 </script>
-<title>Technofra</title>
 
 <style>
     html {

@@ -1,5 +1,6 @@
 <?php
 $pageTitle = 'Dynarx Technology (India) Ltd. | Specialty Chemicals, Iodine Compounds, Polymer Additives, Pharmaceutical Intermediates';
+$metaDescription = 'Dynarx Technology (India) Ltd. website by Technofra: a specialty chemicals, iodine compounds and polymer additives manufacturer.';
 include __DIR__ . '/header.php';
 ?>
 
@@ -622,7 +623,7 @@ include __DIR__ . '/header.php';
           <div class="dynarx-legend-item">
             <span class="dynarx-legend-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
             <div>
-              <h6>Mobile</h6>
+              <h3 class="h6">Mobile</h3>
               <p>Optimized for on-the-go experience</p>
             </div>
           </div>
@@ -631,7 +632,7 @@ include __DIR__ . '/header.php';
           <div class="dynarx-legend-item">
             <span class="dynarx-legend-icon"><i class="fa-solid fa-tablet-screen-button"></i></span>
             <div>
-              <h6>Tablet</h6>
+              <h3 class="h6">Tablet</h3>
               <p>Perfect balance of view and usability</p>
             </div>
           </div>
@@ -640,7 +641,7 @@ include __DIR__ . '/header.php';
           <div class="dynarx-legend-item">
             <span class="dynarx-legend-icon"><i class="fa-solid fa-display"></i></span>
             <div>
-              <h6>Desktop</h6>
+              <h3 class="h6">Desktop</h3>
               <p>Enhanced for productivity and clarity</p>
             </div>
           </div>

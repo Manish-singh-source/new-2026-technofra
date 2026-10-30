@@ -7,7 +7,41 @@
 <head>
     <?php
     $pageTitle = $pageTitle ?? 'Technofra Website';
-    $metaKeywords = $metaKeywords ?? '';
+    $metaDescription = trim($metaDescription ?? '');
+    if ($metaDescription === '') {
+        $metaDescription = 'Technofra is a Mumbai-based web design, app development and digital marketing company helping businesses grow online.';
+    }
+
+    // Canonical URL: set $canonicalUrl before including header.php to override,
+    // or set it to false to output no canonical tag (e.g. 404 page).
+    // Slugs below mirror sitemap.xml; every other page uses its own clean URL.
+    $siteUrl = 'https://technofra.com';
+    if (!isset($canonicalUrl)) {
+        $canonicalMap = [
+            'index.php'                      => '/',
+            'about-us.php'                   => '/about',
+            'ios-development.php'            => '/ios-app-development',
+            'domain-hosting.php'             => '/domain-hosting-services',
+            'shopify-development.php'        => '/shopify-website-development',
+            'social-media-marketing.php'     => '/smm',
+            'web-design-and-development.php'=> '/web-design',
+            'web&appmaintenance.php'         => '/website-maintenance',
+            'wordpress.php'                  => '/wordpress-development',
+            'portfolios.php'                 => '/portfolio',
+        ];
+        $scriptFile = basename($_SERVER['SCRIPT_NAME'] ?? '');
+        if (isset($canonicalMap[$scriptFile])) {
+            $canonicalPath = $canonicalMap[$scriptFile];
+        } else {
+            $canonicalPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+            $canonicalPath = preg_replace('#/index(\.php)?$#i', '/', $canonicalPath);
+            $canonicalPath = preg_replace('#\.php$#i', '', $canonicalPath);
+            if ($canonicalPath === '' || $canonicalPath[0] !== '/') {
+                $canonicalPath = '/' . $canonicalPath;
+            }
+        }
+        $canonicalUrl = $siteUrl . $canonicalPath;
+    }
     $bodyClass = $bodyClass ?? 'hero-video-page';
     ?>
     <meta charset="UTF-8">
@@ -16,8 +50,9 @@
     <?php if (!empty($baseHref)): ?>
     <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
-    <?php if ($metaKeywords !== ''): ?>
-    <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
 
     <!-- Preconnect for faster font loading (PUT THIS FIRST!) -->
