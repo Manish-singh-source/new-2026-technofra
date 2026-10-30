@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'SEO Services Company | Technofra';
-$metaDescription = 'Technofra\'s SEO services help you rank higher, get more organic traffic and grow your business, with technical and local SEO in Mumbai.';
+$metaKeywords = 'SEO company in Mumbai, SEO services Mumbai, Local SEO services, SEO company in Mumbai for small business, Affordable SEO services in Mumbai, SEO company in Kandivali, Local SEO services in Kandivali, Best SEO company in Mumbai, SEO services, SEO agency in mumbai, Local SEO services, best seo agency, SEO strategy, SEO professionals, Ecommerce SEO';
 include __DIR__ . '/header.php';
 
 ?>
@@ -2160,7 +2160,7 @@ include __DIR__ . '/header.php';
             <!-- LEFT COLUMN -->
             <div class="col-12 col-lg-6 ppc-left-col">
                 <span class="ppc-eyebrow">[ Why Choose Us ]</span>
-                <h2 class="ppc-heading h1">Unlock more organic growth with our SEO expertise</h2>
+                <h1 class="ppc-heading">Unlock more organic growth with our SEO expertise</h1>
                 <p class="ppc-desc">
                     We help businesses rank higher, attract the right audience, and turn organic traffic into measurable results. Our data-driven SEO strategies are designed to deliver long-term visibility, sustainable growth, and a strong online presence.
                 </p>

@@ -1,0 +1,60 @@
+[33mcommit 5ae93cd431a3507bf80e08c4ef4911f89160d2ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: pradnya <support@technofra.com>
+Date:   Fri Oct 30 12:18:43 2026 +0530
+
+    seo update 1
+
+ 404.php                        |  9 [32m++++[m[31m---[m
+ SEO-CHANGES.md                 | 15 [32m+++++++++++[m
+ aakriti-space.php              |  1 [32m+[m
+ about-us.php                   | 39 [32m+++++++++++++++[m[31m--------------[m
+ aeritx.php                     |  1 [32m+[m
+ android-app-development.php    | 10 [32m++++[m[31m----[m
+ brandbook.php                  | 10 [32m+++++[m[31m---[m
+ cancellation-policy.php        |  8 [32m+++[m[31m---[m
+ career.php                     | 13 [32m+++++[m[31m-----[m
+ contact.php                    | 11 [32m++++[m[31m----[m
+ content-marketing.php          |  3 [32m++[m[31m-[m
+ crm-copy.php                   | 13 [32m+++++[m[31m-----[m
+ crm-development.php            | 13 [32m+++++[m[31m-----[m
+ digital-marketing.php          |  2 [32m+[m[31m-[m
+ domain-hosting.php             |  1 [32m+[m
+ dynarx.php                     |  7 [32m+++[m[31m---[m
+ enquirynow.php                 |  3 [32m++[m[31m-[m
+ footer.php                     | 12 [32m++++[m[31m-----[m
+ frago.php                      |  1 [32m+[m
+ frizzcool.php                  |  1 [32m+[m
+ header.php                     | 41 [32m+++++++++++++++++++++++++++[m[31m---[m
+ index.php                      | 36 [32m+++++++++++++[m[31m-------------[m
+ ios-development.php            |  2 [32m+[m[31m-[m
+ ish.php                        |  3 [32m++[m[31m-[m
+ it-infrastructure.php          |  1 [32m+[m
+ jaijagannath.php               |  1 [32m+[m
+ job-application.php            |  3 [32m++[m[31m-[m
+ lifelike.php                   |  5 [32m++[m[31m--[m
+ navbar.php                     | 18 [32m++++++[m[31m-------[m
+ our-team.php                   | 13 [32m+++++[m[31m-----[m
+ portfolios.php                 |  1 [32m+[m
+ ppc.php                        |  3 [32m++[m[31m-[m
+ press-release.php              | 16 [32m++++++[m[31m------[m
+ privacy-policy.php             |  6 [32m+++[m[31m--[m
+ refund-policy.php              |  8 [32m+++[m[31m---[m
+ return-policy.php              |  8 [32m+++[m[31m---[m
+ sapphire.php                   |  1 [32m+[m
+ seo.php                        |  4 [32m+[m[31m--[m
+ shivam.php                     |  3 [32m++[m[31m-[m
+ shopify-development.php        | 56 [32m++++++++++++++++++++[m[31m---------------------[m
+ sitemap.html                   |  2 [32m+[m[31m-[m
+ sitemap2.html                  |  2 [32m+[m[31m-[m
+ social-media-marketing.php     |  2 [32m+[m[31m-[m
+ sukanya.php                    |  1 [32m+[m
+ terms-and-conditions.php       |  6 [32m+++[m[31m--[m
+ texon.php                      |  1 [32m+[m
+ ui-ux.php                      | 17 [32m+++++++[m[31m------[m
+ vkpaints.php                   |  1 [32m+[m
+ web&appmaintenance.php         | 31 [32m++++++++++++[m[31m-----------[m
+ web-design-and-development.php |  4 [32m+[m[31m--[m
+ wordpress.php                  | 57 [32m+++++++++++++++++++++[m[31m---------------------[m
+ wotm.php                       |  1 [32m+[m
+ wrappackncaryy.php             |  1 [32m+[m
+ 53 files changed, 310 insertions(+), 218 deletions(-)

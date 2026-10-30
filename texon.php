@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Texon Corporation Case Study | Technofra';
-$metaDescription = 'Texon Corporation case study: Technofra delivered a precision measurement website and a CRM for smarter operations.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Digital Marketing Company in Mumbai | SEO, PPC & Online Marketing - Technofra';
-$metaDescription = 'Technofra is a digital marketing company in Mumbai offering SEO, PPC, social media and online marketing services to grow your brand and leads.';
+$metaKeywords = 'Digital marketing Company in Mumbai, Digital marketing services Mumbai, Performance marketing Company, Digital marketing company in Mumbai for small business, Lead generation digital marketing company Mumbai, Digital marketing company in Kandivali, Digital marketing, Digital marketing company, Digital marketing agency, Digital marketing services, Online marketing agency, Internet marketing company';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

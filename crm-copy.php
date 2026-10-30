@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'CRM Development || Technofra Website';
-$metaDescription = 'Custom CRM development company in Mumbai. Technofra builds CRM software that centralizes customer data and supports business growth.';
 include __DIR__ . '/header.php';
 ?>
 
@@ -2843,7 +2842,7 @@ include __DIR__ . '/header.php';
                         </div>
 
                         <div>
-                            <h3 class="h4">Centralized Customer Data</h3>
+                            <h4>Centralized Customer Data</h4>
                             <p>
                                 Keep all customer information organized and
                                 accessible in one place.
@@ -2860,7 +2859,7 @@ include __DIR__ . '/header.php';
                         </div>
 
                         <div>
-                            <h3 class="h4">Smarter Sales Pipeline</h3>
+                            <h4>Smarter Sales Pipeline</h4>
                             <p>
                                 Track leads, opportunities, and deals across every
                                 stage of your sales funnel.
@@ -2877,7 +2876,7 @@ include __DIR__ . '/header.php';
                         </div>
 
                         <div>
-                            <h3 class="h4">Automation & Productivity</h3>
+                            <h4>Automation & Productivity</h4>
                             <p>
                                 Automate repetitive tasks and workflows to save
                                 time and reduce manual effort.
@@ -2894,7 +2893,7 @@ include __DIR__ . '/header.php';
                         </div>
 
                         <div>
-                            <h3 class="h4">Real-Time Insights</h3>
+                            <h4>Real-Time Insights</h4>
                             <p>
                                 Get real-time reports and analytics to make better
                                 decisions and drive growth.
@@ -3004,9 +3003,9 @@ include __DIR__ . '/header.php';
 
                         <div>
 
-                            <h3 class="h4">
+                            <h4>
                                 Custom CRM Solutions Built for Growth
-                            </h3>
+                            </h4>
 
                             <p>
                                 We build secure, scalable and user-friendly CRM

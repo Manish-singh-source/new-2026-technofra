@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'UI/UX Design Services | Seamless & Engaging Experiences | Technofra';
-$metaDescription = 'Technofra\'s UI/UX design services create seamless, engaging digital experiences for websites and apps using modern design tools.';
 $bodyClass = 'hero-video-page tf-ios-page';
 include __DIR__ . '/header.php';
 ?>
@@ -3276,7 +3275,7 @@ include __DIR__ . '/header.php';
                 </div>
 
                 <div class="bento-tile bento-agency">
-                    <h2 class="agency-title mb-0 h3">UI/UX</h2>
+                    <h3 class="agency-title mb-0">UI/UX</h3>
                     <p class="p-large agency-sub mb-0">Design Agency</p>
                     <div class="dot-pattern">
                         <span></span><span></span><span></span><span></span><span></span> <span></span><span></span><span></span><span></span><span></span> <span></span><span></span><span></span><span></span><span></span>
@@ -3501,7 +3500,7 @@ include __DIR__ . '/header.php';
                             <div class="ed-feature-icon">
                                 <i class="fa-solid fa-pen-nib"></i>
                             </div>
-                            <h3 class="ed-feature-title h5">UI Design</h3>
+                            <h5 class="ed-feature-title">UI Design</h5>
                             <p class="p-small ed-feature-text">Beautiful interfaces that enhance the overall user experience.</p>
                         </div>
                     </div>
@@ -3511,7 +3510,7 @@ include __DIR__ . '/header.php';
                             <div class="ed-feature-icon">
                                 <i class="fa-regular fa-user"></i>
                             </div>
-                            <h3 class="ed-feature-title h5">UX Strategy</h3>
+                            <h5 class="ed-feature-title">UX Strategy</h5>
                             <p class="p-small ed-feature-text">Thoughtful user journeys that improve interaction and engagement.</p>
                         </div>
                     </div>
@@ -3521,7 +3520,7 @@ include __DIR__ . '/header.php';
                             <div class="ed-feature-icon">
                                 <i class="fa-regular fa-window-restore"></i>
                             </div>
-                            <h3 class="ed-feature-title h5">Prototype &amp; Testing</h3>
+                            <h5 class="ed-feature-title">Prototype &amp; Testing</h5>
                             <p class="p-small ed-feature-text">Interactive prototypes and usability checks before development.</p>
                         </div>
                     </div>
@@ -3566,7 +3565,7 @@ include __DIR__ . '/header.php';
                     <div class="wc-icon-wrap">
                         <i class="fa-regular fa-face-smile-beam"></i>
                     </div>
-                    <h3 class="wc-card-title h5">Client Satisfaction</h3>
+                    <h5 class="wc-card-title">Client Satisfaction</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
                         We pay meticulous attention to each and every aspect of design,
@@ -3582,7 +3581,7 @@ include __DIR__ . '/header.php';
                     <div class="wc-icon-wrap">
                         <i class="fa-solid fa-sliders"></i>
                     </div>
-                    <h3 class="wc-card-title h5">Customization</h3>
+                    <h5 class="wc-card-title">Customization</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
                         We understand that each and every business is unique, and we
@@ -3598,7 +3597,7 @@ include __DIR__ . '/header.php';
                     <div class="wc-icon-wrap">
                         <i class="fa-regular fa-clock"></i>
                     </div>
-                    <h3 class="wc-card-title h5">Timely Delivery</h3>
+                    <h5 class="wc-card-title">Timely Delivery</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
                         We value your time and strive to deliver projects within the
@@ -3614,7 +3613,7 @@ include __DIR__ . '/header.php';
                     <div class="wc-icon-wrap">
                         <i class="fa-solid fa-medal"></i>
                     </div>
-                    <h3 class="wc-card-title h5">Client Satisfaction</h3>
+                    <h5 class="wc-card-title">Client Satisfaction</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
                         Your satisfaction is our top priority, and we work closely with

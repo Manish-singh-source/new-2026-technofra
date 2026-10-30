@@ -1,7 +1,4 @@
-<?php
-$pageTitle = 'Terms and Conditions | Technofra';
-$metaDescription = 'Read the Technofra Terms and Conditions that apply to the use of our website and services.';
-include 'header.php'; ?>
+<?php include 'header.php'; ?>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
 <script>
@@ -20,6 +17,7 @@ include 'header.php'; ?>
     })(window, document, "clarity", "script", "mxzdn16ndk");
 </script>
 <!--END MS Clarity -->
+<title>Technofra</title>
 
 <style>
     html {

@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Frizzcool Portfolio | Technofra';
-$metaDescription = 'Frizzcool website portfolio by Technofra: a modern industrial brand website built to look and perform well on every screen.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

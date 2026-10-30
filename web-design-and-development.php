@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Website Design & Development Company in Mumbai | Technofra';
-$metaDescription = 'Technofra is a website design and development company in Mumbai creating custom, responsive websites that grow your business.';
+$metaKeywords = 'Website development company in Mumbai, Website development services in Mumbai, Website design & development company, Custom website development Mumbai, Affordable website development services Mumbai, Website development company in Mumbai for small business, Website development company in Kandivali, Internet Marketing Services, Website Development Company, Website Development Services, Website Design & Development, Website Development Agency, Building website for business';
 include __DIR__ . '/header.php';
 
 ?>
@@ -1536,7 +1536,7 @@ include __DIR__ . '/header.php';
         <div class="container2">
             <div class="banner-content">
                 <span class="sub-title" id="animatedHeading"> Designing Digital Experiences That Drive Growth</span>
-                <h2 class="title2 h1">DIGITAL EXPERIENCE</h2>
+                <h1 class="title2">DIGITAL EXPERIENCE</h1>
                 <a href="javascript:void(0)" class="video-popup" data-video="https://www.youtube.com/embed/aircAruvnKk">
                     <i class="fa fa-play"></i> Watch Video
                 </a>

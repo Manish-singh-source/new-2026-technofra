@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Shivam Industries';
-$metaDescription = 'Shivam Industries case study: Technofra built a website and smart CMS for this trusted chemical solutions company, active since 2002.';
 include __DIR__ . '/header.php';
 ?>
 
@@ -2279,7 +2278,7 @@ include __DIR__ . '/header.php';
         <div class="col-lg-6">
           <span class="svmcms-eyebrow">POWERFUL. SECURE. SCALABLE.</span>
           <span class="svmcms-eyebrow-rule"></span>
-          <h2 class="svmcms-h1 h1">Smart CMS Solutions for <span class="svmcms-accent">Shivam Industries</span></h2>
+          <h1 class="svmcms-h1">Smart CMS Solutions for <span class="svmcms-accent">Shivam Industries</span></h1>
           <p class="svmcms-lead">We design secure, scalable CMS websites enabling Shivam Industries to manage content easily, improve visibility, and support business growth.</p>
           <a href="enquirynow.php" class="svmcms-btn">
             Enquire Now

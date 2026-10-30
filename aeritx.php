@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Aeritx | Technofra';
-$metaDescription = 'Aeritx project by Technofra: smart tools for daily operations, delivered with a downloadable application.';
 include __DIR__ . '/header.php';
 ?>
 

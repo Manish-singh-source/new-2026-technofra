@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Sapphire || Technofra Website';
-$metaDescription = 'Sapphire Accessories brand identity and website project by Technofra.';
 include __DIR__ . '/header.php';
 ?>
 

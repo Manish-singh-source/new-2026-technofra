@@ -1,7 +1,4 @@
-<?php
-$pageTitle = 'The Brands That Trust Us | Technofra';
-$metaDescription = 'See the brands that trust Technofra for websites, apps, branding and digital marketing across industries.';
-include 'header.php'; ?>
+﻿<?php include 'header.php'; ?>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
 <script>
@@ -27,6 +24,7 @@ include 'header.php'; ?>
         y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "mxzdn16ndk");
 </script>
+<title>Technofra</title>
 
 <style>
     .hero-contact-info {
@@ -321,10 +319,10 @@ include 'header.php'; ?>
 
         <!-- RIGHT: Heading and logos -->
         <div class="col-lg-5 brandbook-logos-column">
-            <h1 class="heding h4">
+            <h4 class="heding">
                 The Brands<br>
                 <span class="heding1">That Trust Us.</span>
-            </h1>
+            </h4>
 
             <div class="row logo-grid">
 

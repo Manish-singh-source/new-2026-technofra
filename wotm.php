@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'WOTM Case Study | Technofra';
-$metaDescription = 'WOTM case study by Technofra: selected work and brand experiences for We Own The Move.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

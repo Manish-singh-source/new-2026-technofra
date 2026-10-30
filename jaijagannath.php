@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Shivam Industries';
-$metaDescription = 'Jai Jagannath Puri website project by Technofra: empowering devotion and enriching lives through a modern web presence.';
 include __DIR__ . '/header.php';
 ?>
 

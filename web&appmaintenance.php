@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Maintenance Services';
-$metaDescription = 'Website and app maintenance from Technofra keeps your digital presence secure, fast and up to date with proactive monitoring.';
 include __DIR__ . '/header.php';
 ?>
 
@@ -2050,7 +2049,7 @@ Mobile
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
 
-                    <h3 class="h4">Proactive Monitoring</h3>
+                    <h4>Proactive Monitoring</h4>
 
                     <p>
                         We monitor your website and apps 24/7 to prevent
@@ -2068,7 +2067,7 @@ Mobile
                         <i class="fa-solid fa-arrows-rotate"></i>
                     </div>
 
-                    <h3 class="h4">Timely Updates</h3>
+                    <h4>Timely Updates</h4>
 
                     <p>
                         We keep your CMS, plugins, themes and applications
@@ -2086,7 +2085,7 @@ Mobile
                         <i class="fa-solid fa-gauge-high"></i>
                     </div>
 
-                    <h3 class="h4">Performance Optimization</h3>
+                    <h4>Performance Optimization</h4>
 
                     <p>
                         Faster loading speed, optimized databases and better
@@ -2104,7 +2103,7 @@ Mobile
                         <i class="fa-solid fa-cloud-arrow-up"></i>
                     </div>
 
-                    <h3 class="h4">Regular Backups</h3>
+                    <h4>Regular Backups</h4>
 
                     <p>
                         Automated daily backups keep your valuable business
@@ -2122,7 +2121,7 @@ Mobile
                         <i class="fa-solid fa-headset"></i>
                     </div>
 
-                    <h3 class="h4">Expert Support</h3>
+                    <h4>Expert Support</h4>
 
                     <p>
                         Get quick assistance from experienced maintenance
@@ -2177,7 +2176,7 @@ Mobile
 
                     <div class="tf-service-content">
 
-                        <h3 class="h4">Website Updates</h3>
+                        <h4>Website Updates</h4>
 
                         <p>
                             Keep your website updated with the latest features,
@@ -2202,7 +2201,7 @@ Mobile
 
                     <div class="tf-service-content">
 
-                        <h3 class="h4">Bug Fixing</h3>
+                        <h4>Bug Fixing</h4>
 
                         <p>
                             Identify and resolve bugs, broken layouts,
@@ -2227,7 +2226,7 @@ Mobile
 
                     <div class="tf-service-content">
 
-                        <h3 class="h4">Security Management</h3>
+                        <h4>Security Management</h4>
 
                         <p>
                             Regular security audits, malware scanning,
@@ -2252,7 +2251,7 @@ Mobile
 
                     <div class="tf-service-content">
 
-                        <h3 class="h4">Backup & Recovery</h3>
+                        <h4>Backup & Recovery</h4>
 
                         <p>
                             Automated cloud backups with instant recovery to
@@ -2277,7 +2276,7 @@ Mobile
 
                     <div class="tf-service-content">
 
-                        <h3 class="h4">Performance Optimization</h3>
+                        <h4>Performance Optimization</h4>
 
                         <p>
                             Improve loading speed, optimize databases,
@@ -2302,7 +2301,7 @@ Mobile
 
                     <div class="tf-service-content">
 
-                        <h3 class="h4">Content Updates</h3>
+                        <h4>Content Updates</h4>
 
                         <p>
                             Update text, images, banners, blogs, and business
@@ -2364,7 +2363,7 @@ Mobile
 
                     </div>
 
-                    <h3 class="h4">1. Analyze</h3>
+                    <h4>1. Analyze</h4>
 
                     <p>
                         We analyze your website or application and understand
@@ -2389,7 +2388,7 @@ Mobile
 
                     </div>
 
-                    <h3 class="h4">2. Monitor</h3>
+                    <h4>2. Monitor</h4>
 
                     <p>
                         Continuous monitoring of uptime, security,
@@ -2414,7 +2413,7 @@ Mobile
 
                     </div>
 
-                    <h3 class="h4">3. Maintain</h3>
+                    <h4>3. Maintain</h4>
 
                     <p>
                         Regular updates, bug fixes, backups and
@@ -2439,7 +2438,7 @@ Mobile
 
                     </div>
 
-                    <h3 class="h4">4. Support</h3>
+                    <h4>4. Support</h4>
 
                     <p>
                         Dedicated experts are always available whenever

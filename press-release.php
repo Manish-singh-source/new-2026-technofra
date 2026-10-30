@@ -1,7 +1,4 @@
-<?php
-$pageTitle = 'Press Release | Technofra';
-$metaDescription = 'Read Technofra press releases on digital transformation, branding strategy and company news.';
-include 'header.php'; ?>
+<?php include 'header.php'; ?>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-189WWHXLSS"></script>
 <script>
@@ -28,6 +25,7 @@ include 'header.php'; ?>
     })(window, document, "clarity", "script", "mxzdn16ndk");
 </script>
 <!--END MS Clarity -->
+<title>Technofra</title>
 
 <style>
     .black {
@@ -140,7 +138,7 @@ include 'header.php'; ?>
                         </a>
                     </div>
                     <div class="" style="padding: 15px; color: white;">
-                        <h2 class="card-title h5">Technofra Leads the Way in Digital Transformation with Comprehensive Web, Mobile, and Branding Solutions for Growing Businesses</h2>
+                        <h5 class="card-title">Technofra Leads the Way in Digital Transformation with Comprehensive Web, Mobile, and Branding Solutions for Growing Businesses</h5>
                         <span class="badge bg-primary">Open PR</span>
                         <p class="card-text mt-2 mb-2">Technofra, one of the leading web designing and development companies, is empowering businesses to strengthen their digital presence through its comprehensive portfolio of technology and branding solutions.</p>
                         <hr style="border-color: #555;">
@@ -162,7 +160,7 @@ include 'header.php'; ?>
                         </a>
                     </div>
                     <div class="" style="padding: 15px; color: white;">
-                        <h2 class="card-title h5">Technofra’s Branding Process: Strategy, Design & Digital Execution</h2>
+                        <h5 class="card-title">Technofra’s Branding Process: Strategy, Design & Digital Execution</h5>
                         <span class="badge bg-success">Medium</span>
                         <p class="card-text mt-2 mb-2">In today’s competitive digital economy, branding is no longer just about a logo or color palette — it’s about creating a meaningful identity that connects with customers and builds long-term trust.</p>
                         <hr style="border-color: #555;">
@@ -186,7 +184,7 @@ include 'header.php'; ?>
                         </a>
                     </div>
                     <div class="" style="padding: 15px; color: white;">
-                        <h2 class="card-title h5">Technofra Business Profile</h2>
+                        <h5 class="card-title">Technofra Business Profile</h5>
                         <span class="badge bg-success">BIZ</span>
                         <p class="card-text mt-2 mb-2">About
                             We are one of the leading web designing and development companies! We take pride in offering exceptional services to help businesses thrive in the digital world. Our skilled professionals are dedicated to delivering top-notch solutions.</p>
@@ -210,7 +208,7 @@ include 'header.php'; ?>
                         </a>
                     </div>
                     <div class="" style="padding: 15px; color: white;">
-                        <h2 class="card-title h5">Technofra Highlights the Growing Importance of Social Media for Business Growth and Brand Visibility</h2>
+                        <h5 class="card-title">Technofra Highlights the Growing Importance of Social Media for Business Growth and Brand Visibility</h5>
                         <span class="badge bg-success">Issue Wire</span>
                         <p class="card-text mt-2 mb-2">I Mumbai, Maharashtra (Issuewire.com)  - In an era where digital interaction defines consumer behavior, social media has emerged as one of the most powerful tools for business growth, communication, and brand building.</p>
                         <hr style="border-color: #555;">
@@ -232,7 +230,7 @@ include 'header.php'; ?>
                         </a>
                     </div>
                     <div class="" style="padding: 15px; color: white;">
-                        <h2 class="card-title h5">How Technofra Helps Brands Go Online Successfully</h2>
+                        <h5 class="card-title">How Technofra Helps Brands Go Online Successfully</h5>
                         <span class="badge bg-success">PR Free</span>
                         <p class="card-text mt-2 mb-2">Technofra helps traditional businesses move from physical stores to online platforms by building fast, secure, conversion-focused e-commerce websites, delivering end-to-end digital solutions that drive growth, visibility, and long-term success today!</p>
                         <hr style="border-color: #555;">

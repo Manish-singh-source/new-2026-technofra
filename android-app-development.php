@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Mobile App Development Company in Mumbai | Android & iOS Services - Technofra';
-$metaDescription = 'Technofra builds high-performance Android apps for businesses in Mumbai, with custom design, development, testing and ongoing support.';
+$metaKeywords = 'Mobile app development company in Mumbai, Android app development, iOS app development, Mobile app development company in Mumbai for startups, Custom app development services India, Mobile app development company in Kandivali, Mobile app development company, Mobile app development services, Android app development, Ios app development, app development services, Mobile app development agency';
 $bodyClass = 'hero-video-page tf-ios-page';
 
 include __DIR__ . '/header.php';
@@ -1217,7 +1217,7 @@ include __DIR__ . '/header.php';
                 <div class="shopify-reviewer">
                     <div class="shopify-avatar is-olive"><i class="fa fa-shopping-bag"></i></div>
                     <div>
-                        <h3 class="h4">Olivia Parker</h3>
+                        <h4>Olivia Parker</h4>
                         <span>Founder, Luxora Fashion</span>
                     </div>
                 </div>
@@ -1237,7 +1237,7 @@ include __DIR__ . '/header.php';
                     <div class="shopify-avatar is-sand"><i class="fa fa-shopping-bag"></i></div>
 
                     <div>
-                        <h3 class="h4">James Carter</h3>
+                        <h4>James Carter</h4>
                         <span>CEO, TechVibe Store</span>
                     </div>
                     <!-- <div class="shopify-badge"><i class="fa fa-desktop"></i></div> -->
@@ -1259,7 +1259,7 @@ include __DIR__ . '/header.php';
                 <div class="shopify-reviewer">
                     <div class="shopify-avatar is-green"><i class="fa fa-shopping-bag"></i></div>
                     <div>
-                        <h3 class="h4">Sophia Bennett</h3>
+                        <h4>Sophia Bennett</h4>
                         <span>Owner, Glow Beauty</span>
                     </div>
                     <!-- <div class="shopify-badge"><i class="fa fa-leaf"></i></div> -->
@@ -1281,7 +1281,7 @@ include __DIR__ . '/header.php';
                     <div class="shopify-avatar is-gold"><i class="fa fa-shopping-bag"></i></div>
 
                     <div>
-                        <h3 class="h4">Daniel Brooks</h3>
+                        <h4>Daniel Brooks</h4>
                         <span>Founder, Nestify Home</span>
                     </div>
                     <!-- <div class="shopify-badge"><i class="fa fa-home"></i></div> -->

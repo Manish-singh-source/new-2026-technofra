@@ -2,7 +2,6 @@
 session_start();
 
 $pageTitle = 'Contact Technofra - Let\'s Build Something Amazing';
-$metaDescription = 'Contact Technofra for web design, app development and digital marketing. Visit our Kandivali, Mumbai office or call +91 8080 80 3374.';
 $bodyClass = 'contact-page';
 
 $defaultContactFormData = [
@@ -139,7 +138,7 @@ include __DIR__ . '/header.php';
                 <i class="fa <?php echo $contactFormNotice['status'] === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'; ?>"></i>
             </div>
             <div class="contact-status-popup-content">
-                <p class="h3"><?php echo contactFormValue($contactFormNotice['title']); ?></p>
+                <h3><?php echo contactFormValue($contactFormNotice['title']); ?></h3>
                 <p><?php echo contactFormValue($contactFormNotice['message']); ?></p>
             </div>
             <button type="button" class="contact-status-popup-close" aria-label="Close popup" onclick="document.getElementById('contactStatusPopup').style.display='none'">&times;</button>
@@ -172,11 +171,11 @@ include __DIR__ . '/header.php';
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="contact-info">
                                 <div class="call-center2">
-                                    <h3 class="title h4">Visit Us</h3>
+                                    <h4 class="title">Visit Us</h4>
                                     <p>Office No. 501, 5th Floor, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai - 400067. Maharashtra - INDIA.</p>
                                 </div>
                                 <div class="call-center2 mb-0">
-                                    <h3 class="title h4">Email</h3>
+                                    <h4 class="title">Email</h4>
                                     <a href="mailto:info@technofra.com" class="gmail">info@technofra.com</a>
                                     <a href="mailto:support@technofra.com" class="gmail">support@technofra.com</a>
                                 </div>
@@ -185,12 +184,12 @@ include __DIR__ . '/header.php';
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="contact-info">
                                 <div class="call-center2">
-                                    <h3 class="title h4">Call Us</h3>
+                                    <h4 class="title">Call Us</h4>
                                     <a href="tel:+918080803374" class="nmbr">+91 8080 80 3374</a>
                                     <a href="tel:+918080803375" class="nmbr">+91 8080 80 3375</a>
                                 </div>
                                 <div class="call-center2 mb-0">
-                                    <h3 class="title h4">Office Hours</h3>
+                                    <h4 class="title">Office Hours</h4>
                                     <p>Monday - Saturday<br>09:00 AM - 06:00 PM</p>
                                 </div>
                             </div>

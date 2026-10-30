@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'About Technofra - Leading Web & Digital Solutions Provider';
-$metaDescription = 'Learn about Technofra, a Mumbai-based web, app and digital marketing company with 14+ years of experience building digital growth for businesses.';
 include __DIR__ . '/header.php'; ?>
 <style>
     .counter-box8 .counter-number,
@@ -1176,12 +1175,12 @@ include __DIR__ . '/header.php'; ?>
                 <div class="ser-info20">
                     <div class="ser-card20_card1">
                         <img src="assets/images/icon/icon14-1.svg" alt="AI Agency & Technology HTML Template">
-                        <h2 class="title h4">Innovative&nbsp;Solutions</h2>
+                        <h4 class="title">Innovative&nbsp;Solutions</h4>
                         <p>We deliver innovative solutions that combine creativity, technology, and strategy to help businesses grow, adapt, and succeed in a competitive market.</p>
                     </div>
                     <div class="ser-card20_card2">
                         <img src="assets/images/icon/icon14-2.svg" alt="AI Agency & Technology HTML Template">
-                        <h2 class="title h4">Business Growth</h2>
+                        <h4 class="title">Business Growth</h4>
                         <span>Helping brands adapt, scale, and succeed digitally</span>
                     </div>
                 </div>
@@ -1190,14 +1189,14 @@ include __DIR__ . '/header.php'; ?>
                 <div class="ser-info20">
                     <div class="ser-card20_card3">
                         <img src="assets/images/service/ser20-1.png" alt="AI Agency & Technology HTML Template">
-                        <h2 class="title h4">Professional Team
-                        </h2>
+                        <h4 class="title">Professional Team
+                        </h4>
                         <p>Our professional team combines creativity, expertise, and technology to deliver reliable digital solutions that help businesses achieve long-term growth.</p>
                     </div>
                     <div class="ser-card20_card4">
                         <img src="assets/images/service/ser20-2.png" alt="AI Agency & Technology HTML Template">
                         <div class="title">
-                            <h2 class="h4">24/7 Support</h2>
+                            <h4>24/7 Support</h4>
                             <p>Our 24/7 support ensures reliable assistance whenever you need it, helping your business run smoothly with quick solutions and dedicated service.</p>
                         </div>
                     </div>
@@ -1242,7 +1241,7 @@ include __DIR__ . '/header.php'; ?>
         <div class="row">
             <div class="col-lg-6">
                 <div class="about-content9">
-                    <h3 class="title h4">14+ Years</h3>
+                    <h4 class="title">14+ Years</h4>
                 </div>
                 <!-- <a class='mt-5 ibt-btn ibt-btn-secondary' href='index14.html' target='_blank' title>
                             <span>Download Company Profile</span>
@@ -1285,7 +1284,7 @@ include __DIR__ . '/header.php'; ?>
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Foundation</span>
-                    <h3 class="h4">November 28th</h3>
+                    <h4>November 28th</h4>
                     <p>Founded Technofra, specializing in branding and web development for growing businesses.</p>
                 </div>
                 <div class="journey-year">2012</div>
@@ -1296,7 +1295,7 @@ include __DIR__ . '/header.php'; ?>
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Expansion</span>
-                    <h3 class="h4">January</h3>
+                    <h4>January</h4>
                     <p>Expanded into website design, branding, and user-focused digital experiences.</p>
                 </div>
                 <div class="journey-year">2016</div>
@@ -1307,7 +1306,7 @@ include __DIR__ . '/header.php'; ?>
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Innovation</span>
-                    <h3 class="h4">April</h3>
+                    <h4>April</h4>
                     <p>Started developing mobile applications and API-driven solutions for modern businesses.</p>
                 </div>
                 <div class="journey-year">2020</div>
@@ -1318,7 +1317,7 @@ include __DIR__ . '/header.php'; ?>
                 </div>
                 <div class="journey-content">
                     <span class="journey-tag">Growth</span>
-                    <h3 class="h4">June</h3>
+                    <h4>June</h4>
                     <p>Built a trusted team delivering IT solutions, support, and long-term digital growth.</p>
                 </div>
                 <div class="journey-year">2024</div>
@@ -1347,7 +1346,7 @@ include __DIR__ . '/header.php'; ?>
                         <i class="fa fa-bullseye"></i>
                     </div>
                     <div class="price-heade">
-                        <h3 class="title h4">Mission</h3>
+                        <h4 class="title">Mission</h4>
                         <span>Technofra empowers businesses with innovative digital solutions, driving growth and success through cutting-edge technology and exceptional service, ensuring seamless and effective digital transformation in the modern digital age</span>
                     </div>
                 </div>
@@ -1356,7 +1355,7 @@ include __DIR__ . '/header.php'; ?>
                         <i class="fa fa-eye" aria-hidden="true"></i>
                     </div>
                     <div class="price-heade">
-                        <h3 class="title h4">Vision</h3>
+                        <h4 class="title">Vision</h4>
                         <span>Our vision is to be the leading digital agency, delivering cutting-edge technology and exceptional customer service, setting industry standards, and becoming the trusted partner for businesses globally.</span>
                     </div>
                 </div>
@@ -1413,7 +1412,7 @@ include __DIR__ . '/header.php'; ?>
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h3 class="name h4"><a href='javascript:void(0)' title>Gopal Giri</a></h3>
+                            <h4 class="name"><a href='javascript:void(0)' title>Gopal Giri</a></h4>
                             <span class="designation">/ Director & Co-Founder /</span>
                         </div>
                     </div>
@@ -1441,7 +1440,7 @@ include __DIR__ . '/header.php'; ?>
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h3 class="name h4"><a href='javascript:void(0)' title>Bhavna Giri</a></h3>
+                            <h4 class="name"><a href='javascript:void(0)' title>Bhavna Giri</a></h4>
                             <span class="designation">/ CEO & Co-Founder /</span>
                         </div>
                     </div>
@@ -1465,7 +1464,7 @@ include __DIR__ . '/header.php'; ?>
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h3 class="name h4"><a href='javascript:void(0)' title>Manish Singh</a></h3>
+                            <h4 class="name"><a href='javascript:void(0)' title>Manish Singh</a></h4>
                             <span class="designation">/ Software Engineer /</span>
                         </div>
                     </div>
@@ -1493,7 +1492,7 @@ include __DIR__ . '/header.php'; ?>
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h3 class="name h4"><a href='javascript:void(0)' title>Khushi Yadav</a></h3>
+                            <h4 class="name"><a href='javascript:void(0)' title>Khushi Yadav</a></h4>
                             <span class="designation">/ Human Resources /</span>
                         </div>
                     </div>
@@ -1517,7 +1516,7 @@ include __DIR__ . '/header.php'; ?>
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h3 class="name h4"><a href='javascript:void(0)' title>Saurabh Damale</a></h3>
+                            <h4 class="name"><a href='javascript:void(0)' title>Saurabh Damale</a></h4>
                             <span class="designation">/ Laravel Developer /</span>
                         </div>
                     </div>
@@ -1545,7 +1544,7 @@ include __DIR__ . '/header.php'; ?>
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h3 class="name h4"><a href='javascript:void(0)' title>Shubham Shinde</a></h3>
+                            <h4 class="name"><a href='javascript:void(0)' title>Shubham Shinde</a></h4>
                             <span class="designation">/ App Developer /</span>
                         </div>
                     </div>
@@ -1562,7 +1561,7 @@ include __DIR__ . '/header.php'; ?>
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title fs-5 h1" id="staticBackdropLabel">Download Company Profile</h2>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Download Company Profile</h1>
                 <button type="button" class="btn-close company-profile-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div

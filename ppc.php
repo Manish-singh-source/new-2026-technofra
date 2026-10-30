@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'PPC Services Company  | Technofra';
-$metaDescription = 'Technofra\'s PPC services run smarter ads that bring quality clicks and drive measurable growth for your business.';
 include __DIR__ . '/header.php';
 
 ?>
@@ -1775,7 +1774,7 @@ include __DIR__ . '/header.php';
             <!-- LEFT COLUMN -->
             <div class="col-12 col-lg-6 ppc-left-col">
                 <span class="ppc-eyebrow">[ PPC benefits ]</span>
-                <h2 class="ppc-heading h1">Why businesses invest in PPC advertising</h2>
+                <h1 class="ppc-heading">Why businesses invest in PPC advertising</h1>
                 <p class="ppc-desc">
                     PPC gives you speed, targeting control, and clear measurement. Well-structured campaigns help
                     businesses enter competitive markets faster, test offers quickly, and scale the channels that

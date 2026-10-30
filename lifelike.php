@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'WOTM Case Study | Technofra';
-$metaDescription = 'LIFElike case study by Technofra: website design for Life Like Design Studio, where design begins with you.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>
@@ -2128,9 +2127,9 @@ img {
     <!-- Header -->
     <div class="studio-header">
       <div class="studio-header__divider"><i class="fa-solid fa-spa"></i></div>
-      <h2 class="studio-header__title h1">
+      <h1 class="studio-header__title">
         <span class="accent">Life Like</span> <span class="plain">Design Studio</span>
-      </h2>
+      </h1>
       <p class="studio-header__subtitle">
         Life Like is a design studio led by Principal Architect Vidisha Ule,
         founded on the belief that design is more than aesthetics — it's about connection.

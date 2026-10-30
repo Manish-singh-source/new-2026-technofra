@@ -1,7 +1,6 @@
 <?php
 session_start();
 $pageTitle = 'Wrap Pack n Carry | Packaging Brand Banner | Technofra';
-$metaDescription = 'Wrap Pack N Carry website portfolio by Technofra: a packaging brand identity crafted to make an impact.';
 $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 $bodyClass = 'hero-video-page';

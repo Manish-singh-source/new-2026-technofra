@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'VK Paints | Technofra';
-$metaDescription = 'VK Paints website by Technofra: a brand website for premium paints for every surface.';
 $bodyClass = 'hero-video-page';
 include __DIR__ . '/header.php';
 ?>

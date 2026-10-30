@@ -21,7 +21,7 @@
 
                   </div>
                   <div class="footer-links footer-widget">
-                      <h3 class="widget-title h4">Services</h3>
+                      <h4 class="widget-title">Services</h4>
                       <ul>
                           <li><a href="web-design-and-development.php" title="Website Development">Website Development</a></li>
                           <li><a href="android-app-development.php" title="App Development">App Development</a></li>
@@ -32,7 +32,7 @@
                       </ul>
                   </div>
                   <div class="footer-links footer-widget">
-                      <h3 class="widget-title h4">Quick Links</h3>
+                      <h4 class="widget-title">Quick Links</h4>
                       <ul>
                           <li><a href="about-us.php" title="About Us">About Us</a></li>
                           <li><a href="portfolios.php" title="Portfolio">Portfolio</a></li>
@@ -43,7 +43,7 @@
                       </ul>
                   </div>
                   <div class="location-widget4 footer-widget">
-                      <h3 class="widget-title h4">Contact Info</h3>
+                      <h4 class="widget-title">Contact Info</h4>
                       <div class="footer-contact-item4">
                           <span class="footer-icon4"><i class="fas fa-map-marker-alt"></i></span>
                           <p>Office No. 501, 5th Floor, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai - 400067, Maharashtra - INDIA.</p>
@@ -74,7 +74,7 @@
           <div class="footer-app-social4">
 
               <div class="footer-social-row4">
-                  <h4 class="mb-0 h5">Follow us</h4>
+                  <h5 class="mb-0">Follow us</h5>
                   <ul class="social-icon footer-social4">
                       <li><a href="https://www.facebook.com/technofra/" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
                       <li><a href="https://x.com/Technofra_" title="X" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a></li>
@@ -94,7 +94,7 @@
           </div>
           <div class="footer-brands4">
               <div class="footer-brand-group4 footer-partners4">
-                  <h4 class="h5">Our Partners</h4>
+                  <h5>Our Partners</h5>
                   <div class="footer-brand-logos4">
                       <img src="assets/images/parnters/office356.webp" alt="Office 365">
                       <img src="assets/images/parnters/payumoney.webp" alt="PayUMoney">
@@ -103,7 +103,7 @@
                   </div>
               </div>
               <div class="footer-brand-group4 footer-own-brands4">
-                  <h4 class="h5">Our Brands</h4>
+                  <h5>Our Brands</h5>
                   <div class="footer-brand-logos4">
                       <img src="assets/images/brand/blueorbith.png" alt="Blue Orbith">
                       <img src="assets/images/brand/grid-infinity.png" alt="Grid Infinity">

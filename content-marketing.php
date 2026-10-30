@@ -1,6 +1,5 @@
 <?php
 $pageTitle = 'Content Marketing Services Company | Technofra';
-$metaDescription = 'Technofra\'s content marketing services help brands inform, engage and convert audiences while building stronger brand authority.';
 include __DIR__ . '/header.php';
 
 ?>
@@ -1774,7 +1773,7 @@ include __DIR__ . '/header.php';
             <!-- LEFT COLUMN -->
             <div class="col-12 col-lg-6 ppc-left-col">
                 <span class="ppc-eyebrow">[ Content Benefits ]</span>
-                <h2 class="ppc-heading h1">Why businesses invest in content marketing</h2>
+                <h1 class="ppc-heading">Why businesses invest in content marketing</h1>
                 <p class="ppc-desc">
                     Strong content supports visibility, trust, and conversion
                     together. It helps your brand answer questions earlier,
