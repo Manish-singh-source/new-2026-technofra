@@ -9,10 +9,47 @@
     $pageTitle = $pageTitle ?? 'Technofra Website';
     $metaKeywords = $metaKeywords ?? '';
     $bodyClass = $bodyClass ?? 'hero-video-page';
+    // Canonical URL: set $canonicalUrl before including header.php to override,
+    // or set it to false to output no canonical tag.
+    // Slugs in $canonicalMap mirror sitemap.xml; every other page uses its own clean URL.
+    $siteUrl = 'https://technofra.com';
+    if (!isset($canonicalUrl)) {
+        $scriptFile = basename($_SERVER['SCRIPT_NAME'] ?? '');
+        if ($scriptFile === '404.php') {
+            $canonicalUrl = false; // error page: no canonical
+        } else {
+            $canonicalMap = [
+                'index.php'                      => '/',
+                'about-us.php'                   => '/about',
+                'ios-development.php'            => '/ios-app-development',
+                'domain-hosting.php'             => '/domain-hosting-services',
+                'shopify-development.php'        => '/shopify-website-development',
+                'social-media-marketing.php'     => '/smm',
+                'web-design-and-development.php' => '/web-design',
+                'web&appmaintenance.php'         => '/website-maintenance',
+                'wordpress.php'                  => '/wordpress-development',
+                'portfolios.php'                 => '/portfolio',
+            ];
+            if (isset($canonicalMap[$scriptFile])) {
+                $canonicalPath = $canonicalMap[$scriptFile];
+            } else {
+                $canonicalPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+                $canonicalPath = preg_replace('#/index(\.php)?$#i', '/', $canonicalPath);
+                $canonicalPath = preg_replace('#\.php$#i', '', $canonicalPath);
+                if ($canonicalPath === '' || $canonicalPath[0] !== '/') {
+                    $canonicalPath = '/' . $canonicalPath;
+                }
+            }
+            $canonicalUrl = $siteUrl . $canonicalPath;
+        }
+    }
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
+    <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
     <?php if (!empty($baseHref)): ?>
     <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
