@@ -8,6 +8,7 @@
     <?php
     $pageTitle = $pageTitle ?? 'Technofra Website';
     $metaKeywords = $metaKeywords ?? '';
+    $metaDescription = $metaDescription ?? '';
     $bodyClass = $bodyClass ?? 'hero-video-page';
     // Canonical URL: set $canonicalUrl before including header.php to override,
     // or set it to false to output no canonical tag.
@@ -53,6 +54,9 @@
     <?php if (!empty($baseHref)): ?>
     <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
+    <?php if ($metaDescription !== ''): ?>
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
     <?php if ($metaKeywords !== ''): ?>
     <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
@@ -81,6 +85,9 @@
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style2.css">
+    <?php if (!empty($pageStylesheet)): ?>
+    <link rel="stylesheet" href="<?php echo htmlspecialchars($pageStylesheet, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
 
     <!-- Make these async - only used for specific components -->
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" media="print" onload="this.media='all'">
@@ -110,5 +117,4 @@
         <!-- End Preloader -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
-
 

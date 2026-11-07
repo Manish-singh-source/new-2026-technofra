@@ -36,7 +36,7 @@
                       <ul>
                           <li><a href="about-us.php" title="About Us">About Us</a></li>
                           <li><a href="portfolios.php" title="Portfolio">Portfolio</a></li>
-                          <li><a href="blog.php" title="Blog">Blog</a></li>
+                          <li><a href="blog" title="Blog">Blog</a></li>
                           <li><a href="privacy-policy.php" title="Privacy Policy">Privacy Policy</a></li>
                           <li><a href="refund-policy.php" title="Refund Policy">Refund Policy</a></li>
                           <li><a href="sitemap.html" title="Sitemap">Sitemap</a></li>
@@ -116,7 +116,7 @@
               <ul class="footer-bottom-nav4">
                   <li><a href="our-team.php">Our Team</a></li>
                   <li><a href="web&appmaintenance.php">Web & APP Maintenance</a></li>
-                  <li><a href="blog.php">Blog</a></li>
+                  <li><a href="blog">Blog</a></li>
                   <li><a href="privacy-policy.php">Privacy Policy</a></li>
                   <li><a href="refund-policy.php">Refund Policy</a></li>
                   <li><a href="sitemap.html">Sitemap</a></li>

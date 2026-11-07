@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^blog/?$ blog.php [L,QSA]
+RewriteRule ^blog/admin/?$ blog-admin.php [L,QSA]
+RewriteRule ^blog/([a-z0-9-]+)/?$ blog.php?post=$1 [L,QSA]

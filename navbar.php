@@ -12,7 +12,8 @@ $whiteLogoPages = [
     'domain-hosting.php',
     'wotm.php',
     'frago.php',
-    'sukanya.php'
+    'sukanya.php',
+    'blog-admin.php'
 ];
 $whiteLogoScriptPaths = [];
 $blackLogoScriptPaths = [
@@ -420,6 +421,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
             </ul>
         </li>
         <li><a href='portfolios.php'>Portfolio</a></li>
+        <li><a href='blog'>Blog</a></li>
         <li><a href='career.php'>Career</a></li>
         <li><a href='contact.php'>Contacts</a></li>
     </ul>
@@ -519,6 +521,11 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                         <li>
                             <a href='portfolios.php'>
                                 <span class="menu-item">Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href='blog'>
+                                <span class="menu-item">Blog</span>
                             </a>
                         </li>
                         <li>
