@@ -226,7 +226,7 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
 </head><body>
 <main class="crm-admin">
     <aside class="crm-sidebar" aria-label="Blog administration">
-        <div class="crm-brand"><span class="crm-brand-mark">TF</span><div><strong>Technofra</strong><small>Blog CRM</small></div></div>
+        <div class="crm-brand"><div><img src="<?php echo blog_escape(blog_base_path() . '/assets/images/new/logo.png'); ?>" alt="Technofra" width="180" style="display:block;width:100%;max-width:180px;height:auto"><small>Blog CRM</small></div></div>
         <nav class="crm-nav"><a class="<?php echo $view === 'create' ? 'is-active' : ''; ?>" href="<?php echo blog_escape(blog_url('admin') . '?view=create'); ?>">+ Create blogs</a><a class="<?php echo $view === 'list' ? 'is-active' : ''; ?>" href="<?php echo blog_escape(blog_url('admin') . '?view=list'); ?>">List blogs</a></nav>
         <div class="crm-sidebar-bottom"><a href="<?php echo blog_escape(blog_url()); ?>" target="_blank" rel="noopener">View public blog</a><?php if (blog_is_admin()): ?><form method="post" action="<?php echo blog_escape(blog_url('admin')); ?>"><input type="hidden" name="csrf_token" value="<?php echo blog_escape(blog_csrf_token()); ?>"><input type="hidden" name="action" value="logout"><button type="submit">Sign out</button></form><?php endif; ?></div>
     </aside>
