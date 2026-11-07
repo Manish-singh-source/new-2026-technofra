@@ -4,9 +4,15 @@
 
 - Blog listing: `/blog/`
 - Article details: `/blog/?post={article-slug}`
-- Blog admin: `/blog/admin/` (the alternate `/blog-admin/` address also works)
+- Blog admin: `/blog-admin/`
 
-These URLs use directory index entry points so they also work in an XAMPP subfolder with the original `.htaccess` and its `RewriteBase /`. No rewrite changes are required. Use `/blog/admin/?view=list` for the article list. Opening `/blog/admin` adds the directory's trailing slash automatically. Older `/blog/{article-slug}` URLs require custom rewrites and are not used by this setup. Inline image uploads use `/blog-upload-image/` so POST requests avoid redirects. For a subdirectory installation, prefix these paths with the project directory.
+These URLs use directory index entry points so they also work in an XAMPP subfolder with the original `.htaccess` and its `RewriteBase /`. No rewrite changes are required. Use `/blog-admin/?view=list` for the article list. All admin form actions and redirects use this route. The optional `/blog/admin/` compatibility route needs the nested `blog/admin/index.php` file deployed; use `/blog-admin/` as the main address. Older `/blog/{article-slug}` URLs require custom rewrites and are not used by this setup. Inline image uploads use `/blog-upload-image/` so POST requests avoid redirects. For a subdirectory installation, prefix these paths with the project directory.
+
+## Live deployment checks
+
+Upload `blog-helpers.php` whenever routing changes: it generates listing, detail, admin, login, edit, delete, and status form URLs. Upload the directory entry points `blog/index.php`, `blog-admin/index.php`, and `blog-upload-image/index.php` with the root PHP files. Keep the original `.htaccess` unchanged. Do not replace production credentials with local XAMPP credentials.
+
+Verify `/blog/`, a real `/blog/?post=...` link from a card, and `/blog-admin/`. The admin login form must submit to `/blog-admin/`, not `/blog/admin/`. A local code change does not change the live server until the edited files are uploaded.
 
 The routes require Apache `mod_rewrite` and the project `.htaccess` file to be enabled.
 

@@ -32,7 +32,7 @@ function blog_base_path()
 
 function blog_url($path = '')
 {
-    if ($path === 'admin') return blog_base_path() . '/blog/admin/';
+    if ($path === 'admin') return blog_base_path() . '/blog-admin/';
     $url = blog_base_path() . '/blog/';
     return $path === '' ? $url : $url . '?post=' . rawurlencode(trim((string) $path, '/'));
 }
