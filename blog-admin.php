@@ -184,15 +184,12 @@ try {
             if ($post === null) {
                 throw new RuntimeException('The article could not be found.');
             }
-            $posts = array_values(array_filter($posts, static function ($item) use ($slug) {
-                return ($item['slug'] ?? '') !== $slug;
-            }));
-            if (!blog_save_posts($posts)) {
-                throw new RuntimeException('The article could not be saved. Please check storage permissions.');
+            if (!blog_delete_post($slug)) {
+                throw new RuntimeException('The article could not be deleted. Please try again.');
             }
             blog_remove_uploaded_image($post['image'] ?? '');
             $_SESSION['blog_admin_notice'] = 'Article deleted.';
-            header('Location: ' . blog_url('admin'));
+            header('Location: ' . blog_url('admin') . '?view=list');
             exit;
         }
     }

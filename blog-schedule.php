@@ -169,14 +169,9 @@ function blog_promote_due_posts($connection)
 function blog_load_posts()
 {
     $connection = blog_db_connection();
-    if (!$connection || !blog_ensure_schema($connection)) return blog_json_posts_backup();
+    if (!$connection || !blog_ensure_schema($connection)) return [];
     blog_promote_due_posts($connection);
-    $countResult = $connection->query('SELECT COUNT(*) AS total FROM blogs');
-    $count = $countResult ? (int) ($countResult->fetch_assoc()['total'] ?? 0) : 0;
-    if ($count === 0) {
-        $backupPosts = blog_json_posts_backup();
-        if ($backupPosts) blog_db_upsert_posts($connection, $backupPosts);
-    }
+    // MySQL is authoritative: an empty table must stay empty, never reimport JSON.
     $posts = [];
     $result = $connection->query('SELECT slug, title, meta_title, meta_description, excerpt, content, image, published_at, updated_at, status, publish_at FROM blogs ORDER BY COALESCE(publish_at, published_at, created_at) DESC, id DESC');
     if (!$result) return [];
