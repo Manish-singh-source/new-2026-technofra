@@ -362,7 +362,7 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                                         var data = new FormData();
                                         data.append('image', input.files[0]);
                                         input.disabled = true;
-                                        fetch('<?php echo blog_escape(blog_base_path() . '/blog-upload-image.php'); ?>', {method:'POST', body:data, credentials:'same-origin'})
+                                        fetch('<?php echo blog_escape(blog_base_path() . '/blog-upload-image/'); ?>', {method:'POST', body:data, credentials:'same-origin'})
                                             .then(function (response) { return response.json(); })
                                             .then(function (result) {
                                                 if (result.error) throw new Error(result.error);
@@ -467,7 +467,7 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                                         <div>
                                             <h3><?php echo blog_escape($post['title']); ?></h3>
                                             <p><span class="tf-admin-status"><?php echo blog_escape(blog_status_label($post)); ?></span><?php if ((string) ($post['status'] ?? '') === 'scheduled' && !blog_is_live($post) && !empty($post['publish_at'])): ?> - Goes live: <?php echo blog_escape((new DateTime($post['publish_at'], new DateTimeZone('Asia/Kolkata')))->format('j M Y, h:i A')); ?><?php endif; ?></p>
-                                            <p><?php echo blog_escape(blog_format_date($post['published_at'] ?? '')); ?> - /blog/<?php echo blog_escape($post['slug']); ?></p>
+                                            <p><?php echo blog_escape(blog_format_date($post['published_at'] ?? '')); ?> - <?php echo blog_escape(blog_url($post['slug'])); ?></p>
                                         </div>
                                     </div>
                                     <div class="crm-actions">

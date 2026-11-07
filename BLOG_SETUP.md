@@ -2,9 +2,11 @@
 
 ## Routes
 
-- Blog listing: `/blog`
-- Article details: `/blog/{article-slug}`
-- Blog admin: `/blog/admin`
+- Blog listing: `/blog/`
+- Article details: `/blog/?post={article-slug}`
+- Blog admin: `/blog/admin/` (the alternate `/blog-admin/` address also works)
+
+These URLs use directory index entry points so they also work in an XAMPP subfolder with the original `.htaccess` and its `RewriteBase /`. No rewrite changes are required. Use `/blog/admin/?view=list` for the article list. Opening `/blog/admin` adds the directory's trailing slash automatically. Older `/blog/{article-slug}` URLs require custom rewrites and are not used by this setup. Inline image uploads use `/blog-upload-image/` so POST requests avoid redirects. For a subdirectory installation, prefix these paths with the project directory.
 
 The routes require Apache `mod_rewrite` and the project `.htaccess` file to be enabled.
 

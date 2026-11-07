@@ -21,6 +21,7 @@ function blog_escape($value)
 
 function blog_base_path()
 {
+    if (defined('BLOG_BASE_PATH')) return BLOG_BASE_PATH;
     $directory = str_replace('\\', '/', dirname((string) ($_SERVER['SCRIPT_NAME'] ?? '/')));
     if ($directory === '/' || $directory === '.' || $directory === '\\') {
         return '';
@@ -31,8 +32,9 @@ function blog_base_path()
 
 function blog_url($path = '')
 {
-    $url = blog_base_path() . '/blog';
-    return $path === '' ? $url : $url . '/' . ltrim((string) $path, '/');
+    if ($path === 'admin') return blog_base_path() . '/blog/admin/';
+    $url = blog_base_path() . '/blog/';
+    return $path === '' ? $url : $url . '?post=' . rawurlencode(trim((string) $path, '/'));
 }
 
 function blog_storage_directory()
