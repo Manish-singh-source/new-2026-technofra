@@ -631,7 +631,7 @@ include __DIR__ . '/header.php';
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/gopalsir.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='team-single.html'><img src="assets/images/team/gopalsir.webp" alt="Gopal Giri - Director & Co-Founder at Technofra"></a>
                             <span class="sub-title">Director</span>
                             <div class="team-shap"></div>
                         </div>
@@ -659,7 +659,7 @@ include __DIR__ . '/header.php';
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/bhavna.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='team-single.html'><img src="assets/images/team/bhavna.webp" alt="Bhavna Giri - CEO & Co-Founder at Technofra"></a>
                             <span class="sub-title">CEO</span>
                             <div class="team-shap"></div>
                         </div>
@@ -681,9 +681,41 @@ include __DIR__ . '/header.php';
                             <span class="designation">/ CEO & Co-Founder /</span>
                         </div>
                     </div>
-                    <div class="team-card v3">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-member2">
+                    <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/manish.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='team-single.html'><img src="assets/images/team/khushi-hr.png" alt="Khushi Yadav - Digital Marketing Head and HR at Technofra"></a>
+                            <span class="sub-title">HR</span>
+                            <div class="team-shap"></div>
+                        </div>
+                        <div class="team-content">
+                            <div class="share-box">
+                                <span class="share-icon fa fa-share-alt"></span>
+                                <ul class="social-links">
+                                    <li><a href="https://www.youtube.com/" target="_blank" title=""><i
+                                                class="fab fa-youtube"></i></a></li>
+                                    <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="http://www.twitter.com/" target="_blank" title=""><i
+                                                class="fab fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank" title=""><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="name"><a href='team-single.html' title>Khushi Yadav</a></h4>
+                            <span class="designation">/ Digital Marketing Head /</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-member2">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <a href='team-single.html'><img src="assets/images/team/manish.webp" alt="Manish Singh - Software Engineer and Team Leader at Technofra"></a>
                             <span class="sub-title">Team Leader</span>
                             <div class="team-shap"></div>
                         </div>
@@ -711,31 +743,7 @@ include __DIR__ . '/header.php';
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/khushi-hr.png" alt="AI Agency & Technology HTML Template"></a>
-                            <span class="sub-title">HR</span>
-                            <div class="team-shap"></div>
-                        </div>
-                        <div class="team-content">
-                            <div class="share-box">
-                                <span class="share-icon fa fa-share-alt"></span>
-                                <ul class="social-links">
-                                    <li><a href="https://www.youtube.com/" target="_blank" title=""><i
-                                                class="fab fa-youtube"></i></a></li>
-                                    <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
-                                                class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-x-twitter"></i></a></li>
-                                    <li><a href="https://www.facebook.com/" target="_blank" title=""><i
-                                                class="fab fa-facebook-f"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4 class="name"><a href='team-single.html' title>Khushi Yadav</a></h4>
-                            <span class="designation">/ Digital Marketing Head /</span>
-                        </div>
-                    </div>
-                    <div class="team-card ">
-                        <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/shubham.webp" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='team-single.html'><img src="assets/images/team/shubham.webp" alt="Shubham Shinde - App Developer at Technofra"></a>
                             <span class="sub-title">Sr. Developer</span>
                             <div class="team-shap"></div>
                         </div>
@@ -760,11 +768,11 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="team-member2 v2">
+                <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/sandeep.webp" alt="Sandeep Shah - Digital Marketing at Technofra"></a>
-                            <span class="sub-title">Marketing</span>
+                            <a href='team-single.html'><img src="assets/images/team/rahul.webp" alt="Rahul Nadar - Web Developer at Technofra"></a>
+                            <span class="sub-title">Developer</span>
                             <div class="team-shap"></div>
                         </div>
                         <div class="team-content">
@@ -781,8 +789,36 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Sandeep Shah</a></h4>
-                            <span class="designation">/ Digital Marketing /</span>
+                            <h4 class="name"><a href='team-single.html' title>Rahul Nadar</a></h4>
+                            <span class="designation">/ Web Developer /</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-member2">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <a href='team-single.html'><img src="assets/images/team/nidhi.webp" alt="Nidhi Vishwakarma - Web Developer at Technofra"></a>
+                            <span class="sub-title">Developer</span>
+                            <div class="team-shap"></div>
+                        </div>
+                        <div class="team-content">
+                            <div class="share-box">
+                                <span class="share-icon fa fa-share-alt"></span>
+                                <ul class="social-links">
+                                    <li><a href="https://www.youtube.com/" target="_blank" title=""><i
+                                                class="fab fa-youtube"></i></a></li>
+                                    <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="http://www.twitter.com/" target="_blank" title=""><i
+                                                class="fab fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank" title=""><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="name"><a href='team-single.html' title>Nidhi Vishwakarma</a></h4>
+                            <span class="designation">/ Web Developer /</span>
                         </div>
                     </div>
                 </div>
@@ -819,8 +855,8 @@ include __DIR__ . '/header.php';
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/rahul.webp" alt="Rahul Nadar - Web Developer at Technofra"></a>
-                            <span class="sub-title">Developer</span>
+                            <a href='team-single.html'><img src="assets/images/team/onkar.webp" alt="Onkar Shelkar - Graphic Designer at Technofra"></a>
+                            <span class="sub-title">Designer</span>
                             <div class="team-shap"></div>
                         </div>
                         <div class="team-content">
@@ -837,11 +873,15 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Rahul Nadar</a></h4>
-                            <span class="designation">/ Web Developer /</span>
+                            <h4 class="name"><a href='team-single.html' title>Onkar Shelkar</a></h4>
+                            <span class="designation">/ Graphic Designer /</span>
                         </div>
                     </div>
-                    <div class="team-card v3">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-member2">
+                    <div class="team-card">
                         <div class="team-img">
                             <a href='team-single.html'><img src="assets/images/team/atul.webp" alt="Atul Yadav - Digital Marketing at Technofra"></a>
                             <span class="sub-title">Marketing</span>
@@ -871,8 +911,8 @@ include __DIR__ . '/header.php';
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/nidhi.webp" alt="Nidhi Vishwakarma - Web Developer at Technofra"></a>
-                            <span class="sub-title">Developer</span>
+                            <a href='team-single.html'><img src="assets/images/team/sandeep.webp" alt="Sandeep Shah - Digital Marketing at Technofra"></a>
+                            <span class="sub-title">Marketing</span>
                             <div class="team-shap"></div>
                         </div>
                         <div class="team-content">
@@ -889,32 +929,8 @@ include __DIR__ . '/header.php';
                                                 class="fab fa-facebook-f"></i></a></li>
                                 </ul>
                             </div>
-                            <h4 class="name"><a href='team-single.html' title>Nidhi Vishwakarma</a></h4>
-                            <span class="designation">/ Web Developer /</span>
-                        </div>
-                    </div>
-                    <div class="team-card v3">
-                        <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/onkar.webp" alt="Onkar Shelkar - Graphic Designer at Technofra"></a>
-                            <span class="sub-title">Designer</span>
-                            <div class="team-shap"></div>
-                        </div>
-                        <div class="team-content">
-                            <div class="share-box">
-                                <span class="share-icon fa fa-share-alt"></span>
-                                <ul class="social-links">
-                                    <li><a href="https://www.youtube.com/" target="_blank" title=""><i
-                                                class="fab fa-youtube"></i></a></li>
-                                    <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
-                                                class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-x-twitter"></i></a></li>
-                                    <li><a href="https://www.facebook.com/" target="_blank" title=""><i
-                                                class="fab fa-facebook-f"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4 class="name"><a href='team-single.html' title>Onkar Shelkar</a></h4>
-                            <span class="designation">/ Graphic Designer /</span>
+                            <h4 class="name"><a href='team-single.html' title>Sandeep Shah</a></h4>
+                            <span class="designation">/ Digital Marketing /</span>
                         </div>
                     </div>
                 </div>
