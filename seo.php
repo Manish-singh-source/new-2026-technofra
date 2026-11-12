@@ -143,10 +143,13 @@ include __DIR__ . '/header.php';
 
 /* ---------- marquee ---------- */
 .sx-marquee{position:relative;overflow:hidden;padding:1.6rem 0 .6rem;background:#fff}
-.sx-marquee-track{display:flex;gap:3.2rem;width:max-content;animation:sxMarq 40s linear infinite}
+.sx-marquee-track{display:flex;gap:0;width:max-content;animation:sxMarq 40s linear infinite}
+.sx-marquee-track>div{gap:1rem!important;padding-right:1rem}
 .sx-marquee:hover .sx-marquee-track{animation-play-state:paused}
-.sx-marquee span{display:inline-flex;align-items:center;gap:3.2rem;white-space:nowrap;font-family:var(--font-primary,'Sora',sans-serif);font-weight:800;font-size:clamp(1.3rem,1rem + 1.4vw,2.2rem);letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1.4px #8cc0ff}
-.sx-marquee span i{font-size:1rem;-webkit-text-stroke:0;color:var(--p)}
+.sx-marquee{padding:1.4rem 0 1rem}
+.sx-marquee span{display:inline-flex;align-items:center;gap:.7rem;white-space:nowrap;padding:.75rem 1.5rem;border-radius:999px;background:#f4f8ff;border:1px solid #dce8ff;box-shadow:0 8px 20px rgba(18,56,132,.07);font-family:var(--font-primary,'Sora',sans-serif);font-weight:700;font-size:clamp(1rem,.9rem + .6vw,1.3rem);letter-spacing:0;line-height:1.2;color:#0f1d59;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.sx-marquee span i{order:-1;font-size:.85em;color:var(--p)}
+@media (max-width:575px){.sx-marquee span{padding:.65rem 1.2rem;font-size:1rem}}
 .sx-marquee::before,.sx-marquee::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
 .sx-marquee::before{left:0;background:linear-gradient(90deg,#fff,transparent)}
 .sx-marquee::after{right:0;background:linear-gradient(270deg,#fff,transparent)}
