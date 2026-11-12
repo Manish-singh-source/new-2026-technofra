@@ -1137,6 +1137,19 @@ include __DIR__ . '/header.php'; ?>
             font-size: 185px;
         }
     }
+
+    /* Khushi's photo: same left-to-right slide on hover as the other team cards (Sandeep, Rahul, etc.) */
+    .team-img img.team-photo-zoom {
+        width: 150%;
+        max-width: none;
+        left: -50%;
+        right: auto;
+        object-position: center top;
+    }
+    .team-card:hover .team-img img.team-photo-zoom {
+        left: -25%;
+        object-position: center top;
+    }
 </style>
 
 
@@ -1474,7 +1487,7 @@ include __DIR__ . '/header.php'; ?>
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='javascript:void(0)'><img src="assets/images/team/khushi-hr.png" alt="AI Agency & Technology HTML Template"></a>
+                            <a href='javascript:void(0)'><img class="team-photo-zoom" src="assets/images/team/khushi-hr.png" alt="Khushi Yadav - Digital Marketing Head and HR at Technofra"></a>
                             <span class="sub-title">HR</span>
                             <div class="team-shap"></div>
                         </div>

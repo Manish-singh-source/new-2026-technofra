@@ -514,6 +514,19 @@ include __DIR__ . '/header.php';
     .team-img .sub-title {
         font-size: 50px;
     }
+
+    /* Khushi's photo: same left-to-right slide on hover as the other team cards (Sandeep, Rahul, etc.) */
+    .team-img img.team-photo-zoom {
+        width: 150%;
+        max-width: none;
+        left: -50%;
+        right: auto;
+        object-position: center top;
+    }
+    .team-card:hover .team-img img.team-photo-zoom {
+        left: -25%;
+        object-position: center top;
+    }
 </style>
 
 
@@ -687,7 +700,7 @@ include __DIR__ . '/header.php';
                 <div class="team-member2">
                     <div class="team-card">
                         <div class="team-img">
-                            <a href='team-single.html'><img src="assets/images/team/khushi-hr.png" alt="Khushi Yadav - Digital Marketing Head and HR at Technofra"></a>
+                            <a href='team-single.html'><img class="team-photo-zoom" src="assets/images/team/khushi-hr.png" alt="Khushi Yadav - Digital Marketing Head and HR at Technofra"></a>
                             <span class="sub-title">HR</span>
                             <div class="team-shap"></div>
                         </div>

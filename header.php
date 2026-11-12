@@ -5,10 +5,18 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCKV0NGPVQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-WCKV0NGPVQ');
+    </script>
     <?php
     $pageTitle = $pageTitle ?? 'Technofra Website';
     $metaKeywords = $metaKeywords ?? '';
-    $metaDescription = $metaDescription ?? '';
     $bodyClass = $bodyClass ?? 'hero-video-page';
     // Canonical URL: set $canonicalUrl before including header.php to override,
     // or set it to false to output no canonical tag.
@@ -52,6 +60,7 @@
     <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
     <?php if (!empty($metaDescription)): ?>
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Technofra">
     <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
@@ -67,9 +76,6 @@
     <?php if (!empty($extraHead)) { echo $extraHead; } ?>
     <?php if (!empty($baseHref)): ?>
     <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
-    <?php endif; ?>
-    <?php if ($metaDescription !== ''): ?>
-    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
     <?php if ($metaKeywords !== ''): ?>
     <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
@@ -99,9 +105,6 @@
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style2.css">
-    <?php if (!empty($pageStylesheet)): ?>
-    <link rel="stylesheet" href="<?php echo htmlspecialchars($pageStylesheet, ENT_QUOTES, 'UTF-8'); ?>">
-    <?php endif; ?>
 
     <!-- Make these async - only used for specific components -->
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" media="print" onload="this.media='all'">
@@ -131,3 +134,5 @@
         <!-- End Preloader -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
+
+

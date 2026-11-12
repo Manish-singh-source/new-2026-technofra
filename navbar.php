@@ -13,6 +13,7 @@ $whiteLogoPages = [
     'wotm.php',
     'frago.php',
     'sukanya.php',
+    'seo.php',
     'blog-admin.php'
 ];
 $whiteLogoScriptPaths = [];
@@ -365,6 +366,74 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
             width: 36px;
             height: 36px;
             font-size: 16px;
+        }
+    }
+    /* ---- Laptop fit: keep logo, menu and Enquiry button on one row, never clipped ---- */
+    @media (min-width: 1200px) {
+        .vs-header4 .header-menu-area .row {
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .vs-header4 .header-menu-area .col-auto {
+            flex: 0 0 auto;
+        }
+
+        .vs-header4 .header-menu-area .main-menu>ul,
+        .vs-header4 .header-menu-area .btn-box {
+            white-space: nowrap;
+        }
+
+        .vs-header4 .header-menu-area .btn-box {
+            flex-shrink: 0;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+
+        .vs-header4 .main-menu>ul>li>a,
+        .sticky-active .main-menu>ul>li>a {
+            padding-left: 14px;
+            padding-right: 28px;
+        }
+
+        .vs-header4 .main-menu>ul>li>a::before,
+        .sticky-active .main-menu>ul>li>a::before {
+            right: 12px;
+        }
+
+        .vs-header4 .btn-box .ibt-btn,
+        .sticky-active .btn-box .ibt-btn {
+            padding: 11px 28px;
+            font-size: 15px;
+        }
+
+        .vs-header4 .header-menu-area,
+        .sticky-active .header-menu-area {
+            padding-left: 20px;
+            padding-right: 24px;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1329px) {
+
+        .vs-header4 .main-menu>ul>li>a,
+        .sticky-active .main-menu>ul>li>a {
+            padding-left: 10px;
+            padding-right: 22px;
+            font-size: 13px;
+        }
+
+        .vs-header4 .btn-box .ibt-btn,
+        .sticky-active .btn-box .ibt-btn {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .vs-header4 .header-logo img,
+        .sticky-active .header-logo img {
+            max-width: 190px;
+            height: auto;
         }
     }
 </style>
