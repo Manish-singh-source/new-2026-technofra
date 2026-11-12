@@ -1498,34 +1498,6 @@ include __DIR__ . '/header.php'; ?>
                     </div>
                     <div class="team-card ">
                         <div class="team-img">
-                            <a href='javascript:void(0)'><img src="assets/images/team/saurabh.webp" alt="AI Agency & Technology HTML Template"></a>
-                            <span class="sub-title">Sr. Developer</span>
-                            <div class="team-shap"></div>
-                        </div>
-                        <div class="team-content">
-                            <div class="share-box">
-                                <span class="share-icon fa fa-share-alt"></span>
-                                <ul class="social-links">
-                                    <li><a href="https://www.youtube.com/" target="_blank" title=""><i
-                                                class="fab fa-youtube"></i></a></li>
-                                    <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
-                                                class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="http://www.twitter.com/" target="_blank" title=""><i
-                                                class="fab fa-x-twitter"></i></a></li>
-                                    <li><a href="https://www.facebook.com/" target="_blank" title=""><i
-                                                class="fab fa-facebook-f"></i></a></li>
-                                </ul>
-                            </div>
-                            <h4 class="name"><a href='javascript:void(0)' title>Saurabh Damale</a></h4>
-                            <span class="designation">/ Laravel Developer /</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="team-member2 v2">
-                    <div class="team-card">
-                        <div class="team-img">
                             <a href='javascript:void(0)'><img src="assets/images/team/shubham.webp" alt="AI Agency & Technology HTML Template"></a>
                             <span class="sub-title">Sr. Developer</span>
                             <div class="team-shap"></div>
@@ -1546,6 +1518,34 @@ include __DIR__ . '/header.php'; ?>
                             </div>
                             <h4 class="name"><a href='javascript:void(0)' title>Shubham Shinde</a></h4>
                             <span class="designation">/ App Developer /</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="team-member2 v2">
+                    <div class="team-card">
+                        <div class="team-img">
+                            <a href='javascript:void(0)'><img src="assets/images/team/sandeep.webp" alt="Sandeep Shah - Digital Marketing at Technofra"></a>
+                            <span class="sub-title">Marketing</span>
+                            <div class="team-shap"></div>
+                        </div>
+                        <div class="team-content">
+                            <div class="share-box">
+                                <span class="share-icon fa fa-share-alt"></span>
+                                <ul class="social-links">
+                                    <li><a href="https://www.youtube.com/" target="_blank" title=""><i
+                                                class="fab fa-youtube"></i></a></li>
+                                    <li><a href="http://www.linkedin.com/" target="_blank" title=""><i
+                                                class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="http://www.twitter.com/" target="_blank" title=""><i
+                                                class="fab fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" target="_blank" title=""><i
+                                                class="fab fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                            <h4 class="name"><a href='javascript:void(0)' title>Sandeep Shah</a></h4>
+                            <span class="designation">/ Digital Marketing /</span>
                         </div>
                     </div>
                 </div>

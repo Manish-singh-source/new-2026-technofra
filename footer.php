@@ -49,7 +49,7 @@
                           <p>Office No. 501, 5th Floor, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai - 400067, Maharashtra - INDIA.</p>
                       </div>
                       <div class="footer-contact-item4">
-                          <span class="footer-icon4"><i class="fas fa-phone-alt"></i></span>
+                          <span class="footer-icon4"><i class="fas fa-phone-alt" style="display:inline-block;transform:scaleX(-1);"></i></span>
                           <div class="contact-widget4">
                               <a href="tel:+918080803374" title="Call Technofra" class="nmbr">+91 8080 80 3374</a>
                               <a href="tel:+918080803375" title="Call Technofra" class="nmbr">+91 8080 80 3375</a>
@@ -60,12 +60,6 @@
                           <div class="contact-widget4">
                               <a href="mailto:info@technofra.com" title="Email Technofra" class="gmail">info@technofra.com</a>
                               <a href="mailto:support@technofra.com" title="Email Technofra support" class="gmail">support@technofra.com</a>
-                          </div>
-                      </div>
-                      <div class="footer-contact-item4">
-                          <span class="footer-icon4"><i class="fas fa-globe"></i></span>
-                          <div class="contact-widget4">
-                              <a href="https://technofra.com/" title="Technofra Website" class="gmail" target="_blank" rel="noopener">www.technofra.com</a>
                           </div>
                       </div>
                   </div>

@@ -51,6 +51,20 @@
     <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
     <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
+    <?php if (!empty($metaDescription)): ?>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Technofra">
+    <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <?php endif; ?>
+    <?php if (!empty($ogImage)): ?>
+    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <?php endif; ?>
+    <?php endif; ?>
+    <?php if (!empty($extraHead)) { echo $extraHead; } ?>
     <?php if (!empty($baseHref)): ?>
     <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
@@ -117,4 +131,3 @@
         <!-- End Preloader -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
-
