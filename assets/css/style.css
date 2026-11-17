@@ -9608,7 +9608,7 @@ input[type=submit]:hover {
 }
 
 .menu-contact span {
-  color: #958c8c;
+  color: #6b6262;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -9640,7 +9640,7 @@ input[type=submit]:hover {
 }
 
 .menu-links>span {
-  color: #958c8c;
+  color: #6b6262;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -47705,8 +47705,8 @@ blockquote {
 }
 
 .footer-style4 .widget-title,
-.footer-style4 .footer-social-row4 h5,
-.footer-style4 .footer-brand-group4 h5 {
+.footer-style4 .footer-social-row4 :is(h4, h5),
+.footer-style4 .footer-brand-group4 :is(h4, h5) {
   margin: 0 0 22px;
   color: #fff;
   font-size: 18px;
@@ -47772,7 +47772,7 @@ blockquote {
   margin-top: 0;
 }
 
-.footer-social-row4 h5 {
+.footer-social-row4 :is(h4, h5) {
   margin: 0;
 }
 
@@ -47897,7 +47897,7 @@ blockquote {
   border-left: 1px solid rgba(255, 255, 255, 0.16);
 }
 
-.footer-brand-group4 h5 {
+.footer-brand-group4 :is(h4, h5) {
   margin: 0;
   white-space: nowrap;
 }

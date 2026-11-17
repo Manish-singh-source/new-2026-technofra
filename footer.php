@@ -21,7 +21,7 @@
 
                   </div>
                   <div class="footer-links footer-widget">
-                      <h4 class="widget-title">Services</h4>
+                      <h3 class="widget-title">Services</h3>
                       <ul>
                           <li><a href="web-design-and-development.php" title="Website Development">Website Development</a></li>
                           <li><a href="android-app-development.php" title="App Development">App Development</a></li>
@@ -32,7 +32,7 @@
                       </ul>
                   </div>
                   <div class="footer-links footer-widget">
-                      <h4 class="widget-title">Quick Links</h4>
+                      <h3 class="widget-title">Quick Links</h3>
                       <ul>
                           <li><a href="about-us.php" title="About Us">About Us</a></li>
                           <li><a href="portfolios.php" title="Portfolio">Portfolio</a></li>
@@ -43,7 +43,7 @@
                       </ul>
                   </div>
                   <div class="location-widget4 footer-widget">
-                      <h4 class="widget-title">Contact Info</h4>
+                      <h3 class="widget-title">Contact Info</h3>
                       <div class="footer-contact-item4">
                           <span class="footer-icon4"><i class="fas fa-map-marker-alt"></i></span>
                           <p>Office No. 501, 5th Floor, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai - 400067, Maharashtra - INDIA.</p>
@@ -68,13 +68,13 @@
           <div class="footer-app-social4">
 
               <div class="footer-social-row4">
-                  <h5 class="mb-0">Follow us</h5>
+                  <h4 class="mb-0">Follow us</h4>
                   <ul class="social-icon footer-social4">
-                      <li><a href="https://www.facebook.com/technofra/" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://x.com/Technofra_" title="X" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a></li>
-                      <li><a href="https://www.linkedin.com/company/technofra/" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
-                      <li><a href="https://youtube.com/@technofra?si=bSGDnJfZ6HMZd2Uw" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
-                      <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="https://www.facebook.com/technofra/" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://x.com/Technofra_" title="X" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a></li>
+                      <li><a href="https://www.linkedin.com/company/technofra/" title="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://youtube.com/@technofra?si=bSGDnJfZ6HMZd2Uw" title="YouTube" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
                   </ul>
               </div>
               <div class="footer-apps4">
@@ -88,7 +88,7 @@
           </div>
           <div class="footer-brands4">
               <div class="footer-brand-group4 footer-partners4">
-                  <h5>Our Partners</h5>
+                  <h4>Our Partners</h4>
                   <div class="footer-brand-logos4">
                       <img src="assets/images/parnters/office356.webp" alt="Office 365">
                       <img src="assets/images/parnters/payumoney.webp" alt="PayUMoney">
@@ -97,7 +97,7 @@
                   </div>
               </div>
               <div class="footer-brand-group4 footer-own-brands4">
-                  <h5>Our Brands</h5>
+                  <h4>Our Brands</h4>
                   <div class="footer-brand-logos4">
                       <img src="assets/images/brand/blueorbith.png" alt="Blue Orbith">
                       <img src="assets/images/brand/grid-infinity.png" alt="Grid Infinity">
@@ -138,11 +138,13 @@
 
   <!-- Js Plugin -->
   <script src="assets/js/bootstrap.min.js" defer></script>
+  <?php if (empty($lightJs)): /* light pages skip slider/animation/smooth-scroll libraries */ ?>
   <script src="assets/js/vendor/swiper-bundle.min.js" defer></script>
   <script src="assets/js/vendor/lenis.min.js" defer></script>
   <script src="assets/js/vendor/gsap.min.js" defer></script>
   <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
+  <?php endif; ?>
+  <script src="assets/js/main.min.js" defer></script>
   </body>
 
   </html>

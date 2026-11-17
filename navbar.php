@@ -455,17 +455,17 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
             <a href="mailto:support@technofra.com" class="email">support@technofra.com</a>
         </div>
         <ul class="social-icon">
-            <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://x.com/Technofra_" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </div>
 </div>
 <!-- New Mobile Menu -->
 <div data-menu="mobileMenu" class="side-menu2">
     <div class="menu-btns">
-        <button id="mobileCloseBtn2" class="close-btn"></button>
+        <button id="mobileCloseBtn2" class="close-btn" type="button" aria-label="Close menu"></button>
     </div>
     <ul>
         <li><a href='about-us.php'>About us</a></li>
@@ -504,10 +504,10 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
     <div class="menu-links">
         <span>Follow us:</span>
         <ul class="social-icon">
-            <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://x.com/Technofra_" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
         </ul>
         <a href="contact.php" title="Contact Us" class="ibt-btn ibt-btn-outline-3 ibt-btn-rounded">
             <span>Enquiry Now</span>
@@ -524,7 +524,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
         <div class="row gx-20 align-items-center justify-content-between">
             <div class="col-auto">
                 <div class="header-logo">
-                    <a href="javascript:void(0)" class="menu-toggle"></a>
+                    <a href="javascript:void(0)" class="menu-toggle" role="button" aria-label="Toggle submenu"></a>
                     <a href='index.php'>
                         <img src="<?php echo htmlspecialchars($stickyHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
                     </a>
@@ -618,7 +618,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                 </div>
             </div>
         </div>
-        <button class="hamburger popup-menu" data-menu="mobileMenu">
+        <button class="hamburger popup-menu" data-menu="mobileMenu" type="button" aria-label="Open menu">
             <span></span>
             <span></span>
             <span></span>
@@ -644,10 +644,10 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                 </ul>
                 <ul class="top-bar-socials">
                     <li><span>Follow us:</span></li>
-                    <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://x.com/Technofra_" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -658,7 +658,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                 <div class="row gx-20 align-items-center justify-content-between">
                     <div class="col-auto">
                         <div class="header-logo">
-                            <a href="javascript:void(0)" class="menu-toggle"></a>
+                            <a href="javascript:void(0)" class="menu-toggle" role="button" aria-label="Toggle submenu"></a>
                             <a href='index.php'>
                                 <img src="<?php echo htmlspecialchars($normalHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
                             </a>
@@ -747,7 +747,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                         </div>
                     </div>
                 </div>
-                <button class="hamburger popup-menu" data-menu="mobileMenu">
+                <button class="hamburger popup-menu" data-menu="mobileMenu" type="button" aria-label="Open menu">
                     <span style="<?= $useWhiteLogo ? 'background-color: white' : 'background-color: black' ?>"></span>
                     <span style="<?= $useWhiteLogo ? 'background-color: white' : 'background-color: black' ?>"></span>
                     <span style="<?= $useWhiteLogo ? 'background-color: white' : 'background-color: black' ?>"></span>

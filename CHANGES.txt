@@ -1,0 +1,8 @@
+Technofra PageSpeed fixes v2 (cumulative - upload over the site, same paths)
+header.php footer.php navbar.php index.php digital-marketing.php  - edited
+assets/css/style.min.css (unused CSS purged 686K->262K), style2.min.css, digital-marketing.min.css, main.min.js, book-call-widget.min.js - minified
+style.css / main.js - source updated (re-minify after future edits)
+assets/**.webp - optimized images
+digital-marketing.php uses $lightJs=true (no swiper/gsap/lenis; smooth-scroll off on that page). Add the same line before the footer include on other pages that don't use sliders/animations.
+htaccess-snippet.txt - APPEND to existing .htaccess (cache + gzip) - fixes "cache lifetimes"
+TODO: add assets/webfonts/fa-regular-400.woff2 (missing file -> 404)

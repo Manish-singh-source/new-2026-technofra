@@ -5,14 +5,26 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCKV0NGPVQ"></script>
+    <!-- Google tag (gtag.js) - loaded after first interaction or idle, keeps it off the critical path -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-WCKV0NGPVQ');
+        (function () {
+            var loaded = false;
+            function loadGA() {
+                if (loaded) return; loaded = true;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WCKV0NGPVQ';
+                document.head.appendChild(s);
+            }
+            ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+                window.addEventListener(ev, loadGA, { once: true, passive: true });
+            });
+            window.addEventListener('load', function () { setTimeout(loadGA, 4000); });
+        })();
     </script>
     <?php
     $pageTitle = $pageTitle ?? 'Technofra Website';
@@ -89,8 +101,8 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
 
     <!-- Google Fonts (deferred) -->
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"></noscript>
 
 
     <!-- Load Font Awesome CSS asynchronously -->
@@ -103,8 +115,8 @@
     <!-- others css -->
     <!-- Keep these normal - needed for initial page load -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style2.min.css">
 
     <!-- Make these async - only used for specific components -->
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" media="print" onload="this.media='all'">
@@ -117,9 +129,10 @@
         <link rel="stylesheet" href="assets/css/plugins/lightgallery-bundle.min.css">
     </noscript>
 
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></noscript>
+    <!-- width/height attrs reserve space (no layout shift) without distorting images; zero specificity so any class rule still wins -->
+    <style>:where(img[width][height]){height:auto}</style>
 
 </head>
 

@@ -2122,8 +2122,7 @@ var LenisScroll = {
         typeof gsap === "undefined" ||
         typeof ScrollTrigger === "undefined"
       ) {
-        console.error("Lenis library not loaded. Check your CDN script tag.");
-        return;
+        return; // libraries intentionally not loaded on light pages
       }
 
       gsap.registerPlugin(ScrollTrigger);
@@ -2167,41 +2166,42 @@ var LenisScroll = {
 };
 
 // Pure JS modules (NO jQuery dependency)
+function safeInit(fn) { try { fn(); } catch (e) { if (window.console) console.warn("init skipped:", e && e.message); } }
 document.addEventListener("DOMContentLoaded", function () {
   // Side menus (ensure DOM ready and after layout/UI elements)
-  SideMenu.init();
-  SideMenu2.init();
-  SideMenu3.init();
-  SidebarToggle.init();
+  safeInit(function () { SideMenu.init(); });
+  safeInit(function () { SideMenu2.init(); });
+  safeInit(function () { SideMenu3.init(); });
+  safeInit(function () { SidebarToggle.init(); });
 
   // Layout / core
-  Preloader.init();
-  ThemeToggle.init();
-  StickyHeader.init();
-  AieroParallax.init();
+  safeInit(function () { Preloader.init(); });
+  safeInit(function () { ThemeToggle.init(); });
+  safeInit(function () { StickyHeader.init(); });
+  safeInit(function () { AieroParallax.init(); });
 
   // Visual effects / animations
-  LenisScroll.init();
-  GsapAnimations.init();
-  AieroEffects.init();
-  OGLDeformEffect.init(".hero-style8", "assets/images/bg/hero8.png");
-  OGLDeformEffect.init(".main-sec6", "assets/images/bg/intro-bg.png");
+  safeInit(function () { LenisScroll.init(); });
+  safeInit(function () { GsapAnimations.init(); });
+  safeInit(function () { AieroEffects.init(); });
+  safeInit(function () { OGLDeformEffect.init(".hero-style8", "assets/images/bg/hero8.png"); });
+  safeInit(function () { OGLDeformEffect.init(".main-sec6", "assets/images/bg/intro-bg.png"); });
 
   // Media
-  VideoModal.init();
-  LightGalleryInit.init();
+  safeInit(function () { VideoModal.init(); });
+  safeInit(function () { LightGalleryInit.init(); });
 
   // UI components
-  SwiperSliders.init();
-  SignupToggle.init();
-  ScrollToTop.init();
-  PasswordToggle.init();
-  HorizontalScroll.init();
-  PriceFilter.init();
-  SearchPopup.init();
-  ActiveMenu.init();
-  CounterAnimation.init();
-  IsotopeFilter.init();
+  safeInit(function () { SwiperSliders.init(); });
+  safeInit(function () { SignupToggle.init(); });
+  safeInit(function () { ScrollToTop.init(); });
+  safeInit(function () { PasswordToggle.init(); });
+  safeInit(function () { HorizontalScroll.init(); });
+  safeInit(function () { PriceFilter.init(); });
+  safeInit(function () { SearchPopup.init(); });
+  safeInit(function () { ActiveMenu.init(); });
+  safeInit(function () { CounterAnimation.init(); });
+  safeInit(function () { IsotopeFilter.init(); });
 });
 
 

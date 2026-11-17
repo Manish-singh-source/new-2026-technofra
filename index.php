@@ -6,6 +6,10 @@ $bookCallStatus = $_SESSION['book_call_status'] ?? null;
 unset($_SESSION['book_call_status']);
 include __DIR__ . '/header.php'; ?>
 <style>
+    /* heading-order fix: h3 keeps the old h4 look */
+    .industry-card h3 { font-size: 22px; line-height: 1.25; font-weight: 700; margin-bottom: 12px; color: var(--color-heading); letter-spacing: normal; }
+    @media (max-width: 767px) { .industry-card h3 { font-size: 20px; } }
+    .hero-seo-h1 { position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     /* Reference-style About section */
     .mark-about-section { position: relative; padding: 80px 0 80px; background: #fff; color: #111; overflow: hidden; }
 .mark-about-section .mark-about-kicker { display: inline-block; color: #036; font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
@@ -63,7 +67,7 @@ include __DIR__ . '/header.php'; ?>
         position: relative;
         overflow: hidden;
         padding: 78px 0;
-        background: linear-gradient(90deg, rgba(5, 12, 18, 0.92) 0%, rgb(8 22 31 / 17%) 34%, rgba(12, 44, 57, 0.58) 100%), radial-gradient(circle at 68% 26%, rgba(255, 244, 214, 0.28), transparent 26%), url(./assets/images/new/bannerhome.png) center center / cover no-repeat fixed;
+        background: linear-gradient(90deg, rgba(5, 12, 18, 0.92) 0%, rgb(8 22 31 / 17%) 34%, rgba(12, 44, 57, 0.58) 100%), radial-gradient(circle at 68% 26%, rgba(255, 244, 214, 0.28), transparent 26%), url(./assets/images/new/bannerhome.webp) center center / cover no-repeat fixed;
     }
 
     .creative-banner-sec::before {
@@ -1487,7 +1491,8 @@ include __DIR__ . '/header.php'; ?>
 .technofra-testimonial-card { width: min(390px, 82vw); min-height: 248px; padding: 28px; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.035)); }
 .technofra-testimonial-person { display: flex; align-items: center; gap: 14px; }
 .technofra-testimonial-person img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
-.technofra-testimonial-person h4 { margin: 0; color: #fff; font-size: 16px; font-weight: 600; }
+.technofra-testimonial-person h3 { line-height: 1.3; letter-spacing: 0; }
+.technofra-testimonial-person h4, .technofra-testimonial-person h3 { margin: 0; color: #fff; font-size: 16px; font-weight: 600; }
 .technofra-testimonial-person p { margin: 4px 0 0; color: #8f9aa5; font-size: 12px; }
 .technofra-testimonial-quote { margin: 28px 0 22px; color: #d4dbe1; font-size: 16px; line-height: 1.65; }
 .technofra-testimonial-stars { color: #ffaf1b; letter-spacing: 4px; font-size: 14px; }
@@ -1560,11 +1565,11 @@ include __DIR__ . '/header.php'; ?>
     margin: 0 -370px;
 }
 }
-Recomme
 </style>
 
 <!-- hero-style4 -->
 <section class="hero-style4">
+    <h1 class="hero-seo-h1">Website Development &amp; Digital Marketing Company in Mumbai | Technofra</h1>
     <div class="hero-bg4" aria-hidden="true">
         <video
             class="hero-video4"
@@ -1656,13 +1661,13 @@ Recomme
         <div class="col-xl-3">
             <div class="mark-about-accent">
                 <span class="mark-about-kicker">[ Who we are ]</span>
-                <div class="mark-about-shape-board"><img src="assets/images/new/about-shpe.png" alt="Abstract about section shape"></div>
+                <div class="mark-about-shape-board"><img src="assets/images/new/about-shpe.webp" alt="Abstract about section shape" width="800" height="1600" loading="lazy" decoding="async"></div>
             </div>
         </div>
         <div class="col-xl-9">
             <h2 class="mark-about-main title animated-heading" id="mark-about-heading"><em>We build digital experiences</em> that grow businesses.</h2>
             <div class="row align-items-start">
-                <div class="col-xl-5 col-lg-4 col-md-5"><div class="mark-about-image"><img src="assets/images/new/technofra-about.png" alt="Technofra team creating digital solutions"></div></div>
+                <div class="col-xl-5 col-lg-4 col-md-5"><div class="mark-about-image"><img src="assets/images/new/technofra-about.webp" alt="Technofra team creating digital solutions" width="493" height="740" loading="lazy" decoding="async"></div></div>
                 <div class="col-xl-7 col-lg-8 col-md-7"><div class="mark-about-details">
                     <p class="mark-about-description">Technofra is your all-in-one digital solutions partner. We create high-performing websites and mobile apps, build memorable brands, and run data-driven marketing that helps businesses attract the right audience, convert more leads, and scale with confidence.</p>
                     <div class="row">
@@ -1681,7 +1686,7 @@ Recomme
 <section class="technofra-services-showcase" aria-labelledby="technofra-services-heading">
     <div class="container">
         <div class="services-intro">
-            <div class="services-intro-image"><img src="assets/images/new/servicehome.png" alt="Technofra team collaborating on a digital project"></div>
+            <div class="services-intro-image"><img src="assets/images/new/servicehome.webp" alt="Technofra team collaborating on a digital project" width="1000" height="608" loading="lazy" decoding="async"></div>
             <div>
                 <p class="services-eyebrow"><i class="fa-solid fa-asterisk" aria-hidden="true"></i> Digital Solutions</p>
                 <h2 class="services-heading" id="technofra-services-heading">Services We Provide</h2>
@@ -1728,7 +1733,7 @@ Recomme
     <div class="container2">
         <div class="service-content3">
             <div class="ser-card3">
-                <img src="assets/images/new/web.png" alt="Professional Web Development for Your Business Growth">
+                <img src="assets/images/new/web.webp" alt="Professional Web Development for Your Business Growth" width="710" height="401" loading="lazy" decoding="async">
                 <div class="ser-content3">
                     <h4 class="title">Professional Web Development for Your Business Growth</h4>
                     <a class='ser-btn3' href='web-design-and-development.php' title>Explore more</a>
@@ -1739,7 +1744,7 @@ Recomme
                 </a>
             </div>
             <div class="ser-card3 v2">
-                <img src="assets/images/new/app.png" alt="Custom App Development for Smooth Business Operations">
+                <img src="assets/images/new/app.webp" alt="Custom App Development for Smooth Business Operations" width="710" height="401" loading="lazy" decoding="async">
                 <a href="android-app-development.php" class="view-btn">
                     <i class="icon fontello icon-button-arrow"></i>
                     <i class="icon2 fontello icon-button-arrow"></i>
@@ -1759,14 +1764,14 @@ Recomme
                 </div>
             </div>
             <div class="ser-card3 v1">
-                <img src="assets/images/new/support.png" alt="Technical support for the entire service life">
+                <img src="assets/images/new/support.webp" alt="Technical support for the entire service life" width="420" height="401" loading="lazy" decoding="async">
                 <div class="ser-content">
                     <h4 class="title">Technical support for
                         the entire service life
                     </h4>
                     <p>Instant assistance for all your queries. Experience seamless service with our AI-powered
                         support</p>
-                    <img src="assets/images/icon/phone2.svg" alt="Technical support for the entire service life">
+                    <img src="assets/images/icon/phone2.svg" alt="Technical support for the entire service life" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -1786,19 +1791,19 @@ Recomme
             <div class="col-lg-6">
                 <div class="service-box7">
                     <div class="social-link3">
-                        <img src="assets/images/new/b1.png" alt="Blue Orbith">
+                        <img src="assets/images/new/b1.webp" alt="Blue Orbith" width="700" height="700" loading="lazy" decoding="async">
                         <a href="https://blueorbith.com/" target="_blank" rel="noopener noreferrer"><span>Blue Orbith</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b2.png" alt="Grid Infinity">
+                        <img src="assets/images/new/b2.webp" alt="Grid Infinity" width="700" height="700" loading="lazy" decoding="async">
                         <a href="https://gridinfinity.com/" target="_blank" rel="noopener noreferrer"><span>Grid Infinity</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b3.png" alt="Mark Idenititiez">
+                        <img src="assets/images/new/b3.webp" alt="Mark Idenititiez" width="700" height="700" loading="lazy" decoding="async">
                         <a href="https://markidentitiez.com/" target="_blank" rel="noopener noreferrer"><span>Mark Idenititiez</span></a>
                     </div>
                     <div class="social-link3">
-                        <img src="assets/images/new/b4.png" alt="Digi Kcon">
+                        <img src="assets/images/new/b4.webp" alt="Digi Kcon" width="700" height="700" loading="lazy" decoding="async">
                         <a href="https://digikcon.com/" target="_blank" rel="noopener noreferrer"><span>Digi Kcon</span></a>
                     </div>
                 </div>
@@ -1899,23 +1904,23 @@ Recomme
                 <div class="col-lg-6">
                     <div class="client-trust-visual1">
                         <div class="client-trust-map1" aria-hidden="true">
-                            <img src="assets/images/layers/map-layer.png" alt="">
+                            <img src="assets/images/layers/map-layer.webp" alt="" width="1000" height="717" loading="lazy" decoding="async">
                         </div>
                         <div class="client-trust-figure1">
                             <span class="count">500+</span>
                             <span class="label">Happy Clients Worldwide</span>
                         </div>
                         <div class="client-trust-grid1">
-                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="Frago Matric" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="Life Like" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="Sanjay Agencies" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="Urbon Sports" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="Aeritx" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="ChemPharma" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="Indore" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="Global Ocean Beyond Logistics" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="VLegends" srcset=""></div>
-                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="Aspirias" srcset=""></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c1.png" alt="Frago Matric" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c2.png" alt="Life Like" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c3.png" alt="Sanjay Agencies" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c4.png" alt="Urbon Sports" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c5.png" alt="Aeritx" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c7.png" alt="ChemPharma" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c8.png" alt="Indore" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c9.png" alt="Global Ocean Beyond Logistics" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c10.png" alt="VLegends" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
+                            <div class="client-brand-card1"><img src="./assets/images/new/c6.png" alt="Aspirias" srcset="" width="118" height="100" loading="lazy" decoding="async"></div>
                         </div>
                         <div class="client-trust-note1">
                             <i class="fontello icon-check-circle"></i>
@@ -1935,80 +1940,80 @@ Recomme
             <div class="studio-showcase-main d-flex">
                 <div class="studio-showcase-item d-none d-md-block" data-speed=".7">
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/Portfolio-1.png" alt="Portfolio showcase project">
+                        <img src="assets/img/new-images/Portfolio-1.webp" alt="Portfolio showcase project" width="1000" height="664" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/Portfolio-1.png" alt="Portfolio showcase project">
+                        <img src="assets/img/new-images/Portfolio-1.webp" alt="Portfolio showcase project" width="1000" height="664" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-7.png" alt="Featured digital project showcase">
+                        <img src="assets/img/new-images/FP-7.webp" alt="Featured digital project showcase" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-8.png" alt="Featured digital project showcase">
+                        <img src="assets/img/new-images/FP-8.webp" alt="Featured digital project showcase" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/Portfolio-1.png" alt="Portfolio showcase project">
+                        <img src="assets/img/new-images/Portfolio-1.webp" alt="Portfolio showcase project" width="1000" height="664" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/home-06/showcase/showcase-7.jpg" alt="Creative website showcase">
+                        <img src="assets/img/home-06/showcase/showcase-7.jpg" alt="Creative website showcase" width="870" height="540" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="studio-showcase-item" data-speed="1.1">
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-4.png" alt="Featured portfolio project">
+                        <img src="assets/img/new-images/FP-4.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img class="showcase-fp2-primary" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                        <img class="showcase-fp2-primary" src="assets/img/new-images/FP-2.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video showcase-video-primary" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-primary" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-3.png" alt="Featured portfolio project">
+                        <img src="assets/img/new-images/FP-3.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-duplicate" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
+                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase" width="865" height="499" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-duplicate" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
+                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase" width="865" height="499" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <video class="studio-showcase-video showcase-video-duplicate" autoplay muted loop playsinline preload="metadata" aria-label="Featured portfolio video"><source src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
+                        <video class="studio-showcase-video showcase-video-duplicate" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured portfolio project">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase">
+                        <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase" width="865" height="499" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="studio-showcase-item d-none d-md-block" data-speed=".7">
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/Portfolio-3.png" alt="Portfolio showcase project">
+                        <img src="assets/img/new-images/Portfolio-3.webp" alt="Portfolio showcase project" width="1000" height="667" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/Portfolio-3.png" alt="Portfolio showcase project">
+                        <img src="assets/img/new-images/Portfolio-3.webp" alt="Portfolio showcase project" width="1000" height="667" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/Portfolio-2.png" alt="Portfolio showcase project">
+                        <img src="assets/img/new-images/Portfolio-2.webp" alt="Portfolio showcase project" width="1000" height="667" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/new-images/FP-1.png" alt="Featured digital project showcase">
+                        <img src="assets/img/new-images/FP-1.webp" alt="Featured digital project showcase" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.png" alt="Featured digital project showcase">
+                        <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.webp" alt="Featured digital project showcase" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
                     <div class="studio-showcase-thumb mb-30">
-                        <img src="assets/img/home-06/showcase/showcase-9.jpg" alt="Creative website showcase">
+                        <img src="assets/img/home-06/showcase/showcase-9.jpg" alt="Creative website showcase" width="870" height="540" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -2039,9 +2044,9 @@ Recomme
                 </div>
                 <div class="eep-calendar-box">
                     <div class="eep-calendar-nav">
-                        <button id="prevMonth" class="eep-cal-btn" type="button">&#8249;</button>
+                        <button id="prevMonth" class="eep-cal-btn" type="button" aria-label="Previous month">&#8249;</button>
                         <div id="monthLabel" class="eep-month-label">Month 2026</div>
-                        <button id="nextMonth" class="eep-cal-btn" type="button">&#8250;</button>
+                        <button id="nextMonth" class="eep-cal-btn" type="button" aria-label="Next month">&#8250;</button>
                     </div>
                     <div class="eep-calendar-week">
                         <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
@@ -2085,7 +2090,7 @@ Recomme
                 <div class="eep-dot eep-dot-2"></div>
                 <div class="eep-dot eep-dot-3"></div>
                 <div class="eep-center-circle"></div>
-                <div class="eep-person"><img loading="lazy" decoding="async" src="assets/images/new/book.png" alt="Book A Call"></div>
+                <div class="eep-person"><img loading="lazy" decoding="async" src="assets/images/new/book.webp" alt="Book A Call" width="800" height="800"></div>
             </div>
         </div>
     </div>
@@ -2146,18 +2151,18 @@ Recomme
     <div class="technofra-testimonial-rows">
         <div class="technofra-testimonial-row technofra-testimonial-row-left">
             <div class="technofra-testimonial-row-track">
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h4>Rohan Mehta</h4><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h4>Priya Shah</h4><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h4>Arjun Nair</h4><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h4>Neha Kapoor</h4><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Rohan Mehta</h3><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Priya Shah</h3><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Arjun Nair</h3><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Neha Kapoor</h3><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
             </div>
         </div>
         <div class="technofra-testimonial-row technofra-testimonial-row-right">
             <div class="technofra-testimonial-row-track">
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair"><div><h4>Arjun Nair</h4><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor"><div><h4>Neha Kapoor</h4><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta"><div><h4>Rohan Mehta</h4><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
-                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah"><div><h4>Priya Shah</h4><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-3.png" alt="Arjun Nair" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Arjun Nair</h3><p>Co-Founder, D2C Startup</p></div></div><p class="technofra-testimonial-quote">&ldquo;The team understood our market quickly and built a brand system that works across every channel.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-4.png" alt="Neha Kapoor" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Neha Kapoor</h3><p>Marketing Head, Retail Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Every detail was handled with clarity. Our communication now looks consistent and confident.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-1.png" alt="Rohan Mehta" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Rohan Mehta</h3><p>Founder, FMCG Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Technofra helped us define a sharper digital presence and a premium identity that customers remember.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
+                <article class="technofra-testimonial-card"><div class="technofra-testimonial-person"><img src="assets/img/home-10/testimonial/testimonial-item-2.png" alt="Priya Shah" width="50" height="50" loading="lazy" decoding="async"><div><h3 class="h4">Priya Shah</h3><p>Director, Lifestyle Brand</p></div></div><p class="technofra-testimonial-quote">&ldquo;Their approach was strategic, clear, and business-focused. Our brand now feels much more premium.&rdquo;</p><div class="technofra-testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></article>
             </div>
         </div>
     </div></section>
@@ -2194,7 +2199,7 @@ Recomme
                         <div class="industry-icon brand-blue">
                             <i class="fa-solid fa-industry" aria-hidden="true"></i>
                         </div>
-                        <h4>Manufacturing</h4>
+                        <h3 class="h4">Manufacturing</h3>
                         <p>Smart production, automation, and workflow optimization for modern factories.</p>
                     </div>
                 </div>
@@ -2203,7 +2208,7 @@ Recomme
                         <div class="industry-icon brand-red">
                             <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
                         </div>
-                        <h4>Healthcare</h4>
+                        <h3 class="h4">Healthcare</h3>
                         <p>Patient-first digital solutions, secure systems, and better care journeys.</p>
                     </div>
                 </div>
@@ -2212,7 +2217,7 @@ Recomme
                         <div class="industry-icon brand-orange">
                             <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
                         </div>
-                        <h4>Retail & E-commerce</h4>
+                        <h3 class="h4">Retail & E-commerce</h3>
                         <p>Conversion-focused storefronts, catalog systems, and customer engagement.</p>
                     </div>
                 </div>
@@ -2221,7 +2226,7 @@ Recomme
                         <div class="industry-icon brand-teal">
                             <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
                         </div>
-                        <h4>Logistics</h4>
+                        <h3 class="h4">Logistics</h3>
                         <p>Real-time tracking, route efficiency, and dependable delivery operations.</p>
                     </div>
                 </div>
@@ -2230,7 +2235,7 @@ Recomme
                         <div class="industry-icon brand-purple">
                             <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
                         </div>
-                        <h4>Education</h4>
+                        <h3 class="h4">Education</h3>
                         <p>Interactive platforms, learning experiences, and student engagement tools.</p>
                     </div>
                 </div>
@@ -2239,7 +2244,7 @@ Recomme
                         <div class="industry-icon brand-gold">
                             <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                         </div>
-                        <h4>Finance</h4>
+                        <h3 class="h4">Finance</h3>
                         <p>Secure digital finance workflows, analytics, and customer-friendly interfaces.</p>
                     </div>
                 </div>
@@ -2248,7 +2253,7 @@ Recomme
                         <div class="industry-icon brand-amber">
                             <i class="fa-solid fa-helmet-safety" aria-hidden="true"></i>
                         </div>
-                        <h4>Construction</h4>
+                        <h3 class="h4">Construction</h3>
                         <p>Project visibility, field coordination, and smarter site operations.</p>
                     </div>
                 </div>
@@ -2257,7 +2262,7 @@ Recomme
                         <div class="industry-icon brand-lime">
                             <i class="fa-solid fa-bolt" aria-hidden="true"></i>
                         </div>
-                        <h4>Energy</h4>
+                        <h3 class="h4">Energy</h3>
                         <p>Utilities, renewables, and performance dashboards built for growth.</p>
                     </div>
                 </div>
@@ -2437,13 +2442,34 @@ Recomme
 })();
 </script>
 <script>
+(function () {
+    var vids = document.querySelectorAll('video.studio-showcase-video');
+    if (!vids.length) return;
+    function load(v) {
+        var src = v.querySelector('source[data-src]');
+        if (!src) return;
+        src.src = src.getAttribute('data-src');
+        src.removeAttribute('data-src');
+        v.load();
+        var p = v.play(); if (p && p.catch) p.catch(function () {});
+    }
+    if (!('IntersectionObserver' in window)) { vids.forEach(load); return; }
+    var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+            if (e.isIntersecting) { load(e.target); io.unobserve(e.target); }
+        });
+    }, { rootMargin: '200px 0px' });
+    vids.forEach(function (v) { io.observe(v); });
+})();
+</script>
+<script>
 window.addEventListener('load', function () {
     if (window.LenisScroll && typeof LenisScroll.getInstance === 'function' && !LenisScroll.getInstance()) {
         LenisScroll.init();
     }
     if (window.ScrollTrigger) { ScrollTrigger.refresh(); }
 });
-</script><script src='assets/js/book-call-widget.js' defer></script>
+</script><script src='assets/js/book-call-widget.min.js' defer></script>
 <?php include __DIR__ . '/footer.php'; ?>
 
 
