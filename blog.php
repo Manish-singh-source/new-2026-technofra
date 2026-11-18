@@ -5,14 +5,12 @@ header('Content-Type: text/html; charset=UTF-8');
 $pageStylesheet = 'assets/css/blog.css?v=' . (int) filemtime(__DIR__ . '/assets/css/blog.css');
 $baseHref = blog_base_path() . '/';
 $bodyClass = 'tf-blog-page';
+$forceBlackHeader = true;
 $posts = blog_live_posts(blog_load_posts());
 
 $requestedSlug = trim((string) ($_GET['post'] ?? ''), '/');
 $currentPost = $requestedSlug === '' ? null : blog_find_post($posts, $requestedSlug);
 $notFound = $requestedSlug !== '' && $currentPost === null;
-if ($notFound) {
-    http_response_code(404);
-}
 if ($notFound) {
     http_response_code(404);
 }

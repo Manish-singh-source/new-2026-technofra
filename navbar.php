@@ -14,17 +14,30 @@ $whiteLogoPages = [
     'frago.php',
     'sukanya.php',
     'seo.php',
-    'blog-admin.php'
 ];
 $whiteLogoScriptPaths = [];
-$blackLogoScriptPaths = [
-    'pdf-tool/index.php',
+$blackLogoScriptPatterns = [
+    '#(^|/)pdf-tool(/index\.php)?$#i',
+    '#(^|/)blog(/index\.php)?$#i',
+    '#(^|/)blog\.php$#i',
+    '#(^|/)blog-admin(/index\.php)?$#i',
+    '#(^|/)blog-admin\.php$#i',
 ];
+$isExplicitBlackPage = $forceBlackHeader
+    || strpos($bodyClass, 'tf-blog') !== false;
 
-$useWhiteLogo = !$forceBlackHeader
+if (!$isExplicitBlackPage) {
+    foreach ($blackLogoScriptPatterns as $pattern) {
+        if (preg_match($pattern, $currentScript)) {
+            $isExplicitBlackPage = true;
+            break;
+        }
+    }
+}
+
+$useWhiteLogo = !$isExplicitBlackPage
     && (in_array($currentPage, $whiteLogoPages, true)
-        || in_array($currentScript, $whiteLogoScriptPaths, true))
-    && !in_array($currentScript, $blackLogoScriptPaths, true);
+        || in_array($currentScript, $whiteLogoScriptPaths, true));
 $normalHeaderLogo = $useWhiteLogo ? 'assets/images/new/logo.png' : 'assets/images/new/logo-black.png';
 $stickyHeaderLogo = 'assets/images/new/logo-black.png';
 $logoAssetVersion = max((int) @filemtime(__DIR__ . '/assets/images/new/logo.png'), (int) @filemtime(__DIR__ . '/assets/images/new/logo-black.png'));

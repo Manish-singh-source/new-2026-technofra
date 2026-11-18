@@ -383,6 +383,16 @@
     color: #111318 !important;
 }
 
+.tf-blog-page .vs-header4 .btn-box .ibt-btn,
+.tf-blog-page .sticky-active .btn-box .ibt-btn {
+    color: #111318 !important;
+}
+
+.tf-blog-page .vs-header4 .btn-box .ibt-btn:hover,
+.tf-blog-page .sticky-active .btn-box .ibt-btn:hover {
+    color: #ffffff !important;
+}
+
 .tf-admin-header,
 .tf-admin-header-actions,
 .tf-admin-section-heading,
