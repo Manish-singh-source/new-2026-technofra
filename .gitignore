@@ -5,7 +5,7 @@ book-call-config.local.php
 # User-generated uploads
 uploads/
 inovizideas/
-blog/
+
 
 # Optional local env files
 .env
