@@ -117,6 +117,11 @@
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/style2.min.css">
+    <?php if (!empty($pageStylesheet)): ?>
+        <?php foreach ((array) $pageStylesheet as $sheet): ?>
+    <link rel="stylesheet" href="<?php echo htmlspecialchars($sheet, ENT_QUOTES, 'UTF-8'); ?>">
+        <?php endforeach; ?>
+    <?php endif; ?>
 
     <!-- Make these async - only used for specific components -->
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" media="print" onload="this.media='all'">
