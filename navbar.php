@@ -14,6 +14,7 @@ $whiteLogoPages = [
     'frago.php',
     'sukanya.php',
     'seo.php',
+    'ppc.php',
 ];
 $whiteLogoScriptPaths = [];
 $blackLogoScriptPatterns = [
