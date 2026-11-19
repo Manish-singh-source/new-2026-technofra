@@ -8,22 +8,32 @@
     <!-- Google tag (gtag.js) - loaded after first interaction or idle, keeps it off the critical path -->
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'G-WCKV0NGPVQ');
-        (function () {
+        (function() {
             var loaded = false;
+
             function loadGA() {
-                if (loaded) return; loaded = true;
+                if (loaded) return;
+                loaded = true;
                 var s = document.createElement('script');
                 s.async = true;
                 s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WCKV0NGPVQ';
                 document.head.appendChild(s);
             }
-            ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
-                window.addEventListener(ev, loadGA, { once: true, passive: true });
+            ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function(ev) {
+                window.addEventListener(ev, loadGA, {
+                    once: true,
+                    passive: true
+                });
             });
-            window.addEventListener('load', function () { setTimeout(loadGA, 4000); });
+            window.addEventListener('load', function() {
+                setTimeout(loadGA, 4000);
+            });
         })();
     </script>
     <?php
@@ -69,28 +79,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
     <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
-    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+        <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
     <?php if (!empty($metaDescription)): ?>
-    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Technofra">
-    <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
-    <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
-    <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+        <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Technofra">
+        <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>">
+        <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+        <?php if ($canonicalUrl !== false && $canonicalUrl !== ''): ?>
+            <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+        <?php endif; ?>
+        <?php if (!empty($ogImage)): ?>
+            <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES, 'UTF-8'); ?>">
+            <meta name="twitter:card" content="summary_large_image">
+        <?php endif; ?>
     <?php endif; ?>
-    <?php if (!empty($ogImage)): ?>
-    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES, 'UTF-8'); ?>">
-    <meta name="twitter:card" content="summary_large_image">
-    <?php endif; ?>
-    <?php endif; ?>
-    <?php if (!empty($extraHead)) { echo $extraHead; } ?>
+    <?php if (!empty($extraHead)) {
+        echo $extraHead;
+    } ?>
     <?php if (!empty($baseHref)): ?>
-    <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
+        <base href="<?php echo htmlspecialchars($baseHref, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
     <?php if ($metaKeywords !== ''): ?>
-    <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
+        <meta name="keywords" content="<?php echo htmlspecialchars($metaKeywords, ENT_QUOTES, 'UTF-8'); ?>">
     <?php endif; ?>
 
     <!-- Preconnect for faster font loading (PUT THIS FIRST!) -->
@@ -102,7 +114,9 @@
 
     <!-- Google Fonts (deferred) -->
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"></noscript>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+    </noscript>
 
 
     <!-- Load Font Awesome CSS asynchronously -->
@@ -119,7 +133,7 @@
     <link rel="stylesheet" href="assets/css/style2.min.css">
     <?php if (!empty($pageStylesheet)): ?>
         <?php foreach ((array) $pageStylesheet as $sheet): ?>
-    <link rel="stylesheet" href="<?php echo htmlspecialchars($sheet, ENT_QUOTES, 'UTF-8'); ?>">
+            <link rel="stylesheet" href="<?php echo htmlspecialchars($sheet, ENT_QUOTES, 'UTF-8'); ?>">
         <?php endforeach; ?>
     <?php endif; ?>
 
@@ -134,10 +148,16 @@
         <link rel="stylesheet" href="assets/css/plugins/lightgallery-bundle.min.css">
     </noscript>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></noscript>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'"> -->
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    </noscript>
     <!-- width/height attrs reserve space (no layout shift) without distorting images; zero specificity so any class rule still wins -->
-    <style>:where(img[width][height]){height:auto}</style>
+    <style>
+        :where(img[width][height]) {
+            height: auto
+        }
+    </style>
 
 </head>
 
@@ -152,5 +172,3 @@
         <!-- End Preloader -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
-
-

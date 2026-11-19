@@ -147,7 +147,7 @@ function blog_sanitize_html($html)
                     while ($child->firstChild) $node->insertBefore($child->firstChild, $child);
                     $node->removeChild($child);
                 } else {
-                    $allowedAttributes = ['a' => ['href','target','rel'], 'img' => ['src','alt'], 'span' => ['class','style'], 'p' => ['class'], 'h2' => ['class'], 'h3' => ['class'], 'h4' => ['class'], 'li' => ['class']];
+                    $allowedAttributes = ['a' => ['href','target','rel'], 'img' => ['src','alt'], 'span' => ['class','style'], 'p' => ['class'], 'h1' => ['class'], 'h2' => ['class'], 'h3' => ['class'], 'h4' => ['class'], 'h5' => ['class'], 'h6' => ['class'], 'li' => ['class']];
                     $keep = $allowedAttributes[$tag] ?? [];
                     for ($i = $child->attributes->length - 1; $i >= 0; $i--) {
                         $attribute = $child->attributes->item($i);

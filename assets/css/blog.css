@@ -287,14 +287,60 @@
 }
 
 .tf-blog-article-copy {
-    color: #383d45;
+    color: #1a1e24;
     font-size: 17px;
-    line-height: 1.9;
+    line-height: 1.85;
 }
 
 .tf-blog-article-copy p,
-.tf-blog-article-copy ul {
-    margin: 0 0 24px;
+.blog-content p {
+    color: #1a1e24;
+    font-size: 17px;
+    line-height: 1.85;
+    margin: 0 0 20px;
+}
+
+/* Neutralize global .blog-content span { color: #9B9B9B; font-size: 14px; } from style.css */
+.tf-blog-article-copy span,
+.blog-content span {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    display: inline !important;
+}
+
+.tf-blog-article-copy span:not([style*="color"]),
+.blog-content span:not([style*="color"]) {
+    color: inherit !important;
+}
+
+/* Bullet and numbered lists in article content */
+.tf-blog-article-copy ul,
+.blog-content ul {
+    display: block !important;
+    list-style: disc outside !important;
+    list-style-type: disc !important;
+    margin: 16px 0 22px !important;
+    padding-left: 32px !important;
+}
+
+.tf-blog-article-copy ol,
+.blog-content ol {
+    display: block !important;
+    list-style: decimal outside !important;
+    list-style-type: decimal !important;
+    margin: 16px 0 22px !important;
+    padding-left: 32px !important;
+}
+
+.tf-blog-article-copy li,
+.blog-content li {
+    display: list-item !important;
+    list-style: inherit !important;
+    margin: 6px 0 !important;
+    padding-left: 4px !important;
+    color: #1a1e24;
+    font-size: 17px;
+    line-height: 1.75;
 }
 
 .tf-blog-article-copy h2 {
@@ -304,6 +350,14 @@
     font-weight: 750;
     letter-spacing: -.035em;
     line-height: 1.25;
+}
+
+.tf-blog-article-copy p.ql-title,
+.blog-content p.ql-title {
+    font-weight: 700;
+    margin: 28px 0 12px;
+    font-size: 20px;
+    color: #0a214d;
 }
 
 .tf-blog-article-copy h3 {

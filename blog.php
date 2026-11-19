@@ -54,15 +54,6 @@ include __DIR__ . '/header.php';
             <?php if ($currentPost !== null): ?>
                 <div class="tf-blog-detail-layout">
                     <article class="tf-blog-article">
-                        <header class="tf-blog-article-header">
-                            <div class="tf-blog-article-meta">
-                                <span class="tf-blog-card-category"style="display: none;">BLOG</span>
-
-                                <?php if (!empty($currentPost['updated_at']) && $currentPost['updated_at'] !== ($currentPost['published_at'] ?? '')): ?>
-                                    <span>Updated <?php echo blog_escape(blog_format_date($currentPost['updated_at'])); ?></span>
-                                <?php endif; ?>
-                            </div>
-                        </header>
                         <?php if (!empty($currentPost['image'])): ?>
                             <img class="tf-blog-feature-image" src="<?php echo blog_escape(blog_image_url($currentPost['image'])); ?>" alt="<?php echo blog_escape($currentPost['title']); ?>">
                         <?php endif; ?>
@@ -89,7 +80,6 @@ include __DIR__ . '/header.php';
                                             <span class="tf-blog-recent-placeholder" aria-hidden="true"></span>
                                         <?php endif; ?>
                                         <span class="tf-blog-recent-copy">
-                                            <span class="tf-blog-recent-date"><span aria-hidden="true">&gt;</span><?php echo blog_escape(blog_format_date($recentPost['published_at'] ?? '')); ?></span>
                                             <span class="tf-blog-recent-title"><?php echo blog_escape($recentPost['title']); ?></span>
                                         </span>
                                     </a>
