@@ -68,7 +68,7 @@ include __DIR__ . '/header.php';
                         <?php endif; ?>
                         <div class="tf-blog-article-copy blog-content"><?php echo blog_render_content((string) ($currentPost['content'] ?? '')); ?></div>
                         <a class="tf-blog-back" href="<?php echo blog_escape(blog_url()); ?>"><span aria-hidden="true">&gt;</span> Back to all articles</a>
-                    </article>
+                    </article> 
                     <aside class="tf-blog-detail-sidebar" aria-label="Blog sidebar">
                         <section class="tf-blog-sidebar-widget">
                             <h2>Search</h2>

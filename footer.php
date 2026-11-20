@@ -28,6 +28,8 @@
                           <li><a href="crm-development.php" title="E-Commerce Development">CRM Development</a></li>
                           <li><a href="https://markidentitiez.com/" title="Branding">Branding</a></li>
                           <li><a href="digital-marketing.php" title="Digital Marketing">Digital Marketing</a></li>
+                          <li><a href="seo.php" title="SEO Services in Mumbai">SEO</a></li>
+                          <li><a href="ppc.php" title="PPC Services in Mumbai">PPC</a></li>
                           <li><a href="social-media-marketing.php" title="Social Media Marketing">Social Media Marketing</a></li>
                       </ul>
                   </div>

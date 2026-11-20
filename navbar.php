@@ -15,6 +15,9 @@ $whiteLogoPages = [
     'sukanya.php',
     'seo.php',
     'ppc.php',
+    'digital-marketing.php',
+    'web-design-and-development.php',
+    'social-media-marketing.php',
 ];
 $whiteLogoScriptPaths = [];
 $blackLogoScriptPatterns = [

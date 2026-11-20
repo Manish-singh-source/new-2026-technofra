@@ -143,13 +143,7 @@
 
 <body class="<?php echo htmlspecialchars($bodyClass, ENT_QUOTES, 'UTF-8'); ?>">
     <div class="wrapper">
-        <!-- Preloader -->
-        <div id="preloader">
-            <div class="loader">
-                <img src="assets/images/preloader-dark.png" alt="Loading...">
-            </div>
-        </div>
-        <!-- End Preloader -->
+        <!-- Preloader removed: it hid the whole page until window "load" (up to 3.5s on mobile), delaying FCP/LCP -->
 
         <?php include __DIR__ . '/navbar.php'; ?>
 
