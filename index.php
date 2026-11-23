@@ -1505,9 +1505,10 @@ include __DIR__ . '/header.php'; ?>
 .studio-showcase-area {
   background: #050505;
   overflow: hidden;
+  position: relative;
 }
 .studio-showcase-wrap {
-  height: 1700px;
+  height: 1300px;
   overflow: hidden;
   margin: 0 -370px;
 }
@@ -1537,34 +1538,116 @@ include __DIR__ . '/header.php'; ?>
   width: 100%;
   display: block;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .studio-showcase-wrap { height: 1000px; }
+.studio-showcase-thumb .studio-showcase-video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #0d0d0d;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .studio-showcase-wrap { height: 700px; }
-  .studio-showcase-area { margin-bottom: 120px; }
-}
-@media (max-width: 767px) {
-  .studio-showcase-wrap { height: 1150px; margin: 0; }
-  .studio-showcase-main { grid-template-columns: 1fr; column-gap: 0; margin-top: -160px; }
-  .studio-showcase-item { width: 100%; gap: 0; }
-  .studio-showcase-area { margin-bottom: 0; }
-}
-/* showcase area end */
-@media (max-width: 1366px) {
+
+@media (min-width: 1441px) {
   .studio-showcase-wrap {
     height: 1300px;
     overflow: hidden;
     margin: 0 -370px;
-}}
-/* Medium Laptop: 1201px to 1440px */
-@media (min-width: 1441px) {
- .studio-showcase-wrap {
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .studio-showcase-wrap {
     height: 1300px;
     overflow: hidden;
     margin: 0 -370px;
+  }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .studio-showcase-wrap {
+    height: 1000px;
+    overflow: hidden;
+    margin: 0 -240px;
+  }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .studio-showcase-wrap {
+    height: 700px;
+    overflow: hidden;
+    margin: 0 -120px;
+  }
+  .studio-showcase-area {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .studio-showcase-area {
+    padding: 30px 0 20px !important;
+    margin-bottom: 0 !important;
+    overflow: hidden !important;
+    background: #050505 !important;
+  }
+  .studio-showcase-area .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .studio-showcase-wrap {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .studio-showcase-main {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+  }
+  .studio-showcase-item.d-none,
+  .studio-showcase-item.showcase-desktop-col {
+    display: none !important;
+  }
+  .studio-showcase-item {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    transform: none !important;
+  }
+  .studio-showcase-thumb {
+    display: none !important;
+  }
+  .studio-showcase-thumb.showcase-mobile-item {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 16px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    background: #111;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  }
+  .studio-showcase-thumb.showcase-mobile-item:last-child,
+  .studio-showcase-thumb.showcase-mobile-item:last-of-type {
+    margin-bottom: 0 !important;
+  }
+  .studio-showcase-thumb.showcase-mobile-item img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    border-radius: 12px !important;
+    object-fit: cover !important;
+  }
+  .studio-showcase-thumb .studio-showcase-video {
+    display: none !important;
+  }
+  .showcase-duplicate-thumb,
+  .showcase-mobile-duplicate,
+  .studio-showcase-thumb:has(.showcase-video-duplicate),
+  .studio-showcase-thumb:has(.showcase-fp2-duplicate) {
+    display: none !important;
+  }
+}
+/* showcase area end */
 </style>
 
 <!-- hero-style4 -->
@@ -1938,7 +2021,7 @@ include __DIR__ . '/header.php'; ?>
     <div class="container-fluid">
         <div class="studio-showcase-wrap">
             <div class="studio-showcase-main d-flex">
-                <div class="studio-showcase-item d-none d-md-block" data-speed=".7">
+                <div class="studio-showcase-item showcase-desktop-col d-none d-md-block" data-speed=".7">
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/new-images/Portfolio-1.webp" alt="Portfolio showcase project" width="1000" height="664" loading="lazy" decoding="async">
                     </div>
@@ -1959,44 +2042,44 @@ include __DIR__ . '/header.php'; ?>
                     </div>
                 </div>
                 <div class="studio-showcase-item" data-speed="1.1">
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 showcase-mobile-item">
                         <img src="assets/img/new-images/FP-4.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 showcase-mobile-item">
                         <img class="showcase-fp2-primary" src="assets/img/new-images/FP-2.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <video class="studio-showcase-video showcase-video-primary" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 showcase-mobile-item">
                         <img src="assets/img/new-images/FP-3.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <video class="studio-showcase-video showcase-video-duplicate" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase" width="865" height="499" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <video class="studio-showcase-video showcase-video-duplicate" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase" width="865" height="499" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <video class="studio-showcase-video showcase-video-duplicate" muted loop playsinline preload="none" aria-label="Featured portfolio video"><source data-src="assets/img/new-images/aeritx.mp4" type="video/mp4"></video>
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <img class="showcase-fp2-duplicate" src="assets/img/new-images/FP-2.webp" alt="Featured portfolio project" width="1000" height="658" loading="lazy" decoding="async">
                     </div>
-                    <div class="studio-showcase-thumb mb-30">
+                    <div class="studio-showcase-thumb mb-30 d-none d-md-block">
                         <img src="assets/img/home-06/showcase/showcase-5.jpg" alt="Creative website showcase" width="865" height="499" loading="lazy" decoding="async">
                     </div>
                 </div>
-                <div class="studio-showcase-item d-none d-md-block" data-speed=".7">
+                <div class="studio-showcase-item showcase-desktop-col d-none d-md-block" data-speed=".7">
                     <div class="studio-showcase-thumb mb-30">
                         <img src="assets/img/new-images/Portfolio-3.webp" alt="Portfolio showcase project" width="1000" height="667" loading="lazy" decoding="async">
                     </div>
@@ -2361,9 +2444,13 @@ include __DIR__ . '/header.php'; ?>
         document.querySelectorAll('.studio-showcase-item:not(.d-none) .studio-showcase-thumb').forEach(function (thumb) {
             thumb.classList.remove('showcase-mobile-duplicate');
             if (!isMobile) return;
+            if (thumb.classList.contains('showcase-duplicate-thumb')) {
+                thumb.classList.add('showcase-mobile-duplicate');
+                return;
+            }
             var media = thumb.querySelector('img, video');
             if (!media) return;
-            var key = media.tagName.toLowerCase() + ':' + (media.currentSrc || media.src || media.querySelector('source')?.src || '');
+            var key = media.tagName.toLowerCase() + ':' + (media.currentSrc || media.src || media.querySelector('source')?.getAttribute('data-src') || media.querySelector('source')?.src || '');
             if (seen[key]) thumb.classList.add('showcase-mobile-duplicate');
             seen[key] = true;
         });
@@ -2405,19 +2492,21 @@ include __DIR__ . '/header.php'; ?>
         gsap.fromTo('.client-trust-content1',
             { x: -45, opacity: 0 },
             { x: 0, opacity: 1, duration: 0.9, ease: 'power3.out', scrollTrigger: { trigger: '.client-trust-sec1', start: 'top 80%', once: true } }
-        );        document.querySelectorAll('.studio-showcase-item[data-speed]').forEach(function (column) {
-            var speed = parseFloat(column.getAttribute('data-speed')) || 1;
-            gsap.fromTo(column, { y: 90 * speed }, {
-                y: -90 * speed,
-                ease: 'none',
-                scrollTrigger: {
-                    trigger: '.studio-showcase-area',
-                    start: 'top bottom',
-                    end: 'bottom top',
-                    scrub: 1.2
-                }
+        );        if (window.innerWidth >= 768) {
+            document.querySelectorAll('.studio-showcase-item[data-speed]').forEach(function (column) {
+                var speed = parseFloat(column.getAttribute('data-speed')) || 1;
+                gsap.fromTo(column, { y: 90 * speed }, {
+                    y: -90 * speed,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: '.studio-showcase-area',
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: 1.2
+                    }
+                });
             });
-        });
+        }
         gsap.fromTo('.studio-showcase-thumb',
             { opacity: 0, y: 34 },
             {
