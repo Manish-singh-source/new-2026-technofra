@@ -24,7 +24,7 @@
                       <h3 class="widget-title">Services</h3>
                       <ul>
                           <li><a href="web-design-and-development.php" title="Website Development">Website Development</a></li>
-                          <li><a href="android-app-development.php" title="App Development">App Development</a></li>
+                          <li><a href="app-development.php" title="App Development">App Development</a></li>
                           <li><a href="crm-development.php" title="E-Commerce Development">CRM Development</a></li>
                           <li><a href="https://markidentitiez.com/" title="Branding">Branding</a></li>
                           <li><a href="digital-marketing.php" title="Digital Marketing">Digital Marketing</a></li>
@@ -73,7 +73,7 @@
                   <h4 class="mb-0">Follow us</h4>
                   <ul class="social-icon footer-social4">
                       <li><a href="https://www.facebook.com/technofra/" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="https://x.com/Technofra_" title="X" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a></li>
+                      <li><a href="https://x.com/Technofra_" title="X" target="_blank" rel="noopener" aria-label="X"><svg class="x-logo" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" style="display:inline-block;width:.95em;height:.95em;vertical-align:-.125em"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
                       <li><a href="https://www.linkedin.com/company/technofra/" title="LinkedIn" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
                       <li><a href="https://youtube.com/@technofra?si=bSGDnJfZ6HMZd2Uw" title="YouTube" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
                       <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>

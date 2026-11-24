@@ -1789,7 +1789,7 @@ include __DIR__ . '/header.php'; ?>
             <div class="technofra-services-cards" id="technofra-services-cards">
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div><h3>Web Design &amp; Development</h3><p>Fast, responsive websites and web applications built to turn visitors into customers.</p><a class="service-card-link" href="web-design-and-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div><h3>E-Commerce Development</h3><p>Conversion-focused online stores with smooth product, cart, and checkout journeys.</p><a class="service-card-link" href="shopify-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
-                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div><h3>iOS &amp; Android App Development</h3><p>Reliable, user-friendly mobile apps that keep your business connected to customers.</p><a class="service-card-link" href="android-app-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
+                <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div><h3>iOS &amp; Android App Development</h3><p>Reliable, user-friendly mobile apps that keep your business connected to customers.</p><a class="service-card-link" href="app-development.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div><h3>Branding</h3><p>Distinctive visual identities and brand systems that make your business memorable.</p><a class="service-card-link" href="https://markidentitiez.com/" target="_blank">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div><h3>Digital Marketing</h3><p>SEO, social media, paid campaigns, and content strategies designed for growth.</p><a class="service-card-link" href="digital-marketing.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
                 <article class="technofra-service-card"><div class="service-card-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div><h3>Domain &amp; Hosting</h3><p>Secure domains, reliable hosting, and dependable support for your online presence.</p><a class="service-card-link" href="domain-hosting.php">Explore More <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></article>
@@ -1828,7 +1828,7 @@ include __DIR__ . '/header.php'; ?>
             </div>
             <div class="ser-card3 v2">
                 <img src="assets/images/new/app.webp" alt="Custom App Development for Smooth Business Operations" width="710" height="401" loading="lazy" decoding="async">
-                <a href="android-app-development.php" class="view-btn">
+                <a href="app-development.php" class="view-btn">
                     <i class="icon fontello icon-button-arrow"></i>
                     <i class="icon2 fontello icon-button-arrow"></i>
                 </a>
@@ -1928,7 +1928,7 @@ include __DIR__ . '/header.php'; ?>
                         </div>
                         <div class="feature-content7">
                             <h4 class="title">
-                                <a href="web-design-and-development.php">Web</a>/<a href="android-app-development.php" title="Android App Development">App</a> development
+                                <a href="web-design-and-development.php">Web</a>/<a href="app-development.php" title="Android App Development">App</a> development
                             </h4>
                             <p>Responsive websites, web apps, and mobile-ready experiences built for speed and usability.
                             </p>

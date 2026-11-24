@@ -52,7 +52,7 @@
             $canonicalMap = [
                 'index.php'                      => '/',
                 'about-us.php'                   => '/about',
-                'ios-development.php'            => '/ios-app-development',
+                'app-development.php'            => '/app-development',
                 'domain-hosting.php'             => '/domain-hosting-services',
                 'shopify-development.php'        => '/shopify-website-development',
                 'social-media-marketing.php'     => '/smm',

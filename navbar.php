@@ -473,7 +473,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
         </div>
         <ul class="social-icon">
             <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><svg class="x-logo" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" style="display:inline-block;width:.95em;height:.95em;vertical-align:-.125em"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
             <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
             <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
         </ul>
@@ -493,8 +493,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                 <li><a href='shopify-development.php'>Shopify</a></li>
                 <li><a href='wordpress.php'>WordPress</a></li>
                 <li><a href="crm-development.php">CRM Development</a></li>
-                <li><a href='ios-development.php'>iOS App</a></li>
-                <li><a href='android-app-development.php'>Android App</a></li>
+                <li><a href='app-development.php'>App Development</a></li>
                 <li><a href='digital-marketing.php'>Digital Marketing</a></li>
                 <li><a href="seo.php">Search Engine Optimization (SEO)</a></li>
                 <li><a href='ppc.php'>Paid Marketing (PPC)</a></li>
@@ -522,7 +521,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
         <span>Follow us:</span>
         <ul class="social-icon">
             <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><svg class="x-logo" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" style="display:inline-block;width:.95em;height:.95em;vertical-align:-.125em"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
             <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
             <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
         </ul>
@@ -568,8 +567,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                             <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
                                             <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
                                             <li><a href="crm-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>CRM Development</span></a></li>
-                                            <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
-                                            <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                            <li><a href='app-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>App Development</span></a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -662,7 +660,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                 <ul class="top-bar-socials">
                     <li><span>Follow us:</span></li>
                     <li><a href="https://www.facebook.com/Technofra/" title="Facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://x.com/Technofra_" title="X" target="_blank" aria-label="X"><svg class="x-logo" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" style="display:inline-block;width:.95em;height:.95em;vertical-align:-.125em"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
                     <li><a href="https://hk.linkedin.com/company/technofra" title="LinkedIn" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><a href="https://www.instagram.com/technofra.company/" title="Instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
                 </ul>
@@ -702,8 +700,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                                                     <li><a href='shopify-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-code"></i></span><span>Shopify</span></a></li>
                                                     <li><a href='wordpress.php'><span class="mega-menu-icon"><i class="fa-brands fa-wordpress-simple"></i></span><span>WordPress</span></a></li>
                                                     <li><a href="crm-development.php"><span class="mega-menu-icon"><i class="fa-solid fa-puzzle-piece"></i></span><span>CRM Development</span></a></li>
-                                                    <li><a href='ios-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>iOS App</span></a></li>
-                                                    <li><a href='android-app-development.php'><span class="mega-menu-icon"><i class="fa-brands fa-android"></i></span><span>Android App</span></a></li>
+                                                    <li><a href='app-development.php'><span class="mega-menu-icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span>App Development</span></a></li>
                                                 </ul>
                                             </div>
                                         </li>
