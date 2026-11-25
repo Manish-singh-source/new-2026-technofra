@@ -385,6 +385,7 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
             font-size: 16px;
         }
     }
+
     /* ---- Laptop fit: keep logo, menu and Enquiry button on one row, never clipped ---- */
     @media (min-width: 1200px) {
         .vs-header4 .header-menu-area .row {
@@ -461,7 +462,12 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
     <a href="javascript:void(0)" class="close-btn" id="closeBtn"><i class="fa fa-close"></i> close</a>
     <div class="menu-content">
         <a class='logo' href='index.php'>
-            <img src="<?php echo htmlspecialchars($offcanvasLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
+            <!-- <img src="<?php echo htmlspecialchars($offcanvasLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo"> -->
+            <img src="<?php echo htmlspecialchars($offcanvasLogoUrl, ENT_QUOTES, 'UTF-8'); ?>"
+                class="wi"
+                alt="logo"
+                width="200"
+                height="60">
         </a>
         <div class="sidebar-menu">
             <h4 class="title">Contact Us</h4>
@@ -542,7 +548,13 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                 <div class="header-logo">
                     <a href="javascript:void(0)" class="menu-toggle" role="button" aria-label="Toggle submenu"></a>
                     <a href='index.php'>
-                        <img src="<?php echo htmlspecialchars($stickyHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
+                        <!-- <img src="<?php echo htmlspecialchars($stickyHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo"> -->
+
+                        <img src="<?php echo htmlspecialchars($stickyHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>"
+                            class="wi"
+                            alt="logo"
+                            width="200"
+                            height="60">
                     </a>
                 </div>
             </div>
@@ -675,8 +687,14 @@ $offcanvasLogoUrl = 'assets/images/new/logo.png?v=' . $logoAssetVersion;
                         <div class="header-logo">
                             <a href="javascript:void(0)" class="menu-toggle" role="button" aria-label="Toggle submenu"></a>
                             <a href='index.php'>
-                                <img src="<?php echo htmlspecialchars($normalHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>" class="wi" alt="logo">
-                            </a>
+                                <img
+                                    src="<?php echo htmlspecialchars($normalHeaderLogoUrl, ENT_QUOTES, 'UTF-8'); ?>"
+                                    class="wi"
+                                    alt="Technofra"
+                                    width="200"
+                                    height="60"
+                                    loading="eager"
+                                    fetchpriority="high"> </a>
                         </div>
                     </div>
                     <div class="col-auto">

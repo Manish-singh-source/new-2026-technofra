@@ -128,9 +128,22 @@
 
     <!-- others css -->
     <!-- Keep these normal - needed for initial page load -->
+
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+
+
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/css/style2.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style2.min.css"> -->
+    <?php
+    $currentPage = basename(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH) ?: '');
+
+    if ($currentPage !== 'index.php' && $currentPage !== ''):
+    ?>
+        <link rel="stylesheet" href="assets/css/style2.min.css">
+    <?php endif; ?>
+
+
+
     <?php if (!empty($pageStylesheet)): ?>
         <?php foreach ((array) $pageStylesheet as $sheet): ?>
             <link rel="stylesheet" href="<?php echo htmlspecialchars($sheet, ENT_QUOTES, 'UTF-8'); ?>">

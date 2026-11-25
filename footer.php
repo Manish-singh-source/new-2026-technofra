@@ -14,7 +14,13 @@
               <div class="footer-grid4">
                   <div class="about-widget4 footer-widget">
                       <div class="footer-logo">
-                          <img src="assets/images/new/logo.png" alt="Technofra">
+                          <!-- <img src="assets/images/new/logo.png" alt="Technofra" loading="lazy" decoding="async"> -->
+                          <img src="assets/images/new/logo.png"
+                              alt="Technofra"
+                              width="200"
+                              height="60"
+                              loading="lazy"
+                              decoding="async">
                       </div>
                       <p>Technofra helps businesses unlock their online potential with innovative web design and development solutions.</p>
                       <p>We create strong digital experiences that grow your brand and deliver real results.</p>
@@ -84,7 +90,7 @@
                       <img src="assets/images/new/google-play-badge.svg" alt="Get it on Google Play" width="135" height="40" loading="lazy">
                   </a>
                   <a href="https://apps.apple.com/in/app/my-crm-complete-business-crm/id6792998604" target="_blank" rel="noopener" title="Download on the App Store">
-                      <img src="assets/images/new/ios.webp" alt="Download on the App Store">
+                      <img src="assets/images/new/ios.webp" alt="Download on the App Store" loading="lazy" decoding="async">
                   </a>
               </div>
           </div>
@@ -92,19 +98,19 @@
               <div class="footer-brand-group4 footer-partners4">
                   <h4>Our Partners</h4>
                   <div class="footer-brand-logos4">
-                      <img src="assets/images/parnters/office356.webp" alt="Office 365">
-                      <img src="assets/images/parnters/payumoney.webp" alt="PayUMoney">
-                      <img src="assets/images/parnters/razorpay.webp" alt="Razorpay">
-                      <img src="assets/images/parnters/gridmce.webp" alt="GridMCE">
+                      <img src="assets/images/parnters/office356.webp" alt="Office 365" loading="lazy" decoding="async">
+                      <img src="assets/images/parnters/payumoney.webp" alt="PayUMoney" loading="lazy" decoding="async">
+                      <img src="assets/images/parnters/razorpay.webp" alt="Razorpay" loading="lazy" decoding="async">
+                      <img src="assets/images/parnters/gridmce.webp" alt="GridMCE" loading="lazy" decoding="async">
                   </div>
               </div>
               <div class="footer-brand-group4 footer-own-brands4">
                   <h4>Our Brands</h4>
                   <div class="footer-brand-logos4">
-                      <img src="assets/images/brand/blueorbith.png" alt="Blue Orbith">
-                      <img src="assets/images/brand/grid-infinity.png" alt="Grid Infinity">
-                      <img src="assets/images/brand/digikcon.png" alt="Digikkon">
-                      <img src="assets/images/brand/markidentitiez.png" alt="Mark Identitiez">
+                      <img src="assets/images/brand/blueorbith.png" alt="Blue Orbith" loading="lazy" decoding="async">
+                      <img src="assets/images/brand/grid-infinity.png" alt="Grid Infinity" loading="lazy" decoding="async">
+                      <img src="assets/images/brand/digikcon.png" alt="Digikkon" loading="lazy" decoding="async">
+                      <img src="assets/images/brand/markidentitiez.png" alt="Mark Identitiez" loading="lazy" decoding="async">
                   </div>
               </div>
           </div>
@@ -141,10 +147,10 @@
   <!-- Js Plugin -->
   <script src="assets/js/bootstrap.min.js" defer></script>
   <?php if (empty($lightJs)): /* light pages skip slider/animation/smooth-scroll libraries */ ?>
-  <script src="assets/js/vendor/swiper-bundle.min.js" defer></script>
-  <script src="assets/js/vendor/lenis.min.js" defer></script>
-  <script src="assets/js/vendor/gsap.min.js" defer></script>
-  <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
+      <script src="assets/js/vendor/swiper-bundle.min.js" defer></script>
+      <script src="assets/js/vendor/lenis.min.js" defer></script>
+      <script src="assets/js/vendor/gsap.min.js" defer></script>
+      <script src="assets/js/vendor/ScrollTrigger.min.js" defer></script>
   <?php endif; ?>
   <script src="assets/js/main.min.js" defer></script>
   </body>
