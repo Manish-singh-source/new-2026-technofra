@@ -61,7 +61,11 @@ $extraHead = '<meta name="twitter:card" content="summary_large_image">'
     . '<script type="application/ld+json">' . json_encode($wdSchema, $flags) . '</script>';
 $bodyClass = 'hero-video-page';
 $forceBlackHeader = true; // light hero: use dark logo + dark header button
+<<<<<<< HEAD
 $extraHead = ($extraHead ?? '') . '<link rel="preload" as="image" href="./assets/images/new/webdev-scroll/d/f001.webp" media="(min-width: 768px)" fetchpriority="high"><link rel="preload" as="image" href="./assets/images/new/webdev-scroll/m/f001.webp" media="(max-width: 767.98px)" fetchpriority="high">';
+=======
+$extraHead = ($extraHead ?? '') . '<link rel="preload" as="image" href="./assets/images/new/svc/web-development-hero.webp" fetchpriority="high">';
+>>>>>>> 496e236 (pages added)
 include __DIR__ . '/header.php';
 ?>
 <style>
@@ -112,7 +116,11 @@ include __DIR__ . '/header.php';
 .sx-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
 
 /* reveal */
+<<<<<<< HEAD
 .sx-js .sx-reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+=======
+.sx-js .sx-reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+>>>>>>> 496e236 (pages added)
 .sx-js .sx-reveal.is-in{opacity:1;transform:none}
 .sx-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#36c5f3,#6d5df6);z-index:99999}
 
@@ -818,6 +826,7 @@ a.sx-wy{text-decoration:none}
 
 </style>
 
+<<<<<<< HEAD
 <style>
 /* ===== scroll-driven film hero (shared: web + app) ===== */
 .wrapper{overflow:clip!important}
@@ -1372,6 +1381,37 @@ if (!function_exists('sx_mock')) {
                     <div class="sx-fs" data-from=".735" data-to="1.01"><span class="n">04</span><span class="k"><i class="fa-solid fa-rocket"></i>Launch</span><h2>Live, fast and found</h2><p>Tested for speed, forms and mobile, launched with SEO basics in place, and supported after go-live.</p></div>
                 </div>
             </div>
+=======
+<script>document.documentElement.classList.add('sx-js');</script>
+<div class="sx-progress" id="sxProgress" aria-hidden="true"></div>
+<div class="sx">
+
+<!-- ================= HERO ================= -->
+<section class="sx-hero" id="sxHero">
+    <div class="sx-wrap">
+        <div class="sx-hero-grid">
+            <div class="sx-hero-copy">
+                <span class="sx-badge sx-in"><span class="sx-dot"></span>Kandivali West, Mumbai &middot; 14+ Years Building Websites</span>
+                <h1 class="sx-in" style="animation-delay:.1s"><span class="ln">Web Development</span><span class="ln sx-grad">Company in Mumbai</span><span class="ln">Built for Business Goals</span></h1>
+                <p class="sx-hero-desc sx-in" style="animation-delay:.2s">Looking for a Web Development Company in Mumbai that understands both design and business goals? Technofra is a Website Development Company in Mumbai based in Kandivali West. We have been building sites for businesses for more than 14 years. We take on Custom Website Development in Mumbai, Shopify stores, and redesigns of old sites that have stopped bringing in visitors. Every project has one goal: turning visitors into enquiries and paying customers.</p>
+                <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="enquirynow.php" class="sx-btn">Get a Quote <i class="fa-solid fa-arrow-right"></i></a><a href="portfolios.php" class="sx-btn sx-btn-line">View Our Work <i class="fa-solid fa-arrow-right"></i></a></div>
+                <ul class="sx-checks sx-in" style="animation-delay:.4s">
+                    <li><i class="fa-solid fa-circle-check"></i>Custom Website Design</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Shopify &amp; E-commerce</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Mobile-friendly &amp; Fast</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Support After Launch</li>
+                </ul>
+            </div>
+            <div class="sx-hero-visual sx-in" style="animation-delay:.25s">
+                <div class="sx-hero-img land"><img src="./assets/images/new/svc/web-development-hero.webp" width="964" height="800" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='./assets/images/new/banner.png'" alt="Custom website on a laptop with a mobile version, UI/UX design and clean code, built by a web development company in Mumbai"></div>
+            </div>
+        </div>
+        <div class="sx-stats sx-in" style="animation-delay:.45s" aria-label="At a glance">
+            <div class="sx-st"><span class="sx-ico"><i class="fa-solid fa-award"></i></span><div><b data-count="14" data-suffix="+">14+</b><span class="l">Years building sites for businesses</span></div></div>
+            <div class="sx-st"><span class="sx-ico"><i class="fa-solid fa-briefcase"></i></span><div><b data-count="11">11</b><span class="l">Projects listed in our portfolio</span></div></div>
+            <div class="sx-st"><span class="sx-ico"><i class="fa-solid fa-layer-group"></i></span><div><b data-count="6">6</b><span class="l">Core web development services</span></div></div>
+            <div class="sx-st"><span class="sx-ico"><i class="fa-solid fa-location-dot"></i></span><div><b>Kandivali</b><span class="l">Office in Mumbai</span></div></div>
+>>>>>>> 496e236 (pages added)
         </div>
         <div class="sx-film-rail" aria-hidden="true"><span>Plan</span><span>Design</span><span>Develop</span><span>Launch</span></div>
     </div>
@@ -1418,6 +1458,7 @@ if (!function_exists('sx_mock')) {
             <h2 class="sx-h2 sx-reveal" style="--d:.06s">What Our <span class="sx-grad">Web Development Company in Mumbai</span> Builds</h2>
             <p class="sx-lead sx-reveal" style="--d:.12s">We would rather do a handful of things well than promise everything. Most clients come to us for one of these:</p>
         </div>
+<<<<<<< HEAD
         <div class="px-bento">
             <article class="px-card wx-tilt px-tile w4 t2 sx-reveal"><span class="num">01</span><span class="ic"><i class="fa-solid fa-pen-ruler"></i></span><h3>Custom website design</h3><p>Layouts that fit your brand, not a theme everyone else is already using.</p>
                 <div class="vis" aria-hidden="true"><?php echo sx_mock(['type' => 'landing', 'icon' => 'fa-solid fa-pen-ruler', 'bg' => 'linear-gradient(135deg,#36c5f3,#6d5df6)', 'fg' => '#fff', 'title' => 'Your new website', 'sub' => 'Custom layout · desktop', 'head' => 'Your brand, your layout', 'btn' => 'Get in touch', 'form' => 'Send enquiry', 'kpis' => [['Load time', '1.2s'], ['Mobile score', '96']]]); ?></div></article>
@@ -1434,6 +1475,17 @@ if (!function_exists('sx_mock')) {
                     <div class="wx-rd-stage"><div class="wx-rd-site" style="--w:100"><div class="rs-nav"><b></b><span><i></i><i></i><i></i><i></i></span><i class="bg fa-solid fa-bars"></i></div><div class="rs-hero"><div><h4>Your brand, built to sell</h4><span class="l"></span><span class="l s"></span><span class="b">Get a quote</span></div><div class="art"></div></div><div class="rs-cards"><i></i><i></i><i></i></div></div></div></div></article>
         </div>
         <p class="sx-lead sx-reveal" style="margin:1.6rem auto 0;max-width:900px;text-align:center">If you run a store, our <a class="in" href="shopify-development.php">Shopify development</a> page covers that side in more detail. Planning to manage customers from one place later? Our <a class="in" href="crm-development.php">CRM development</a> team builds that. We also take on <a class="in" href="app-development.php">iOS app development</a> and <a class="in" href="app-development.php">Android app development</a> when a website needs a companion app.</p>
+=======
+        <div class="sx-grid">
+            <article class="sx-wy sx-reveal" data-spot><span class="sx-ico"><i class="fa-solid fa-pen-ruler"></i></span><div><h3>Custom website design</h3><p>Layouts that fit your brand, not a theme everyone else is already using.</p></div></article>
+            <article class="sx-wy sx-reveal" style="--d:.05s" data-spot><span class="sx-ico"><i class="fa-solid fa-code"></i></span><div><h3>Front-end development</h3><p>Interactive pages that load fast and work on phones, tablets, and laptops.</p></div></article>
+            <article class="sx-wy sx-reveal" style="--d:.1s" data-spot><span class="sx-ico"><i class="fa-solid fa-server"></i></span><div><h3>Back-end development</h3><p>Secure logic, admin panels, and the features that run behind the scenes.</p></div></article>
+            <article class="sx-wy sx-reveal" style="--d:.15s" data-spot><span class="sx-ico"><i class="fa-solid fa-cart-shopping"></i></span><div><h3>E-commerce development</h3><p>Product pages, carts, and checkouts that don't confuse buyers.</p></div></article>
+            <article class="sx-wy sx-reveal" style="--d:.2s" data-spot><span class="sx-ico"><i class="fa-solid fa-display"></i></span><div><h3>Responsive website design</h3><p>One site that looks right on every screen size.</p></div></article>
+            <article class="sx-wy sx-reveal" style="--d:.25s" data-spot><span class="sx-ico"><i class="fa-solid fa-screwdriver-wrench"></i></span><div><h3>Website maintenance and optimization</h3><p>Updates, speed fixes, and basic SEO upkeep after launch.</p></div></article>
+        </div>
+        <p class="sx-lead sx-reveal" style="margin:1.6rem auto 0;max-width:900px;text-align:center">If you run a store, our <a class="in" href="shopify-development.php">Shopify development</a> page covers that side in more detail. Planning to manage customers from one place later? Our <a class="in" href="crm-development.php">CRM development</a> team builds that. We also take on <a class="in" href="ios-development.php">iOS app development</a> and <a class="in" href="android-app-development.php">Android app development</a> when a website needs a companion app.</p>
+>>>>>>> 496e236 (pages added)
     </div>
 </section>
 
@@ -1478,7 +1530,11 @@ if (!function_exists('sx_mock')) {
 </section>
 
 <!-- ================= MARKETING + WHAT TO CHECK ================= -->
+<<<<<<< HEAD
 <section class="sx-sec sx-dark wx-expand">
+=======
+<section class="sx-sec sx-dark">
+>>>>>>> 496e236 (pages added)
     <div class="sx-wrap">
         <div class="sx-pair">
         <div>
@@ -1525,6 +1581,7 @@ if (!function_exists('sx_mock')) {
             <h2 class="sx-h2 sx-reveal" style="--d:.06s">Our <span class="sx-grad">Technology Stack</span> for Websites, Stores, and Apps</h2>
             <p class="sx-lead sx-reveal" style="--d:.12s">We choose tools to fit each project rather than forcing one stack onto everything.</p>
         </div>
+<<<<<<< HEAD
         <div class="px-marquee" aria-hidden="true"><div class="px-track"><span class="px-chip"><i class="fa-brands fa-html5"></i>HTML5</span><span class="px-chip"><i class="fa-brands fa-css3-alt"></i>CSS3</span><span class="px-chip"><i class="fa-brands fa-js"></i>JavaScript</span><span class="px-chip"><i class="fa-brands fa-react"></i>React</span><span class="px-chip"><i class="fa-brands fa-bootstrap"></i>Bootstrap</span><span class="px-chip"><i class="fa-brands fa-php"></i>PHP and Laravel</span><span class="px-chip"><i class="fa-brands fa-node-js"></i>Node.js</span><span class="px-chip"><i class="fa-brands fa-python"></i>Python</span><span class="px-chip"><i class="fa-brands fa-wordpress"></i>WordPress</span><span class="px-chip"><i class="fa-brands fa-shopify"></i>Shopify</span><span class="px-chip"><i class="fa-brands fa-html5"></i>HTML5</span><span class="px-chip"><i class="fa-brands fa-css3-alt"></i>CSS3</span><span class="px-chip"><i class="fa-brands fa-js"></i>JavaScript</span><span class="px-chip"><i class="fa-brands fa-react"></i>React</span><span class="px-chip"><i class="fa-brands fa-bootstrap"></i>Bootstrap</span><span class="px-chip"><i class="fa-brands fa-php"></i>PHP and Laravel</span><span class="px-chip"><i class="fa-brands fa-node-js"></i>Node.js</span><span class="px-chip"><i class="fa-brands fa-python"></i>Python</span><span class="px-chip"><i class="fa-brands fa-wordpress"></i>WordPress</span><span class="px-chip"><i class="fa-brands fa-shopify"></i>Shopify</span></div></div>
         <div class="px-marquee rev" aria-hidden="true"><div class="px-track"><span class="px-chip"><i class="fa-solid fa-cart-shopping"></i>WooCommerce</span><span class="px-chip"><i class="fa-solid fa-database"></i>MySQL</span><span class="px-chip"><i class="fa-solid fa-leaf"></i>MongoDB</span><span class="px-chip"><i class="fa-solid fa-database"></i>PostgreSQL</span><span class="px-chip"><i class="fa-solid fa-fire"></i>Firebase</span><span class="px-chip"><i class="fa-brands fa-figma"></i>Figma</span><span class="px-chip"><i class="fa-brands fa-github"></i>GitHub</span><span class="px-chip"><i class="fa-brands fa-aws"></i>AWS</span><span class="px-chip"><i class="fa-brands fa-google"></i>Google Cloud</span><span class="px-chip"><i class="fa-brands fa-docker"></i>Docker</span><span class="px-chip"><i class="fa-solid fa-server"></i>cPanel</span><span class="px-chip"><i class="fa-solid fa-mobile-screen-button"></i>Flutter</span><span class="px-chip"><i class="fa-brands fa-android"></i>Kotlin</span><span class="px-chip"><i class="fa-brands fa-swift"></i>Swift</span><span class="px-chip"><i class="fa-solid fa-cart-shopping"></i>WooCommerce</span><span class="px-chip"><i class="fa-solid fa-database"></i>MySQL</span><span class="px-chip"><i class="fa-solid fa-leaf"></i>MongoDB</span><span class="px-chip"><i class="fa-solid fa-database"></i>PostgreSQL</span><span class="px-chip"><i class="fa-solid fa-fire"></i>Firebase</span><span class="px-chip"><i class="fa-brands fa-figma"></i>Figma</span><span class="px-chip"><i class="fa-brands fa-github"></i>GitHub</span><span class="px-chip"><i class="fa-brands fa-aws"></i>AWS</span><span class="px-chip"><i class="fa-brands fa-google"></i>Google Cloud</span><span class="px-chip"><i class="fa-brands fa-docker"></i>Docker</span><span class="px-chip"><i class="fa-solid fa-server"></i>cPanel</span><span class="px-chip"><i class="fa-solid fa-mobile-screen-button"></i>Flutter</span><span class="px-chip"><i class="fa-brands fa-android"></i>Kotlin</span><span class="px-chip"><i class="fa-brands fa-swift"></i>Swift</span></div></div>
         <div style="height:clamp(1.6rem,1.2rem + 1vw,2.4rem)"></div>
@@ -1535,12 +1592,24 @@ if (!function_exists('sx_mock')) {
             <div class="sx-stk px-card wx-tilt sx-reveal" style="--d:.15s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-database"></i></span><h3>Data</h3></div><div class="sx-tags"><span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Firebase</span></div></div>
             <div class="sx-stk px-card wx-tilt sx-reveal" style="--d:.2s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-cloud-arrow-up"></i></span><h3>Design, code and deployment</h3></div><div class="sx-tags"><span>Figma</span><span>GitHub</span><span>AWS</span><span>Google Cloud</span><span>Docker</span><span>cPanel</span></div></div>
             <div class="sx-stk px-card wx-tilt sx-reveal" style="--d:.25s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-mobile-screen-button"></i></span><h3>Mobile apps</h3></div><div class="sx-tags"><span>Flutter</span><span>Kotlin</span><span>Swift</span></div></div>
+=======
+        <div class="sx-grid">
+            <div class="sx-stk sx-reveal"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-laptop-code"></i></span><h3>Front end</h3></div><div class="sx-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Bootstrap</span></div></div>
+            <div class="sx-stk sx-reveal" style="--d:.05s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-server"></i></span><h3>Back end</h3></div><div class="sx-tags"><span>PHP and Laravel</span><span>Node.js</span><span>Python</span></div></div>
+            <div class="sx-stk sx-reveal" style="--d:.1s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-store"></i></span><h3>Stores and content sites</h3></div><div class="sx-tags"><span>WordPress</span><span>Shopify</span><span>WooCommerce</span></div></div>
+            <div class="sx-stk sx-reveal" style="--d:.15s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-database"></i></span><h3>Data</h3></div><div class="sx-tags"><span>MySQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Firebase</span></div></div>
+            <div class="sx-stk sx-reveal" style="--d:.2s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-cloud-arrow-up"></i></span><h3>Design, code and deployment</h3></div><div class="sx-tags"><span>Figma</span><span>GitHub</span><span>AWS</span><span>Google Cloud</span><span>Docker</span><span>cPanel</span></div></div>
+            <div class="sx-stk sx-reveal" style="--d:.25s"><div class="hd"><span class="sx-ico"><i class="fa-solid fa-mobile-screen-button"></i></span><h3>Mobile apps</h3></div><div class="sx-tags"><span>Flutter</span><span>Kotlin</span><span>Swift</span></div></div>
+>>>>>>> 496e236 (pages added)
         </div>
     </div>
 </section>
 
+<<<<<<< HEAD
 <div class="wx-tick" aria-hidden="true"><div class="wx-tick-in"><span>Custom website design</span><i class="fa-solid fa-star-of-life"></i><span>Front-end development</span><i class="fa-solid fa-star-of-life"></i><span>Back-end development</span><i class="fa-solid fa-star-of-life"></i><span>E-commerce development</span><i class="fa-solid fa-star-of-life"></i><span>Responsive website design</span><i class="fa-solid fa-star-of-life"></i><span>Website maintenance</span><i class="fa-solid fa-star-of-life"></i><span>Custom website design</span><i class="fa-solid fa-star-of-life"></i><span>Front-end development</span><i class="fa-solid fa-star-of-life"></i><span>Back-end development</span><i class="fa-solid fa-star-of-life"></i><span>E-commerce development</span><i class="fa-solid fa-star-of-life"></i><span>Responsive website design</span><i class="fa-solid fa-star-of-life"></i><span>Website maintenance</span><i class="fa-solid fa-star-of-life"></i></div></div>
 
+=======
+>>>>>>> 496e236 (pages added)
 <!-- ================= PROCESS (6 steps) ================= -->
 <section class="sx-sec">
     <div class="sx-wrap">
@@ -1549,6 +1618,7 @@ if (!function_exists('sx_mock')) {
             <h2 class="sx-h2 sx-reveal" style="--d:.06s">How Our <span class="sx-grad">Web Development Process</span> Works</h2>
             <p class="sx-lead sx-reveal" style="--d:.12s">Every project follows the same basic path, though the details change with scope:</p>
         </div>
+<<<<<<< HEAD
         <ol class="wx-stack">
             <li style="--i:0"><div class="wx-sc"><div class="tx"><span class="k">Step 01 of 06</span><h3>Discovery</h3><p>We talk through your goals, your customers, and the sites your competitors run.</p></div><div class="vz" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="orb"><i class="fa-solid fa-comments"></i></span><span class="big">01</span></div></div></li>
             <li style="--i:1"><div class="wx-sc"><div class="tx"><span class="k">Step 02 of 06</span><h3>Planning</h3><p>We agree on the page list, sitemap, and content needs.</p></div><div class="vz" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="orb"><i class="fa-solid fa-sitemap"></i></span><span class="big">02</span></div></div></li>
@@ -1556,6 +1626,15 @@ if (!function_exists('sx_mock')) {
             <li style="--i:3"><div class="wx-sc"><div class="tx"><span class="k">Step 04 of 06</span><h3>Development</h3><p>Front-end and back-end work happen together, with content added as it arrives.</p></div><div class="vz" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="orb"><i class="fa-solid fa-code"></i></span><span class="big">04</span></div></div></li>
             <li style="--i:4"><div class="wx-sc"><div class="tx"><span class="k">Step 05 of 06</span><h3>Testing</h3><p>We check speed, mobile layouts, forms, and checkout before anything goes live.</p></div><div class="vz" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="orb"><i class="fa-solid fa-vial-circle-check"></i></span><span class="big">05</span></div></div></li>
             <li style="--i:5"><div class="wx-sc"><div class="tx"><span class="k">Step 06 of 06</span><h3>Launch and support</h3><p>We go live, then keep the site updated through our <a class="in" href="web&amp;appmaintenance.php">web and app maintenance</a> service.</p></div><div class="vz" aria-hidden="true"><span class="ring"></span><span class="ring"></span><span class="orb"><i class="fa-solid fa-rocket"></i></span><span class="big">06</span></div></div></li>
+=======
+        <ol class="sx-steps n6" id="sxSteps">
+            <li class="sx-step sx-reveal"><span class="dot"><i class="fa-solid fa-comments"></i></span><div class="card"><span class="k">Step 01</span><h3>Discovery</h3><p>We talk through your goals, your customers, and the sites your competitors run.</p></div></li>
+            <li class="sx-step sx-reveal" style="--d:.06s"><span class="dot"><i class="fa-solid fa-sitemap"></i></span><div class="card"><span class="k">Step 02</span><h3>Planning</h3><p>We agree on the page list, sitemap, and content needs.</p></div></li>
+            <li class="sx-step sx-reveal" style="--d:.12s"><span class="dot"><i class="fa-solid fa-pen-ruler"></i></span><div class="card"><span class="k">Step 03</span><h3>Design</h3><p>We build layouts and review them with you before development starts.</p></div></li>
+            <li class="sx-step sx-reveal" style="--d:.18s"><span class="dot"><i class="fa-solid fa-code"></i></span><div class="card"><span class="k">Step 04</span><h3>Development</h3><p>Front-end and back-end work happen together, with content added as it arrives.</p></div></li>
+            <li class="sx-step sx-reveal" style="--d:.24s"><span class="dot"><i class="fa-solid fa-vial-circle-check"></i></span><div class="card"><span class="k">Step 05</span><h3>Testing</h3><p>We check speed, mobile layouts, forms, and checkout before anything goes live.</p></div></li>
+            <li class="sx-step sx-reveal" style="--d:.3s"><span class="dot"><i class="fa-solid fa-rocket"></i></span><div class="card"><span class="k">Step 06</span><h3>Launch and support</h3><p>We go live, then keep the site updated through our <a class="in" href="web&amp;appmaintenance.php">web and app maintenance</a> service.</p></div></li>
+>>>>>>> 496e236 (pages added)
         </ol>
     </div>
 </section>
@@ -1569,6 +1648,18 @@ if (!function_exists('sx_mock')) {
             <h2 class="sx-h2 sx-reveal" style="--d:.06s">Recent Work From Our <span class="sx-grad">Web Development Company in Mumbai</span></h2>
             <p class="sx-lead sx-reveal" style="--d:.12s">Our portfolio currently lists 11 projects. They include e-commerce stores such as ISH International, Aeritx, WOTM, and Sukanya India, a web application called Headquarters, and business websites such as Karan Telecom and Urban Sports.</p>
         </div>
+<<<<<<< HEAD
+=======
+        <div class="sx-work">
+            <a class="sx-wk sx-reveal" href="portfolios.php"><img src="./assets/images/about/files/ish.jpg" width="500" height="460" loading="lazy" decoding="async" alt="ISH International e-commerce store built by Technofra"><div class="tx"><h3>ISH International</h3><p>E-commerce store</p></div></a>
+            <a class="sx-wk sx-reveal" style="--d:.04s" href="portfolios.php"><img src="./assets/images/about/files/aeritx.jpg" width="500" height="460" loading="lazy" decoding="async" alt="Aeritx e-commerce website developed by Technofra in Mumbai"><div class="tx"><h3>Aeritx</h3><p>E-commerce store</p></div></a>
+            <a class="sx-wk sx-reveal" style="--d:.08s" href="portfolios.php"><img src="./assets/images/about/files/wotm.jpg" width="500" height="460" loading="lazy" decoding="async" alt="WOTM online store design and development by Technofra"><div class="tx"><h3>WOTM</h3><p>E-commerce store</p></div></a>
+            <a class="sx-wk sx-reveal" style="--d:.12s" href="portfolios.php"><img src="./assets/images/about/files/sukanya.jpeg" width="1000" height="920" loading="lazy" decoding="async" alt="Sukanya India e-commerce website built by Technofra"><div class="tx"><h3>Sukanya India</h3><p>E-commerce store</p></div></a>
+            <a class="sx-wk sx-reveal" style="--d:.16s" href="portfolios.php"><img src="./assets/images/about/files/headquarter.png" width="259" height="259" loading="lazy" decoding="async" alt="Headquarters web application developed by Technofra"><div class="tx"><h3>Headquarters</h3><p>Web application</p></div></a>
+            <a class="sx-wk sx-reveal" style="--d:.2s" href="portfolios.php"><img src="./assets/images/about/files/karantelecom.jpg" width="500" height="460" loading="lazy" decoding="async" alt="Karan Telecom business website designed by Technofra"><div class="tx"><h3>Karan Telecom</h3><p>Business website</p></div></a>
+            <a class="sx-wk sx-reveal" style="--d:.24s" href="portfolios.php"><img src="./assets/images/about/files/urbon.jpg" width="500" height="460" loading="lazy" decoding="async" alt="Urban Sports business website developed by Technofra"><div class="tx"><h3>Urban Sports</h3><p>Business website</p></div></a>
+            <a class="sx-wk more sx-reveal" style="--d:.28s" href="portfolios.php"><div><i class="fa-solid fa-arrow-right-long"></i><h3>Browse the full portfolio</h3></div></a>
+>>>>>>> 496e236 (pages added)
         </div>
         <div class="wx-track">
                 <a class="wx-pc" href="ish.php"><div class="im"><span class="idx">01</span><img src="./assets/images/new/webdev-work/ish-international.webp" width="560" height="560" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='./assets/images/about/files/ish.jpg'" alt="ISH International website designed and developed by Technofra, web development company in Mumbai"></div><div class="meta"><div><h3>ISH International</h3><p>E-commerce store</p></div><span class="go"><i class="fa-solid fa-arrow-right"></i></span></div></a>
@@ -1585,7 +1676,11 @@ if (!function_exists('sx_mock')) {
 </section>
 
 <!-- ================= LOCATION + MAINTENANCE ================= -->
+<<<<<<< HEAD
 <section class="sx-sec sx-dark wx-expand">
+=======
+<section class="sx-sec sx-dark">
+>>>>>>> 496e236 (pages added)
     <div class="sx-wrap sx-local">
         <div>
             <span class="sx-eyebrow sx-reveal">Visit or Call Us</span>
@@ -1615,7 +1710,11 @@ if (!function_exists('sx_mock')) {
 <!-- ================= CTA ================= -->
 <section class="sx-cta">
     <div class="sx-wrap">
+<<<<<<< HEAD
         <div class="sx-cta-card px-mesh sx-reveal">
+=======
+        <div class="sx-cta-card sx-reveal">
+>>>>>>> 496e236 (pages added)
             <div class="sx-cta-in one">
                 <div>
                     <span class="sx-eyebrow">Start Your Project</span>
@@ -1783,6 +1882,7 @@ if (!function_exists('sx_mock')) {
 </script>
 
 
+<<<<<<< HEAD
 <script>
 /* Scroll film: forward-only playback, start frame on scroll-up, clean rest frames */
 (function () {
@@ -2063,4 +2163,6 @@ if (!function_exists('sx_mock')) {
     kick();
 })();
 </script>
+=======
+>>>>>>> 496e236 (pages added)
 <?php include __DIR__ . '/footer.php'; ?>

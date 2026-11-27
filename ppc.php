@@ -844,7 +844,11 @@ a.sx-wy{text-decoration:none}
                 <span class="sx-badge sx-in"><span class="sx-dot"></span>Google Ads &middot; Meta Ads &middot; Pay Per Click</span>
                 <h1 class="sx-in" style="animation-delay:.1s"><span class="ln">PPC Company in Mumbai</span><span class="ln sx-grad">Focused on Leads, Sales</span><span class="ln">and Clear ROI</span></h1>
                 <p class="sx-hero-desc sx-in" style="animation-delay:.2s">Technofra is a PPC company in Mumbai. We run Google Ads, Meta Ads and other pay per click campaigns for businesses that want customers, not just clicks. You get a team that plans the campaigns, watches the budget closely and explains the results in plain language.</p>
+<<<<<<< HEAD
                 <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="enquirynow.php" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="contact.php" class="sx-btn sx-btn-line">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="/enquirynow" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="/contact" class="sx-btn sx-btn-line">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                 <ul class="sx-checks sx-in" style="animation-delay:.4s">
                     <li><i class="fa-solid fa-circle-check"></i>Google Ads &amp; Meta Ads</li>
                     <li><i class="fa-solid fa-circle-check"></i>Budget watched closely</li>
@@ -1027,11 +1031,19 @@ if (!function_exists('sx_mock')) {
 <?php
 $sxTabs = [
     ['fa-solid fa-magnifying-glass', 'Google Search Ads', 'When someone searches for what you sell, your ad can appear at the top of the results. This is where most of our clients see leads come in fastest. Our Google Ads campaign management covers keywords, negatives, ad copy, bids and landing pages in one place.'],
+<<<<<<< HEAD
     ['fa-solid fa-rotate', 'Display and remarketing ads', 'Most people don\'t buy on their first visit. Remarketing lets us reach people who already know your brand and bring them back at the right moment. If you also want steady traffic that doesn\'t cost per click, our <a href="seo.php">SEO team</a> works on the same keywords from the organic side.'],
     ['fa-brands fa-meta', 'Meta ads management', 'As a Meta ads agency in Mumbai, we run Facebook and Instagram ads for awareness, lead generation and sales. Meta works well for showing your offer to people who haven\'t searched for it yet. It also fits into a wider <a href="social-media-marketing.php">social media marketing</a> plan, so your posts and ads tell the same story.'],
     ['fa-solid fa-bag-shopping', 'Shopping and ecommerce ads', 'If you sell products, Google Shopping ads put your items in front of buyers with the price and photo already visible. For stores on <a href="shopify-development.php">Shopify</a>, we check the product feed and store setup, so ads never point to pages that are broken or out of stock.'],
     ['fa-solid fa-window-maximize', 'Landing page optimization', 'A good ad can still lose a customer on a slow or confusing page. We review your landing pages for layout, message and load speed. If a page needs a rebuild, our <a href="web-design-and-development.php">web design and development</a> team can handle it.'],
     ['fa-solid fa-chart-column', 'Conversion tracking and reporting', 'Without tracking, you\'re guessing. We set up tracking for calls, form fills and purchases, and we send reports that explain what changed and why. If your leads go into a CRM, we can connect that data as well. Our <a href="crm-development.php">CRM development</a> team builds those connections, so tracking doesn\'t stop at the form submit.'],
+=======
+    ['fa-solid fa-rotate', 'Display and remarketing ads', 'Most people don\'t buy on their first visit. Remarketing lets us reach people who already know your brand and bring them back at the right moment. If you also want steady traffic that doesn\'t cost per click, our <a href="/seo">SEO team</a> works on the same keywords from the organic side.'],
+    ['fa-brands fa-meta', 'Meta ads management', 'As a Meta ads agency in Mumbai, we run Facebook and Instagram ads for awareness, lead generation and sales. Meta works well for showing your offer to people who haven\'t searched for it yet. It also fits into a wider <a href="/social-media-marketing">social media marketing</a> plan, so your posts and ads tell the same story.'],
+    ['fa-solid fa-bag-shopping', 'Shopping and ecommerce ads', 'If you sell products, Google Shopping ads put your items in front of buyers with the price and photo already visible. For stores on <a href="/shopify-development">Shopify</a>, we check the product feed and store setup, so ads never point to pages that are broken or out of stock.'],
+    ['fa-solid fa-window-maximize', 'Landing page optimization', 'A good ad can still lose a customer on a slow or confusing page. We review your landing pages for layout, message and load speed. If a page needs a rebuild, our <a href="/web-design-and-development">web design and development</a> team can handle it.'],
+    ['fa-solid fa-chart-column', 'Conversion tracking and reporting', 'Without tracking, you\'re guessing. We set up tracking for calls, form fills and purchases, and we send reports that explain what changed and why. If your leads go into a CRM, we can connect that data as well. Our <a href="/crm-development">CRM development</a> team builds those connections, so tracking doesn\'t stop at the form submit.'],
+>>>>>>> 496e236 (pages added)
     ['fa-brands fa-microsoft', 'Microsoft Ads', 'Microsoft Ads shows your search ads to people using Bing and other Microsoft search results. We set it up alongside Google Ads, reuse your strongest keywords and ad copy, and track it separately, so you can see whether it earns its share of the budget.'],
     ['fa-brands fa-linkedin-in', 'LinkedIn Ads', 'For B2B companies, LinkedIn Ads let you reach people by job title, industry and company type. We build lead-focused campaigns, test different creatives, and watch your cost per lead every week so the budget goes where it works.'],
 ];
@@ -1075,7 +1087,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                         <span class="num">SERVICE <?php echo $n; ?> / <?php echo $sxTabTotal; ?></span>
                         <h3><?php echo $t[1]; ?></h3>
                         <p><?php echo $t[2]; ?></p>
+<<<<<<< HEAD
                         <div class="sx-actions"><a href="enquirynow.php" class="sx-btn sx-btn-white">Discuss This Service <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                        <div class="sx-actions"><a href="/enquirynow" class="sx-btn sx-btn-white">Discuss This Service <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                     </div>
                 </article>
 <?php endforeach; ?>
@@ -1112,13 +1128,21 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
             <div class="sx-body">
                 <span class="sx-eyebrow sx-reveal">PPC Management</span>
                 <h2 class="sx-h2 sx-reveal" style="--d:.06s">PPC management services and <span class="sx-grad">PPC marketing services</span></h2>
+<<<<<<< HEAD
                 <p class="sx-lead sx-reveal" style="--d:.12s">Ads perform best when they fit the rest of your marketing. Your paid search should match your website, your social presence and your content. Our <a href="digital-marketing.php">digital marketing services in Mumbai</a> team can help you plan the full picture, including the <a href="content-marketing.php">content marketing</a> that supports your ads.</p>
+=======
+                <p class="sx-lead sx-reveal" style="--d:.12s">Ads perform best when they fit the rest of your marketing. Your paid search should match your website, your social presence and your content. Our <a href="/digital-marketing">digital marketing services in Mumbai</a> team can help you plan the full picture, including the <a href="/content-marketing">content marketing</a> that supports your ads.</p>
+>>>>>>> 496e236 (pages added)
                 <p class="sx-lead sx-reveal" style="--d:.18s">You don't have to buy everything at once. Most clients begin with one channel, see the results and expand from there.</p>
                 <h3 class="sx-reveal" style="margin-top:1.3rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--pt)">Start small, grow with proof</h3>
                 <ul class="sx-chips sx-reveal" style="margin-top:.8rem">
                     <li><i class="fa-solid fa-check"></i>Begin with one channel</li><li><i class="fa-solid fa-check"></i>See the results</li><li><i class="fa-solid fa-check"></i>Expand from there</li><li><i class="fa-solid fa-check"></i>Ads that match your website</li><li><i class="fa-solid fa-check"></i>Paid search plus social and content</li><li><i class="fa-solid fa-check"></i>Full-picture marketing plan</li>
                 </ul>
+<<<<<<< HEAD
                 <div class="sx-actions sx-reveal"><a href="contact.php" class="sx-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                <div class="sx-actions sx-reveal"><a href="/contact" class="sx-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
             </div>
         </div>
 
@@ -1151,7 +1175,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <div class="sx-wy" data-spot><span class="sx-ico"><i class="fa-solid fa-ruler"></i></span><div><h3>Measure what matters</h3><p>We track the numbers that connect to your business, not just the ones that look good in a report.</p></div></div>
                 <div class="sx-wy" data-spot><span class="sx-ico"><i class="fa-solid fa-arrow-trend-up"></i></span><div><h3>Grow only when the numbers support it</h3><p>Budgets and campaigns expand when the results justify it, whether you run in one city or several.</p></div></div>
             </div>
+<<<<<<< HEAD
             <div class="sx-actions sx-reveal"><a href="enquirynow.php" class="sx-btn">Enquire Now <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+            <div class="sx-actions sx-reveal"><a href="/enquirynow" class="sx-btn">Enquire Now <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
         </div>
         <aside class="sx-ind sx-reveal" style="--d:.1s">
             <span class="sx-eyebrow">Reporting</span>
@@ -1189,9 +1217,15 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
             <h2 class="sx-h2 sm">Why businesses in <span class="sx-grad">Mumbai work with us</span></h2>
             <p class="sx-lead">We're based in Mumbai, so you can meet our team in person and get quick answers when something needs attention.</p>
             <ul style="grid-template-columns:1fr">
+<<<<<<< HEAD
                 <li class="t"><i class="fa-solid fa-briefcase"></i><a href="portfolios.php" style="color:#fff;border-bottom:2px solid rgba(143,224,250,.45)">Our portfolio</a><small>Look through our portfolio to see past work.</small></li>
                 <li class="t"><i class="fa-solid fa-building"></i><a href="about-us.php" style="color:#fff;border-bottom:2px solid rgba(143,224,250,.45)">About us</a><small>Read about our background on the about us page.</small></li>
                 <li class="t"><i class="fa-solid fa-people-group"></i><a href="our-team.php" style="color:#fff;border-bottom:2px solid rgba(143,224,250,.45)">Our team</a><small>Meet the people who'll run your campaigns on the our team page.</small></li>
+=======
+                <li class="t"><i class="fa-solid fa-briefcase"></i><a href="/portfolios" style="color:#fff;border-bottom:2px solid rgba(143,224,250,.45)">Our portfolio</a><small>Look through our portfolio to see past work.</small></li>
+                <li class="t"><i class="fa-solid fa-building"></i><a href="/about-us" style="color:#fff;border-bottom:2px solid rgba(143,224,250,.45)">About us</a><small>Read about our background on the about us page.</small></li>
+                <li class="t"><i class="fa-solid fa-people-group"></i><a href="/our-team" style="color:#fff;border-bottom:2px solid rgba(143,224,250,.45)">Our team</a><small>Meet the people who'll run your campaigns on the our team page.</small></li>
+>>>>>>> 496e236 (pages added)
             </ul>
         </aside>
     </div>
@@ -1223,7 +1257,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <div class="sx-ct"><span class="sx-ico"><i class="fa-solid fa-phone"></i></span><div><h3>Phone</h3><a href="tel:+918080803374">+91 8080 80 3374</a></div></div>
                 <div class="sx-ct"><span class="sx-ico"><i class="fa-solid fa-envelope"></i></span><div><h3>Email</h3><a href="mailto:info@technofra.com">info@technofra.com</a></div></div>
             </div>
+<<<<<<< HEAD
             <div class="sx-actions sx-reveal"><a class="sx-btn sx-btn-white sx-btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Ghanshyam+Enclave+New+Link+Road+Kandivali+West+Mumbai+400067" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a><a class="sx-btn sx-btn-ghost sx-btn-sm" href="contact.php">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+            <div class="sx-actions sx-reveal"><a class="sx-btn sx-btn-white sx-btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Ghanshyam+Enclave+New+Link+Road+Kandivali+West+Mumbai+400067" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a><a class="sx-btn sx-btn-ghost sx-btn-sm" href="/contact">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
         </div>
         <div class="sx-map sx-reveal" id="sxMap">
             <div class="sx-map-in"><span class="sx-pin"><i class="fa-solid fa-location-dot"></i></span><p>Technofra, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai</p><button type="button" class="sx-btn sx-btn-ghost sx-btn-sm" id="sxMapBtn" data-src="https://www.google.com/maps?q=Ghanshyam+Enclave,+New+Link+Road,+Kandivali+West,+Mumbai+400067&amp;output=embed">Load Interactive Map <i class="fa-solid fa-map"></i></button></div>
@@ -1241,7 +1279,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                     <h2>Ready to Work With a <span>PPC Company in Mumbai?</span></h2>
                     <p>Pricing depends on the scope of work, your monthly ad spend and the platforms you use. We give a custom quote after a short call about your goals.</p>
                     <p>Whether you need Google Ads management services, Meta Ads management or a full PPC marketing plan, tell us what you want to achieve and we'll show you how we would approach it.</p>
+<<<<<<< HEAD
                     <div class="sx-actions"><a href="enquirynow.php" class="sx-btn sx-btn-white">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="contact.php" class="sx-btn sx-btn-ghost">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                    <div class="sx-actions"><a href="/enquirynow" class="sx-btn sx-btn-white">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="/contact" class="sx-btn sx-btn-ghost">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                 </div>
             </div>
         </div>

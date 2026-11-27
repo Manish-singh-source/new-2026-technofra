@@ -843,7 +843,11 @@ a.sx-wy{text-decoration:none}
                 <span class="sx-badge sx-in"><span class="sx-dot"></span>Trusted SEO Company in Mumbai</span>
                 <h1 class="sx-in" style="animation-delay:.1s"><span class="ln">SEO Agency in Mumbai</span><span class="ln sx-grad">for Higher Rankings</span><span class="ln">&amp; Business Growth</span></h1>
                 <p class="sx-hero-desc sx-in" style="animation-delay:.2s">Looking for a reliable SEO agency in Mumbai to improve your website rankings, organic traffic, and online visibility? Technofra is an experienced SEO company in Mumbai offering results-driven SEO strategies designed around your business goals.</p>
+<<<<<<< HEAD
                 <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="enquirynow.php" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="contact.php" class="sx-btn sx-btn-line">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="/enquirynow" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="/contact" class="sx-btn sx-btn-line">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                 <ul class="sx-checks sx-in" style="animation-delay:.4s">
                     <li><i class="fa-solid fa-circle-check"></i>Customized SEO Strategies</li>
                     <li><i class="fa-solid fa-circle-check"></i>Transparent Reporting</li>
@@ -871,7 +875,11 @@ a.sx-wy{text-decoration:none}
             <div class="sx-body">
                 <span class="sx-eyebrow sx-reveal">SEO Company in Mumbai</span>
                 <h2 class="sx-h2 sx-reveal" style="--d:.06s">Experienced <span class="sx-grad">SEO Company in Mumbai</span></h2>
+<<<<<<< HEAD
                 <p class="sx-lead sx-reveal" style="--d:.12s">Our SEO services in Mumbai combine technical SEO, on-page optimization, <a href="content-marketing.php">content strategy</a>, local SEO, keyword research, link building, and performance tracking. We focus on attracting relevant visitors who are more likely to become enquiries, customers, and long-term business opportunities.</p>
+=======
+                <p class="sx-lead sx-reveal" style="--d:.12s">Our SEO services in Mumbai combine technical SEO, on-page optimization, <a href="/content-marketing">content strategy</a>, local SEO, keyword research, link building, and performance tracking. We focus on attracting relevant visitors who are more likely to become enquiries, customers, and long-term business opportunities.</p>
+>>>>>>> 496e236 (pages added)
                 <p class="sx-lead sx-reveal" style="--d:.18s">Whether you are a local business, startup, eCommerce brand, professional service provider, or established company, our SEO team creates a customized strategy to help your website compete for valuable search terms and generate sustainable organic growth.</p>
             </div>
             <div class="sx-list sx-reveal" style="--d:.1s">
@@ -1088,7 +1096,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                         <span class="num">SERVICE <?php echo $n; ?> / <?php echo $sxTabTotal; ?></span>
                         <h3><?php echo $t[1]; ?></h3>
                         <p><?php echo $t[2]; ?></p>
+<<<<<<< HEAD
                         <div class="sx-actions"><a href="enquirynow.php" class="sx-btn sx-btn-white">Discuss This Service <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                        <div class="sx-actions"><a href="/enquirynow" class="sx-btn sx-btn-white">Discuss This Service <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                     </div>
                 </article>
 <?php endforeach; ?>
@@ -1110,7 +1122,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <article class="sx-wy sx-reveal" style="--d:.12s" data-spot><span class="sx-ico"><i class="fa-solid fa-phone-volume"></i></span><div><h3>More Leads &amp; Enquiries</h3><p>Build search-focused pages that answer customer needs and create clear paths toward enquiries, calls, bookings, or purchases.</p></div></article>
                 <article class="sx-wy sx-reveal" style="--d:.18s" data-spot><span class="sx-ico"><i class="fa-solid fa-seedling"></i></span><div><h3>Sustainable Organic Growth</h3><p>SEO is a long-term investment. We continuously improve technical performance, content quality, authority, and keyword coverage to support consistent growth.</p></div></article>
             </div>
+<<<<<<< HEAD
             <div class="sx-actions sx-reveal"><a href="enquirynow.php" class="sx-btn">Enquire Now <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+            <div class="sx-actions sx-reveal"><a href="/enquirynow" class="sx-btn">Enquire Now <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
         </div>
         <aside class="sx-ind sx-reveal" style="--d:.1s">
             <span class="sx-eyebrow">Who We Help</span>
@@ -1159,7 +1175,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <ul class="sx-chips sx-reveal" style="margin-top:.8rem">
                     <li><i class="fa-solid fa-check"></i>Business-focused keyword targeting</li><li><i class="fa-solid fa-check"></i>Technical and on-page SEO</li><li><i class="fa-solid fa-check"></i>Local search optimization</li><li><i class="fa-solid fa-check"></i>Content strategy</li><li><i class="fa-solid fa-check"></i>Conversion-focused landing pages</li><li><i class="fa-solid fa-check"></i>Transparent performance tracking</li><li><i class="fa-solid fa-check"></i>Continuous optimization</li>
                 </ul>
+<<<<<<< HEAD
                 <div class="sx-actions sx-reveal"><a href="contact.php" class="sx-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                <div class="sx-actions sx-reveal"><a href="/contact" class="sx-btn">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
             </div>
         </div>
 
@@ -1171,8 +1191,13 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
             </div>
             <div style="align-self:center">
                 <div class="sx-price" style="margin-top:0"><span class="sx-ico"><i class="fa-solid fa-tags"></i></span><p><strong>How we price SEO:</strong> engagements are custom plans based on your goals, competition, and scope, shared after an initial conversation about your business.</p></div>
+<<<<<<< HEAD
                 <div class="sx-links" style="justify-content:flex-start"><a href="digital-marketing.php"><i class="fa-solid fa-diagram-project"></i>Digital marketing services in Mumbai</a><a href="ppc.php"><i class="fa-solid fa-bullseye"></i>PPC services in Mumbai</a><a href="content-marketing.php"><i class="fa-solid fa-pen-nib"></i>Content marketing</a><a href="about-us.php"><i class="fa-solid fa-building"></i>About Technofra</a><a href="portfolios.php"><i class="fa-solid fa-briefcase"></i>Portfolio</a><a href="blog.php"><i class="fa-solid fa-newspaper"></i>Blog</a></div>
                 <div class="sx-actions"><a href="enquirynow.php" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="contact.php" class="sx-btn sx-btn-line">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                <div class="sx-links" style="justify-content:flex-start"><a href="/digital-marketing"><i class="fa-solid fa-diagram-project"></i>Digital marketing services in Mumbai</a><a href="/ppc"><i class="fa-solid fa-bullseye"></i>PPC services in Mumbai</a><a href="/content-marketing"><i class="fa-solid fa-pen-nib"></i>Content marketing</a><a href="/about-us"><i class="fa-solid fa-building"></i>About Technofra</a><a href="/portfolios"><i class="fa-solid fa-briefcase"></i>Portfolio</a><a href="/blog"><i class="fa-solid fa-newspaper"></i>Blog</a></div>
+                <div class="sx-actions"><a href="/enquirynow" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="/contact" class="sx-btn sx-btn-line">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
             </div>
         </div>
     </div>
@@ -1204,7 +1229,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <div class="sx-ct"><span class="sx-ico"><i class="fa-solid fa-phone"></i></span><div><h3>Phone</h3><a href="tel:+918080803374">+91 8080 80 3374</a></div></div>
                 <div class="sx-ct"><span class="sx-ico"><i class="fa-solid fa-envelope"></i></span><div><h3>Email</h3><a href="mailto:info@technofra.com">info@technofra.com</a></div></div>
             </div>
+<<<<<<< HEAD
             <div class="sx-actions sx-reveal"><a class="sx-btn sx-btn-white sx-btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Ghanshyam+Enclave+New+Link+Road+Kandivali+West+Mumbai+400067" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a><a class="sx-btn sx-btn-ghost sx-btn-sm" href="contact.php">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+            <div class="sx-actions sx-reveal"><a class="sx-btn sx-btn-white sx-btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Ghanshyam+Enclave+New+Link+Road+Kandivali+West+Mumbai+400067" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a><a class="sx-btn sx-btn-ghost sx-btn-sm" href="/contact">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
         </div>
         <div class="sx-map sx-reveal" id="sxMap">
             <div class="sx-map-in"><span class="sx-pin"><i class="fa-solid fa-location-dot"></i></span><p>Technofra, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai</p><button type="button" class="sx-btn sx-btn-ghost sx-btn-sm" id="sxMapBtn" data-src="https://www.google.com/maps?q=Ghanshyam+Enclave,+New+Link+Road,+Kandivali+West,+Mumbai+400067&amp;output=embed">Load Interactive Map <i class="fa-solid fa-map"></i></button></div>

@@ -837,7 +837,11 @@ a.sx-wy{text-decoration:none}
                 <span class="sx-badge sx-in"><span class="sx-dot"></span>Digital Growth Solutions</span>
                 <h1 class="sx-in" style="animation-delay:.1s"><span class="ln">Digital Marketing</span><span class="ln sx-grad">Agency in Mumbai</span><span class="ln">Built Around Your Goals</span></h1>
                 <p class="sx-hero-desc sx-in" style="animation-delay:.2s">Grow your business with a results-driven digital marketing agency in Mumbai that combines strategy, creativity, technology, and performance marketing. At Technofra, we help businesses improve their online visibility, reach the right audience, generate qualified leads, and increase conversions.</p>
+<<<<<<< HEAD
                 <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="enquirynow.php" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="#services" class="sx-btn sx-btn-line">Our Services <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                <div class="sx-actions sx-in" style="animation-delay:.3s"><a href="/enquirynow" class="sx-btn">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="#services" class="sx-btn sx-btn-line">Our Services <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                 <ul class="sx-checks sx-in" style="animation-delay:.4s">
                     <li><i class="fa-solid fa-circle-check"></i>SEO &amp; Organic Growth</li>
                     <li><i class="fa-solid fa-circle-check"></i>Social Media Marketing</li>
@@ -885,7 +889,11 @@ a.sx-wy{text-decoration:none}
                 </div>
                 <div>
                     <p class="sx-lead">Choosing the right marketing partner can make a significant difference to your online growth. Technofra focuses on building measurable digital strategies instead of simply running campaigns, combining search engine optimization, paid advertising, social media, content, and conversion-focused marketing.</p>
+<<<<<<< HEAD
                     <a href="enquirynow.php" class="sx-btn">Talk to Our Experts <i class="fa-solid fa-arrow-right"></i></a>
+=======
+                    <a href="/enquirynow" class="sx-btn">Talk to Our Experts <i class="fa-solid fa-arrow-right"></i></a>
+>>>>>>> 496e236 (pages added)
                 </div>
             </div>
             <div class="sx-grid c5">
@@ -1036,10 +1044,17 @@ if (!function_exists('sx_mock')) {
 ?>
 <?php
 $sxTabs = [
+<<<<<<< HEAD
     ['fa-solid fa-magnifying-glass-chart', 'Search Engine Optimization', 'Improve your website\'s organic visibility and rankings for relevant search terms through keyword research, <a href="seo.php">on-page SEO</a>, technical optimization, content optimization, and internal linking.'],
     ['fa-solid fa-share-nodes', 'Social Media Marketing', 'Build a stronger connection with your audience through platform-specific content and campaigns designed to increase engagement, brand awareness, and customer interaction. <a href="social-media-marketing.php">Explore social media marketing</a>.'],
     ['fa-solid fa-bullseye', 'Google Ads and PPC', 'Reach potential customers when they are actively searching for your products or services, with campaigns built on relevant keywords, audience targeting, and conversion tracking. <a href="ppc.php">Explore PPC services</a>.'],
     ['fa-solid fa-pen-nib', 'Content Marketing', 'Useful content helps your brand attract, educate, and convert potential customers while supporting SEO, brand authority, customer engagement, and lead generation. <a href="content-marketing.php">Explore content marketing</a>.'],
+=======
+    ['fa-solid fa-magnifying-glass-chart', 'Search Engine Optimization', 'Improve your website\'s organic visibility and rankings for relevant search terms through keyword research, <a href="/seo">on-page SEO</a>, technical optimization, content optimization, and internal linking.'],
+    ['fa-solid fa-share-nodes', 'Social Media Marketing', 'Build a stronger connection with your audience through platform-specific content and campaigns designed to increase engagement, brand awareness, and customer interaction. <a href="/social-media-marketing">Explore social media marketing</a>.'],
+    ['fa-solid fa-bullseye', 'Google Ads and PPC', 'Reach potential customers when they are actively searching for your products or services, with campaigns built on relevant keywords, audience targeting, and conversion tracking. <a href="/ppc">Explore PPC services</a>.'],
+    ['fa-solid fa-pen-nib', 'Content Marketing', 'Useful content helps your brand attract, educate, and convert potential customers while supporting SEO, brand authority, customer engagement, and lead generation. <a href="/content-marketing">Explore content marketing</a>.'],
+>>>>>>> 496e236 (pages added)
     ['fa-solid fa-filter-circle-dollar', 'Lead Generation', 'Generate more relevant business enquiries with targeted campaigns that combine paid advertising, landing pages, SEO, content, and conversion optimization.'],
     ['fa-solid fa-envelope-open-text', 'Email Marketing', 'Stay connected with prospects and customers through personalized email campaigns that support lead nurturing, customer retention, promotions, and conversions.'],
     ['fa-solid fa-chart-column', 'Analytics and Reporting', 'Understand what is working and where improvements are needed with key performance indicators and actionable insights for better marketing decisions.'],
@@ -1085,7 +1100,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                         <span class="num">SERVICE <?php echo $n; ?> / <?php echo $sxTabTotal; ?></span>
                         <h3><?php echo htmlspecialchars($t[1], ENT_QUOTES, 'UTF-8'); ?></h3>
                         <p><?php echo $t[2]; ?></p>
+<<<<<<< HEAD
                         <div class="sx-actions"><a href="enquirynow.php" class="sx-btn sx-btn-white">Discuss This Service <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                        <div class="sx-actions"><a href="/enquirynow" class="sx-btn sx-btn-white">Discuss This Service <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                     </div>
                 </article>
 <?php endforeach; ?>
@@ -1203,7 +1222,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <blockquote>What stood out most was their proactive communication and data-backed decision making. From SEO improvements to paid campaign scaling, every move felt intentional and tied directly to measurable business growth.</blockquote>
                 <footer><img class="av" src="./assets/images/testimonials/1.png" width="54" height="54" loading="lazy" decoding="async" alt="Uday Parkhi, client of Technofra digital marketing agency in Mumbai"><b>Uday Parkhi</b><img class="lg" src="assets/images/new/c11.png" loading="lazy" decoding="async" alt="Blue Orbith logo - Technofra digital marketing client"></footer></figure>
         </div>
+<<<<<<< HEAD
         <div class="sx-links sx-reveal"><a href="seo.php"><i class="fa-solid fa-magnifying-glass-chart"></i>SEO services in Mumbai</a><a href="ppc.php"><i class="fa-solid fa-bullseye"></i>PPC services in Mumbai</a><a href="social-media-marketing.php"><i class="fa-solid fa-share-nodes"></i>Social media marketing</a><a href="content-marketing.php"><i class="fa-solid fa-pen-nib"></i>Content marketing</a><a href="web-design-and-development.php"><i class="fa-solid fa-laptop-code"></i>Web development</a><a href="portfolios.php"><i class="fa-solid fa-briefcase"></i>Portfolio</a></div>
+=======
+        <div class="sx-links sx-reveal"><a href="/seo"><i class="fa-solid fa-magnifying-glass-chart"></i>SEO services in Mumbai</a><a href="/ppc"><i class="fa-solid fa-bullseye"></i>PPC services in Mumbai</a><a href="/social-media-marketing"><i class="fa-solid fa-share-nodes"></i>Social media marketing</a><a href="/content-marketing"><i class="fa-solid fa-pen-nib"></i>Content marketing</a><a href="/web-design-and-development"><i class="fa-solid fa-laptop-code"></i>Web development</a><a href="/portfolios"><i class="fa-solid fa-briefcase"></i>Portfolio</a></div>
+>>>>>>> 496e236 (pages added)
     </div>
 </section>
 
@@ -1233,7 +1256,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                 <div class="sx-ct"><span class="sx-ico"><i class="fa-solid fa-phone"></i></span><div><h3>Phone</h3><a href="tel:+918080803374">+91 8080 80 3374</a></div></div>
                 <div class="sx-ct"><span class="sx-ico"><i class="fa-solid fa-envelope"></i></span><div><h3>Email</h3><a href="mailto:info@technofra.com">info@technofra.com</a></div></div>
             </div>
+<<<<<<< HEAD
             <div class="sx-actions sx-reveal"><a class="sx-btn sx-btn-white sx-btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Ghanshyam+Enclave+New+Link+Road+Kandivali+West+Mumbai+400067" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a><a class="sx-btn sx-btn-ghost sx-btn-sm" href="contact.php">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+            <div class="sx-actions sx-reveal"><a class="sx-btn sx-btn-white sx-btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Ghanshyam+Enclave+New+Link+Road+Kandivali+West+Mumbai+400067" target="_blank" rel="noopener">Get Directions <i class="fa-solid fa-diamond-turn-right"></i></a><a class="sx-btn sx-btn-ghost sx-btn-sm" href="/contact">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
         </div>
         <div class="sx-map sx-reveal" id="sxMap">
             <div class="sx-map-in"><span class="sx-pin"><i class="fa-solid fa-location-dot"></i></span><p>Technofra, Ghanshyam Enclave, New Link Road, Kandivali (West), Mumbai</p><button type="button" class="sx-btn sx-btn-ghost sx-btn-sm" id="sxMapBtn" data-src="https://www.google.com/maps?q=Ghanshyam+Enclave,+New+Link+Road,+Kandivali+West,+Mumbai+400067&amp;output=embed">Load Interactive Map <i class="fa-solid fa-map"></i></button></div>
@@ -1251,7 +1278,11 @@ $sxTabTotal = str_pad((string) count($sxTabs), 2, '0', STR_PAD_LEFT);
                     <h2>Partner With a <span>Results-Driven Marketing Agency in Mumbai</span></h2>
                     <p>Looking for a reliable partner to grow your online presence? Technofra provides integrated digital marketing solutions designed around your business goals. From SEO and social media to PPC, content marketing, and lead generation, we bring multiple digital channels together to create a consistent and measurable growth strategy.</p>
                     <p>Let's build a digital marketing strategy that helps your business reach more customers, generate better leads, and grow online. Get in touch with Technofra today to discuss your digital marketing requirements.</p>
+<<<<<<< HEAD
                     <div class="sx-actions"><a href="enquirynow.php" class="sx-btn sx-btn-white">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="contact.php" class="sx-btn sx-btn-ghost">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+=======
+                    <div class="sx-actions"><a href="/enquirynow" class="sx-btn sx-btn-white">Enquiry Now <i class="fa-solid fa-arrow-right"></i></a><a href="/contact" class="sx-btn sx-btn-ghost">Contact Us <i class="fa-solid fa-arrow-right"></i></a></div>
+>>>>>>> 496e236 (pages added)
                 </div>
             </div>
         </div>
