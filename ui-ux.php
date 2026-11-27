@@ -1,5 +1,6 @@
 <?php
-$pageTitle = 'UI/UX Design Services | Seamless & Engaging Experiences | Technofra';
+$pageTitle = 'UI UX Design Services in Mumbai | Technofra';
+$metaDescription = 'Looking for UI UX Design Services in Mumbai? Technofra designs clean, easy-to-use websites and apps people enjoy. Talk to our Kandivali team today.';
 $bodyClass = 'hero-video-page tf-ios-page';
 include __DIR__ . '/header.php';
 ?>
@@ -195,7 +196,7 @@ include __DIR__ . '/header.php';
 
     .di-lead {
         color: var(--hero-body);
-        max-width: 620px;
+        max-width: 1000px;
         margin: 1.5rem auto 0;
     }
 
@@ -1115,7 +1116,7 @@ include __DIR__ . '/header.php';
 
     .dt-subtext {
         color: var(--dt-body);
-        max-width: 640px;
+        max-width: 1000px;
         margin-inline: auto;
     }
 
@@ -1672,6 +1673,7 @@ include __DIR__ . '/header.php';
         color: var(--ed-heading);
         font-weight: 800;
         margin-top: 1rem;
+        font-size: 2.1rem;
     }
 
     .ed-lead {
@@ -1760,6 +1762,10 @@ include __DIR__ . '/header.php';
         .ed-badge {
             padding: 0.5rem 0.8rem;
         }
+
+        .ed-heading {
+            font-size: 1.85rem;
+        }
     }
 
     @media (max-width: 1199.98px) {
@@ -1773,6 +1779,10 @@ include __DIR__ . '/header.php';
 
         .ed-badge-prototype {
             right: -3%;
+        }
+
+        .ed-heading {
+            font-size: 1.55rem;
         }
     }
 
@@ -1797,6 +1807,7 @@ include __DIR__ . '/header.php';
 
         .ed-heading {
             margin-top: 0.75rem;
+            font-size: var(--h2);
         }
     }
 
@@ -2079,7 +2090,7 @@ include __DIR__ . '/header.php';
 
     .wc-subtext {
         color: var(--wc-body);
-        max-width: 620px;
+        max-width: 1000px;
         margin-inline: auto;
     }
 
@@ -2493,7 +2504,7 @@ include __DIR__ . '/header.php';
     }
 
     .design-heading-wrap {
-        max-width: 780px;
+        max-width: 1032px;
         margin-inline: auto;
         padding-inline: 1rem;
     }
@@ -2505,7 +2516,7 @@ include __DIR__ . '/header.php';
 
     .design-subtitle {
         color: var(--ds-text-muted);
-        max-width: 640px;
+        max-width: 1000px;
         margin-inline: auto;
         margin-bottom: clamp(1.75rem, 1.4rem + 1.5vw, 2.75rem);
     }
@@ -2711,6 +2722,100 @@ include __DIR__ . '/header.php';
         }
     }
 
+    /* ============================================
+        SERVICE CARDS (inside the dark design section)
+    ============================================ */
+    .ds-svc-grid {
+        max-width: 1100px;
+        margin-inline: auto;
+        margin-top: clamp(1.5rem, 1.2rem + 1.2vw, 2.5rem);
+    }
+
+    .ds-svc-card {
+        --svc-accent: var(--ds-accent);
+        display: flex;
+        align-items: flex-start;
+        gap: 1.15rem;
+        height: 100%;
+        padding: 1.5rem 1.5rem;
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid var(--ds-border);
+        border-left: 3px solid var(--svc-accent);
+        border-radius: 16px;
+        text-align: left;
+        transition:
+            transform 0.25s ease,
+            background 0.25s ease,
+            border-color 0.25s ease;
+    }
+
+    .ds-svc-card:hover {
+        transform: translateY(-4px);
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .ds-svc-icon {
+        flex: 0 0 52px;
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        color: var(--svc-accent);
+        background: color-mix(in srgb, var(--svc-accent) 16%, transparent);
+    }
+
+    .ds-svc-title {
+        color: var(--ds-text);
+        font-weight: 700;
+        margin-bottom: 0.45rem;
+    }
+
+    .ds-svc-body .ds-svc-text {
+        color: var(--ds-text-muted);
+        margin-bottom: 0;
+    }
+
+    .ds-svc-1 {
+        --svc-accent: #6d86ff;
+    }
+
+    .ds-svc-2 {
+        --svc-accent: #22c55e;
+    }
+
+    .ds-svc-3 {
+        --svc-accent: #a78bfa;
+    }
+
+    .ds-svc-4 {
+        --svc-accent: #f59e42;
+    }
+
+    .ds-svc-5 {
+        --svc-accent: #ef4b4b;
+    }
+
+    .ds-svc-6 {
+        --svc-accent: #2dd4bf;
+    }
+
+    @media (max-width: 575.98px) {
+        .ds-svc-card {
+            padding: 1.25rem 1.1rem;
+            gap: 0.9rem;
+        }
+
+        .ds-svc-icon {
+            flex-basis: 44px;
+            width: 44px;
+            height: 44px;
+            font-size: 1.1rem;
+        }
+    }
+
 
     /* ============================================
     RESPONSIVE TYPOGRAPHY SCALE
@@ -2860,7 +2965,7 @@ include __DIR__ . '/header.php';
         HEADER
     ============================================ */
     .ow-header {
-        max-width: 700px;
+        max-width: 1000px;
         margin-inline: auto;
         text-align: center;
         position: relative;
@@ -2895,9 +3000,9 @@ include __DIR__ . '/header.php';
         color: transparent;
     }
 
-    .ow-subtitle {
+    .ow-header .ow-subtitle {
         color: var(--ow-muted);
-        margin-bottom: clamp(2.25rem, 1.8rem + 1.5vw, 3.25rem);
+        margin-bottom: clamp(2rem, 1.75rem + 1.5vw, 3.25rem);
     }
 
     /* ============================================
@@ -3236,22 +3341,309 @@ include __DIR__ . '/header.php';
             width: 100%;
         }
     }
+
+    /* ============================================
+        ADDED SECTIONS (reuse the existing section styles above)
+    ============================================ */
+
+    /* Inline text links inside paragraphs */
+    .tf-text-link {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: color 0.2s ease;
+    }
+
+    .tf-text-link:hover {
+        color: var(--wc-accent);
+    }
+
+    .design-section .tf-text-link:hover {
+        color: var(--ds-text);
+    }
+
+    /* Contact details in the closing CTA */
+    .tf-contact-line {
+        color: var(--ds-text);
+        margin-bottom: 0.6rem;
+    }
+
+    /* FAQ accordion (styled like the .wc-card cards) */
+    .tf-faq-list {
+        max-width: 1000px;
+        margin: clamp(2rem, 1.6rem + 1.5vw, 3rem) auto 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .tf-faq-item {
+        background: var(--wc-card-bg);
+        border: 1px solid var(--wc-card-border);
+        border-radius: 18px;
+        box-shadow: 0 14px 30px -16px rgba(20, 20, 43, 0.12);
+        overflow: hidden;
+        transition: box-shadow 0.25s ease;
+    }
+
+    .tf-faq-item[open] {
+        box-shadow: 0 22px 40px -16px rgba(20, 20, 43, 0.2);
+    }
+
+    .tf-faq-item summary {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+    }
+
+    .tf-faq-item summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .tf-faq-q {
+        color: var(--wc-heading);
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .tf-faq-icon {
+        flex: 0 0 auto;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #e7edff;
+        color: var(--wc-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        transition: transform 0.25s ease;
+    }
+
+    .tf-faq-item[open] .tf-faq-icon {
+        transform: rotate(45deg);
+    }
+
+    .tf-faq-answer {
+        padding: 0 1.5rem 1.35rem;
+    }
+
+    .tf-faq-answer p {
+        color: var(--wc-body);
+        margin: 0;
+    }
+
+    @media (max-width: 575.98px) {
+        .tf-faq-item {
+            border-radius: 16px;
+        }
+
+        .tf-faq-item summary {
+            padding: 1rem 1.1rem;
+        }
+
+        .tf-faq-answer {
+            padding: 0 1.1rem 1.1rem;
+        }
+
+        .tf-faq-icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    /* ============================================
+        CONSISTENT GAP BETWEEN SECTIONS
+        (same scale as .why-choose-section / .expert-designers-section)
+    ============================================ */
+    .bento-section,
+    .design-tools-section,
+    .expert-designers-section,
+    .why-choose-section,
+    .design-section,
+    .ow-section {
+        padding-block: clamp(3.5rem, 3rem + 3vw, 6.5rem);
+    }
+
+    .di-hero-section {
+        padding-bottom: clamp(3.5rem, 3rem + 3vw, 6.5rem);
+    }
+
+    @media (max-width: 1919.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 6rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 6rem;
+        }
+    }
+
+    @media (max-width: 1599.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 5.5rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 5.5rem;
+        }
+    }
+
+    @media (max-width: 1399.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 5rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 5rem;
+        }
+    }
+
+    @media (max-width: 1199.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 4.5rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 4.5rem;
+        }
+    }
+
+    @media (max-width: 991.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 4rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 4rem;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 3.5rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 3.5rem;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 3rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 3rem;
+        }
+    }
+
+    @media (max-width: 479.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 2.5rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 2.5rem;
+        }
+    }
+
+    @media (max-width: 359.98px) {
+
+        .bento-section,
+        .design-tools-section,
+        .expert-designers-section,
+        .why-choose-section,
+        .design-section,
+        .ow-section {
+            padding-block: 2.25rem;
+        }
+
+        .di-hero-section {
+            padding-bottom: 2.25rem;
+        }
+    }
 </style>
 
 <section class="di-hero-section">
     <div class="container">
         <h1 class="di-heading">
-            <span class="line">Design</span>
-            <span class="line">Transform</span>
-            <span class="line glow-word">Innovate</span>
+            <span class="line">UI UX Design Services in Mumbai</span>
+            <span class="line">That Turn Visitors into</span>
+            <span class="line glow-word">Customers</span>
         </h1>
 
         <p class="p-large di-lead">
-            A premier UI/UX design agency creating streamlined, user-friendly
-            experiences tailored to your requirements. Increase your online
-            visibility and connect with your audience through smooth, engaging
-            design solutions.
+            Technofra provides UI UX Design Services in Mumbai for brands that
+            want websites and apps people actually enjoy using. Too often, a
+            business pays for a site, gets the traffic, and then loses visitors to
+            confusing screens or a long checkout. We fix that by understanding how
+            your users think and designing interfaces that are clear, quick and
+            easy to trust.
+            Our designers work right beside our developers in Kandivali West, so
+            what you approve in Figma is exactly what goes live.
         </p>
+
+        <!-- <p class="p-large di-lead">
+            Our designers work right beside our developers in Kandivali West, so
+            what you approve in Figma is exactly what goes live.
+        </p> -->
 
         <a href="contact.php" class="di-cta">
             Contact Us
@@ -3329,20 +3721,22 @@ include __DIR__ . '/header.php';
 <section class="design-tools-section">
     <div class="container">
         <div class="row justify-content-center text-center">
-            <div class="col-12 col-lg-8 col-xl-7">
+            <div class="col-12">
                 <span class="dt-eyebrow p-small">
                     <span class="dot"></span>
                     OUR CREATIVE WORKFLOW
                 </span>
 
                 <h2 class="dt-heading">
-                    Design Tools We <span class="accent">Use</span>
+                    Tools We <span class="accent">Use</span>
                 </h2>
 
                 <p class="p-large dt-subtext mt-3">
-                    We blend industry-leading tools with creative expertise to deliver
-                    beautiful UI/UX, interactive prototypes, motion, and stunning
-                    visuals.
+                    We design in Figma for wireframes, UI and prototypes, and use
+                    Adobe Illustrator, InDesign, After Effects, Premiere Pro and
+                    Photopea for icons, layouts and motion. Because Figma runs in the
+                    browser, you can review and comment on designs without installing
+                    anything.
                 </p>
             </div>
         </div>
@@ -3487,21 +3881,21 @@ include __DIR__ . '/header.php';
                     UI/UX DESIGN
                 </span>
 
-                <h2 class="ed-heading">We Are Expert Designers</h2>
+                <h2 class="ed-heading">What Are UI UX Design Services?</h2>
 
                 <p class="p ed-lead">
-                    At Technofra, our UI/UX team is at the forefront of digital innovation, committed to delivering exceptional user experiences. Through in-depth research, wireframing, prototyping, and usability testing, we craft intuitive, seamless, and engaging digital experiences that truly connect with users and drive meaningful impact.
+                    UX decides what goes where and why; UI decides how it looks and feels.
                 </p>
 
                 <!-- Feature cards -->
-                <div class="row g-3 g-md-4 mt-2">
+                <div class="row g-3 g-md-4">
                     <div class="col-12 col-sm-4">
                         <div class="ed-feature-card">
                             <div class="ed-feature-icon">
                                 <i class="fa-solid fa-pen-nib"></i>
                             </div>
-                            <h5 class="ed-feature-title">UI Design</h5>
-                            <p class="p-small ed-feature-text">Beautiful interfaces that enhance the overall user experience.</p>
+                            <h5 class="ed-feature-title">UI (user interface)</h5>
+                            <p class="p-small ed-feature-text">UI (user interface) is the visible part: layout, colours, fonts and buttons.</p>
                         </div>
                     </div>
 
@@ -3510,8 +3904,8 @@ include __DIR__ . '/header.php';
                             <div class="ed-feature-icon">
                                 <i class="fa-regular fa-user"></i>
                             </div>
-                            <h5 class="ed-feature-title">UX Strategy</h5>
-                            <p class="p-small ed-feature-text">Thoughtful user journeys that improve interaction and engagement.</p>
+                            <h5 class="ed-feature-title">UX (user experience)</h5>
+                            <p class="p-small ed-feature-text">UX (user experience) is the thinking part: research, user journeys and page structure.</p>
                         </div>
                     </div>
 
@@ -3520,8 +3914,8 @@ include __DIR__ . '/header.php';
                             <div class="ed-feature-icon">
                                 <i class="fa-regular fa-window-restore"></i>
                             </div>
-                            <h5 class="ed-feature-title">Prototype &amp; Testing</h5>
-                            <p class="p-small ed-feature-text">Interactive prototypes and usability checks before development.</p>
+                            <h5 class="ed-feature-title">You need both</h5>
+                            <p class="p-small ed-feature-text">You need both, because a beautiful screen that's hard to use still loses customers.</p>
                         </div>
                     </div>
                 </div>
@@ -3543,33 +3937,28 @@ include __DIR__ . '/header.php';
     <div class="container">
         <!-- Header -->
         <div class="row justify-content-center text-center">
-            <div class="col-12 col-lg-8 col-xl-7">
+            <div class="col-12">
                 <span class="wc-eyebrow caption">WHY CHOOSE US</span>
 
                 <h2 class="wc-heading">
-                    Why Choose <span class="accent">Us</span>
+                    Why Choose Technofra as Your<br> <span class="accent">UI UX Design Agency in Mumbai</span>
                 </h2>
-
-                <p class="p-large wc-subtext mt-3">
-                    A Premier UI UX design Agency Designing streamlined, user-friendly
-                    experiences that are specific to your requirements.
-                </p>
             </div>
         </div>
 
         <!-- Cards -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mt-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mt-3 justify-content-center">
             <!-- Card 1 -->
             <div class="col">
                 <div class="wc-card wc-card-1">
                     <div class="wc-icon-wrap">
-                        <i class="fa-regular fa-face-smile-beam"></i>
+                        <i class="fa-solid fa-layer-group"></i>
                     </div>
-                    <h5 class="wc-card-title">Client Satisfaction</h5>
+                    <h5 class="wc-card-title">Design and development under one roof.</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
-                        We pay meticulous attention to each and every aspect of design,
-                        ensuring that the final product is of the highest quality.
+                        We also build websites, Android apps and iOS apps, so every
+                        design is realistic to build.
                     </p>
                     <span class="wc-number">01</span>
                 </div>
@@ -3579,13 +3968,13 @@ include __DIR__ . '/header.php';
             <div class="col">
                 <div class="wc-card wc-card-2">
                     <div class="wc-icon-wrap">
-                        <i class="fa-solid fa-sliders"></i>
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
                     </div>
-                    <h5 class="wc-card-title">Customization</h5>
+                    <h5 class="wc-card-title">Research before pixels.</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
-                        We understand that each and every business is unique, and we
-                        tailor our designs to align with your brand identity and goals.
+                        We study your goals, analytics and competitors before we start
+                        designing.
                     </p>
                     <span class="wc-number">02</span>
                 </div>
@@ -3595,13 +3984,12 @@ include __DIR__ . '/header.php';
             <div class="col">
                 <div class="wc-card wc-card-3">
                     <div class="wc-icon-wrap">
-                        <i class="fa-regular fa-clock"></i>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
                     </div>
-                    <h5 class="wc-card-title">Timely Delivery</h5>
+                    <h5 class="wc-card-title">Mobile-first thinking.</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
-                        We value your time and strive to deliver projects within the
-                        agreed-upon timelines without compromising on quality.
+                        We design for phones first, then scale up.
                     </p>
                     <span class="wc-number">03</span>
                 </div>
@@ -3611,15 +3999,46 @@ include __DIR__ . '/header.php';
             <div class="col">
                 <div class="wc-card wc-card-4">
                     <div class="wc-icon-wrap">
-                        <i class="fa-solid fa-medal"></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h5 class="wc-card-title">Client Satisfaction</h5>
+                    <h5 class="wc-card-title">Built with search in mind.</h5>
                     <span class="wc-title-rule"></span>
                     <p class="p-small wc-card-text">
-                        Your satisfaction is our top priority, and we work closely with
-                        you throughout the design process to ensure your needs are met.
+                        We work with our SEO team so a redesign never wipes out your
+                        rankings.
                     </p>
                     <span class="wc-number">04</span>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="wc-card wc-card-1">
+                    <div class="wc-icon-wrap">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h5 class="wc-card-title">A local team you can meet.</h5>
+                    <span class="wc-title-rule"></span>
+                    <p class="p-small wc-card-text">
+                        Call us, visit the office or sit with our designers.
+                    </p>
+                    <span class="wc-number">05</span>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="wc-card wc-card-2">
+                    <div class="wc-icon-wrap">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h5 class="wc-card-title">Support after launch.</h5>
+                    <span class="wc-title-rule"></span>
+                    <p class="p-small wc-card-text">
+                        Our maintenance team keeps everything updated and running
+                        smoothly.
+                    </p>
+                    <span class="wc-number">06</span>
                 </div>
             </div>
         </div>
@@ -3631,49 +4050,180 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="design-heading-wrap text-center">
             <h2 class="design-title">
-                We Create Designs for All Types of Technologies
+                Our UI UX Design Services
             </h2>
-            <p class="design-subtitle p-large">
-                We craft modern UI/UX designs that combine creativity and
-                functionality to improve user experience, increase conversions, and
-                drive business growth.
-            </p>
-
-            <ul class="nav design-tabs justify-content-center" role="tablist" aria-label="Design technology preview">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" role="tab" aria-selected="true" data-image-src="./assets/design-mockup.png" data-image-alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen">
-                        <i class="fa-solid fa-display" aria-hidden="true"></i>
-                        <span>Design</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" role="tab" aria-selected="false" data-image-src="./assets/design-mockup.png" data-image-alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen">
-                        <i
-                            class="fa-solid fa-mobile-screen-button"
-                            aria-hidden="true"></i>
-                        <span>Build</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" role="tab" aria-selected="false" data-image-src="./assets/design-mockup.png" data-image-alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen">
-                        <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>
-                        <span>Present</span>
-                    </a>
-                </li>
-            </ul>
         </div>
 
-        <div class="design-frame-wrap">
-            <div class="design-frame">
-                <img
-                    id="designPreviewImage"
-                    src="./assets/design-mockup.png"
-                    alt="Figma workspace showing three mobile app screens for a real estate platform: a property listing home screen, an edit profile form, and a projects listing screen"
-                    class="img-fluid design-frame-img" />
+        <!-- Our UI UX Design Services: service cards -->
+        <div class="row row-cols-1 row-cols-lg-2 g-3 g-md-4 ds-svc-grid">
+            <div class="col">
+                <div class="ds-svc-card ds-svc-1">
+                    <div class="ds-svc-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <div class="ds-svc-body">
+                        <h3 class="ds-svc-title h5">UX Research and Strategy</h3>
+                        <p class="p-small ds-svc-text">
+                            Stakeholder conversations, competitor reviews, user personas and
+                            journey maps that guide every design decision.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div
-                class="design-deco-lines d-none d-lg-block"
-                aria-hidden="true"></div>
+
+            <div class="col">
+                <div class="ds-svc-card ds-svc-2">
+                    <div class="ds-svc-icon">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <div class="ds-svc-body">
+                        <h3 class="ds-svc-title h5">Wireframing and Website UI Design</h3>
+                        <p class="p-small ds-svc-text">
+                            We plan the structure with simple wireframes, then design responsive
+                            websites that guide visitors toward one clear action.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ds-svc-card ds-svc-3">
+                    <div class="ds-svc-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <div class="ds-svc-body">
+                        <h3 class="ds-svc-title h5">Mobile App UI UX Design</h3>
+                        <p class="p-small ds-svc-text">
+                            Onboarding, navigation and core flows that follow Android and iOS
+                            guidelines and feel natural on each platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ds-svc-card ds-svc-4">
+                    <div class="ds-svc-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="ds-svc-body">
+                        <h3 class="ds-svc-title h5">E-commerce UX Design</h3>
+                        <p class="p-small ds-svc-text">
+                            Product pages, filters and checkout designed to remove friction and
+                            lift sales, built on <a href="shopify-development.php" class="tf-text-link">Shopify</a>
+                            or <a href="wordpress.php" class="tf-text-link">WordPress</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ds-svc-card ds-svc-5">
+                    <div class="ds-svc-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="ds-svc-body">
+                        <h3 class="ds-svc-title h5">Dashboard, SaaS and CRM Interface Design</h3>
+                        <p class="p-small ds-svc-text">
+                            Data-heavy screens that are easy to scan and quick to work in, backed
+                            by our <a href="crm-development.php" class="tf-text-link">CRM development services</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ds-svc-card ds-svc-6">
+                    <div class="ds-svc-icon">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div class="ds-svc-body">
+                        <h3 class="ds-svc-title h5">Prototypes, Usability Testing and UX Audits</h3>
+                        <p class="p-small ds-svc-text">
+                            Clickable Figma prototypes tested with real users, plus
+                            screen-by-screen audits of existing products with a prioritised list
+                            of fixes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Our UI UX Design Process -->
+<section class="expert-designers-section">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <h2 class="wc-heading">
+                    Our UI UX Design <span class="accent">Process</span>
+                </h2>
+
+                <p class="p-large wc-subtext mt-3">
+                    We keep the process simple and open, so you always know where things
+                    stand and what comes next.
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-md-4 mt-3 justify-content-center">
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h5 class="ed-feature-title">Discover.</h5>
+                    <p class="p-small ed-feature-text">We learn about your business, goals, users and competitors.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <h5 class="ed-feature-title">Define.</h5>
+                    <p class="p-small ed-feature-text">We turn that research into personas, user journeys and a sitemap.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-vector-square"></i></div>
+                    <h5 class="ed-feature-title">Wireframe.</h5>
+                    <p class="p-small ed-feature-text">We sketch the layout and flow of each key screen.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <h5 class="ed-feature-title">Design.</h5>
+                    <p class="p-small ed-feature-text">We create the visual interface using your brand colours, fonts and components.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h5 class="ed-feature-title">Prototype.</h5>
+                    <p class="p-small ed-feature-text">We link the screens into a clickable prototype you can try yourself.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <h5 class="ed-feature-title">Test.</h5>
+                    <p class="p-small ed-feature-text">We check usability with real users and refine anything that isn't working.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="ed-feature-card">
+                    <div class="ed-feature-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h5 class="ed-feature-title">Hand off and support.</h5>
+                    <p class="p-small ed-feature-text">We share developer-ready files and stay involved while the product is built.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -3686,12 +4236,14 @@ include __DIR__ . '/header.php';
         <div class="ow-header">
             <span class="ow-badge"><i class="fa-solid fa-bolt"></i> Our Work</span>
             <h2 class="ow-title">
-                Innovative <span class="accent">UI/UX</span> Design for Impactful
-                Results
+                Projects We've <span class="accent">Worked On</span>
             </h2>
             <p class="ow-subtitle p-large">
-                We craft user-centered digital experiences that not only look
-                stunning but also drive engagement and business growth.
+                Our team has designed for e-commerce stores, a telecom brand, a
+                transport and logistics platform, a sports equipment brand and
+                several promotional campaigns. That mix is useful: an idea that
+                works in retail often improves a B2B dashboard, and the other way
+                round. You can see some of this work in our portfolio.
             </p>
         </div>
 
@@ -3823,6 +4375,115 @@ include __DIR__ . '/header.php';
 
         <div class="ow-cta-wrap">
             <a href="portfolios.php" class="ow-cta-btn">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Frequently Asked Questions -->
+<section class="why-choose-section">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12">
+                <h2 class="wc-heading">
+                    Frequently Asked <span class="accent">Questions</span>
+                </h2>
+            </div>
+        </div>
+
+
+
+        <div class="tf-faq-list">
+
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">How Good UI UX Design Helps Your SEO and Marketing</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">Google rewards fast, mobile-friendly, stable pages, and visitors who find what they need stay longer. A clean heading structure also helps search engines and AI tools like ChatGPT, Gemini and Google's AI Overviews understand your page. That's why our design work pairs naturally with our <a href="seo.php" class="tf-text-link">SEO</a>, <a href="digital-marketing.php" class="tf-text-link">digital marketing</a> and <a href="content-marketing.php" class="tf-text-link">content marketing</a> services, and why a well-designed landing page gets more leads from the same ad spend.</p>
+                </div>
+            </details>
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">A UI UX Design Company in Mumbai Serving Clients Across India</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">We're based in Mumbai but work with startups, small businesses and established brands across India. If you're looking for a UI UX Design Agency in India that can also handle development and marketing, we'd be glad to talk.</p>
+                </div>
+            </details>
+
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">How much do UI UX Design Services in Mumbai cost?</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">It depends on the number of screens, the platform, the research involved and whether development is included. Send us your requirements for an exact quote.</p>
+                </div>
+            </details>
+
+
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">What is the difference between UI and UX design?</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">UX is how a product works: flow, structure and ease of use. UI is how it looks: colours, typography and visual style. A good product needs both.</p>
+                </div>
+            </details>
+
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">How long does a UI UX design project take?</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">A small business website usually takes a few weeks; a full mobile app or SaaS product can take a couple of months.</p>
+                </div>
+            </details>
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">Do you design apps for both Android and iOS?</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">Yes. We follow each platform's guidelines, and our in-house developers can build for one platform or both.</p>
+                </div>
+            </details>
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">Can you redesign my website without hurting my Google rankings?</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">Yes. We plan redesigns with our SEO team, keep key URLs and content in place, and set up redirects where needed.</p>
+                </div>
+            </details>
+
+            <details class="tf-faq-item">
+                <summary>
+                    <h3 class="tf-faq-q h5">Do you work with clients outside Mumbai?</h3>
+                    <span class="tf-faq-icon"><i class="fa-solid fa-plus"></i></span>
+                </summary>
+                <div class="tf-faq-answer">
+                    <p class="p-small">Yes. We work with businesses across India through video calls and shared Figma files.</p>
+                </div>
+            </details>
+
+
+
+
+
+
         </div>
     </div>
 </section>
