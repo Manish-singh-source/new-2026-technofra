@@ -343,6 +343,43 @@
     line-height: 1.75;
 }
 
+/* Tables in article content */
+.tf-blog-article-copy table {
+    width: 100%;
+    margin: 20px 0 28px;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.tf-blog-article-copy th,
+.tf-blog-article-copy td {
+    padding: 12px 14px;
+    border: 1px solid #d8e0ea;
+    color: #1a1e24;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tf-blog-article-copy th {
+    background: #f1f5f9;
+    color: #0a214d;
+    font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .tf-blog-article-copy table {
+        display: block;
+        overflow-x: auto;
+        font-size: 15px;
+    }
+
+    .tf-blog-article-copy th,
+    .tf-blog-article-copy td {
+        min-width: 140px;
+    }
+}
+
 .tf-blog-article-copy h2 {
     margin: 42px 0 18px;
     color: #0a214d;

@@ -132,7 +132,7 @@ function blog_sanitize_html($html)
     libxml_use_internal_errors($previous);
     $root = $document->getElementById('blog-sanitize-root');
     if (!$root) return '';
-    $allowed = ['p','br','strong','b','em','i','u','s','h1','h2','h3','h4','h5','h6','ul','ol','li','blockquote','hr','span','a','img'];
+    $allowed = ['p','br','strong','b','em','i','u','s','h1','h2','h3','h4','h5','h6','ul','ol','li','blockquote','hr','span','a','img','table','thead','tbody','tfoot','tr','th','td'];
     $remove = ['script','style','iframe','object','embed','form','input','button','svg','math','link','meta'];
     $walk = function ($node) use (&$walk, $allowed, $remove) {
         for ($child = $node->firstChild; $child;) {
@@ -141,13 +141,17 @@ function blog_sanitize_html($html)
                 $node->removeChild($child);
             } elseif ($child instanceof DOMElement) {
                 $tag = strtolower($child->tagName);
+                // Google Docs wraps copied content in <b style="font-weight:normal" id="docs-internal-guid-...">;
+                // keeping that <b> after its style is stripped would make the whole article bold.
+                $isDocsWrapper = $tag === 'b' && (strpos($child->getAttribute('id'), 'docs-internal-guid') === 0 || preg_match('/font-weight\s*:\s*(normal|[1-4]00)\b/i', $child->getAttribute('style')));
                 if (in_array($tag, $remove, true)) {
                     $node->removeChild($child);
-                } elseif (!in_array($tag, $allowed, true)) {
+                } elseif ($isDocsWrapper || !in_array($tag, $allowed, true)) {
+                    $walk($child);
                     while ($child->firstChild) $node->insertBefore($child->firstChild, $child);
                     $node->removeChild($child);
                 } else {
-                    $allowedAttributes = ['a' => ['href','target','rel'], 'img' => ['src','alt'], 'span' => ['class','style'], 'p' => ['class'], 'h1' => ['class'], 'h2' => ['class'], 'h3' => ['class'], 'h4' => ['class'], 'h5' => ['class'], 'h6' => ['class'], 'li' => ['class']];
+                    $allowedAttributes = ['a' => ['href','target','rel'], 'img' => ['src','alt'], 'span' => ['class','style'], 'p' => ['class'], 'h1' => ['class'], 'h2' => ['class'], 'h3' => ['class'], 'h4' => ['class'], 'h5' => ['class'], 'h6' => ['class'], 'li' => ['class'], 'td' => ['colspan','rowspan'], 'th' => ['colspan','rowspan']];
                     $keep = $allowedAttributes[$tag] ?? [];
                     for ($i = $child->attributes->length - 1; $i >= 0; $i--) {
                         $attribute = $child->attributes->item($i);
@@ -157,7 +161,10 @@ function blog_sanitize_html($html)
                     }
                     if ($child->hasAttribute('href') && !preg_match('~^(https?://|mailto:|/|#)~i', $child->getAttribute('href'))) $child->removeAttribute('href');
                     if ($child->hasAttribute('src') && !preg_match('#^(https?://|/)#i', $child->getAttribute('src'))) $child->removeAttribute('src');
-                    if ($child->hasAttribute('class') && !preg_match('/^ql-[a-z0-9- ]+$/', $child->getAttribute('class'))) $child->removeAttribute('class');
+                    foreach (['colspan', 'rowspan'] as $span) {
+                        if ($child->hasAttribute($span) && !preg_match('/^[1-9][0-9]?$/', $child->getAttribute($span))) $child->removeAttribute($span);
+                    }
+                    if ($child->hasAttribute('class') &&!preg_match('/^ql-[a-z0-9- ]+$/', $child->getAttribute('class'))) $child->removeAttribute('class');
                     if ($child->hasAttribute('style')) {
                         $styles = [];
                         foreach (explode(';', $child->getAttribute('style')) as $rule) {
@@ -185,7 +192,7 @@ function blog_sanitize_html($html)
 function blog_render_content($content)
 {
     $content = (string) $content;
-    if (preg_match('/<(p|h2|h3|h4|ul|ol|blockquote)\b/i', $content)) return blog_sanitize_html($content);
+    if (preg_match('/<(p|h[1-6]|ul|ol|blockquote|table)\b/i', $content)) return blog_sanitize_html($content);
     $blocks = preg_split('/\R\s*\R+/', trim($content));
     $html = '';
     foreach ($blocks as $block) {
