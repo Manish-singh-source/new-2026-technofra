@@ -2287,157 +2287,6 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-
-<section class="ppc-section">
-    <div class="ppc-container">
-        <div class="row align-items-start">
-
-            <!-- LEFT COLUMN -->
-            <div class="col-12 col-lg-6 ppc-left-col">
-
-                <h1 class="ppc-heading">Best SEO Services in Mumbai Focused on Business Results</h1>
-                <p class="ppc-desc">
-                    SEO should be more than achieving higher rankings. The right strategy should help your business attract relevant users and turn organic visibility into enquiries and sales.
-                </p>
-                <p class="ppc-desc">
-                    Our SEO services in Mumbai combine technical SEO, on-page optimization, content strategy, local SEO, keyword research, link building, and performance tracking. We focus on attracting relevant visitors who are more likely to become enquiries, customers, and long-term business opportunities.
-                </p>
-                <p class="ppc-desc">
-                    Whether you are a local business, startup, eCommerce brand, professional service provider, or established company, our SEO team creates a customized strategy to help your website compete for valuable search terms and generate sustainable organic growth.
-                </p>
-
-            </div>
-
-            <!-- RIGHT COLUMN -->
-            <div class="col-12 col-lg-6">
-                <p class="ppc-eyebrow mb-4">
-                    Our approach focuses on:
-                </p>
-                <div class="ppc-feature-list">
-
-                    <div class="ppc-feature-item">
-                        <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Better Search Visibility</h3>
-                            <p class="ppc-feature-text">
-                                Improve your website's presence for relevant searches and reach potential customers when they are actively looking for your products or services.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="ppc-feature-item">
-                        <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Qualified Organic Traffic</h3>
-                            <p class="ppc-feature-text">
-                                Target high-intent keywords and optimize landing pages to attract visitors who are more likely to engage with your business.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="ppc-feature-item">
-                        <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">More Leads &amp; Enquiries</h3>
-                            <p class="ppc-feature-text">
-                                Build search-focused pages that answer customer needs and create clear paths toward enquiries, calls, bookings, or purchases.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="ppc-feature-item">
-                        <div class="ppc-icon-circle">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <div class="ppc-feature-content">
-                            <h3 class="ppc-feature-title">Sustainable Organic Growth</h3>
-                            <p class="ppc-feature-text">
-                                SEO is a long-term investment. We continuously improve technical performance, content quality, authority, and keyword coverage to support consistent growth.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="overview-section">
-    <div class="overview-container">
-        <div class="row align-items-stretch g-5">
-
-            <div class="col-12 col-lg-5">
-                <div class="overview-photo-wrap">
-                    <img
-                        src="./assets/images/about/seo_image.png"
-                        alt="Marketing professional holding a tablet, representing our PPC team"
-                        class="overview-photo" />
-                </div>
-            </div>
-
-
-            <div class="col-12 col-lg-7">
-                <div class="overview-right-col">
-
-                    <h2 class="overview-heading" style="font-size: clamp(1.25rem, 2.1vw, 2.125rem); max-width: none;">
-                        Why Businesses Choose <span class="text-accent">Technofra</span>
-                    </h2>
-
-                    <p class="overview-desc">
-                        Technofra combines SEO strategy with practical execution. Instead of focusing only on rankings, we consider how search visibility contributes to qualified traffic, enquiries, conversions, and overall business growth.
-                    </p>
-
-                    <h3 class="overview-focus-label mb-3">Our SEO approach is built around:</h3>
-
-                    <div class="focus-grid">
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <span>Business-focused keyword targeting</span>
-                        </div>
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-gears"></i>
-                            <span>Technical and on-page SEO</span>
-                        </div>
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Local search optimization</span>
-                        </div>
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <span>Content strategy</span>
-                        </div>
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-file-pen"></i>
-                            <span>Conversion-focused landing pages</span>
-                        </div>
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-chart-column"></i>
-                            <span>Transparent performance tracking</span>
-                        </div>
-                        <div class="focus-chip">
-                            <i class="fa-solid fa-arrows-rotate"></i>
-                            <span>Continuous optimization</span>
-                        </div>
-                    </div>
-
-                    <a href="contact.php" class="overview-btn">
-                        Contact Us
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="services-section">
     <!-- decorative dot grids -->
     <span class="services-dots top-right"></span>
@@ -2572,6 +2421,88 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+
+<section class="ppc-section">
+    <div class="ppc-container">
+        <div class="row align-items-start">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-12 col-lg-6 ppc-left-col">
+
+                <h1 class="ppc-heading">Best SEO Services in Mumbai Focused on Business Results</h1>
+                <p class="ppc-desc">
+                    SEO should be more than achieving higher rankings. The right strategy should help your business attract relevant users and turn organic visibility into enquiries and sales.
+                </p>
+                <p class="ppc-desc">
+                    Our SEO services in Mumbai combine technical SEO, on-page optimization, content strategy, local SEO, keyword research, link building, and performance tracking. We focus on attracting relevant visitors who are more likely to become enquiries, customers, and long-term business opportunities.
+                </p>
+                <p class="ppc-desc">
+                    Whether you are a local business, startup, eCommerce brand, professional service provider, or established company, our SEO team creates a customized strategy to help your website compete for valuable search terms and generate sustainable organic growth.
+                </p>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-12 col-lg-6">
+                <p class="ppc-eyebrow mb-4">
+                    Our approach focuses on:
+                </p>
+                <div class="ppc-feature-list">
+
+                    <div class="ppc-feature-item">
+                        <div class="ppc-icon-circle">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <div class="ppc-feature-content">
+                            <h3 class="ppc-feature-title">Better Search Visibility</h3>
+                            <p class="ppc-feature-text">
+                                Improve your website's presence for relevant searches and reach potential customers when they are actively looking for your products or services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ppc-feature-item">
+                        <div class="ppc-icon-circle">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div class="ppc-feature-content">
+                            <h3 class="ppc-feature-title">Qualified Organic Traffic</h3>
+                            <p class="ppc-feature-text">
+                                Target high-intent keywords and optimize landing pages to attract visitors who are more likely to engage with your business.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ppc-feature-item">
+                        <div class="ppc-icon-circle">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="ppc-feature-content">
+                            <h3 class="ppc-feature-title">More Leads &amp; Enquiries</h3>
+                            <p class="ppc-feature-text">
+                                Build search-focused pages that answer customer needs and create clear paths toward enquiries, calls, bookings, or purchases.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ppc-feature-item">
+                        <div class="ppc-icon-circle">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="ppc-feature-content">
+                            <h3 class="ppc-feature-title">Sustainable Organic Growth</h3>
+                            <p class="ppc-feature-text">
+                                SEO is a long-term investment. We continuously improve technical performance, content quality, authority, and keyword coverage to support consistent growth.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 <section class="seo-process-section">
     <span class="seo-dots top-right"></span>
@@ -2806,6 +2737,79 @@ include __DIR__ . '/header.php';
         </div>
     </div>
 </section>
+
+<section class="overview-section">
+    <div class="overview-container">
+        <div class="row align-items-stretch g-5">
+
+            <div class="col-12 col-lg-5">
+                <div class="overview-photo-wrap">
+                    <img
+                        src="./assets/images/about/seo_image.png"
+                        alt="Marketing professional holding a tablet, representing our PPC team"
+                        class="overview-photo" />
+                </div>
+            </div>
+
+
+            <div class="col-12 col-lg-7">
+                <div class="overview-right-col">
+
+                    <h2 class="overview-heading" style="font-size: clamp(1.25rem, 2.1vw, 2.125rem); max-width: none;">
+                        Why Businesses Choose <span class="text-accent">Technofra</span>
+                    </h2>
+
+                    <p class="overview-desc">
+                        Technofra combines SEO strategy with practical execution. Instead of focusing only on rankings, we consider how search visibility contributes to qualified traffic, enquiries, conversions, and overall business growth.
+                    </p>
+
+                    <h3 class="overview-focus-label mb-3">Our SEO approach is built around:</h3>
+
+                    <div class="focus-grid">
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Business-focused keyword targeting</span>
+                        </div>
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Technical and on-page SEO</span>
+                        </div>
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Local search optimization</span>
+                        </div>
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>Content strategy</span>
+                        </div>
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-file-pen"></i>
+                            <span>Conversion-focused landing pages</span>
+                        </div>
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-chart-column"></i>
+                            <span>Transparent performance tracking</span>
+                        </div>
+                        <div class="focus-chip">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span>Continuous optimization</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.php" class="overview-btn">
+                        Contact Us
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 
 <section class="overview-section">
     <div class="overview-container">
