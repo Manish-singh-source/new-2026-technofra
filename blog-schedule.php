@@ -130,10 +130,28 @@ function blog_change_post_status($slug, $status, $publishAt)
         $connection = blog_db_connection();
         if (!$connection || !blog_ensure_schema($connection)) return false;
         $now = (new DateTime('now', new DateTimeZone('Asia/Kolkata')))->format('Y-m-d H:i:s');
-        $publishedAt = $publishAt ?? $now;
-        $update = $connection->prepare("UPDATE blogs SET status = ?, publish_at = ?, published_at = CASE WHEN ? = 'draft' THEN published_at ELSE ? END, updated_at = ? WHERE slug = ? LIMIT 1");
+        blog_promote_due_posts($connection);
+        $select = $connection->prepare('SELECT status, published_at FROM blogs WHERE slug = ? LIMIT 1');
+        if (!$select) return false;
+        $select->bind_param('s', $slug);
+        $currentStatus = null;
+        $currentPublishedAt = null;
+        $found = $select->execute() && $select->bind_result($currentStatus, $currentPublishedAt) && $select->fetch();
+        $select->close();
+        if (!$found) return false;
+        $current = ['status' => $currentStatus, 'published_at' => $currentPublishedAt];
+        // Draft keeps its date; scheduled uses the schedule time; published keeps the original date when the
+        // article is already live and only uses the current time when it goes live now.
+        if ($status === 'draft') {
+            $publishedAt = $current['published_at'];
+        } elseif ($status === 'scheduled') {
+            $publishedAt = $publishAt;
+        } else {
+            $publishedAt = ($current['status'] === 'published' && !empty($current['published_at'])) ? $current['published_at'] : $now;
+        }
+        $update = $connection->prepare('UPDATE blogs SET status = ?, publish_at = ?, published_at = ?, updated_at = ? WHERE slug = ? LIMIT 1');
         if (!$update) return false;
-        $update->bind_param('ssssss', $status, $publishAt, $status, $publishedAt, $now, $slug);
+        $update->bind_param('sssss', $status, $publishAt, $publishedAt, $now, $slug);
         $success = $update->execute() && $update->affected_rows === 1;
         $update->close();
         return $success;

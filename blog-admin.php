@@ -19,6 +19,7 @@ try {
             if ($configured && hash_equals((string) $config['username'], $username) && password_verify($password, (string) $config['password_hash'])) {
                 session_regenerate_id(true);
                 $_SESSION['blog_admin_authenticated'] = true;
+                blog_cleanup_abandoned_uploads();
                 header('Location: ' . blog_url('admin'));
                 exit;
             }
@@ -103,7 +104,10 @@ try {
                 }
             } elseif ($status === 'published') {
                 $publishAt = null;
-                $publishedAt = $existingPost['published_at'] ?? $now->format('Y-m-d H:i:s');
+                // Keep the original date for an article that is already live; going live now (new, draft, or
+                // scheduled for later) uses the current time.
+                $wasLive = $existingPost !== null && blog_is_live($existingPost) && !empty($existingPost['published_at']);
+                $publishedAt = $wasLive ? $existingPost['published_at'] : $now->format('Y-m-d H:i:s');
             } else {
                 $publishAt = null;
                 $publishedAt = $existingPost['published_at'] ?? $now->format('Y-m-d H:i:s');
@@ -143,9 +147,13 @@ try {
             if (!blog_save_posts($posts)) {
                 throw new RuntimeException('The article could not be saved. Please check storage permissions.');
             }
-            if ($imageToRemove !== '') {
-                blog_remove_uploaded_image($imageToRemove);
+            // Saving upserts by slug, so a changed slug would leave the old row behind as a duplicate article.
+            if ($existingPost !== null && $slug !== $oldSlug) {
+                blog_delete_post($oldSlug);
             }
+            // Delete the replaced cover and any inline images removed from the content, unless another article uses them.
+            $removedInlineImages = array_diff(blog_content_uploaded_images($existingPost['content'] ?? ''), blog_content_uploaded_images($content));
+            blog_remove_unused_images(array_merge([$imageToRemove], $removedInlineImages));
             $_SESSION['blog_admin_notice'] = $notice;
             header('Location: ' . blog_url('admin'));
             exit;
@@ -187,7 +195,8 @@ try {
             if (!blog_delete_post($slug)) {
                 throw new RuntimeException('The article could not be deleted. Please try again.');
             }
-            blog_remove_uploaded_image($post['image'] ?? '');
+            // Delete the cover and inline images of the article, unless another article still uses them.
+            blog_remove_unused_images(array_merge([(string) ($post['image'] ?? '')], blog_content_uploaded_images($post['content'] ?? '')));
             $_SESSION['blog_admin_notice'] = 'Article deleted.';
             header('Location: ' . blog_url('admin') . '?view=list');
             exit;
@@ -214,6 +223,21 @@ if (blog_is_admin()) {
     } catch (RuntimeException $exception) {
         $error = $exception->getMessage();
     }
+}
+// Values shown in the article form. After a failed save, refill it with what was submitted so nothing typed is lost.
+$formPost = $editingPost;
+if ($error !== '' && blog_is_admin() && $_SERVER['REQUEST_METHOD'] === 'POST' && (string) ($_POST['action'] ?? '') === 'save') {
+    $postedOldSlug = trim((string) ($_POST['old_slug'] ?? ''));
+    $editingPost = $postedOldSlug !== '' ? blog_find_post($posts, $postedOldSlug) : null;
+    $formPost = array_merge($editingPost ?? [], [
+        'title' => trim((string) ($_POST['title'] ?? '')),
+        'meta_title' => trim((string) ($_POST['meta_title'] ?? '')),
+        'meta_description' => trim((string) ($_POST['meta_description'] ?? '')),
+        'slug' => trim((string) ($_POST['slug'] ?? '')),
+        'content' => blog_sanitize_html((string) ($_POST['content_html'] ?? '')),
+        'status' => (string) ($_POST['status'] ?? 'published'),
+        'publish_at' => str_replace('T', ' ', trim((string) ($_POST['publish_at'] ?? ''))),
+    ]);
 }
 $view = ((string) ($_GET['view'] ?? 'create')) === 'list' ? 'list' : 'create';
 $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Blog Admin | Technofra</title>
@@ -271,10 +295,10 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                         <input type="hidden" name="csrf_token" value="<?php echo blog_escape(blog_csrf_token()); ?>">
                         <input type="hidden" name="action" value="save">
                         <input type="hidden" name="old_slug" value="<?php echo blog_escape($editingPost['slug'] ?? ''); ?>">
-                        <label>Article title<input name="title" type="text" maxlength="180" required value="<?php echo blog_escape($editingPost['title'] ?? ''); ?>"></label>
-                        <label>Meta title <span>(SEO title)</span><input name="meta_title" type="text" maxlength="180" value="<?php echo blog_escape($editingPost['meta_title'] ?? ($editingPost['title'] ?? '')); ?>"></label>
-                        <label>Meta description <span>(SEO description)</span><textarea name="meta_description" rows="3" maxlength="320"><?php echo blog_escape($editingPost['meta_description'] ?? ''); ?></textarea></label>
-                        <label>URL slug <span>(letters, numbers, and hyphens)</span><input name="slug" type="text" maxlength="220" value="<?php echo blog_escape($editingPost['slug'] ?? ''); ?>"></label>
+                        <label>Article title<input name="title" type="text" maxlength="180" required value="<?php echo blog_escape($formPost['title'] ?? ''); ?>"></label>
+                        <label>Meta title <span>(SEO title)</span><input name="meta_title" type="text" maxlength="180" value="<?php echo blog_escape($formPost['meta_title'] ?? ($formPost['title'] ?? '')); ?>"></label>
+                        <label>Meta description <span>(SEO description)</span><textarea name="meta_description" rows="3" maxlength="320"><?php echo blog_escape($formPost['meta_description'] ?? ''); ?></textarea></label>
+                        <label>URL slug <span>(letters, numbers, and hyphens)</span><input name="slug" type="text" maxlength="220" value="<?php echo blog_escape($formPost['slug'] ?? ''); ?>"></label>
                         <label>Article content</label>
                         <div class="content-builder" id="content-builder">
                             <div class="content-builder-toolbar" role="toolbar" aria-label="Add article content block">
@@ -290,14 +314,14 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                         <p id="content-error" class="blog-editor-error" role="alert" hidden>Add at least one title, description, or image block.</p>
                         <label>Publishing status
                             <select name="status" id="blog-status" required>
-                                <?php $editingStatus = (string) ($editingPost['status'] ?? 'published'); ?>
+                                <?php $editingStatus = (string) ($formPost['status'] ?? 'published'); ?>
                                 <option value="draft"<?php echo $editingStatus === 'draft' ? ' selected' : ''; ?>>Draft</option>
                                 <option value="published"<?php echo $editingStatus === 'published' ? ' selected' : ''; ?>>Publish Now</option>
                                 <option value="scheduled"<?php echo $editingStatus === 'scheduled' ? ' selected' : ''; ?>>Schedule</option>
                             </select>
                         </label>
                         <label id="blog-publish-at-field"<?php echo $editingStatus === 'scheduled' ? '' : ' hidden'; ?>>Schedule date and time
-                            <input name="publish_at" type="datetime-local" value="<?php echo !empty($editingPost['publish_at']) ? blog_escape(str_replace(' ', 'T', substr($editingPost['publish_at'], 0, 16))) : ''; ?>">
+                            <input name="publish_at" type="datetime-local" value="<?php echo !empty($formPost['publish_at']) ? blog_escape(str_replace(' ', 'T', substr($formPost['publish_at'], 0, 16))) : ''; ?>">
                         </label>
                         <label>Cover image <span>(JPG, PNG, WebP; up to 5 MB)</span><input name="image" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"></label>
                         <?php if (!empty($editingPost['image'])): ?>
@@ -318,7 +342,7 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                             var hidden = document.getElementById('content-html');
                             var error = document.getElementById('content-error');
                             var activeEditor = null;
-                            var initial = <?php echo json_encode(blog_render_content($editingPost['content'] ?? ''), JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
+                            var initial = <?php echo json_encode(blog_render_content($formPost['content'] ?? ''), JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
                             if (!form || !blocks || !hidden) return;
 
                             function escapeHtml(value) {
@@ -356,6 +380,7 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                                     var tag = element.tagName;
                                     var style = element.getAttribute('style') || '';
                                     var inHeading = !!(element.parentNode.closest && element.parentNode.closest('h1,h2,h3,h4,h5,h6,th'));
+                                    if (tag.indexOf('-') !== -1) { unwrapElement(element); return; } // e.g. <google-sheets-html-origin> wrapper
                                     if (tag === 'B' && (/^docs-internal-guid/.test(element.id || '') || /font-weight\s*:\s*(normal|[1-4]00)\b/i.test(style))) { unwrapElement(element); return; }
                                     if (tag === 'SPAN' || tag === 'FONT') {
                                         var weight = (style.match(/font-weight\s*:\s*([a-z0-9]+)/i) || [])[1] || '';
@@ -485,7 +510,17 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                             function handleDescriptionPaste(event, editor) {
                                 var clipboard = event.clipboardData;
                                 var html = clipboard ? clipboard.getData('text/html') : '';
-                                if (!html) return;
+                                if (!html) {
+                                    // Tab-separated text (copied spreadsheet cells without HTML) becomes a Table block.
+                                    var grid = clipboardToGrid(clipboard);
+                                    if (!grid || (grid.length === 1 && grid[0].length === 1)) return;
+                                    event.preventDefault();
+                                    var owner = editor.closest('.content-builder-block');
+                                    addBlock('table', gridToTableHtml(grid), null, owner.nextSibling, true);
+                                    if (!hasVisibleContent(editor)) owner.remove();
+                                    updateEmpty();
+                                    return;
+                                }
                                 event.preventDefault();
                                 var cleaned = cleanPastedHtml(html);
                                 if (!cleaned) return;
@@ -502,6 +537,33 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                                 specs.forEach(function (spec) { addBlock(spec.type, spec.value, spec.heading, before, true); });
                                 if (!hasVisibleContent(editor)) current.remove();
                                 updateEmpty();
+                            }
+
+                            // Reads copied table cells from the clipboard: an HTML table (Excel, Google Sheets/Docs, Word, web)
+                            // or tab-separated text. Returns rows of cell HTML, or null when the clipboard holds no table.
+                            function clipboardToGrid(clipboard) {
+                                if (!clipboard) return null;
+                                var html = clipboard.getData('text/html');
+                                if (html && /<table\b/i.test(html)) {
+                                    var table = new DOMParser().parseFromString(cleanPastedHtml(html), 'text/html').querySelector('table');
+                                    if (table && table.rows.length) {
+                                        return Array.prototype.map.call(table.rows, function (row) {
+                                            return Array.prototype.map.call(row.cells, function (cell) { return cell.innerHTML.trim(); });
+                                        });
+                                    }
+                                }
+                                var text = clipboard.getData('text/plain');
+                                if (!text || text.indexOf('\t') === -1) return null;
+                                var lines = text.replace(/\r\n?/g, '\n').replace(/\n+$/, '').split('\n');
+                                return lines.map(function (line) {
+                                    return line.split('\t').map(function (value) { return escapeHtml(value.trim()); });
+                                });
+                            }
+
+                            function gridToTableHtml(grid) {
+                                return '<table><tbody>' + grid.map(function (values) {
+                                    return '<tr>' + values.map(function (value) { return '<td>' + value + '</td>'; }).join('') + '</tr>';
+                                }).join('') + '</tbody></table>';
                             }
 
                             function buildEditableTable(sourceHtml) {
@@ -568,8 +630,30 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                                 });
                                 wrap.addEventListener('paste', function (event) {
                                     var text = event.clipboardData ? event.clipboardData.getData('text/plain') : '';
+                                    var grid = clipboardToGrid(event.clipboardData);
                                     event.preventDefault();
-                                    document.execCommand('insertText', false, text);
+                                    if (!grid || (grid.length === 1 && grid[0].length === 1)) {
+                                        document.execCommand('insertText', false, text);
+                                        return;
+                                    }
+                                    // Copied table cells: fill the grid starting at the cell being pasted into, growing the table as needed.
+                                    var startRow = rowIndex() >= 0 ? rowIndex() : 0;
+                                    var startColumn = cellIndex() >= 0 ? cellIndex() : 0;
+                                    grid.forEach(function (values, r) {
+                                        while (table.rows.length <= startRow + r) {
+                                            var newRow = table.tBodies[0].insertRow(-1);
+                                            var count = table.rows[0] ? table.rows[0].cells.length : 1;
+                                            for (var n = 0; n < count; n++) newRow.appendChild(makeCell('td'));
+                                        }
+                                        values.forEach(function (value, c) {
+                                            while (table.rows[startRow + r].cells.length <= startColumn + c) {
+                                                Array.prototype.forEach.call(table.rows, function (row, index) {
+                                                    row.appendChild(makeCell(index === 0 && firstRowIsHeader() ? 'th' : 'td'));
+                                                });
+                                            }
+                                            table.rows[startRow + r].cells[startColumn + c].innerHTML = value;
+                                        });
+                                    });
                                 });
                                 headerToggle.addEventListener('change', function () {
                                     if (!table.rows[0]) return;
@@ -778,7 +862,6 @@ $pageTitle = 'Blog Admin | Technofra';?><!doctype html><html lang="en"><head><me
                 <?php endif; ?>
             </div>
         <?php endif; ?>
-    </div>
     </section>
 </main>
 <?php if (blog_is_admin() && $view === 'list'): ?>

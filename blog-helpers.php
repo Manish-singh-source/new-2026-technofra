@@ -251,13 +251,72 @@ function blog_upload_image($file)
 
 function blog_remove_uploaded_image($image)
 {
-    if (!is_string($image) || !preg_match('#^blog-content/uploads/[a-f0-9]{32}\.(jpg|png|webp)$#', $image)) {
+    // Covers use 32-character names (jpg/png/webp); inline uploads use 16-character names and may also be gif.
+    if (!is_string($image) || !preg_match('#^blog-content/uploads/([a-f0-9]{32}|[a-f0-9]{16})\.(jpg|png|webp|gif)$#', $image)) {
         return;
     }
 
     $file = __DIR__ . '/' . $image;
     if (is_file($file) && !unlink($file)) {
         throw new RuntimeException('The old blog image could not be removed.');
+    }
+}
+
+// Uploaded images (blog-content/uploads/...) referenced by <img> tags inside article HTML.
+function blog_content_uploaded_images($html)
+{
+    preg_match_all('#<img\b[^>]*\bsrc=["\'][^"\']*?(blog-content/uploads/(?:[a-f0-9]{32}|[a-f0-9]{16})\.(?:jpg|png|webp|gif))["\']#i', (string) $html, $matches);
+    return array_values(array_unique($matches[1]));
+}
+
+// Every uploaded image still used by any article (cover or inline), read straight from the database.
+// Returns null when the database cannot be read, so callers never delete files on a failed lookup.
+function blog_uploaded_images_in_use()
+{
+    $connection = blog_db_connection();
+    if (!$connection || !blog_ensure_schema($connection)) return null;
+    $result = $connection->query('SELECT image, content FROM blogs');
+    if (!$result) return null;
+    $used = [];
+    while ($row = $result->fetch_assoc()) {
+        if ((string) $row['image'] !== '') $used[ltrim((string) $row['image'], '/')] = true;
+        foreach (blog_content_uploaded_images($row['content']) as $image) $used[$image] = true;
+    }
+    return $used;
+}
+
+// Deletes the given uploaded images unless some article still uses them.
+function blog_remove_unused_images(array $images)
+{
+    $images = array_values(array_unique(array_filter($images)));
+    if (!$images) return;
+    $used = blog_uploaded_images_in_use();
+    if ($used === null) return;
+    foreach ($images as $image) {
+        if (isset($used[$image])) continue;
+        try {
+            blog_remove_uploaded_image($image);
+        } catch (RuntimeException $exception) {
+            error_log('Blog image cleanup failed: ' . $exception->getMessage());
+        }
+    }
+}
+
+// Inline images are uploaded as soon as they are picked, before the article is saved. Removes inline uploads
+// that no article uses and that are older than $maxAgeSeconds (abandoned drafts, removed or replaced Image blocks).
+// Cover images are never touched here: they are only uploaded on save and are cleaned up on replace/delete.
+function blog_cleanup_abandoned_uploads($maxAgeSeconds = 86400)
+{
+    $directory = blog_storage_directory() . '/uploads';
+    if (!is_dir($directory)) return;
+    $used = blog_uploaded_images_in_use();
+    if ($used === null) return;
+    foreach (glob($directory . '/*') ?: [] as $file) {
+        $name = basename($file);
+        if (!preg_match('/^[a-f0-9]{16}\.(jpg|png|webp|gif)$/', $name)) continue;
+        if (isset($used['blog-content/uploads/' . $name])) continue;
+        if (!is_file($file) || time() - (int) filemtime($file) < $maxAgeSeconds) continue;
+        if (!@unlink($file)) error_log('Blog upload cleanup could not remove ' . $name);
     }
 }
 
